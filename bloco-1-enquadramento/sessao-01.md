@@ -92,6 +92,8 @@ Pontos a abordar:
 - o utilizador continua responsável pelo que faz com o output;
 - a formação é parte da maturidade institucional.
 
+Para aprofundar o enquadramento do AI Act em Portugal: [aiact-portugal.pt](https://aiact-portugal.pt/)
+
 ### 2. Proteção de dados e decisões sobre pessoas
 
 Ideia essencial:
