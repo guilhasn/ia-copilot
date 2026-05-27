@@ -205,9 +205,6 @@ Regra transversal:
 
 Agora que conhece a Régua, é altura de a aplicar. Os cenários seguintes são situações concretas do trabalho universitário. Para cada um, tente classificar a utilização antes de ver a resposta — clique no cenário para revelar a classificação e a justificação.
 
-{: .note }
-> **Em aula**, serão trabalhados preferencialmente 5 casos, com discussão orientada. Os restantes ficam disponíveis para consolidação individual.
-
 ### Caso 1 — Ofício-padrão
 
 <details markdown="1">
