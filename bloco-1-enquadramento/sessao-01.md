@@ -1,29 +1,31 @@
 ---
-title: "S1 — Mais do que Office"
+title: "S1 — IA com critério nas IES"
 layout: default
 parent: "Bloco 1 · Enquadramento e Literacia Crítica"
 nav_order: 1
 ---
 
-# Sessão 1 — Mais do que um curso de Office
+# Sessão 1 — Usar IA com critério no trabalho das IES
 
 <button class="btn-print-page" onclick="printPage()">🖨️ PDF</button>
 
 **Formação:** Inteligência Artificial — Aplicações ao trabalho das IES
+**Ferramenta principal:** Microsoft 365 Copilot
 **Duração:** 2 horas
 **Modalidade:** Online síncrona
 **Bloco:** 1 · Enquadramento e Literacia Crítica
-**Caso operacional:** Sem caso operacional — sessão de moldura
+**Caso operacional:** Sem caso operacional — sessão inicial
 
-## Abertura da sessão
+## Ideia central
 
-Esta primeira sessão não tem como objetivo assustar ninguém nem transformar todos em juristas.
+Esta sessão estabelece a base do curso: a Inteligência Artificial aplicada ao trabalho das IES pode aumentar produtividade, qualidade e capacidade de análise, mas não deve ser usada de forma automática ou acrítica.
 
+O objetivo não é assustar os formandos nem transformar todos em juristas.
 O objetivo é mais simples: perceber como usar IA no trabalho das IES de forma útil, prática e consciente.
 
-A pergunta que orienta a sessão é:
+A competência principal desta sessão é:
 
-> Antes de usar IA nesta tarefa, que dados estou a usar, quem pode ser afetado e que papel terá o output na decisão?
+> Antes de usar IA, parar alguns segundos e classificar o caso de uso.
 
 ## Objetivos
 
@@ -35,66 +37,69 @@ No final da sessão, os formandos deverão ser capazes de:
 - reconhecer quando a IA pode apoiar uma tarefa e quando pode interferir indevidamente numa decisão sobre pessoas;
 - identificar cuidados mínimos antes de introduzir informação institucional numa ferramenta de IA.
 
-## Diagnóstico inicial
+## Abertura da sessão
 
-Logo no início da sessão, lance uma pergunta rápida no chat do Zoom:
+A sessão começa com uma pergunta simples no chat:
 
-> "Qual destas tarefas mais gostava que a IA ajudasse a simplificar?"
+> Qual destas tarefas mais gostava que a IA ajudasse a simplificar no seu trabalho?
 
 Opções sugeridas:
 
-- responder a e-mails;
-- resumir reuniões;
-- analisar documentos;
-- preparar atas;
-- trabalhar dados em Excel;
-- criar apresentações;
-- apoiar atendimento a estudantes;
-- outra.
+1. responder a e-mails;
+2. resumir reuniões;
+3. analisar documentos;
+4. preparar atas;
+5. trabalhar dados em Excel;
+6. criar apresentações;
+7. apoiar atendimento a estudantes;
+8. outra.
 
-Esta pergunta faz duas coisas: dá leitura imediata da turma (experiência, expectativas, funções) e faz os formandos sentirem que a formação é sobre o trabalho deles, não sobre teoria abstrata.
+Esta pergunta permite ajustar a sessão ao perfil dos formandos e reforça a ideia de que a formação parte do trabalho real das IES.
 
 ## Fluxo da sessão
 
 | Momento | Duração | Atividade |
 |---|---:|---|
-| Abertura | 10 min | Apresentação, enquadramento e diagnóstico da turma |
-| O lado bom | 5 min | Microdemonstração de utilização segura e útil |
-| O lado em que a IA nos pode enganar | 15 min | Demonstração de utilização problemática |
-| Enquadramento aplicado | 20 min | AI Act, RGPD, dever de sigilo e supervisão humana |
+| Abertura | 5 min | Pergunta inicial no chat: onde gostariam que a IA vos poupasse tempo? |
+| Demonstração de valor | 7 min | Utilização simples e segura: melhorar aviso, ofício ou e-mail |
+| Demonstração crítica | 10 min | Utilização problemática: avaliação de desempenho ou ordenação de candidatos |
+| Discussão orientada | 8 min | O que mudou entre a primeira e a segunda utilização? |
+| Três pilares | 20 min | Literacia em IA, proteção de dados e dever de sigilo |
 | Régua do Semáforo | 15 min | Explicação da ferramenta de classificação |
-| Casos práticos | 25 min | Classificação de cenários em verde, amarelo, vermelho e nunca |
-| Fecho | 5 min | Síntese e preparação da Sessão 2 |
+| Casos práticos | 25 min | Discussão orientada de 5 casos em aula |
+| Fecho | 10 min | Síntese, questionário de consolidação e preparação da Sessão 2 |
 
-## O lado bom
+## Duas demonstrações iniciais
 
-Antes de falar de riscos, é importante mostrar que a IA funciona — e funciona bem — quando é usada no contexto certo.
+A sessão começa com duas utilizações aparentemente semelhantes.
 
-### Demonstração positiva
-
-Prompt demonstrativo:
-
-> *Reformula este texto de aviso aos estudantes para ficar mais claro, mantendo tom institucional, português de Portugal e sem alterar o sentido.*
-
-O Copilot devolve um texto mais claro, bem estruturado e pronto a usar. É seguro, é útil, é eficiente. É para isto que estamos aqui.
-
-## O lado em que a IA nos pode enganar
-
-Vamos agora ver duas utilizações aparentemente semelhantes.
-
-Na primeira, a IA ajuda-nos a melhorar um texto. Na segunda, a IA começa a influenciar uma decisão sobre uma pessoa.
+Na primeira, a IA ajuda a melhorar um texto.
+Na segunda, a IA começa a interferir numa decisão sobre uma pessoa.
 
 A diferença entre uma e outra é o coração desta sessão.
 
-A demonstração seguinte usa dados fictícios da Universidade de Vale Verde.
+### Demonstração 1 — Utilização simples e segura
 
-### Exemplo 1 — Avaliação de desempenho
+Exemplo de prompt:
 
-Prompt demonstrativo:
+> *Reformula este aviso aos estudantes para ficar mais claro, mantendo tom institucional, português de Portugal e sem alterar o sentido.*
+>
+> *Texto: [Inserir aviso fictício sobre prazo de entrega de documentos nos serviços académicos.]*
+
+Mensagem pedagógica:
+
+> Aqui, a IA está a apoiar a clareza da comunicação.
+> O conteúdo é genérico, não envolve decisão sobre pessoas e o utilizador mantém controlo total sobre o texto final.
+
+Esta demonstração mostra o lado útil da IA: poupar tempo, melhorar comunicação e ajudar a produzir uma primeira versão de trabalho.
+
+### Demonstração 2 — Utilização crítica
+
+Exemplo de prompt:
 
 > *Gera uma avaliação de desempenho para Catarina Pires, técnica superior de recursos humanos da Universidade de Vale Verde, com base nos seguintes objetivos e autoavaliação: [dados fictícios].*
 
-Mensagem pedagógica a transmitir:
+Mensagem pedagógica:
 
 > O resultado pode parecer útil, bem escrito e até convincente.
 > O problema não está apenas na qualidade do texto.
@@ -104,13 +109,13 @@ Formulação juridicamente prudente:
 
 > Num caso real, esta prática poderia criar risco jurídico elevado, sobretudo se o output da IA influenciasse a avaliação, a fundamentação ou a decisão final sobre o trabalhador.
 
-### Exemplo 2 — Ordenação de candidatos
+### Demonstração alternativa — Ordenação de candidatos
 
-Prompt demonstrativo:
+Usar apenas se houver tempo ou como exemplo complementar.
 
 > *Tenho quatro candidaturas a um cargo de direção de serviços numa universidade. Classifica os candidatos por adequação ao lugar e justifica a escolha.*
 
-Mensagem pedagógica a transmitir:
+Mensagem pedagógica:
 
 > A IA pode produzir uma ordenação aparentemente racional, mas isso não significa que deva ser usada para avaliar, ordenar ou selecionar pessoas.
 
@@ -194,9 +199,14 @@ Regra transversal:
 
 > A cor não depende apenas da tarefa. Depende dos dados usados, da fase do processo, da finalidade, do destinatário do output e do grau de influência da IA na decisão.
 
+> Em caso de dúvida, subir uma cor.
+
 ## Casos práticos
 
 Agora que conhece a Régua, é altura de a aplicar. Os cenários seguintes são situações concretas do trabalho universitário. Para cada um, tente classificar a utilização antes de ver a resposta — clique no cenário para revelar a classificação e a justificação.
+
+{: .note }
+> **Em aula**, serão trabalhados preferencialmente 5 casos, com discussão orientada. Os restantes ficam disponíveis para consolidação individual.
 
 ### Caso 1 — Ofício-padrão
 
@@ -228,7 +238,7 @@ A legislação é pública e acessível a qualquer pessoa. O Copilot está a sin
 
 <p class="caso-label">Conselho prático</p>
 
-Utilize sem restrições, mas verifique sempre as referências legais que o Copilot apresenta. A IA pode alucinar números de artigos, confundir versões consolidadas com versões originais, ou misturar legislação portuguesa com brasileira. Confirme no texto oficial antes de citar.
+É uma utilização de baixo risco, mas deve validar sempre a fonte oficial antes de citar, decidir ou enviar a terceiros. A IA pode alucinar números de artigos, confundir versões consolidadas com versões originais, ou misturar legislação portuguesa com brasileira.
 
 </details>
 
@@ -245,7 +255,7 @@ Os e-mails contêm informação interna — nomes de colegas, referências a pro
 
 <p class="caso-label">Conselho prático</p>
 
-Pode usar, mas com três cuidados: (1) não partilhe o resumo do Copilot diretamente com terceiros sem rever — pode conter imprecisões ou omissões de nuance; (2) se algum e-mail tiver conteúdo sensível (reclamação, processo disciplinar, dados de saúde), o Copilot pode incluí-lo no resumo sem sinalizar; (3) em conteúdos internos ou sensíveis, confirme se a pesquisa Web está desativada ou evite pedidos que possam gerar consultas externas desnecessárias.
+Pode usar, mas com três cuidados: (1) não partilhe o resumo do Copilot diretamente com terceiros sem rever — pode conter imprecisões ou omissões de nuance; (2) se algum e-mail tiver conteúdo sensível (reclamação, processo disciplinar, dados de saúde), o Copilot pode incluí-lo no resumo sem sinalizar; (3) em conteúdos internos ou potencialmente sensíveis, confirme se a pesquisa Web está desativada ou evite pedidos que possam gerar consultas externas desnecessárias. Não misture informação interna, nomes, processos ou dados sensíveis com pedidos que impliquem pesquisa externa.
 
 </details>
 
@@ -271,15 +281,19 @@ Pode usar o Copilot para gerar o rascunho inicial, mas: (1) reveja integralmente
 <details markdown="1">
 <summary>O Miguel Andrade, técnico de contratação pública da UVV, está a analisar 5 propostas para um concurso de fornecimento de mobiliário. As propostas foram abertas publicamente ontem. O Miguel cola as 5 propostas no Copilot e pede: "Compara as propostas pelo critério de preço e identifica a mais económica. Verifica se todas cumprem os requisitos mínimos do caderno de encargos."</summary>
 
-<span class="badge-amarelo">🟡 Amarelo</span> ou <span class="badge-vermelho">🔴 Vermelho</span> dependendo da fase
+<span class="badge-amarelo">🟡 Amarelo</span> ou <span class="badge-vermelho">🔴 Vermelho</span> dependendo da fase e do contexto
 
 <p class="caso-label">Porquê</p>
 
-Se as propostas já foram formalmente abertas e o utilizador tem legitimidade funcional para as analisar, o Copilot pode apoiar tarefas mecânicas, como extrair preços, organizar requisitos ou construir uma tabela comparativa. Ainda assim, deve haver prudência quanto a informação técnica, comercial ou confidencial e o output nunca substitui a análise formal do júri ou do gestor do procedimento. Se as propostas ainda não foram abertas, são confidenciais por lei (Código dos Contratos Públicos) e não devem ser introduzidas no Copilot.
+A classificação depende da fase do procedimento, da legitimidade funcional do utilizador para aceder às propostas, da natureza da informação e do uso dado ao output.
+
+Mesmo depois da abertura formal das propostas, pode existir informação técnica, comercial ou estratégica que exige prudência. O Copilot pode apoiar tarefas mecânicas, como extrair preços, organizar requisitos ou construir uma tabela comparativa, mas não deve substituir a análise formal do júri ou do gestor do procedimento.
+
+O risco aumenta se a IA for usada para fazer juízos de mérito, sugerir exclusões, avaliar cumprimento substancial ou influenciar a decisão de adjudicação.
 
 <p class="caso-label">Conselho prático</p>
 
-(1) Confirme sempre que as propostas já foram abertas publicamente antes de as introduzir no Copilot; (2) use o Copilot para tarefas mecânicas (extrair valores, comparar tabelas, verificar requisitos formais), não para juízos de mérito; (3) documente o que o Copilot fez e o que o júri decidiu de forma independente; (4) nunca cole cadernos de encargos ou propostas antes da abertura pública.
+Confirme sempre que tem legitimidade funcional para tratar os documentos, que a fase do procedimento permite essa análise e que não está a introduzir informação desnecessária ou sensível.
 
 </details>
 
@@ -326,7 +340,7 @@ A IA não deve ordenar, selecionar ou excluir candidatos a apoios sociais. A ser
 
 <p class="caso-label">Porquê</p>
 
-O atestado médico contém dados de saúde — uma categoria especial de dados pessoais protegida pelo artigo 9.º do RGPD. Estes dados têm proteção reforçada e não devem ser introduzidos numa ferramenta de IA generativa, independentemente de o Copilot estar dentro do tenant Microsoft. O diagnóstico, a medicação e a incapacidade de um trabalhador estão também protegidos pelo segredo médico. A introdução destes dados no Copilot cria um risco de exposição indevida e não tem base legal que a justifique.
+O atestado médico contém dados de saúde — uma categoria especial de dados pessoais protegida pelo artigo 9.º do RGPD. Estes dados têm proteção reforçada e não devem ser introduzidos numa ferramenta de IA generativa, independentemente de o Copilot estar dentro do tenant Microsoft. O diagnóstico, a medicação e a incapacidade de um trabalhador estão também protegidos pelo segredo médico. A introdução destes dados numa ferramenta de IA generativa é desnecessária, desproporcional e inadequada para a finalidade pretendida. Mesmo em ambiente institucional, este tipo de informação deve ser tratado por canais próprios, com minimização rigorosa e acesso limitado.
 
 <p class="caso-label">Conselho prático</p>
 
@@ -352,11 +366,25 @@ Use o modelo institucional de requerimento de junta médica e preencha-o manualm
 
 ## Síntese da sessão
 
-A partir de hoje, a pergunta não deve ser apenas: "o Copilot consegue fazer isto?"
+A mensagem principal desta sessão é:
+
+> A IA pode acelerar muito trabalho administrativo e técnico, mas deve ser usada com critério.
+
+A pergunta não é apenas:
+
+> O Copilot consegue fazer isto?
 
 A pergunta certa é:
 
-> "Devo usar IA para isto, com estes dados, neste momento e para esta finalidade?"
+> Devo usar IA para isto, com estes dados, neste momento e para esta finalidade?
+
+Antes de usar Copilot, é necessário perceber:
+
+- que dados estão envolvidos;
+- qual é a finalidade;
+- quem pode ser afetado;
+- que papel terá o output;
+- se existe validação humana real.
 
 ## Próxima sessão
 

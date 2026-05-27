@@ -313,7 +313,7 @@ def create_guia():
     setup_styles(doc)
     add_header_footer(doc)
 
-    add_title(doc, "Guia da Sessão 1", "Mais do que um curso de Office")
+    add_title(doc, "Guia da Sessão 1", "Usar IA com critério no trabalho das IES")
 
     add_para(doc, "Formação: Inteligência Artificial — Aplicações ao trabalho das IES")
     add_para(doc, "Bloco 1 · Enquadramento e Literacia Crítica")
