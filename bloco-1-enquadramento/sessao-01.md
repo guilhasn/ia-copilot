@@ -38,15 +38,36 @@ No final da sessão, os formandos deverão ser capazes de:
 | Momento | Duração | Atividade |
 |---|---:|---|
 | Abertura | 10 min | Apresentação, enquadramento e pergunta inicial aos formandos |
-| Demonstração provocadora | 15 min | Simulação de utilização problemática do Copilot |
-| Enquadramento aplicado | 25 min | AI Act, RGPD, dever de sigilo e supervisão humana |
+| O lado bom | 5 min | Microdemonstração de utilização segura e útil |
+| O lado em que a IA nos pode enganar | 15 min | Demonstração de utilização problemática |
+| Enquadramento aplicado | 20 min | AI Act, RGPD, dever de sigilo e supervisão humana |
 | Régua do Semáforo | 15 min | Explicação da ferramenta de classificação |
 | Casos práticos | 25 min | Classificação de cenários em verde, amarelo, vermelho e nunca |
 | Fecho | 5 min | Síntese e preparação da Sessão 2 |
 
-## Demonstração provocadora
+## O lado bom
 
-A demonstração deve usar dados fictícios da Universidade de Vale Verde.
+Antes de falar de riscos, é importante mostrar que a IA funciona — e funciona bem — quando é usada no contexto certo.
+
+### Demonstração positiva
+
+Prompt demonstrativo:
+
+> *Reformula este texto de aviso aos estudantes para ficar mais claro, mantendo tom institucional, português de Portugal e sem alterar o sentido.*
+
+O Copilot devolve um texto mais claro, bem estruturado e pronto a usar. O formador comenta:
+
+> Isto é o lado bom. A IA acabou de poupar 15 minutos de trabalho repetitivo a qualquer técnico dos serviços académicos. É seguro, é útil, é eficiente. É para isto que estamos aqui.
+
+A seguir:
+
+> Agora vamos ver o lado em que a IA parece igualmente competente, mas já nos pode meter em terreno perigoso.
+
+Esta sequência é deliberada: **ganho prático → risco controlado → método para decidir.** A sessão não é uma aula de "não façam isto". É uma aula de "aprendam a distinguir quando podem e quando devem ter cuidado."
+
+## O lado em que a IA nos pode enganar
+
+A demonstração seguinte usa dados fictícios da Universidade de Vale Verde para mostrar situações em que o Copilot produz resultados que parecem competentes, mas que poderiam criar problemas reais.
 
 ### Exemplo 1 — Avaliação de desempenho
 
