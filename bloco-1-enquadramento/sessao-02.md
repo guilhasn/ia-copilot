@@ -31,7 +31,7 @@ No final da sessão, os formandos deverão ser capazes de:
 
 - identificar os elementos de um prompt eficaz;
 - distinguir um pedido vago de uma instrução útil;
-- aplicar a fórmula CAFE: Contexto, Ação, Fonte/Formato e Expectativa;
+- aplicar o framework de prompts da Microsoft: Objetivo, Contexto, Fonte e Expectativas;
 - resumir uma cadeia de e-mails com apoio do Copilot;
 - melhorar o output através de perguntas de seguimento;
 - validar criticamente a resposta antes de a utilizar.
@@ -52,7 +52,7 @@ Antes de escrever o prompt, a pergunta continua a ser:
 |---|---:|---|
 | Abertura | 5 min | Recuperar a ideia central da Sessão 1 |
 | Demonstração-armadilha | 10 min | Comparar prompt mau e prompt bom |
-| Conceito | 20 min | Anatomia do prompt eficaz — fórmula CAFE |
+| Conceito | 20 min | Anatomia do prompt eficaz — framework Microsoft |
 | Exercício 1 | 20 min | Melhorar prompts fracos em pares |
 | Pausa | 5 min | Pausa curta |
 | Caso prático #1 | 25 min | Resumir cadeia de e-mails |
@@ -60,26 +60,43 @@ Antes de escrever o prompt, a pergunta continua a ser:
 | Construção individual | 15 min | Criar 3 prompts úteis para o posto de trabalho |
 | Fecho | 5 min | Síntese e tarefa para a Sessão 3 |
 
-## Fórmula CAFE
+## Anatomia do prompt — framework Microsoft
 
-| Elemento | Pergunta |
-|---|---|
-| **C** — Contexto | Em que situação estou? |
-| **A** — Ação | O que quero que o Copilot faça? |
-| **F** — Fonte/Formato | Que informação deve usar e como deve responder? |
-| **E** — Expectativa | Que tom, detalhe, limites ou critérios deve respeitar? |
+A Microsoft recomenda que um prompt eficaz inclua até quatro componentes. Apenas o primeiro é obrigatório — os restantes melhoram a qualidade do resultado.
 
-Exemplo completo:
+| Componente | O que é | Pergunta a fazer |
+|---|---|---|
+| **Objetivo** *(obrigatório)* | A instrução principal — o que quero que o Copilot faça | O que preciso? |
+| **Contexto** | Informação sobre a situação, o destinatário ou o propósito | Porquê? Para quem? Em que circunstância? |
+| **Fonte** | Dados, ficheiros, e-mails ou reuniões que o Copilot deve usar | Com base em quê? Que documento, e-mail ou reunião? |
+| **Expectativas** | Formato, tom, extensão, limites ou critérios de qualidade | Como deve ser a resposta? Que restrições? |
 
-> *Atua como assistente administrativo de uma instituição de ensino superior.*
+*Fonte: [Microsoft Support — Learn about Copilot prompts](https://support.microsoft.com/en-us/topic/learn-about-copilot-prompts-f6c3b467-f07c-4db1-ae54-ffac96184dd5)*
+
+### Exemplo aplicado ao contexto das IES
+
+> *Objetivo: resume esta cadeia de e-mails e identifica o estado atual do assunto.*
 >
-> *Contexto: recebi uma cadeia de e-mails sobre um pedido de certificado de um estudante, com várias respostas internas.*
+> *Contexto: sou técnica dos Serviços Académicos de uma universidade e regressei de férias. Preciso de perceber rapidamente o que ficou pendente.*
 >
-> *Ação: resume a cadeia de e-mails.*
+> *Fonte: usa apenas a informação presente nos e-mails. Não inventes informação.*
 >
-> *Fonte/Formato: organiza a resposta numa tabela com assunto, intervenientes, decisão tomada, pendências e próximo passo.*
->
-> *Expectativa: escreve em português de Portugal, com tom institucional, sem inventar informação e assinalando tudo o que não esteja claro.*
+> *Expectativas: organiza a resposta numa tabela com assunto, intervenientes, decisões tomadas, pendências e próximo passo. Escreve em português de Portugal, com tom institucional. Assinala como "a confirmar" tudo o que não esteja explícito.*
+
+### Boas práticas da Microsoft para prompts
+
+A Microsoft recomenda cinco práticas para obter melhores resultados:
+
+1. **Incluir detalhes** — quanto mais contexto, melhor o resultado. Especificar como o Copilot deve responder e que fontes deve usar.
+2. **Cuidar da ordem** — as instruções colocadas no final do prompt recebem mais peso. Colocar fontes e restrições no fim.
+3. **Usar instruções positivas** — dizer o que fazer, não apenas o que evitar. Usar construções "se... então..." para guiar o Copilot.
+4. **Iterar e regenerar** — o primeiro resultado raramente é o final. Refinar progressivamente com pedidos de seguimento.
+5. **Rever e validar sempre** — o Copilot pode gerar conteúdo impreciso, enviesado ou desadequado. A validação humana é indispensável.
+
+*Fonte: [Microsoft Support — Get better results with prompting](https://support.microsoft.com/en-us/topic/get-better-results-with-copilot-prompting-77251d6c-e162-479d-b398-9e46cf73da55)*
+
+{: .note }
+> **Recurso para imprimir:** A Microsoft disponibiliza um diagrama visual de uma página com os ingredientes de um prompt eficaz — [The art and science of prompting (PDF)](https://adoption.microsoft.com/files/copilot/Prompt-ingredients-one-pager.pdf).
 
 ## Demonstração-armadilha
 
@@ -172,7 +189,7 @@ Depois da primeira resposta, testar pedidos de seguimento como:
 
 ## Exercício — Melhorar prompts fracos
 
-Reescrever os seguintes prompts usando a fórmula CAFE:
+Reescrever os seguintes prompts usando o framework Microsoft (Objetivo, Contexto, Fonte, Expectativas):
 
 | Prompt fraco | Problema principal |
 |---|---|
@@ -209,7 +226,7 @@ Cada formando deve criar 3 prompts úteis para o seu posto de trabalho:
 2. um prompt para **redigir ou melhorar texto**;
 3. um prompt para **identificar pendências ou próximos passos**.
 
-Cada prompt deve incluir: contexto, ação, fonte ou formato, expectativa e regra de validação.
+Cada prompt deve incluir: objetivo, contexto, fonte e expectativas — os quatro componentes do framework Microsoft.
 
 ## Checklist de validação
 
