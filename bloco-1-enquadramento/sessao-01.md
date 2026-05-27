@@ -7,7 +7,7 @@ nav_order: 1
 
 # Sessão 1 — Mais do que um curso de Office
 
-<button class="btn-print-page" onclick="printPage()">Guardar como PDF</button>
+<button class="btn-print-page" onclick="printPage()">🖨️ PDF</button>
 
 **Formação:** Inteligência Artificial — Aplicações ao trabalho das IES
 **Duração:** 2 horas
