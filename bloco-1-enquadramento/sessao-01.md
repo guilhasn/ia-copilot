@@ -33,11 +33,30 @@ No final da sessão, os formandos deverão ser capazes de:
 - reconhecer quando a IA pode apoiar uma tarefa e quando pode interferir indevidamente numa decisão sobre pessoas;
 - identificar cuidados mínimos antes de introduzir informação institucional numa ferramenta de IA.
 
+## Diagnóstico inicial
+
+Logo no início da sessão, lance uma pergunta rápida no chat do Zoom:
+
+> "Qual destas tarefas mais gostava que a IA ajudasse a simplificar?"
+
+Opções sugeridas:
+
+- responder a e-mails;
+- resumir reuniões;
+- analisar documentos;
+- preparar atas;
+- trabalhar dados em Excel;
+- criar apresentações;
+- apoiar atendimento a estudantes;
+- outra.
+
+Esta pergunta faz duas coisas: dá leitura imediata da turma (experiência, expectativas, funções) e faz os formandos sentirem que a formação é sobre o trabalho deles, não sobre teoria abstrata.
+
 ## Fluxo da sessão
 
 | Momento | Duração | Atividade |
 |---|---:|---|
-| Abertura | 10 min | Apresentação, enquadramento e pergunta inicial aos formandos |
+| Abertura | 10 min | Apresentação, enquadramento e diagnóstico da turma |
 | O lado bom | 5 min | Microdemonstração de utilização segura e útil |
 | O lado em que a IA nos pode enganar | 15 min | Demonstração de utilização problemática |
 | Enquadramento aplicado | 20 min | AI Act, RGPD, dever de sigilo e supervisão humana |
@@ -159,7 +178,7 @@ Frase-chave:
 
 ## Régua do Semáforo
 
-Os três pilares anteriores dão-nos os princípios, mas no dia-a-dia ninguém pára para reler o RGPD antes de abrir o Copilot. A Régua do Semáforo traduz esses princípios numa ferramenta prática de classificação rápida — uma forma simples de avaliar, em segundos, se determinada utilização de IA é segura, exige cuidados ou deve ser evitada.
+Os três pilares anteriores dão-nos os princípios, mas no dia-a-dia ninguém tem tempo para reler o RGPD antes de abrir o Copilot. A Régua do Semáforo traduz esses princípios numa ferramenta prática de classificação rápida — uma forma simples de avaliar, em segundos, se determinada utilização de IA é segura, exige cuidados ou deve ser evitada.
 
 A Régua classifica os usos de IA em quatro categorias:
 
@@ -226,7 +245,7 @@ Os e-mails contêm informação interna — nomes de colegas, referências a pro
 
 <p class="caso-label">Conselho prático</p>
 
-Pode usar, mas com três cuidados: (1) não partilhe o resumo do Copilot diretamente com terceiros sem rever — pode conter imprecisões ou omissões de nuance; (2) se algum e-mail tiver conteúdo sensível (reclamação, processo disciplinar, dados de saúde), o Copilot pode incluí-lo no resumo sem sinalizar; (3) desative a "Pesquisa Web" antes de usar esta funcionalidade.
+Pode usar, mas com três cuidados: (1) não partilhe o resumo do Copilot diretamente com terceiros sem rever — pode conter imprecisões ou omissões de nuance; (2) se algum e-mail tiver conteúdo sensível (reclamação, processo disciplinar, dados de saúde), o Copilot pode incluí-lo no resumo sem sinalizar; (3) em conteúdos internos ou sensíveis, confirme se a pesquisa Web está desativada ou evite pedidos que possam gerar consultas externas desnecessárias.
 
 </details>
 
@@ -256,7 +275,7 @@ Pode usar o Copilot para gerar o rascunho inicial, mas: (1) reveja integralmente
 
 <p class="caso-label">Porquê</p>
 
-Se as propostas já foram abertas publicamente, o conteúdo deixou de ser confidencial e a análise comparativa é apoio analítico legítimo. Mas se as propostas ainda não foram abertas, são confidenciais por lei (Código dos Contratos Públicos) e introduzi-las no Copilot pode constituir violação de sigilo. Mesmo após abertura, a IA não deve substituir a análise formal do júri — pode apoiar a extração e tabulação de dados, mas a avaliação e a decisão são do júri.
+Se as propostas já foram formalmente abertas e o utilizador tem legitimidade funcional para as analisar, o Copilot pode apoiar tarefas mecânicas, como extrair preços, organizar requisitos ou construir uma tabela comparativa. Ainda assim, deve haver prudência quanto a informação técnica, comercial ou confidencial e o output nunca substitui a análise formal do júri ou do gestor do procedimento. Se as propostas ainda não foram abertas, são confidenciais por lei (Código dos Contratos Públicos) e não devem ser introduzidas no Copilot.
 
 <p class="caso-label">Conselho prático</p>
 
