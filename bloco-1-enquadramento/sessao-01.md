@@ -334,15 +334,6 @@ Use o modelo institucional de requerimento de junta médica e preencha-o manualm
 
 </details>
 
-## Questionário de consolidação
-
-Será disponibilizado um questionário curto de consolidação para verificar a aprendizagem dos conceitos da Sessão 1.
-
-[Link Microsoft Forms a inserir posteriormente]
-
-{: .note }
-> Os dados recolhidos neste formulário destinam-se exclusivamente ao acompanhamento pedagógico da formação e à produção de evidência de participação/avaliação no âmbito desta ação formativa. As respostas serão tratadas apenas pela entidade promotora e pelo formador, no contexto da formação.
-
 ## Materiais
 
 ### Para descarregar
