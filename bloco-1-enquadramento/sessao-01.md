@@ -256,12 +256,19 @@ Será disponibilizado um questionário curto de consolidação para verificar a 
 
 ## Materiais
 
-- [Régua do Semáforo]({{ site.baseurl }}/sessoes/sessao-01/Regua_do_Semaforo.pdf)
-- [Guia da Sessão 01]({{ site.baseurl }}/sessoes/sessao-01/Guia_Sessao_01.pdf)
-- [Casos Práticos S01]({{ site.baseurl }}/sessoes/sessao-01/Casos_Praticos_S01.pdf)
+### Para descarregar
+
+- [Régua do Semáforo (PDF)]({{ site.baseurl }}/sessoes/sessao-01/Regua_do_Semaforo.pdf) — para imprimir e ter na secretária
+- [Casos Práticos S01 (PDF)]({{ site.baseurl }}/sessoes/sessao-01/Casos_Praticos_S01.pdf) — os 8 cenários de classificação
 
 {: .note }
 > Alguns materiais podem estar protegidos por password. Caso seja solicitada, utilize a password comunicada pela ANFUP.
+
+### Para aprofundar
+
+- [Literacia em IA e AI Act]({% link recursos/literacia-ia-ai-act.md %}) — obrigação legal, três eixos da literacia, datas-chave
+- [Proteção de dados e decisões sobre pessoas]({% link recursos/protecao-dados-decisoes.md %}) — RGPD art. 22.º, apoio vs. decisão automatizada
+- [Sigilo e Copilot M365]({% link recursos/sigilo-copilot-m365.md %}) — dever de sigilo, permissões, oversharing
 
 ## Síntese da sessão
 
