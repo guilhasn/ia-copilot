@@ -60,6 +60,55 @@ Antes de escrever o prompt, a pergunta continua a ser:
 | Construção individual | 15 min | Criar 3 prompts úteis para o posto de trabalho |
 | Fecho | 5 min | Síntese e tarefa para a Sessão 3 |
 
+## Onde está o Copilot
+
+Antes de escrever o primeiro prompt, é preciso saber onde encontrar o Copilot e entender que existem duas formas de o usar.
+
+### Copilot Chat
+
+O Copilot Chat é o ponto de partida. Acede-se em [m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat) com a conta institucional.
+
+É um chat com IA onde se pode fazer perguntas, pedir ajuda com textos, resumir ficheiros e trabalhar com documentos. Funciona em dois modos:
+
+| Modo | O que faz | Precisa de licença Copilot? |
+|---|---|---|
+| **Web** | Responde com base em informação pública da Internet | Não — disponível com M365 A1/A3/A5 |
+| **Trabalho** | Acede a e-mails, ficheiros, reuniões e chats da organização | Sim — requer licença Copilot |
+
+### Copilot nas aplicações
+
+Com licença Copilot, o Copilot aparece também dentro das aplicações do Microsoft 365:
+
+| Aplicação | Onde encontrar | O que faz |
+|---|---|---|
+| **Outlook** | Botão Copilot na barra superior | Resume e-mails, redige respostas, extrai ações |
+| **Word** | Ícone Copilot na barra lateral | Redige rascunhos, reformula texto, resume documentos |
+| **Teams** | Painel Copilot durante ou após reunião | Resume reuniões, identifica decisões e ações |
+| **Excel** | Botão Copilot na barra superior | Analisa dados, identifica padrões, cria fórmulas |
+| **PowerPoint** | Botão Copilot na barra lateral | Cria apresentações a partir de documentos |
+
+### O comando "/" — referenciar conteúdo
+
+Uma das funcionalidades mais úteis do Copilot é a capacidade de referenciar conteúdo específico da organização diretamente no prompt. Para isso, basta escrever **"/"** seguido do nome do ficheiro, pessoa, reunião ou e-mail.
+
+O Copilot sugere automaticamente conteúdo relevante com base na atividade recente:
+
+| O que referenciar | Como | Exemplo |
+|---|---|---|
+| Ficheiro | /nome do ficheiro | /Relatório execução 2025 |
+| Pessoa | /nome da pessoa | /Helena Albuquerque |
+| Reunião | /título da reunião | /Reunião Conselho Pedagógico |
+| E-mail | /assunto do e-mail | /Pedido de certidão |
+
+Limites: até 10 ficheiros por referência; funciona no modo Trabalho do Copilot Chat e nas aplicações M365.
+
+*Fonte: [Microsoft Support — Refer to specific files and more](https://support.microsoft.com/en-us/microsoft-365-copilot/refer-to-specific-files-and-more-in-microsoft-365-copilot)*
+
+{: .important }
+> **Copilot Chat vs. ChatGPT:** O Copilot Chat com conta institucional acede aos dados da organização e não usa os prompts para treinar modelos. O ChatGPT (ou o Copilot pessoal) não tem estas proteções. **Nunca usar ferramentas pessoais para trabalho institucional.**
+
+---
+
 ## Anatomia do prompt — framework Microsoft
 
 A Microsoft recomenda que um prompt eficaz inclua até quatro componentes. Apenas o primeiro é obrigatório — os restantes melhoram a qualidade do resultado.
@@ -186,6 +235,47 @@ Depois da primeira resposta, testar pedidos de seguimento como:
 > *Cria uma versão para enviar à estudante e outra versão interna para a chefia.*
 
 > *Remove qualquer conclusão que não esteja explicitamente suportada nos e-mails.*
+
+## Prompts por aplicação
+
+O mesmo framework (Objetivo, Contexto, Fonte, Expectativas) aplica-se de forma diferente consoante a aplicação. Aqui estão exemplos adaptados ao contexto das IES:
+
+### Outlook — resumir e responder a e-mails
+
+> *Resume esta cadeia de e-mails e identifica: pedido principal, decisões tomadas, pendências e próximo passo. Formato: tabela. Tom: institucional. Não inventes informação.*
+
+> *Redige uma resposta ao estudante a informar que o pedido foi recebido e que falta o comprovativo de pagamento. Tom: cordial e profissional.*
+
+### Word — redigir e reformular
+
+> *Reformula este parágrafo para linguagem mais clara e acessível, mantendo o sentido e o tom institucional. Escreve em português de Portugal.*
+
+> *Com base no documento /Regulamento Académico, redige um resumo executivo de 1 página para apresentar ao Conselho de Gestão.*
+
+### Teams — reuniões e decisões
+
+> *Resume esta reunião. Identifica: decisões tomadas, responsáveis, prazos e pontos em aberto. Formato: lista com bullet points.*
+
+> *Que perguntas foram feitas durante a reunião e quem as colocou?*
+
+### Excel — análise de dados
+
+> *Analisa esta tabela e identifica os 5 centros de custo com maior desvio face ao orçamento previsto. Apresenta os resultados numa tabela ordenada por desvio.*
+
+*Fonte: Exemplos adaptados a partir do [Microsoft Learn — Craft effective prompts](https://learn.microsoft.com/en-us/training/paths/craft-effective-prompts-copilot-microsoft-365/) e da [Copilot Prompt Gallery](https://copilot.cloud.microsoft/en-US/prompts).*
+
+## Erros comuns
+
+| Erro | Porquê é um problema | O que fazer |
+|---|---|---|
+| Prompt vago ("resume isto") | O Copilot não sabe o que é relevante para si | Especificar objetivo, formato e critérios |
+| Não definir formato | O resultado vem em texto corrido, difícil de usar | Pedir tabela, lista, bullet points ou e-mail |
+| Não dar contexto institucional | O Copilot assume tom genérico ou informal | Indicar "atua como técnico de uma IES" e pedir pt-PT |
+| Confiar sem validar | O Copilot pode alucinar factos, nomes ou legislação | Verificar sempre antes de citar, enviar ou decidir |
+| Misturar dados internos com pesquisa Web | Pode gerar consultas externas com conteúdo interno | Separar pedidos internos de pedidos que envolvam pesquisa externa |
+| Esperar perfeição no primeiro pedido | O primeiro output é um rascunho, não um produto final | Iterar com pedidos de seguimento |
+
+---
 
 ## Exercício — Melhorar prompts fracos
 
