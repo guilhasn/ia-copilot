@@ -248,7 +248,9 @@ Deve trazer:
 ### Para aprofundar
 
 - [Régua do Semáforo]({% link recursos/regua-semaforo.md %}) — ferramenta de classificação da Sessão 1
-- [Planos e custos do Copilot]({% link recursos/planos-copilot.md %}) — comparação de planos e preços
+- [Referências Microsoft]({% link recursos/referencias-microsoft.md %}) — percursos de aprendizagem, galeria de prompts, cenários por função
+- [The art and science of prompting (PDF)](https://adoption.microsoft.com/files/copilot/Prompt-ingredients-one-pager.pdf) — diagrama visual dos ingredientes de um prompt (Microsoft, 1 página)
+- [Copilot Prompt Gallery](https://copilot.cloud.microsoft/en-US/prompts) — galeria online de prompts curados pela Microsoft
 
 ## Próxima sessão
 

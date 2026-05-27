@@ -25,6 +25,12 @@ Materiais transversais de apoio à formação, disponíveis ao longo de todo o c
 | [Proteção de dados e decisões sobre pessoas]({% link recursos/protecao-dados-decisoes.md %}) | RGPD art. 22.º, apoio vs. decisão automatizada, processos sensíveis |
 | [Sigilo e Copilot M365]({% link recursos/sigilo-copilot-m365.md %}) | Dever de sigilo, permissões, oversharing, o que pode ir para o Copilot |
 
+## Referências oficiais
+
+| Recurso | Descrição |
+|---|---|
+| [Referências Microsoft]({% link recursos/referencias-microsoft.md %}) | Links oficiais: percursos de aprendizagem, prompts, cenários, segurança, educação |
+
 ## Outros
 
 | Recurso | Descrição |
