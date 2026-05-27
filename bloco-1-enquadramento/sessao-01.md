@@ -144,6 +144,8 @@ Pontos a abordar:
 - o utilizador continua responsável pelo que faz com o output;
 - a formação é parte da maturidade institucional.
 
+A própria Microsoft define [6 princípios de IA responsável](https://www.microsoft.com/en-us/ai/principles-and-approach) que orientam o desenvolvimento e a utilização do Copilot: equidade, fiabilidade e segurança, privacidade e proteção, inclusão, transparência e responsabilização. Estes princípios estão alinhados com as exigências do AI Act e reforçam a ideia de que a utilização responsável de IA não é apenas uma obrigação legal — é uma boa prática reconhecida pela própria fabricante da ferramenta.
+
 Para aprofundar o enquadramento do AI Act em Portugal: [aiact-portugal.pt](https://aiact-portugal.pt/)
 
 ### 2. Proteção de dados e decisões sobre pessoas
@@ -179,6 +181,10 @@ Pontos a abordar:
 - não usar informação sigilosa sem enquadramento;
 - atenção a reuniões, atas, processos internos, candidaturas, dados de saúde e informação disciplinar;
 - o Copilot pode tornar mais visível informação a que o utilizador já tem acesso.
+
+A Microsoft garante contratualmente que, no Microsoft 365 Copilot, os prompts, respostas e dados acedidos via Microsoft Graph [não são usados para treinar modelos fundacionais](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy). O Copilot respeita as permissões existentes — só acede a dados que o utilizador já tem autorização para ver. As [etiquetas de sensibilidade Purview são respeitadas](https://learn.microsoft.com/en-us/microsoft-365/copilot/enterprise-data-protection) e propagadas para o output.
+
+Isto não significa que qualquer utilização seja segura. Significa que a infraestrutura é protegida — mas a responsabilidade pelo que se introduz e pelo que se faz com o output continua a ser do utilizador.
 
 Frase-chave:
 
@@ -420,6 +426,7 @@ Use o modelo institucional de requerimento de junta médica e preencha-o manualm
 - [Literacia em IA e AI Act]({% link recursos/literacia-ia-ai-act.md %}) — obrigação legal, três eixos da literacia, datas-chave
 - [Proteção de dados e decisões sobre pessoas]({% link recursos/protecao-dados-decisoes.md %}) — RGPD art. 22.º, apoio vs. decisão automatizada
 - [Sigilo e Copilot M365]({% link recursos/sigilo-copilot-m365.md %}) — dever de sigilo, permissões, oversharing
+- [Referências Microsoft]({% link recursos/referencias-microsoft.md %}) — percursos de aprendizagem, proteção de dados, IA responsável
 
 ## Síntese da sessão
 
