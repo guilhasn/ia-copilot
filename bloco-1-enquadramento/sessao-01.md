@@ -31,16 +31,6 @@ No final da sessão, os formandos deverão ser capazes de:
 - reconhecer quando a IA pode apoiar uma tarefa e quando pode interferir indevidamente numa decisão sobre pessoas;
 - identificar cuidados mínimos antes de introduzir informação institucional numa ferramenta de IA.
 
-## Abordagem pedagógica
-
-A sessão segue a abordagem **Choque e Andaime**:
-
-1. começar com uma demonstração provocadora;
-2. analisar por que motivo a prática pode ser problemática;
-3. introduzir os princípios legais e institucionais essenciais;
-4. entregar uma ferramenta prática de classificação;
-5. aplicar essa ferramenta a cenários reais do trabalho universitário.
-
 ## Fluxo da sessão
 
 | Momento | Duração | Atividade |
