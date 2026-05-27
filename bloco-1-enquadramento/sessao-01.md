@@ -138,12 +138,13 @@ Frase-chave:
 
 A Régua do Semáforo classifica os usos de IA em quatro categorias:
 
-| Categoria | Significado |
-|---|---|
-| Verde | Utilização simples, genérica ou com informação pública/não identificável |
-| Amarelo | Utilização possível, mas com cuidados, validação e minimização de dados |
-| Vermelho | Utilização de risco elevado, que pode afetar pessoas, decisões, direitos ou informação sensível |
-| Nunca | Utilização proibida ou manifestamente inadequada, como dados de saúde identificáveis, segredo médico ou informação altamente sigilosa sem enquadramento |
+<div class="semaforo-verde"><strong>🟢 Verde</strong> — Utilização simples, genérica ou com informação pública/não identificável</div>
+
+<div class="semaforo-amarelo"><strong>🟡 Amarelo</strong> — Utilização possível, mas com cuidados, validação e minimização de dados</div>
+
+<div class="semaforo-vermelho"><strong>🔴 Vermelho</strong> — Utilização de risco elevado, que pode afetar pessoas, decisões, direitos ou informação sensível</div>
+
+<div class="semaforo-nunca"><strong>⛔ Nunca</strong> — Utilização proibida ou manifestamente inadequada, como dados de saúde identificáveis, segredo médico ou informação altamente sigilosa sem enquadramento</div>
 
 Regra transversal:
 
