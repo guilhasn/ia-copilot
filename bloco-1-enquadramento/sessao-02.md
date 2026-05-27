@@ -87,17 +87,7 @@ Exemplo completo:
 
 > *Resume estes e-mails.*
 
-Perguntar à turma: **O que falta neste pedido?**
-
-Respostas esperadas:
-
-- falta objetivo;
-- falta destinatário;
-- falta formato;
-- falta nível de detalhe;
-- falta indicação do que é urgente;
-- falta pedido para assinalar dúvidas;
-- falta contexto institucional.
+Este prompt vai produzir um resultado. Mas será útil? Antes de ver a resposta do Copilot, pense: que informação está a faltar nesta instrução para o resultado ser realmente utilizável no seu trabalho?
 
 ### Prompt melhorado
 
