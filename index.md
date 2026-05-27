@@ -14,6 +14,10 @@ O objetivo é capacitar os formandos para utilizar ferramentas de Inteligência 
 
 O curso combina demonstrações práticas, exercícios guiados, casos de uso do contexto universitário e reflexão crítica sobre os limites da IA em processos sensíveis.
 
+{: .important }
+> **Microsoft 365 Copilot**
+> Esta formação utiliza o Microsoft 365 Copilot com conta institucional. Consulte a página [Planos e custos do Copilot]({% link recursos/planos-copilot.md %}) para conhecer as opções disponíveis para a sua IES.
+
 {: .note }
 > **Acesso aos materiais**
 > Alguns materiais descarregáveis podem estar protegidos por password.
