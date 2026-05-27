@@ -105,6 +105,26 @@ details {
   }
 }
 
+.badge-verde, .badge-amarelo, .badge-vermelho, .badge-nunca {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin: 0.75rem 0 0.25rem;
+}
+.badge-verde { background-color: #E8F5E9; color: #2E7D32; border: 1px solid #4CAF50; }
+.badge-amarelo { background-color: #FFF8E1; color: #F57F17; border: 1px solid #FFC107; }
+.badge-vermelho { background-color: #FFEBEE; color: #C62828; border: 1px solid #F44336; }
+.badge-nunca { background-color: #FFEBEE; color: #B71C1C; border: 1px solid #B71C1C; }
+
+.caso-label {
+  font-weight: 600;
+  color: #1F4E78;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
 blockquote {
   border-left-color: #1F4E78;
 }

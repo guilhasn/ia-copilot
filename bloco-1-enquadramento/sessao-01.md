@@ -155,105 +155,137 @@ Para cada cenário, classifique a utilização de IA segundo a Régua do Semáfo
 
 ### Caso 1 — Ofício-padrão
 
-<details>
+<details markdown="1">
 <summary>A Helena Albuquerque, Diretora de Serviços Académicos da UVV, precisa de enviar 15 ofícios de deferimento de matrícula esta semana. O texto é sempre o mesmo, com pequenas variações de redação. Pede ao Copilot no Word para reformular o ofício-padrão, tornando-o mais claro e moderno. O ofício não contém nomes, números de aluno nem quaisquer dados pessoais — é apenas o modelo em branco.</summary>
 
-**Classificação:** Verde
+<span class="badge-verde">🟢 Verde</span>
 
-**Porquê:** O conteúdo é genérico e público — um modelo institucional sem identificação de pessoas. Não há impacto decisório, não há dados pessoais, não há sigilo envolvido. A IA está a reformular linguagem, não a tomar decisões.
+<p class="caso-label">Porquê</p>
 
-**Conselho prático:** Este é o tipo de utilização ideal para começar. Pode usar livremente, mas valide sempre a redação final — o Copilot pode introduzir expressões de português do Brasil ou formulações pouco formais para um ofício institucional.
+O conteúdo é genérico e público — um modelo institucional sem identificação de pessoas. Não há impacto decisório, não há dados pessoais, não há sigilo envolvido. A IA está a reformular linguagem, não a tomar decisões.
+
+<p class="caso-label">Conselho prático</p>
+
+Este é o tipo de utilização ideal para começar. Pode usar livremente, mas valide sempre a redação final — o Copilot pode introduzir expressões de português do Brasil ou formulações pouco formais para um ofício institucional.
 
 </details>
 
 ### Caso 2 — Legislação pública
 
-<details>
+<details markdown="1">
 <summary>Um técnico dos Serviços Académicos precisa de preparar uma nota interna sobre os deveres dos trabalhadores em funções públicas. Abre o Copilot Chat e pede: "Resume os principais deveres do trabalhador previstos no artigo 73.º da Lei 35/2014 (LTFP)." O Copilot devolve um resumo estruturado com os deveres de zelo, obediência, lealdade, sigilo e assiduidade.</summary>
 
-**Classificação:** Verde
+<span class="badge-verde">🟢 Verde</span>
 
-**Porquê:** A legislação é pública e acessível a qualquer pessoa. O Copilot está a sintetizar informação publicada no Diário da República. Não há dados pessoais, não há informação institucional sensível.
+<p class="caso-label">Porquê</p>
 
-**Conselho prático:** Utilize sem restrições, mas verifique sempre as referências legais que o Copilot apresenta. A IA pode alucinar números de artigos, confundir versões consolidadas com versões originais, ou misturar legislação portuguesa com brasileira. Confirme no texto oficial antes de citar.
+A legislação é pública e acessível a qualquer pessoa. O Copilot está a sintetizar informação publicada no Diário da República. Não há dados pessoais, não há informação institucional sensível.
+
+<p class="caso-label">Conselho prático</p>
+
+Utilize sem restrições, mas verifique sempre as referências legais que o Copilot apresenta. A IA pode alucinar números de artigos, confundir versões consolidadas com versões originais, ou misturar legislação portuguesa com brasileira. Confirme no texto oficial antes de citar.
 
 </details>
 
 ### Caso 3 — E-mails operacionais
 
-<details>
+<details markdown="1">
 <summary>A Helena Albuquerque regressa de uma semana de férias e encontra 87 e-mails na caixa de entrada. Abre o Copilot no Outlook e pede: "Resume os e-mails desta semana e identifica os assuntos que precisam de resposta urgente." O Copilot analisa as mensagens e produz um resumo com 12 assuntos pendentes, incluindo nomes de colegas, referências a processos internos e um pedido do Provedor do Estudante.</summary>
 
-**Classificação:** Amarelo
+<span class="badge-amarelo">🟡 Amarelo</span>
 
-**Porquê:** Os e-mails contêm informação interna — nomes de colegas, referências a processos em curso, comunicações do Provedor. O Copilot está a aceder a dados dentro do tenant (o que é legítimo), mas o resumo pode expor informação que exige contexto para ser interpretada corretamente.
+<p class="caso-label">Porquê</p>
 
-**Conselho prático:** Pode usar, mas com três cuidados: (1) não partilhe o resumo do Copilot diretamente com terceiros sem rever — pode conter imprecisões ou omissões de nuance; (2) se algum e-mail tiver conteúdo sensível (reclamação, processo disciplinar, dados de saúde), o Copilot pode incluí-lo no resumo sem sinalizar; (3) desative a "Pesquisa Web" antes de usar esta funcionalidade.
+Os e-mails contêm informação interna — nomes de colegas, referências a processos em curso, comunicações do Provedor. O Copilot está a aceder a dados dentro do tenant (o que é legítimo), mas o resumo pode expor informação que exige contexto para ser interpretada corretamente.
+
+<p class="caso-label">Conselho prático</p>
+
+Pode usar, mas com três cuidados: (1) não partilhe o resumo do Copilot diretamente com terceiros sem rever — pode conter imprecisões ou omissões de nuance; (2) se algum e-mail tiver conteúdo sensível (reclamação, processo disciplinar, dados de saúde), o Copilot pode incluí-lo no resumo sem sinalizar; (3) desative a "Pesquisa Web" antes de usar esta funcionalidade.
 
 </details>
 
 ### Caso 4 — Ata de órgão universitário
 
-<details>
+<details markdown="1">
 <summary>Após uma reunião do Conselho Pedagógico de duas horas, gravada no Teams, a Helena precisa de redigir a ata formal. Pede ao Copilot no Teams: "Gera um resumo da reunião com as decisões tomadas e os pontos de ação." O Copilot produz um rascunho que inclui nomes dos membros presentes, votações, uma discussão sobre um caso de plágio de um estudante e a decisão de alterar o regulamento de avaliação.</summary>
 
-**Classificação:** Amarelo
+<span class="badge-amarelo">🟡 Amarelo</span>
 
-**Porquê:** O conteúdo da reunião é interno e pode incluir deliberações sensíveis. O rascunho do Copilot é um ponto de partida, não a ata — a ata formal é um ato com valor jurídico que deve ser redigida, revista e aprovada por quem de direito.
+<p class="caso-label">Porquê</p>
 
-**Conselho prático:** Pode usar o Copilot para gerar o rascunho inicial, mas: (1) reveja integralmente — o Copilot pode omitir nuances de discussão, atribuir posições incorretas a membros, ou confundir votações; (2) se a reunião teve pontos reservados (ex.: caso disciplinar, situação individual de aluno), avalie se esses pontos devem constar no rascunho gerado por IA ou ser redigidos manualmente; (3) a ata final é responsabilidade do secretário, não do Copilot.
+O conteúdo da reunião é interno e pode incluir deliberações sensíveis. O rascunho do Copilot é um ponto de partida, não a ata — a ata formal é um ato com valor jurídico que deve ser redigida, revista e aprovada por quem de direito.
+
+<p class="caso-label">Conselho prático</p>
+
+Pode usar o Copilot para gerar o rascunho inicial, mas: (1) reveja integralmente — o Copilot pode omitir nuances de discussão, atribuir posições incorretas a membros, ou confundir votações; (2) se a reunião teve pontos reservados (ex.: caso disciplinar, situação individual de aluno), avalie se esses pontos devem constar no rascunho gerado por IA ou ser redigidos manualmente; (3) a ata final é responsabilidade do secretário, não do Copilot.
 
 </details>
 
 ### Caso 5 — Propostas concursais
 
-<details>
+<details markdown="1">
 <summary>O Miguel Andrade, técnico de contratação pública da UVV, está a analisar 5 propostas para um concurso de fornecimento de mobiliário. As propostas foram abertas publicamente ontem. O Miguel cola as 5 propostas no Copilot e pede: "Compara as propostas pelo critério de preço e identifica a mais económica. Verifica se todas cumprem os requisitos mínimos do caderno de encargos."</summary>
 
-**Classificação:** Amarelo (pós-abertura pública) ou Vermelho (pré-abertura)
+<span class="badge-amarelo">🟡 Amarelo</span> ou <span class="badge-vermelho">🔴 Vermelho</span> dependendo da fase
 
-**Porquê:** Se as propostas já foram abertas publicamente, o conteúdo deixou de ser confidencial e a análise comparativa é apoio analítico legítimo. Mas se as propostas ainda não foram abertas, são confidenciais por lei (Código dos Contratos Públicos) e introduzi-las no Copilot pode constituir violação de sigilo. Mesmo após abertura, a IA não deve substituir a análise formal do júri — pode apoiar a extração e tabulação de dados, mas a avaliação e a decisão são do júri.
+<p class="caso-label">Porquê</p>
 
-**Conselho prático:** (1) Confirme sempre que as propostas já foram abertas publicamente antes de as introduzir no Copilot; (2) use o Copilot para tarefas mecânicas (extrair valores, comparar tabelas, verificar requisitos formais), não para juízos de mérito; (3) documente o que o Copilot fez e o que o júri decidiu de forma independente; (4) nunca cole cadernos de encargos ou propostas antes da abertura pública.
+Se as propostas já foram abertas publicamente, o conteúdo deixou de ser confidencial e a análise comparativa é apoio analítico legítimo. Mas se as propostas ainda não foram abertas, são confidenciais por lei (Código dos Contratos Públicos) e introduzi-las no Copilot pode constituir violação de sigilo. Mesmo após abertura, a IA não deve substituir a análise formal do júri — pode apoiar a extração e tabulação de dados, mas a avaliação e a decisão são do júri.
+
+<p class="caso-label">Conselho prático</p>
+
+(1) Confirme sempre que as propostas já foram abertas publicamente antes de as introduzir no Copilot; (2) use o Copilot para tarefas mecânicas (extrair valores, comparar tabelas, verificar requisitos formais), não para juízos de mérito; (3) documente o que o Copilot fez e o que o júri decidiu de forma independente; (4) nunca cole cadernos de encargos ou propostas antes da abertura pública.
 
 </details>
 
 ### Caso 6 — Avaliação de desempenho
 
-<details>
+<details markdown="1">
 <summary>A Catarina Pires, técnica de RH da UVV, está a apoiar a chefe de divisão na preparação das avaliações SIADAP. Tem 40 trabalhadores para avaliar. Abre o Copilot e pede: "Com base na autoavaliação da Maria Silva, técnica superior, propõe objetivos SMART para o próximo ciclo e sugere uma menção qualitativa." O Copilot gera 4 objetivos detalhados e propõe a menção de "Desempenho adequado" com fundamentação.</summary>
 
-**Classificação:** Vermelho
+<span class="badge-vermelho">🔴 Vermelho</span>
 
-**Porquê:** Esta utilização envolve uma pessoa identificada (Maria Silva) e o output da IA pode influenciar diretamente uma decisão de avaliação de desempenho — que tem efeitos na carreira, remuneração e progressão do trabalhador. Se a menção ou os objetivos gerados pelo Copilot forem adotados sem fundamentação humana autónoma, pode configurar decisão automatizada com efeito jurídico significativo. O trabalhador avaliado pode contestar a avaliação, e a existência de um output de IA não fundamentado autonomamente fragiliza juridicamente a decisão.
+<p class="caso-label">Porquê</p>
 
-**Conselho prático:** A IA pode apoiar a redação de objetivos genéricos ("redija 5 exemplos de objetivos SMART para um técnico superior de RH"), mas não deve receber dados de uma pessoa real nem propor menções ou fundamentações. A fundamentação é do avaliador. A menção é do avaliador. Se usar o Copilot, use-o com dados fictícios e adapte depois — nunca ao contrário.
+Esta utilização envolve uma pessoa identificada (Maria Silva) e o output da IA pode influenciar diretamente uma decisão de avaliação de desempenho — que tem efeitos na carreira, remuneração e progressão do trabalhador. Se a menção ou os objetivos gerados pelo Copilot forem adotados sem fundamentação humana autónoma, pode configurar decisão automatizada com efeito jurídico significativo. O trabalhador avaliado pode contestar a avaliação, e a existência de um output de IA não fundamentado autonomamente fragiliza juridicamente a decisão.
+
+<p class="caso-label">Conselho prático</p>
+
+A IA pode apoiar a redação de objetivos genéricos ("redija 5 exemplos de objetivos SMART para um técnico superior de RH"), mas não deve receber dados de uma pessoa real nem propor menções ou fundamentações. A fundamentação é do avaliador. A menção é do avaliador. Se usar o Copilot, use-o com dados fictícios e adapte depois — nunca ao contrário.
 
 </details>
 
 ### Caso 7 — Bolsa ou apoio social
 
-<details>
+<details markdown="1">
 <summary>Os Serviços de Ação Social da UVV receberam 200 candidaturas a bolsa de estudo. Um técnico dos SAS cola os dados dos candidatos (nome, rendimento do agregado, composição do agregado familiar, situação habitacional) no Copilot e pede: "Ordena estes candidatos por índice de carência, do mais carenciado para o menos carenciado."</summary>
 
-**Classificação:** Vermelho
+<span class="badge-vermelho">🔴 Vermelho</span>
 
-**Porquê:** Este cenário combina vários riscos: (1) dados pessoais de 200 pessoas identificadas, incluindo dados socioeconómicos de elevada sensibilidade contextual; (2) a IA estaria a produzir uma ordenação que pode determinar quem recebe e quem não recebe apoio social — decisão com impacto direto nos direitos dos estudantes; (3) o critério de ordenação da IA pode não corresponder ao regulamento da IES; (4) em certos casos, os dados podem incluir categorias especiais (deficiência, situação de saúde, composição familiar atípica).
+<p class="caso-label">Porquê</p>
 
-**Conselho prático:** A IA não deve ordenar, selecionar ou excluir candidatos a apoios sociais. A seriação deve ser feita pelo sistema institucional de atribuição de bolsas, com base nos critérios regulamentares. O Copilot pode ser usado para tarefas de apoio (ex.: "resume os critérios de atribuição de bolsa deste regulamento"), mas nunca para processar dados pessoais dos candidatos.
+Este cenário combina vários riscos: (1) dados pessoais de 200 pessoas identificadas, incluindo dados socioeconómicos de elevada sensibilidade contextual; (2) a IA estaria a produzir uma ordenação que pode determinar quem recebe e quem não recebe apoio social — decisão com impacto direto nos direitos dos estudantes; (3) o critério de ordenação da IA pode não corresponder ao regulamento da IES; (4) em certos casos, os dados podem incluir categorias especiais (deficiência, situação de saúde, composição familiar atípica).
+
+<p class="caso-label">Conselho prático</p>
+
+A IA não deve ordenar, selecionar ou excluir candidatos a apoios sociais. A seriação deve ser feita pelo sistema institucional de atribuição de bolsas, com base nos critérios regulamentares. O Copilot pode ser usado para tarefas de apoio (ex.: "resume os critérios de atribuição de bolsa deste regulamento"), mas nunca para processar dados pessoais dos candidatos.
 
 </details>
 
 ### Caso 8 — Atestado médico
 
-<details>
+<details markdown="1">
 <summary>Um funcionário dos RH da UVV precisa de preparar um requerimento de junta médica para um colega que entregou um atestado de incapacidade temporária. Digitaliza o atestado (que contém diagnóstico, medicação prescrita e período de incapacidade) e cola-o no Copilot com o pedido: "Com base neste atestado, redige um requerimento de convocação de junta médica."</summary>
 
-**Classificação:** Nunca
+<span class="badge-nunca">⛔ Nunca</span>
 
-**Porquê:** O atestado médico contém dados de saúde — uma categoria especial de dados pessoais protegida pelo artigo 9.º do RGPD. Estes dados têm proteção reforçada e não devem ser introduzidos numa ferramenta de IA generativa, independentemente de o Copilot estar dentro do tenant Microsoft. O diagnóstico, a medicação e a incapacidade de um trabalhador estão também protegidos pelo segredo médico. A introdução destes dados no Copilot cria um risco de exposição indevida e não tem base legal que a justifique.
+<p class="caso-label">Porquê</p>
 
-**Conselho prático:** Use o modelo institucional de requerimento de junta médica e preencha-o manualmente. Se precisar de ajuda com a redação do requerimento, peça ao Copilot um modelo genérico ("redige um modelo de requerimento de convocação de junta médica, sem dados concretos") e preencha os dados à mão. Nunca cole documentos médicos, atestados, relatórios clínicos ou informação de saúde no Copilot.
+O atestado médico contém dados de saúde — uma categoria especial de dados pessoais protegida pelo artigo 9.º do RGPD. Estes dados têm proteção reforçada e não devem ser introduzidos numa ferramenta de IA generativa, independentemente de o Copilot estar dentro do tenant Microsoft. O diagnóstico, a medicação e a incapacidade de um trabalhador estão também protegidos pelo segredo médico. A introdução destes dados no Copilot cria um risco de exposição indevida e não tem base legal que a justifique.
+
+<p class="caso-label">Conselho prático</p>
+
+Use o modelo institucional de requerimento de junta médica e preencha-o manualmente. Se precisar de ajuda com a redação do requerimento, peça ao Copilot um modelo genérico ("redige um modelo de requerimento de convocação de junta médica, sem dados concretos") e preencha os dados à mão. Nunca cole documentos médicos, atestados, relatórios clínicos ou informação de saúde no Copilot.
 
 </details>
 
