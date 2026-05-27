@@ -15,6 +15,6 @@ Este bloco estabelece as bases do curso: enquadramento legal, anatomia do prompt
 
 | Sessão | Tema | Casos de uso |
 |---:|---|---|
-| 1 | Porque é que isto não é um curso de Office | Sem caso operacional — sessão de moldura |
+| 1 | Mais do que um curso de Office | Sem caso operacional — sessão de moldura |
 | 2 | Falar com o Copilot — anatomia do prompt | Resumir cadeia de e-mails |
 | 3 | Biblioteca pessoal de prompts — fluência | Resumir e-mails (consolidação); redigir resposta a e-mail |

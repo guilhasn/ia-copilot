@@ -1,11 +1,11 @@
 ---
-title: "Sessão 1 — Porque é que isto não é um curso de Office"
+title: "Sessão 1 — Mais do que um curso de Office"
 layout: default
 parent: "Bloco 1 · Enquadramento e Literacia Crítica"
 nav_order: 1
 ---
 
-# Sessão 1 — Porque é que isto não é um curso de Office
+# Sessão 1 — Mais do que um curso de Office
 
 **Formação:** Inteligência Artificial — Aplicações ao trabalho das IES
 **Duração:** 2 horas
