@@ -1,0 +1,117 @@
+// ANFUP institutional color scheme for just-the-docs
+// Navy + green institutional palette
+
+$nav-width: 264px;
+$content-width: 900px;
+
+$link-color: #1F4E78;
+$btn-primary-color: #1F4E78;
+$base-button-color: #1F4E78;
+
+$body-background-color: #ffffff;
+$body-text-color: #2C3E50;
+$body-heading-color: #1F4E78;
+
+$sidebar-color: #F4F7FA;
+$nav-child-link-color: #2C3E50;
+
+$border-color: #DDE3EA;
+
+$search-background-color: #F4F7FA;
+
+$footer-background-color: #F4F7FA;
+
+$code-background-color: #EEF2F7;
+
+$green-000: #E8F5E9;
+$green-100: #C8E6C9;
+$green-200: #A5D6A7;
+$green-300: #4CAF50;
+$yellow-000: #FFF8E1;
+$yellow-100: #FFECB3;
+$yellow-200: #FFD54F;
+$yellow-300: #FFC107;
+$red-000: #FFEBEE;
+$red-100: #FFCDD2;
+$red-200: #EF9A9A;
+$red-300: #F44336;
+$purple-000: #F3E5F5;
+$purple-100: #E1BEE7;
+$purple-200: #CE93D8;
+$purple-300: #AB47BC;
+
+.semaforo-verde {
+  background-color: #E8F5E9;
+  border-left: 4px solid #4CAF50;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+}
+
+.semaforo-amarelo {
+  background-color: #FFF8E1;
+  border-left: 4px solid #FFC107;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+}
+
+.semaforo-vermelho {
+  background-color: #FFEBEE;
+  border-left: 4px solid #F44336;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+}
+
+.semaforo-nunca {
+  background-color: #FFEBEE;
+  border-left: 4px solid #B71C1C;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+h2 {
+  border-left: 4px solid #1F4E78;
+  padding-left: 0.75rem;
+}
+
+h3 {
+  border-left: 3px solid #DDE3EA;
+  padding-left: 0.75rem;
+}
+
+table {
+  th {
+    background-color: #1F4E78;
+    color: #ffffff;
+  }
+  tr:nth-child(even) {
+    background-color: #F4F7FA;
+  }
+  tr:hover {
+    background-color: #E8EDF2;
+  }
+}
+
+details {
+  border-left: 3px solid #1F4E78;
+  padding-left: 1rem;
+  margin: 1rem 0;
+
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #1F4E78;
+    padding: 0.5rem 0;
+  }
+}
+
+blockquote {
+  border-left-color: #1F4E78;
+}
+
+.legal {
+  font-style: italic;
+  background-color: #F4F7FA;
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+}
