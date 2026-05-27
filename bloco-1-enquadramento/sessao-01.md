@@ -50,9 +50,7 @@ A demonstração deve usar dados fictícios da Universidade de Vale Verde.
 
 Prompt demonstrativo:
 
-```text
-Gera uma avaliação de desempenho para Catarina Pires, técnica superior de recursos humanos da Universidade de Vale Verde, com base nos seguintes objetivos e autoavaliação: [dados fictícios].
-```
+> *Gera uma avaliação de desempenho para Catarina Pires, técnica superior de recursos humanos da Universidade de Vale Verde, com base nos seguintes objetivos e autoavaliação: [dados fictícios].*
 
 Mensagem pedagógica a transmitir:
 
@@ -68,9 +66,7 @@ Formulação juridicamente prudente:
 
 Prompt demonstrativo:
 
-```text
-Tenho quatro candidaturas a um cargo de direção de serviços numa universidade. Classifica os candidatos por adequação ao lugar e justifica a escolha.
-```
+> *Tenho quatro candidaturas a um cargo de direção de serviços numa universidade. Classifica os candidatos por adequação ao lugar e justifica a escolha.*
 
 Mensagem pedagógica a transmitir:
 
