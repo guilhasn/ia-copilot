@@ -269,17 +269,28 @@ Em pedidos que envolvam informação interna, evite misturar o conteúdo dos e-m
 ### Caso 4 — Ata de órgão universitário
 
 <details markdown="1">
-<summary>Após uma reunião do Conselho Pedagógico de duas horas, gravada no Teams, a Helena precisa de redigir a ata formal. Pede ao Copilot no Teams: "Gera um resumo da reunião com as decisões tomadas e os pontos de ação." O Copilot produz um rascunho que inclui nomes dos membros presentes, votações, uma discussão sobre um caso de plágio de um estudante e a decisão de alterar o regulamento de avaliação.</summary>
+<summary>Após uma reunião do Conselho Pedagógico de duas horas, gravada no Teams, a Helena precisa de preparar a ata formal. Pede ao Copilot no Teams: "Gera um resumo da reunião com as decisões tomadas e os pontos de ação." O Copilot produz um rascunho que inclui nomes dos membros presentes, votações, uma discussão sobre um caso de plágio de um estudante e a decisão de alterar o regulamento de avaliação.</summary>
 
 <span class="badge-amarelo">🟡 Amarelo</span>
 
 <p class="caso-label">Porquê</p>
 
-O conteúdo da reunião é interno e pode incluir deliberações sensíveis. O rascunho do Copilot é um ponto de partida, não a ata — a ata formal é um ato com valor jurídico que deve ser redigida, revista e aprovada por quem de direito.
+O conteúdo da reunião é interno e pode incluir deliberações sensíveis, posições individuais, votações, referências a estudantes ou matérias reservadas.
+
+O Copilot pode ser útil para criar um primeiro rascunho, identificar decisões, organizar pontos de ação e ajudar a estruturar a informação. No entanto, esse rascunho não é a ata formal.
+
+A ata é um documento institucional com valor administrativo e jurídico, devendo ser redigida, revista, validada e aprovada nos termos aplicáveis ao órgão.
 
 <p class="caso-label">Conselho prático</p>
 
-Pode usar o Copilot para gerar o rascunho inicial, mas: (1) reveja integralmente — o Copilot pode omitir nuances de discussão, atribuir posições incorretas a membros, ou confundir votações; (2) se a reunião teve pontos reservados (ex.: caso disciplinar, situação individual de aluno), avalie se esses pontos devem constar no rascunho gerado por IA ou ser redigidos manualmente; (3) a ata final é responsabilidade do secretário, não do Copilot.
+Pode usar o Copilot como apoio inicial, mas com quatro cuidados:
+
+1. reveja integralmente o rascunho, porque o Copilot pode omitir nuances, atribuir posições incorretas, confundir votações ou transformar discussão em decisão;
+2. confirme presenças, votações, deliberações, responsáveis e prazos com base na gravação, notas oficiais ou documentação da reunião;
+3. se existirem pontos reservados, como processos disciplinares, situações individuais de estudantes, casos de plágio ou dados pessoais sensíveis, trate-os segundo as regras internas do órgão e com minimização da informação;
+4. a ata final é responsabilidade de quem tem competência para a redigir e validar, não do Copilot.
+
+O output da IA deve ser usado como rascunho de trabalho, nunca como ata final.
 
 </details>
 
