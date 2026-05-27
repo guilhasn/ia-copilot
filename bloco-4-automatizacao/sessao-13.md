@@ -1,5 +1,5 @@
 ---
-title: "Sessão 13 — Copilot Pages e bibliotecas partilhadas"
+title: "S13 — Copilot Pages"
 layout: default
 parent: "Bloco 4 · Automatização Ligeira"
 nav_order: 1

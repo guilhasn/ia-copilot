@@ -1,0 +1,12 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var links = document.querySelectorAll("a[href^='http']");
+  var host = window.location.hostname;
+  for (var i = 0; i < links.length; i++) {
+    if (links[i].hostname !== host) {
+      links[i].setAttribute("target", "_blank");
+      links[i].setAttribute("rel", "noopener noreferrer");
+    }
+  }
+});
+</script>

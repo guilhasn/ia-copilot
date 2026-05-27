@@ -1,5 +1,5 @@
 ---
-title: "Sessão 5 — Outlook e Teams"
+title: "S5 — Outlook e Teams"
 layout: default
 parent: "Bloco 2 · Produtividade Individual"
 nav_order: 2

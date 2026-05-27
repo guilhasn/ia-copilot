@@ -1,5 +1,5 @@
 ---
-title: "Sessão 1 — Mais do que um curso de Office"
+title: "S1 — Mais do que Office"
 layout: default
 parent: "Bloco 1 · Enquadramento e Literacia Crítica"
 nav_order: 1

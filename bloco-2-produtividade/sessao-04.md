@@ -1,5 +1,5 @@
 ---
-title: "Sessão 4 — Word com Copilot"
+title: "S4 — Word"
 layout: default
 parent: "Bloco 2 · Produtividade Individual"
 nav_order: 1

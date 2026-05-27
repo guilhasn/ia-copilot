@@ -1,5 +1,5 @@
 ---
-title: "Sessão 11 — Júris, candidaturas e decisões sobre pessoas"
+title: "S11 — Júris e candidaturas"
 layout: default
 parent: "Bloco 3 · IA nos Processos Universitários"
 nav_order: 4

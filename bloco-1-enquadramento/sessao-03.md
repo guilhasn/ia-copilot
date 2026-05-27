@@ -1,5 +1,5 @@
 ---
-title: "Sessão 3 — Biblioteca pessoal de prompts"
+title: "S3 — Biblioteca de prompts"
 layout: default
 parent: "Bloco 1 · Enquadramento e Literacia Crítica"
 nav_order: 3

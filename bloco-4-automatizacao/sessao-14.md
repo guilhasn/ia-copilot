@@ -1,5 +1,5 @@
 ---
-title: "Sessão 14 — Literacia sobre agentes Copilot Studio"
+title: "S14 — Copilot Studio"
 layout: default
 parent: "Bloco 4 · Automatização Ligeira"
 nav_order: 2

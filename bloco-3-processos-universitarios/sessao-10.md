@@ -1,5 +1,5 @@
 ---
-title: "Sessão 10 — Contratação pública e análise documental"
+title: "S10 — Contratação pública"
 layout: default
 parent: "Bloco 3 · IA nos Processos Universitários"
 nav_order: 3

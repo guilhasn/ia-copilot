@@ -1,5 +1,5 @@
 ---
-title: "Sessão 8 — Serviços académicos, pedidos e regulamentos"
+title: "S8 — Serviços académicos"
 layout: default
 parent: "Bloco 3 · IA nos Processos Universitários"
 nav_order: 1

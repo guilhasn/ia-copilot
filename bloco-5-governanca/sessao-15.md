@@ -1,5 +1,5 @@
 ---
-title: "Sessão 15 — Plano de adoção pessoal"
+title: "S15 — Plano de adoção"
 layout: default
 parent: "Bloco 5 · Governança e Adoção"
 nav_order: 1

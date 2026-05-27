@@ -1,5 +1,5 @@
 ---
-title: "Sessão 12 — Qualidade, acreditação e prestação de contas"
+title: "S12 — Qualidade e contas"
 layout: default
 parent: "Bloco 3 · IA nos Processos Universitários"
 nav_order: 5

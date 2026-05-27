@@ -1,5 +1,5 @@
 ---
-title: "Sessão 6 — Excel com Copilot"
+title: "S6 — Excel"
 layout: default
 parent: "Bloco 2 · Produtividade Individual"
 nav_order: 3

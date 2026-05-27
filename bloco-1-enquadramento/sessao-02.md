@@ -1,5 +1,5 @@
 ---
-title: "Sessão 2 — Anatomia do prompt"
+title: "S2 — Anatomia do prompt"
 layout: default
 parent: "Bloco 1 · Enquadramento e Literacia Crítica"
 nav_order: 2

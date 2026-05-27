@@ -1,5 +1,5 @@
 ---
-title: "Sessão 7 — PowerPoint com Copilot"
+title: "S7 — PowerPoint"
 layout: default
 parent: "Bloco 2 · Produtividade Individual"
 nav_order: 4

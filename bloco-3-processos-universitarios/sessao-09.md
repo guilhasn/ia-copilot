@@ -1,5 +1,5 @@
 ---
-title: "Sessão 9 — Atas e gestão de reuniões dos órgãos"
+title: "S9 — Atas e reuniões"
 layout: default
 parent: "Bloco 3 · IA nos Processos Universitários"
 nav_order: 2
