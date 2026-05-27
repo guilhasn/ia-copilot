@@ -15,13 +15,15 @@ nav_order: 1
 **Bloco:** 1 · Enquadramento e Literacia Crítica
 **Caso operacional:** Sem caso operacional — sessão de moldura
 
-## Ideia central
+## Abertura da sessão
 
-Esta sessão estabelece a base do curso: a Inteligência Artificial aplicada ao trabalho das IES não deve ser tratada como uma simples funcionalidade adicional de produtividade, mas como uma tecnologia que exige literacia, critério, supervisão humana e compreensão dos limites legais e institucionais.
+Esta primeira sessão não tem como objetivo assustar ninguém nem transformar todos em juristas.
 
-A competência principal desta sessão é simples:
+O objetivo é mais simples: perceber como usar IA no trabalho das IES de forma útil, prática e consciente.
 
-> Antes de usar IA, parar alguns segundos e classificar o caso de uso.
+A pergunta que orienta a sessão é:
+
+> Antes de usar IA nesta tarefa, que dados estou a usar, quem pode ser afetado e que papel terá o output na decisão?
 
 ## Objetivos
 
@@ -74,19 +76,17 @@ Prompt demonstrativo:
 
 > *Reformula este texto de aviso aos estudantes para ficar mais claro, mantendo tom institucional, português de Portugal e sem alterar o sentido.*
 
-O Copilot devolve um texto mais claro, bem estruturado e pronto a usar. O formador comenta:
-
-> Isto é o lado bom. A IA acabou de poupar 15 minutos de trabalho repetitivo a qualquer técnico dos serviços académicos. É seguro, é útil, é eficiente. É para isto que estamos aqui.
-
-A seguir:
-
-> Agora vamos ver o lado em que a IA parece igualmente competente, mas já nos pode meter em terreno perigoso.
-
-Esta sequência é deliberada: **ganho prático → risco controlado → método para decidir.** A sessão não é uma aula de "não façam isto". É uma aula de "aprendam a distinguir quando podem e quando devem ter cuidado."
+O Copilot devolve um texto mais claro, bem estruturado e pronto a usar. É seguro, é útil, é eficiente. É para isto que estamos aqui.
 
 ## O lado em que a IA nos pode enganar
 
-A demonstração seguinte usa dados fictícios da Universidade de Vale Verde para mostrar situações em que o Copilot produz resultados que parecem competentes, mas que poderiam criar problemas reais.
+Vamos agora ver duas utilizações aparentemente semelhantes.
+
+Na primeira, a IA ajuda-nos a melhorar um texto. Na segunda, a IA começa a influenciar uma decisão sobre uma pessoa.
+
+A diferença entre uma e outra é o coração desta sessão.
+
+A demonstração seguinte usa dados fictícios da Universidade de Vale Verde.
 
 ### Exemplo 1 — Avaliação de desempenho
 
@@ -361,10 +361,11 @@ Será disponibilizado um questionário curto de consolidação para verificar a 
 
 ## Síntese da sessão
 
-A mensagem principal desta sessão é:
+A partir de hoje, a pergunta não deve ser apenas: "o Copilot consegue fazer isto?"
 
-> A IA pode acelerar muito trabalho administrativo e técnico, mas deve ser usada com critério.
-> Antes de usar Copilot, é necessário perceber que dados estão envolvidos, qual é a finalidade, quem pode ser afetado e se o output pode influenciar uma decisão.
+A pergunta certa é:
+
+> "Devo usar IA para isto, com estes dados, neste momento e para esta finalidade?"
 
 ## Próxima sessão
 
