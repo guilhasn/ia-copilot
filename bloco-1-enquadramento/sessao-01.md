@@ -297,21 +297,30 @@ O output da IA deve ser usado como rascunho de trabalho, nunca como ata final.
 ### Caso 5 — Propostas concursais
 
 <details markdown="1">
-<summary>O Miguel Andrade, técnico de contratação pública da UVV, está a analisar 5 propostas para um concurso de fornecimento de mobiliário. As propostas foram abertas publicamente ontem. O Miguel cola as 5 propostas no Copilot e pede: "Compara as propostas pelo critério de preço e identifica a mais económica. Verifica se todas cumprem os requisitos mínimos do caderno de encargos."</summary>
+<summary>O Miguel Andrade, técnico de contratação pública da UVV, está a analisar 5 propostas para um concurso de fornecimento de mobiliário. As propostas foram abertas na plataforma eletrónica e o Miguel tem legitimidade funcional para as analisar. Usa o Copilot no ambiente Microsoft 365 da instituição e pede: "Extrai para uma tabela o preço total de cada proposta e identifica, com base no texto das propostas, se existem referências explícitas aos requisitos mínimos do caderno de encargos." O Copilot produz uma tabela com os preços, referências aos requisitos mínimos e indicação dos pontos que exigem confirmação humana.</summary>
 
-<span class="badge-amarelo">🟡 Amarelo</span> ou <span class="badge-vermelho">🔴 Vermelho</span> dependendo da fase e do contexto
+<span class="badge-amarelo">🟡 Amarelo</span>
 
 <p class="caso-label">Porquê</p>
 
-A classificação depende da fase do procedimento, da legitimidade funcional do utilizador para aceder às propostas, da natureza da informação e do uso dado ao output.
+O Copilot está a ser usado como apoio à leitura, extração e organização da informação, não como decisor do procedimento.
 
-Mesmo depois da abertura formal das propostas, pode existir informação técnica, comercial ou estratégica que exige prudência. O Copilot pode apoiar tarefas mecânicas, como extrair preços, organizar requisitos ou construir uma tabela comparativa, mas não deve substituir a análise formal do júri ou do gestor do procedimento.
+Neste contexto, o risco principal não está no simples uso do Copilot, desde que o tratamento ocorra no ambiente institucional e o utilizador tenha legitimidade funcional para aceder aos documentos. O risco está em confiar no output sem validação ou em transformar uma tabela gerada por IA numa conclusão formal do procedimento.
 
-O risco aumenta se a IA for usada para fazer juízos de mérito, sugerir exclusões, avaliar cumprimento substancial ou influenciar a decisão de adjudicação.
+Mesmo quando as propostas já foram abertas, pode existir informação técnica, comercial ou estratégica que exige prudência. Além disso, a verificação de requisitos mínimos pode envolver interpretação técnica ou jurídica, não apenas extração automática de texto.
 
 <p class="caso-label">Conselho prático</p>
 
-Confirme sempre que tem legitimidade funcional para tratar os documentos, que a fase do procedimento permite essa análise e que não está a introduzir informação desnecessária ou sensível.
+Pode usar, mas com quatro cuidados:
+
+1. pedir ao Copilot tarefas objetivas: extrair preços, listar documentos, organizar requisitos e assinalar pontos a confirmar;
+2. evitar pedidos como "exclui propostas", "avalia o mérito", "recomenda a adjudicação" ou "redige a decisão do júri";
+3. validar sempre os resultados contra as propostas originais e o caderno de encargos;
+4. tratar o output como apoio de trabalho, nunca como decisão, fundamentação final ou parecer automático.
+
+Prompt seguro:
+
+> *Organiza a informação numa tabela e indica os pontos que exigem validação humana, sem formular conclusões de exclusão, mérito ou adjudicação.*
 
 </details>
 
