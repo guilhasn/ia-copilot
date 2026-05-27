@@ -80,6 +80,8 @@ Formulação prudente:
 
 ## Três pilares de enquadramento
 
+Os exemplos anteriores levantam uma questão concreta: como é que sabemos onde está a linha? A resposta assenta em três pilares — literacia, proteção de dados e sigilo — que, em conjunto, definem o espaço em que a IA pode ser usada com segurança no trabalho universitário.
+
 ### 1. Literacia em IA
 
 Ideia essencial:
@@ -136,7 +138,9 @@ Frase-chave:
 
 ## Régua do Semáforo
 
-A Régua do Semáforo classifica os usos de IA em quatro categorias:
+Os três pilares anteriores dão-nos os princípios, mas no dia-a-dia ninguém pára para reler o RGPD antes de abrir o Copilot. A Régua do Semáforo traduz esses princípios numa ferramenta prática de classificação rápida — uma forma simples de avaliar, em segundos, se determinada utilização de IA é segura, exige cuidados ou deve ser evitada.
+
+A Régua classifica os usos de IA em quatro categorias:
 
 <div class="semaforo-verde"><strong>🟢 Verde</strong> — Utilização simples, genérica ou com informação pública/não identificável</div>
 
@@ -152,7 +156,7 @@ Regra transversal:
 
 ## Casos práticos
 
-Para cada cenário, classifique a utilização de IA segundo a Régua do Semáforo. Clique para ver a resposta.
+Agora que conhece a Régua, é altura de a aplicar. Os cenários seguintes são situações concretas do trabalho universitário. Para cada um, tente classificar a utilização antes de ver a resposta — clique no cenário para revelar a classificação e a justificação.
 
 ### Caso 1 — Ofício-padrão
 
