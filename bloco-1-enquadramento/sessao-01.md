@@ -327,17 +327,45 @@ Prompt seguro:
 ### Caso 6 — Avaliação de desempenho
 
 <details markdown="1">
-<summary>A Catarina Pires, técnica de RH da UVV, está a apoiar a chefe de divisão na preparação das avaliações SIADAP. Tem 40 trabalhadores para avaliar. Abre o Copilot e pede: "Com base na autoavaliação da Maria Silva, técnica superior, propõe objetivos SMART para o próximo ciclo e sugere uma menção qualitativa." O Copilot gera 4 objetivos detalhados e propõe a menção de "Desempenho adequado" com fundamentação.</summary>
+<summary>A Catarina Pires, técnica de RH da UVV, está a apoiar a chefe de divisão na preparação das avaliações SIADAP. Tem 40 trabalhadores para avaliar. Abre o Copilot e pede: "Com base na autoavaliação da Maria Silva, técnica superior, propõe objetivos SMART para o próximo ciclo e sugere uma menção qualitativa." O Copilot gera 4 objetivos detalhados e propõe a menção de "Desempenho adequado", com fundamentação.</summary>
 
 <span class="badge-vermelho">🔴 Vermelho</span>
 
 <p class="caso-label">Porquê</p>
 
-Esta utilização envolve uma pessoa identificada (Maria Silva) e o output da IA pode influenciar diretamente uma decisão de avaliação de desempenho — que tem efeitos na carreira, remuneração e progressão do trabalhador. Se a menção ou os objetivos gerados pelo Copilot forem adotados sem fundamentação humana autónoma, pode configurar decisão automatizada com efeito jurídico significativo. O trabalhador avaliado pode contestar a avaliação, e a existência de um output de IA não fundamentado autonomamente fragiliza juridicamente a decisão.
+Esta utilização envolve uma trabalhadora identificada e informação diretamente relacionada com o seu desempenho.
+
+O problema não é apenas usar o Copilot. O problema é pedir à IA que produza elementos que podem influenciar a avaliação individual: objetivos personalizados, menção qualitativa e fundamentação.
+
+A avaliação de desempenho pode ter efeitos na carreira, remuneração, reconhecimento profissional, necessidades de formação e desenvolvimento do trabalhador. Por isso, a fundamentação, a apreciação e a menção qualitativa devem resultar de juízo humano autónomo, fundamentado e assumido pelo avaliador competente.
+
+Se a menção, a fundamentação ou os objetivos individualizados forem gerados pelo Copilot e adotados sem apreciação humana autónoma, documentada e substancial, a avaliação pode ficar juridicamente fragilizada e ser contestada.
 
 <p class="caso-label">Conselho prático</p>
 
-A IA pode apoiar a redação de objetivos genéricos ("redija 5 exemplos de objetivos SMART para um técnico superior de RH"), mas não deve receber dados de uma pessoa real nem propor menções ou fundamentações. A fundamentação é do avaliador. A menção é do avaliador. Se usar o Copilot, use-o com dados fictícios e adapte depois — nunca ao contrário.
+A IA pode apoiar a redação de exemplos genéricos, modelos de objetivos SMART ou checklists de validação, desde que não sejam usados dados de uma pessoa real.
+
+Exemplos aceitáveis (🟡 Amarelo):
+
+> *Dá-me 5 exemplos genéricos de objetivos SMART para um técnico superior de recursos humanos numa instituição de ensino superior.*
+
+> *Revê este objetivo e indica se é específico, mensurável, alcançável, relevante e temporal, sem avaliar a pessoa.*
+
+> *Sugere formas alternativas de redigir este objetivo, mantendo o conteúdo definido pelo avaliador.*
+
+Evitar (🔴 Vermelho):
+
+> *Sugere a menção qualitativa.*
+
+> *Fundamenta a avaliação da Maria Silva.*
+
+> *Compara esta trabalhadora com os restantes elementos da equipa.*
+
+> *Propõe objetivos com base na autoavaliação desta pessoa.*
+
+A fundamentação é do avaliador. A menção é do avaliador. A IA pode apoiar a forma, não substituir o juízo avaliativo.
+
+> No SIADAP, o Copilot pode ser assistente de redação. Não pode ser coavaliador escondido.
 
 </details>
 
