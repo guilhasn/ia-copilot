@@ -242,17 +242,27 @@ A legislação é pública e acessível a qualquer pessoa. O Copilot está a sin
 ### Caso 3 — E-mails operacionais
 
 <details markdown="1">
-<summary>A Helena Albuquerque regressa de uma semana de férias e encontra 87 e-mails na caixa de entrada. Abre o Copilot no Outlook e pede: "Resume os e-mails desta semana e identifica os assuntos que precisam de resposta urgente." O Copilot analisa as mensagens e produz um resumo com 12 assuntos pendentes, incluindo nomes de colegas, referências a processos internos e um pedido do Provedor do Estudante.</summary>
+<summary>A Helena Albuquerque regressa de uma semana de férias e encontra 87 e-mails na caixa de entrada. Abre o Copilot no Outlook e pede: "Resume os e-mails desta semana e identifica os assuntos que precisam de resposta urgente." O Copilot analisa as mensagens a que a Helena já tem acesso e produz um resumo com 12 assuntos pendentes, incluindo nomes de colegas, referências a processos internos e um pedido do Provedor do Estudante.</summary>
 
 <span class="badge-amarelo">🟡 Amarelo</span>
 
 <p class="caso-label">Porquê</p>
 
-Os e-mails contêm informação interna — nomes de colegas, referências a processos em curso, comunicações do Provedor. O Copilot está a aceder a dados dentro do tenant (o que é legítimo), mas o resumo pode expor informação que exige contexto para ser interpretada corretamente.
+No Microsoft 365 Copilot, o tratamento ocorre no contexto protegido do Microsoft 365 e respeita as permissões da utilizadora. Ou seja, o problema principal não é o Copilot "ver" dados a que a Helena não teria acesso.
+
+O risco está noutro ponto: o resumo pode agregar informação interna, retirar frases do seu contexto, omitir nuances importantes ou incluir assuntos sensíveis sem que a utilizadora se aperceba imediatamente.
+
+Além disso, um resumo produzido pelo Copilot pode parecer "limpo" e pronto a partilhar, mas pode conter informação que não deve circular fora do serviço ou fora do grupo de pessoas com legitimidade para a conhecer.
 
 <p class="caso-label">Conselho prático</p>
 
-Pode usar, mas com três cuidados: (1) não partilhe o resumo do Copilot diretamente com terceiros sem rever — pode conter imprecisões ou omissões de nuance; (2) se algum e-mail tiver conteúdo sensível (reclamação, processo disciplinar, dados de saúde), o Copilot pode incluí-lo no resumo sem sinalizar; (3) em conteúdos internos ou potencialmente sensíveis, confirme se a pesquisa Web está desativada ou evite pedidos que possam gerar consultas externas desnecessárias. Não misture informação interna, nomes, processos ou dados sensíveis com pedidos que impliquem pesquisa externa.
+Pode usar, mas com três cuidados:
+
+1. não partilhe o resumo diretamente com terceiros sem rever;
+2. confirme se o resumo inclui reclamações, processos disciplinares, dados de saúde, informação de estudantes ou outros temas sensíveis;
+3. use o output como apoio à triagem pessoal, não como registo oficial nem como comunicação automática.
+
+Em pedidos que envolvam informação interna, evite misturar o conteúdo dos e-mails com pedidos de pesquisa externa ou informação da Web. Se precisar de informação externa, faça esse pedido separadamente e sem incluir dados internos, nomes, processos ou conteúdo sensível.
 
 </details>
 
