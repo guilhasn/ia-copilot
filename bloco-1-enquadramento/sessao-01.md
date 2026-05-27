@@ -16,9 +16,6 @@ nav_order: 1
 **Bloco:** 1 · Enquadramento e Literacia Crítica
 **Caso operacional:** Sem caso operacional — sessão inicial
 
-{: .important }
-> **Ainda não tem Copilot?** Consulte a página [Planos e custos do Copilot]({% link recursos/planos-copilot.md %}) para conhecer as opções disponíveis para a sua IES. Na próxima sessão, vamos precisar de acesso ao Microsoft 365 Copilot com conta institucional.
-
 ## Ideia central
 
 Esta sessão estabelece a base do curso: a Inteligência Artificial aplicada ao trabalho das IES pode aumentar produtividade, qualidade e capacidade de análise, mas não deve ser usada de forma automática ou acrítica.
