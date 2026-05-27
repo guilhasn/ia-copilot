@@ -109,6 +109,21 @@ Limites: até 10 ficheiros por referência; funciona no modo Trabalho do Copilot
 
 ---
 
+## O que posso fazer com o Copilot?
+
+A Microsoft organiza as utilizações do Copilot em quatro tipos de ação:
+
+| Ação | O que significa | Exemplo no contexto das IES |
+|---|---|---|
+| **Pôr em dia** *(Catch up)* | Perceber o que aconteceu — reuniões, e-mails, decisões | "Que decisões foram tomadas na reunião do Conselho Pedagógico?" |
+| **Criar** *(Create)* | Gerar conteúdo novo — rascunhos, apresentações, respostas | "Redige um ofício de resposta a este pedido de certidão." |
+| **Perguntar** *(Ask)* | Obter informação ou ideias — pesquisa, brainstorming | "Que requisitos prevê o regulamento para a emissão de certidões?" |
+| **Editar** *(Edit)* | Melhorar conteúdo existente — reformular, resumir, traduzir | "Reformula este parágrafo para linguagem mais clara e acessível." |
+
+Quando abre o Copilot, a primeira pergunta a fazer é: **o que quero fazer?** Pôr-me em dia, criar algo novo, perguntar ou melhorar algo que já existe?
+
+*Fonte: [Microsoft Support — Get started writing prompts](https://support.microsoft.com/en-us/topic/learn-about-copilot-prompts-f6c3b467-f07c-4db1-ae54-ffac96184dd5)*
+
 ## Anatomia do prompt — framework Microsoft
 
 A Microsoft recomenda que um prompt eficaz inclua até quatro componentes. Apenas o primeiro é obrigatório — os restantes melhoram a qualidade do resultado.
@@ -141,6 +156,9 @@ A Microsoft recomenda cinco práticas para obter melhores resultados:
 3. **Usar instruções positivas** — dizer o que fazer, não apenas o que evitar. Usar construções "se... então..." para guiar o Copilot.
 4. **Iterar e regenerar** — o primeiro resultado raramente é o final. Refinar progressivamente com pedidos de seguimento.
 5. **Rever e validar sempre** — o Copilot pode gerar conteúdo impreciso, enviesado ou desadequado. A validação humana é indispensável.
+
+{: .note }
+> **O mesmo prompt pode dar resultados diferentes.** O Copilot é construído sobre redes neuronais que introduzem alguma aleatoriedade. Mesmo com a mesma instrução, os resultados podem variar ligeiramente entre utilizações. Isto é normal — não significa que a ferramenta esteja a funcionar mal. Significa que o output deve ser sempre tratado como rascunho, não como produto final.
 
 *Fonte: [Microsoft Support — Get better results with prompting](https://support.microsoft.com/en-us/topic/get-better-results-with-copilot-prompting-77251d6c-e162-479d-b398-9e46cf73da55)*
 
