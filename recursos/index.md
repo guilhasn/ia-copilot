@@ -20,6 +20,7 @@ Materiais transversais de apoio à formação, disponíveis ao longo de todo o c
 
 | Recurso | Descrição |
 |---|---|
+| [Planos e custos do Copilot]({% link recursos/planos-copilot.md %}) | Comparação de planos, preços em Portugal, cenários para IES |
 | [Literacia em IA e AI Act]({% link recursos/literacia-ia-ai-act.md %}) | Obrigação legal, três eixos da literacia, datas-chave |
 | [Proteção de dados e decisões sobre pessoas]({% link recursos/protecao-dados-decisoes.md %}) | RGPD art. 22.º, apoio vs. decisão automatizada, processos sensíveis |
 | [Sigilo e Copilot M365]({% link recursos/sigilo-copilot-m365.md %}) | Dever de sigilo, permissões, oversharing, o que pode ir para o Copilot |
