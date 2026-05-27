@@ -408,7 +408,6 @@ Use o modelo institucional de requerimento de junta médica e preencha-o manualm
 ### Para descarregar
 
 - [Régua do Semáforo (PDF)]({{ site.baseurl }}/sessoes/sessao-01/Regua_do_Semaforo.pdf) — para imprimir e ter na secretária
-- [Casos Práticos S01 (PDF)]({{ site.baseurl }}/sessoes/sessao-01/Casos_Praticos_S01.pdf) — os 8 cenários de classificação
 
 {: .note }
 > Alguns materiais podem estar protegidos por password. Caso seja solicitada, utilize a password comunicada pela ANFUP.
