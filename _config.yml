@@ -1,0 +1,69 @@
+title: "IA — Aplicações ao trabalho das IES"
+description: "Hub formativo da ação de formação ANFUP sobre Inteligência Artificial aplicada ao trabalho das instituições de ensino superior. Microsoft 365 Copilot com enquadramento legal (AI Act, RGPD, dever de sigilo)."
+url: "https://guilhasn.github.io"
+baseurl: "/ia-copilot"
+lang: pt-PT
+
+theme: just-the-docs
+color_scheme: anfup
+
+callouts:
+  note:
+    title: "Nota"
+    color: blue
+  important:
+    title: "Importante"
+    color: yellow
+  warning:
+    title: "Aviso"
+    color: red
+  verde:
+    title: "Verde"
+    color: green
+  amarelo:
+    title: "Amarelo"
+    color: yellow
+  vermelho:
+    title: "Vermelho"
+    color: red
+  nunca:
+    title: "Nunca"
+    color: red
+
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+
+footer_content: "Formação ANFUP © 2026 Nuno Salvador. Conteúdo licenciado sob <a href=\"https://creativecommons.org/licenses/by/4.0/deed.pt\">CC BY 4.0</a>."
+last_edit_timestamp: true
+last_edit_time_format: "%d %b %Y às %H:%M"
+
+nav_external_links:
+  - title: "AI Act (EUR-Lex)"
+    url: "https://eur-lex.europa.eu/legal-content/PT/TXT/PDF/?uri=OJ:L_202401689"
+  - title: "ANFUP"
+    url: "https://www.anfup.pt/"
+
+aux_links:
+  "Repo GitHub":
+    - "https://github.com/guilhasn/ia-copilot"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
+  - LICENSE
+  - vendor
+  - tools
+  - docs

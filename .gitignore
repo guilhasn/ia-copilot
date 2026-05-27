@@ -1,0 +1,16 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.tmp
+*.bak
+__pycache__/
+*.pyc
+node_modules/
+desktop.ini
