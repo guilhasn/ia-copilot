@@ -1,11 +1,11 @@
 ---
-title: "S2 — Do pedido vago ao prompt eficaz"
+title: "S2 — Anatomia do prompt"
 layout: default
 parent: "Bloco 1 · Enquadramento e Literacia Crítica"
 nav_order: 2
 ---
 
-# Sessão 2 — Falar com o Copilot: do pedido vago ao prompt eficaz
+# Sessão 2 — Falar com o Copilot — anatomia do prompt
 
 <button class="btn-print-page" onclick="printPage()">🖨️ PDF</button>
 

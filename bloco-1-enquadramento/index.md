@@ -16,5 +16,5 @@ Este bloco estabelece as bases do curso: enquadramento legal, anatomia do prompt
 | Sessão | Tema | Casos de uso |
 |---:|---|---|
 | 1 | Usar IA com critério no trabalho das IES | Sem caso operacional — sessão de moldura |
-| 2 | Falar com o Copilot — do pedido vago ao prompt eficaz | Resumir cadeia de e-mails |
+| 2 | Falar com o Copilot — anatomia do prompt | Resumir cadeia de e-mails |
 | 3 | Biblioteca pessoal de prompts — fluência | Resumir e-mails (consolidação); redigir resposta a e-mail |

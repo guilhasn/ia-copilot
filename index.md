@@ -26,7 +26,7 @@ O curso combina demonstrações práticas, exercícios guiados, casos de uso do 
 | Sessão | Bloco | Tema | Estado |
 |---:|---|---|---|
 | 1 | Enquadramento | Usar IA com critério no trabalho das IES | Preparada |
-| 2 | Enquadramento | Do pedido vago ao prompt eficaz | Preparada |
+| 2 | Enquadramento | Falar com o Copilot — anatomia do prompt | Preparada |
 | 3 | Enquadramento | Biblioteca pessoal de prompts | A preparar |
 | 4 | Produtividade | Word com Copilot | A preparar |
 | 5 | Produtividade | Outlook e Teams | A preparar |
