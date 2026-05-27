@@ -23,7 +23,7 @@ Esta página compara os diferentes planos do Microsoft Copilot e os respetivos c
 | Copilot Pro (pessoal) | ~€20/mês | Indivíduos | Sim (pessoal) | Não | Não |
 | M365 Copilot para Empresas | €15,60/mês | PMEs (até 300 utilizadores) | Sim | Sim | Sim |
 | M365 Copilot Enterprise | ~€27/mês | Grandes organizações | Sim | Sim | Sim |
-| M365 Copilot Educação | ~€18 USD/mês | IES (staff e estudantes 13+) | Sim | Sim | Sim |
+| M365 Copilot Educação | ~€16,50/mês | IES (staff e estudantes 13+) | Sim | Sim | Sim |
 
 ---
 
@@ -124,7 +124,7 @@ Sem limite de utilizadores.
 
 ### Microsoft 365 Copilot para Educação
 
-**Preço:** ~18 USD/utilizador/mês (~€16,50, dependendo do câmbio e contrato de volume)
+**Preço:** ~€16,50/utilizador/mês (valor indicativo; depende do contrato de volume da IES)
 
 Requer licença M365 A3 ou A5.
 
