@@ -1,8 +1,5 @@
 <style>
 @media print {
-  details { display: block !important; }
-  details > summary { display: none !important; }
-  details > *:not(summary) { display: block !important; }
   .site-nav, .site-header, .site-footer, .search, .aux-nav { display: none !important; }
   .btn-print-page { display: none !important; }
   .main-content { max-width: 100% !important; margin: 0 !important; padding: 0 !important; }
@@ -33,8 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 function printPage() {
-  var details = document.querySelectorAll("details");
-  details.forEach(function(d) { d.setAttribute("open", ""); });
-  setTimeout(function() { window.print(); }, 300);
+  window.print();
 }
 </script>
