@@ -29,6 +29,9 @@ callouts:
   nunca:
     title: "Nunca"
     color: red
+  discussao:
+    title: "Discussão"
+    color: purple
 
 toc_heading: "Índice"
 

@@ -137,6 +137,8 @@ A Helena Albuquerque tem reunião amanhã, 16-06-2026, com os 4 coordenadores de
 
 A Helena vai entregar a cada coordenador um resumo executivo de 1 página. Tem 30 minutos. Vai usar Copilot — mas a versão final é dela.
 
+📎 **Para fazeres este exercício, descarrega o dataset:** [Dataset_S04_Documentos.docx]({{ site.baseurl }}/sessoes/sessao-04/Dataset_S04_Documentos.docx) — abre no Word, vai à secção DOC-A.
+
 ### Prompt de trabalho
 
 > *Goal: Produz um resumo executivo do Regulamento de Avaliação dos Mestrados da UVV: 1 parágrafo de abertura (3-4 linhas) + 5 a 7 pontos-chave em bullets. Cita o número do artigo em cada ponto. Mantém os termos jurídicos técnicos (não simplifiques "audiência prévia", "regime especial", "época especial").*
@@ -184,11 +186,12 @@ O Regulamento de Avaliação dos Mestrados da UVV (Despacho Reitoral n.º 87/202
 
 Esta versão cumpre: estrutura 1 parágrafo + 7 bullets, citação dos artigos com n.º, termos técnicos preservados ("aprovação cumulativa", "remissão automática", "época especial"), e inclui os detalhes que o Copilot tipicamente esquece — desistência, arredondamento, os 5 estatutos especiais.
 
-### Discussão em sala
-
-1. *"Que pontos do regulamento ficaram de fora deste resumo?"* — tipicamente ficam de fora a desistência (art. 8.º), o arredondamento (art. 9.º), e os estatutos especiais.
-2. *"Algum bullet está formalmente incorreto?"* — sim, na maioria das execuções: aprovação não exige só ≥10 valores; exige cumulativamente ≥10 + ≥75% assiduidade (art. 3.º/2 + art. 10.º — são duas condições, não uma).
-3. *"Algum termo deslizou para inglês ou pt-BR?"* — variável entre execuções.
+{: .discussao }
+> Três perguntas para discutir em sala:
+>
+> 1. *"Que pontos do regulamento ficaram de fora deste resumo?"* — tipicamente ficam de fora a desistência (art. 8.º), o arredondamento (art. 9.º), e os estatutos especiais.
+> 2. *"Algum bullet está formalmente incorreto?"* — sim, na maioria das execuções: aprovação não exige só ≥10 valores; exige cumulativamente ≥10 + ≥75% assiduidade (art. 3.º/2 + art. 10.º — são duas condições, não uma).
+> 3. *"Algum termo deslizou para inglês ou pt-BR?"* — variável entre execuções.
 
 > O Copilot deu-vos 70% do trabalho em 10 segundos. Os outros 30% são vocês. Sumarizar não é entregar. É entregar **depois de validar**.
 
@@ -199,6 +202,8 @@ Esta versão cumpre: estrutura 1 parágrafo + 7 bullets, citação dos artigos c
 A Helena recebeu hoje do Gabinete Jurídico o *Parecer sobre prescrição de propinas* (DOC-B). Tem de explicá-lo a 3 técnicos da Divisão de Matrículas (não-juristas) em reunião de 30 min.
 
 Vai usar Copilot para reformular o parecer em linguagem clara mantendo o rigor — em particular, **a ambiguidade entre os prazos de 8 e 20 anos não deve ser resolvida**, porque o parecer não a resolve. O resumo tem de honrar a complexidade.
+
+📎 **Para fazeres este exercício, descarrega o dataset:** [Dataset_S04_Documentos.docx]({{ site.baseurl }}/sessoes/sessao-04/Dataset_S04_Documentos.docx) — abre no Word, vai à secção DOC-B.
 
 {: .important }
 > **DOC-B é fictício — produzido para fins pedagógicos.** Num caso real, um parecer jurídico identificável (com número de dossier, valor, datas, identificação de estudante) **não deve ser colado tal e qual no Copilot** sem avaliação prévia de minimização de dados pessoais e de legitimidade funcional. Para o exercício da sessão, o dataset foi construído sem dados pessoais identificáveis.
@@ -238,11 +243,12 @@ Recomendação do Gabinete: não instaurar execução fiscal até o STA decidir.
 
 Esta reformulação cumpre: linguagem clara em pt-pt, frases curtas em voz ativa, **as duas posições igualmente expostas** (preserva a ambiguidade), termos técnicos mantidos quando importam ("prescrição", "jurisprudência", "execução fiscal", "abate à dívida ativa"), e termos simplificados sem perder rigor ("podemos cobrar" em vez de "exigibilidade da obrigação").
 
-### Discussão em sala
-
-1. *"Manteve a ambiguidade?"* — tipicamente o output tende a tomar uma das posições, e é esse o ponto a apanhar.
-2. *"Que termos técnicos foram mantidos? Quais simplificados?"* — mantidos: prescrição, jurisprudência. Simplificados (corretamente): "não podemos cobrar" em vez de "extinção da exigibilidade".
-3. *"Há simplificação que perdeu rigor?"* — possível: "não interromperam o prazo" é correto mas poderia manter ressalva "à luz da doutrina maioritária".
+{: .discussao }
+> Três perguntas para discutir em sala:
+>
+> 1. *"Manteve a ambiguidade?"* — tipicamente o output tende a tomar uma das posições, e é esse o ponto a apanhar.
+> 2. *"Que termos técnicos foram mantidos? Quais simplificados?"* — mantidos: prescrição, jurisprudência. Simplificados (corretamente): "não podemos cobrar" em vez de "extinção da exigibilidade".
+> 3. *"Há simplificação que perdeu rigor?"* — possível: "não interromperam o prazo" é correto mas poderia manter ressalva "à luz da doutrina maioritária".
 
 > Linguagem clara **não é** simplificação. É comunicação rigorosa sem jargão desnecessário.
 
