@@ -19,11 +19,11 @@ nav_order: 1
 
 ## Ideia central
 
-Primeira sessão "aplicada" do curso. Saímos da moldura conceptual do Bloco 1 (Classificar → Pedir → Sistematizar) para o trabalho de produtividade real com o Copilot dentro do Word. É o primeiro encontro em que os formandos sentem o ganho de tempo no trabalho que é genuinamente seu.
+Primeira sessão "aplicada" do curso. Saímos da moldura concetual do Bloco 1 (Classificar → Pedir → Sistematizar) para o trabalho de produtividade real com o Copilot dentro do Word. É o primeiro encontro em que os formandos sentem o ganho de tempo no trabalho que é genuinamente seu.
 
-Mas o trabalho da Helena Albuquerque, Directora de Serviços Académicos, tem efeito jurídico. Sumarizar mal um regulamento ou reformular mal um parecer propaga erro pela instituição. Validação cruzada não é opcional — é o tema transversal da sessão.
+Mas o trabalho da Helena Albuquerque, Diretora de Serviços Académicos, tem efeito jurídico. Sumarizar mal um regulamento ou reformular mal um parecer propaga erro pela instituição. Validação cruzada não é opcional — é o tema transversal da sessão.
 
-> O Copilot é um redactor júnior brilhante. Faz draft em 30 segundos. Mas não assina actos. Tu assinas — e a tua assinatura cobre o output dele.
+> O Copilot é um redator júnior brilhante. Faz draft em 30 segundos. Mas não assina atos. Tu assinas — e a tua assinatura cobre o output dele.
 
 ## Objetivos
 
@@ -32,7 +32,7 @@ No final da sessão, os formandos deverão ser capazes de:
 - sumarizar um regulamento longo num resumo executivo com citação dos artigos;
 - reformular linguagem técnica jurídica em linguagem clara, preservando o rigor — incluindo ambiguidades intencionais;
 - pedir ao Copilot que identifique ambiguidades num documento como técnica reutilizável (o "wow moment");
-- detectar os 4 sinais de output problemático, incluindo a alucinação por omissão (o mais subtil);
+- detetar os 4 sinais de output problemático, incluindo a alucinação por omissão (o mais subtil);
 - aplicar o método CCC (Cita-Confirma-Conta) como validação reutilizável em 30 segundos;
 - reconhecer o ponto de fronteira ético — quando o Copilot pode ajudar na forma e quando a substância tem de ser inteiramente humana.
 
@@ -51,7 +51,7 @@ Esta sessão completa a apresentação das 4 ações do Microsoft 365 Copilot: *
 
 | Momento | Duração | Atividade |
 |---|---:|---|
-| Abertura — objectivos e Régua amarela | 7 min | Recuperar a Régua; calibrar tom encorajador + responsabilidade |
+| Abertura — objetivos e Régua amarela | 7 min | Recuperar a Régua; calibrar tom encorajador + responsabilidade |
 | Demonstração ao vivo | 15 min | Casos #1 e #2 executados pelo formador; formandos observam e anotam |
 | Linguagem clara — conceito-chave | 10 min | 7 princípios AMA + bases legais |
 | Exercício guiado — Casos #1 e #3 | 25 min | Formandos sumarizam DOC-A e pedem ambiguidades |
@@ -86,7 +86,7 @@ Limites: até 10 ficheiros por referência; só funciona no modo *Trabalho* (com
 
 ## Linguagem clara — porque importa {#linguagem-clara}
 
-**Definição.** Linguagem clara é comunicação administrativa redigida de forma que o destinatário compreenda à primeira leitura, **sem perder o rigor técnico** necessário ao efeito jurídico do acto.
+**Definição.** Linguagem clara é comunicação administrativa redigida de forma que o destinatário compreenda à primeira leitura, **sem perder o rigor técnico** necessário ao efeito jurídico do ato.
 
 Não é sinónimo de simplificação. Pode haver linguagem clara sobre temas complexos. O que muda é a estrutura, a sintaxe, e as palavras escolhidas — **não o conteúdo**.
 
@@ -94,7 +94,7 @@ Não é sinónimo de simplificação. Pode haver linguagem clara sobre temas com
 
 1. Estrutura em **ordem natural** (sujeito → verbo → complementos)
 2. **Frases curtas** (≤ 25 palavras quando possível)
-3. **Voz activa** (em vez de "foi decidido por", escrever "decidi")
+3. **Voz ativa** (em vez de "foi decidido por", escrever "decidi")
 4. **Palavras concretas** (em vez de "proceder à análise", escrever "analisar")
 5. **Sujeito explícito** (não esconder quem age)
 6. **Evitar jargão** desnecessário
@@ -106,14 +106,14 @@ Não é sinónimo de simplificação. Pode haver linguagem clara sobre temas com
 |---|---|---|
 | Decreto-Lei n.º 135/99 | art. 11.º | Princípio da clareza na relação Administração-administrados |
 | Código do Procedimento Administrativo | art. 9.º | Princípio da boa administração |
-| CPA | art. 153.º | Fundamentação dos actos administrativos deve ser acessível ao destinatário |
+| CPA | art. 153.º | Fundamentação dos atos administrativos deve ser acessível ao destinatário |
 | Manual de Linguagem Clara | AMA (2019) | Guia oficial para administração pública portuguesa |
 
 ### O que isto limita
 
 - ❌ Simplificar terminologia jurídica com efeito específico ("prescrição", "deferimento", "audiência prévia")
 - ❌ Aceitar reformulações que **resolvam** ambiguidades intencionais do original
-- ❌ Usar a redacção do Copilot **tal e qual** num acto administrativo (despacho, ofício, notificação)
+- ❌ Usar a redação do Copilot **tal e qual** num ato administrativo (despacho, ofício, notificação)
 - ❌ Sumarizar pareceres que toquem dossiers individuais sem pseudonimização
 
 ### O que isto permite
@@ -121,15 +121,15 @@ Não é sinónimo de simplificação. Pode haver linguagem clara sobre temas com
 - ✅ Sumarizar regulamentos públicos para uso em reuniões internas, com citação de artigos
 - ✅ Reformular pareceres em linguagem clara para audiências não-juristas, mantendo rigor
 - ✅ Gerar drafts de ofícios a partir de modelos institucionais, para depois rever
-- ✅ Detectar incoerências entre o original e o output (validação cruzada)
+- ✅ Detetar incoerências entre o original e o output (validação cruzada)
 
 ## Demonstração — o que vão ver
 
-A demonstração do formador no início da sessão tem duas partes ao vivo. O objectivo é estabelecer o tom: *o Copilot dá 70% do trabalho em 10 segundos; os outros 30% somos nós.*
+A demonstração do formador no início da sessão tem duas partes ao vivo. O objetivo é estabelecer o tom: *o Copilot dá 70% do trabalho em 10 segundos; os outros 30% somos nós.*
 
 **Parte A — Sumarização do regulamento.** O formador pede ao Copilot um resumo executivo do *Regulamento de Avaliação dos Mestrados da UVV* (DOC-A do dataset). Os formandos observam e anotam três coisas: o que o Copilot faz bem, o que esquece, e o que inventa. **Estes três padrões repetem-se sempre que sumarizam.**
 
-**Parte B — Reformulação do parecer com ambiguidade.** O formador pede ao Copilot que reformule o *Parecer sobre prescrição de propinas* (DOC-B) em linguagem clara. A armadilha: o parecer tem **ambiguidade deliberada entre o prazo de 8 anos (LGT) e 20 anos (CC)** que o STA ainda não uniformizou. O Copilot tipicamente *escolhe uma das posições* — é exactamente o que **não pode** acontecer. Os formandos vão ver o Copilot derrapar e vão ver como se corrige.
+**Parte B — Reformulação do parecer com ambiguidade.** O formador pede ao Copilot que reformule o *Parecer sobre prescrição de propinas* (DOC-B) em linguagem clara. A armadilha: o parecer tem **ambiguidade deliberada entre o prazo de 8 anos (LGT) e 20 anos (CC)** que o STA ainda não uniformizou. O Copilot tipicamente *escolhe uma das posições* — é exatamente o que **não pode** acontecer. Os formandos vão ver o Copilot derrapar e vão ver como se corrige.
 
 Os três casos que se seguem (#1, #2, #3) reaplicam estas lições — os formandos passam de observadores a praticantes.
 
@@ -137,7 +137,7 @@ Os três casos que se seguem (#1, #2, #3) reaplicam estas lições — os forman
 
 ### Cenário
 
-A Helena Albuquerque tem reunião amanhã, 16-06-2026, com os 4 coordenadores de mestrado da UVV. O assunto é a aplicação do *Regulamento de Avaliação dos Mestrados* (em vigor desde 2024) — querem confirmar pontos críticos antes da abertura do ano lectivo 2026/2027.
+A Helena Albuquerque tem reunião amanhã, 16-06-2026, com os 4 coordenadores de mestrado da UVV. O assunto é a aplicação do *Regulamento de Avaliação dos Mestrados* (em vigor desde 2024) — querem confirmar pontos críticos antes da abertura do ano letivo 2026/2027.
 
 A Helena vai entregar a cada coordenador um resumo executivo de 1 página. Tem 30 minutos. Vai usar Copilot — mas a versão final é dela.
 
@@ -160,9 +160,9 @@ O Copilot tipicamente devolve algo do género:
 > - *Avaliação contínua exige ≥3 elementos avaliativos e 75% de assiduidade (art. 3.º).*
 > - *Considera-se aprovado quem obtém ≥10 valores (arts. 3.º/2 e 10.º).*
 > - *Estudantes com estatuto especial podem optar por exame final único (art. 5.º).*
-> - *Inscrição em exame final em plataforma electrónica institucional (art. 7.º).*
+> - *Inscrição em exame final em plataforma eletrónica institucional (art. 7.º).*
 > - *Melhoria de classificação só é possível para classificações ≤14 valores e numa única vez por unidade curricular (art. 12.º).*
-> - *Reprovação em 3 inscrições consecutivas activa apreciação do coordenador (art. 11.º).*
+> - *Reprovação em 3 inscrições consecutivas ativa apreciação do coordenador (art. 11.º).*
 
 **Há três coisas a apanhar neste output:**
 
@@ -175,15 +175,15 @@ Estes são detalhes que tipicamente um coordenador vai precisar. O resumo dá 70
 ### Versão modelo (validada pela formadora)
 
 ```
-O Regulamento de Avaliação dos Mestrados da UVV (Despacho Reitoral n.º 87/2024, em vigor desde 01-10-2024) regula as três modalidades de avaliação aplicáveis às unidades curriculares de mestrado, excluindo dissertação, projecto e estágio. Aplica o Decreto-Lei n.º 65/2018 (Regime Jurídico dos Graus). Os pontos críticos para a aplicação prática são:
+O Regulamento de Avaliação dos Mestrados da UVV (Despacho Reitoral n.º 87/2024, em vigor desde 01-10-2024) regula as três modalidades de avaliação aplicáveis às unidades curriculares de mestrado, excluindo dissertação, projeto e estágio. Aplica o Decreto-Lei n.º 65/2018 (Regime Jurídico dos Graus). Os pontos críticos para a aplicação prática são:
 
 1. Avaliação contínua (art. 3.º) — preferencial; ≥3 elementos avaliativos, peso definido na ficha da UC; aprovação exige cumulativamente ≥10 valores e ≥75% de assiduidade. Falta sem justificação a >1 elemento determina remissão automática para exame final.
-2. Exame final (art. 4.º) — ≥120 min; peso de 100%; aprovação ≥10 valores. Inscrição obrigatória em plataforma electrónica institucional (art. 7.º), com taxa para época especial.
+2. Exame final (art. 4.º) — ≥120 min; peso de 100%; aprovação ≥10 valores. Inscrição obrigatória em plataforma eletrónica institucional (art. 7.º), com taxa para época especial.
 3. Avaliação especial (art. 5.º) — disponível para 5 estatutos: trabalhador-estudante, atleta de alta competição, dirigente associativo, alta competência artística e necessidades educativas especiais. Requerimento até 15 dias úteis após calendário académico.
 4. Desistência (art. 8.º) — formalizada por escrito até 5 dias úteis antes do último elemento de avaliação contínua.
 5. Classificação (art. 9.º) — escala 0-20, sem casas decimais, arredondamento por defeito até décimas e à unidade no resultado final.
 6. Melhoria de classificação (art. 12.º) — exige classificação inicial ≤14 valores; uma única vez por UC durante todo o ciclo de estudos; substituição apenas se a nova for superior.
-7. Reprovação repetida (art. 11.º) — 3 inscrições consecutivas activam apreciação pelo coordenador, com possível reorientação académica.
+7. Reprovação repetida (art. 11.º) — 3 inscrições consecutivas ativam apreciação pelo coordenador, com possível reorientação académica.
 ```
 
 Esta versão cumpre: estrutura 1 parágrafo + 7 bullets, citação dos artigos com n.º, termos técnicos preservados ("aprovação cumulativa", "remissão automática", "época especial"), e inclui os detalhes que o Copilot tipicamente esquece — desistência, arredondamento, os 5 estatutos especiais.
@@ -191,7 +191,7 @@ Esta versão cumpre: estrutura 1 parágrafo + 7 bullets, citação dos artigos c
 ### Discussão em sala
 
 1. *"Que pontos do regulamento ficaram de fora deste resumo?"* — esperar identificação de desistência, arredondamento, estatutos especiais.
-2. *"Algum bullet está formalmente incorrecto?"* — sim, na maioria das execuções: aprovação não exige só ≥10 valores; exige cumulativamente ≥10 + ≥75% assiduidade (art. 3.º/2 + art. 10.º — são duas condições, não uma).
+2. *"Algum bullet está formalmente incorreto?"* — sim, na maioria das execuções: aprovação não exige só ≥10 valores; exige cumulativamente ≥10 + ≥75% assiduidade (art. 3.º/2 + art. 10.º — são duas condições, não uma).
 3. *"Algum termo deslizou para inglês ou pt-BR?"* — variável entre execuções.
 
 > O Copilot deu-vos 70% do trabalho em 10 segundos. Os outros 30% são vocês. Sumarizar não é entregar. É entregar **depois de validar**.
@@ -234,16 +234,16 @@ O Supremo Tribunal Administrativo está a apreciar um recurso para uniformizar j
 
 As cartas registadas que enviámos em 2019 e 2020 não interromperam os prazos, à luz da doutrina maioritária — por não serem notificações judiciais.
 
-Recomendação do Gabinete: não instaurar execução fiscal até o STA decidir. Encaminhar o processo para abate à dívida activa, conforme regulamento de cobrança.
+Recomendação do Gabinete: não instaurar execução fiscal até o STA decidir. Encaminhar o processo para abate à dívida ativa, conforme regulamento de cobrança.
 ```
 
-Esta reformulação cumpre: linguagem clara em pt-pt, frases curtas em voz activa, **as duas posições igualmente expostas** (preserva a ambiguidade), termos técnicos mantidos quando importam ("prescrição", "jurisprudência", "execução fiscal", "abate à dívida activa"), e termos simplificados sem perder rigor ("podemos cobrar" em vez de "exigibilidade da obrigação").
+Esta reformulação cumpre: linguagem clara em pt-pt, frases curtas em voz ativa, **as duas posições igualmente expostas** (preserva a ambiguidade), termos técnicos mantidos quando importam ("prescrição", "jurisprudência", "execução fiscal", "abate à dívida ativa"), e termos simplificados sem perder rigor ("podemos cobrar" em vez de "exigibilidade da obrigação").
 
 ### Discussão em sala
 
 1. *"Manteve a ambiguidade?"* — esperar identificação do output tendencial a tomar uma das posições.
-2. *"Que termos técnicos foram mantidos? Quais simplificados?"* — mantidos: prescrição, jurisprudência. Simplificados (correctamente): "não podemos cobrar" em vez de "extinção da exigibilidade".
-3. *"Há simplificação que perdeu rigor?"* — possível: "não interromperam o prazo" é correcto mas poderia manter ressalva "à luz da doutrina maioritária".
+2. *"Que termos técnicos foram mantidos? Quais simplificados?"* — mantidos: prescrição, jurisprudência. Simplificados (corretamente): "não podemos cobrar" em vez de "extinção da exigibilidade".
+3. *"Há simplificação que perdeu rigor?"* — possível: "não interromperam o prazo" é correto mas poderia manter ressalva "à luz da doutrina maioritária".
 
 > Linguagem clara **não é** simplificação. É comunicação rigorosa sem jargão desnecessário.
 
@@ -264,10 +264,10 @@ Corre o prompt ao vivo:
 > *Agora lê o regulamento na íntegra e identifica 5 pontos onde o texto deixa margem para interpretação ou omite tratamento de casos previsíveis.*
 >
 > *Para cada ponto:*
-> *(a) cita o artigo e número exacto;*
+> *(a) cita o artigo e número exato;*
 > *(b) descreve a ambiguidade em 1 frase;*
 > *(c) sugere que aplicação prática poderia gerar conflito;*
-> *(d) propõe redacção alternativa que resolveria.*
+> *(d) propõe redação alternativa que resolveria.*
 >
 > *Devolve em tabela Markdown.*
 
@@ -285,8 +285,8 @@ Para validar o output, a tabela seguinte tem as **6 ambiguidades reais** do regu
 | 2 | art. 4.º/1 vs art. 5.º | "Estatuto especial" no art. 4.º permite exame final; art. 5.º só fala de "avaliação especial" sem mencionar exame. São o mesmo regime? | Trabalhador-estudante quer exame final ordinário em vez dos adiamentos do art. 5.º — pode? |
 | 3 | art. 5.º/1 | E se um aluno tiver **dois estatutos cumulativos** (trabalhador-estudante + atleta de alta competição)? | Aluno-atleta-trabalhador em jogo internacional na semana de exame: que tratamento? |
 | 4 | art. 7.º/2 vs art. 4.º | Inscrição em exame de "época especial" é taxada; mas o art. 4.º não distingue exame ordinário de recurso. Há duas épocas ou só uma? | Aluno reprova em avaliação contínua e quer fazer exame: paga taxa? |
-| 5 | art. 11.º/2 | "3 inscrições consecutivas" — o que conta como "consecutivas"? Anos lectivos seguidos? Qualquer época? Inclui melhorias? | Aluno reprova em 2023, pausa em 2024, reprova em 2025 e 2026. São 3 consecutivas? |
-| 6 | art. 12.º/1 | Melhoria possível para classificação ≤14 valores. E se o aluno foi aprovado por engano com 15 e quer baixar para tentar melhorar? | Aluno detectou erro de cálculo da nota: pode pedir melhoria? |
+| 5 | art. 11.º/2 | "3 inscrições consecutivas" — o que conta como "consecutivas"? Anos letivos seguidos? Qualquer época? Inclui melhorias? | Aluno reprova em 2023, pausa em 2024, reprova em 2025 e 2026. São 3 consecutivas? |
+| 6 | art. 12.º/1 | Melhoria possível para classificação ≤14 valores. E se o aluno foi aprovado por engano com 15 e quer baixar para tentar melhorar? | Aluno detetou erro de cálculo da nota: pode pedir melhoria? |
 
 ### A frase a fixar
 
@@ -299,27 +299,27 @@ A mesma técnica funciona com:
 - **Regulamentos académicos** — antes de aprovar em Conselho Pedagógico
 - **Pareceres jurídicos** — encontrar contradições internas
 - **Cadernos de encargos** — identificar lacunas antes de publicar
-- **Despachos e ofícios** — detectar ambiguidades antes de assinar
+- **Despachos e ofícios** — detetar ambiguidades antes de assinar
 
 ## Validar em 30 segundos — os 4 sinais e o método CCC {#validar-30-segundos}
 
-Esta é a peça nomeada que vai viver com vocês para além da S04. Os **4 sinais** descrevem *o que detectar*. O **método CCC** descreve *como detectar em 30 segundos*.
+Esta é a peça nomeada que vai viver com vocês para além da S04. Os **4 sinais** descrevem *o que detetar*. O **método CCC** descreve *como detetar em 30 segundos*.
 
 ### Os 4 sinais de output problemático {#quatro-sinais}
 
-Por ordem de dificuldade crescente de detecção. Cada um com exemplo extraído do regulamento DOC-A.
+Por ordem de dificuldade crescente de deteção. Cada um com exemplo extraído do regulamento DOC-A.
 
 **Sinal 1 — Alucinação de artigos.** O Copilot inventa referências:
 
 > *"...nos termos do art. 12.º-A do Regulamento..."*
 
-Não existe nenhum 12.º-A. Detecção: confirmar contra o índice do regulamento. **Tempo: poucos segundos.** É o mais visível dos quatro.
+Não existe nenhum 12.º-A. Deteção: confirmar contra o índice do regulamento. **Tempo: poucos segundos.** É o mais visível dos quatro.
 
 **Sinal 2 — Code-switching.** O output desliza para pt-BR ou inglês em registos formais:
 
 > *"O regulamento estabelece que a inscription em compliance com a deadline..."*
 
-Comum quando não pedimos explicitamente "português europeu" no prompt. Detecção: leitura atenta. Mitigação: cláusula explícita no prompt.
+Comum quando não pedimos explicitamente "português europeu" no prompt. Deteção: leitura atenta. Mitigação: cláusula explícita no prompt.
 
 **Sinal 3 — Sobre-simplificação.** O Copilot transforma afirmações cautelosas em categóricas — perde-se a nuance que dá rigor jurídico.
 
@@ -327,9 +327,9 @@ Comum quando não pedimos explicitamente "português europeu" no prompt. Detecç
 >
 > Output: *"O STA já decidiu que se aplica o prazo de 20 anos."*
 
-Inverteu a realidade. Detecção: comparar o tom categórico do output com a cautela do original.
+Inverteu a realidade. Deteção: comparar o tom categórico do output com a cautela do original.
 
-**Sinal 4 — Alucinação por omissão.** O mais subtil e o mais perigoso. O Copilot **não inventa nada** — mas **omite excepções críticas** que mudam o sentido.
+**Sinal 4 — Alucinação por omissão.** O mais subtil e o mais perigoso. O Copilot **não inventa nada** — mas **omite exceções críticas** que mudam o sentido.
 
 Exemplo. O art. 3.º do regulamento tem três números:
 
@@ -341,11 +341,11 @@ Output típico do Copilot:
 
 > *"Avaliação contínua exige ≥3 elementos avaliativos e aprovação com ≥10 valores (art. 3.º)."*
 
-Tudo o que está é **verdade**. Mas omitiu o n.º 3 — exactamente a regra que afecta o aluno desorganizado, que é o caso mais comum em prática.
+Tudo o que está é **verdade**. Mas omitiu o n.º 3 — exatamente a regra que afeta o aluno desorganizado, que é o caso mais comum em prática.
 
 **Porque é o pior sinal:** os outros três revelam-se a um leitor atento. A alucinação por omissão **não revela nada** — o leitor sai a achar que sabe, sem saber o que não sabe.
 
-**Detecção.** Para cada artigo citado, verificar se tem subníveis (n.º 1, 2, 3...). Se sim, ver se o resumo cita o número específico ("art. 3.º n.º 1") ou só o artigo ("art. 3.º"). Se cita só o artigo sem número, **provavelmente** está a omitir números seguintes.
+**Deteção.** Para cada artigo citado, verificar se tem subníveis (n.º 1, 2, 3...). Se sim, ver se o resumo cita o número específico ("art. 3.º n.º 1") ou só o artigo ("art. 3.º"). Se cita só o artigo sem número, **provavelmente** está a omitir números seguintes.
 
 {: .important }
 > **Quatro coisas que o Copilot faz mal. A pior é a que não vês.**
@@ -364,7 +364,7 @@ Técnica de validação em 30 segundos, três passos:
 
 Em 30 segundos, o CCC apanha **três dos quatro sinais**: artigos inventados (Sinal 1), omissões de capítulo inteiro (parcialmente Sinal 4), e por comparação rápida, sobre-simplificação evidente (Sinal 3).
 
-**Não apanha** a alucinação por omissão silenciosa de subníveis dentro de um artigo correctamente citado (Sinal 4 na sua forma mais subtil). Para apanhar isso, é preciso ler o artigo no original — mais 2 minutos por artigo crítico.
+**Não apanha** a alucinação por omissão silenciosa de subníveis dentro de um artigo corretamente citado (Sinal 4 na sua forma mais subtil). Para apanhar isso, é preciso ler o artigo no original — mais 2 minutos por artigo crítico.
 
 > Em 30 segundos não vão apanhar tudo. Apanham 3 de 4. E em 2 minutos extra, apanham o 4.º. Isto é o equilíbrio entre velocidade e diligência. **Esta sessão vale por isto.**
 
@@ -393,7 +393,7 @@ Analogia: como uma mesa onde cabem 50 páginas. Se trazes 60, não consegues pô
 
 O Copilot **não é uma calculadora**. A mesma pergunta no mesmo dia pode dar respostas ligeiramente diferentes — há aleatoriedade controlada na geração.
 
-Analogia: como pedires duas vezes a mesma redacção a um redactor humano — vai dar versões parecidas mas não idênticas. Para tarefas críticas (resumir um regulamento que vai a Conselho), pedir 3 versões e comparar — divergências revelam pontos onde o Copilot está a "adivinhar".
+Analogia: como pedires duas vezes a mesma redação a um redator humano — vai dar versões parecidas mas não idênticas. Para tarefas críticas (resumir um regulamento que vai a Conselho), pedir 3 versões e comparar — divergências revelam pontos onde o Copilot está a "adivinhar".
 
 ### Limitações específicas do Copilot no Word
 
@@ -414,7 +414,7 @@ A abordagem ingénua é fazer 3 prompts isolados — gera versões inconsistente
 
 A **abordagem profissional** usa prompt em cascata, três passos:
 
-1. **Extracção** — pede ao Copilot uma matriz do regulamento com 3 colunas (artigo · tema · audiência relevante: Executiva / Técnica / Alunos).
+1. **Extração** — pede ao Copilot uma matriz do regulamento com 3 colunas (artigo · tema · audiência relevante: Executiva / Técnica / Alunos).
 2. **Geração paralela** — para cada audiência, pede uma versão usando **a mesma matriz** como input, com restrições específicas de tom e comprimento.
 3. **Validação cruzada** — pede ao Copilot que compare as 3 versões e identifique inconsistências factuais.
 
@@ -428,7 +428,7 @@ Sem resposta certa. É discussão.
 
 ### Cenário
 
-A Helena recebe hoje, à pressa, pedido para preparar **projecto de resposta** a uma reclamação detalhada de uma aluna que alega ter recebido tratamento discriminatório por causa da sua condição psiquiátrica num exame oral. A reclamação tem 3 páginas, é angustiada, e refere por nome três docentes envolvidos. Tem 2 horas para o draft.
+A Helena recebe hoje, à pressa, pedido para preparar **projeto de resposta** a uma reclamação detalhada de uma aluna que alega ter recebido tratamento discriminatório por causa da sua condição psiquiátrica num exame oral. A reclamação tem 3 páginas, é angustiada, e refere por nome três docentes envolvidos. Tem 2 horas para o draft.
 
 **Que partes deste trabalho usarias com Copilot? Que partes não usarias? Onde traçarias a fronteira?**
 
@@ -444,20 +444,20 @@ A Helena recebe hoje, à pressa, pedido para preparar **projecto de resposta** a
 
 - ✅ **Estrutura genérica** de despacho de admissão de reclamação (sem detalhes)
 - ✅ **Modelo institucional** de notificação de instauração de procedimento
-- ✅ **Bases legais aplicáveis** ao tipo de reclamação (CPA art. 121.º — audiência prévia; LBSE; regulamento pedagógico — abstractamente)
+- ✅ **Bases legais aplicáveis** ao tipo de reclamação (CPA art. 121.º — audiência prévia; LBSE; regulamento pedagógico — abstratamente)
 
 **No PROCESSAMENTO — o que pedir ao Copilot:**
 
 - ✅ Gerar **estrutura formal** do despacho (cabeçalho, fundamentação tipo, parte decisória tipo)
-- ✅ Gerar **versão genérica** que depois a Helena instancia com factos
+- ✅ Gerar **versão genérica** que depois a Helena instancia com fatos
 - ✅ Sugerir **bases legais aplicáveis** ao tipo (sem o caso concreto)
 - ❌ Avaliar a procedência da reclamação
 - ❌ Sugerir conclusão ou decisão
-- ❌ Reformular factos sensíveis
+- ❌ Reformular fatos sensíveis
 
 **No OUTPUT — que cuidados:**
 
-- A redacção final é **integralmente da Helena** (responsabilidade pessoal — LTFP, CPA)
+- A redação final é **integralmente da Helena** (responsabilidade pessoal — LTFP, CPA)
 - Considerar **revisão jurídica** (Gabinete Jurídico) antes de expedir
 - Documentar no dossier **o que foi feito com Copilot** — para futura defesa em sede de impugnação
 
@@ -478,13 +478,13 @@ Este princípio aplica-se a S08 (SIADAP), S10 (Contratação), S11 (Apoio a Júr
 
 A S04 foi a primeira sessão aplicada. Saímos com:
 
-- **Três casos práticos** completados — sumarização, reformulação, detecção de ambiguidades
+- **Três casos práticos** completados — sumarização, reformulação, deteção de ambiguidades
 - **Um método nomeado** — CCC (Cita-Confirma-Conta) — para validar em 30 segundos
 - **Quatro sinais** de output problemático — incluindo o mais subtil, a alucinação por omissão
 - **Linguagem clara** como conceito-chave da comunicação administrativa em IA assistida
 - **Um princípio para sessões futuras** — *quando o conteúdo é sensível, ajuda na forma; a substância é tua*
 
-> O Copilot é um redactor júnior brilhante. Faz draft em 30 segundos. Mas não assina actos. Tu assinas — e a tua assinatura cobre o output dele.
+> O Copilot é um redator júnior brilhante. Faz draft em 30 segundos. Mas não assina atos. Tu assinas — e a tua assinatura cobre o output dele.
 
 ## Materiais
 
