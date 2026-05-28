@@ -38,3 +38,4 @@ Materiais transversais de apoio à formação, disponíveis ao longo de todo o c
 | [Personas]({% link recursos/personas.md %}) | Personagens fictícias usadas nos exercícios |
 | [Glossário]({% link recursos/glossario.md %}) | Termos e conceitos-chave |
 | [FAQ]({% link recursos/faq.md %}) | Perguntas frequentes |
+| [Vibecoding]({% link recursos/vibecoding.md %}) | Construção de apps assistida por IA: paisagem das ferramentas, prompt-exemplo, governance |
