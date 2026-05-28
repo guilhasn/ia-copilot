@@ -15,7 +15,7 @@ nav_order: 3
 **Duração:** 2 horas
 **Modalidade:** Online síncrona
 **Bloco:** 1 · Enquadramento e Literacia Crítica
-**Casos operacionais:** #1 Resumir e-mails (consolidação) · #2 Redigir resposta a e-mail
+**Casos operacionais:** #1 Pesquisar tendências em gestão de IES · #2 Redigir resposta a e-mail
 
 ## Ideia central
 
@@ -59,8 +59,8 @@ Este momento é importante: mostra que o prompting melhora com a prática e que 
 |---|---:|---|
 | Abertura | 10 min | Debrief: que prompts testaram? o que funcionou? |
 | Prompt Gallery | 15 min | Descobrir, guardar e partilhar prompts na galeria Microsoft |
-| Caso #1 — Resumir e-mails (consolidação) | 15 min | Variações de resumo: por urgência, por tema, por pendência |
-| Caso #2 — Redigir resposta a e-mail | 25 min | Novo caso: Copilot no Outlook com controlo de tom e limites |
+| Caso #1 — Pesquisar tendências em gestão de IES | 15 min | Copilot Chat em modo Web; ação *Ask* para mapear terreno antes de uma decisão |
+| Caso #2 — Redigir resposta a e-mail | 25 min | Copilot no Outlook com controlo de tom e limites; ação *Create* |
 | Pausa | 5 min | |
 | Construir biblioteca pessoal | 25 min | Criar 5-8 prompts reutilizáveis organizados por categoria |
 | Partilhar com a equipa | 10 min | Guardar na Prompt Gallery e partilhar via Teams |
@@ -97,23 +97,83 @@ A Prompt Gallery está disponível:
 {: .note }
 > **Momento de descoberta:** Quando mostrar a Prompt Gallery aos formandos, deixe-os explorar durante 2-3 minutos. Muitos não sabem que existe e é um dos momentos mais impactantes da sessão.
 
-## Caso #1 — Resumir e-mails (consolidação)
+## Caso #1 — Pesquisar tendências em gestão de IES
 
-Na Sessão 2, os formandos aprenderam a resumir uma cadeia de e-mails. Aqui consolidam com variações que mostram a flexibilidade do Copilot.
+Este é o primeiro caso operacional onde se usa o Copilot Chat em **modo Web** e se exercita a ação **Ask** (Perguntar) do framework Microsoft.
 
-### Variação A — Resumo por urgência
+Recapitulando as quatro ações apresentadas na Sessão 2:
 
-> *Resume os e-mails desta semana. Organiza por prioridade: primeiro os que exigem resposta urgente, depois os informativos. Indica quem espera resposta e há quanto tempo.*
+| Ação | Onde foi (ou vai ser) exercitada |
+|---|---|
+| Pôr em dia *(Catch up)* | S2 — resumir cadeia de e-mails |
+| **Perguntar *(Ask)*** | **S3 — Caso #1, este caso** |
+| Criar *(Create)* | S3 — Caso #2, a seguir |
+| Editar *(Edit)* | S4 — Word, reformular e melhorar texto |
 
-### Variação B — Resumo por tema
+### Cenário
 
-> *Agrupa os e-mails desta semana por tema. Para cada tema, indica: assunto, intervenientes, estado atual e pendências. Ignora newsletters e notificações automáticas.*
+A Helena Albuquerque, Diretora de Serviços Académicos da Universidade de Vale Verde, foi convidada a contribuir com um ponto para a próxima reunião do Conselho de Gestão: **tendências internacionais em digitalização de serviços académicos**.
 
-### Variação C — Resumo executivo para a chefia
+Tem uma semana e quer chegar à primeira reunião de trabalho com a equipa já com um mapa do terreno — que tendências há, onde estão documentadas, e que IES europeias as estão a adoptar. Não pretende um relatório fechado; pretende uma base para discutir com a equipa e a partir daí decidir o que vale a pena investigar a fundo.
 
-> *Prepara um resumo executivo de 10 linhas sobre os assuntos mais relevantes desta semana, adequado para enviar à diretora do serviço. Tom: profissional e conciso. Não incluir detalhes operacionais, apenas decisões e pendências estratégicas.*
+### Modo Web vs. modo Trabalho
 
-A mensagem é: **o mesmo tipo de tarefa pode ser abordado de formas diferentes consoante o objetivo e o destinatário.** O prompt muda, o valor muda.
+Esta é a primeira vez na formação que usamos o Copilot Chat **em modo Web**. A distinção, recordando da Sessão 2:
+
+| Modo | Quando usar | O que esperar |
+|---|---|---|
+| **Trabalho** | Tarefa toca dados internos (e-mails, ficheiros, reuniões da organização) | Acede ao tenant; respostas baseadas em conteúdo institucional |
+| **Web** | Pesquisa pública, brainstorming, mapear terreno | Funciona como pesquisa Web assistida; **não** acede a dados internos |
+
+A pesquisa de tendências internacionais é tarefa para o modo **Web**: a informação está toda fora da organização, em sites públicos.
+
+### Prompt de trabalho
+
+> *Atua como analista de uma equipa de planeamento de uma instituição de ensino superior portuguesa.*
+>
+> *Objetivo: identifica as 5 tendências mais relevantes em digitalização de serviços académicos em IES europeias entre 2024 e 2026.*
+>
+> *Para cada tendência, indica:*
+> *1. o que é, em duas linhas;*
+> *2. onde está documentada (publicação, organismo, ano);*
+> *3. exemplos de IES europeias que a estão a adoptar;*
+> *4. implicações possíveis para uma universidade pública portuguesa de média dimensão.*
+>
+> *Fonte: usa fontes públicas e cita-as explicitamente. Privilegia EUA (European University Association), OECD, ENQA, A3ES, Erasmus+ e relatórios oficiais. Se uma fonte não for verificável, assinala-a como "a confirmar".*
+>
+> *Expectativas: apresenta a resposta em tabela. Tom: analítico, não promocional. Português de Portugal.*
+
+### Iteração — refinar o output
+
+Depois do primeiro resultado, testar pedidos de seguimento como:
+
+> *Aprofunda a primeira tendência. Dá-me 3 exemplos concretos de universidades europeias com nome e ano em que adoptaram a prática.*
+
+> *Identifica que destas tendências têm contraponto crítico — vozes que questionam ou alertam para riscos de implementação.*
+
+> *Para cada tendência, sugere uma pergunta concreta que a Helena deva levar à reunião de trabalho com a equipa.*
+
+> *Resume tudo num briefing de uma página adequado para 5 minutos de apresentação oral ao Conselho de Gestão.*
+
+### O que validar antes de levar à reunião
+
+A pesquisa com IA tem armadilhas específicas. Antes de usar o output, verificar:
+
+- **As fontes citadas existem?** Copiar o título e fazer pesquisa direta. O Copilot pode citar relatórios que não existem ou misturar títulos com autores diferentes.
+- **As datas são corretas?** Relatórios antigos podem ser apresentados como recentes.
+- **Os exemplos de universidades são reais?** O Copilot pode inventar nomes ou misturar instituições.
+- **A escala é proporcional?** Um piloto local de uma faculdade não é uma "tendência europeia".
+- **Há contraponto?** A pesquisa com IA tende a apresentar tudo como consenso; as tensões e críticas costumam ficar de fora se não forem pedidas.
+- **A resposta é genérica ou tem dados concretos?** *"As IES estão a digitalizar-se"* não diz nada; *"30% das universidades europeias usam X em 2025, segundo o relatório Y"* é uma afirmação verificável.
+
+{: .important }
+> O Copilot em modo Web é como um estagiário rápido com acesso a pesquisa Google. Acelera a primeira leitura, mas **tudo o que cita tem de ser verificado** antes de chegar a uma reunião de decisão.
+
+### A mensagem central
+
+A ação **Ask** é poderosa para *mapear terreno* — perceber rapidamente o que existe sobre um tema — mas mal usada produz factos plausíveis que não existem.
+
+Boa prática: usar para acelerar a primeira leitura, validar cada fonte antes de a citar, e nunca apresentar output sem revisão como base de uma decisão institucional.
 
 ## Caso #2 — Redigir resposta a e-mail
 
