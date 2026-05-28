@@ -172,7 +172,7 @@ O Copilot tipicamente devolve algo do género:
 
 Estes são detalhes que tipicamente um coordenador vai precisar. O resumo dá 70% do trabalho — falta os outros 30%.
 
-### Versão modelo (validada pela formadora)
+### Versão modelo (validada manualmente)
 
 ```
 O Regulamento de Avaliação dos Mestrados da UVV (Despacho Reitoral n.º 87/2024, em vigor desde 01-10-2024) regula as três modalidades de avaliação aplicáveis às unidades curriculares de mestrado, excluindo dissertação, projeto e estágio. Aplica o Decreto-Lei n.º 65/2018 (Regime Jurídico dos Graus). Os pontos críticos para a aplicação prática são:
@@ -203,6 +203,9 @@ Esta versão cumpre: estrutura 1 parágrafo + 7 bullets, citação dos artigos c
 A Helena recebeu hoje do Gabinete Jurídico o *Parecer sobre prescrição de propinas* (DOC-B). Tem de explicá-lo a 3 técnicos da Divisão de Matrículas (não-juristas) em reunião de 30 min.
 
 Vai usar Copilot para reformular o parecer em linguagem clara mantendo o rigor — em particular, **a ambiguidade entre os prazos de 8 e 20 anos não deve ser resolvida**, porque o parecer não a resolve. O resumo tem de honrar a complexidade.
+
+{: .important }
+> **DOC-B é fictício — produzido para fins pedagógicos.** Num caso real, um parecer jurídico identificável (com número de dossier, valor, datas, identificação de estudante) **não deve ser colado tal e qual no Copilot** sem avaliação prévia de minimização de dados pessoais e de legitimidade funcional. Para o exercício da sessão, o dataset foi construído sem dados pessoais identificáveis.
 
 ### Prompt de trabalho
 
@@ -381,13 +384,13 @@ O Microsoft 365 Copilot **não trabalha no vácuo**. Quando referencias um fiche
 2. Faz **augmentation** — combina o que recuperou com o teu prompt.
 3. Faz **generation** — produz a resposta usando esse contexto.
 
-Analogia: como uma biblioteca onde só vês os livros que tens cartão para entrar. O Copilot vê o que tu vês — nem mais, nem menos. Se tens acesso indevido a um documento mal partilhado, **o Copilot também o vê** e pode usá-lo no output.
+Analogia: como uma biblioteca onde só vês os livros que tens cartão para entrar. **O Copilot trabalha com informação a que tu tens permissões de acesso**, respeitando controlos e políticas do Microsoft 365 — etiquetas de sensibilidade, permissões de pastas, políticas DLP. O problema típico não é o Copilot ver o que não devia; é estar a ver documentos a que tu próprio já tinhas acesso indevido por *oversharing* prévio do SharePoint. Antes de adoção em larga escala, esta é a primeira coisa a resolver.
 
 ### O context window
 
-O Copilot tem limite ao texto que processa de cada vez: **~64 000 tokens (~50-60 páginas A4) no prompt + ficheiros referenciados**, e **~8 000 tokens (~10-12 páginas) na resposta**.
+O Copilot tem limites quanto à quantidade de texto que consegue considerar numa única interação. Em documentos longos, pode dar maior peso a certas partes e omitir outras sem aviso.
 
-Analogia: como uma mesa onde cabem 50 páginas. Se trazes 60, não consegues pôr tudo. Em regulamentos longos (>50 páginas), o Copilot pode **truncar sem avisar** — sumariza com base só no início. Boa prática: dividir por capítulos e sumarizar capítulo-a-capítulo.
+Analogia: como uma mesa onde cabem só algumas dezenas de páginas em simultâneo. Se trazes mais, não consegues pôr tudo. Em regulamentos extensos, boa prática: **dividir por capítulos ou secções e sumarizar parte a parte**, depois consolidar. Esta é também a recomendação oficial da Microsoft para documentos longos.
 
 ### Não-determinismo
 
