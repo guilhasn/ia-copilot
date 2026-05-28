@@ -5,7 +5,7 @@ parent: "Bloco 2 · Produtividade Individual"
 nav_order: 1
 ---
 
-# Sessão 4 — Word com Copilot — ofícios, despachos e pareceres
+# Sessão 4 — Word com Copilot — resumir, reformular e validar documentos institucionais
 
 <button class="btn-print-page" onclick="printPage()">🖨️ PDF</button>
 
@@ -15,7 +15,7 @@ nav_order: 1
 **Duração:** 2 horas
 **Modalidade:** Online síncrona
 **Bloco:** 2 · Produtividade Individual
-**Casos operacionais:** #1 Sumarizar regulamento · #2 Reformular parecer · #3 Identificar ambiguidades
+**Casos operacionais:** #1 Sumarizar regulamento (com citação validada) · #2 Reformular parecer (preservando ambiguidade)
 
 ## Ideia central
 
@@ -29,12 +29,10 @@ Mas o trabalho da Helena Albuquerque, Diretora de Serviços Académicos, tem efe
 
 No final da sessão, os formandos deverão ser capazes de:
 
-- sumarizar um regulamento longo num resumo executivo com citação dos artigos;
-- reformular linguagem técnica jurídica em linguagem clara, preservando o rigor — incluindo ambiguidades intencionais;
-- pedir ao Copilot que identifique ambiguidades num documento como técnica reutilizável (o "wow moment");
-- detetar os 4 sinais de output problemático, incluindo a alucinação por omissão (o mais subtil);
-- aplicar o método CCC (Cita-Confirma-Conta) como validação reutilizável em 30 segundos;
-- reconhecer o ponto de fronteira ético — quando o Copilot pode ajudar na forma e quando a substância tem de ser inteiramente humana.
+- produzir um resumo executivo de um regulamento com citação validada de artigos;
+- reformular um parecer técnico-jurídico em linguagem clara sem perder rigor;
+- aplicar o método CCC — Cita, Confirma, Conta — para validação rápida;
+- reconhecer quando um documento é demasiado sensível para ser tratado diretamente com IA.
 
 ## Ligação às sessões anteriores
 
@@ -45,8 +43,6 @@ No final da sessão, os formandos deverão ser capazes de:
 | S3 | **Sistematizar** — biblioteca pessoal de prompts | *Ask* (pesquisar) + *Create* (redigir) |
 | S4 | **Validar com critério jurídico** | ***Edit*** (sumarizar e reformular documentos) |
 
-Esta sessão completa a apresentação das 4 ações do Microsoft 365 Copilot: *Catch up · Ask · Create · Edit*.
-
 ## Fluxo da sessão
 
 | Momento | Duração | Atividade |
@@ -54,11 +50,11 @@ Esta sessão completa a apresentação das 4 ações do Microsoft 365 Copilot: *
 | Abertura — objetivos e Régua amarela | 7 min | Recuperar a Régua; calibrar tom encorajador + responsabilidade |
 | Demonstração ao vivo | 15 min | Casos #1 e #2 executados pelo formador; formandos observam e anotam |
 | Linguagem clara — conceito-chave | 10 min | 7 princípios AMA + bases legais |
-| Exercício guiado — Casos #1 e #3 | 25 min | Formandos sumarizam DOC-A e pedem ambiguidades |
+| Exercício guiado — Caso #1 + demo de ambiguidades | 25 min | Formandos sumarizam DOC-A; demonstração curta de 8 min: pedir ao Copilot que identifique ambiguidades |
 | Pausa | 5 min | |
 | Aplicação livre — Caso #2 e Sub-B | 20 min | Reformulação DOC-B; quem terminar cedo faz Sub-B multi-versão |
 | Consolidação — 4 sinais + CCC | 10 min | Apresentação da peça nomeada para fixar |
-| Reflexão crítica | 8 min | 4 perguntas; pergunta 4 = caso de fronteira ético |
+| Reflexão crítica | 8 min | 3 perguntas: quando NÃO sumarizar; consequências de artigo inventado; método de validação em 30 s |
 | **Total** | **100 min úteis** | + ~20 min de transições = 120 nominais |
 
 ## O Copilot no Word
@@ -250,59 +246,35 @@ Esta reformulação cumpre: linguagem clara em pt-pt, frases curtas em voz ativa
 
 > Linguagem clara **não é** simplificação. É comunicação rigorosa sem jargão desnecessário.
 
-## Caso #3 — Pedir ao Copilot que identifique ambiguidades
+## Demonstração curta — pedir ao Copilot que identifique ambiguidades
 
-Este é o caso que separa "uso bonito do Copilot" de "uso transformador". É também o **"wow moment"** da sessão — a pergunta que quase ninguém pensa em fazer.
+Esta é a peça de impacto da sessão — a pergunta que quase ninguém pensa em fazer. **Não é um terceiro caso prático**; é uma demonstração de 8 minutos integrada no exercício guiado, depois de os formandos terem feito o resumo do Caso #1.
 
-### Acto 1 — Antes do prompt
+### O prompt
 
-Pergunta à turma: *"Antes de eu correr o prompt — quantas ambiguidades acham que o Copilot vai encontrar neste regulamento? Não há resposta certa, é palpite."*
-
-Os palpites tipicamente variam entre 0 e 3. A maioria diz 1-2.
-
-### Acto 2 — Durante o prompt
-
-Corre o prompt ao vivo:
+Depois de produzir o resumo, correr este follow-up:
 
 > *Agora lê o regulamento na íntegra e identifica 5 pontos onde o texto deixa margem para interpretação ou omite tratamento de casos previsíveis.*
 >
-> *Para cada ponto:*
-> *(a) cita o artigo e número exato;*
-> *(b) descreve a ambiguidade em 1 frase;*
-> *(c) sugere que aplicação prática poderia gerar conflito;*
-> *(d) propõe redação alternativa que resolveria.*
+> *Para cada ponto: cita o artigo e número exato; descreve a ambiguidade em 1 frase; sugere que aplicação prática poderia gerar conflito; propõe redação alternativa que resolveria.*
 >
 > *Devolve em tabela Markdown.*
 
-O Copilot devolve, em ~30 segundos, uma tabela com 5 ambiguidades concretas.
+Em ~30 segundos, o Copilot devolve uma tabela com 5 ambiguidades concretas.
 
-### Acto 3 — Depois do prompt
+### Exemplos típicos do que aparece
 
-Pausa pedagógica: *"Reparem — em 30 segundos, ele identificou pontos que vocês, em leitura normal, não veriam. Esta é a pergunta que não fizeram — porque pensaram que ele não conseguia."*
+Não é exaustivo nem garantido — o Copilot identifica tipicamente 4-5 das 6 ambiguidades reais do DOC-A. Três do tipo que costuma encontrar:
 
-Para validar o output, a tabela seguinte tem as **6 ambiguidades reais** do regulamento DOC-A (o Copilot tipicamente apanha 4-5 das 6):
-
-| # | Artigo | Ambiguidade | Aplicação que gera conflito |
-|---|---|---|---|
-| 1 | art. 3.º/2 vs art. 10.º | Aprovação exige assiduidade ≥75% ou "demais previsto no regulamento de UC"? | Aluno com 9 valores e 70% assiduidade: reprova ou aprova? |
-| 2 | art. 4.º/1 vs art. 5.º | "Estatuto especial" no art. 4.º permite exame final; art. 5.º só fala de "avaliação especial" sem mencionar exame. São o mesmo regime? | Trabalhador-estudante quer exame final ordinário em vez dos adiamentos do art. 5.º — pode? |
-| 3 | art. 5.º/1 | E se um aluno tiver **dois estatutos cumulativos** (trabalhador-estudante + atleta de alta competição)? | Aluno-atleta-trabalhador em jogo internacional na semana de exame: que tratamento? |
-| 4 | art. 7.º/2 vs art. 4.º | Inscrição em exame de "época especial" é taxada; mas o art. 4.º não distingue exame ordinário de recurso. Há duas épocas ou só uma? | Aluno reprova em avaliação contínua e quer fazer exame: paga taxa? |
-| 5 | art. 11.º/2 | "3 inscrições consecutivas" — o que conta como "consecutivas"? Anos letivos seguidos? Qualquer época? Inclui melhorias? | Aluno reprova em 2023, pausa em 2024, reprova em 2025 e 2026. São 3 consecutivas? |
-| 6 | art. 12.º/1 | Melhoria possível para classificação ≤14 valores. E se o aluno foi aprovado por engano com 15 e quer baixar para tentar melhorar? | Aluno detetou erro de cálculo da nota: pode pedir melhoria? |
+- **Aprovação vs. assiduidade** (art. 3.º/2 vs art. 10.º) — aluno com 9 valores e 70% assiduidade: reprova ou aprova?
+- **Estatutos cumulativos** (art. 5.º) — aluno-atleta-trabalhador em jogo internacional na semana de exame: que tratamento?
+- **"3 inscrições consecutivas"** (art. 11.º/2) — anos letivos seguidos? qualquer época? inclui melhorias?
 
 ### A frase a fixar
 
 > Pedir ao Copilot *"identifica ambiguidades"* é a pergunta mais barata e mais rentável que vão fazer este ano.
 
-### Onde mais isto se aplica
-
-A mesma técnica funciona com:
-
-- **Regulamentos académicos** — antes de aprovar em Conselho Pedagógico
-- **Pareceres jurídicos** — encontrar contradições internas
-- **Cadernos de encargos** — identificar lacunas antes de publicar
-- **Despachos e ofícios** — detetar ambiguidades antes de assinar
+A técnica aplica-se a regulamentos, pareceres, cadernos de encargos, despachos antes de assinar.
 
 ## Validar em 30 segundos — os 4 sinais e o método CCC {#validar-30-segundos}
 
@@ -371,10 +343,10 @@ Em 30 segundos, o CCC apanha **três dos quatro sinais**: artigos inventados (Si
 
 > Em 30 segundos não vão apanhar tudo. Apanham 3 de 4. E em 2 minutos extra, apanham o 4.º. Isto é o equilíbrio entre velocidade e diligência. **Esta sessão vale por isto.**
 
-## Para quem quer perceber porquê
+## Leitura complementar — porque é que o Copilot se comporta assim
 
 {: .note }
-> **Esta secção é técnica.** Pode ser saltada por quem só queira a parte prática — mas explica os limites operacionais que vão encontrar e por que o Copilot se comporta assim. Quem perceber isto, prompted melhor.
+> **Conteúdo para auto-estudo, não obrigatório na aula.** Esta secção explica os limites operacionais do Copilot. Pode ser saltada por quem só queira a parte prática — mas explica o porquê do comportamento que vão encontrar.
 
 ### O RAG sobre o tenant institucional
 
@@ -405,7 +377,10 @@ Analogia: como pedires duas vezes a mesma redação a um redator humano — vai 
 - **Pode confundir versões** — se há `Regulamento_v2.docx` e `Regulamento_v3.docx` no SharePoint, pode pegar na errada. Referenciar sempre o caminho completo no `/`.
 - **Não vê comentários** (Track Changes, comments) por defeito — para os incluir, tens de pedir explicitamente.
 
-## Para quem quer ir mais longe — orquestração multi-versão
+## Avançado (worksheet) — orquestração multi-versão
+
+{: .note }
+> **Conteúdo avançado, vive sobretudo no worksheet.** Aqui fica o esboço; o detalhe completo (com prompts verbatim para cada passo) está na secção Sub-B do worksheet S04, para auto-estudo após a sessão.
 
 A Helena precisa, num caso real, de produzir **três versões** do mesmo regulamento DOC-A para audiências diferentes:
 
@@ -425,67 +400,15 @@ A **abordagem profissional** usa prompt em cascata, três passos:
 
 Esta técnica **não se ensina no Office**. É contribuição genuína desta formação. O detalhe completo (com prompts verbatim para cada passo) está no worksheet S04, secção Sub-B.
 
-## Caso de fronteira ético — debate em sala
-
-Sem resposta certa. É discussão.
-
-### Cenário
-
-A Helena recebe hoje, à pressa, pedido para preparar **projeto de resposta** a uma reclamação detalhada de uma aluna que alega ter recebido tratamento discriminatório por causa da sua condição psiquiátrica num exame oral. A reclamação tem 3 páginas, é angustiada, e refere por nome três docentes envolvidos. Tem 2 horas para o draft.
-
-**Que partes deste trabalho usarias com Copilot? Que partes não usarias? Onde traçarias a fronteira?**
-
-### Framework de análise — três níveis
-
-**No INPUT — o que NÃO pode entrar no Copilot:**
-
-- ❌ A reclamação na íntegra — contém **dados de saúde** (RGPD art. 9.º) + **identificação por nome** + **alegação de discriminação** (matéria sensível, em curso, com potencial de litígio)
-- ❌ Os nomes dos três docentes — RGPD + pode contaminar futura instrução
-- ❌ Histórico académico da aluna — minimização (não é necessário para draft)
-
-**No INPUT — o que PODE entrar:**
-
-- ✅ **Estrutura genérica** de despacho de admissão de reclamação (sem detalhes)
-- ✅ **Modelo institucional** de notificação de instauração de procedimento
-- ✅ **Bases legais aplicáveis** ao tipo de reclamação (CPA art. 121.º — audiência prévia; LBSE; regulamento pedagógico — abstratamente)
-
-**No PROCESSAMENTO — o que pedir ao Copilot:**
-
-- ✅ Gerar **estrutura formal** do despacho (cabeçalho, fundamentação tipo, parte decisória tipo)
-- ✅ Gerar **versão genérica** que depois a Helena instancia com fatos
-- ✅ Sugerir **bases legais aplicáveis** ao tipo (sem o caso concreto)
-- ❌ Avaliar a procedência da reclamação
-- ❌ Sugerir conclusão ou decisão
-- ❌ Reformular fatos sensíveis
-
-**No OUTPUT — que cuidados:**
-
-- A redação final é **integralmente da Helena** (responsabilidade pessoal — LTFP, CPA)
-- Considerar **revisão jurídica** (Gabinete Jurídico) antes de expedir
-- Documentar no dossier **o que foi feito com Copilot** — para futura defesa em sede de impugnação
-
-### Três posições para discutir em sala
-
-**Posição A:** *"Não uso Copilot de todo. Caso demasiado sensível."* Defensável mas abdica de poupança de tempo legítima.
-
-**Posição B:** *"Uso Copilot mas só com inputs genéricos (estrutura, bases legais). O conteúdo concreto é meu."* **A posição profissional.** O Copilot ajuda na *forma*; a Helena trata da *substância*.
-
-**Posição C:** *"Uso Copilot com a reclamação completa, mas só para gerar draft inicial — depois reescrevo."* **Cruza a fronteira.** A maioria sente tentação por C — trabalhem-se para B.
-
-{: .important }
-> **Quando o conteúdo é sensível, o Copilot ajuda na forma. A substância é tua.**
-
-Este princípio aplica-se a S08 (SIADAP), S10 (Contratação), S11 (Apoio a Júri) — vai voltar em sessões futuras.
-
 ## Síntese da sessão
 
-A S04 foi a primeira sessão aplicada. Saímos com:
+A S04 foi a primeira sessão aplicada. Saímos com três coisas:
 
-- **Três casos práticos** completados — sumarização, reformulação, deteção de ambiguidades
-- **Um método nomeado** — CCC (Cita-Confirma-Conta) — para validar em 30 segundos
-- **Quatro sinais** de output problemático — incluindo o mais subtil, a alucinação por omissão
-- **Linguagem clara** como conceito-chave da comunicação administrativa em IA assistida
-- **Um princípio para sessões futuras** — *quando o conteúdo é sensível, ajuda na forma; a substância é tua*
+- **Sei resumir um regulamento** com citação validada de artigos.
+- **Sei reformular um parecer** sem destruir o rigor — incluindo preservar ambiguidades intencionais.
+- **Sei validar rapidamente** com o método CCC — em 30 segundos apanho 3 dos 4 sinais de problema; em 2 minutos extra apanho o 4.º.
+
+A demonstração de pedir ambiguidades ao Copilot, no fim, é a técnica que vai voltar quando trabalharem com cadernos de encargos, pareceres e despachos antes de assinar.
 
 > O Copilot é um redator júnior brilhante. Faz draft em 30 segundos. Mas não assina atos. Tu assinas — e a tua assinatura cobre o output dele.
 
