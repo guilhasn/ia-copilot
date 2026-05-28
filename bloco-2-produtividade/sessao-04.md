@@ -86,7 +86,7 @@ Limites: até 10 ficheiros por referência; só funciona no modo *Trabalho* (com
 
 Não é sinónimo de simplificação. Pode haver linguagem clara sobre temas complexos. O que muda é a estrutura, a sintaxe, e as palavras escolhidas — **não o conteúdo**.
 
-### Os 7 princípios do Manual de Linguagem Clara (AMA, 2019)
+### Princípios universais de linguagem clara (alinhados com o trabalho do LabX/AMA)
 
 1. Estrutura em **ordem natural** (sujeito → verbo → complementos)
 2. **Frases curtas** (≤ 25 palavras quando possível)
@@ -103,7 +103,7 @@ Não é sinónimo de simplificação. Pode haver linguagem clara sobre temas com
 | Decreto-Lei n.º 135/99 | art. 11.º | Princípio da clareza na relação Administração-administrados |
 | Código do Procedimento Administrativo | art. 9.º | Princípio da boa administração |
 | CPA | art. 153.º | Fundamentação dos atos administrativos deve ser acessível ao destinatário |
-| Manual de Linguagem Clara | AMA (2019) | Guia oficial para administração pública portuguesa |
+| LabX/AMA — Oficinas de Simplificação da Linguagem | metodologia | Iniciativa do laboratório de inovação da AMA para simplificar linguagem em serviços públicos |
 
 ### O que isto limita
 
@@ -429,7 +429,8 @@ A demonstração de pedir ambiguidades ao Copilot, no fim, é a técnica que vai
 - Microsoft Support — [Draft and add content with Copilot in Word](https://support.microsoft.com/en-us/office/draft-and-add-content-with-copilot-in-word-069c91f0-9e42-4c9a-bbce-fddf5d581541)
 - [Microsoft 365 Copilot Prompts Gallery](https://m365.cloud.microsoft/copilot-prompts) — galeria oficial
 - [Legal Scenario Library — Microsoft Adoption](https://adoption.microsoft.com/en-us/scenario-library/legal/) — contexto US corporate, complementar
-- AMA — Manual de Linguagem Clara (2019)
+- [LabX — Centro para a Inovação do Setor Público](https://www.arte.gov.pt/centro-para-a-inovacao-do-setor-publico-labx/) — sucessor do LabX em labx.gov.pt; trabalho da AMA em simplificação de linguagem
+- [Plain Language Action Network (PLAIN)](https://www.plainlanguage.gov/guidelines/) — referência internacional de princípios de linguagem clara
 - [Referências Microsoft]({% link recursos/referencias-microsoft.md %}) — todos os recursos oficiais
 
 ## Próxima sessão
