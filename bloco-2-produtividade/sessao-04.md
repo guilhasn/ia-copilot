@@ -48,7 +48,7 @@ No final da sessão, os formandos deverão ser capazes de:
 | Momento | Duração | Atividade |
 |---|---:|---|
 | Abertura — objetivos e Régua amarela | 7 min | Recuperar a Régua; calibrar tom encorajador + responsabilidade |
-| Demonstração ao vivo | 15 min | Casos #1 e #2 executados pelo formador; formandos observam e anotam |
+| Demonstração ao vivo | 15 min | Demonstração ao vivo dos Casos #1 e #2; observar e anotar |
 | Linguagem clara — conceito-chave | 10 min | 7 princípios AMA + bases legais |
 | Exercício guiado — Caso #1 + demo de ambiguidades | 25 min | Formandos sumarizam DOC-A; demonstração curta de 8 min: pedir ao Copilot que identifique ambiguidades |
 | Pausa | 5 min | |
@@ -121,13 +121,13 @@ Não é sinónimo de simplificação. Pode haver linguagem clara sobre temas com
 
 ## Demonstração — o que vão ver
 
-A demonstração do formador no início da sessão tem duas partes ao vivo. O objetivo é estabelecer o tom: *o Copilot dá 70% do trabalho em 10 segundos; os outros 30% somos nós.*
+A sessão arranca com duas demonstrações ao vivo, em directo no Copilot. O objetivo é estabelecer o tom: *o Copilot dá 70% do trabalho em 10 segundos; os outros 30% somos nós.*
 
-**Parte A — Sumarização do regulamento.** O formador pede ao Copilot um resumo executivo do *Regulamento de Avaliação dos Mestrados da UVV* (DOC-A do dataset). Os formandos observam e anotam três coisas: o que o Copilot faz bem, o que esquece, e o que inventa. **Estes três padrões repetem-se sempre que sumarizam.**
+**Parte A — Sumarização do regulamento.** Vão observar a geração ao vivo de um resumo executivo do *Regulamento de Avaliação dos Mestrados da UVV* (DOC-A do dataset). Enquanto vêem, anotem três coisas: o que o Copilot faz bem, o que esquece, e o que inventa. **Estes três padrões repetem-se em qualquer sumarização que façam.**
 
-**Parte B — Reformulação do parecer com ambiguidade.** O formador pede ao Copilot que reformule o *Parecer sobre prescrição de propinas* (DOC-B) em linguagem clara. A armadilha: o parecer tem **ambiguidade deliberada entre o prazo de 8 anos (LGT) e 20 anos (CC)** que o STA ainda não uniformizou. O Copilot tipicamente *escolhe uma das posições* — é exatamente o que **não pode** acontecer. Os formandos vão ver o Copilot derrapar e vão ver como se corrige.
+**Parte B — Reformulação do parecer com ambiguidade.** Vão observar uma reformulação ao vivo do *Parecer sobre prescrição de propinas* (DOC-B) em linguagem clara. A armadilha: o parecer tem **ambiguidade deliberada entre o prazo de 8 anos (LGT) e 20 anos (CC)** que o STA ainda não uniformizou. O Copilot tipicamente *escolhe uma das posições* — é exatamente o que **não pode** acontecer. Vão ver o Copilot derrapar e vão ver como se corrige.
 
-Os três casos que se seguem (#1, #2, #3) reaplicam estas lições — os formandos passam de observadores a praticantes.
+Nos três casos que se seguem, passam de observadores a praticantes — fazem o trabalho com as próprias mãos.
 
 ## Caso #1 — Sumarizar regulamento com citação validada
 
@@ -186,7 +186,7 @@ Esta versão cumpre: estrutura 1 parágrafo + 7 bullets, citação dos artigos c
 
 ### Discussão em sala
 
-1. *"Que pontos do regulamento ficaram de fora deste resumo?"* — esperar identificação de desistência, arredondamento, estatutos especiais.
+1. *"Que pontos do regulamento ficaram de fora deste resumo?"* — tipicamente ficam de fora a desistência (art. 8.º), o arredondamento (art. 9.º), e os estatutos especiais.
 2. *"Algum bullet está formalmente incorreto?"* — sim, na maioria das execuções: aprovação não exige só ≥10 valores; exige cumulativamente ≥10 + ≥75% assiduidade (art. 3.º/2 + art. 10.º — são duas condições, não uma).
 3. *"Algum termo deslizou para inglês ou pt-BR?"* — variável entre execuções.
 
@@ -215,7 +215,7 @@ Vai usar Copilot para reformular o parecer em linguagem clara mantendo o rigor �
 
 ### A armadilha — o que o Copilot tende a fazer
 
-A tentação do Copilot (e dos formandos) é **decidir** qual prazo se aplica. Quando o output diz coisas como *"o prazo aplicável é o de 20 anos do Código Civil"* ou *"a propina já prescreveu"*, está a inventar uma posição que o Gabinete Jurídico não tomou.
+A tentação que podem sentir (e que o Copilot vai propor) é **decidir** qual prazo se aplica. Quando o output diz coisas como *"o prazo aplicável é o de 20 anos do Código Civil"* ou *"a propina já prescreveu"*, está a inventar uma posição que o Gabinete Jurídico não tomou.
 
 **Não cedam.** O Copilot pode descrever a divergência mas não a resolver — ou estamos a comprometer a integridade do parecer.
 
@@ -240,7 +240,7 @@ Esta reformulação cumpre: linguagem clara em pt-pt, frases curtas em voz ativa
 
 ### Discussão em sala
 
-1. *"Manteve a ambiguidade?"* — esperar identificação do output tendencial a tomar uma das posições.
+1. *"Manteve a ambiguidade?"* — tipicamente o output tende a tomar uma das posições, e é esse o ponto a apanhar.
 2. *"Que termos técnicos foram mantidos? Quais simplificados?"* — mantidos: prescrição, jurisprudência. Simplificados (corretamente): "não podemos cobrar" em vez de "extinção da exigibilidade".
 3. *"Há simplificação que perdeu rigor?"* — possível: "não interromperam o prazo" é correto mas poderia manter ressalva "à luz da doutrina maioritária".
 
@@ -248,7 +248,7 @@ Esta reformulação cumpre: linguagem clara em pt-pt, frases curtas em voz ativa
 
 ## Demonstração curta — pedir ao Copilot que identifique ambiguidades
 
-Esta é a peça de impacto da sessão — a pergunta que quase ninguém pensa em fazer. **Não é um terceiro caso prático**; é uma demonstração de 8 minutos integrada no exercício guiado, depois de os formandos terem feito o resumo do Caso #1.
+Esta é a peça de impacto da sessão — a pergunta que quase ninguém pensa em fazer. **Não é um terceiro caso prático**; é uma demonstração de 8 minutos integrada no exercício guiado, depois de terem feito o resumo do Caso #1.
 
 ### O prompt
 
