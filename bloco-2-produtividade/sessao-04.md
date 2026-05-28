@@ -488,6 +488,14 @@ A S04 foi a primeira sessão aplicada. Saímos com:
 
 ## Materiais
 
+### Para descarregar
+
+- [Worksheet S04 — Word, ofícios, despachos e pareceres (DOCX)]({{ site.baseurl }}/sessoes/sessao-04/Worksheet_S04_Word_Oficios.docx) — documento de trabalho para preencher durante a sessão
+- [Dataset S04 — Regulamento + Parecer (DOCX)]({{ site.baseurl }}/sessoes/sessao-04/Dataset_S04_Documentos.docx) — os dois documentos: DOC-A regulamento de avaliação dos mestrados, DOC-B parecer sobre prescrição de propinas
+
+{: .note }
+> Alguns materiais podem estar protegidos por password. Caso seja solicitada, utilize a password comunicada pela ANFUP.
+
 ### Para aprofundar
 
 - Microsoft Learn — [Summarize and simplify information with Microsoft 365 Copilot](https://learn.microsoft.com/en-us/training/modules/summarize-simplify-information-with-microsoft-copilot-microsoft-365/)
@@ -497,12 +505,6 @@ A S04 foi a primeira sessão aplicada. Saímos com:
 - [Legal Scenario Library — Microsoft Adoption](https://adoption.microsoft.com/en-us/scenario-library/legal/) — contexto US corporate, complementar
 - AMA — Manual de Linguagem Clara (2019)
 - [Referências Microsoft]({% link recursos/referencias-microsoft.md %}) — todos os recursos oficiais
-
-### Materiais protegidos por password
-
-- Worksheet S04 (DOCX) — Word, ofícios, despachos e pareceres
-- Dataset S04 (DOCX) — DOC-A regulamento + DOC-B parecer jurídico
-- Slides do formador (PPTX)
 
 ## Próxima sessão
 
