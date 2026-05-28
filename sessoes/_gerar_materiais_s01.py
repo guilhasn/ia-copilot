@@ -29,7 +29,7 @@ GRAY = RGBColor(0x75, 0x75, 0x75)
 HEADER_LEFT = "ANFUP — Associação Nacional dos Funcionários Universitários Portugueses"
 HEADER_RIGHT = "Entidade Formadora Certificada DGERT"
 FOOTER_LEFT = "IA — Aplicações ao trabalho das IES · Formador: Nuno Salvador"
-FOOTER_RIGHT = "© 2026 · CC BY 4.0"
+FOOTER_RIGHT = "© 2026 Nuno Salvador"
 
 
 def setup_styles(doc):

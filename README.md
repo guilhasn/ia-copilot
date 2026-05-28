@@ -8,8 +8,6 @@ Hub formativo da ação de formação ANFUP (Associação Nacional dos Funcioná
 
 **Site:** [guilhasn.github.io/ia-copilot](https://guilhasn.github.io/ia-copilot/)
 
-## Licença
-
-Conteúdo licenciado sob [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.pt).
+© 2026 Nuno Salvador. Todos os direitos reservados.
 
 Alguns materiais descarregáveis podem estar protegidos por password, distribuída pela ANFUP aos formandos inscritos.
