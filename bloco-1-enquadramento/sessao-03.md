@@ -58,12 +58,13 @@ Este momento é importante: mostra que o prompting melhora com a prática e que 
 | Momento | Duração | Atividade |
 |---|---:|---|
 | Abertura | 10 min | Debrief: que prompts testaram? o que funcionou? |
-| Prompt Gallery | 15 min | Descobrir, guardar e partilhar prompts na galeria Microsoft |
+| Prompt Gallery | 12 min | Descobrir, guardar e partilhar prompts na galeria Microsoft |
 | Caso #1 — Pesquisar tendências em gestão de IES | 15 min | Copilot Chat em modo Web; ação *Ask* para mapear terreno antes de uma decisão |
 | Caso #2 — Redigir resposta a e-mail | 25 min | Copilot no Outlook com controlo de tom e limites; ação *Create* |
 | Pausa | 5 min | |
 | Construir biblioteca pessoal | 25 min | Criar 5-8 prompts reutilizáveis organizados por categoria |
 | Partilhar com a equipa | 10 min | Guardar na Prompt Gallery e partilhar via Teams |
+| Interlúdio — Vibecoding | 8 min | Live build no Lovable de uma app de gestão de prompts; paisagem das ferramentas; nota de governance |
 | Fecho | 10 min | Síntese do Bloco 1 + preview do Bloco 2 |
 
 ## Prompt Gallery da Microsoft
@@ -298,6 +299,40 @@ Todos os membros da equipa passam a ver e a poder reutilizar o prompt.
 {: .important }
 > **O efeito multiplicador:** Imagine que cada técnico dos Serviços Académicos cria 5 prompts úteis. Se os partilharem via Teams, a equipa inteira fica com 30-40 prompts testados e validados. O investimento de uma pessoa beneficia todo o serviço.
 
+## Interlúdio — Vibecoding (8 min)
+
+A S03 fecha com um interlúdio breve que abre uma janela para um paradigma adjacente: construir ferramentas em vez de só as usar.
+
+### O que é vibecoding
+
+Termo cunhado por Andrej Karpathy em 2025. Significa **descrever em linguagem natural o que se quer e deixar a IA escrever o código** — não é programar; é conversar até a aplicação aparecer. O paradigma torna acessível algo que até há pouco exigia anos de formação: passar de uma ideia ("preciso de uma ferramenta que faça X") para uma aplicação a correr.
+
+### O que vai acontecer
+
+O formador pede em directo a uma ferramenta — o [Lovable](https://lovable.dev) — que construa uma aplicação para gerir a biblioteca de prompts que os formandos acabaram de criar em texto. Enquanto a IA constrói (90-180 segundos típicos), passa-se um breve panorama de quatro outras ferramentas do mesmo paradigma: **Bolt.new**, **Replit Agent**, **AI Studio (Google)** e **base44**. Quando a app aparece, demonstra-se a funcionar — lista de prompts, pesquisa, filtro por categoria, botão de copiar.
+
+A página de recurso [Vibecoding]({% link recursos/vibecoding.md %}) tem o detalhe das ferramentas, o prompt exacto usado para construir a app, e leituras para aprofundar.
+
+### Antes de pôr dados reais — as 4 perguntas
+
+A mensagem do interlúdio não é *"experimentem isto amanhã"*, mas *"isto está a acontecer, é acessível, e se um dia decidirem experimentar, há quatro perguntas a fazer antes"*.
+
+| Pergunta | A ter em conta |
+|---|---|
+| **Onde estão os dados?** | No servidor de quem? Em que país? |
+| **Quem é dono do código gerado?** | Em planos gratuitos, frequentemente não é o utilizador. |
+| **RGPD e hosting europeu?** | Com dados pessoais (estudantes, candidatos, colegas), confirmar localização do hosting. |
+| **Como manter a app?** | Vive enquanto a conta vive — não é infraestrutura institucional. |
+
+A página de recurso [Vibecoding]({% link recursos/vibecoding.md %}) desenvolve cada uma destas perguntas.
+
+### Ligação à Sessão 13
+
+Na Sessão 13 (Copilot Pages e bibliotecas partilhadas), os formandos vão construir um agente Copilot Studio — o **primo institucional** deste paradigma, dentro do tenant Microsoft 365 da própria IES. Hoje, o interlúdio limita-se a abrir a janela.
+
+{: .important }
+> **Tom do interlúdio:** Curiosidade controlada, não evangelismo. Encerrar com uma frase do estilo *"Não estou a dizer que devem fazer isto amanhã. Estou a dizer que está a acontecer, é acessível, e que devem saber — porque se um dia decidirem experimentar, há quatro perguntas a fazer antes."*
+
 ## Síntese do Bloco 1
 
 As três sessões do Bloco 1 construíram uma base completa:
@@ -308,7 +343,7 @@ As três sessões do Bloco 1 construíram uma base completa:
 | S2 | **Pedir** — construir prompts eficazes com o framework Microsoft |
 | S3 | **Sistematizar** — ter uma biblioteca pessoal, reutilizável e partilhável |
 
-A partir da Sessão 4, os formandos vão aplicar estas competências a tarefas concretas em cada aplicação do Microsoft 365: Word, Outlook, Teams, Excel e PowerPoint.
+A partir da Sessão 4, os formandos vão aplicar estas competências a tarefas concretas em cada aplicação do Microsoft 365: Word, Outlook, Teams, Excel e PowerPoint. E, como o interlúdio mostrou, está a aparecer um paradigma adjacente — construir ferramentas em vez de só as usar — que voltaremos a tocar na Sessão 13 com o Copilot Studio.
 
 > O Bloco 1 deu as ferramentas. O Bloco 2 vai pôr as mãos na massa.
 
@@ -320,6 +355,8 @@ A partir da Sessão 4, os formandos vão aplicar estas competências a tarefas c
 - [Sharing prompts with a team](https://support.microsoft.com/en-us/topic/sharing-prompts-with-a-team-2fa7a228-8645-4dc4-beec-d75d6d0bc752) — como partilhar prompts via Teams
 - [Draft an email with Copilot in Outlook](https://support.microsoft.com/en-us/office/draft-an-email-message-with-copilot-in-outlook-3eb1d053-89b8-491c-8a6e-746015238d9b) — guia oficial para redigir e-mails
 - [Share your best prompts with others](https://support.microsoft.com/en-us/topic/share-your-best-prompts-75402b14-b419-494d-9e58-1709b4f334a2) — guia de partilha de prompts
+- [Vibecoding e construção assistida por IA]({% link recursos/vibecoding.md %}) — paisagem das ferramentas (Lovable, Bolt.new, Replit Agent, AI Studio, base44), prompt exemplo e governance
+- [Lovable](https://lovable.dev) — ferramenta usada no interlúdio para o live build
 - [Referências Microsoft]({% link recursos/referencias-microsoft.md %}) — todos os recursos oficiais
 
 ## Próxima sessão
