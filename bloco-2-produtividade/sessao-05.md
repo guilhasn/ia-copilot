@@ -88,7 +88,7 @@ A S05 trabalha **duas apps M365** com capacidades nativas de Copilot bem documen
 
 ## MAPEIA, NÃO DECIDAS {#mapeia-nao-decidas}
 
-O princípio operacional da S05. Análogo do método CCC da S04 — uma técnica nomeada que vai com vocês para o resto da carreira.
+O princípio operacional da S05. Análogo do método CCC da S04 — uma técnica nomeada, simples, reutilizável.
 
 **O que significa.** O Copilot é excelente a **mapear**: posições recebidas numa thread, ações extraídas de uma reunião, tom sugerido para um draft. Mas o Copilot **não pode decidir** o que pertence à hierarquia humana: qual posição prevalece num conflito, que prazo é razoável, que prioridade dar entre coordenadores em desacordo.
 
@@ -121,7 +121,7 @@ A demonstração tem três partes ao vivo, em direto nas duas apps. O objetivo �
 
    Os factos vão ser os mesmos. **A tonalidade vai mudar radicalmente.** Vão ver, em 30 segundos, que o Copilot espelha o ângulo do prompt. **A neutralidade não é default. É escolha.**
 
-Estes três derrapagens reaplicam-se nos casos. Os formandos passam de observadores a praticantes.
+Estas três derrapagens reaplicam-se nos casos. Vocês passam de observadores a praticantes.
 
 ## Caso #1 — Sumarizar thread no Outlook + descobrir silenciados
 
@@ -435,7 +435,7 @@ A boa prática: **transcrição é assistente, não fonte autoritativa**. Para a
 
 Detalhe técnico aprofundado em [Intelligent recap for Teams calls, meetings, and events](https://learn.microsoft.com/en-us/microsoftteams/intelligent-recap-calls-meetings).
 
-## Para quem quer ir mais longe — mapa de stakeholders dinâmico
+## Avançado (worksheet) — mapa de stakeholders dinâmico
 
 A técnica do follow-up de silenciados do Caso #1 generaliza para qualquer dataset onde haja intervenientes mencionados sem voz própria. Aplicada de forma sistemática, chama-se **mapa de stakeholders dinâmico** — três passos.
 
@@ -506,4 +506,4 @@ E uma frase a guardar:
 
 ## Próxima sessão
 
-Na Sessão 6, vamos passar dos artefactos de comunicação para os **dados estruturados**: **Excel com Copilot** — perguntar aos teus dados, analisar execução orçamental, identificar padrões e preparar relatórios executivos.
+Na Sessão 6, vamos passar dos artefactos de comunicação para os **dados estruturados**: **Excel com Copilot** — perguntar aos vossos dados, analisar execução orçamental, identificar padrões e preparar relatórios executivos.
