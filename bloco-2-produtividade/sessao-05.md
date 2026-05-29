@@ -104,9 +104,9 @@ O princípio operacional da S05. Análogo do método CCC da S04 — uma técnica
 
 ## Demonstração — o que vão ver
 
-A demonstração tem três partes ao vivo, em directo nas duas apps. O objetivo é estabelecer o tom da sessão: **carregar no botão certo é o início, não o fim**.
+A demonstração tem três partes ao vivo, em direto nas duas apps. O objetivo é estabelecer o tom da sessão: **carregar no botão certo é o início, não o fim**.
 
-**Parte A — Sumarização nativa no Outlook.** Vão observar a Catarina abrir a thread "Adopção do Microsoft 365 Copilot na UVV" e clicar em *Summarize by Copilot* (botão nativo). O Copilot devolve resumo com bullets e citações numeradas. Anotem: mapeou os 8 intervenientes formais? Identificou os 3 conflitos? Misturou prazos?
+**Parte A — Sumarização nativa no Outlook.** Vão observar a Catarina abrir a thread "Adoção do Microsoft 365 Copilot na UVV" e clicar em *Summarize by Copilot* (botão nativo). O Copilot devolve resumo com bullets e citações numeradas. Anotem: mapeou os 8 intervenientes formais? Identificou os 3 conflitos? Misturou prazos?
 
 **Parte B — Extração de ações no Teams.** Vão observar a Catarina abrir a reunião do Conselho de Coordenação dos Mestrados, ir ao separador *Recap* e ver as *Action items* extraídas automaticamente. Anotem: quantas ações identificou? Os responsáveis batem certo com quem falou? Algum prazo foi inventado?
 
@@ -127,7 +127,7 @@ Estes três derrapagens reaplicam-se nos casos. Os formandos passam de observado
 
 ### Cenário
 
-A Catarina recebeu ontem (15-05) o e-mail do Reitor que abriu a thread "Adopção do Microsoft 365 Copilot na UVV". Hoje (22-05), o Reitor encarregou-a de **coordenar o dossier** e responder em 24 horas com síntese e proposta de calendário. A thread tem agora 9 e-mails. Precisa de começar pelo princípio: **o que está cada um a dizer**.
+A Catarina recebeu ontem (15-05) o e-mail do Reitor que abriu a thread "Adoção do Microsoft 365 Copilot na UVV". Hoje (22-05), o Reitor encarregou-a de **coordenar o dossier** e responder em 24 horas com síntese e proposta de calendário. A thread tem agora 9 e-mails. Precisa de começar pelo princípio: **o que está cada um a dizer**.
 
 📎 **Para fazerem este exercício, descarreguem o dataset:** [Dataset_S05_Comunicacao.docx]({{ site.baseurl }}/sessoes/sessao-05/Dataset_S05_Comunicacao.docx) — abram no Outlook ou Word, vão à secção DOC-A.
 
@@ -137,7 +137,7 @@ No Outlook, abrir a thread e clicar em **Summarize by Copilot** (botão nativo n
 
 ### Exemplo de output esperado
 
-> *A thread "Adopção do Microsoft 365 Copilot na UVV" envolve 8 intervenientes da UVV e externos. O Reitor anunciou a 15-05 a intenção de avançar com piloto em Setembro 2026. Recebeu resposta da Vice-Reitora (questões de licenciamento e ordem das fases), da DSI (custos €36k não orçamentados e 3-4 semanas-pessoa para preparar tenant), do EPD (AIPD obrigatória, 4-6 semanas, recomenda adiar para Janeiro 2027), do Coordenador do MEI (pedido de prioridade), e do Sindicato (4 perguntas formais sobre direitos dos trabalhadores). Por fim, o Reitor pediu à Catarina coordenar.*
+> *A thread "Adoção do Microsoft 365 Copilot na UVV" envolve 8 intervenientes da UVV e externos. O Reitor anunciou a 15-05 a intenção de avançar com piloto em Setembro 2026. Recebeu resposta da Vice-Reitora (questões de licenciamento e ordem das fases), da DSI (custos €36k não orçamentados e 3-4 semanas-pessoa para preparar tenant), do EPD (AIPD obrigatória, 4-6 semanas, recomenda adiar para Janeiro 2027), do Coordenador do MEI (pedido de prioridade), e do Sindicato (4 perguntas formais sobre direitos dos trabalhadores). Por fim, o Reitor pediu à Catarina coordenar.*
 >
 > *Os 3 conflitos principais:*
 > *- Calendário: Setembro (Reitor) vs. Janeiro 2027 (EPD/DSI)*
@@ -154,7 +154,7 @@ No Outlook, abrir a thread e clicar em **Summarize by Copilot** (botão nativo n
 
 Depois do resumo, abrir o **Chat with Copilot in Outlook** e colar:
 
-> *Releia a thread "Adopção do Microsoft 365 Copilot na UVV". Lista os intervenientes em três categorias:*
+> *Releia a thread "Adoção do Microsoft 365 Copilot na UVV". Lista os intervenientes em três categorias:*
 > *(a) quem escreveu pelo menos um e-mail,*
 > *(b) quem foi referido por outros mas não escreveu,*
 > *(c) quem, pelo conteúdo, deveria estar no fluxo mas nem escreveu nem foi referido.*
@@ -196,7 +196,7 @@ A descoberta não é a CT em si. **A descoberta é o padrão de prompt**: depois
 > Três perguntas para discutir em sala:
 >
 > 1. *"O Copilot identificou os 8 intervenientes formais? Incluiu erradamente o aluno (E9)?"*
-> 2. *"Que mencionados detectou? Detectou a Comissão de Trabalhadores?"*
+> 2. *"Que mencionados detetou? Detectou a Comissão de Trabalhadores?"*
 > 3. *"Que inferidos sugeriu que não tinham considerado?"*
 
 ## Caso #2 — Redigir e-mail ao Reitor com Help me reply + Coaching
@@ -222,7 +222,7 @@ No Outlook, abrir o e-mail do Reitor (E7) e clicar em **Help me reply**. Constru
 >
 > *Context: sou Catarina Pires, DRH, secretária do Conselho de Coordenação dos Mestrados, designada pelo Reitor para coordenar este dossier.*
 >
-> *Source: thread "Adopção do Microsoft 365 Copilot na UVV" (DOC-A).*
+> *Source: thread "Adoção do Microsoft 365 Copilot na UVV" (DOC-A).*
 >
 > *Expectation: 4-5 parágrafos curtos, tom institucional formal, português europeu, máximo 250 palavras. Não usar "compliance", "alinhar", "aprovar automaticamente".*
 
@@ -270,7 +270,7 @@ Após o draft, clicar em **Coach my draft** (botão Coaching by Copilot). O Coac
 - Suavizar tom condescendente
 - Substituir jargão por palavras concretas
 
-**Quando aceitar em bloco vs caso a caso:** se o Coach sugere mudanças que afectam o conteúdo (não só a forma), avaliar caso a caso. Se são só ajustes de tom e clareza, "Apply all" é seguro.
+**Quando aceitar em bloco vs caso a caso:** se o Coach sugere mudanças que afetam o conteúdo (não só a forma), avaliar caso a caso. Se são só ajustes de tom e clareza, "Apply all" é seguro.
 
 {: .discussao }
 > Três perguntas para discutir em sala:
@@ -373,7 +373,7 @@ Os três primeiros mantêm-se da S04 (com manifestação adaptada ao registo Out
 
 **Sinal 4 — Sycophancy: o Copilot espelha o ângulo do prompt.** O mais subtil e o mais perigoso em redação institucional. Demonstrado na Parte C com 3 prompts lado-a-lado: mudar *"o EPD está a complicar com prazos"* para *"o Reitor está a impor calendário irrealista"* mantém os factos mas inverte a tonalidade.
 
-**Como detectar:** rever as palavras de caracterização no output (verbos, adjectivos) — mantiveram registo neutro ou caricaturaram alguém?
+**Como detetar:** rever as palavras de caracterização no output (verbos, adjetivos) — mantiveram registo neutro ou caricaturaram alguém?
 
 **Como mitigar:** pedir explicitamente *"em registo neutro institucional, sem caracterizar intenções de nenhum interveniente. Reporta o que cada um escreveu."* **A neutralidade não é default. É escolha.**
 
