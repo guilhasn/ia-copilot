@@ -97,7 +97,7 @@ O princípio operacional da S05. Análogo do método CCC da S04 — uma técnica
 - **Caso #2:** mapear posições em conflito, **não decidir** entre elas
 - **Caso #3:** mapear ações com timestamp, **não inventar** prazos onde não há
 
-**Porquê importa.** Em comunicação institucional, apresentar uma decisão do Copilot como tua é três coisas ao mesmo tempo: (1) desonesto (não foi a tua análise); (2) cruza o art. 14.º do AI Act (supervisão humana significativa); (3) cria base para impugnação futura ("a Direção decidiu com base numa recomendação de IA não validada").
+**Porquê importa.** Apresentar uma decisão do Copilot como tua mistura papéis: a análise é dele, mas quem assina és tu. O princípio MAPEIA-NÃO-DECIDAS protege contra isso — mantém claro onde acaba o assistente e onde começa o trabalho que tem o teu nome em baixo.
 
 {: .important }
 > **MAPEIA, NÃO DECIDAS.** O Copilot pode mapear, identificar, redigir. **Não pode decidir** o que fica do lado da Direção. Não pode decidir o tom do teu prompt. Não pode decidir o que respondeste numa reunião. Tudo isso é teu.
@@ -186,7 +186,7 @@ Depois do resumo, abrir o **Chat with Copilot in Outlook** e colar:
 
 ### O que se descobre
 
-A **Comissão de Trabalhadores** aparece **mencionada duas vezes** na thread mas **nunca escreve**. A Catarina trabalhou todo o dossier sem ler o que a CT pensa. Se a proposta ao Reitor for apresentada sem que a CT seja **consultada antes** do anúncio público, a CT pode argumentar em sede de queixa que não foi ouvida — e tem razão.
+A **Comissão de Trabalhadores** aparece **mencionada duas vezes** na thread mas **nunca escreve**. A Catarina trabalhou todo o dossier sem ler o que a CT pensa.
 
 A descoberta não é a CT em si. **A descoberta é o padrão de prompt**: depois do resumo nativo, fazer um follow-up para *quem foi silenciado*. Esta técnica aplica-se a qualquer thread, ata, regulamento, caderno de encargos ou proposta — em todos esses contextos há sempre alguém mencionado sem voz própria.
 
@@ -320,7 +320,7 @@ Para cada ação no output do Intelligent recap:
 3. Confirmar **quem disse**, **quando**, **o quê**.
 4. Se não há timestamp confirmável, **não é ação da reunião**.
 
-Esta disciplina é o equivalente Teams do método CCC da S04 — uma validação rápida que apanha 3 dos 4 erros típicos. Cinco minutos investidos aqui poupam uma hora de mal-entendidos depois.
+Esta disciplina é o equivalente Teams do método CCC da S04. Apanha sobretudo os erros de atribuição (Sinal 1) e parcialmente a sobre-simplificação (Sinal 3). Code-switching e sycophancy exigem leitura crítica do output, não validação por timestamp. Cinco minutos investidos aqui poupam uma hora de mal-entendidos depois.
 
 ### Passo 2 — Gerar e-mail de follow-up com Post-meeting action
 
@@ -417,7 +417,7 @@ O Microsoft 365 Copilot consulta o **Microsoft Graph**, uma base de dados unific
 
 ### Permissões herdadas
 
-O Copilot **vê o que vocês veem — nem mais, nem menos**. Se têm acesso indevido a um documento mal partilhado, o Copilot também o vê. Antes de adoção em larga escala, esta é a primeira coisa a resolver (M365 Purview, etiquetas de sensibilidade, políticas DLP).
+O Copilot **trabalha com informação a que vocês têm permissões de acesso**, respeitando controlos e políticas do Microsoft 365 — etiquetas de sensibilidade, permissões de pastas, políticas DLP. O problema típico não é o Copilot ver o que não devia; é estar a ver documentos a que vocês próprios já tinham acesso indevido por *oversharing* prévio do SharePoint. Antes de adoção em larga escala, esta é a primeira coisa a resolver.
 
 ### Indexação com latência
 
