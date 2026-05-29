@@ -36,15 +36,15 @@ No final da sessão, os formandos deverão ser capazes de:
 
 ## Ligação às sessões anteriores
 
-| Sessão | Competência adquirida | Ação Microsoft |
-|---|---|---|
-| S1 | **Classificar** — Régua do Semáforo | (moldura) |
-| S2 | **Pedir** — framework GCSE | *Catch up* (resumir e-mails) |
-| S3 | **Sistematizar** — biblioteca pessoal de prompts | *Ask* + *Create* |
-| S4 | **Validar com critério jurídico** (Word) | *Edit* |
-| **S5** | **Mapear sem decidir** (Outlook + Teams) | *Catch up* + *Create* aplicados a comunicação |
+| Sessão | Competência adquirida |
+|---|---|
+| S1 | **Classificar** — Régua do Semáforo |
+| S2 | **Pedir** — framework GCSE |
+| S3 | **Sistematizar** — biblioteca pessoal de prompts |
+| S4 | **Validar com critério jurídico** (Word) |
+| **S5** | **Mapear sem decidir** (Outlook + Teams) |
 
-A S05 retoma os 4 sinais da S04 (com sycophancy a substituir alucinação por omissão como 4.º), mantém o método CCC aplicável a documentos longos via [âncora cruzada]({% link bloco-2-produtividade/sessao-04.md %}#metodo-ccc), e introduz **MAPEIA, NÃO DECIDAS** como princípio específico para tarefas de comunicação.
+A S05 retoma os [5 sinais]({% link bloco-2-produtividade/sessao-04.md %}#sinais-output) da S04 (com **sycophancy** a dominar em comunicação assistida), mantém o [método CCC]({% link bloco-2-produtividade/sessao-04.md %}#metodo-ccc) aplicável a documentos longos, e introduz **MAPEIA, NÃO DECIDAS** como princípio específico para tarefas de comunicação.
 
 ## Fluxo da sessão
 
@@ -56,7 +56,7 @@ A S05 retoma os 4 sinais da S04 (com sycophancy a substituir alucinação por om
 | Exercício guiado — Casos #1 e #2 | 25 min | Sumarizar thread + descobrir silenciados; redigir e-mail ao Reitor |
 | Pausa | 5 min | |
 | Aplicação livre — Caso #3 | 20 min | Tabela de ações no Teams + follow-up |
-| Consolidação — 4 sinais + disciplina de validação | 10 min | Apresentação da peça nomeada para fixar |
+| Consolidação — 5 sinais + disciplina de validação | 10 min | Apresentação da peça nomeada para fixar |
 | Reflexão crítica | 8 min | 3 perguntas; última é a pergunta-cartão sobre transcrição |
 | **Total** | **100 min úteis** | + ~20 min de transições = 120 nominais |
 
@@ -361,24 +361,32 @@ Catarina Pires · DRH · Secretária do Conselho
 > 2. *"A ação 6 (encaminhar para Gab. Comunicação) ficou com prazo inventado ou em branco?"*
 > 3. *"Ação 5 (Catarina recolhe propostas) foi destacada ou ficou implícita no mesmo timestamp da 4?"*
 
-## Os 4 sinais de output problemático {#quatro-sinais}
+## Os 5 sinais de output problemático {#sinais-output}
 
-Os três primeiros mantêm-se da S04 (com manifestação adaptada ao registo Outlook/Teams); o 4.º muda — em vez de "alucinação por omissão" temos **sycophancy**, porque é o sinal mais característico em redação assistida.
+Cinco sinais a apanhar em qualquer output do Copilot. **Três** aparecem em qualquer superfície (documentos, e-mails, transcrições). **Dois** são contextuais — dominam consoante o tipo de tarefa.
 
-**Sinal 1 — Alucinação de intervenientes, prazos ou ações.** O Copilot inventa um prazo para a ação 6 da reunião que ficou sem data; ou atribui ao Pedro uma intervenção do Carlos. Deteção: cruzar com a fonte (timestamp da transcrição ou citação numerada do Summarize).
+#### Universais (em qualquer tarefa)
+
+**Sinal 1 — Alucinação de algo factual.** O Copilot inventa algo verificável: um prazo para a ação 6 da reunião que ficou sem data; atribui ao Pedro uma intervenção do Carlos; cita um interveniente que não estava na thread. Deteção: cruzar com a fonte (timestamp da transcrição ou citação numerada do Summarize).
 
 **Sinal 2 — Code-switching.** O output desliza para pt-BR ou inglês ("compliance", "stakeholders", "aprovar automaticamente"). Mitigação: pedir explicitamente "português europeu" no prompt.
 
 **Sinal 3 — Sobre-simplificação de posições.** O output transforma *"o EPD recomenda adiamento para Janeiro 2027"* em *"o EPD recusa o calendário do Reitor"*. A nuance perde-se, e em comunicação institucional **a nuance é o conteúdo**. Deteção: comparar o tom categórico do output com a cautela do original.
 
-**Sinal 4 — Sycophancy: o Copilot espelha o ângulo do prompt.** O mais subtil e o mais perigoso em redação institucional. Demonstrado na Parte C com 3 prompts lado-a-lado: mudar *"o EPD está a complicar com prazos"* para *"o Reitor está a impor calendário irrealista"* mantém os factos mas inverte a tonalidade.
+#### Contextuais (dominam em superfícies específicas)
 
-**Como detetar:** rever as palavras de caracterização no output (verbos, adjetivos) — mantiveram registo neutro ou caricaturaram alguém?
+**Sinal 4 — Sycophancy** *(mais frequente em redação assistida — e-mails, drafts, propostas).* O Copilot espelha o ângulo do prompt. Demonstrado na Parte C com 3 prompts lado-a-lado: mudar *"o EPD está a complicar com prazos"* para *"o Reitor está a impor calendário irrealista"* mantém os factos mas inverte a tonalidade.
 
-**Como mitigar:** pedir explicitamente *"em registo neutro institucional, sem caracterizar intenções de nenhum interveniente. Reporta o que cada um escreveu."* **A neutralidade não é default. É escolha.**
+**Porque é o pior sinal em comunicação:** os outros revelam-se a uma comparação rápida com a fonte. A sycophancy passa despercebida porque os factos estão lá — só o tom mudou. E em comunicação institucional, **o tom é metade do conteúdo**.
+
+Como detetar: rever as palavras de caracterização no output (verbos, adjetivos) — mantiveram registo neutro ou caricaturaram alguém?
+
+Como mitigar: pedir explicitamente *"em registo neutro institucional, sem caracterizar intenções de nenhum interveniente. Reporta o que cada um escreveu."* **A neutralidade não é default. É escolha.**
+
+**Sinal 5 — Alucinação por omissão** *(mais frequente em documentos longos com estrutura hierárquica — regulamentos, pareceres, atas).* O Copilot não inventa nada, mas omite exceções críticas. Tema central da [S4]({% link bloco-2-produtividade/sessao-04.md %}#sinais-output); em comunicação institucional é menos crítico, mas pode aparecer (ex.: resumo de thread que omite um e-mail inteiro porque era curto).
 
 {: .important }
-> **Quatro coisas que o Copilot faz mal em comunicação. A pior é a que o tom do vosso prompt provoca.**
+> **Cinco coisas que o Copilot faz mal. Em comunicação, a pior é a que o tom do vosso prompt provoca — sycophancy.**
 
 ## Disciplina de validação — checklist por superfície {#disciplina-validacao}
 

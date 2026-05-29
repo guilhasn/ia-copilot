@@ -36,12 +36,12 @@ No final da sessão, os formandos deverão ser capazes de:
 
 ## Ligação às sessões anteriores
 
-| Sessão | Competência adquirida | Ação Microsoft |
-|---|---|---|
-| S1 | **Classificar** — Régua do Semáforo | (moldura) |
-| S2 | **Pedir** — framework GCSE | *Catch up* (resumir e-mails) |
-| S3 | **Sistematizar** — biblioteca pessoal de prompts | *Ask* (pesquisar) + *Create* (redigir) |
-| S4 | **Validar com critério jurídico** | ***Edit*** (sumarizar e reformular documentos) |
+| Sessão | Competência adquirida |
+|---|---|
+| S1 | **Classificar** — Régua do Semáforo |
+| S2 | **Pedir** — framework GCSE |
+| S3 | **Sistematizar** — biblioteca pessoal de prompts |
+| S4 | **Validar com critério jurídico** (Word) |
 
 ## Fluxo da sessão
 
@@ -53,7 +53,7 @@ No final da sessão, os formandos deverão ser capazes de:
 | Exercício guiado — Caso #1 + demo de ambiguidades | 25 min | Formandos sumarizam DOC-A; demonstração curta de 8 min: pedir ao Copilot que identifique ambiguidades |
 | Pausa | 5 min | |
 | Aplicação livre — Caso #2 e Sub-B | 20 min | Reformulação DOC-B; quem terminar cedo faz Sub-B multi-versão |
-| Consolidação — 4 sinais + CCC | 10 min | Apresentação da peça nomeada para fixar |
+| Consolidação — 5 sinais + CCC | 10 min | Apresentação da peça nomeada para fixar |
 | Reflexão crítica | 8 min | 3 perguntas: quando NÃO sumarizar; consequências de artigo inventado; método de validação em 30 s |
 | **Total** | **100 min úteis** | + ~20 min de transições = 120 nominais |
 
@@ -121,7 +121,7 @@ Não é sinónimo de simplificação. Pode haver linguagem clara sobre temas com
 
 ## Demonstração — o que vão ver
 
-A sessão arranca com duas demonstrações ao vivo, em directo no Copilot. O objetivo é estabelecer o tom: *o Copilot dá 70% do trabalho em 10 segundos; os outros 30% somos nós.*
+A sessão arranca com duas demonstrações ao vivo, em direto no Copilot. O objetivo é estabelecer o tom: *o Copilot dá 70% do trabalho em 10 segundos; os outros 30% somos nós.*
 
 **Parte A — Sumarização do regulamento.** Vão observar a geração ao vivo de um resumo executivo do *Regulamento de Avaliação dos Mestrados da UVV* (DOC-A do dataset). Enquanto vêem, anotem três coisas: o que o Copilot faz bem, o que esquece, e o que inventa. **Estes três padrões repetem-se em qualquer sumarização que façam.**
 
@@ -282,27 +282,21 @@ Não é exaustivo nem garantido — o Copilot identifica tipicamente 4-5 das 6 a
 
 A técnica aplica-se a regulamentos, pareceres, cadernos de encargos, despachos antes de assinar.
 
-## Validar em 30 segundos — os 4 sinais e o método CCC {#validar-30-segundos}
+## Validar em 30 segundos — os sinais e o método CCC {#validar-30-segundos}
 
-Esta é a peça nomeada que vai viver com vocês para além da S04. Os **4 sinais** descrevem *o que detetar*. O **método CCC** descreve *como detetar em 30 segundos*.
+Esta é a peça nomeada que vai viver com vocês para além da S04. Os **5 sinais** descrevem *o que detetar*. O **método CCC** descreve *como detetar em 30 segundos*.
 
-### Os 4 sinais de output problemático {#quatro-sinais}
+### Os 5 sinais de output problemático {#sinais-output}
 
-Por ordem de dificuldade crescente de deteção. Cada um com exemplo extraído do regulamento DOC-A.
+Há cinco sinais a apanhar em qualquer output do Copilot. **Três** aparecem em qualquer superfície (documentos, e-mails, transcrições). **Dois** são contextuais — dominam consoante o tipo de tarefa.
 
-**Sinal 1 — Alucinação de artigos.** O Copilot inventa referências:
+#### Universais (em qualquer tarefa)
 
-> *"...nos termos do art. 12.º-A do Regulamento..."*
+**Sinal 1 — Alucinação de algo factual.** O Copilot inventa algo verificável: referências de artigos, prazos, intervenientes, números. Em documentos: *"...nos termos do art. 12.º-A do Regulamento..."* — não existe nenhum 12.º-A. Deteção: confirmar contra a fonte (índice do regulamento, citações numeradas do Summarize, timestamp da transcrição). **Tempo: poucos segundos.** É o mais visível.
 
-Não existe nenhum 12.º-A. Deteção: confirmar contra o índice do regulamento. **Tempo: poucos segundos.** É o mais visível dos quatro.
+**Sinal 2 — Code-switching.** O output desliza para pt-BR ou inglês em registos formais: *"O regulamento estabelece que a inscription em compliance com a deadline..."*. Comum quando não pedimos explicitamente "português europeu" no prompt. Deteção: leitura atenta. Mitigação: cláusula explícita no prompt.
 
-**Sinal 2 — Code-switching.** O output desliza para pt-BR ou inglês em registos formais:
-
-> *"O regulamento estabelece que a inscription em compliance com a deadline..."*
-
-Comum quando não pedimos explicitamente "português europeu" no prompt. Deteção: leitura atenta. Mitigação: cláusula explícita no prompt.
-
-**Sinal 3 — Sobre-simplificação.** O Copilot transforma afirmações cautelosas em categóricas — perde-se a nuance que dá rigor jurídico.
+**Sinal 3 — Sobre-simplificação.** O Copilot transforma afirmações cautelosas em categóricas — perde-se a nuance que dá rigor.
 
 > Original: *"O STA tem doutrina dominante mas não unanimidade, com decisão uniformizadora pendente..."*
 >
@@ -310,7 +304,9 @@ Comum quando não pedimos explicitamente "português europeu" no prompt. Deteç�
 
 Inverteu a realidade. Deteção: comparar o tom categórico do output com a cautela do original.
 
-**Sinal 4 — Alucinação por omissão.** O mais subtil e o mais perigoso. O Copilot **não inventa nada** — mas **omite exceções críticas** que mudam o sentido.
+#### Contextuais (dominam em superfícies específicas)
+
+**Sinal 4 — Alucinação por omissão** *(mais frequente em documentos longos com estrutura hierárquica — regulamentos, pareceres, atas).* O Copilot **não inventa nada** — mas **omite exceções críticas** que mudam o sentido.
 
 Exemplo. O art. 3.º do regulamento tem três números:
 
@@ -324,12 +320,14 @@ Output típico do Copilot:
 
 Tudo o que está é **verdade**. Mas omitiu o n.º 3 — exatamente a regra que afeta o aluno desorganizado, que é o caso mais comum em prática.
 
-**Porque é o pior sinal:** os outros três revelam-se a um leitor atento. A alucinação por omissão **não revela nada** — o leitor sai a achar que sabe, sem saber o que não sabe.
+**Porque é o pior sinal em documentos:** os outros revelam-se a um leitor atento. A alucinação por omissão **não revela nada** — o leitor sai a achar que sabe, sem saber o que não sabe.
 
-**Deteção.** Para cada artigo citado, verificar se tem subníveis (n.º 1, 2, 3...). Se sim, ver se o resumo cita o número específico ("art. 3.º n.º 1") ou só o artigo ("art. 3.º"). Se cita só o artigo sem número, **provavelmente** está a omitir números seguintes.
+Deteção: para cada artigo citado, verificar se tem subníveis (n.º 1, 2, 3...). Se sim, ver se o resumo cita o número específico ("art. 3.º n.º 1") ou só o artigo ("art. 3.º"). Se cita só o artigo sem número, **provavelmente** está a omitir números seguintes.
+
+**Sinal 5 — Sycophancy** *(mais frequente em redação assistida — e-mails, drafts, propostas).* O Copilot espelha o ângulo do prompt. Se enviesarem a pergunta, viesam o output. Tema central da [S5]({% link bloco-2-produtividade/sessao-05.md %}#sinais-output); em documentos longos é menos crítico do que em comunicação institucional. Mitigação rápida: pedir explicitamente *"em registo neutro institucional, sem caracterizar intenções"*.
 
 {: .important }
-> **Quatro coisas que o Copilot faz mal. A pior é a que não vês.**
+> **Cinco coisas que o Copilot faz mal. Em documentos longos, a pior é a que não vês — a omissão silenciosa de subníveis.**
 
 ### Método CCC — Cita-Confirma-Conta {#metodo-ccc}
 
@@ -343,11 +341,14 @@ Técnica de validação em 30 segundos, três passos:
 
 ### Cobertura do método CCC
 
-Em 30 segundos, o CCC apanha **três dos quatro sinais**: artigos inventados (Sinal 1), omissões de capítulo inteiro (parcialmente Sinal 4), e por comparação rápida, sobre-simplificação evidente (Sinal 3).
+Em 30 segundos, o CCC apanha **três dos cinco sinais**: artigos inventados (Sinal 1), omissões de capítulo inteiro (parcialmente Sinal 4), e por comparação rápida, sobre-simplificação evidente (Sinal 3).
 
-**Não apanha** a alucinação por omissão silenciosa de subníveis dentro de um artigo corretamente citado (Sinal 4 na sua forma mais subtil). Para apanhar isso, é preciso ler o artigo no original — mais 2 minutos por artigo crítico.
+**Não apanha:**
+- a alucinação por omissão silenciosa de subníveis dentro de um artigo corretamente citado (Sinal 4 na sua forma mais subtil) — para isso, ler o artigo no original (~2 min por artigo crítico)
+- code-switching subtil (Sinal 2) — precisa de leitura do texto
+- sycophancy (Sinal 5) — precisa de revisão do tom, e em documentos longos é menos frequente
 
-> Em 30 segundos não vão apanhar tudo. Apanham 3 de 4. E em 2 minutos extra, apanham o 4.º. Isto é o equilíbrio entre velocidade e diligência. **Esta sessão vale por isto.**
+> Em 30 segundos não vão apanhar tudo. Apanham os 3 sinais universais mais evidentes. Em 2 minutos extra, apanham a omissão silenciosa de subníveis. Isto é o equilíbrio entre velocidade e diligência. **Esta sessão vale por isto.**
 
 ## Leitura complementar — porque é que o Copilot se comporta assim
 
@@ -412,7 +413,7 @@ A S04 foi a primeira sessão aplicada. Saímos com três coisas:
 
 - **Sei resumir um regulamento** com citação validada de artigos.
 - **Sei reformular um parecer** sem destruir o rigor — incluindo preservar ambiguidades intencionais.
-- **Sei validar rapidamente** com o método CCC — em 30 segundos apanho 3 dos 4 sinais de problema; em 2 minutos extra apanho o 4.º.
+- **Sei validar rapidamente** com o método CCC — em 30 segundos apanho 3 dos 5 sinais; em 2 minutos extra apanho a omissão silenciosa de subníveis (a peça mais subtil em documentos).
 
 A demonstração de pedir ambiguidades ao Copilot, no fim, é a técnica que vai voltar quando trabalharem com cadernos de encargos, pareceres e despachos antes de assinar.
 
@@ -441,4 +442,4 @@ A demonstração de pedir ambiguidades ao Copilot, no fim, é a técnica que vai
 
 ## Próxima sessão
 
-Na Sessão 5, vamos aplicar a mesma disciplina à comunicação em vez de documentos longos: **Outlook + Teams** — redigir respostas a e-mails, resumir reuniões, extrair acções e prazos.
+Na Sessão 5, vamos aplicar a mesma disciplina à comunicação em vez de documentos longos: **Outlook + Teams** — redigir respostas a e-mails, resumir reuniões, extrair ações e prazos.
