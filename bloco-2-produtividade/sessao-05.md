@@ -19,7 +19,7 @@ nav_order: 2
 
 ## Ideia central
 
-A S05 trabalha o caso mais comum do dia-a-dia em IES: chega uma cadeia de e-mails que cresceu durante uma semana, ou a transcrição de uma reunião com decisões dispersas, e tem-se uma hora para sintetizar, propor próximos passos, e fechar um follow-up. **É a sessão que mais minutos por dia poupa.**
+A S05 trabalha o caso mais comum do dia-a-dia em IES: chega uma cadeia de e-mails que cresceu durante uma semana, ou a transcrição de uma reunião com decisões dispersas, e tem-se uma hora para sintetizar, propor próximos passos, e fechar um follow-up.
 
 A persona muda: depois de quatro sessões com a Helena (Diretora de Serviços Académicos), entra a **Catarina Pires**, Técnica Superior de Recursos Humanos. A transição é deliberada — sinaliza que o método se aplica a vários perfis profissionais. Vão ver a Catarina a aplicar os mesmos princípios da S04 num contexto diferente.
 
