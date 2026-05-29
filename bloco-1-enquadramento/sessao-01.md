@@ -9,12 +9,12 @@ nav_order: 1
 
 <button class="btn-print-page" onclick="printPage()">🖨️ PDF</button>
 
-**Formação:** Inteligência Artificial — Aplicações ao trabalho das IES
-**Ferramenta principal:** Microsoft 365 Copilot
-**Duração:** 2 horas
-**Modalidade:** Online síncrona
-**Bloco:** 1 · Enquadramento e Literacia Crítica
-**Caso operacional:** Sem caso operacional — sessão inicial
+- **Formação:** Inteligência Artificial — Aplicações ao trabalho das IES
+- **Ferramenta principal:** Microsoft 365 Copilot
+- **Duração:** 2 horas
+- **Modalidade:** Online síncrona
+- **Bloco:** 1 · Enquadramento e Literacia Crítica
+- **Caso operacional:** Sem caso operacional — sessão inicial
 
 ## Ideia central
 

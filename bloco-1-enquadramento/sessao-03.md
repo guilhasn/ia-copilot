@@ -9,13 +9,13 @@ nav_order: 3
 
 <button class="btn-print-page" onclick="printPage()">🖨️ PDF</button>
 
-**Formação:** Inteligência Artificial — Aplicações ao trabalho das IES
-**Ferramenta principal:** Microsoft 365 Copilot
-**Data:** 11-06-2026
-**Duração:** 2 horas
-**Modalidade:** Online síncrona
-**Bloco:** 1 · Enquadramento e Literacia Crítica
-**Casos operacionais:** #1 Pesquisar tendências em gestão de IES · #2 Redigir resposta a e-mail
+- **Formação:** Inteligência Artificial — Aplicações ao trabalho das IES
+- **Ferramenta principal:** Microsoft 365 Copilot
+- **Data:** 11-06-2026
+- **Duração:** 2 horas
+- **Modalidade:** Online síncrona
+- **Bloco:** 1 · Enquadramento e Literacia Crítica
+- **Casos operacionais:** #1 Pesquisar tendências em gestão de IES · #2 Redigir resposta a e-mail
 
 ## Ideia central
 

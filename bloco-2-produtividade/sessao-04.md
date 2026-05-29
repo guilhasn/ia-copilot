@@ -9,13 +9,13 @@ nav_order: 1
 
 <button class="btn-print-page" onclick="printPage()">🖨️ PDF</button>
 
-**Formação:** Inteligência Artificial — Aplicações ao trabalho das IES
-**Ferramenta principal:** Microsoft 365 Copilot
-**Data:** 15-06-2026
-**Duração:** 2 horas
-**Modalidade:** Online síncrona
-**Bloco:** 2 · Produtividade Individual
-**Casos operacionais:** #1 Sumarizar regulamento (com citação validada) · #2 Reformular parecer (preservando ambiguidade)
+- **Formação:** Inteligência Artificial — Aplicações ao trabalho das IES
+- **Ferramenta principal:** Microsoft 365 Copilot
+- **Data:** 15-06-2026
+- **Duração:** 2 horas
+- **Modalidade:** Online síncrona
+- **Bloco:** 2 · Produtividade Individual
+- **Casos operacionais:** #1 Sumarizar regulamento (com citação validada) · #2 Reformular parecer (preservando ambiguidade)
 
 ## Ideia central
 
