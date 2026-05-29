@@ -309,9 +309,9 @@ Termo cunhado por Andrej Karpathy em 2025. Significa **descrever em linguagem na
 
 ### O que vai acontecer
 
-O formador pede em directo a uma ferramenta — o [Lovable](https://lovable.dev) — que construa uma aplicação para gerir a biblioteca de prompts que os formandos acabaram de criar em texto. Enquanto a IA constrói (90-180 segundos típicos), passa-se um breve panorama de quatro outras ferramentas do mesmo paradigma: **Bolt.new**, **Replit Agent**, **AI Studio (Google)** e **base44**. Quando a app aparece, demonstra-se a funcionar — lista de prompts, pesquisa, filtro por categoria, botão de copiar.
+Vão observar uma ferramenta — o [Lovable](https://lovable.dev) — a construir em direto uma aplicação para gerir a biblioteca de prompts que acabaram de criar em texto. Enquanto a IA constrói (90-180 segundos típicos), passa-se um breve panorama de quatro outras ferramentas do mesmo paradigma: **Bolt.new**, **Replit Agent**, **AI Studio (Google)** e **base44**. Quando a app aparece, demonstra-se a funcionar — lista de prompts, pesquisa, filtro por categoria, botão de copiar.
 
-A página de recurso [Vibecoding]({% link recursos/vibecoding.md %}) tem o detalhe das ferramentas, o prompt exacto usado para construir a app, e leituras para aprofundar.
+A página de recurso [Vibecoding]({% link recursos/vibecoding.md %}) tem o detalhe das ferramentas, o prompt exato usado para construir a app, e leituras para aprofundar.
 
 ### Antes de pôr dados reais — as 4 perguntas
 

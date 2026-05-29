@@ -54,8 +54,6 @@ Opções sugeridas:
 7. apoiar atendimento a estudantes;
 8. outra.
 
-Esta pergunta permite ajustar a sessão ao perfil dos formandos e reforça a ideia de que a formação parte do trabalho real das IES.
-
 ## Fluxo da sessão
 
 | Momento | Duração | Atividade |
@@ -86,10 +84,7 @@ Exemplo de prompt:
 >
 > *Texto: [Inserir aviso fictício sobre prazo de entrega de documentos nos serviços académicos.]*
 
-Mensagem pedagógica:
-
-> Aqui, a IA está a apoiar a clareza da comunicação.
-> O conteúdo é genérico, não envolve decisão sobre pessoas e o utilizador mantém controlo total sobre o texto final.
+> Aqui, a IA está a apoiar a clareza da comunicação. O conteúdo é genérico, não envolve decisão sobre pessoas e o utilizador mantém controlo total sobre o texto final.
 
 Esta demonstração mostra o lado útil da IA: poupar tempo, melhorar comunicação e ajudar a produzir uma primeira versão de trabalho.
 
@@ -99,27 +94,15 @@ Exemplo de prompt:
 
 > *Gera uma avaliação de desempenho para Catarina Pires, técnica superior de recursos humanos da Universidade de Vale Verde, com base nos seguintes objetivos e autoavaliação: [dados fictícios].*
 
-Mensagem pedagógica:
-
-> O resultado pode parecer útil, bem escrito e até convincente.
-> O problema não está apenas na qualidade do texto.
-> O problema está no tipo de tarefa, nos dados usados e no efeito que esse output pode ter numa decisão sobre uma pessoa.
-
-Formulação juridicamente prudente:
+> O resultado pode parecer útil, bem escrito e até convincente. O problema não está apenas na qualidade do texto — está no tipo de tarefa, nos dados usados e no efeito que esse output pode ter numa decisão sobre uma pessoa.
 
 > Num caso real, esta prática poderia criar risco jurídico elevado, sobretudo se o output da IA influenciasse a avaliação, a fundamentação ou a decisão final sobre o trabalhador.
 
 ### Demonstração alternativa — Ordenação de candidatos
 
-Usar apenas se houver tempo ou como exemplo complementar.
-
 > *Tenho quatro candidaturas a um cargo de direção de serviços numa universidade. Classifica os candidatos por adequação ao lugar e justifica a escolha.*
 
-Mensagem pedagógica:
-
 > A IA pode produzir uma ordenação aparentemente racional, mas isso não significa que deva ser usada para avaliar, ordenar ou selecionar pessoas.
-
-Formulação prudente:
 
 > Num procedimento real, se a IA tivesse um papel determinante na avaliação ou ordenação dos candidatos, a decisão poderia ficar juridicamente fragilizada e ser contestada.
 
