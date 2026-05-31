@@ -88,7 +88,7 @@ Exemplo de prompt:
 
 Aqui, a IA está a transformar pontos-chave numa comunicação institucional cuidada. O conteúdo é genérico, não envolve decisão sobre pessoas e o utilizador mantém controlo total sobre o texto final — pode pedir variantes em tom mais formal ou mais amigável, ou em formato de e-mail, com pequenos ajustes ao prompt.
 
-Esta demonstração mostra o lado útil da IA: poupar tempo, melhorar comunicação e ajudar a produzir uma primeira versão de trabalho.
+Este uso mostra o lado útil da IA: poupar tempo, melhorar comunicação e ajudar a produzir uma primeira versão de trabalho.
 
 ### Uso crítico
 
@@ -112,7 +112,7 @@ Num caso real, esta prática só seria aceitável com fortes salvaguardas. O ris
 
 ### Variante — Ordenação de candidatos
 
-Variante da Demonstração 2, mais próxima de cenários de contratação pública ou júris de seleção. Usar consoante o perfil da turma.
+Variante do Uso crítico, mais próxima de cenários de contratação pública ou júris de seleção.
 
 > *Tenho quatro candidaturas a um cargo de direção de serviços numa universidade. Classifica os candidatos por adequação ao lugar e justifica a escolha.*
 
@@ -131,7 +131,7 @@ Ideia essencial:
 > Saber usar IA não é apenas saber escrever prompts.
 > É compreender o contexto, os limites da ferramenta, os dados envolvidos e as consequências do output.
 
-Pontos a abordar:
+Pontos-chave:
 
 - a literacia em IA é uma competência institucional;
 - a utilização de IA exige compreensão do contexto;
@@ -152,7 +152,7 @@ Ideia essencial:
 
 > A IA pode apoiar tarefas, mas não deve substituir o juízo humano em decisões com impacto sobre trabalhadores, estudantes, candidatos ou cidadãos.
 
-Pontos a abordar:
+Pontos-chave:
 
 - diferença entre apoio à redação e decisão automatizada;
 - atenção especial a processos como SIADAP, candidaturas, bolsas, avaliação, seleção e seriação;
@@ -172,7 +172,7 @@ Ideia essencial:
 
 > O facto de estar no Microsoft 365 não transforma qualquer utilização em utilização segura.
 
-Pontos a abordar:
+Pontos-chave:
 
 - distinguir Copilot institucional de ferramentas pessoais ou públicas;
 - não introduzir dados desnecessários;
