@@ -57,7 +57,7 @@ Antes de avançar, pare por um momento. Que tarefa do dia-a-dia gostaria que a I
 6. apoiar atendimento a estudantes;
 7. outra.
 
-Não há resposta certa — só a sua resposta. Na sessão síncrona, vai partilhá-la no chat do Zoom; aqui, fica como ponto de partida para o que vem a seguir.
+Não há resposta certa — só a sua resposta. **Escreva-a no chat do Zoom**; aqui, em leitura, fica como ponto de partida para o que vem a seguir.
 
 ## Dois usos típicos
 
