@@ -74,7 +74,9 @@ Exemplo de prompt:
 
 > *Reformula este aviso aos estudantes para ficar mais claro, mantendo tom institucional, português de Portugal e sem alterar o sentido.*
 >
-> *Texto: [Inserir aviso fictício sobre prazo de entrega de documentos nos serviços académicos.]*
+> *Texto:*
+>
+> *Informa-se os Excelentíssimos Senhores Estudantes que, em conformidade com o disposto no n.º 3 do art. 12.º do Regulamento Académico em vigor, o prazo para a apresentação da documentação comprovativa de matrícula relativa ao ano letivo 2026/2027, nomeadamente o certificado de habilitações académicas, o documento de identificação e o comprovativo de morada atualizado, terminará impreterivelmente no próximo dia 15 de setembro de 2026, devendo a referida documentação ser entregue presencialmente, durante o horário de funcionamento dos Serviços, ou submetida via portal académico, sob pena de cancelamento automático da matrícula.*
 
 Aqui, a IA está a apoiar a clareza da comunicação. O conteúdo é genérico, não envolve decisão sobre pessoas e o utilizador mantém controlo total sobre o texto final.
 
@@ -84,7 +86,17 @@ Esta demonstração mostra o lado útil da IA: poupar tempo, melhorar comunicaç
 
 Exemplo de prompt:
 
-> *Gera uma avaliação de desempenho para Sofia Mendes, técnica superior de recursos humanos da Universidade de Vale Verde, com base nos seguintes objetivos e autoavaliação: [dados fictícios].*
+> *Gera uma avaliação de desempenho para Sofia Mendes, técnica superior de recursos humanos da Universidade de Vale Verde, com base nos seguintes objetivos e autoavaliação:*
+>
+> *Objetivos:*
+>
+> *1. Implementar o novo sistema de gestão de assiduidade até 30 de junho de 2026. Resultado: cumprido em 27 de junho.*
+>
+> *2. Reduzir o tempo médio de processamento de pedidos de licença sem vencimento de 15 para 8 dias úteis. Resultado: 9 dias úteis em média no 1.º semestre.*
+>
+> *3. Apoiar a elaboração do relatório anual de RH da Universidade. Resultado: entregue em 15 de março (prazo: 31 de março).*
+>
+> *Autoavaliação: Considero ter cumprido os objetivos com qualidade. O sistema de assiduidade foi implementado antes do prazo, com formação a todos os utilizadores. Quanto ao tempo de processamento, atingi 9 dias em vez dos 8, mas o aumento de pedidos no 2.º trimestre afetou o resultado. O relatório anual foi entregue 16 dias antes do prazo. Sinto que poderia ter desenvolvido mais o eixo da comunicação interna, que ficou aquém no último trimestre.*
 
 O resultado pode parecer útil, bem escrito e até convincente. O problema não está apenas na qualidade do texto — está no tipo de tarefa, nos dados usados e no efeito que esse output pode ter numa decisão sobre uma pessoa.
 
