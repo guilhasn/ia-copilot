@@ -108,7 +108,7 @@ Exemplo de prompt:
 
 O resultado pode parecer útil, bem escrito e até convincente. O problema não está apenas na qualidade do texto — está no tipo de tarefa, nos dados usados e no efeito que esse output pode ter numa decisão sobre uma pessoa.
 
-Num caso real, esta prática poderia criar risco jurídico elevado, sobretudo se o output da IA influenciasse a avaliação, a fundamentação ou a decisão final sobre o trabalhador.
+Num caso real, esta prática só seria aceitável com fortes salvaguardas. O risco jurídico aumenta significativamente se o sistema de IA for usado para apreciar o desempenho, sugerir uma classificação, gerar fundamentação substantiva ou produzir um texto que venha a ser incorporado na decisão final sem revisão humana crítica, documentada e autónoma.
 
 ### Variante — Ordenação de candidatos
 
