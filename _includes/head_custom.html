@@ -17,6 +17,8 @@
   margin-bottom: 1rem;
 }
 .btn-print-page:hover { background-color: #163a5a; }
+.main-content img { cursor: zoom-in; }
+.main-content img.no-zoom { cursor: default; }
 </style>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -32,4 +34,15 @@ document.addEventListener("DOMContentLoaded", function () {
 function printPage() {
   window.print();
 }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha384-o0gqi06am9fKVfa/jWO8/UE7OxHG6t+fgq/XaASsuwT8OBsFcxN7YhjtqyTfIxtS" crossorigin="anonymous"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  if (typeof mediumZoom === "function") {
+    mediumZoom(".main-content img:not(.no-zoom)", {
+      background: "rgba(0, 0, 0, 0.92)",
+      margin: 24
+    });
+  }
+});
 </script>

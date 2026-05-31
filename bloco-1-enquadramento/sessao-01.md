@@ -140,6 +140,10 @@ Pontos a abordar:
 
 A própria Microsoft define [6 princípios de IA responsável](https://www.microsoft.com/en-us/ai/principles-and-approach) que orientam o desenvolvimento e a utilização do Copilot: equidade, fiabilidade e segurança, privacidade e proteção, inclusão, transparência e responsabilização. Estes princípios estão alinhados com as exigências do AI Act e reforçam a ideia de que a utilização responsável de IA não é apenas uma obrigação legal — é uma boa prática reconhecida pela própria fabricante da ferramenta.
 
+![Os seis princípios de IA responsável da Microsoft: Equidade, Fiabilidade e segurança, Privacidade e segurança, Inclusão, Transparência, Responsabilidade]({{ site.baseurl }}/assets/images/microsoft-ai-6-principios.png)
+
+*Os seis princípios de IA responsável da Microsoft que orientam o desenvolvimento e a utilização do Copilot. Fonte: [Microsoft AI principles and approach](https://www.microsoft.com/en-us/ai/principles-and-approach).*
+
 Para aprofundar o enquadramento do AI Act em Portugal: [aiact-portugal.pt](https://aiact-portugal.pt/)
 
 ### 2. Proteção de dados e decisões sobre pessoas
