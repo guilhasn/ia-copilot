@@ -43,7 +43,8 @@ No final da sessão, os formandos deverão ser capazes de:
 3. **Três pilares de enquadramento** — literacia em IA, proteção de dados, dever de sigilo
 4. **Matriz Semáforo** — ferramenta prática de classificação rápida
 5. **Casos práticos** — 8 cenários para aplicar a Matriz
-6. **Síntese** — a pergunta a fazer sempre antes de usar IA
+6. **Exercício — Caça às Cores** — primeira mão no Copilot, com a Matriz aplicada à sua semana real
+7. **Síntese** — a pergunta a fazer sempre antes de usar IA
 
 ## Para começar
 
@@ -441,6 +442,10 @@ O atestado médico contém dados de saúde — uma categoria especial de dados p
 Use o modelo institucional de requerimento de junta médica e preencha-o manualmente. Se precisar de ajuda com a redação do requerimento, peça ao Copilot um modelo genérico ("redige um modelo de requerimento de convocação de junta médica, sem dados concretos") e preencha os dados à mão. Nunca cole documentos médicos, atestados, relatórios clínicos ou informação de saúde no Copilot.
 
 </details>
+
+## Exercício de aplicação
+
+[Caça às Cores]({% link exercicios/s01-caca-as-cores.md %}) — 10-12 min com o Copilot Chat. Cada formando explora prompts da sua semana, partilha no chat do Zoom com a sua classificação, e a turma reage com emoji.
 
 ## Materiais
 
