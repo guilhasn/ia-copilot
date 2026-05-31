@@ -441,7 +441,7 @@ Use o modelo institucional de requerimento de junta médica e preencha-o manualm
 - [Matriz Semáforo (PDF)]({{ site.baseurl }}/sessoes/sessao-01/Matriz_Semaforo.pdf) — para imprimir e ter na secretária
 
 {: .note }
-> Alguns materiais podem estar protegidos por password. Caso seja solicitada, utilize a password comunicada pela ANFUP.
+> Alguns materiais podem estar protegidos por password. A password é fornecida pelo formador.
 
 ### Para aprofundar
 

@@ -364,7 +364,7 @@ E uma frase a guardar:
 - [Dataset S06 — Execução Orçamental (XLSX)]({{ site.baseurl }}/sessoes/sessao-06/Dataset_S06_Execucao_Orcamental.xlsx) — 35 contratos UVV com sujidade calibrada e 3 anomalias técnicas embebidas
 
 {: .note }
-> Alguns materiais podem estar protegidos por password. Caso seja solicitada, utilizem a password comunicada pela ANFUP.
+> Alguns materiais podem estar protegidos por password. A password é fornecida pelo formador.
 
 ### Para aprofundar
 

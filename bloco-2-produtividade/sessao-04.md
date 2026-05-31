@@ -423,7 +423,7 @@ A demonstração de pedir ambiguidades ao Copilot, no fim, é a técnica que vai
 - [Dataset S04 — Regulamento + Parecer (DOCX)]({{ site.baseurl }}/sessoes/sessao-04/Dataset_S04_Documentos.docx) — os dois documentos: DOC-A regulamento de avaliação dos mestrados, DOC-B parecer sobre prescrição de propinas
 
 {: .note }
-> Alguns materiais podem estar protegidos por password. Caso seja solicitada, utilize a password comunicada pela ANFUP.
+> Alguns materiais podem estar protegidos por password. A password é fornecida pelo formador.
 
 ### Para aprofundar
 

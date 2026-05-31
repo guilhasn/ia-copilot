@@ -497,7 +497,7 @@ E uma frase a guardar:
 - [Dataset S05 — Comunicação (DOCX)]({{ site.baseurl }}/sessoes/sessao-05/Dataset_S05_Comunicacao.docx) — DOC-A thread Copilot UVV + DOC-B transcrição da reunião
 
 {: .note }
-> Alguns materiais podem estar protegidos por password. Caso seja solicitada, utilizem a password comunicada pela ANFUP.
+> Alguns materiais podem estar protegidos por password. A password é fornecida pelo formador.
 
 ### Para aprofundar
 

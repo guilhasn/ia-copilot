@@ -21,7 +21,7 @@ O curso combina demonstrações práticas, exercícios guiados, casos de uso do 
 {: .note }
 > **Acesso aos materiais**
 > Alguns materiais descarregáveis podem estar protegidos por password.
-> Caso seja solicitada password, utilize a password comunicada pela ANFUP.
+> A password é fornecida pelo formador.
 
 ---
 
