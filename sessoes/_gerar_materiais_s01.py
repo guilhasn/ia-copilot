@@ -16,7 +16,9 @@ from docx.enum.section import WD_ORIENT
 from docx.oxml.ns import qn
 
 OUTPUT_DIR = Path(__file__).parent / "sessao-01"
-PASSWORD = "COPILOT_ANFUP_IES_2026#"
+PASSWORD = os.environ.get("ANFUP_S01_PWD")
+if not PASSWORD:
+    sys.exit("Defina a variável de ambiente ANFUP_S01_PWD antes de correr o script.")
 
 NAVY = RGBColor(0x1F, 0x4E, 0x78)
 GREEN = RGBColor(0x2E, 0x7D, 0x32)
@@ -190,14 +192,17 @@ def encrypt_pdf(pdf_path, password):
 
     doc = fitz.open(str(pdf_path))
     perm = fitz.PDF_PERM_PRINT | fitz.PDF_PERM_COPY | fitz.PDF_PERM_ANNOTATE
+    tmp_path = pdf_path.with_suffix(".tmp.pdf")
     doc.save(
-        str(pdf_path),
+        str(tmp_path),
         encryption=fitz.PDF_ENCRYPT_AES_256,
         user_pw=password,
         owner_pw=password,
         permissions=perm,
     )
     doc.close()
+    pdf_path.unlink()
+    tmp_path.rename(pdf_path)
 
 
 # ── DOCUMENTO 1: Matriz Semáforo ──────────────────────────────
