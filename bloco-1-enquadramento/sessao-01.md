@@ -368,7 +368,7 @@ Evitar (🔴 Vermelho):
 
 <p class="caso-label">E se trocar o nome?</p>
 
-Pergunta clássica na sala: *"E se eu não usar 'Maria Silva' mas 'Trabalhadora A'? Tira o nome, tira o problema, não tira?"*
+Pergunta clássica: *"E se eu não usar 'Maria Silva' mas 'Trabalhadora A'? Tira o nome, tira o problema, não tira?"*
 
 Não tira. Trocar o nome é pseudonimização, não anonimização. O Comité Europeu para a Proteção de Dados é claro: substituir nome por código mantém os dados como dados pessoais — continuam sujeitos ao RGPD. A pessoa fica identificável por outras pistas: função, unidade orgânica, datas concretas, objetivos únicos, número reduzido de trabalhadores na divisão. Numa equipa pequena, *"Trabalhadora A"* é maquilhagem.
 
