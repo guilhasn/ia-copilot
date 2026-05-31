@@ -178,6 +178,10 @@ Pontos a abordar:
 
 A Microsoft garante contratualmente que, no Microsoft 365 Copilot, os prompts, respostas e dados acedidos via Microsoft Graph [não são usados para treinar modelos fundacionais](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy). O Copilot respeita as permissões existentes — só acede a dados que o utilizador já tem autorização para ver. As [etiquetas de sensibilidade Purview são respeitadas](https://learn.microsoft.com/en-us/microsoft-365/copilot/enterprise-data-protection) e propagadas para o output.
 
+![Diagrama da arquitetura do Microsoft 365 Copilot, mostrando o fluxo de prompts e respostas entre o utilizador, o Microsoft Graph com dados do tenant, o Large Language Model com Responsible AI e os mecanismos de Compliance e Purview, todos dentro do Microsoft 365 Service Boundary]({{ site.baseurl }}/assets/images/copilot-m365-architecture.png)
+
+*Arquitetura do Microsoft 365 Copilot: o fluxo dos dados entre o utilizador, o Microsoft Graph (emails, ficheiros, reuniões, chats e calendários do tenant), o Large Language Model com Responsible AI, e os mecanismos de Compliance e Purview — todos dentro do Microsoft 365 Service Boundary. Fonte: [Microsoft Learn](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-overview).*
+
 Isto não significa que qualquer utilização seja segura. Significa que a infraestrutura é protegida — mas a responsabilidade pelo que se introduz e pelo que se faz com o output continua a ser do utilizador.
 
 Frase-chave:

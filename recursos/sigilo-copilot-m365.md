@@ -9,6 +9,10 @@ nav_order: 8
 
 > O facto de estar no Microsoft 365 não transforma qualquer utilização em utilização segura.
 
+![Diagrama da arquitetura do Microsoft 365 Copilot, mostrando o fluxo de prompts e respostas entre o utilizador, o Microsoft Graph com dados do tenant, o Large Language Model com Responsible AI e os mecanismos de Compliance e Purview, todos dentro do Microsoft 365 Service Boundary]({{ site.baseurl }}/assets/images/copilot-m365-architecture.png)
+
+*Arquitetura do Microsoft 365 Copilot. O Microsoft 365 Service Boundary (linha tracejada) marca os limites onde os dados ficam: o prompt do utilizador é processado dentro do boundary, com pre-processing de grounding via Microsoft Graph (dados do tenant) e post-processing de Compliance e Purview. A instância Azure OpenAI é mantida pela Microsoft — a OpenAI não tem acesso aos dados nem ao modelo. Fonte: [Microsoft Learn](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-overview).*
+
 ## Dever de sigilo
 
 O trabalhador em funções públicas tem dever de sigilo e dever de lealdade (Lei n.º 35/2014, art. 73.º/2). O incumprimento gera responsabilidade disciplinar, podendo ir até ao despedimento.
