@@ -1,11 +1,11 @@
 ---
-title: "S1 — IA com critério nas IES"
+title: "S1 — Introdução"
 layout: default
 parent: "Bloco 1 · Enquadramento e Literacia Crítica"
 nav_order: 1
 ---
 
-# Sessão 1 — Usar IA com critério no trabalho das IES
+# Sessão 1 — Introdução — Porque é que isto não é um curso de Office
 
 <button class="btn-print-page" onclick="printPage()">🖨️ PDF</button>
 
