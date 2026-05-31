@@ -16,18 +16,17 @@ nav_order: 1
 - **Bloco:** 1 · Enquadramento e Literacia Crítica
 - **Caso operacional:** Sem caso operacional — sessão inicial
 
-## Ideia central
+## Objetivos Gerais
 
-Esta sessão estabelece a base do curso: a Inteligência Artificial aplicada ao trabalho das IES pode aumentar produtividade, qualidade e capacidade de análise, mas não deve ser usada de forma automática ou acrítica.
+A Inteligência Artificial aplicada ao trabalho das IES pode aumentar produtividade, qualidade e capacidade de análise, mas não deve ser usada de forma automática ou acrítica.
 
-O objetivo não é assustar os formandos nem transformar todos em juristas.
-O objetivo é mais simples: perceber como usar IA no trabalho das IES de forma útil, prática e consciente.
+Esta sessão é sobre critério, não sobre Direito. Em duas horas, fica com uma régua prática para classificar utilizações de IA em segundos — verde, amarelo, vermelho ou nunca — e com o enquadramento jurídico mínimo que sustenta essa classificação.
 
 A competência principal desta sessão é:
 
 > Antes de usar IA, parar alguns segundos e classificar o caso de uso.
 
-## Objetivos
+## Objetivos Específicos
 
 No final da sessão, os formandos deverão ser capazes de:
 
@@ -64,7 +63,7 @@ Opções sugeridas:
 | Discussão orientada | 8 min | O que mudou entre a primeira e a segunda utilização? |
 | Três pilares | 20 min | Literacia em IA, proteção de dados e dever de sigilo |
 | Régua do Semáforo | 15 min | Explicação da ferramenta de classificação |
-| Casos práticos | 25 min | Discussão orientada de 5 casos em aula |
+| Casos práticos | 25 min | Discussão orientada de 8 casos em aula (~3 min cada) |
 | Fecho | 10 min | Síntese, questionário de consolidação e preparação da Sessão 2 |
 
 ## Duas demonstrações iniciais
@@ -84,7 +83,7 @@ Exemplo de prompt:
 >
 > *Texto: [Inserir aviso fictício sobre prazo de entrega de documentos nos serviços académicos.]*
 
-> Aqui, a IA está a apoiar a clareza da comunicação. O conteúdo é genérico, não envolve decisão sobre pessoas e o utilizador mantém controlo total sobre o texto final.
+Aqui, a IA está a apoiar a clareza da comunicação. O conteúdo é genérico, não envolve decisão sobre pessoas e o utilizador mantém controlo total sobre o texto final.
 
 Esta demonstração mostra o lado útil da IA: poupar tempo, melhorar comunicação e ajudar a produzir uma primeira versão de trabalho.
 
@@ -92,19 +91,21 @@ Esta demonstração mostra o lado útil da IA: poupar tempo, melhorar comunicaç
 
 Exemplo de prompt:
 
-> *Gera uma avaliação de desempenho para Catarina Pires, técnica superior de recursos humanos da Universidade de Vale Verde, com base nos seguintes objetivos e autoavaliação: [dados fictícios].*
+> *Gera uma avaliação de desempenho para Sofia Mendes, técnica superior de recursos humanos da Universidade de Vale Verde, com base nos seguintes objetivos e autoavaliação: [dados fictícios].*
 
-> O resultado pode parecer útil, bem escrito e até convincente. O problema não está apenas na qualidade do texto — está no tipo de tarefa, nos dados usados e no efeito que esse output pode ter numa decisão sobre uma pessoa.
+O resultado pode parecer útil, bem escrito e até convincente. O problema não está apenas na qualidade do texto — está no tipo de tarefa, nos dados usados e no efeito que esse output pode ter numa decisão sobre uma pessoa.
 
-> Num caso real, esta prática poderia criar risco jurídico elevado, sobretudo se o output da IA influenciasse a avaliação, a fundamentação ou a decisão final sobre o trabalhador.
+Num caso real, esta prática poderia criar risco jurídico elevado, sobretudo se o output da IA influenciasse a avaliação, a fundamentação ou a decisão final sobre o trabalhador.
 
-### Demonstração alternativa — Ordenação de candidatos
+### Demonstração 2 (variante) — Ordenação de candidatos
+
+Variante da Demonstração 2, mais próxima de cenários de contratação pública ou júris de seleção. Usar consoante o perfil da turma.
 
 > *Tenho quatro candidaturas a um cargo de direção de serviços numa universidade. Classifica os candidatos por adequação ao lugar e justifica a escolha.*
 
-> A IA pode produzir uma ordenação aparentemente racional, mas isso não significa que deva ser usada para avaliar, ordenar ou selecionar pessoas.
+A IA pode produzir uma ordenação aparentemente racional, mas isso não significa que deva ser usada para avaliar, ordenar ou selecionar pessoas.
 
-> Num procedimento real, se a IA tivesse um papel determinante na avaliação ou ordenação dos candidatos, a decisão poderia ficar juridicamente fragilizada e ser contestada.
+Num procedimento real, se a IA tivesse um papel determinante na avaliação ou ordenação dos candidatos, a decisão poderia ficar juridicamente fragilizada e ser contestada.
 
 ## Três pilares de enquadramento
 
@@ -188,11 +189,11 @@ Regra transversal:
 
 > A cor não depende apenas da tarefa. Depende dos dados usados, da fase do processo, da finalidade, do destinatário do output e do grau de influência da IA na decisão.
 
-> Em caso de dúvida, subir uma cor.
+> Em caso de dúvida, escolher a cor mais restritiva.
 
 ## Casos práticos
 
-Agora que conhece a Régua, é altura de a aplicar. Os cenários seguintes são situações concretas do trabalho universitário. Para cada um, tente classificar a utilização antes de ver a resposta — clique no cenário para revelar a classificação e a justificação.
+Agora que conhece a Régua, é altura de a aplicar. Os cenários seguintes acontecem na fictícia Universidade de Vale Verde (UVV) e seguem três personas que vão regressar ao longo do curso — **Helena Albuquerque** (Diretora dos Serviços Académicos), **Catarina Pires** (técnica de RH) e **Miguel Andrade** (técnico de Contratação Pública). Para cada caso, tente classificar antes de ver a resposta — clique no cenário para revelar a classificação e a justificação.
 
 ### Caso 1 — Ofício-padrão
 
@@ -432,4 +433,4 @@ Antes de usar Copilot, é necessário perceber:
 
 ## Próxima sessão
 
-Na Sessão 2, os formandos irão trabalhar a anatomia de um prompt eficaz e aplicar o Copilot a tarefas simples e seguras do trabalho diário.
+Na Sessão 2 entramos na anatomia do prompt e aplicamos o Copilot a tarefas simples e seguras do trabalho diário.
