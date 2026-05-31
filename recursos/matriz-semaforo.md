@@ -9,16 +9,14 @@ nav_order: 1
 
 A **Matriz Semáforo** é uma ferramenta prática para classificar utilizações de IA no trabalho universitário.
 
-A Matriz tem **três cores** — verde, amarelo, vermelho — com uma fronteira ⛔ no extremo do vermelho para conteúdo manifestamente proibido.
-
 ## Categorias
 
 | Categoria | Quando usar |
 |---|---|
-| 🟢 Verde | Informação pública, genérica, não identificável ou sem impacto sobre pessoas |
-| 🟡 Amarelo | Informação interna ou potencialmente identificável, exigindo cuidados e validação |
-| 🔴 Vermelho | Processos com impacto sobre pessoas, decisões, direitos, deveres ou informação sensível |
-| ⛔ Fronteira do vermelho | Dados de saúde identificáveis, segredo médico, informação altamente sigilosa ou uso sem enquadramento. Não é uma quarta cor; é o ponto em que o vermelho passa a proibição absoluta. |
+| Verde | Informação pública, genérica, não identificável ou sem impacto sobre pessoas |
+| Amarelo | Informação interna ou potencialmente identificável, exigindo cuidados e validação |
+| Vermelho | Processos com impacto sobre pessoas, decisões, direitos, deveres ou informação sensível |
+| Nunca | Dados de saúde identificáveis, segredo médico, informação altamente sigilosa ou uso sem enquadramento |
 
 ## Cinco fatores de classificação
 

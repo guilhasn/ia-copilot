@@ -197,7 +197,7 @@ Frase-chave:
 
 Os três pilares anteriores dão-nos os princípios, mas no dia-a-dia ninguém tem tempo para reler o RGPD antes de abrir o Copilot. A **Matriz Semáforo de Utilização de IA** traduz esses princípios numa ferramenta prática de classificação rápida — uma forma simples de avaliar, em segundos, se determinada utilização de IA é segura, exige cuidados ou deve ser evitada.
 
-A Matriz tem **três cores** — verde, amarelo, vermelho — com uma fronteira ⛔ no extremo do vermelho para conteúdo manifestamente proibido:
+A Matriz classifica os usos de IA em quatro categorias:
 
 <div class="semaforo-verde"><strong>🟢 Verde</strong> — Utilização simples, genérica ou com informação pública/não identificável</div>
 
@@ -205,7 +205,7 @@ A Matriz tem **três cores** — verde, amarelo, vermelho — com uma fronteira 
 
 <div class="semaforo-vermelho"><strong>🔴 Vermelho</strong> — Utilização de risco elevado, que pode afetar pessoas, decisões, direitos ou informação sensível</div>
 
-<div class="semaforo-nunca"><strong>⛔ Fronteira do vermelho</strong> — Dados de saúde identificáveis, segredo médico ou informação altamente sigilosa sem enquadramento. Não é uma quarta cor; é o ponto em que o vermelho passa a proibição absoluta.</div>
+<div class="semaforo-nunca"><strong>⛔ Nunca</strong> — Utilização proibida ou manifestamente inadequada, como dados de saúde identificáveis, segredo médico ou informação altamente sigilosa sem enquadramento</div>
 
 Regra transversal:
 
