@@ -21,7 +21,7 @@ Este exercício treina três coisas ao mesmo tempo:
 
 - **A cor não é evidente** — outras pessoas podem ler o mesmo prompt e ver cor diferente
 
-## Como jogar
+## O exercício, passo a passo
 
 ### 1. Abrir o Copilot
 
