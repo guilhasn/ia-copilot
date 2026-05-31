@@ -30,6 +30,7 @@ Materiais transversais de apoio à formação, disponíveis ao longo de todo o c
 | Recurso | Descrição |
 |---|---|
 | [Referências Microsoft]({% link recursos/referencias-microsoft.md %}) | Links oficiais: percursos de aprendizagem, prompts, cenários, segurança, educação |
+| [AI Act (EUR-Lex)](https://eur-lex.europa.eu/legal-content/PT/TXT/PDF/?uri=OJ:L_202401689) | Regulamento (UE) 2024/1689 — texto oficial no Jornal Oficial da União Europeia |
 
 ## Outros
 
