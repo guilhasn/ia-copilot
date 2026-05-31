@@ -72,13 +72,16 @@ A diferença entre uma e outra é o coração desta sessão.
 
 Exemplo de prompt:
 
-> *Reformula este aviso aos estudantes para ficar mais claro, mantendo tom institucional, português de Portugal e sem alterar o sentido.*
+> *Constrói um aviso institucional aos estudantes da Universidade de Vale Verde, em português europeu, com tom claro e empático, a partir dos seguintes pontos-chave:*
 >
-> *Texto:*
->
-> *Informa-se os Excelentíssimos Senhores Estudantes que, em conformidade com o disposto no n.º 3 do art. 12.º do Regulamento Académico em vigor, o prazo para a apresentação da documentação comprovativa de matrícula relativa ao ano letivo 2026/2027, nomeadamente o certificado de habilitações académicas, o documento de identificação e o comprovativo de morada atualizado, terminará impreterivelmente no próximo dia 15 de setembro de 2026, devendo a referida documentação ser entregue presencialmente, durante o horário de funcionamento dos Serviços, ou submetida via portal académico, sob pena de cancelamento automático da matrícula.*
+> *- Público: estudantes inscritos no ano letivo 2026/2027*
+> *- Prazo de entrega: até 15 de setembro de 2026*
+> *- Documentos necessários: certificado de habilitações académicas, documento de identificação, comprovativo de morada atualizado*
+> *- Onde entregar: presencialmente nos Serviços Académicos durante o horário de funcionamento, ou via portal académico*
+> *- Consequência de não cumprir o prazo: cancelamento automático da matrícula*
+> *- Regulamento aplicável: n.º 3 do art. 12.º do Regulamento Académico*
 
-Aqui, a IA está a apoiar a clareza da comunicação. O conteúdo é genérico, não envolve decisão sobre pessoas e o utilizador mantém controlo total sobre o texto final.
+Aqui, a IA está a transformar pontos-chave numa comunicação institucional cuidada. O conteúdo é genérico, não envolve decisão sobre pessoas e o utilizador mantém controlo total sobre o texto final — pode pedir variantes em tom mais formal ou mais amigável, ou em formato de e-mail, com pequenos ajustes ao prompt.
 
 Esta demonstração mostra o lado útil da IA: poupar tempo, melhorar comunicação e ajudar a produzir uma primeira versão de trabalho.
 
