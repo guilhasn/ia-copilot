@@ -46,19 +46,16 @@ Antes de escrever o prompt, a pergunta continua a ser:
 
 > Este caso de uso é verde, amarelo, vermelho ou nunca?
 
-## Fluxo da sessão
+## Programa
 
-| Momento | Duração | Atividade |
-|---|---:|---|
-| Abertura | 5 min | Recuperar a ideia central da Sessão 1 |
-| Demonstração-armadilha | 10 min | Comparar prompt mau e prompt bom |
-| Conceito | 20 min | Anatomia do prompt eficaz — framework Microsoft |
-| Exercício 1 | 20 min | Melhorar prompts fracos em pares |
-| Pausa | 5 min | Pausa curta |
-| Caso prático #1 | 25 min | Resumir cadeia de e-mails |
-| Iteração | 15 min | Melhorar o output com pedidos de seguimento |
-| Construção individual | 15 min | Criar 3 prompts úteis para o posto de trabalho |
-| Fecho | 5 min | Síntese e tarefa para a Sessão 3 |
+1. Onde está o Copilot — Chat e nas aplicações Microsoft 365
+2. As quatro ações da Microsoft — *Catch up · Ask · Create · Edit*
+3. Anatomia do prompt eficaz — framework GCSE
+4. Demonstração-armadilha — comparar um prompt fraco e um prompt eficaz
+5. Exercício — melhorar prompts fracos em pares
+6. Caso prático — resumir uma cadeia de e-mails com iteração
+7. Construção individual — 3 prompts úteis para o vosso posto de trabalho
+8. Fecho — síntese e tarefa para a Sessão 3
 
 ## Onde está o Copilot
 

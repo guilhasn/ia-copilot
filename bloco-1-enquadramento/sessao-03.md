@@ -43,29 +43,26 @@ No final da sessão, os formandos deverão ser capazes de:
 | S2 | Framework Microsoft — Objetivo, Contexto, Fonte, Expectativas | Usar o framework em múltiplos contextos |
 | S3 | **Biblioteca pessoal** — guardar, reutilizar, partilhar | Nova competência |
 
-## Abertura — debrief da tarefa da Sessão 2
+## Programa
+
+1. **Para começar** — debrief de prompts testados desde a Sessão 2
+2. Prompt Gallery da Microsoft — descobrir, guardar e partilhar prompts
+3. Caso #1 — pesquisar tendências em gestão de IES (modo Web, ação *Ask*)
+4. Caso #2 — redigir resposta a e-mail com controlo de tom (Outlook, ação *Create*)
+5. Biblioteca pessoal — 5 a 8 prompts reutilizáveis organizados por categoria
+6. Partilhar com a equipa — através da Prompt Gallery e do Teams
+7. Interlúdio — vibecoding com Lovable (8 min); paisagem das ferramentas e nota de governance
+8. Fecho — síntese do Bloco 1 e preview do Bloco 2
+
+## Para começar
 
 A Sessão 2 terminou com uma tarefa: testar um prompt real no trabalho e trazer o resultado.
 
-Começar com 2-3 partilhas no chat:
+Antes de avançar, pense:
 
-> Que prompt testaram? O que funcionou? O que tiveram de ajustar?
+> Que prompt testou? O que funcionou? O que teve de ajustar?
 
-Este momento é importante: mostra que o prompting melhora com a prática e que os colegas podem aprender uns com os outros.
-
-## Fluxo da sessão
-
-| Momento | Duração | Atividade |
-|---|---:|---|
-| Abertura | 10 min | Debrief: que prompts testaram? o que funcionou? |
-| Prompt Gallery | 12 min | Descobrir, guardar e partilhar prompts na galeria Microsoft |
-| Caso #1 — Pesquisar tendências em gestão de IES | 15 min | Copilot Chat em modo Web; ação *Ask* para mapear terreno antes de uma decisão |
-| Caso #2 — Redigir resposta a e-mail | 25 min | Copilot no Outlook com controlo de tom e limites; ação *Create* |
-| Pausa | 5 min | |
-| Construir biblioteca pessoal | 25 min | Criar 5-8 prompts reutilizáveis organizados por categoria |
-| Partilhar com a equipa | 10 min | Guardar na Prompt Gallery e partilhar via Teams |
-| Interlúdio — Vibecoding | 8 min | Live build no Lovable de uma app de gestão de prompts; paisagem das ferramentas; nota de governance |
-| Fecho | 10 min | Síntese do Bloco 1 + preview do Bloco 2 |
+Vai partilhar 2-3 ideias no chat do Zoom. O prompting melhora com a prática — e os colegas podem aprender uns com os outros.
 
 ## Prompt Gallery da Microsoft
 

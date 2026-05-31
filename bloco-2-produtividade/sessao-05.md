@@ -46,19 +46,16 @@ No final da sessão, os formandos deverão ser capazes de:
 
 A S05 retoma os [5 sinais]({% link bloco-2-produtividade/sessao-04.md %}#sinais-output) da S04 (com **sycophancy** a dominar em comunicação assistida), mantém o [método CCC]({% link bloco-2-produtividade/sessao-04.md %}#metodo-ccc) aplicável a documentos longos, e introduz **MAPEIA, NÃO DECIDAS** como princípio específico para tarefas de comunicação.
 
-## Fluxo da sessão
+## Programa
 
-| Momento | Duração | Atividade |
-|---|---:|---|
-| Abertura — apresentação da Catarina + Matriz amarela | 7 min | Introdução à nova persona; calibrar zonas amarela e vermelha |
-| Demonstração ao vivo | 15 min | 3 partes: sumarização no Outlook, extração no Teams, como o Copilot derrapa |
-| MAPEIA, NÃO DECIDAS — conceito-chave | 10 min | Princípio operacional da sessão |
-| Exercício guiado — Casos #1 e #2 | 25 min | Sumarizar thread + descobrir silenciados; redigir e-mail ao Reitor |
-| Pausa | 5 min | |
-| Aplicação livre — Caso #3 | 20 min | Tabela de ações no Teams + follow-up |
-| Consolidação — 5 sinais + disciplina de validação | 10 min | Apresentação da peça nomeada para fixar |
-| Reflexão crítica | 8 min | 3 perguntas; última é a pergunta-cartão sobre transcrição |
-| **Total** | **100 min úteis** | + ~20 min de transições = 120 nominais |
+1. Apresentação da Catarina Pires — nova persona da sessão (DRH)
+2. Demonstração ao vivo — Outlook (sumarização), Teams (extração de ações), como o Copilot derrapa
+3. MAPEIA, NÃO DECIDAS — o conceito-chave da sessão
+4. Caso #1 — sumarizar thread e descobrir silenciados
+5. Caso #2 — redigir e-mail ao Reitor
+6. Caso #3 — tabela de ações no Teams e follow-up
+7. Consolidação — 5 sinais de output e disciplina de validação
+8. Reflexão crítica — três perguntas; a última sobre transcrição
 
 ## O Copilot no Outlook e no Teams
 

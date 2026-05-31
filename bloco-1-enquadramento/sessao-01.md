@@ -36,46 +36,39 @@ No final da sessão, os formandos deverão ser capazes de:
 - reconhecer quando a IA pode apoiar uma tarefa e quando pode interferir indevidamente numa decisão sobre pessoas;
 - identificar cuidados mínimos antes de introduzir informação institucional numa ferramenta de IA.
 
-## Abertura da sessão
+## Programa
 
-A sessão começa com uma pergunta simples no chat:
+1. **Para começar** — uma pergunta de inventário sobre o que consome mais tempo no vosso trabalho
+2. **Dois usos típicos** — comparação entre uma utilização segura e uma utilização crítica
+3. **Três pilares de enquadramento** — literacia em IA, proteção de dados, dever de sigilo
+4. **Matriz Semáforo** — ferramenta prática de classificação rápida
+5. **Casos práticos** — 8 cenários para aplicar a Matriz
+6. **Síntese** — a pergunta a fazer sempre antes de usar IA
 
-> Qual destas tarefas mais gostava que a IA ajudasse a simplificar no seu trabalho?
+## Para começar
 
-Opções sugeridas:
+Antes de avançar, pare por um momento. Que tarefa do dia-a-dia gostaria que a IA tornasse mais leve?
 
 1. responder a e-mails;
-2. resumir reuniões;
+2. resumir reuniões ou preparar atas;
 3. analisar documentos;
-4. preparar atas;
-5. trabalhar dados em Excel;
-6. criar apresentações;
-7. apoiar atendimento a estudantes;
-8. outra.
+4. trabalhar dados em Excel;
+5. criar apresentações;
+6. apoiar atendimento a estudantes;
+7. outra.
 
-## Fluxo da sessão
+Não há resposta certa — só a sua resposta. Na sessão síncrona, vai partilhá-la no chat do Zoom; aqui, fica como ponto de partida para o que vem a seguir.
 
-| Momento | Duração | Atividade |
-|---|---:|---|
-| Abertura | 5 min | Pergunta inicial no chat: onde gostariam que a IA vos poupasse tempo? |
-| Demonstração de valor | 7 min | Utilização simples e segura: melhorar aviso, ofício ou e-mail |
-| Demonstração crítica | 10 min | Utilização problemática: avaliação de desempenho ou ordenação de candidatos |
-| Discussão orientada | 8 min | O que mudou entre a primeira e a segunda utilização? |
-| Três pilares | 20 min | Literacia em IA, proteção de dados e dever de sigilo |
-| Matriz Semáforo | 15 min | Explicação da ferramenta de classificação |
-| Casos práticos | 25 min | Discussão orientada de 8 casos em aula (~3 min cada) |
-| Fecho | 10 min | Síntese, questionário de consolidação e preparação da Sessão 2 |
+## Dois usos típicos
 
-## Duas demonstrações iniciais
+Para sentir a diferença entre uma utilização útil e uma utilização problemática, comparemos dois pedidos ao Copilot. À primeira vista são semelhantes. No fundo, são opostos.
 
-A sessão começa com duas utilizações aparentemente semelhantes.
-
-Na primeira, a IA ajuda a melhorar um texto.
-Na segunda, a IA começa a interferir numa decisão sobre uma pessoa.
+No primeiro, a IA ajuda a melhorar um texto.
+No segundo, a IA começa a interferir numa decisão sobre uma pessoa.
 
 A diferença entre uma e outra é o coração desta sessão.
 
-### Demonstração 1 — Utilização simples e segura
+### Uso simples e seguro
 
 Exemplo de prompt:
 
@@ -87,7 +80,7 @@ Aqui, a IA está a apoiar a clareza da comunicação. O conteúdo é genérico, 
 
 Esta demonstração mostra o lado útil da IA: poupar tempo, melhorar comunicação e ajudar a produzir uma primeira versão de trabalho.
 
-### Demonstração 2 — Utilização crítica
+### Uso crítico
 
 Exemplo de prompt:
 
@@ -97,7 +90,7 @@ O resultado pode parecer útil, bem escrito e até convincente. O problema não 
 
 Num caso real, esta prática poderia criar risco jurídico elevado, sobretudo se o output da IA influenciasse a avaliação, a fundamentação ou a decisão final sobre o trabalhador.
 
-### Demonstração 2 (variante) — Ordenação de candidatos
+### Variante — Ordenação de candidatos
 
 Variante da Demonstração 2, mais próxima de cenários de contratação pública ou júris de seleção. Usar consoante o perfil da turma.
 

@@ -43,19 +43,15 @@ No final da sessão, os formandos deverão ser capazes de:
 | S3 | **Sistematizar** — biblioteca pessoal de prompts |
 | S4 | **Validar com critério jurídico** (Word) |
 
-## Fluxo da sessão
+## Programa
 
-| Momento | Duração | Atividade |
-|---|---:|---|
-| Abertura — objetivos e Matriz amarela | 7 min | Recuperar a Matriz; calibrar tom encorajador + responsabilidade |
-| Demonstração ao vivo | 15 min | Demonstração ao vivo dos Casos #1 e #2; observar e anotar |
-| Linguagem clara — conceito-chave | 10 min | 7 princípios AMA + bases legais |
-| Exercício guiado — Caso #1 + demo de ambiguidades | 25 min | Formandos sumarizam DOC-A; demonstração curta de 8 min: pedir ao Copilot que identifique ambiguidades |
-| Pausa | 5 min | |
-| Aplicação livre — Caso #2 e Sub-B | 20 min | Reformulação DOC-B; quem terminar cedo faz Sub-B multi-versão |
-| Consolidação — 5 sinais + CCC | 10 min | Apresentação da peça nomeada para fixar |
-| Reflexão crítica | 8 min | 3 perguntas: quando NÃO sumarizar; consequências de artigo inventado; método de validação em 30 s |
-| **Total** | **100 min úteis** | + ~20 min de transições = 120 nominais |
+1. Demonstração ao vivo — Word com Copilot nos casos #1 e #2
+2. Linguagem clara — 7 princípios AMA e bases legais
+3. Caso #1 — sumarizar DOC-A com demo curta de identificação de ambiguidades
+4. Caso #2 — reformulação de DOC-B para linguagem clara
+5. Sub-B — exploração de versões alternativas (para quem termina cedo)
+6. Consolidação — 5 sinais de output problemático e método CCC
+7. Reflexão crítica — quando NÃO sumarizar, consequências de artigo inventado, método de validação em 30 segundos
 
 ## O Copilot no Word
 

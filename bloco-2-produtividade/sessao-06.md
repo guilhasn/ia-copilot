@@ -47,19 +47,17 @@ No final da sessão, os formandos deverão ser capazes de:
 
 A S06 retoma os [5 sinais]({% link bloco-2-produtividade/sessao-04.md %}#sinais-output) da S04 — em Excel, o Sinal 4 (alucinação por omissão) manifesta-se como **silent column skip**, com âncora dedicada [mais abaixo](#silent-column-skip). A pergunta-salvaguarda desta sessão é a aplicação operacional de [MAPEIA, NÃO DECIDAS]({% link bloco-2-produtividade/sessao-05.md %}#mapeia-nao-decidas) em contexto de dados estruturados.
 
-## Fluxo da sessão
+## Programa
 
-| Momento | Duração | Atividade |
-|---|---:|---|
-| Abertura — apresentação do Miguel + Matriz verde-amarela | 7 min | Introdução à nova persona; calibrar zona amarela em cruzamentos com dados de pessoas |
-| Demonstração ao vivo | 15 min | 3 partes: análise conversacional · anomalias · silent column skip |
-| Diagnóstico estrutural — conceito-chave | 10 min | Princípio operacional da sessão |
-| Exercício guiado — Casos #1 e #2 | 25 min | Diagnóstico do dataset + análise descritiva com salvaguarda |
-| Pausa | 5 min | |
-| Aplicação livre — Caso #3 + Sub-B | 20 min | Anomalias técnicas; quem terminar cedo monta template trimestral |
-| Consolidação — 5 sinais + pergunta-salvaguarda | 10 min | Apresentação da peça nomeada para fixar |
-| Reflexão crítica | 8 min | Onde ir o tempo libertado pela poupança calculada |
-| **Total** | **100 min úteis** | + ~20 min de transições = 120 nominais |
+1. Apresentação do Miguel Andrade — nova persona da sessão (Contratação Pública)
+2. Demonstração ao vivo — análise conversacional, anomalias, silent column skip
+3. Diagnóstico estrutural — o conceito-chave da sessão
+4. Caso #1 — diagnóstico do dataset
+5. Caso #2 — análise descritiva com salvaguarda
+6. Caso #3 — anomalias técnicas
+7. Sub-B — template trimestral reutilizável (para quem termina cedo)
+8. Consolidação — 5 sinais de output e pergunta-salvaguarda
+9. Reflexão crítica — onde investir o tempo libertado pela poupança calculada
 
 ## O Copilot no Excel
 
