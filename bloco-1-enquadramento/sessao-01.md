@@ -401,7 +401,15 @@ A fundamentação é do avaliador. A menção é do avaliador. A IA pode apoiar 
 
 <p class="caso-label">Porquê</p>
 
-Este cenário combina vários riscos: (1) dados pessoais de 200 pessoas identificadas, incluindo dados socioeconómicos de elevada sensibilidade contextual; (2) a IA estaria a produzir uma ordenação que pode determinar quem recebe e quem não recebe apoio social — decisão com impacto direto nos direitos dos estudantes; (3) o critério de ordenação da IA pode não corresponder ao regulamento da IES; (4) em certos casos, os dados podem incluir categorias especiais (deficiência, situação de saúde, composição familiar atípica).
+Este cenário combina vários riscos:
+
+- Dados pessoais de 200 pessoas identificadas, incluindo dados socioeconómicos de elevada sensibilidade contextual
+
+- A IA estaria a produzir uma ordenação que pode determinar quem recebe e quem não recebe apoio social — decisão com impacto direto nos direitos dos estudantes
+
+- O critério de ordenação da IA pode não corresponder ao regulamento da IES
+
+- Em certos casos, os dados podem incluir categorias especiais (deficiência, situação de saúde, composição familiar atípica)
 
 <p class="caso-label">Conselho prático</p>
 
