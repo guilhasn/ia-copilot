@@ -20,7 +20,7 @@ nav_order: 1
 
 A Inteligência Artificial aplicada ao trabalho das IES pode aumentar produtividade, qualidade e capacidade de análise, mas não deve ser usada de forma automática ou acrítica.
 
-Esta sessão é sobre critério, não sobre Direito. Em duas horas, fica com uma régua prática para classificar utilizações de IA em segundos — verde, amarelo, vermelho ou nunca — e com o enquadramento jurídico mínimo que sustenta essa classificação.
+Esta sessão é sobre critério, não sobre Direito. Em duas horas, fica com um critério prático para classificar utilizações de IA em segundos — verde, amarelo, vermelho ou nunca — e com o enquadramento jurídico mínimo que sustenta essa classificação.
 
 A competência principal desta sessão é:
 
