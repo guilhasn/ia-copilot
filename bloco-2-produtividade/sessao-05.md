@@ -38,7 +38,7 @@ No final da sessão, os formandos deverão ser capazes de:
 
 | Sessão | Competência adquirida |
 |---|---|
-| S1 | **Classificar** — Régua do Semáforo |
+| S1 | **Classificar** — Matriz Semáforo |
 | S2 | **Pedir** — framework GCSE |
 | S3 | **Sistematizar** — biblioteca pessoal de prompts |
 | S4 | **Validar com critério jurídico** (Word) |
@@ -50,7 +50,7 @@ A S05 retoma os [5 sinais]({% link bloco-2-produtividade/sessao-04.md %}#sinais-
 
 | Momento | Duração | Atividade |
 |---|---:|---|
-| Abertura — apresentação da Catarina + Régua amarela | 7 min | Introdução à nova persona; calibrar zonas amarela e vermelha |
+| Abertura — apresentação da Catarina + Matriz amarela | 7 min | Introdução à nova persona; calibrar zonas amarela e vermelha |
 | Demonstração ao vivo | 15 min | 3 partes: sumarização no Outlook, extração no Teams, como o Copilot derrapa |
 | MAPEIA, NÃO DECIDAS — conceito-chave | 10 min | Princípio operacional da sessão |
 | Exercício guiado — Casos #1 e #2 | 25 min | Sumarizar thread + descobrir silenciados; redigir e-mail ao Reitor |

@@ -1,13 +1,13 @@
 ---
-title: "Régua do Semáforo"
+title: "Matriz Semáforo"
 layout: default
 parent: "Recursos"
 nav_order: 1
 ---
 
-# Régua do Semáforo
+# Matriz Semáforo de Utilização de IA
 
-A Régua do Semáforo é uma ferramenta prática para classificar utilizações de IA no trabalho universitário.
+A **Matriz Semáforo** é uma ferramenta prática para classificar utilizações de IA no trabalho universitário.
 
 ## Categorias
 
@@ -30,4 +30,4 @@ A classificação depende de:
 
 ## Regra de prudência
 
-> Em caso de dúvida, subir uma cor.
+> Em caso de dúvida, escolher a cor mais restritiva.

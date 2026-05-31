@@ -38,7 +38,7 @@ No final da sessão, os formandos deverão ser capazes de:
 
 | Sessão | Competência adquirida |
 |---|---|
-| S1 | **Classificar** — Régua do Semáforo |
+| S1 | **Classificar** — Matriz Semáforo |
 | S2 | **Pedir** — framework GCSE |
 | S3 | **Sistematizar** — biblioteca pessoal de prompts |
 | S4 | **Validar com critério jurídico** (Word) |
@@ -51,7 +51,7 @@ A S06 retoma os [5 sinais]({% link bloco-2-produtividade/sessao-04.md %}#sinais-
 
 | Momento | Duração | Atividade |
 |---|---:|---|
-| Abertura — apresentação do Miguel + Régua verde-amarela | 7 min | Introdução à nova persona; calibrar zona amarela em cruzamentos com dados de pessoas |
+| Abertura — apresentação do Miguel + Matriz verde-amarela | 7 min | Introdução à nova persona; calibrar zona amarela em cruzamentos com dados de pessoas |
 | Demonstração ao vivo | 15 min | 3 partes: análise conversacional · anomalias · silent column skip |
 | Diagnóstico estrutural — conceito-chave | 10 min | Princípio operacional da sessão |
 | Exercício guiado — Casos #1 e #2 | 25 min | Diagnóstico do dataset + análise descritiva com salvaguarda |

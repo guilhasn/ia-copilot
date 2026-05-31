@@ -200,15 +200,15 @@ def encrypt_pdf(pdf_path, password):
     doc.close()
 
 
-# ── DOCUMENTO 1: Régua do Semáforo ──────────────────────────────
+# ── DOCUMENTO 1: Matriz Semáforo ──────────────────────────────
 
 
-def create_regua():
+def create_matriz():
     doc = Document()
     setup_styles(doc)
     add_header_footer(doc)
 
-    add_title(doc, "Régua do Semáforo do Copilot", "Guia rápido para staff das IES — o que posso pôr no Copilot e o que não")
+    add_title(doc, "Matriz Semáforo de Utilização de IA", "Guia rápido para staff das IES — o que posso pôr no Copilot e o que não")
 
     add_quote(doc, "Se hesitas a escrever isto num e-mail para uma pessoa fora da tua equipa → também não pões no Copilot.\nEm caso de dúvida → trata como AMARELO e pede orientação ao Encarregado de Proteção de Dados (EPD) da tua IES.")
 
@@ -300,7 +300,7 @@ def create_regua():
 
     add_para(doc, "Versão 1.0 — junho 2026", italic=True, color=GRAY)
 
-    path = OUTPUT_DIR / "Regua_do_Semaforo.docx"
+    path = OUTPUT_DIR / "Matriz_Semaforo.docx"
     doc.save(str(path))
     return path
 
@@ -428,7 +428,7 @@ def create_casos():
 
     add_title(doc, "Casos Práticos — Sessão 1", "Classifica cada cenário: Verde, Amarelo, Vermelho ou Nunca")
 
-    add_para(doc, "Para cada cenário, classifica a utilização de IA segundo a Régua do Semáforo. A classificação depende dos dados usados, da fase do processo, da finalidade, do destinatário do output e do grau de influência da IA na decisão.", italic=True)
+    add_para(doc, "Para cada cenário, classifica a utilização de IA segundo a Matriz Semáforo. A classificação depende dos dados usados, da fase do processo, da finalidade, do destinatário do output e do grau de influência da IA na decisão.", italic=True)
 
     casos = [
         {
@@ -531,9 +531,9 @@ def create_casos():
 if __name__ == "__main__":
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    print("A gerar Régua do Semáforo...")
-    regua_docx = create_regua()
-    print(f"  OK: {regua_docx}")
+    print("A gerar Matriz Semáforo...")
+    matriz_docx = create_matriz()
+    print(f"  OK: {matriz_docx}")
 
     print("A gerar Guia da Sessão 01...")
     guia_docx = create_guia()
@@ -545,7 +545,7 @@ if __name__ == "__main__":
 
     print("\nA converter para PDF (requer Microsoft Word)...")
     pdfs = []
-    for docx_path in [regua_docx, guia_docx, casos_docx]:
+    for docx_path in [matriz_docx, guia_docx, casos_docx]:
         pdf = to_pdf(docx_path)
         print(f"  OK: {pdf}")
         pdfs.append(pdf)
@@ -556,7 +556,7 @@ if __name__ == "__main__":
         print(f"  LOCK: {pdf}")
 
     print("\nA limpar ficheiros .docx intermediários...")
-    for docx_path in [regua_docx, guia_docx, casos_docx]:
+    for docx_path in [matriz_docx, guia_docx, casos_docx]:
         docx_path.unlink()
         print(f"  DEL: {docx_path}")
 

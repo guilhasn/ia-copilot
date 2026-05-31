@@ -32,7 +32,7 @@ No final da sessão, os formandos deverão ser capazes de:
 
 - distinguir usos simples, moderados, críticos e proibidos de IA no contexto universitário;
 - compreender a ligação entre Microsoft 365 Copilot, RGPD, AI Act e dever de sigilo;
-- aplicar a Régua do Semáforo a exemplos concretos;
+- aplicar a Matriz Semáforo a exemplos concretos;
 - reconhecer quando a IA pode apoiar uma tarefa e quando pode interferir indevidamente numa decisão sobre pessoas;
 - identificar cuidados mínimos antes de introduzir informação institucional numa ferramenta de IA.
 
@@ -62,7 +62,7 @@ Opções sugeridas:
 | Demonstração crítica | 10 min | Utilização problemática: avaliação de desempenho ou ordenação de candidatos |
 | Discussão orientada | 8 min | O que mudou entre a primeira e a segunda utilização? |
 | Três pilares | 20 min | Literacia em IA, proteção de dados e dever de sigilo |
-| Régua do Semáforo | 15 min | Explicação da ferramenta de classificação |
+| Matriz Semáforo | 15 min | Explicação da ferramenta de classificação |
 | Casos práticos | 25 min | Discussão orientada de 8 casos em aula (~3 min cada) |
 | Fecho | 10 min | Síntese, questionário de consolidação e preparação da Sessão 2 |
 
@@ -171,11 +171,11 @@ Frase-chave:
 
 > Antes do Copilot, o excesso de permissões podia ser um problema escondido. Com o Copilot, pode tornar-se pesquisável em linguagem natural.
 
-## Régua do Semáforo
+## Matriz Semáforo
 
-Os três pilares anteriores dão-nos os princípios, mas no dia-a-dia ninguém tem tempo para reler o RGPD antes de abrir o Copilot. A Régua do Semáforo traduz esses princípios numa ferramenta prática de classificação rápida — uma forma simples de avaliar, em segundos, se determinada utilização de IA é segura, exige cuidados ou deve ser evitada.
+Os três pilares anteriores dão-nos os princípios, mas no dia-a-dia ninguém tem tempo para reler o RGPD antes de abrir o Copilot. A **Matriz Semáforo de Utilização de IA** traduz esses princípios numa ferramenta prática de classificação rápida — uma forma simples de avaliar, em segundos, se determinada utilização de IA é segura, exige cuidados ou deve ser evitada.
 
-A Régua classifica os usos de IA em quatro categorias:
+A Matriz classifica os usos de IA em quatro categorias:
 
 <div class="semaforo-verde"><strong>🟢 Verde</strong> — Utilização simples, genérica ou com informação pública/não identificável</div>
 
@@ -193,7 +193,7 @@ Regra transversal:
 
 ## Casos práticos
 
-Agora que conhece a Régua, é altura de a aplicar. Os cenários seguintes acontecem na fictícia Universidade de Vale Verde (UVV) e seguem três personas que vão regressar ao longo do curso — **Helena Albuquerque** (Diretora dos Serviços Académicos), **Catarina Pires** (técnica de RH) e **Miguel Andrade** (técnico de Contratação Pública). Para cada caso, tente classificar antes de ver a resposta — clique no cenário para revelar a classificação e a justificação.
+Agora que conhece a Matriz, é altura de a aplicar. Os cenários seguintes acontecem na fictícia Universidade de Vale Verde (UVV) e seguem três personas que vão regressar ao longo do curso — **Helena Albuquerque** (Diretora dos Serviços Académicos), **Catarina Pires** (técnica de RH) e **Miguel Andrade** (técnico de Contratação Pública). Para cada caso, tente classificar antes de ver a resposta — clique no cenário para revelar a classificação e a justificação.
 
 ### Caso 1 — Ofício-padrão
 
@@ -397,7 +397,7 @@ Use o modelo institucional de requerimento de junta médica e preencha-o manualm
 
 ### Para descarregar
 
-- [Régua do Semáforo (PDF)]({{ site.baseurl }}/sessoes/sessao-01/Regua_do_Semaforo.pdf) — para imprimir e ter na secretária
+- [Matriz Semáforo (PDF)]({{ site.baseurl }}/sessoes/sessao-01/Matriz_Semaforo.pdf) — para imprimir e ter na secretária
 
 {: .note }
 > Alguns materiais podem estar protegidos por password. Caso seja solicitada, utilize a password comunicada pela ANFUP.

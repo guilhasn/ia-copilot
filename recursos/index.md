@@ -13,7 +13,7 @@ Materiais transversais de apoio à formação, disponíveis ao longo de todo o c
 
 | Recurso | Descrição |
 |---|---|
-| [Régua do Semáforo]({% link recursos/regua-semaforo.md %}) | Ferramenta de classificação de usos de IA |
+| [Matriz Semáforo]({% link recursos/matriz-semaforo.md %}) | Ferramenta de classificação de usos de IA |
 | [Use Case Card]({% link recursos/use-case-card.md %}) | Ficha para documentar um caso de uso antes de o aplicar |
 
 ## Enquadramento

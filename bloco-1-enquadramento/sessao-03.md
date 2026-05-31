@@ -39,7 +39,7 @@ No final da sessão, os formandos deverão ser capazes de:
 
 | Sessão | O que aprenderam | O que consolidam aqui |
 |---|---|---|
-| S1 | Régua do Semáforo — classificar antes de usar | Aplicar automaticamente antes de cada prompt |
+| S1 | Matriz Semáforo — classificar antes de usar | Aplicar automaticamente antes de cada prompt |
 | S2 | Framework Microsoft — Objetivo, Contexto, Fonte, Expectativas | Usar o framework em múltiplos contextos |
 | S3 | **Biblioteca pessoal** — guardar, reutilizar, partilhar | Nova competência |
 

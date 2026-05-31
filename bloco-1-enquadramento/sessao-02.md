@@ -38,7 +38,7 @@ No final da sessão, os formandos deverão ser capazes de:
 
 ## Ligação à Sessão 1
 
-Na Sessão 1, os formandos aprenderam a classificar casos de uso de IA através da Régua do Semáforo.
+Na Sessão 1, os formandos aprenderam a classificar casos de uso de IA através da Matriz Semáforo.
 
 Nesta sessão, aplicam essa lógica a um caso simples e comum: resumir uma cadeia de e-mails.
 
@@ -372,7 +372,7 @@ Deve trazer:
 
 ### Para aprofundar
 
-- [Régua do Semáforo]({% link recursos/regua-semaforo.md %}) — ferramenta de classificação da Sessão 1
+- [Matriz Semáforo]({% link recursos/matriz-semaforo.md %}) — ferramenta de classificação da Sessão 1
 - [Referências Microsoft]({% link recursos/referencias-microsoft.md %}) — percursos de aprendizagem, galeria de prompts, cenários por função
 - [The art and science of prompting (PDF)](https://adoption.microsoft.com/files/copilot/Prompt-ingredients-one-pager.pdf) — diagrama visual dos ingredientes de um prompt (Microsoft, 1 página)
 - [Copilot Prompt Gallery](https://copilot.cloud.microsoft/en-US/prompts) — galeria online de prompts curados pela Microsoft

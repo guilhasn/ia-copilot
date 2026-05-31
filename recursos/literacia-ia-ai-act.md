@@ -79,7 +79,7 @@ Se a IES desenvolver sistemas próprios (ex.: agentes Copilot Studio para tarefa
 
 ### Copilot nas IES — classificação por tipo de uso
 
-| Tipo de uso | Nível de risco | Classificação na Régua |
+| Tipo de uso | Nível de risco | Classificação na Matriz |
 |---|---|---|
 | Redigir ofícios, atas, relatórios administrativos | Baixo / Limitado | Verde |
 | Resumir e-mails ou documentos internos | Baixo / Limitado | Verde |

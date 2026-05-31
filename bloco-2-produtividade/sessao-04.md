@@ -38,7 +38,7 @@ No final da sessão, os formandos deverão ser capazes de:
 
 | Sessão | Competência adquirida |
 |---|---|
-| S1 | **Classificar** — Régua do Semáforo |
+| S1 | **Classificar** — Matriz Semáforo |
 | S2 | **Pedir** — framework GCSE |
 | S3 | **Sistematizar** — biblioteca pessoal de prompts |
 | S4 | **Validar com critério jurídico** (Word) |
@@ -47,7 +47,7 @@ No final da sessão, os formandos deverão ser capazes de:
 
 | Momento | Duração | Atividade |
 |---|---:|---|
-| Abertura — objetivos e Régua amarela | 7 min | Recuperar a Régua; calibrar tom encorajador + responsabilidade |
+| Abertura — objetivos e Matriz amarela | 7 min | Recuperar a Matriz; calibrar tom encorajador + responsabilidade |
 | Demonstração ao vivo | 15 min | Demonstração ao vivo dos Casos #1 e #2; observar e anotar |
 | Linguagem clara — conceito-chave | 10 min | 7 princípios AMA + bases legais |
 | Exercício guiado — Caso #1 + demo de ambiguidades | 25 min | Formandos sumarizam DOC-A; demonstração curta de 8 min: pedir ao Copilot que identifique ambiguidades |
