@@ -7,7 +7,7 @@ nav_order: 11
 
 # Vibecoding — construção assistida por IA
 
-Página de recurso que acompanha o interlúdio da [Sessão 3]({% link bloco-1-enquadramento/sessao-03.md %}). Aqui ficam os detalhes que não cabem nos 8 minutos da sessão — as ferramentas, o prompt usado, as quatro perguntas de governance desenvolvidas, e leituras para aprofundar.
+Página de recurso que acompanha o interlúdio de vibecoding da Sessão 3. Aqui ficam os detalhes que não cabem nos 8 minutos da sessão — as ferramentas, o prompt usado, as quatro perguntas de governance desenvolvidas, e leituras para aprofundar.
 
 ## O que é vibecoding
 
