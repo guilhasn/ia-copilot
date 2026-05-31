@@ -1,6 +1,7 @@
 ---
 title: "S7 — PowerPoint"
 layout: default
+published: false
 parent: "Bloco 2 · Produtividade Individual"
 nav_order: 4
 ---

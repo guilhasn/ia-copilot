@@ -1,6 +1,7 @@
 ---
 title: "Bloco 5 · Governança e Adoção"
 layout: default
+published: false
 nav_order: 6
 has_children: true
 ---

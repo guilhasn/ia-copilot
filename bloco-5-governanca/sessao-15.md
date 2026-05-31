@@ -1,6 +1,7 @@
 ---
 title: "S15 — Plano de adoção"
 layout: default
+published: false
 parent: "Bloco 5 · Governança e Adoção"
 nav_order: 1
 ---

@@ -1,6 +1,7 @@
 ---
 title: "S2 — Anatomia do prompt"
 layout: default
+published: false
 parent: "Bloco 1 · Enquadramento e Literacia Crítica"
 nav_order: 2
 ---

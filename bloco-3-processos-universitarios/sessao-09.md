@@ -1,6 +1,7 @@
 ---
 title: "S9 — Atas e reuniões"
 layout: default
+published: false
 parent: "Bloco 3 · IA nos Processos Universitários"
 nav_order: 2
 ---

@@ -1,6 +1,7 @@
 ---
 title: "S14 — Copilot Studio"
 layout: default
+published: false
 parent: "Bloco 4 · Automatização Ligeira"
 nav_order: 2
 ---

@@ -1,6 +1,7 @@
 ---
 title: "S13 — Copilot Pages"
 layout: default
+published: false
 parent: "Bloco 4 · Automatização Ligeira"
 nav_order: 1
 ---

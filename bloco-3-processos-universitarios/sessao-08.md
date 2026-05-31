@@ -1,6 +1,7 @@
 ---
 title: "S8 — Serviços académicos"
 layout: default
+published: false
 parent: "Bloco 3 · IA nos Processos Universitários"
 nav_order: 1
 ---

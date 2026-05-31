@@ -1,6 +1,7 @@
 ---
 title: "S6 — Excel"
 layout: default
+published: false
 parent: "Bloco 2 · Produtividade Individual"
 nav_order: 3
 ---

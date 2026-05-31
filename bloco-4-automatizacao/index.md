@@ -1,6 +1,7 @@
 ---
 title: "Bloco 4 · Automatização Ligeira"
 layout: default
+published: false
 nav_order: 5
 has_children: true
 ---

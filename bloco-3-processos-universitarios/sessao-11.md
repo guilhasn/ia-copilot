@@ -1,6 +1,7 @@
 ---
 title: "S11 — Júris e candidaturas"
 layout: default
+published: false
 parent: "Bloco 3 · IA nos Processos Universitários"
 nav_order: 4
 ---

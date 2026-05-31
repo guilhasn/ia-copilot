@@ -1,6 +1,7 @@
 ---
 title: "Bloco 3 · IA nos Processos Universitários"
 layout: default
+published: false
 nav_order: 4
 has_children: true
 ---

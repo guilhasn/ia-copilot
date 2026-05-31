@@ -1,6 +1,7 @@
 ---
 title: "S10 — Contratação pública"
 layout: default
+published: false
 parent: "Bloco 3 · IA nos Processos Universitários"
 nav_order: 3
 ---
