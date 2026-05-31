@@ -366,6 +366,26 @@ Evitar (🔴 Vermelho):
 
 > *Propõe objetivos com base na autoavaliação desta pessoa.*
 
+<p class="caso-label">E se trocar o nome?</p>
+
+Pergunta clássica na sala: *"E se eu não usar 'Maria Silva' mas 'Trabalhadora A'? Tira o nome, tira o problema, não tira?"*
+
+Não tira. Trocar o nome é pseudonimização, não anonimização. O Comité Europeu para a Proteção de Dados é claro: substituir nome por código mantém os dados como dados pessoais — continuam sujeitos ao RGPD. A pessoa fica identificável por outras pistas: função, unidade orgânica, datas concretas, objetivos únicos, número reduzido de trabalhadores na divisão. Numa equipa pequena, *"Trabalhadora A"* é maquilhagem.
+
+E o problema fundamental mantém-se mesmo com anonimização perfeita: se a IA está a sugerir menção, propor objetivos individualizados ou comparar trabalhadores, está numa zona crítica — independentemente de haver nome.
+
+A pergunta certa não é *"tem nome?"*. É: *"este output pode influenciar uma decisão sobre uma pessoa real?"*.
+
+<p class="caso-label">E se for IA local?</p>
+
+Pergunta natural: *"E se for um modelo local — Ollama, LM Studio, GPT4All — sem ligação externa?"*
+
+IA local resolve uma parte real do problema: os dados não passam por terceiros, não há transferência internacional, não fica retenção em logs externos. Para utilizações vermelhas **só por causa do tratamento por terceiros**, IA local pode legitimamente baixar a cor da Matriz.
+
+Mas aqui não baixa. O que torna esta utilização vermelha não é só o tratamento — é a **natureza da decisão**. O art. 22.º RGPD e o AI Act (alto risco em gestão de trabalhadores) aplicam-se em qualquer ferramenta, local ou em nuvem. Modelos locais alucinam tanto quanto os de cloud, sem etiquetas Purview ou guardrails. E a rastreabilidade institucional fica mais difícil sem logs centralizados.
+
+**IA local protege melhor os dados. Não legitima decisões automatizadas sobre pessoas.**
+
 A fundamentação é do avaliador. A menção é do avaliador. A IA pode apoiar a forma, não substituir o juízo avaliativo.
 
 > No SIADAP, o Copilot pode ser assistente de redação. Não pode ser coavaliador escondido.
