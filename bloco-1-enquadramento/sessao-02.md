@@ -136,9 +136,11 @@ A Microsoft recomenda que um prompt eficaz inclua até quatro componentes. Apena
 
 ### Exemplo aplicado ao contexto das IES
 
+O exemplo que acompanha toda a sessão: a **Helena Albuquerque**, Diretora de Serviços Académicos da Universidade de Vale Verde, regressa de férias e encontra uma cadeia de e-mails à sua espera. Um primeiro prompt com os quatro componentes:
+
 > *Objetivo: resume esta cadeia de e-mails e identifica o estado atual do assunto.*
 >
-> *Contexto: sou técnica dos Serviços Académicos de uma universidade e regressei de férias. Preciso de perceber rapidamente o que ficou pendente.*
+> *Contexto: sou Diretora de Serviços Académicos de uma universidade e regressei de férias. Preciso de perceber rapidamente o que ficou pendente.*
 >
 > *Fonte: usa apenas a informação presente nos e-mails. Não inventes informação.*
 >
@@ -163,6 +165,8 @@ A Microsoft recomenda cinco práticas para obter melhores resultados:
 > **Recurso para imprimir:** A Microsoft disponibiliza um diagrama visual de uma página com os ingredientes de um prompt eficaz — [The art and science of prompting (PDF)](https://oru.edu/global-learning-and-innovation/The-Art-and-Science-of-AI-Prompting.pdf).
 
 ## Demonstração-armadilha
+
+Voltamos à cadeia de e-mails da Helena. O mesmo pedido, formulado de duas maneiras — e a diferença que isso faz no resultado.
 
 ### Prompt fraco
 
@@ -193,7 +197,7 @@ A diferença entre os dois prompts não é estética. É operacional. O segundo 
 
 ### Cenário
 
-A Helena Albuquerque, técnica dos Serviços Académicos da Universidade de Vale Verde, regressa de férias e encontra uma cadeia de 14 e-mails sobre um pedido de certidão de conclusão de curso.
+Agora o caso completo. A Helena Albuquerque, Diretora de Serviços Académicos da Universidade de Vale Verde, regressa de férias e encontra uma cadeia de **14 e-mails** sobre um pedido de certidão de conclusão de curso — incluindo um pedido de despacho que só ela pode dar.
 
 A cadeia envolve:
 
