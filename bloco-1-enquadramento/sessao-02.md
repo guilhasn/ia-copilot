@@ -55,7 +55,8 @@ Antes de escrever o prompt, a pergunta continua a ser:
 5. Exercício — melhorar prompts fracos em pares
 6. Caso prático — resumir uma cadeia de e-mails com iteração
 7. Construção individual — 3 prompts úteis para o vosso posto de trabalho
-8. Fecho — síntese e tarefa para a Sessão 3
+8. Exercício — a primeira app com vibecoding (uma biblioteca para os vossos prompts)
+9. Fecho — síntese e tarefa para a Sessão 3
 
 ## Onde está o Copilot
 
@@ -145,6 +146,38 @@ O exemplo que acompanha toda a sessão: a **Helena Albuquerque**, Diretora de Se
 > *Fonte: usa apenas a informação presente nos e-mails. Não inventes informação.*
 >
 > *Expectativas: organiza a resposta numa tabela com assunto, intervenientes, decisões tomadas, pendências e próximo passo. Escreve em português de Portugal, com tom institucional. Assinala como "a confirmar" tudo o que não esteja explícito.*
+
+### Outros frameworks de prompting — o mesmo ADN
+
+O GCSE é o framework oficial da Microsoft para o Copilot — e é o desta formação. Mas não é o único: fora do ecossistema Microsoft circulam outros andaimes, e vale a pena reconhecê-los, porque vão aparecer em artigos, cursos e bibliotecas de prompts.
+
+| Framework | Componentes | Onde se vê |
+|---|---|---|
+| **GCSE** (Microsoft) | Objetivo · Contexto · Fonte · Expectativas | O oficial do Copilot — o desta formação |
+| **RTF** | Role (papel) · Task (tarefa) · Format (formato) | O mais simples; bom para pedidos rápidos |
+| **CO-STAR** | Context · Objective · Style · Tone · Audience · Response | Criado na GovTech de Singapura; venceu competições de prompt engineering; muito citado |
+| **CRISPE** | Capacity (papel) · Insight (contexto) · Statement (pedido) · Personality (estilo) · Experiment (variantes) | Comum em comunidades de utilizadores de ChatGPT |
+
+Reparar no padrão: todos pedem as mesmas coisas com nomes diferentes. O *Role* do RTF e o *Capacity* do CRISPE são o nosso Contexto; a *Task* é o nosso Objetivo; *Style*, *Tone* e *Response format* são as nossas Expectativas desdobradas. **Os ingredientes são universais — o framework é só o andaime que ajuda a não esquecer nenhum.**
+
+<details markdown="1">
+<summary>O caso da Helena em CO-STAR — para comparar</summary>
+
+> *Context: sou Diretora de Serviços Académicos de uma universidade e regressei de férias; encontrei uma cadeia de e-mails sobre um pedido de uma estudante.*
+>
+> *Objective: perceber o estado atual do assunto e o que falta fazer.*
+>
+> *Style: institucional e objetivo.*
+>
+> *Tone: profissional, sem floreados.*
+>
+> *Audience: eu própria, para triagem rápida.*
+>
+> *Response: tabela com assunto, intervenientes, decisões tomadas, pendências e próximo passo; assinala como "a confirmar" o que não estiver explícito.*
+
+O mesmo pedido do exemplo GCSE acima — só muda a arrumação. Quem dominar um framework lê os outros sem esforço.
+
+</details>
 
 ### Boas práticas da Microsoft para prompts
 
@@ -338,6 +371,12 @@ Cada formando deve criar 3 prompts úteis para o seu posto de trabalho:
 3. um prompt para **identificar pendências ou próximos passos**.
 
 Cada prompt deve incluir: objetivo, contexto, fonte e expectativas — os quatro componentes do framework Microsoft.
+
+## Exercício — a primeira app
+
+Os 3 prompts que acabaram de criar precisam de casa. No exercício desta sessão, cada formando constrói — sem escrever código — uma aplicação web para guardar a sua biblioteca pessoal de prompts, usando uma ferramenta de vibecoding (Lovable, AI Studio, base44). O prompt é a especificação: é o framework da sessão aplicado em modo extremo.
+
+➡️ [Exercício S02 — A primeira app (vibecoding)]({% link exercicios/s02-primeira-app-vibecoding.md %}) — instruções passo a passo, prompt pronto a colar e mais 4 ideias de apps para o contexto das IES.
 
 ## Checklist de validação
 

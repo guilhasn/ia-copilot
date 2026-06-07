@@ -14,3 +14,4 @@ Mãos no Copilot. Cada sessão tem um exercício prático que aplica o que acabo
 | Sessão | Exercício | Duração |
 |---|---|---|
 | **S01** — Introdução | [Caça às Cores]({% link exercicios/s01-caca-as-cores.md %}) | 10-12 min |
+| **S02** — Anatomia do prompt | [A primeira app (vibecoding)]({% link exercicios/s02-primeira-app-vibecoding.md %}) | 15-20 min |
