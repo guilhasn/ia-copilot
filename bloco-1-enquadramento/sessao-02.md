@@ -210,6 +210,8 @@ A Helena quer perceber:
 - quem deve responder;
 - qual é o próximo passo.
 
+📎 **Para fazerem este exercício na vossa caixa de correio:** descarreguem o [Dataset S02 — cadeia de 14 e-mails (ZIP)]({{ site.baseurl }}/sessoes/sessao-02/Dataset_S02_Emails.zip), extraiam os ficheiros `.eml` e arrastem-nos do Explorador para uma pasta do Outlook na Web (ex.: "Demo S02"). Os 14 e-mails ficam agrupados numa conversa, prontos para o Copilot resumir. Em alternativa, usem a [cadeia completa num único e-mail (EML)]({{ site.baseurl }}/sessoes/sessao-02/Cadeia_Completa_S02.eml) — ou copiem o texto e colem no Copilot Chat.
+
 ### Prompt de trabalho
 
 > *Atua como assistente dos Serviços Académicos de uma instituição de ensino superior.*
@@ -366,6 +368,12 @@ Deve trazer:
 - uma nota sobre o que correu bem e o que teve de ser validado manualmente.
 
 ## Materiais
+
+### Para descarregar
+
+- [Dataset S02 — cadeia de 14 e-mails (ZIP)]({{ site.baseurl }}/sessoes/sessao-02/Dataset_S02_Emails.zip) — 14 ficheiros `.eml` para importar no Outlook na Web (arrastar para uma pasta); reproduzem o caso prático #1 (pedido de certidão — Beatriz Cordeiro, UVV)
+
+- [Cadeia completa num único e-mail (EML)]({{ site.baseurl }}/sessoes/sessao-02/Cadeia_Completa_S02.eml) — alternativa: um só e-mail com todo o histórico citado, para quem não conseguir importar os 14 ficheiros
 
 ### Para aprofundar
 
