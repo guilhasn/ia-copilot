@@ -24,7 +24,7 @@ Esta página reúne os recursos oficiais da Microsoft sobre o Microsoft 365 Copi
 | Recurso | Descrição |
 |---|---|
 | [Get started writing prompts](https://support.microsoft.com/en-us/topic/learn-about-copilot-prompts-f6c3b467-f07c-4db1-ae54-ffac96184dd5) | Framework oficial: Goal, Context, Source, Expectations |
-| [The art and science of prompting (PDF)](https://adoption.microsoft.com/files/copilot/Prompt-ingredients-one-pager.pdf) | PDF de uma página com diagrama visual dos ingredientes de um prompt — ideal para imprimir |
+| [The art and science of prompting (PDF)](https://oru.edu/global-learning-and-innovation/The-Art-and-Science-of-AI-Prompting.pdf) | PDF de uma página com diagrama visual dos ingredientes de um prompt — ideal para imprimir |
 | [Get better results with prompting](https://support.microsoft.com/en-us/topic/get-better-results-with-copilot-prompting-77251d6c-e162-479d-b398-9e46cf73da55) | Dicas práticas para melhorar iterativamente as respostas |
 | [Best practices for inclusive prompting](https://adoption.microsoft.com/en-us/leading-in-the-era-of-ai-best-practices-for-inclusive-prompting/) | Boas práticas para prompts inclusivos e equitativos |
 

@@ -160,7 +160,7 @@ A Microsoft recomenda cinco práticas para obter melhores resultados:
 *Fonte: [Microsoft Support — Get better results with prompting](https://support.microsoft.com/en-us/topic/get-better-results-with-copilot-prompting-77251d6c-e162-479d-b398-9e46cf73da55)*
 
 {: .note }
-> **Recurso para imprimir:** A Microsoft disponibiliza um diagrama visual de uma página com os ingredientes de um prompt eficaz — [The art and science of prompting (PDF)](https://adoption.microsoft.com/files/copilot/Prompt-ingredients-one-pager.pdf).
+> **Recurso para imprimir:** A Microsoft disponibiliza um diagrama visual de uma página com os ingredientes de um prompt eficaz — [The art and science of prompting (PDF)](https://oru.edu/global-learning-and-innovation/The-Art-and-Science-of-AI-Prompting.pdf).
 
 ## Demonstração-armadilha
 
@@ -379,7 +379,7 @@ Deve trazer:
 
 - [Matriz Semáforo]({% link recursos/matriz-semaforo.md %}) — ferramenta de classificação da Sessão 1
 - [Referências Microsoft]({% link recursos/referencias-microsoft.md %}) — percursos de aprendizagem, galeria de prompts, cenários por função
-- [The art and science of prompting (PDF)](https://adoption.microsoft.com/files/copilot/Prompt-ingredients-one-pager.pdf) — diagrama visual dos ingredientes de um prompt (Microsoft, 1 página)
+- [The art and science of prompting (PDF)](https://oru.edu/global-learning-and-innovation/The-Art-and-Science-of-AI-Prompting.pdf) — diagrama visual dos ingredientes de um prompt (Microsoft, 1 página)
 - [Copilot Prompt Gallery](https://copilot.cloud.microsoft/en-US/prompts) — galeria online de prompts curados pela Microsoft
 
 ## Próxima sessão
