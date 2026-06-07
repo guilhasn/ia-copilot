@@ -78,12 +78,12 @@ Constrói uma aplicação web simples em português de Portugal que ajuda funcio
 
 A app apresenta um questionário de 5 perguntas de sim/não, uma de cada vez:
 1. O caso envolve dados pessoais identificáveis (nomes, números de estudante, contactos)?
-2. O caso envolve dados sensíveis (saúde, processos disciplinares, situação financeira de pessoas)?
+2. O caso envolve dados de saúde identificáveis ou informação sob segredo (segredo médico, segredo de justiça)?
 3. O resultado contribui para uma decisão com efeito sobre uma pessoa (avaliação, seleção, classificação)?
 4. O output vai sair da instituição sem revisão humana?
-5. A informação é confidencial ou reservada (propostas concursais antes da abertura, deliberações não públicas)?
+5. A informação é sensível, confidencial ou reservada (processos disciplinares, propostas concursais antes da abertura, deliberações não públicas)?
 
-Lógica simplificada: pergunta 2 ou 3 com "sim" resulta em Vermelho ou Nunca (explica a diferença); perguntas 1, 4 ou 5 com "sim" resultam em Amarelo; tudo "não" resulta em Verde.
+Lógica simplificada: pergunta 2 com "sim" resulta em Nunca; perguntas 3 ou 5 com "sim" resultam em Vermelho; perguntas 1 ou 4 com "sim" resultam em Amarelo; tudo "não" resulta em Verde.
 
 No fim mostra a cor em grande, uma justificação curta e os cuidados recomendados. Botão para recomeçar.
 

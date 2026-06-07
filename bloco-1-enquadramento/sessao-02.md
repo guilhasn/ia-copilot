@@ -34,7 +34,8 @@ No final da sessão, os formandos deverão ser capazes de:
 - aplicar o framework de prompts da Microsoft: Objetivo, Contexto, Fonte e Expectativas;
 - resumir uma cadeia de e-mails com apoio do Copilot;
 - melhorar o output através de perguntas de seguimento;
-- validar criticamente a resposta antes de a utilizar.
+- validar criticamente a resposta antes de a utilizar;
+- construir, por vibecoding, uma primeira aplicação web — a biblioteca dos seus prompts.
 
 ## Ligação à Sessão 1
 
@@ -134,6 +135,9 @@ A Microsoft recomenda que um prompt eficaz inclua até quatro componentes. Apena
 | **Expectativas** | Formato, tom, extensão, limites ou critérios de qualidade | Como deve ser a resposta? Que restrições? |
 
 *Fonte: [Microsoft Support — Learn about Copilot prompts](https://support.microsoft.com/en-us/topic/learn-about-copilot-prompts-f6c3b467-f07c-4db1-ae54-ffac96184dd5)*
+
+{: .note }
+> **Porquê "GCSE"?** Na documentação Microsoft, em inglês, os quatro componentes chamam-se ***G**oal, **C**ontext, **S**ource, **E**xpectations* — daí a sigla **GCSE**, que usamos ao longo de toda a formação como nome curto do framework.
 
 ### Exemplo aplicado ao contexto das IES
 
