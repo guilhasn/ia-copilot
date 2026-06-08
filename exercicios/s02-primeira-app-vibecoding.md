@@ -64,9 +64,9 @@ Depois da primeira versão:
 
 3. **Partilhar** — colar o link da app no chat do Zoom. Ver as variações: o mesmo prompt de especificação produz apps diferentes — tal como na nota sobre aleatoriedade da sessão.
 
-## Mais 4 ideias para construir
+## Mais ideias para construir — uma galeria
 
-Quem terminar cedo — ou quiser continuar em casa — pode escolher uma destas. Cada uma tem um prompt pronto a colar; antes de o usar, vale a pena lê-lo com olhos de GCSE: onde está o objetivo? E as expectativas?
+Quem terminar cedo — ou quiser continuar em casa — pode escolher uma destas. Cada uma tem um prompt pronto a colar; antes de o usar, vale a pena lê-lo com olhos de GCSE: onde está o objetivo? E as expectativas? Valem todas a mesma regra de ouro: **só dados fictícios ou genéricos.**
 
 <details markdown="1">
 <summary>💡 Matriz Semáforo interativa</summary>
@@ -155,6 +155,259 @@ Painel:
 Pré-popula com 20 contratos fictícios de exemplo para o painel funcionar antes de qualquer upload.
 
 Visual: profissional, tipo dashboard. Sem login, os dados ficam no browser.
+```
+
+</details>
+
+<details markdown="1">
+<summary>💡 Base de perguntas frequentes (FAQ) de atendimento</summary>
+
+Cada serviço responde às mesmas perguntas vezes sem conta. Uma base de FAQ pesquisável poupa esse trabalho — e prepara o terreno para a FAQ dinâmica com Copilot da Sessão 13.
+
+```
+Constrói uma aplicação web simples em português de Portugal para gerir uma base de perguntas frequentes de atendimento numa universidade.
+
+Cada FAQ tem:
+- pergunta
+- resposta
+- categoria: Matrículas, Propinas, Certidões, Bolsas, Horários, Mobilidade, Apoio Técnico, Outro
+- público-alvo: Estudantes, Candidatos, Docentes, Trabalhadores, Público geral
+- última atualização
+- estado: Ativa, Em revisão, Arquivada
+
+Funcionalidades:
+- lista de FAQs
+- pesquisa por palavra-chave
+- filtro por categoria e público-alvo
+- botão para adicionar nova FAQ
+- botão para editar FAQ
+- botão para copiar resposta
+- destaque para FAQs em revisão
+- contador de FAQs por categoria
+
+Pré-popula com 12 perguntas frequentes fictícias.
+```
+
+</details>
+
+<details markdown="1">
+<summary>💡 Painel de indicadores de qualidade do serviço</summary>
+
+Para quem reporta à Qualidade ou à gestão: um quadro de bordo que transforma números mensais em tendências visíveis, com alerta automático quando algo sai do prazo.
+
+```
+Constrói uma aplicação web em português de Portugal para monitorizar indicadores de qualidade de um serviço universitário.
+
+A app deve apresentar um painel com indicadores mensais:
+- número de pedidos recebidos
+- número de pedidos resolvidos
+- tempo médio de resposta em dias
+- percentagem de pedidos dentro do prazo
+- nível médio de satisfação de 1 a 5
+- número de reclamações
+
+Funcionalidades:
+- formulário para adicionar dados de um mês
+- tabela com todos os meses registados
+- cartões de indicadores no topo
+- gráfico de evolução do tempo médio de resposta
+- gráfico de evolução da satisfação
+- alerta quando a percentagem dentro do prazo for inferior a 80%
+- filtro por serviço: Serviços Académicos, Recursos Humanos, Biblioteca, Relações Internacionais, Qualidade
+
+Pré-popula com dados fictícios de 12 meses para três serviços.
+```
+
+</details>
+
+<details markdown="1">
+<summary>💡 Validador de instrução de processos</summary>
+
+Antes de um processo seguir para análise, falta sempre conferir se traz todos os documentos. Esta app faz a checklist por tipo de processo e diz, em percentagem, se está pronto.
+
+```
+Constrói uma aplicação web em português de Portugal para validar a instrução de processos administrativos numa universidade.
+
+A app deve permitir escolher um tipo de processo:
+- Pedido de certidão
+- Pedido de equivalência
+- Candidatura a bolsa
+- Contratação de serviço
+- Aquisição de material
+- Pedido de mobilidade internacional
+
+Para cada tipo de processo, apresenta uma checklist de documentos obrigatórios e opcionais.
+
+Funcionalidades:
+- selecionar tipo de processo
+- mostrar checklist correspondente
+- marcar documentos como recebidos
+- calcular percentagem de completude
+- mostrar resultado: Processo incompleto, Processo quase completo, Processo pronto para análise
+- campo de notas
+- botão para copiar resumo do estado do processo
+- botão para recomeçar
+
+Pré-popula as checklists com documentos fictícios adequados a cada tipo de processo.
+
+Visual: claro, funcional, com barra de progresso.
+```
+
+</details>
+
+<details markdown="1">
+<summary>💡 Priorização de pequenos projetos internos</summary>
+
+Uma direção de serviços tem sempre mais ideias do que mãos. Esta app pontua e ordena projetos por uma fórmula simples — e mostra como dar transparência a uma decisão de gestão.
+
+```
+Constrói uma aplicação web em português de Portugal para ajudar uma direção de serviços universitária a priorizar pequenos projetos internos.
+
+Cada projeto tem:
+- nome
+- serviço proponente
+- descrição
+- impacto esperado: 1 a 5
+- urgência: 1 a 5
+- esforço estimado: 1 a 5
+- risco: 1 a 5
+- estado: Ideia, Em análise, Aprovado, Em execução, Concluído
+
+A app deve calcular automaticamente uma pontuação de prioridade com esta fórmula:
+prioridade = impacto + urgência - esforço - risco
+
+Funcionalidades:
+- adicionar projetos
+- listar projetos ordenados pela pontuação de prioridade
+- filtros por estado e serviço
+- destaque visual para projetos com prioridade alta
+- vista de detalhe do projeto
+- explicação simples da pontuação
+- botão para exportar lista para CSV
+
+Pré-popula com 8 projetos fictícios relacionados com serviços académicos, qualidade, recursos humanos, investigação e bibliotecas.
+
+Visual: dashboard profissional, simples e claro.
+```
+
+</details>
+
+<details markdown="1">
+<summary>💡 Acompanhamento de reclamações e sugestões</summary>
+
+Reclamações têm prazo de resposta legal. Um painel que destaca a criticidade alta e alerta para prazos ultrapassados é uma ferramenta de gestão a sério — note-se que aqui só entram dados fictícios.
+
+```
+Constrói uma aplicação web em português de Portugal para acompanhar reclamações e sugestões recebidas numa universidade.
+
+Cada registo tem:
+- número
+- data de entrada
+- tipo: Reclamação, Sugestão, Elogio
+- canal: E-mail, Livro de reclamações, Formulário online, Presencial, Telefone
+- serviço envolvido
+- assunto
+- descrição
+- estado: Recebido, Em análise, Respondido, Encerrado
+- criticidade: Baixa, Média, Alta
+- resposta prevista até
+- notas internas
+
+Funcionalidades:
+- lista de registos
+- filtros por tipo, serviço, estado e criticidade
+- destaque visual para reclamações de criticidade alta
+- alerta para respostas com prazo ultrapassado
+- contadores no topo
+- botão para adicionar novo registo
+- vista de detalhe
+- botão para marcar como encerrado
+
+Pré-popula com 10 registos fictícios.
+
+Visual: institucional, com aparência de painel de controlo.
+```
+
+</details>
+
+<details markdown="1">
+<summary>💡 Inventário de procedimentos administrativos</summary>
+
+Uma base de conhecimento do "como se faz" de cada serviço: passos, documentos, prazos e legislação aplicável, tudo num sítio pesquisável em vez de na cabeça de quem está há mais anos.
+
+```
+Constrói uma aplicação web simples em português de Portugal para gerir um inventário de procedimentos administrativos de uma universidade.
+
+Cada procedimento tem:
+- nome do procedimento
+- serviço responsável
+- descrição curta
+- passos principais
+- documentos necessários
+- prazo estimado
+- legislação ou regulamento aplicável
+- contacto interno
+- estado: Em vigor, Em revisão, Descontinuado
+
+Funcionalidades:
+- lista de procedimentos
+- pesquisa por nome, serviço ou palavra-chave
+- filtro por serviço e estado
+- vista de detalhe do procedimento
+- botão para adicionar novo procedimento
+- botão para editar procedimento
+- botão para copiar os passos principais
+
+Pré-popula com 6 procedimentos fictícios:
+- Pedido de certidão
+- Pedido de equivalência
+- Inscrição em exame
+- Alteração de dados pessoais
+- Candidatura a bolsa
+- Pedido de estatuto trabalhador-estudante
+
+Visual: limpo, profissional, tipo base de conhecimento.
+```
+
+</details>
+
+<details markdown="1">
+<summary>💡 Avaliador de risco RGPD para casos de uso de IA</summary>
+
+Uma prima mais detalhada da *Matriz Semáforo interativa* lá de cima: em vez das 4 cores da formação, faz sete perguntas centradas no RGPD e na confidencialidade. Bom exercício para discutir como traduzir regras jurídicas numa lógica de decisão.
+
+```
+Constrói uma aplicação web em português de Portugal para ajudar funcionários de uma universidade a avaliar se podem usar uma ferramenta de IA num determinado caso de uso, tendo em conta cuidados básicos de RGPD e confidencialidade.
+
+A app apresenta um formulário com estas perguntas:
+1. Vai usar dados pessoais identificáveis?
+2. Vai usar dados de saúde, dados disciplinares ou informação especialmente sensível?
+3. Os dados pertencem a estudantes, trabalhadores ou candidatos?
+4. A informação é confidencial ou ainda não pública?
+5. O resultado da IA será usado para tomar uma decisão sobre uma pessoa?
+6. Existe revisão humana antes de usar o resultado?
+7. Os dados podem ser anonimizados antes de serem usados?
+
+Com base nas respostas, a app classifica o caso em:
+- Baixo risco
+- Risco moderado
+- Risco elevado
+- Não recomendado
+
+No final, mostra:
+- classificação de risco
+- justificação
+- recomendações práticas
+- lista de cuidados antes de avançar
+
+Funcionalidades:
+- questionário passo a passo
+- barra de progresso
+- resultado final em destaque
+- botão para recomeçar
+- botão para copiar o relatório final
+
+Visual: profissional, com cores discretas para os níveis de risco.
 ```
 
 </details>

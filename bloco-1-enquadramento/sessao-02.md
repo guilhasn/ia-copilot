@@ -380,7 +380,7 @@ Cada prompt deve incluir: objetivo, contexto, fonte e expectativas — os quatro
 
 Os 3 prompts que acabaram de criar precisam de casa. No exercício desta sessão, cada formando constrói — sem escrever código — uma aplicação web para guardar a sua biblioteca pessoal de prompts, usando uma ferramenta de vibecoding (Lovable, AI Studio, base44). O prompt é a especificação: é o framework da sessão aplicado em modo extremo.
 
-➡️ [Exercício S02 — A primeira app (vibecoding)]({% link exercicios/s02-primeira-app-vibecoding.md %}) — instruções passo a passo, prompt pronto a colar e mais 4 ideias de apps para o contexto das IES.
+➡️ [Exercício S02 — A primeira app (vibecoding)]({% link exercicios/s02-primeira-app-vibecoding.md %}) — instruções passo a passo, prompt pronto a colar e uma galeria de ideias de apps para o contexto das IES.
 
 ## Checklist de validação
 
