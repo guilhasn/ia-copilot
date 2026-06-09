@@ -49,7 +49,7 @@ No final da sessão, os formandos deverão ser capazes de:
 ## Programa
 
 1. **Para começar** — debrief de prompts testados + desafio "o pior prompt"
-2. Prompt Gallery da Microsoft — descobrir, guardar e partilhar prompts
+2. Prompt Gallery da Microsoft — visita breve à montra (e porque não chega)
 3. Caso #1 — pesquisar tendências em gestão de IES (modo Web, ação *Ask*)
 4. Caso #2 — o prompt que escreve prompts (meta-prompting e auto-crítica)
 5. Biblioteca pessoal — 5 a 8 prompts reutilizáveis organizados por categoria
@@ -68,36 +68,19 @@ Vai partilhar 2-3 ideias no chat do Zoom. O prompting melhora com a prática —
 
 E agora o desafio inverso — **o pior prompt**: cole no chat do Zoom o prompt mais preguiçoso que escreveu esta semana. Uma linha, sem contexto, escrita à pressa — todos os temos. Sem vergonha: os melhores exemplares vão ser a matéria-prima do Caso #2, e no fim da sessão vai perceber porquê.
 
-## Prompt Gallery da Microsoft
+## Prompt Gallery da Microsoft — visita breve
 
-O Microsoft 365 Copilot inclui uma funcionalidade integrada para descobrir, guardar e partilhar prompts: a **Prompt Gallery**.
+Antes de construir a biblioteca, vale a pena conhecer a montra da Microsoft: a **Prompt Gallery**, um catálogo de prompts curados, acessível no Copilot Chat (secção "Ver mais") ou em [copilot.cloud.microsoft/prompts](https://copilot.cloud.microsoft/en-US/prompts).
 
-### O que é
+Serve para três coisas: **descobrir** prompts prontos (por categoria, aplicação ou função), **guardar** os úteis, e — com licença — **partilhar** prompts com equipas do Teams.
 
-A Prompt Gallery é um catálogo de prompts curados pela Microsoft e partilhados pela comunidade, acessível diretamente dentro do Copilot Chat ou em [copilot.cloud.microsoft/prompts](https://copilot.cloud.microsoft/en-US/prompts).
+Dois avisos antes de a explorar:
 
-### O que permite fazer
+- está **em inglês**, e muitos dos prompts assumem o modo Trabalho (resumir reuniões, pôr e-mails em dia) — para quem não tem licença, o valor está em **roubar a estrutura** dos bons prompts, não em copiá-los tal-qual;
 
-| Ação | Como |
-|---|---|
-| **Descobrir** prompts prontos | Navegar por categoria, aplicação ou função |
-| **Guardar** prompts favoritos | Clicar no ícone de guardar ao passar sobre o prompt |
-| **Criar** prompts próprios | Escrever e guardar prompts personalizados na galeria |
-| **Partilhar** com a equipa | Selecionar "Partilhar" → escolher equipa do Teams |
-| **Gostar** de prompts úteis | Marcar com "like" para influenciar as recomendações |
-
-### Onde encontrar
-
-A Prompt Gallery está disponível:
-
-- no Copilot Chat em [m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat), na secção "Ver mais" / "Prompt Gallery";
-- na versão web em [copilot.cloud.microsoft/prompts](https://copilot.cloud.microsoft/en-US/prompts);
-- dentro das aplicações Microsoft 365 com Copilot ativo.
+- é uma montra, não uma biblioteca: os prompts genéricos da Microsoft não conhecem o seu serviço, os seus procedimentos nem o seu vocabulário. A biblioteca que vamos construir hoje, sim.
 
 *Fonte: [Microsoft Learn — Understand Prompt Gallery](https://learn.microsoft.com/en-us/copilot/microsoft-365/copilot-prompt-gallery)*
-
-{: .note }
-> **Sem licença Copilot?** A galeria pública em [copilot.cloud.microsoft/prompts](https://copilot.cloud.microsoft/en-US/prompts) explora-se sem qualquer licença, e os prompts que lá encontrar usam-se de imediato no Copilot Chat. A partilha de prompts com equipas via Prompt Gallery é que requer a licença Microsoft 365 Copilot — quem não a tem constrói a biblioteca num ficheiro partilhado (ver atividade central). O destino muda; o método e os prompts são exatamente os mesmos.
 
 ## Caso #1 — Pesquisar tendências em gestão de IES
 
@@ -172,8 +155,28 @@ A pesquisa com IA tem armadilhas específicas. Antes de usar o output, verificar
 - **Há contraponto?** A pesquisa com IA tende a apresentar tudo como consenso; as tensões e críticas costumam ficar de fora se não forem pedidas.
 - **A resposta é genérica ou tem dados concretos?** *"As IES estão a digitalizar-se"* não diz nada; *"30% das universidades europeias usam X em 2025, segundo o relatório Y"* é uma afirmação verificável.
 
+Esta checklist é, ela própria, um prompt em potência. Vai entrar na biblioteca como **entrada #6** — um verificador que se cola a seguir a qualquer resultado de pesquisa:
+
+> *Vou colar-te o resultado de uma pesquisa feita com IA. Verifica criticamente:*
+>
+> *1. As fontes citadas existem, ou precisam de confirmação manual?*
+>
+> *2. As datas são mesmo recentes, ou há relatórios antigos apresentados como atuais?*
+>
+> *3. A escala é proporcional, ou há generalizações a partir de casos isolados?*
+>
+> *4. Falta contraponto — vozes críticas, riscos, limitações?*
+>
+> *5. Que afirmações são genéricas e que afirmações são verificáveis (com números e fontes)?*
+>
+> *Termina com uma lista: "Verificar manualmente antes de usar".*
+>
+> *Resultado a verificar: [colar]*
+
+Um aviso honesto: usar IA para verificar IA ajuda na triagem, mas a confirmação final das fontes é sempre manual — o verificador diz-lhe *onde* olhar, não substitui o olhar.
+
 {: .important }
-> O Copilot em modo Web é como um estagiário rápido com acesso a pesquisa Google. Acelera a primeira leitura, mas **tudo o que cita tem de ser verificado** antes de chegar a uma reunião de decisão.
+> O Copilot em modo Web acelera a primeira leitura de qualquer tema — mas **tudo o que cita tem de ser verificado** antes de chegar a uma reunião de decisão. A velocidade é dele; a credibilidade é sua.
 
 ### A mensagem central
 
@@ -241,7 +244,10 @@ O meta-prompt tem uma propriedade única: é o prompt que ajuda a criar todos os
 >
 > **Validação:** rever o prompt gerado — cortar o que não se aplica, confirmar aplicação e modo, testar uma vez antes de guardar
 
-Na atividade a seguir, é esta entrada #0 que constrói as outras cinco.
+Na atividade a seguir, é esta entrada #0 que constrói as seguintes.
+
+{: .important }
+> **O meta-prompt não fica memorizado.** O Copilot Chat não guarda instruções entre conversas — cada conversa nova começa do zero. Por isso é que ele é a entrada #0 e vive no topo da biblioteca: **é a primeira coisa a colar em cada conversa nova**, antes de descrever a tarefa. Quem se esquecer deste passo na segunda-feira vai receber respostas inventadas e achar que "a magia deixou de funcionar" — não deixou: faltou colar o meta-prompt.
 
 ### A mensagem central
 
@@ -280,7 +286,7 @@ Cada prompt da biblioteca deve seguir a estrutura:
 
 ### Exercício
 
-A entrada #0 está guardada — agora é pô-la a trabalhar. Cinco prompts, um por categoria (**resumir**, **redigir**, **reformular**, **analisar**, **preparar**), todos nascidos de tarefas reais do seu serviço.
+A entrada #0 está guardada — agora é pô-la a trabalhar. **Três prompts garantidos na sessão:** escolha as três categorias que correspondem às suas maiores dores — entre **resumir**, **redigir**, **reformular**, **analisar** e **preparar** — todos nascidos de tarefas reais do seu serviço. As outras duas categorias ficam como tarefa para a semana, com o mesmo método.
 
 📎 **Ficheiro-biblioteca modelo:** descarregue a [Biblioteca de Prompts (DOCX)]({{ site.baseurl }}/sessoes/sessao-03/Biblioteca_de_Prompts.docx) — já traz a entrada #0 preenchida e as cinco entradas por categoria prontas a completar. É a casa da biblioteca para quem não tem licença, e um bom backup para quem tem.
 
@@ -300,9 +306,11 @@ Quem terminar mais cedo: passe um dos seus prompts pela auto-crítica do Caso #2
 
 Um prompt só está completo quando outra pessoa o consegue usar sem pedir explicações.
 
-1. Troque um prompt com um colega, pelo chat do Zoom.
+Em pares (salas simultâneas do Zoom, ou emparelhamento indicado no momento):
 
-2. O colega usa-o tal-qual, numa tarefa dele — sem fazer perguntas a quem o escreveu.
+1. Escolha para a troca um prompt **autossuficiente** — cuja Fonte seja texto colável (um documento, um excerto, dados copiados), e não os seus e-mails ou reuniões: o colega não tem acesso a esses dados.
+
+2. Troquem os prompts por mensagem privada e cada um usa o do outro tal-qual, numa tarefa sua — **sem fazer perguntas a quem o escreveu**.
 
 3. Cada dúvida que surgir é um buraco no prompt: falta contexto, falta formato, falta validação. Anote e corrija.
 
@@ -310,23 +318,33 @@ Um prompt só está completo quando outra pessoa o consegue usar sem pedir expli
 
 ## Partilhar prompts com a equipa
 
-Um bom prompt não deve ficar só numa pessoa. A Prompt Gallery permite partilhar prompts com equipas do Teams.
+Um bom prompt não deve ficar só numa pessoa — mas partilhar sem regras também não funciona.
 
 ### Como partilhar
 
-1. Guardar o prompt na Prompt Gallery (ícone de guardar)
-2. Passar o rato sobre o prompt guardado
-3. Selecionar **"Partilhar"** → **"Partilhar com equipa"**
-4. Escolher a equipa do Teams
+**Com licença** — via Prompt Gallery:
 
-Todos os membros da equipa passam a ver e a poder reutilizar o prompt.
+1. Guardar o prompt na Prompt Gallery (ícone de guardar);
 
-**Sem licença:** o mesmo efeito consegue-se com o ficheiro-biblioteca guardado numa equipa do Teams ou no SharePoint do serviço — qualquer colega copia de lá o prompt e cola-o no Copilot Chat. A ferramenta muda; o hábito de partilhar é o que multiplica.
+2. passar o rato sobre o prompt guardado;
+
+3. selecionar **"Partilhar"** → **"Partilhar com equipa"** e escolher a equipa do Teams.
+
+**Sem licença** — via ficheiro-biblioteca: uma cópia numa equipa do Teams ou no SharePoint do serviço; qualquer colega copia de lá o prompt e cola-o no Copilot Chat.
 
 *Fonte: [Microsoft Support — Sharing prompts with a team](https://support.microsoft.com/en-us/topic/sharing-prompts-with-a-team-2fa7a228-8645-4dc4-beec-d75d6d0bc752)*
 
-{: .important }
-> **O efeito multiplicador:** Imagine que cada técnico dos Serviços Académicos cria 5 prompts úteis. Se os partilharem via Teams, a equipa inteira fica com 30-40 prompts testados e validados. O investimento de uma pessoa beneficia todo o serviço.
+### Para a partilha não apodrecer
+
+Bibliotecas partilhadas morrem por falta de dono. Três regras mínimas, a combinar com a equipa antes de partilhar o primeiro prompt:
+
+- **Um responsável** pelo ficheiro (ou pela curadoria na Gallery) — decide o que entra e remove o que ninguém usa.
+
+- **Só entra o que passou o teste cruzado** — um prompt que precisa de explicações ainda não está pronto para ser partilhado.
+
+- **Cada prompt tem dono** — quem o criou mantém-no atualizado quando o procedimento do serviço mudar.
+
+Com isto, cinco pessoas a contribuir dão à equipa uma biblioteca viva. Sem isto, dão-lhe mais um ficheiro esquecido no SharePoint.
 
 ## Síntese do Bloco 1
 
@@ -358,3 +376,6 @@ A partir da Sessão 4, os formandos vão aplicar estas competências a tarefas c
 ## Próxima sessão
 
 Na Sessão 4, os formandos irão trabalhar com o Copilot no Word: sumarizar documentos longos, reformular para linguagem clara e redigir a partir de modelos institucionais.
+
+{: .note }
+> **Para quem não tem licença:** o Copilot dentro do Word exige licença — mas as sessões do Bloco 2 estão desenhadas para todos. As funcionalidades são demonstradas ao vivo em ecrã partilhado, e cada exercício tem um caminho paralelo no Copilot Chat gratuito (colar o texto e trabalhar a partir daí). O método é o mesmo; muda apenas o sítio onde se cola.

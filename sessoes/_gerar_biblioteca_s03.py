@@ -42,6 +42,21 @@ META_PROMPT = (
     "pede-me a primeira tarefa."
 )
 
+VERIFICADOR_PROMPT = (
+    "Vou colar-te o resultado de uma pesquisa feita com IA. Verifica "
+    "criticamente:\n\n"
+    "1. As fontes citadas existem, ou precisam de confirmação manual?\n"
+    "2. As datas são mesmo recentes, ou há relatórios antigos apresentados "
+    "como atuais?\n"
+    "3. A escala é proporcional, ou há generalizações a partir de casos "
+    "isolados?\n"
+    "4. Falta contraponto — vozes críticas, riscos, limitações?\n"
+    "5. Que afirmações são genéricas e que afirmações são verificáveis "
+    "(com números e fontes)?\n\n"
+    "Termina com uma lista: \"Verificar manualmente antes de usar\".\n\n"
+    "Resultado a verificar: [colar]"
+)
+
 CATEGORIAS = [
     ("Resumir", "e-mails, reuniões, documentos, cadeias de comunicação"),
     ("Redigir", "ofícios, respostas a e-mails, notas internas, pareceres"),
@@ -159,6 +174,10 @@ def main():
         "A entrada #0 já vem preenchida: é o meta-prompt da Sessão 3 — o "
         "prompt que ajuda a criar todos os outros. Use-o para construir as "
         "entradas seguintes.",
+        "IMPORTANTE — o Copilot Chat não memoriza instruções entre conversas: "
+        "cada conversa nova começa do zero. Comece sempre por colar a entrada "
+        "#0 (o meta-prompt) antes de descrever a tarefa. Sem este passo, as "
+        "respostas voltam a ser genéricas.",
     ]
     for txt in instrucoes:
         p = doc.add_paragraph(txt)
@@ -192,6 +211,20 @@ def main():
             hint_validacao="O que vai verificar no resultado antes de o usar — "
                            "dados concretos, tom, completude.",
         )
+
+    # Entrada #6 — verificador de pesquisas (preenchida)
+    add_entry(
+        doc,
+        "Entrada #6 — O verificador de pesquisas",
+        nome="Verificador de pesquisas com IA",
+        quando="Depois de qualquer pesquisa feita com IA (Copilot em modo Web, "
+               "ou outro assistente), antes de usar o resultado numa reunião, "
+               "documento ou decisão.",
+        prompt=VERIFICADOR_PROMPT,
+        validacao="O verificador faz a triagem, mas a confirmação final das "
+                  "fontes é sempre manual — ele diz onde olhar, não substitui "
+                  "o olhar.",
+    )
 
     # Entradas extra
     h = doc.add_paragraph()
