@@ -1,7 +1,6 @@
 ---
 title: "S3 — Biblioteca de prompts"
 layout: default
-published: false
 parent: "Bloco 1 · Enquadramento e Literacia Crítica"
 nav_order: 3
 ---
@@ -113,7 +112,7 @@ Recapitulando as quatro ações apresentadas na Sessão 2:
 
 A Helena Albuquerque, Diretora de Serviços Académicos da Universidade de Vale Verde, foi convidada a contribuir com um ponto para a próxima reunião do Conselho de Gestão: **tendências internacionais em digitalização de serviços académicos**.
 
-Tem uma semana e quer chegar à primeira reunião de trabalho com a equipa já com um mapa do terreno — que tendências há, onde estão documentadas, e que IES europeias as estão a adoptar. Não pretende um relatório fechado; pretende uma base para discutir com a equipa e a partir daí decidir o que vale a pena investigar a fundo.
+Tem uma semana e quer chegar à primeira reunião de trabalho com a equipa já com um mapa do terreno — que tendências há, onde estão documentadas, e que IES europeias as estão a adotar. Não pretende um relatório fechado; pretende uma base para discutir com a equipa e a partir daí decidir o que vale a pena investigar a fundo.
 
 ### Modo Web vs. modo Trabalho
 
@@ -135,7 +134,7 @@ A pesquisa de tendências internacionais é tarefa para o modo **Web**: a inform
 > *Para cada tendência, indica:*
 > *1. o que é, em duas linhas;*
 > *2. onde está documentada (publicação, organismo, ano);*
-> *3. exemplos de IES europeias que a estão a adoptar;*
+> *3. exemplos de IES europeias que a estão a adotar;*
 > *4. implicações possíveis para uma universidade pública portuguesa de média dimensão.*
 >
 > *Fonte: usa fontes públicas e cita-as explicitamente. Privilegia EUA (European University Association), OECD, ENQA, A3ES, Erasmus+ e relatórios oficiais. Se uma fonte não for verificável, assinala-a como "a confirmar".*
@@ -146,7 +145,7 @@ A pesquisa de tendências internacionais é tarefa para o modo **Web**: a inform
 
 Depois do primeiro resultado, testar pedidos de seguimento como:
 
-> *Aprofunda a primeira tendência. Dá-me 3 exemplos concretos de universidades europeias com nome e ano em que adoptaram a prática.*
+> *Aprofunda a primeira tendência. Dá-me 3 exemplos concretos de universidades europeias com nome e ano em que adotaram a prática.*
 
 > *Identifica que destas tendências têm contraponto crítico — vozes que questionam ou alertam para riscos de implementação.*
 
