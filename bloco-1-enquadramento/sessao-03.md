@@ -280,7 +280,9 @@ Cada prompt da biblioteca deve seguir a estrutura:
 
 ### Exercício
 
-A entrada #0 está guardada — agora é pô-la a trabalhar. Cinco prompts, um por categoria (**resumir**, **redigir**, **reformular**, **analisar**, **preparar**), todos nascidos de tarefas reais do seu serviço:
+A entrada #0 está guardada — agora é pô-la a trabalhar. Cinco prompts, um por categoria (**resumir**, **redigir**, **reformular**, **analisar**, **preparar**), todos nascidos de tarefas reais do seu serviço.
+
+📎 **Ficheiro-biblioteca modelo:** descarregue a [Biblioteca de Prompts (DOCX)]({{ site.baseurl }}/sessoes/sessao-03/Biblioteca_de_Prompts.docx) — já traz a entrada #0 preenchida e as cinco entradas por categoria prontas a completar. É a casa da biblioteca para quem não tem licença, e um bom backup para quem tem.
 
 1. Descreva a tarefa ao meta-prompt em linguagem corrente — como a contaria a um colega de gabinete.
 
@@ -341,6 +343,10 @@ A partir da Sessão 4, os formandos vão aplicar estas competências a tarefas c
 > O Bloco 1 deu as ferramentas. O Bloco 2 vai pôr as mãos na massa.
 
 ## Materiais
+
+### Para descarregar
+
+- [Biblioteca de Prompts — ficheiro modelo (DOCX)]({{ site.baseurl }}/sessoes/sessao-03/Biblioteca_de_Prompts.docx) — template da atividade central, com a entrada #0 (meta-prompt) preenchida e cinco entradas por categoria; funciona com e sem licença Copilot
 
 ### Para aprofundar
 
