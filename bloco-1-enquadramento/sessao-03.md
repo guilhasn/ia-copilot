@@ -15,7 +15,7 @@ nav_order: 3
 - **Duração:** 2 horas
 - **Modalidade:** Online síncrona
 - **Bloco:** 1 · Enquadramento e Literacia Crítica
-- **Casos operacionais:** #1 Pesquisar tendências em gestão de IES · #2 Do e-mail único ao prompt reutilizável
+- **Casos operacionais:** #1 Pesquisar tendências em gestão de IES · #2 O prompt que escreve prompts
 
 ## Ideia central
 
@@ -25,12 +25,15 @@ O objetivo não é decorar prompts — é ter um repertório pronto a usar que m
 
 > Um bom prompt não se inventa de cada vez. Guarda-se, adapta-se e partilha-se.
 
+{: .note }
+> **Com ou sem licença Copilot, a sessão é para todos.** Tudo o que se pratica hoje corre no **Copilot Chat** ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)), disponível com a conta institucional sem licença paga. A licença Microsoft 365 Copilot acrescenta dois extras — o modo Trabalho (acesso a dados da organização) e a partilha de prompts via Prompt Gallery — assinalados onde aparecem. Os exercícios são os mesmos para todos.
+
 ## Objetivos
 
 No final da sessão, os formandos deverão ser capazes de:
 
 - consolidar a competência de prompting em contextos variados;
-- redigir uma resposta a e-mail com apoio do Copilot, controlando tom, conteúdo e limites;
+- usar o Copilot como engenheiro de prompts: gerar, avaliar e melhorar prompts com meta-prompting e auto-crítica;
 - utilizar a Prompt Gallery da Microsoft para descobrir, guardar e partilhar prompts;
 - construir uma biblioteca pessoal de 5 a 8 prompts reutilizáveis, organizados por categoria;
 - partilhar prompts com a equipa através do Microsoft Teams.
@@ -45,10 +48,10 @@ No final da sessão, os formandos deverão ser capazes de:
 
 ## Programa
 
-1. **Para começar** — debrief de prompts testados desde a Sessão 2
+1. **Para começar** — debrief de prompts testados + desafio "o pior prompt"
 2. Prompt Gallery da Microsoft — descobrir, guardar e partilhar prompts
 3. Caso #1 — pesquisar tendências em gestão de IES (modo Web, ação *Ask*)
-4. Caso #2 — do e-mail único ao prompt reutilizável (generalizar, testar, afinar)
+4. Caso #2 — o prompt que escreve prompts (meta-prompting e auto-crítica)
 5. Biblioteca pessoal — 5 a 8 prompts reutilizáveis organizados por categoria
 6. Partilhar com a equipa — através da Prompt Gallery e do Teams
 7. Fecho — síntese do Bloco 1 e preview do Bloco 2
@@ -62,6 +65,8 @@ Antes de avançar, pense:
 > Que prompt testou? O que funcionou? O que teve de ajustar?
 
 Vai partilhar 2-3 ideias no chat do Zoom. O prompting melhora com a prática — e os colegas podem aprender uns com os outros.
+
+E agora o desafio inverso — **o pior prompt**: cole no chat do Zoom o prompt mais preguiçoso que escreveu esta semana. Uma linha, sem contexto, escrita à pressa — todos os temos. Sem vergonha: os melhores exemplares vão ser a matéria-prima do Caso #2, e no fim da sessão vai perceber porquê.
 
 ## Prompt Gallery da Microsoft
 
@@ -92,7 +97,7 @@ A Prompt Gallery está disponível:
 *Fonte: [Microsoft Learn — Understand Prompt Gallery](https://learn.microsoft.com/en-us/copilot/microsoft-365/copilot-prompt-gallery)*
 
 {: .note }
-> **Momento de descoberta:** Quando mostrar a Prompt Gallery aos formandos, deixe-os explorar durante 2-3 minutos. Muitos não sabem que existe e é um dos momentos mais impactantes da sessão.
+> **Sem licença Copilot?** A galeria pública em [copilot.cloud.microsoft/prompts](https://copilot.cloud.microsoft/en-US/prompts) explora-se sem qualquer licença, e os prompts que lá encontrar usam-se de imediato no Copilot Chat. A partilha de prompts com equipas via Prompt Gallery é que requer a licença Microsoft 365 Copilot — quem não a tem constrói a biblioteca num ficheiro partilhado (ver atividade central). O destino muda; o método e os prompts são exatamente os mesmos.
 
 ## Caso #1 — Pesquisar tendências em gestão de IES
 
@@ -104,8 +109,10 @@ Recapitulando as quatro ações apresentadas na Sessão 2:
 |---|---|
 | Pôr em dia *(Catch up)* | S2 — resumir cadeia de e-mails |
 | **Perguntar *(Ask)*** | **S3 — Caso #1, este caso** |
-| Criar *(Create)* | S2 — resposta à estudante · S3 — Caso #2 generaliza-a num prompt reutilizável |
+| Criar *(Create)* | S2 — resposta à estudante · aprofunda-se nas S4-S7, aplicação a aplicação |
 | Editar *(Edit)* | S4 — Word, reformular e melhorar texto |
+
+O Caso #2 de hoje não acrescenta uma quinta ação — trabalha a competência que está por baixo de todas elas: a engenharia do próprio prompt.
 
 ### Cenário
 
@@ -123,6 +130,8 @@ Esta é a primeira vez na formação que usamos o Copilot Chat **em modo Web**. 
 | **Web** | Pesquisa pública, brainstorming, mapear terreno | Funciona como pesquisa Web assistida; **não** acede a dados internos |
 
 A pesquisa de tendências internacionais é tarefa para o modo **Web**: a informação está toda fora da organização, em sites públicos.
+
+E há aqui uma boa notícia para quem não tem licença: o modo Web está disponível no Copilot Chat gratuito — neste caso, todos trabalham em pé de igualdade.
 
 ### Prompt de trabalho
 
@@ -172,91 +181,73 @@ A ação **Ask** é poderosa para *mapear terreno* — perceber rapidamente o qu
 
 Boa prática: usar para acelerar a primeira leitura, validar cada fonte antes de a citar, e nunca apresentar output sem revisão como base de uma decisão institucional.
 
-## Caso #2 — Do e-mail único ao prompt reutilizável
+## Caso #2 — O prompt que escreve prompts
 
-Este é o segundo caso operacional — e é a ponte entre a Sessão 2 e a atividade central de hoje.
+Este é o segundo caso operacional — e é a ponte entre a Sessão 2 e a atividade central de hoje. Corre inteiramente no Copilot Chat: **funciona com e sem licença**.
 
-### Ligação à Sessão 2
+**O problema:** a Sessão 2 mostrou que um bom prompt tem Objetivo, Contexto, Fonte e Expectativas. Mas escrever um prompt bem-formado de raiz, para cada tarefa nova, demora — e ao terceiro dia de trabalho real a tentação é voltar aos prompts de uma linha. A competência não morre por falta de conhecimento; morre por falta de tempo.
 
-Na Sessão 2, a Helena redigiu **uma** resposta a **um** e-mail — o pedido de certidão da Beatriz Cordeiro. O prompt foi escrito para aquele caso e morreu com ele.
+A solução não é escrever prompts mais depressa. É **pôr o Copilot a escrevê-los** — com supervisão.
 
-**O problema:** os Serviços Académicos recebem todas as semanas dezenas de pedidos de informação parecidos mas nunca iguais — prazos de candidatura, equivalências, segundas vias de diploma, propinas, procedimentos de inscrição. Escrever um bom prompt de raiz para cada e-mail custa quase tanto como escrever a resposta à mão. A competência da S02 só compensa se o prompt for escrito **uma vez** e reutilizado sempre.
+### Meta-prompting
 
-### O objetivo: iterar o prompt, não a resposta
+Um **meta-prompt** é um prompt cujo resultado é outro prompt. Escreve-se uma única vez, e a partir daí transforma descrições desleixadas em prompts profissionais:
 
-Na S02, o ciclo era: prompt → resposta → ajustar a **resposta**.
-
-Neste caso, o ciclo é outro:
-
-> prompt → testar contra e-mails diferentes → ajustar o **prompt** → guardar na biblioteca
-
-O entregável não é uma resposta de e-mail. É um **prompt-modelo** que qualquer pessoa da equipa pode usar amanhã.
-
-### Passo 1 — Generalizar o prompt da S02
-
-O prompt da S02 falava de "certidão de conclusão de curso". Para servir qualquer pedido de informação, o que é específico passa a campo a preencher:
-
-> *Redige uma resposta institucional a este e-mail de um estudante.*
+> *Atua como engenheiro de prompts para o Microsoft 365 Copilot numa instituição de ensino superior portuguesa.*
 >
-> *Objetivo: informar sobre [ASSUNTO DO PEDIDO].*
+> *Vou descrever-te tarefas em linguagem corrente. Para cada tarefa:*
 >
-> *Incluir: [PONTOS A COBRIR — ex.: documentos necessários, prazos, custos, onde e como pedir].*
+> *1. Reescreve-a como um prompt completo, com Objetivo, Contexto, Fonte e Expectativas.*
 >
-> *Tom: cordial, claro e profissional.*
+> *2. Antes de fechares o prompt, faz-me as perguntas necessárias sobre o que me faltou dizer — não inventes o que não sabes.*
 >
-> *Formato: resposta de e-mail com saudação, corpo estruturado e fecho formal.*
+> *3. Indica em que aplicação do Microsoft 365 devo usar o prompt, e em que modo (Trabalho ou Web).*
 >
-> *Regras: não acrescentar informação que não esteja confirmada. Se algum dado não estiver disponível, indicar que o estudante deve contactar o serviço para confirmação.*
+> *4. Termina com uma secção "Validação:" — o que devo verificar no resultado antes de o usar.*
 >
-> *Escreve em português de Portugal.*
+> *Responde sempre em português de Portugal. Quando estiveres pronto, pede-me a primeira tarefa.*
 
-Os campos entre parêntesis retos são a diferença entre um prompt descartável e um prompt-modelo: preenchem-se em segundos, e todo o resto — tom, formato, regras de validação — já está afinado.
+### A inversão
 
-### Passo 2 — Testar contra casos que não são o original
+Agora a matéria-prima: um dos "piores prompts" partilhados no início da sessão. Por exemplo:
 
-Um prompt reutilizável só se prova testando-o contra e-mails diferentes do caso que lhe deu origem. Três e-mails de teste:
+> *preciso de preparar a reunião de quinta*
 
-1. Um estudante internacional pergunta como pedir **equivalência de disciplinas** feitas noutra universidade.
+Repare no que acontece: **o Copilot não responde — pergunta.** Que reunião? Com quem? Que documentos existem? O que vai ser decidido?
 
-2. Uma antiga aluna pede uma **segunda via do diploma** — o original perdeu-se numa mudança de casa.
+Esta é a inversão que distingue um utilizador fluente: em vez de ser a pessoa a adivinhar o que a IA precisa, **é a IA a perguntar o que lhe falta**. A linha do meta-prompt que a provoca é uma só — *"faz-me as perguntas necessárias; não inventes o que não sabes"* — e é também uma vacina contra conteúdo inventado: o que a IA não sabe, pergunta, em vez de preencher por conta própria.
 
-3. Um candidato quer saber o **prazo de candidatura ao mestrado** e que documentos deve preparar.
+Respondidas as perguntas, o Copilot devolve um prompt completo — com a aplicação certa, o modo certo e uma checklist de validação. Pronto a entrar na biblioteca.
 
-Para cada um: preencher os campos, gerar a resposta, e observar onde o resultado falha.
+### Auto-crítica: o Copilot como revisor
 
-### Passo 3 — Afinar o prompt com o que falhou
+Segunda técnica do caso — pedir ao Copilot para avaliar prompts, incluindo os dele:
 
-Cada falha do output é informação sobre o prompt — não sobre o e-mail. Exemplos típicos:
-
-- A resposta ao estudante internacional saiu em tom demasiado informal → acrescentar ao prompt: *"Se o remetente não for estudante atual da instituição, usar tratamento formal."*
-
-- A resposta à segunda via inventou um custo → reforçar a regra: *"Nunca indicar valores, prazos ou custos concretos que não constem de [FONTE]."*
-
-- A resposta ao candidato ficou demasiado longa → acrescentar: *"Máximo 10 linhas."*
-
-A afinação fica gravada no prompt-modelo — o próximo utilizador herda tudo o que se aprendeu nos testes.
-
-### Guardar e partilhar
-
-O prompt afinado entra na biblioteca com a estrutura que vamos usar na atividade central:
-
-> **Nome:** Resposta a pedido de informação de estudante
+> *Avalia o prompt abaixo segundo o framework Objetivo–Contexto–Fonte–Expectativas. Para cada componente, dá uma nota de 0 a 10 e uma justificação numa linha. No fim, reescreve o prompt corrigindo o componente mais fraco.*
 >
-> **Quando usar:** E-mails de estudantes, antigos alunos ou candidatos a pedir informação sobre procedimentos
->
-> **Prompt:** [o prompt-modelo do Passo 1, com as afinações do Passo 3]
->
-> **Validação:** confirmar dados concretos (prazos, custos, documentos) contra os procedimentos reais antes de enviar; verificar tom e completude
+> *Prompt a avaliar: [colar]*
 
-No Outlook, este prompt usa-se com o botão **"Redigir com Copilot"** ao responder ao e-mail — o Copilot recebe o prompt e o e-mail original como contexto.
+Cole outro "pior prompt" do arranque e veja o diagnóstico: notas baixas, justificação exata, versão corrigida — em segundos. Qualquer prompt da biblioteca pode passar por esta revisão antes de ser partilhado com a equipa.
 
-*Fonte: [Microsoft Support — Draft an email with Copilot in Outlook](https://support.microsoft.com/en-us/office/draft-an-email-message-with-copilot-in-outlook-3eb1d053-89b8-491c-8a6e-746015238d9b)*
+### A entrada #0 da biblioteca
+
+O meta-prompt tem uma propriedade única: é o prompt que ajuda a criar todos os outros. Por isso é a **entrada #0** da biblioteca — a primeira a guardar:
+
+> **Nome:** Engenheiro de prompts (meta-prompt)
+>
+> **Quando usar:** sempre que precisar de criar um prompt novo para a biblioteca, ou de melhorar um existente
+>
+> **Prompt:** [o meta-prompt acima]
+>
+> **Validação:** rever o prompt gerado — cortar o que não se aplica, confirmar aplicação e modo, testar uma vez antes de guardar
+
+Na atividade a seguir, é esta entrada #0 que constrói as outras cinco.
 
 ### A mensagem central
 
-Um prompt usado uma vez é um custo. Um prompt testado, afinado e guardado é um **ativo do serviço** — e é exatamente isso que a biblioteca pessoal, a seguir, vai sistematizar.
+Fluência em IA não é decorar prompts — é saber usar a IA para melhorar a forma como se usa a IA. O Copilot gera, avalia e reescreve; a pessoa decide o que entra na biblioteca.
 
-> O Copilot redige o rascunho. A responsabilidade pelo que se envia é de quem assina — e a qualidade do rascunho é de quem afinou o prompt.
+> A IA produz; quem valida é quem assina.
 
 ## Construir a biblioteca pessoal
 
@@ -289,15 +280,31 @@ Cada prompt da biblioteca deve seguir a estrutura:
 
 ### Exercício
 
-Cada formando cria **pelo menos 5 prompts**, um por categoria:
+A entrada #0 está guardada — agora é pô-la a trabalhar. Cinco prompts, um por categoria (**resumir**, **redigir**, **reformular**, **analisar**, **preparar**), todos nascidos de tarefas reais do seu serviço:
 
-1. um prompt para **resumir** (e-mails, reunião ou documento);
-2. um prompt para **redigir** (resposta a e-mail, ofício ou nota);
-3. um prompt para **reformular** (melhorar texto existente);
-4. um prompt para **analisar** (extrair informação ou identificar pendências);
-5. um prompt para **preparar** (agenda, ponto de situação ou resumo executivo).
+1. Descreva a tarefa ao meta-prompt em linguagem corrente — como a contaria a um colega de gabinete.
 
-Os formandos que terminarem mais cedo podem criar prompts adicionais ou ajudar colegas.
+2. Responda às perguntas que ele fizer.
+
+3. Reveja o prompt devolvido: corte o que não se aplica, ajuste o tom, confirme a secção de validação. **Esta revisão é o seu trabalho — o Copilot propõe, quem conhece o serviço decide.**
+
+4. Guarde — na Prompt Gallery (com licença) ou no ficheiro-biblioteca do serviço (sem licença) — sempre com nome e "quando usar".
+
+5. Repita para a categoria seguinte.
+
+Quem terminar mais cedo: passe um dos seus prompts pela auto-crítica do Caso #2 — e veja se sobrevive.
+
+### Teste cruzado — o prompt sobrevive a outra pessoa?
+
+Um prompt só está completo quando outra pessoa o consegue usar sem pedir explicações.
+
+1. Troque um prompt com um colega, pelo chat do Zoom.
+
+2. O colega usa-o tal-qual, numa tarefa dele — sem fazer perguntas a quem o escreveu.
+
+3. Cada dúvida que surgir é um buraco no prompt: falta contexto, falta formato, falta validação. Anote e corrija.
+
+É exatamente este o teste que os prompts partilhados vão enfrentar no dia-a-dia do serviço — melhor descobrir os buracos agora, com um colega, do que daqui a um mês, com um resultado errado.
 
 ## Partilhar prompts com a equipa
 
@@ -312,6 +319,8 @@ Um bom prompt não deve ficar só numa pessoa. A Prompt Gallery permite partilha
 
 Todos os membros da equipa passam a ver e a poder reutilizar o prompt.
 
+**Sem licença:** o mesmo efeito consegue-se com o ficheiro-biblioteca guardado numa equipa do Teams ou no SharePoint do serviço — qualquer colega copia de lá o prompt e cola-o no Copilot Chat. A ferramenta muda; o hábito de partilhar é o que multiplica.
+
 *Fonte: [Microsoft Support — Sharing prompts with a team](https://support.microsoft.com/en-us/topic/sharing-prompts-with-a-team-2fa7a228-8645-4dc4-beec-d75d6d0bc752)*
 
 {: .important }
@@ -325,7 +334,7 @@ As três sessões do Bloco 1 construíram uma base completa:
 |---|---|
 | S1 | **Classificar** — saber quando usar e quando não usar IA |
 | S2 | **Pedir** — construir prompts eficazes com o framework Microsoft |
-| S3 | **Sistematizar** — ter uma biblioteca pessoal, reutilizável e partilhável |
+| S3 | **Sistematizar** — biblioteca pessoal + usar a IA para melhorar os próprios prompts |
 
 A partir da Sessão 4, os formandos vão aplicar estas competências a tarefas concretas em cada aplicação do Microsoft 365: Word, Outlook, Teams, Excel e PowerPoint. E o paradigma adjacente que o vibecoding da Sessão 2 abriu — construir ferramentas em vez de só as usar — volta na Sessão 13, com o Copilot Studio.
 
@@ -337,7 +346,6 @@ A partir da Sessão 4, os formandos vão aplicar estas competências a tarefas c
 
 - [Copilot Prompt Gallery](https://copilot.cloud.microsoft/en-US/prompts) — galeria online de prompts curados pela Microsoft
 - [Sharing prompts with a team](https://support.microsoft.com/en-us/topic/sharing-prompts-with-a-team-2fa7a228-8645-4dc4-beec-d75d6d0bc752) — como partilhar prompts via Teams
-- [Draft an email with Copilot in Outlook](https://support.microsoft.com/en-us/office/draft-an-email-message-with-copilot-in-outlook-3eb1d053-89b8-491c-8a6e-746015238d9b) — guia oficial para redigir e-mails
 - [Share your best prompts with others](https://support.microsoft.com/en-us/topic/share-your-best-prompts-75402b14-b419-494d-9e58-1709b4f334a2) — guia de partilha de prompts
 - [Referências Microsoft]({% link recursos/referencias-microsoft.md %}) — todos os recursos oficiais
 
