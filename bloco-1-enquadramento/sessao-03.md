@@ -54,7 +54,7 @@ A meta prática é simples: **sair da sessão com pelo menos um prompt real, mel
 
 ## Programa
 
-1. **Para começar** — o pior prompt da semana
+1. **Para começar** — maus prompts, bons diagnósticos
 2. Prompt Gallery — visita breve
 3. Caso #1 — pesquisar tendências em gestão de IES
 4. Caso #2 — o prompt que escreve prompts
@@ -64,19 +64,27 @@ A meta prática é simples: **sair da sessão com pelo menos um prompt real, mel
 8. Partilha com equipa — regras mínimas de curadoria
 9. Fecho — método de trabalho e tarefa para a semana
 
-## Para começar — o pior prompt da semana
+## Para começar — maus prompts, bons diagnósticos
 
 Hoje vamos começar ao contrário.
 
-Na Sessão 2 vimos que um bom prompt deve ter Objetivo, Contexto, Fonte e Expectativas. Mas no trabalho real quase ninguém começa assim. Quando há pressa, escrevemos coisas como:
+Na Sessão 2 vimos que um bom prompt deve ter Objetivo, Contexto, Fonte e Expectativas. Mas no trabalho real quase ninguém começa assim. Quando há pressa, aparecem prompts como:
 
-> *"Resume isto."* · *"Faz uma resposta."* · *"Prepara a reunião."* · *"Melhora este texto."*
+1. *"Resume este regulamento."*
 
-Isto não é um problema. É o ponto de partida.
+2. *"Faz uma resposta a este aluno."*
 
-**Desafio inicial:** cole no chat do Zoom o prompt mais preguiçoso que escreveu — ou poderia escrever — numa semana normal de trabalho. Uma linha. Sem contexto. À pressa.
+3. *"Prepara uma reunião sobre este assunto."*
 
-Não vamos avaliar pessoas. Vamos avaliar instruções. A partir destes exemplares, vamos mostrar como um prompt fraco se transforma num prompt reutilizável, validado e pronto a entrar numa biblioteca pessoal de trabalho com IA.
+4. *"Melhora este relatório."*
+
+5. *"Dá ideias para melhorar o atendimento."*
+
+Estes prompts não são raros. São normais. O problema é que dão demasiada liberdade à IA e pouca segurança a quem tem de usar o resultado.
+
+**Desafio inicial:** observe os cinco exemplos e vote no chat do Zoom **apenas com o número** do prompt que considera mais fraco. Não precisa de escrever mais nada.
+
+Não vamos avaliar pessoas. Vamos avaliar instruções. A partir do exemplo mais votado, vamos mostrar como um prompt fraco se transforma num prompt reutilizável, validado e pronto a entrar numa biblioteca pessoal de trabalho com IA.
 
 Antes de avançar, pense também no prompt que testou depois da Sessão 2: o que funcionou? O que falhou? Que informação teve de acrescentar? O resultado estava pronto a usar, ou precisou de revisão?
 
@@ -228,9 +236,9 @@ Um **meta-prompt** é um prompt cujo resultado é outro prompt. Escreve-se uma �
 
 ### A inversão
 
-Agora a matéria-prima: um dos "piores prompts" partilhados no início da sessão. Por exemplo:
+Agora a matéria-prima: o prompt mais votado no arranque da sessão. Por exemplo, o n.º 3:
 
-> *preciso de preparar a reunião de quinta*
+> *Prepara uma reunião sobre este assunto.*
 
 Repare no que acontece: **o Copilot não responde — pergunta.** Que reunião? Com quem? Que documentos existem? O que vai ser decidido?
 
@@ -246,7 +254,7 @@ Segunda técnica do caso — pedir ao Copilot para avaliar prompts, incluindo os
 >
 > *Prompt a avaliar: [colar]*
 
-Cole outro "pior prompt" do arranque e veja o diagnóstico: notas baixas, justificação exata, versão corrigida — em segundos. Qualquer prompt da biblioteca pode passar por esta revisão antes de ser partilhado com a equipa.
+Cole outro dos prompts fracos do arranque e veja o diagnóstico: notas baixas, justificação exata, versão corrigida — em segundos. Qualquer prompt da biblioteca pode passar por esta revisão antes de ser partilhado com a equipa.
 
 ### A entrada #0 da biblioteca
 
