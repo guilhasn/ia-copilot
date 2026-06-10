@@ -26,7 +26,7 @@ O objetivo não é decorar prompts — é ter um repertório pronto a usar que m
 > Um bom prompt não se inventa de cada vez. Guarda-se, adapta-se e partilha-se.
 
 {: .note }
-> **Com ou sem licença Copilot, a sessão é para todos.** Tudo o que se pratica hoje corre no **Copilot Chat** ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)), disponível com a conta institucional sem licença paga. A licença Microsoft 365 Copilot acrescenta dois extras — o modo Trabalho (acesso a dados da organização) e a partilha de prompts via Prompt Gallery — assinalados onde aparecem. Os exercícios são os mesmos para todos.
+> **Tudo o que vamos praticar hoje está ao alcance de qualquer conta institucional.** A sessão corre no **Copilot Chat** ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)), sem licença paga — e funciona igualmente na **versão web do Copilot** ([copilot.microsoft.com](https://copilot.microsoft.com)), direto no browser, sem instalar nada. Quem tem licença Microsoft 365 Copilot ganha dois extras — o modo Trabalho (acesso a dados da organização) e a partilha de prompts via Prompt Gallery — assinalados onde aparecem. Os exercícios são os mesmos para todos.
 
 ## Objetivos
 

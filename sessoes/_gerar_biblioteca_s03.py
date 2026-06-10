@@ -160,10 +160,10 @@ def main():
     r.font.bold = True
     r.font.color.rgb = NAVY
     instrucoes = [
-        "Este ficheiro é a sua biblioteca de prompts — funciona com ou sem "
-        "licença Microsoft 365 Copilot. Para usar um prompt, copie-o daqui e "
-        "cole-o no Copilot Chat (m365.cloud.microsoft/chat), iniciando sessão "
-        "com a conta institucional.",
+        "Este ficheiro é a sua biblioteca de prompts — não precisa de licença "
+        "paga para o usar. Copie um prompt daqui e cole-o no Copilot Chat "
+        "(m365.cloud.microsoft/chat, com a conta institucional) ou na versão "
+        "web do Copilot (copilot.microsoft.com), direto no browser.",
         "Guarde o ficheiro no seu OneDrive. Para partilhar com a equipa, "
         "coloque uma cópia numa equipa do Teams ou no SharePoint do serviço — "
         "qualquer colega passa a poder copiar os prompts de lá.",
