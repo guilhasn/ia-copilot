@@ -90,8 +90,6 @@ Recapitulando as quatro ações apresentadas na Sessão 2:
 | Criar *(Create)* | S2 — resposta à estudante · aprofunda-se nas S4-S7, aplicação a aplicação |
 | Editar *(Edit)* | S4 — Word, reformular e melhorar texto |
 
-O Caso #2 de hoje não acrescenta uma quinta ação — trabalha a competência que está por baixo de todas elas: a engenharia do próprio prompt.
-
 ### Cenário
 
 A Helena Albuquerque, Diretora de Serviços Académicos da Universidade de Vale Verde, foi convidada a contribuir com um ponto para a próxima reunião do Conselho de Gestão: **tendências internacionais em digitalização de serviços académicos**.
