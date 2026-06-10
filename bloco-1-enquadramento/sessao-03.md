@@ -105,7 +105,7 @@ Tem uma semana e quer chegar à primeira reunião de trabalho com a equipa já c
 
 A pesquisa de tendências internacionais é tarefa para o modo **Web**: a informação está toda fora da organização, em sites públicos.
 
-E há aqui uma boa notícia para quem não tem licença: o modo Web está disponível no Copilot Chat gratuito — neste caso, todos trabalham em pé de igualdade.
+O modo Web está disponível no Copilot Chat gratuito — neste caso, todos trabalham em pé de igualdade.
 
 ### Prompt de trabalho
 
