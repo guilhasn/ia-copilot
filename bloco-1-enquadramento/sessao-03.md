@@ -264,19 +264,10 @@ Fluência em IA não é decorar prompts — é saber usar a IA para melhorar a f
 
 ## Atividade prática — Prompt Sobrevive a Frio
 
-{: .note }
-> **Guião do formador:** *"Agora vamos testar se os vossos prompts aguentam frio. Não quero prompts bonitos — quero prompts que funcionem quando outra pessoa os usa sem vos perguntar nada. Abram o link que vou colocar no chat. A atividade não avalia pessoas; avalia instruções. O objetivo é melhorar o prompt, não fazer ranking."*
-
-Nesta atividade, vai testar se o seu prompt é suficientemente claro para ser usado por outra pessoa sem explicações adicionais.
-
-A atividade decorre no **Laboratório Online** criado para esta formação: **[copilot-ai-lab.lovable.app](https://copilot-ai-lab.lovable.app/)**. Não exige login.
+A atividade decorre no **Laboratório Online** criado para esta formação: **[copilot-ai-lab.lovable.app](https://copilot-ai-lab.lovable.app/)**. Não exige login, e as instruções passo a passo aparecem dentro da própria aplicação.
 
 {: .important }
 > **Não usar dados pessoais, dados reais de estudantes ou trabalhadores, nem documentos internos confidenciais.** Descreva tarefas reais, mas em termos genéricos — a Matriz Semáforo da Sessão 1 aplica-se aqui também.
-
-### Como funciona
-
-As instruções passo a passo aparecem dentro da própria aplicação: escolhe o seu perfil, descreve uma tarefa real, escreve a primeira versão do prompt, recebe pontuação e comentários, melhora a versão e compara o antes e o depois.
 
 **No fim, copie o prompt final para a sua biblioteca pessoal** — é a ponte para a secção seguinte.
 
