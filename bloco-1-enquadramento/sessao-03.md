@@ -61,7 +61,7 @@ A meta prática é simples: **sair da sessão com pelo menos um prompt real, mel
 5. Revisão por pares — melhorar sem ranking
 6. Biblioteca pessoal — guardar prompts validados
 7. Partilha com equipa — Gallery e ficheiro-biblioteca
-8. Fecho — método de trabalho e tarefa para a semana
+8. Síntese do Bloco 1 — método de trabalho e tarefa para a semana
 
 ## Prompt Gallery da Microsoft — visita breve
 
@@ -184,7 +184,7 @@ A Helena podia escrever *"pesquisa tendências de digitalização nas universida
 
 > *Tenho de levar à reunião do Conselho de Gestão um ponto sobre tendências internacionais em digitalização de serviços académicos. Tenho uma semana.*
 
-O Copilot não gera logo — pergunta: âmbito geográfico? período que interessa? tipo de instituição? formato do resultado? Respondidas as perguntas, devolve o prompt de trabalho, já com a indicação de **modo Web** e a secção de validação:
+O Copilot não gera logo — pergunta: âmbito geográfico? período que interessa? tipo de instituição? formato do resultado? Respondidas as perguntas, devolve o prompt de trabalho, já com a indicação de **modo Web**:
 
 > *Atua como analista de uma equipa de planeamento de uma instituição de ensino superior portuguesa.*
 >
@@ -275,7 +275,7 @@ A atividade decorre no **Laboratório Online** criado para esta formação: **[c
 {: .important }
 > **Não usar dados pessoais, dados reais de estudantes ou trabalhadores, nem documentos internos confidenciais.** Descreva tarefas reais, mas em termos genéricos — a Matriz Semáforo da Sessão 1 aplica-se aqui também.
 
-**No fim, copie o prompt final para a sua biblioteca pessoal** — é a ponte para a secção seguinte.
+**No fim, copie o prompt final para a sua biblioteca pessoal** — é com ele que vai trabalhar na secção "Construir a biblioteca pessoal".
 
 ### Critério de qualidade
 
