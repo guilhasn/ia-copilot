@@ -5,7 +5,7 @@ parent: "Bloco 1 · Enquadramento e Literacia Crítica"
 nav_order: 3
 ---
 
-# Sessão 3 — Biblioteca pessoal de prompts — fluência
+# Sessão 3 — De prompts soltos a um sistema pessoal de trabalho com IA
 
 <button class="btn-print-page" onclick="printPage()">🖨️ PDF</button>
 
@@ -15,13 +15,13 @@ nav_order: 3
 - **Duração:** 2 horas
 - **Modalidade:** Online síncrona
 - **Bloco:** 1 · Enquadramento e Literacia Crítica
-- **Casos operacionais:** #1 Pesquisar tendências em gestão de IES · #2 O prompt que escreve prompts
+- **Casos operacionais:** #1 Pesquisar tendências em gestão de IES · #2 O prompt que escreve prompts · **Atividade central:** Prompt Sobrevive a Frio
 
 ## Ideia central
 
-Na Sessão 2, os formandos aprenderam a construir prompts eficazes. Nesta sessão, passam da competência individual para o sistema pessoal: uma biblioteca de prompts reutilizáveis, organizados por tarefa e partilháveis com a equipa.
+Na Sessão 2, os formandos aprenderam a construir prompts eficazes. Nesta sessão dá-se o salto: **de prompts soltos, escritos de cada vez, para um sistema pessoal de trabalho com IA** — prompts que se guardam, adaptam, testam e partilham.
 
-O objetivo não é decorar prompts — é ter um repertório pronto a usar que melhora com a prática.
+O objetivo não é decorar prompts — é sair com um método, e com a primeira entrada validada de uma biblioteca que melhora com a prática.
 
 > Um bom prompt não se inventa de cada vez. Guarda-se, adapta-se e partilha-se.
 
@@ -32,11 +32,15 @@ O objetivo não é decorar prompts — é ter um repertório pronto a usar que m
 
 No final da sessão, os formandos deverão ser capazes de:
 
-- consolidar a competência de prompting em contextos variados;
-- usar o Copilot como engenheiro de prompts: gerar, avaliar e melhorar prompts com meta-prompting e auto-crítica;
-- utilizar a Prompt Gallery da Microsoft para descobrir, guardar e partilhar prompts;
-- construir uma biblioteca pessoal de 5 a 8 prompts reutilizáveis, organizados por categoria;
-- partilhar prompts com a equipa através do Microsoft Teams.
+- transformar uma tarefa real num prompt reutilizável;
+
+- avaliar criticamente um prompt com base em Objetivo, Contexto, Fonte e Expectativas;
+
+- melhorar um prompt fraco até ficar autossuficiente;
+
+- usar meta-prompting para criar e aperfeiçoar prompts;
+
+- guardar prompts numa biblioteca pessoal ou partilhada, com critérios mínimos de qualidade.
 
 ## Ligação às sessões anteriores
 
@@ -44,17 +48,18 @@ No final da sessão, os formandos deverão ser capazes de:
 |---|---|---|
 | S1 | Matriz Semáforo — classificar antes de usar | Aplicar automaticamente antes de cada prompt |
 | S2 | Framework Microsoft — Objetivo, Contexto, Fonte, Expectativas | Usar o framework em múltiplos contextos |
-| S3 | **Biblioteca pessoal** — guardar, reutilizar, partilhar | Nova competência |
+| S3 | **Sistema pessoal** — guardar, testar, adaptar, partilhar | Nova competência |
 
 ## Programa
 
-1. **Para começar** — debrief de prompts testados + desafio "o pior prompt"
-2. Prompt Gallery da Microsoft — visita breve à montra (e porque não chega)
-3. Caso #1 — pesquisar tendências em gestão de IES (modo Web, ação *Ask*)
-4. Caso #2 — o prompt que escreve prompts (meta-prompting e auto-crítica)
-5. Biblioteca pessoal — 5 a 8 prompts reutilizáveis organizados por categoria
-6. Partilhar com a equipa — através da Prompt Gallery e do Teams
-7. Fecho — síntese do Bloco 1 e preview do Bloco 2
+1. **Para começar** — o pior prompt da semana
+2. Prompt Gallery — visita breve
+3. Caso #1 — pesquisar tendências em gestão de IES
+4. Caso #2 — o prompt que escreve prompts
+5. **Atividade Lovable — Prompt Sobrevive a Frio**
+6. Biblioteca pessoal — guardar prompts validados
+7. Partilha com equipa — regras mínimas de curadoria
+8. Fecho — síntese e tarefa para a semana
 
 ## Para começar
 
@@ -255,6 +260,60 @@ Fluência em IA não é decorar prompts — é saber usar a IA para melhorar a f
 
 > A IA produz; quem valida é quem assina.
 
+## Atividade prática — Prompt Sobrevive a Frio
+
+{: .note }
+> **Guião do formador:** *"Agora vamos testar se os vossos prompts aguentam frio. Não quero prompts bonitos — quero prompts que funcionem quando outra pessoa os usa sem vos perguntar nada. Abram o link que vou colocar no chat. A atividade não avalia pessoas; avalia instruções. O objetivo é melhorar o prompt, não fazer ranking."*
+
+Nesta atividade, vai testar se o seu prompt é suficientemente claro para ser usado por outra pessoa sem explicações adicionais.
+
+A atividade decorre numa aplicação web criada para esta formação: **[copilot-ai-lab.lovable.app](https://copilot-ai-lab.lovable.app)**. Não exige login.
+
+{: .important }
+> **Não usar dados pessoais, dados reais de estudantes ou trabalhadores, nem documentos internos confidenciais.** Descreva tarefas reais, mas em termos genéricos — a Matriz Semáforo da Sessão 1 aplica-se aqui também.
+
+### Instruções
+
+1. Aceda a [copilot-ai-lab.lovable.app](https://copilot-ai-lab.lovable.app) (o formador coloca o link no chat).
+
+2. Escolha o seu perfil: administrativo, técnico superior ou dirigente.
+
+3. Indique uma tarefa real do seu trabalho.
+
+4. Escreva a primeira versão do prompt.
+
+5. Analise a pontuação e os comentários da aplicação.
+
+6. Reescreva o prompt, melhorando Objetivo, Contexto, Fonte e Expectativas.
+
+7. Compare a pontuação inicial e final.
+
+8. Copie o prompt final para a sua biblioteca pessoal.
+
+### Critério de qualidade
+
+Um prompt só deve entrar na biblioteca se cumprir três condições:
+
+- tem objetivo claro;
+
+- indica contexto e fonte;
+
+- define o formato, o tom e os limites da resposta.
+
+> Um prompt só está pronto quando outra pessoa o consegue usar sem te pedir explicações.
+
+### Revisão por pares — sem ranking
+
+Para fechar a atividade, partilhe o seu prompt final com um colega. O colega responde a três perguntas:
+
+1. Eu conseguiria usar este prompt sem explicações adicionais?
+
+2. Que informação ainda me falta?
+
+3. O resultado pedido está claro?
+
+Regra única: **criticar o prompt, não a pessoa.**
+
 ## Construir a biblioteca pessoal
 
 Esta é a atividade central da sessão. Cada formando cria a sua biblioteca de prompts reutilizáveis.
@@ -284,27 +343,31 @@ Cada prompt da biblioteca deve seguir a estrutura:
 >
 > **Validação:** [o que verificar antes de usar o output]
 
-### Exercício
+### Exercício — guardar o que está validado
 
-A entrada #0 está guardada — agora é pô-la a trabalhar. **Três prompts garantidos na sessão:** escolha as três categorias que correspondem às suas maiores dores — entre **resumir**, **redigir**, **reformular**, **analisar** e **preparar** — todos nascidos de tarefas reais do seu serviço. As outras duas categorias ficam como tarefa para a semana, com o mesmo método.
+O prompt que saiu da atividade "Prompt Sobrevive a Frio" é a primeira entrada de pleno direito da sua biblioteca: nasceu de uma tarefa real, foi melhorado com critérios e passou no teste. Guarde-o já — na Prompt Gallery (com licença) ou no ficheiro-biblioteca (sem licença) — sempre com nome e "quando usar".
 
-📎 **Ficheiro-biblioteca modelo:** descarregue a [Biblioteca de Prompts (DOCX)]({{ site.baseurl }}/sessoes/sessao-03/Biblioteca_de_Prompts.docx) — já traz a entrada #0 preenchida e as cinco entradas por categoria prontas a completar. É a casa da biblioteca para quem não tem licença, e um bom backup para quem tem.
+**A meta da sessão é esta: sair com pelo menos um prompt real, melhorado e validado.** Tudo o que acrescentar hoje para além disso é bónus.
 
-1. Descreva a tarefa ao meta-prompt em linguagem corrente — como a contaria a um colega de gabinete.
+📎 **Ficheiro-biblioteca modelo:** descarregue a [Biblioteca de Prompts (DOCX)]({{ site.baseurl }}/sessoes/sessao-03/Biblioteca_de_Prompts.docx) — já traz a entrada #0 (meta-prompt), o verificador de pesquisas e o colega simulado preenchidos, e as cinco entradas por categoria prontas a completar. É a casa da biblioteca para quem não tem licença, e um bom backup para quem tem.
+
+### Tarefa para a semana — alargar a biblioteca
+
+Durante a semana, alargue a biblioteca às cinco categorias (**resumir**, **redigir**, **reformular**, **analisar**, **preparar**) com o método de hoje:
+
+1. Descreva a tarefa ao meta-prompt (entrada #0) em linguagem corrente — como a contaria a um colega de gabinete.
 
 2. Responda às perguntas que ele fizer.
 
 3. Reveja o prompt devolvido: corte o que não se aplica, ajuste o tom, confirme a secção de validação. **Esta revisão é o seu trabalho — o Copilot propõe, quem conhece o serviço decide.**
 
-4. Guarde — na Prompt Gallery (com licença) ou no ficheiro-biblioteca do serviço (sem licença) — sempre com nome e "quando usar".
+4. Faça-o passar pelo colega simulado (entrada #7) até obter "este prompt é autossuficiente".
 
-5. Repita para a categoria seguinte.
+5. Guarde — com nome e "quando usar".
 
-Quem terminar mais cedo: passe um dos seus prompts pela auto-crítica do Caso #2 — e veja se sobrevive.
+### O colega simulado — testar prompts com o Copilot
 
-### O colega simulado — o prompt sobrevive a frio?
-
-Um prompt só está completo quando outra pessoa o consegue usar sem pedir explicações. Antes de dar os seus prompts por prontos, vai submetê-los a esse teste — com o Copilot no papel do colega.
+O mesmo teste da atividade "Prompt Sobrevive a Frio", mas para usar no dia-a-dia, sem aplicação externa: o Copilot faz de colega que recebe o prompt sem contexto. É a ferramenta de validação para os prompts que criar durante a semana.
 
 1. Abra uma **conversa nova** no Copilot Chat. Numa conversa nova, o Copilot não sabe como o prompt foi construído — fica genuinamente "a frio", exatamente como um colega ficaria.
 
@@ -364,13 +427,19 @@ As três sessões do Bloco 1 construíram uma base completa:
 
 A partir da Sessão 4, os formandos vão aplicar estas competências a tarefas concretas em cada aplicação do Microsoft 365: Word, Outlook, Teams, Excel e PowerPoint. E o paradigma adjacente que o vibecoding da Sessão 2 abriu — construir ferramentas em vez de só as usar — volta na Sessão 13, com o Copilot Studio.
 
-> O Bloco 1 deu as ferramentas. O Bloco 2 vai pôr as mãos na massa.
+> Hoje não construímos apenas prompts. Construímos um **método**: identificar uma tarefa real, transformar a tarefa num prompt, testar se o prompt é autossuficiente, melhorar com base em critérios e guardar apenas o que pode ser reutilizado.
+
+O Bloco 1 deu as ferramentas. O Bloco 2 vai pôr as mãos na massa.
 
 ## Materiais
 
 ### Para descarregar
 
-- [Biblioteca de Prompts — ficheiro modelo (DOCX)]({{ site.baseurl }}/sessoes/sessao-03/Biblioteca_de_Prompts.docx) — template da atividade central, com a entrada #0 (meta-prompt) preenchida e cinco entradas por categoria; funciona com e sem licença Copilot
+- [Biblioteca de Prompts — ficheiro modelo (DOCX)]({{ site.baseurl }}/sessoes/sessao-03/Biblioteca_de_Prompts.docx) — template da biblioteca pessoal, com a entrada #0 (meta-prompt), o verificador de pesquisas e o colega simulado preenchidos; funciona com e sem licença Copilot
+
+### Atividade da sessão
+
+- [Prompt Sobrevive a Frio](https://copilot-ai-lab.lovable.app) — aplicação web da atividade central; sem login, sem dados pessoais ou confidenciais
 
 ### Para aprofundar
 
