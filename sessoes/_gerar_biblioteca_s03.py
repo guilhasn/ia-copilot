@@ -57,6 +57,15 @@ VERIFICADOR_PROMPT = (
     "Resultado a verificar: [colar]"
 )
 
+TESTADOR_PROMPT = (
+    "Recebeste este prompt de um colega de outro serviço, sem qualquer "
+    "contexto. Antes de o usares, que perguntas terias de lhe fazer? "
+    "Lista-as por ordem de importância e indica que componente falha em "
+    "cada uma (Objetivo, Contexto, Fonte ou Expectativas). Se não houver "
+    "perguntas a fazer, responde apenas: \"este prompt é autossuficiente\".\n\n"
+    "Prompt recebido: [colar]"
+)
+
 CATEGORIAS = [
     ("Resumir", "e-mails, reuniões, documentos, cadeias de comunicação"),
     ("Redigir", "ofícios, respostas a e-mails, notas internas, pareceres"),
@@ -226,6 +235,20 @@ def main():
                   "o olhar.",
     )
 
+    # Entrada #7 — colega simulado (preenchida)
+    add_entry(
+        doc,
+        "Entrada #7 — O colega simulado (testador de prompts)",
+        nome="Colega simulado (testador de prompts)",
+        quando="Antes de dar um prompt por pronto ou de o partilhar com a "
+               "equipa. Usar numa conversa nova, para o Copilot ler o prompt "
+               "\"a frio\".",
+        prompt=TESTADOR_PROMPT,
+        validacao="Corrigir o prompt com base nas perguntas devolvidas e "
+                  "repetir o teste até obter \"este prompt é autossuficiente\". "
+                  "Só então partilhar.",
+    )
+
     # Entradas extra
     h = doc.add_paragraph()
     r = h.add_run("Entradas seguintes")
@@ -235,8 +258,8 @@ def main():
     doc.add_paragraph(
         "A biblioteca cresce com a prática: sempre que escrever um prompt que "
         "funcionou, acrescente-o aqui com os quatro campos. Antes de o partilhar "
-        "com a equipa, faça-lhe o teste cruzado da Sessão 3: outra pessoa "
-        "consegue usá-lo sem lhe fazer perguntas?"
+        "com a equipa, faça-o passar pelo colega simulado (entrada #7): quando "
+        "o teste devolver \"este prompt é autossuficiente\", está pronto."
     )
 
     out = OUTPUT_DIR / "Biblioteca_de_Prompts.docx"

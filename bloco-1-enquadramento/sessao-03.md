@@ -302,19 +302,25 @@ A entrada #0 está guardada — agora é pô-la a trabalhar. **Três prompts gar
 
 Quem terminar mais cedo: passe um dos seus prompts pela auto-crítica do Caso #2 — e veja se sobrevive.
 
-### Teste cruzado — o prompt sobrevive a outra pessoa?
+### O colega simulado — o prompt sobrevive a frio?
 
-Um prompt só está completo quando outra pessoa o consegue usar sem pedir explicações.
+Um prompt só está completo quando outra pessoa o consegue usar sem pedir explicações. Antes de dar os seus prompts por prontos, vai submetê-los a esse teste — com o Copilot no papel do colega.
 
-Em pares (salas simultâneas do Zoom, ou emparelhamento indicado no momento):
+1. Abra uma **conversa nova** no Copilot Chat. Numa conversa nova, o Copilot não sabe como o prompt foi construído — fica genuinamente "a frio", exatamente como um colega ficaria.
 
-1. Escolha para a troca um prompt **autossuficiente** — cuja Fonte seja texto colável (um documento, um excerto, dados copiados), e não os seus e-mails ou reuniões: o colega não tem acesso a esses dados.
+2. Cole o prompt-testador, seguido do prompt a testar:
 
-2. Troquem os prompts por mensagem privada e cada um usa o do outro tal-qual, numa tarefa sua — **sem fazer perguntas a quem o escreveu**.
+> *Recebeste este prompt de um colega de outro serviço, sem qualquer contexto. Antes de o usares, que perguntas terias de lhe fazer? Lista-as por ordem de importância e indica que componente falha em cada uma (Objetivo, Contexto, Fonte ou Expectativas). Se não houver perguntas a fazer, responde apenas: "este prompt é autossuficiente".*
+>
+> *Prompt recebido: [colar]*
 
-3. Cada dúvida que surgir é um buraco no prompt: falta contexto, falta formato, falta validação. Anote e corrija.
+3. Leia as perguntas devolvidas — cada uma é um buraco no prompt: falta contexto, falta formato, falta validação.
 
-É exatamente este o teste que os prompts partilhados vão enfrentar no dia-a-dia do serviço — melhor descobrir os buracos agora, com um colega, do que daqui a um mês, com um resultado errado.
+4. Corrija o prompt e repita o teste. Quando o Copilot responder **"este prompt é autossuficiente"** — está pronto para a biblioteca.
+
+5. E o prompt-testador? Também se guarda: é a **entrada #7** da biblioteca.
+
+É exatamente este o teste que os prompts partilhados vão enfrentar no dia-a-dia do serviço — só que com pessoas reais. Melhor descobrir os buracos agora, em dois minutos, do que daqui a um mês, com um resultado errado nas mãos de um colega.
 
 ## Partilhar prompts com a equipa
 
@@ -340,7 +346,7 @@ Bibliotecas partilhadas morrem por falta de dono. Três regras mínimas, a combi
 
 - **Um responsável** pelo ficheiro (ou pela curadoria na Gallery) — decide o que entra e remove o que ninguém usa.
 
-- **Só entra o que passou o teste cruzado** — um prompt que precisa de explicações ainda não está pronto para ser partilhado.
+- **Só entra o que o colega simulado aprovou** — um prompt que ainda levanta perguntas não está pronto para ser partilhado.
 
 - **Cada prompt tem dono** — quem o criou mantém-no atualizado quando o procedimento do serviço mudar.
 
