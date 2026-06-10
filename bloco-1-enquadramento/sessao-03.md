@@ -171,6 +171,22 @@ Um aviso honesto: usar IA para verificar IA ajuda na triagem, mas a confirmaçã
 {: .important }
 > O Copilot em modo Web acelera a primeira leitura de qualquer tema — mas **tudo o que cita tem de ser verificado** antes de chegar a uma reunião de decisão. A velocidade é dele; a credibilidade é sua.
 
+### O mesmo molde, outras necessidades
+
+O caso da Helena é um molde — pergunta estruturada, fontes citadas, validação antes de usar — que serve necessidades muito diferentes na mesma instituição. Todos estes exemplos funcionam no Copilot Chat gratuito, em modo Web:
+
+- **Dirigentes** — benchmarking antes de decidir: *"Como estão organizados os gabinetes de apoio a fundos europeus em universidades públicas europeias? Identifica 5 modelos, com exemplos, vantagens e fontes."*
+
+- **Doutorandos e investigadores** — mapear financiamento: *"Lista programas europeus de financiamento abertos em 2026 para investigação em [área], com prazos, critérios de elegibilidade e ligações oficiais."*
+
+- **Gestores de biblioteca** — acompanhar políticas: *"Que políticas de acesso aberto adotaram bibliotecas universitárias europeias desde 2024? Resume 5 práticas, com as instituições e os documentos de referência."*
+
+- **Recursos humanos** — preparar planos de formação: *"Identifica tendências em requalificação digital de pessoal não docente em administrações públicas europeias, com programas concretos e resultados publicados."*
+
+- **Serviços académicos e administrativos** — comparar procedimentos: *"Como estão as IES europeias a emitir diplomas e certificados digitais (Europass, credenciais digitais)? Compara procedimentos, normas aplicáveis e exemplos."*
+
+A estrutura é sempre a mesma: objetivo claro, pedido explícito de fontes verificáveis, e a checklist de validação acima antes de o resultado pesar numa decisão.
+
 ### A mensagem central
 
 A ação **Ask** é poderosa para *mapear terreno* — perceber rapidamente o que existe sobre um tema — mas mal usada produz factos plausíveis que não existem.
