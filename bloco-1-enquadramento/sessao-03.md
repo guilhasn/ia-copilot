@@ -54,43 +54,14 @@ A meta prática é simples: **sair da sessão com pelo menos um prompt real, mel
 
 ## Programa
 
-1. **Para começar** — maus prompts, bons diagnósticos
-2. Prompt Gallery — visita breve
-3. Caso #1 — pesquisar tendências em gestão de IES
-4. Caso #2 — o prompt que escreve prompts
-5. **Atividade prática — Prompt Sobrevive a Frio**
-6. Revisão por pares — melhorar sem ranking
-7. Biblioteca pessoal — guardar prompts validados
-8. Partilha com equipa — regras mínimas de curadoria
-9. Fecho — método de trabalho e tarefa para a semana
-
-## Para começar — maus prompts, bons diagnósticos
-
-Hoje vamos começar ao contrário.
-
-Na Sessão 2 vimos que um bom prompt deve ter Objetivo, Contexto, Fonte e Expectativas. Mas no trabalho real quase ninguém começa assim. Quando há pressa, aparecem prompts como:
-
-1. *"Resume este regulamento."*
-
-2. *"Faz uma resposta a este aluno."*
-
-3. *"Prepara uma reunião sobre este assunto."*
-
-4. *"Melhora este relatório."*
-
-5. *"Dá ideias para melhorar o atendimento."*
-
-Estes prompts não são raros. São normais. O problema é que dão demasiada liberdade à IA e pouca segurança a quem tem de usar o resultado.
-
-**Desafio inicial:** observe os cinco exemplos e vote no chat do Zoom **apenas com o número** do prompt que considera mais fraco. Não precisa de escrever mais nada.
-
-Não vamos avaliar pessoas. Vamos avaliar instruções. A partir do exemplo mais votado, vamos mostrar como um prompt fraco se transforma num prompt reutilizável, validado e pronto a entrar numa biblioteca pessoal de trabalho com IA.
-
-Antes de avançar, pense também no prompt que testou depois da Sessão 2: o que funcionou? O que falhou? Que informação teve de acrescentar? O resultado estava pronto a usar, ou precisou de revisão?
-
-A ideia desta sessão cabe numa frase:
-
-> Um prompt só está pronto quando outra pessoa o consegue usar sem lhe pedir explicações.
+1. Prompt Gallery — visita breve
+2. Caso #1 — pesquisar tendências em gestão de IES
+3. Caso #2 — o prompt que escreve prompts
+4. **Atividade prática — Prompt Sobrevive a Frio**
+5. Revisão por pares — melhorar sem ranking
+6. Biblioteca pessoal — guardar prompts validados
+7. Partilha com equipa — regras mínimas de curadoria
+8. Fecho — método de trabalho e tarefa para a semana
 
 ## Prompt Gallery da Microsoft — visita breve
 
@@ -236,7 +207,7 @@ Um **meta-prompt** é um prompt cujo resultado é outro prompt. Escreve-se uma �
 
 ### A inversão
 
-Agora a matéria-prima: o prompt mais votado no arranque da sessão. Por exemplo, o n.º 3:
+Agora a matéria-prima: um prompt fraco típico, escrito com pressa:
 
 > *Prepara uma reunião sobre este assunto.*
 
@@ -254,7 +225,7 @@ Segunda técnica do caso — pedir ao Copilot para avaliar prompts, incluindo os
 >
 > *Prompt a avaliar: [colar]*
 
-Cole outro dos prompts fracos do arranque e veja o diagnóstico: notas baixas, justificação exata, versão corrigida — em segundos. Qualquer prompt da biblioteca pode passar por esta revisão antes de ser partilhado com a equipa.
+Cole um prompt apressado do dia-a-dia — um *"Resume este regulamento."*, por exemplo — e veja o diagnóstico: notas baixas, justificação exata, versão corrigida — em segundos. Qualquer prompt da biblioteca pode passar por esta revisão antes de ser partilhado com a equipa.
 
 ### A entrada #0 da biblioteca
 
