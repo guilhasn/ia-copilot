@@ -286,7 +286,7 @@ Fluência em IA não é decorar prompts — é saber usar a IA para melhorar a f
 
 Nesta atividade, vai testar se o seu prompt é suficientemente claro para ser usado por outra pessoa sem explicações adicionais.
 
-A atividade decorre numa aplicação web criada para esta formação: **[copilot-ai-lab.lovable.app](https://copilot-ai-lab.lovable.app)**. Não exige login.
+A atividade decorre no **Laboratório Online** criado para esta formação: **[copilot-ai-lab.lovable.app](https://copilot-ai-lab.lovable.app/)**. Não exige login.
 
 {: .important }
 > **Não usar dados pessoais, dados reais de estudantes ou trabalhadores, nem documentos internos confidenciais.** Descreva tarefas reais, mas em termos genéricos — a Matriz Semáforo da Sessão 1 aplica-se aqui também.
@@ -354,7 +354,7 @@ Cada prompt da biblioteca deve seguir a estrutura:
 
 ### Exercício — guardar o que está validado
 
-O prompt que saiu da atividade "Prompt Sobrevive a Frio" é a primeira entrada de pleno direito da sua biblioteca: nasceu de uma tarefa real, foi melhorado com critérios e passou no teste. Guarde-o já — na Prompt Gallery (com licença) ou no ficheiro-biblioteca (sem licença) — sempre com nome e "quando usar".
+O prompt que saiu do [Laboratório Online](https://copilot-ai-lab.lovable.app/) é a primeira entrada de pleno direito da sua biblioteca: nasceu de uma tarefa real, foi melhorado com critérios e passou no teste "Prompt Sobrevive a Frio". Guarde-o já — na Prompt Gallery (com licença) ou no ficheiro-biblioteca (sem licença) — sempre com nome e "quando usar".
 
 **A meta da sessão é esta: sair com pelo menos um prompt real, melhorado e validado.** Tudo o que acrescentar hoje para além disso é bónus.
 
@@ -370,7 +370,7 @@ Durante a semana, alargue a biblioteca às cinco categorias (**resumir**, **redi
 
 3. Reveja o prompt devolvido: corte o que não se aplica, ajuste o tom, confirme a secção de validação. **Esta revisão é o seu trabalho — o Copilot propõe, quem conhece o serviço decide.**
 
-4. Faça-o passar pelo colega simulado (entrada #7) até obter "este prompt é autossuficiente".
+4. Teste-o no [Laboratório Online](https://copilot-ai-lab.lovable.app/) — que fica disponível depois da sessão — ou faça-o passar pelo colega simulado (entrada #7) até obter "este prompt é autossuficiente".
 
 5. Guarde — com nome e "quando usar".
 
@@ -448,7 +448,7 @@ O Bloco 1 deu as ferramentas. O Bloco 2 vai pôr as mãos na massa.
 
 ### Atividade da sessão
 
-- [Prompt Sobrevive a Frio](https://copilot-ai-lab.lovable.app) — aplicação web da atividade central; sem login, sem dados pessoais ou confidenciais
+- [Laboratório Online — Prompt Sobrevive a Frio](https://copilot-ai-lab.lovable.app/) — aplicação web da atividade central; sem login, sem dados pessoais ou confidenciais; fica disponível depois da sessão para testar prompts novos
 
 ### Para aprofundar
 
