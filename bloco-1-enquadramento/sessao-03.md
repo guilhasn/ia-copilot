@@ -70,9 +70,9 @@ Hoje vamos começar ao contrário.
 
 Na Sessão 2 vimos que um bom prompt deve ter Objetivo, Contexto, Fonte e Expectativas. Mas no trabalho real quase ninguém começa assim. Quando há pressa, escrevemos coisas como:
 
-> *"Resume isto."* · *"Faz-me uma resposta."* · *"Prepara a reunião."* · *"Melhora este texto."*
+> *"Resume isto."* · *"Faz uma resposta."* · *"Prepara a reunião."* · *"Melhora este texto."*
 
-Isto não é um drama. É o ponto de partida.
+Isto não é um problema. É o ponto de partida.
 
 **Desafio inicial:** cole no chat do Zoom o prompt mais preguiçoso que escreveu — ou poderia escrever — numa semana normal de trabalho. Uma linha. Sem contexto. À pressa.
 
@@ -283,23 +283,11 @@ A atividade decorre numa aplicação web criada para esta formação: **[copilot
 {: .important }
 > **Não usar dados pessoais, dados reais de estudantes ou trabalhadores, nem documentos internos confidenciais.** Descreva tarefas reais, mas em termos genéricos — a Matriz Semáforo da Sessão 1 aplica-se aqui também.
 
-### Instruções
+### Como funciona
 
-1. Aceda a [copilot-ai-lab.lovable.app](https://copilot-ai-lab.lovable.app) (o formador coloca o link no chat).
+As instruções passo a passo aparecem dentro da própria aplicação: escolhe o seu perfil, descreve uma tarefa real, escreve a primeira versão do prompt, recebe pontuação e comentários, melhora a versão e compara o antes e o depois.
 
-2. Escolha o seu perfil: administrativo, técnico superior ou dirigente.
-
-3. Indique uma tarefa real do seu trabalho.
-
-4. Escreva a primeira versão do prompt.
-
-5. Analise a pontuação e os comentários da aplicação.
-
-6. Reescreva o prompt, melhorando Objetivo, Contexto, Fonte e Expectativas.
-
-7. Compare a pontuação inicial e final.
-
-8. Copie o prompt final para a sua biblioteca pessoal.
+**No fim, copie o prompt final para a sua biblioteca pessoal** — é a ponte para a secção seguinte.
 
 ### Critério de qualidade
 
@@ -327,7 +315,9 @@ Regra única: **criticar o prompt, não a pessoa.**
 
 ## Construir a biblioteca pessoal
 
-Depois da atividade "Prompt Sobrevive a Frio", o passo seguinte é guardar o prompt validado numa biblioteca pessoal. A biblioteca não é o exercício central — é o destino: o local onde fica o que já passou no teste de qualidade.
+Depois da atividade "Prompt Sobrevive a Frio", o passo seguinte é guardar o prompt validado numa biblioteca pessoal.
+
+A biblioteca não é apenas uma coleção de frases úteis. É o local onde ficam os prompts que já foram testados, melhorados e preparados para reutilização.
 
 ### Categorias sugeridas
 
