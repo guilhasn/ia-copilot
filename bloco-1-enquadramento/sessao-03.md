@@ -327,7 +327,7 @@ O prompt que saiu do [Laboratório Online](https://copilot-ai-lab.lovable.app/) 
 
 **A meta da sessão é esta: sair com pelo menos um prompt real, melhorado e validado.** Tudo o que acrescentar hoje para além disso é bónus.
 
-📎 **Ficheiro-biblioteca modelo:** descarregue a [Biblioteca de Prompts (DOCX)]({{ site.baseurl }}/sessoes/sessao-03/Biblioteca_de_Prompts.docx) — já traz a entrada #0 (meta-prompt), o verificador de pesquisas e o colega simulado preenchidos, e as cinco entradas por categoria prontas a completar. É a casa da biblioteca para quem não tem licença, e um bom backup para quem tem.
+📎 **Ficheiro-biblioteca modelo:** descarregue a [Biblioteca de Prompts (DOCX)]({{ site.baseurl }}/sessoes/sessao-03/Biblioteca_de_Prompts.docx) — já traz as oito entradas preenchidas — o meta-prompt (#0), as cinco categorias com exemplos típicos de IES (#1-#5), o verificador de pesquisas e o colega simulado. Adapte os exemplos ao seu serviço antes de os usar. É a casa da biblioteca para quem não tem licença, e um bom backup para quem tem.
 
 ### Tarefa para a semana — alargar a biblioteca
 
@@ -401,7 +401,7 @@ O Bloco 1 deu as ferramentas. O Bloco 2 vai pôr as mãos na massa.
 
 ### Para descarregar
 
-- [Biblioteca de Prompts — ficheiro modelo (DOCX)]({{ site.baseurl }}/sessoes/sessao-03/Biblioteca_de_Prompts.docx) — template da biblioteca pessoal, com a entrada #0 (meta-prompt), o verificador de pesquisas e o colega simulado preenchidos; funciona com e sem licença Copilot
+- [Biblioteca de Prompts — ficheiro modelo (DOCX)]({{ site.baseurl }}/sessoes/sessao-03/Biblioteca_de_Prompts.docx) — template da biblioteca pessoal com as oito entradas preenchidas (meta-prompt, cinco categorias com exemplos de IES, verificador de pesquisas e colega simulado); funciona com e sem licença Copilot
 
 ### Atividade da sessão
 
