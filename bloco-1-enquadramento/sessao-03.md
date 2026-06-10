@@ -15,7 +15,7 @@ nav_order: 3
 - **Duração:** 2 horas
 - **Modalidade:** Online síncrona
 - **Bloco:** 1 · Enquadramento e Literacia Crítica
-- **Casos operacionais:** #1 Pesquisar tendências em gestão de IES · #2 O prompt que escreve prompts · **Atividade central:** Prompt Sobrevive a Frio
+- **Casos operacionais:** #1 O prompt que escreve prompts · #2 Pesquisar tendências em gestão de IES · **Atividade central:** Prompt Sobrevive a Frio
 
 ## Ideia central
 
@@ -55,8 +55,8 @@ A meta prática é simples: **sair da sessão com pelo menos um prompt real, mel
 ## Programa
 
 1. Prompt Gallery — visita breve
-2. Caso #1 — pesquisar tendências em gestão de IES
-3. Caso #2 — o prompt que escreve prompts
+2. Caso #1 — o prompt que escreve prompts
+3. Caso #2 — pesquisar tendências em gestão de IES
 4. **Atividade prática — Prompt Sobrevive a Frio**
 5. Revisão por pares — melhorar sem ranking
 6. Biblioteca pessoal — guardar prompts validados
@@ -77,16 +77,87 @@ Dois avisos antes de a explorar:
 
 *Fonte: [Microsoft Learn — Understand Prompt Gallery](https://learn.microsoft.com/en-us/copilot/microsoft-365/copilot-prompt-gallery)*
 
-## Caso #1 — Pesquisar tendências em gestão de IES
+## Caso #1 — O prompt que escreve prompts
 
-Este é o primeiro caso operacional onde se usa o Copilot Chat em **modo Web** e se exercita a ação **Ask** (Perguntar) do framework Microsoft.
+Este é o primeiro caso operacional — a ponte entre a Sessão 2 e tudo o que se segue: o Caso #2 e a atividade central usam o que aqui se constrói. Corre inteiramente no Copilot Chat: **funciona com e sem licença**.
+
+**O problema:** a Sessão 2 mostrou que um bom prompt tem Objetivo, Contexto, Fonte e Expectativas. Mas escrever um prompt bem-formado de raiz, para cada tarefa nova, demora — e ao terceiro dia de trabalho real a tentação é voltar aos prompts de uma linha. A competência não morre por falta de conhecimento; morre por falta de tempo.
+
+A solução não é escrever prompts mais depressa. É **pôr o Copilot a escrevê-los** — com supervisão.
+
+### Meta-prompting
+
+Um **meta-prompt** é um prompt cujo resultado é outro prompt. Escreve-se uma única vez, e a partir daí transforma descrições desleixadas em prompts profissionais:
+
+> *Atua como engenheiro de prompts para o Microsoft 365 Copilot numa instituição de ensino superior portuguesa.*
+>
+> *Vou descrever-te tarefas em linguagem corrente. Para cada tarefa:*
+>
+> *1. Reescreve-a como um prompt completo, com Objetivo, Contexto, Fonte e Expectativas.*
+>
+> *2. Antes de fechares o prompt, faz-me as perguntas necessárias sobre o que me faltou dizer — não inventes o que não sabes.*
+>
+> *3. Indica em que aplicação do Microsoft 365 devo usar o prompt, e em que modo (Trabalho ou Web).*
+>
+> *4. Termina com uma secção "Validação:" — o que devo verificar no resultado antes de o usar.*
+>
+> *Responde sempre em português de Portugal. Quando estiveres pronto, pede-me a primeira tarefa.*
+
+### A inversão
+
+Agora a matéria-prima: um prompt fraco típico, escrito com pressa:
+
+> *Prepara uma reunião sobre este assunto.*
+
+Repare no que acontece: **o Copilot não responde — pergunta.** Que reunião? Com quem? Que documentos existem? O que vai ser decidido?
+
+Esta é a inversão que distingue um utilizador fluente: em vez de ser a pessoa a adivinhar o que a IA precisa, **é a IA a perguntar o que lhe falta**. A linha do meta-prompt que a provoca é uma só — *"faz-me as perguntas necessárias; não inventes o que não sabes"* — e é também uma vacina contra conteúdo inventado: o que a IA não sabe, pergunta, em vez de preencher por conta própria.
+
+Respondidas as perguntas, o Copilot devolve um prompt completo — com a aplicação certa, o modo certo e uma checklist de validação. Pronto a entrar na biblioteca.
+
+### Auto-crítica: o Copilot como revisor
+
+Segunda técnica do caso — pedir ao Copilot para avaliar prompts, incluindo os dele:
+
+> *Avalia o prompt abaixo segundo o framework Objetivo–Contexto–Fonte–Expectativas. Para cada componente, dá uma nota de 0 a 10 e uma justificação numa linha. No fim, reescreve o prompt corrigindo o componente mais fraco.*
+>
+> *Prompt a avaliar: [colar]*
+
+Cole um prompt apressado do dia-a-dia — um *"Resume este regulamento."*, por exemplo — e veja o diagnóstico: notas baixas, justificação exata, versão corrigida — em segundos. Qualquer prompt da biblioteca pode passar por esta revisão antes de ser partilhado com a equipa.
+
+### A entrada #0 da biblioteca
+
+O meta-prompt tem uma propriedade única: é o prompt que ajuda a criar todos os outros. Por isso é a **entrada #0** da biblioteca — a primeira a guardar:
+
+> **Nome:** Engenheiro de prompts (meta-prompt)
+>
+> **Quando usar:** sempre que precisar de criar um prompt novo para a biblioteca, ou de melhorar um existente
+>
+> **Prompt:** [o meta-prompt acima]
+>
+> **Validação:** rever o prompt gerado — cortar o que não se aplica, confirmar aplicação e modo, testar uma vez antes de guardar
+
+No caso a seguir — e na atividade central — é esta entrada #0 que constrói as seguintes.
+
+{: .important }
+> **O meta-prompt não fica memorizado.** O Copilot Chat não guarda instruções entre conversas — cada conversa nova começa do zero. Por isso é que ele é a entrada #0 e vive no topo da biblioteca: **é a primeira coisa a colar em cada conversa nova**, antes de descrever a tarefa. Quem se esquecer deste passo na segunda-feira vai receber respostas inventadas e achar que "a magia deixou de funcionar" — não deixou: faltou colar o meta-prompt.
+
+### A mensagem central
+
+Fluência em IA não é decorar prompts — é saber usar a IA para melhorar a forma como se usa a IA. O Copilot gera, avalia e reescreve; a pessoa decide o que entra na biblioteca.
+
+> A IA produz; quem valida é quem assina.
+
+## Caso #2 — Pesquisar tendências em gestão de IES
+
+Este é o caso onde se usa o Copilot Chat em **modo Web**, se exercita a ação **Ask** (Perguntar) do framework Microsoft — e onde o meta-prompt do Caso #1 mostra o que vale numa necessidade real.
 
 Recapitulando as quatro ações apresentadas na Sessão 2:
 
 | Ação | Onde foi (ou vai ser) exercitada |
 |---|---|
 | Pôr em dia *(Catch up)* | S2 — resumir cadeia de e-mails |
-| **Perguntar *(Ask)*** | **S3 — Caso #1, este caso** |
+| **Perguntar *(Ask)*** | **S3 — Caso #2, este caso** |
 | Criar *(Create)* | S2 — resposta à estudante · aprofunda-se nas S4-S7, aplicação a aplicação |
 | Editar *(Edit)* | S4 — Word, reformular e melhorar texto |
 
@@ -107,7 +178,13 @@ A pesquisa de tendências internacionais é tarefa para o modo **Web**: a inform
 
 O modo Web está disponível no Copilot Chat gratuito — neste caso, todos trabalham em pé de igualdade.
 
-### Prompt de trabalho
+### Do pedido corrente ao prompt de trabalho
+
+A Helena podia escrever *"pesquisa tendências de digitalização nas universidades"* e aceitar o que viesse. Em vez disso, abre uma conversa nova, cola o **meta-prompt (entrada #0)** do Caso #1 e descreve a tarefa em linguagem corrente:
+
+> *Tenho de levar à reunião do Conselho de Gestão um ponto sobre tendências internacionais em digitalização de serviços académicos. Tenho uma semana.*
+
+O Copilot não gera logo — pergunta: âmbito geográfico? período que interessa? tipo de instituição? formato do resultado? Respondidas as perguntas, devolve o prompt de trabalho, já com a indicação de **modo Web** e a secção de validação:
 
 > *Atua como analista de uma equipa de planeamento de uma instituição de ensino superior portuguesa.*
 >
@@ -190,77 +267,6 @@ A estrutura é sempre a mesma: objetivo claro, pedido explícito de fontes verif
 A ação **Ask** é poderosa para *mapear terreno* — perceber rapidamente o que existe sobre um tema — mas mal usada produz factos plausíveis que não existem.
 
 Boa prática: usar para acelerar a primeira leitura, validar cada fonte antes de a citar, e nunca apresentar output sem revisão como base de uma decisão institucional.
-
-## Caso #2 — O prompt que escreve prompts
-
-Este é o segundo caso operacional — e é a ponte entre a Sessão 2 e a atividade central de hoje. Corre inteiramente no Copilot Chat: **funciona com e sem licença**.
-
-**O problema:** a Sessão 2 mostrou que um bom prompt tem Objetivo, Contexto, Fonte e Expectativas. Mas escrever um prompt bem-formado de raiz, para cada tarefa nova, demora — e ao terceiro dia de trabalho real a tentação é voltar aos prompts de uma linha. A competência não morre por falta de conhecimento; morre por falta de tempo.
-
-A solução não é escrever prompts mais depressa. É **pôr o Copilot a escrevê-los** — com supervisão.
-
-### Meta-prompting
-
-Um **meta-prompt** é um prompt cujo resultado é outro prompt. Escreve-se uma única vez, e a partir daí transforma descrições desleixadas em prompts profissionais:
-
-> *Atua como engenheiro de prompts para o Microsoft 365 Copilot numa instituição de ensino superior portuguesa.*
->
-> *Vou descrever-te tarefas em linguagem corrente. Para cada tarefa:*
->
-> *1. Reescreve-a como um prompt completo, com Objetivo, Contexto, Fonte e Expectativas.*
->
-> *2. Antes de fechares o prompt, faz-me as perguntas necessárias sobre o que me faltou dizer — não inventes o que não sabes.*
->
-> *3. Indica em que aplicação do Microsoft 365 devo usar o prompt, e em que modo (Trabalho ou Web).*
->
-> *4. Termina com uma secção "Validação:" — o que devo verificar no resultado antes de o usar.*
->
-> *Responde sempre em português de Portugal. Quando estiveres pronto, pede-me a primeira tarefa.*
-
-### A inversão
-
-Agora a matéria-prima: um prompt fraco típico, escrito com pressa:
-
-> *Prepara uma reunião sobre este assunto.*
-
-Repare no que acontece: **o Copilot não responde — pergunta.** Que reunião? Com quem? Que documentos existem? O que vai ser decidido?
-
-Esta é a inversão que distingue um utilizador fluente: em vez de ser a pessoa a adivinhar o que a IA precisa, **é a IA a perguntar o que lhe falta**. A linha do meta-prompt que a provoca é uma só — *"faz-me as perguntas necessárias; não inventes o que não sabes"* — e é também uma vacina contra conteúdo inventado: o que a IA não sabe, pergunta, em vez de preencher por conta própria.
-
-Respondidas as perguntas, o Copilot devolve um prompt completo — com a aplicação certa, o modo certo e uma checklist de validação. Pronto a entrar na biblioteca.
-
-### Auto-crítica: o Copilot como revisor
-
-Segunda técnica do caso — pedir ao Copilot para avaliar prompts, incluindo os dele:
-
-> *Avalia o prompt abaixo segundo o framework Objetivo–Contexto–Fonte–Expectativas. Para cada componente, dá uma nota de 0 a 10 e uma justificação numa linha. No fim, reescreve o prompt corrigindo o componente mais fraco.*
->
-> *Prompt a avaliar: [colar]*
-
-Cole um prompt apressado do dia-a-dia — um *"Resume este regulamento."*, por exemplo — e veja o diagnóstico: notas baixas, justificação exata, versão corrigida — em segundos. Qualquer prompt da biblioteca pode passar por esta revisão antes de ser partilhado com a equipa.
-
-### A entrada #0 da biblioteca
-
-O meta-prompt tem uma propriedade única: é o prompt que ajuda a criar todos os outros. Por isso é a **entrada #0** da biblioteca — a primeira a guardar:
-
-> **Nome:** Engenheiro de prompts (meta-prompt)
->
-> **Quando usar:** sempre que precisar de criar um prompt novo para a biblioteca, ou de melhorar um existente
->
-> **Prompt:** [o meta-prompt acima]
->
-> **Validação:** rever o prompt gerado — cortar o que não se aplica, confirmar aplicação e modo, testar uma vez antes de guardar
-
-Na atividade a seguir, é esta entrada #0 que constrói as seguintes.
-
-{: .important }
-> **O meta-prompt não fica memorizado.** O Copilot Chat não guarda instruções entre conversas — cada conversa nova começa do zero. Por isso é que ele é a entrada #0 e vive no topo da biblioteca: **é a primeira coisa a colar em cada conversa nova**, antes de descrever a tarefa. Quem se esquecer deste passo na segunda-feira vai receber respostas inventadas e achar que "a magia deixou de funcionar" — não deixou: faltou colar o meta-prompt.
-
-### A mensagem central
-
-Fluência em IA não é decorar prompts — é saber usar a IA para melhorar a forma como se usa a IA. O Copilot gera, avalia e reescreve; a pessoa decide o que entra na biblioteca.
-
-> A IA produz; quem valida é quem assina.
 
 ## Atividade prática — Prompt Sobrevive a Frio
 
