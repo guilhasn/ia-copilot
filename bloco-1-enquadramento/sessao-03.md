@@ -60,7 +60,7 @@ A meta prática é simples: **sair da sessão com pelo menos um prompt real, mel
 4. **Atividade prática — Prompt Sobrevive a Frio**
 5. Revisão por pares — melhorar sem ranking
 6. Biblioteca pessoal — guardar prompts validados
-7. Partilha com equipa — regras mínimas de curadoria
+7. Partilha com equipa — Gallery e ficheiro-biblioteca
 8. Fecho — método de trabalho e tarefa para a semana
 
 ## Prompt Gallery da Microsoft — visita breve
@@ -380,18 +380,6 @@ Um bom prompt não deve ficar só numa pessoa — mas partilhar sem regras tamb�
 **Sem licença** — via ficheiro-biblioteca: uma cópia numa equipa do Teams ou no SharePoint do serviço; qualquer colega copia de lá o prompt e cola-o no Copilot Chat.
 
 *Fonte: [Microsoft Support — Sharing prompts with a team](https://support.microsoft.com/en-us/topic/sharing-prompts-with-a-team-2fa7a228-8645-4dc4-beec-d75d6d0bc752)*
-
-### Para a partilha não apodrecer
-
-Bibliotecas partilhadas morrem por falta de dono. Três regras mínimas, a combinar com a equipa antes de partilhar o primeiro prompt:
-
-- **Um responsável** pelo ficheiro (ou pela curadoria na Gallery) — decide o que entra e remove o que ninguém usa.
-
-- **Só entra o que o colega simulado aprovou** — um prompt que ainda levanta perguntas não está pronto para ser partilhado.
-
-- **Cada prompt tem dono** — quem o criou mantém-no atualizado quando o procedimento do serviço mudar.
-
-Com isto, cinco pessoas a contribuir dão à equipa uma biblioteca viva. Sem isto, dão-lhe mais um ficheiro esquecido no SharePoint.
 
 ## Síntese do Bloco 1
 
