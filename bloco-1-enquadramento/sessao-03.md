@@ -42,6 +42,8 @@ No final da sessão, os formandos deverão ser capazes de:
 
 - guardar prompts numa biblioteca pessoal ou partilhada, com critérios mínimos de qualidade.
 
+A meta prática é simples: **sair da sessão com pelo menos um prompt real, melhorado e validado.** A biblioteca completa constrói-se progressivamente, ao longo das semanas.
+
 ## Ligação às sessões anteriores
 
 | Sessão | O que aprenderam | O que consolidam aqui |
@@ -56,22 +58,31 @@ No final da sessão, os formandos deverão ser capazes de:
 2. Prompt Gallery — visita breve
 3. Caso #1 — pesquisar tendências em gestão de IES
 4. Caso #2 — o prompt que escreve prompts
-5. **Atividade Lovable — Prompt Sobrevive a Frio**
-6. Biblioteca pessoal — guardar prompts validados
-7. Partilha com equipa — regras mínimas de curadoria
-8. Fecho — síntese e tarefa para a semana
+5. **Atividade prática — Prompt Sobrevive a Frio**
+6. Revisão por pares — melhorar sem ranking
+7. Biblioteca pessoal — guardar prompts validados
+8. Partilha com equipa — regras mínimas de curadoria
+9. Fecho — método de trabalho e tarefa para a semana
 
-## Para começar
+## Para começar — o pior prompt da semana
 
-A Sessão 2 terminou com uma tarefa: testar um prompt real no trabalho e trazer o resultado.
+Hoje vamos começar ao contrário.
 
-Antes de avançar, pense:
+Na Sessão 2 vimos que um bom prompt deve ter Objetivo, Contexto, Fonte e Expectativas. Mas no trabalho real quase ninguém começa assim. Quando há pressa, escrevemos coisas como:
 
-> Que prompt testou? O que funcionou? O que teve de ajustar?
+> *"Resume isto."* · *"Faz-me uma resposta."* · *"Prepara a reunião."* · *"Melhora este texto."*
 
-Vai partilhar 2-3 ideias no chat do Zoom. O prompting melhora com a prática — e os colegas podem aprender uns com os outros.
+Isto não é um drama. É o ponto de partida.
 
-E agora o desafio inverso — **o pior prompt**: cole no chat do Zoom o prompt mais preguiçoso que escreveu esta semana. Uma linha, sem contexto, escrita à pressa — todos os temos. Sem vergonha: os melhores exemplares vão ser a matéria-prima do Caso #2, e no fim da sessão vai perceber porquê.
+**Desafio inicial:** cole no chat do Zoom o prompt mais preguiçoso que escreveu — ou poderia escrever — numa semana normal de trabalho. Uma linha. Sem contexto. À pressa.
+
+Não vamos avaliar pessoas. Vamos avaliar instruções. A partir destes exemplares, vamos mostrar como um prompt fraco se transforma num prompt reutilizável, validado e pronto a entrar numa biblioteca pessoal de trabalho com IA.
+
+Antes de avançar, pense também no prompt que testou depois da Sessão 2: o que funcionou? O que falhou? Que informação teve de acrescentar? O resultado estava pronto a usar, ou precisou de revisão?
+
+A ideia desta sessão cabe numa frase:
+
+> Um prompt só está pronto quando outra pessoa o consegue usar sem lhe pedir explicações.
 
 ## Prompt Gallery da Microsoft — visita breve
 
@@ -316,7 +327,7 @@ Regra única: **criticar o prompt, não a pessoa.**
 
 ## Construir a biblioteca pessoal
 
-Esta é a atividade central da sessão. Cada formando cria a sua biblioteca de prompts reutilizáveis.
+Depois da atividade "Prompt Sobrevive a Frio", o passo seguinte é guardar o prompt validado numa biblioteca pessoal. A biblioteca não é o exercício central — é o destino: o local onde fica o que já passou no teste de qualidade.
 
 ### Categorias sugeridas
 
