@@ -98,8 +98,6 @@ Tem uma semana e quer chegar à primeira reunião de trabalho com a equipa já c
 
 ### Modo Web vs. modo Trabalho
 
-Esta é a primeira vez na formação que usamos o Copilot Chat **em modo Web**. A distinção, recordando da Sessão 2:
-
 | Modo | Quando usar | O que esperar |
 |---|---|---|
 | **Trabalho** | Tarefa toca dados internos (e-mails, ficheiros, reuniões da organização) | Acede ao tenant; respostas baseadas em conteúdo institucional |
