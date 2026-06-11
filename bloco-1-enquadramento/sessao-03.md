@@ -340,39 +340,19 @@ O prompt que saiu do [Laboratório Online](https://copilot-ai-lab.lovable.app/) 
 
 📎 **Ficheiro-biblioteca modelo:** descarregue a [Biblioteca de Prompts (DOCX)]({{ site.baseurl }}/sessoes/sessao-03/Biblioteca_de_Prompts.docx) — já traz as oito entradas preenchidas — o meta-prompt (#0), as cinco categorias com exemplos típicos de IES (#1-#5), o verificador de pesquisas e o colega simulado. Adapte os exemplos ao seu serviço antes de os usar. É a casa da biblioteca para quem não tem licença, e um bom backup para quem tem.
 
-### Tarefa para a semana — alargar a biblioteca
+### Tarefa para a semana — tornar a biblioteca sua
 
-Durante a semana, alargue a biblioteca às cinco categorias (**resumir**, **redigir**, **reformular**, **analisar**, **preparar**) com o método de hoje:
+O ficheiro-biblioteca já vem preenchido — o trabalho da semana é torná-lo seu:
 
-1. Descreva a tarefa ao meta-prompt (entrada #0) em linguagem corrente — como a contaria a um colega de gabinete.
+1. Adapte as entradas #1–#5 à realidade do seu serviço: nomes, procedimentos, vocabulário.
 
-2. Responda às perguntas que ele fizer.
+2. Crie pelo menos um prompt novo com o meta-prompt (entrada #0), para uma tarefa real que o ficheiro não cobre.
 
-3. Reveja o prompt devolvido: corte o que não se aplica, ajuste o tom, confirme a secção de validação. **Esta revisão é o seu trabalho — o Copilot propõe, quem conhece o serviço decide.**
+3. Valide-o no [Laboratório Online](https://copilot-ai-lab.lovable.app/) — que fica disponível depois da sessão — ou com o colega simulado (entrada #7 do ficheiro), até obter *"este prompt é autossuficiente"*.
 
-4. Teste-o no [Laboratório Online](https://copilot-ai-lab.lovable.app/) — que fica disponível depois da sessão — ou faça-o passar pelo colega simulado (entrada #7) até obter "este prompt é autossuficiente".
+4. Guarde — com nome e "quando usar".
 
-5. Guarde — com nome e "quando usar".
-
-### O colega simulado — testar prompts com o Copilot
-
-O mesmo teste da atividade "Prompt Sobrevive a Frio", mas para usar no dia-a-dia, sem aplicação externa: o Copilot faz de colega que recebe o prompt sem contexto. É a ferramenta de validação para os prompts que criar durante a semana.
-
-1. Abra uma **conversa nova** no Copilot Chat. Numa conversa nova, o Copilot não sabe como o prompt foi construído — fica genuinamente "a frio", exatamente como um colega ficaria.
-
-2. Cole o prompt-testador, seguido do prompt a testar:
-
-> *Recebeste este prompt de um colega de outro serviço, sem qualquer contexto. Antes de o usares, que perguntas terias de lhe fazer? Lista-as por ordem de importância e indica que componente falha em cada uma (Objetivo, Contexto, Fonte ou Expectativas). Se não houver perguntas a fazer, responde apenas: "este prompt é autossuficiente".*
->
-> *Prompt recebido: [colar]*
-
-3. Leia as perguntas devolvidas — cada uma é um buraco no prompt: falta contexto, falta formato, falta validação.
-
-4. Corrija o prompt e repita o teste. Quando o Copilot responder **"este prompt é autossuficiente"** — está pronto para a biblioteca.
-
-5. E o prompt-testador? Também se guarda: é a **entrada #7** da biblioteca.
-
-É exatamente este o teste que os prompts partilhados vão enfrentar no dia-a-dia do serviço — só que com pessoas reais. Melhor descobrir os buracos agora, em dois minutos, do que daqui a um mês, com um resultado errado nas mãos de um colega.
+Melhor descobrir os buracos de um prompt em dois minutos do que daqui a um mês, com um resultado errado nas mãos de um colega.
 
 ## Partilhar prompts com a equipa
 
