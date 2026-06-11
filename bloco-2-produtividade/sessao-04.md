@@ -26,6 +26,9 @@ Mas o trabalho da Helena Albuquerque, Diretora de Serviços Académicos, tem efe
 
 > O Copilot é um redator júnior brilhante. Faz draft em 30 segundos. Mas não assina atos. Tu assinas — e a tua assinatura cobre o output dele.
 
+{: .note }
+> **Com e sem licença.** O Copilot **dentro do Word** (barra lateral, comando `/`) exige licença Microsoft 365 Copilot. Quem não tem licença faz os mesmos exercícios no **Copilot Chat** ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)): abra o dataset no Word, copie o texto do documento em causa (DOC-A ou DOC-B) e cole-o na conversa juntamente com o prompt, substituindo a linha *Fonte* por "o texto colado abaixo". Os defeitos típicos do output e o método de validação são exatamente os mesmos.
+
 ## Objetivos
 
 No final da sessão, os formandos deverão ser capazes de:
@@ -50,7 +53,7 @@ No final da sessão, os formandos deverão ser capazes de:
 2. Linguagem clara — 7 princípios AMA e bases legais
 3. Caso #1 — sumarizar DOC-A com demo curta de identificação de ambiguidades
 4. Caso #2 — reformulação de DOC-B para linguagem clara
-5. Sub-B — exploração de versões alternativas (para quem termina cedo)
+5. Avançado — orquestração multi-versão (worksheet, para quem termina cedo)
 6. Consolidação — 5 sinais de output problemático e método CCC
 7. Reflexão crítica — quando NÃO sumarizar, consequências de artigo inventado, método de validação em 30 segundos
 
@@ -138,13 +141,13 @@ A Helena vai entregar a cada coordenador um resumo executivo de 1 página. Tem 3
 
 ### Prompt de trabalho
 
-> *Goal: Produz um resumo executivo do Regulamento de Avaliação dos Mestrados da UVV: 1 parágrafo de abertura (3-4 linhas) + 5 a 7 pontos-chave em bullets. Cita o número do artigo em cada ponto. Mantém os termos jurídicos técnicos (não simplifiques "audiência prévia", "regime especial", "época especial").*
+> *Objetivo: Produz um resumo executivo do Regulamento de Avaliação dos Mestrados da UVV: 1 parágrafo de abertura (3-4 linhas) + 5 a 7 pontos-chave em bullets. Cita o número do artigo em cada ponto. Mantém os termos jurídicos técnicos (não simplifiques "audiência prévia", "regime especial", "época especial").*
 >
-> *Context: Vai ser entregue a 4 coordenadores de mestrado da UVV — são técnicos experientes, à vontade com terminologia jurídica.*
+> *Contexto: Vai ser entregue a 4 coordenadores de mestrado da UVV — são técnicos experientes, à vontade com terminologia jurídica.*
 >
-> *Source: /Dataset_S04_Documentos.docx — secção DOC-A.*
+> *Fonte: /Dataset_S04_Documentos.docx — secção DOC-A (sem licença: o texto do DOC-A colado abaixo).*
 >
-> *Expectation: Resumo em português europeu, formato 1 página. Sem inventar artigos. Se houver dúvida, deixa em branco em vez de inventar.*
+> *Expectativas: Resumo em português europeu, formato 1 página. Sem inventar artigos. Se houver dúvida, deixa em branco em vez de inventar.*
 
 ### Exemplo de output esperado (com defeitos típicos)
 
@@ -192,6 +195,8 @@ Esta versão cumpre: estrutura 1 parágrafo + 7 bullets, citação dos artigos c
 
 > O Copilot deu-vos 70% do trabalho em 10 segundos. Os outros 30% são vocês. Sumarizar não é entregar. É entregar **depois de validar**.
 
+Prompt validado? Guarde-o na biblioteca pessoal da Sessão 3 — categoria **Resumir** —, com o método CCC no campo *Validação*.
+
 ## Caso #2 — Reformular parecer jurídico preservando ambiguidade
 
 ### Cenário
@@ -207,13 +212,13 @@ Vai usar Copilot para reformular o parecer em linguagem clara mantendo o rigor �
 
 ### Prompt de trabalho
 
-> *Goal: Reformula este parecer jurídico em linguagem clara para um técnico administrativo (não-jurista). Mantém o rigor — em particular, mantém a ambiguidade entre prazo de 8 anos (LGT) e 20 anos (CC) que o parecer não resolve.*
+> *Objetivo: Reformula este parecer jurídico em linguagem clara para um técnico administrativo (não-jurista). Mantém o rigor — em particular, mantém a ambiguidade entre prazo de 8 anos (LGT) e 20 anos (CC) que o parecer não resolve.*
 >
-> *Context: Vou apresentar o resumo a 3 técnicos da Divisão de Matrículas da UVV.*
+> *Contexto: Vou apresentar o resumo a 3 técnicos da Divisão de Matrículas da UVV.*
 >
-> *Source: /Dataset_S04_Documentos.docx (DOC-B)*
+> *Fonte: /Dataset_S04_Documentos.docx — secção DOC-B (sem licença: o texto do DOC-B colado abaixo).*
 >
-> *Expectation: Linguagem clara em pt-pt. 4-6 parágrafos curtos. Uma frase explícita a dizer que a questão tem duas posições e o Gabinete recomenda prudência.*
+> *Expectativas: Linguagem clara em pt-pt. 4-6 parágrafos curtos. Uma frase explícita a dizer que a questão tem duas posições e o Gabinete recomenda prudência.*
 
 ### A armadilha — o que o Copilot tende a fazer
 
@@ -248,6 +253,8 @@ Esta reformulação cumpre: linguagem clara em pt-pt, frases curtas em voz ativa
 > 3. *"Há simplificação que perdeu rigor?"* — possível: "não interromperam o prazo" é correto mas poderia manter ressalva "à luz da doutrina maioritária".
 
 > Linguagem clara **não é** simplificação. É comunicação rigorosa sem jargão desnecessário.
+
+Este prompt também merece a biblioteca — categoria **Reformular**, com a regra "preservar ambiguidades intencionais" registada no campo *Validação*.
 
 ## Demonstração curta — pedir ao Copilot que identifique ambiguidades
 
@@ -321,7 +328,7 @@ Tudo o que está é **verdade**. Mas omitiu o n.º 3 — exatamente a regra que 
 
 Deteção: para cada artigo citado, verificar se tem subníveis (n.º 1, 2, 3...). Se sim, ver se o resumo cita o número específico ("art. 3.º n.º 1") ou só o artigo ("art. 3.º"). Se cita só o artigo sem número, **provavelmente** está a omitir números seguintes.
 
-**Sinal 5 — Sycophancy** *(mais frequente em redação assistida — e-mails, drafts, propostas).* O Copilot espelha o ângulo do prompt. Se enviesarem a pergunta, viesam o output. Tema central da [S5]({% link bloco-2-produtividade/sessao-05.md %}#sinais-output); em documentos longos é menos crítico do que em comunicação institucional. Mitigação rápida: pedir explicitamente *"em registo neutro institucional, sem caracterizar intenções"*.
+**Sinal 5 — Sycophancy** *(mais frequente em redação assistida — e-mails, drafts, propostas).* O Copilot espelha o ângulo do prompt. Se enviesarem a pergunta, viesam o output. É o tema central da Sessão 5; em documentos longos é menos crítico do que em comunicação institucional. Mitigação rápida: pedir explicitamente *"em registo neutro institucional, sem caracterizar intenções"*.
 
 {: .important }
 > **Cinco coisas que o Copilot faz mal. Em documentos longos, a pior é a que não vês — a omissão silenciosa de subníveis.**
@@ -413,6 +420,8 @@ A S04 foi a primeira sessão aplicada. Saímos com três coisas:
 - **Sei validar rapidamente** com o método CCC — em 30 segundos apanho 3 dos 5 sinais; em 2 minutos extra apanho a omissão silenciosa de subníveis (a peça mais subtil em documentos).
 
 A demonstração de pedir ambiguidades ao Copilot, no fim, é a técnica que vai voltar quando trabalharem com cadernos de encargos, pareceres e despachos antes de assinar.
+
+E os dois prompts de trabalho de hoje não se perdem: são as entradas seguintes da biblioteca pessoal da Sessão 3 (categorias **Resumir** e **Reformular**) — guarde-os com nome, "quando usar" e o CCC no campo *Validação*.
 
 > O Copilot é um redator júnior brilhante. Faz draft em 30 segundos. Mas não assina atos. Tu assinas — e a tua assinatura cobre o output dele.
 
