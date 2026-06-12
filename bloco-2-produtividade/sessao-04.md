@@ -26,7 +26,7 @@ Mas o trabalho da Helena Albuquerque, Diretora de Serviços Académicos, tem efe
 > O Copilot é um redator júnior brilhante. Faz draft em 30 segundos. Mas não assina atos. Tu assinas — e a tua assinatura cobre o output dele.
 
 {: .note }
-> **Com e sem licença.** O Copilot **dentro do Word** (barra lateral, comando `/`) exige licença Microsoft 365 Copilot. **Sem licença**, os exercícios fazem-se no **Copilot Chat** ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)): carregue o dataset com o botão **"+ Adicionar conteúdo"** e peça "usa apenas a secção DOC-A" — ou, se o upload estiver desativado no seu tenant, abra o dataset no Word, copie **apenas o texto do documento em causa** (o DOC-A termina onde começa o DOC-B) e cole-o na conversa com o prompt, substituindo a linha *Fonte* por "o texto colado abaixo". O ficheiro carregado fica guardado no seu OneDrive institucional. **Com licença**, guarde o dataset no **OneDrive institucional antes da sessão** — o comando `/` só vê ficheiros aí indexados, e a indexação pode demorar de alguns minutos a meia hora — ou, mais simples, abra o dataset no Word e trabalhe sobre o documento aberto, pedindo "usa apenas a secção DOC-A". Os defeitos típicos do output e o método de validação são exatamente os mesmos em todos os caminhos.
+> **Com e sem licença.** O Copilot **dentro do Word** (barra lateral, comando `/`) exige licença Microsoft 365 Copilot. **Sem licença**, os exercícios fazem-se no **Copilot Chat** ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)): carregue o dataset com o botão **"+ Adicionar conteúdo"** e peça "usa apenas a secção DOC-A" — ou, se o upload estiver desativado no seu tenant, abra o dataset no Word, copie **apenas o texto do documento em causa** (o DOC-A termina onde começa o DOC-B) e cole-o na conversa com o prompt, substituindo a linha *Fonte* por "o texto colado abaixo". O ficheiro carregado fica guardado no seu OneDrive institucional. **Com licença**, guarde o dataset no **OneDrive institucional antes da sessão** — o comando `/` só vê ficheiros aí indexados, e a indexação pode demorar de alguns minutos a meia hora — ou, mais simples, abra o dataset no Word e trabalhe sobre o documento aberto, pedindo "usa apenas a secção DOC-A". Os defeitos típicos do output e o método de validação são exatamente os mesmos em todos os caminhos. Sem licença, faz tudo o que é essencial; a licença acrescenta o conforto de isto acontecer **dentro do documento** — vai vê-lo nas demonstrações.
 
 ## Objetivos
 
@@ -48,7 +48,7 @@ No final da sessão, os formandos deverão ser capazes de:
 
 ## Programa
 
-1. Demonstração ao vivo — Word com Copilot nos casos #1 e #2
+1. Demonstração ao vivo no Word — resumir, reformular (*Rewrite*) e redigir (*Draft*)
 2. Linguagem clara — 7 princípios AMA e bases legais
 3. Caso #1 — sumarizar DOC-A com demo curta de identificação de ambiguidades
 4. Caso #2 — reformulação de DOC-B para linguagem clara
@@ -120,11 +120,13 @@ Não é sinónimo de simplificação. Pode haver linguagem clara sobre temas com
 
 ## Demonstração — o que vão ver
 
-A sessão arranca com duas demonstrações ao vivo, em direto no Copilot. O objetivo é estabelecer o tom: *o Copilot dá 70% do trabalho em 10 segundos; os outros 30% somos nós.*
+A sessão arranca com três demonstrações ao vivo, em direto **dentro do Word**. O objetivo é estabelecer o tom: *o Copilot dá 70% do trabalho em 10 segundos; os outros 30% somos nós.*
 
-**Parte A — Sumarização do regulamento.** Vão observar a geração ao vivo de um resumo executivo do *Regulamento de Avaliação dos Mestrados da UVV* (DOC-A do dataset). Enquanto vêem, anotem três coisas: o que o Copilot faz bem, o que esquece, e o que inventa. **Estes três padrões repetem-se em qualquer sumarização que façam.** E vão vê-lo correr **duas vezes, com o prompt exatamente igual** — os dois resumos não vão ser iguais. As divergências entre execuções são o mapa das omissões: o que aparece numa e falta na outra é onde o Copilot está a "escolher" sozinho.
+**Parte A — Sumarização do regulamento.** Vão observar a geração ao vivo de um resumo executivo do *Regulamento de Avaliação dos Mestrados da UVV* (DOC-A do dataset) **na barra lateral do Word**, com o documento aberto — e o resumo inserido diretamente no documento. Enquanto vêem, anotem três coisas: o que o Copilot faz bem, o que esquece, e o que inventa. **Estes três padrões repetem-se em qualquer sumarização que façam.** E vão vê-lo correr **duas vezes, com o prompt exatamente igual** — os dois resumos não vão ser iguais. As divergências entre execuções são o mapa das omissões: o que aparece numa e falta na outra é onde o Copilot está a "escolher" sozinho.
 
-**Parte B — Reformulação do parecer com ambiguidade.** Vão observar uma reformulação ao vivo do *Parecer sobre prescrição de propinas* (DOC-B) em linguagem clara. A armadilha: o prazo de prescrição está assente (8 anos — as propinas são taxas, decidiu o STA em 2015), mas o parecer mantém **deliberadamente em aberto** uma questão que os tribunais ainda não uniformizaram: o acordo de pagamento que o estudante assinou em 2020 suspendeu o prazo só enquanto foi cumprido (dívida prescrita) ou até hoje (dívida cobrável)? O Copilot tipicamente *decide* — declara a dívida prescrita ou cobrável — e é exatamente o que **não pode** acontecer. Vão ver o Copilot derrapar e vão ver como se corrige.
+**Parte B — Reformulação do parecer com ambiguidade.** Primeiro, o gesto mais "Word" de todos: selecionar um parágrafo denso do *Parecer sobre prescrição de propinas* (DOC-B) e usar o ***Rewrite* inline** (botão direito → reescrever com Copilot, com opções de tom) — a reescrita acontece dentro do documento, sem chat. Depois, a reformulação completa por prompt. A armadilha: o prazo de prescrição está assente (8 anos — as propinas são taxas, decidiu o STA em 2015), mas o parecer mantém **deliberadamente em aberto** uma questão que os tribunais ainda não uniformizaram: o acordo de pagamento que o estudante assinou em 2020 suspendeu o prazo só enquanto foi cumprido (dívida prescrita) ou até hoje (dívida cobrável)? O Copilot tipicamente *decide* — declara a dívida prescrita ou cobrável — e é exatamente o que **não pode** acontecer. Vão ver o Copilot derrapar e vão ver como se corrige.
+
+**Parte C — Redigir a partir do resumo validado.** O fecho do ciclo, e a terceira capacidade da tabela: com o resumo do Caso #1 validado, o ***Draft* with Copilot** gera dentro do Word um rascunho de ofício de envio aos quatro coordenadores — registo institucional, máximo 150 palavras. Em 30 segundos há um rascunho. A regra de sempre: o draft é dele, a assinatura é sua.
 
 Nos dois casos que se seguem, passam de observadores a praticantes — fazem o trabalho com as próprias mãos.
 
@@ -495,7 +497,7 @@ A S04 foi a primeira sessão aplicada. Saímos com três coisas:
 - **Sei reformular um parecer** sem destruir o rigor — incluindo preservar ambiguidades intencionais.
 - **Sei validar rapidamente** com o método CCC — em 30 segundos apanho 3 dos 5 sinais; em 2 minutos extra apanho a omissão silenciosa de subníveis (a peça mais subtil em documentos).
 
-A demonstração de pedir ambiguidades ao Copilot, no fim, é a técnica que vai voltar quando trabalharem com cadernos de encargos, pareceres e despachos antes de assinar.
+A demonstração de pedir ambiguidades ao Copilot, no fim, é a técnica que vai voltar quando trabalharem com cadernos de encargos, pareceres e despachos antes de assinar. E viram o ciclo completo dentro do Word — resumir (*Summarize*) → validar (CCC) → reformular (*Rewrite*) → redigir (*Draft*) — sempre com a mesma regra: o rascunho é dele, a assinatura é sua.
 
 E os prompts de trabalho de hoje não se perdem: são as entradas seguintes da biblioteca pessoal da Sessão 3 — o resumo executivo (categoria **Resumir**), a reformulação com ambiguidade preservada (**Reformular**) e a auditoria de omissões do worksheet (**Analisar**) — guardados com nome, "quando usar" e o CCC no campo *Validação*.
 
