@@ -23,6 +23,8 @@ Primeira sessão "aplicada" do curso. Saímos da moldura concetual do Bloco 1 (C
 
 Mas o trabalho da Helena Albuquerque, Diretora de Serviços Académicos, tem efeito jurídico. Sumarizar mal um regulamento ou reformular mal um parecer propaga erro pela instituição. Validação cruzada não é opcional — é o tema transversal da sessão.
 
+Os números do maior piloto público de Copilot até hoje ([governo britânico, ~20 000 licenças](https://www.gov.uk/government/publications/microsoft-365-copilot-experiment-cross-government-findings-report/microsoft-365-copilot-experiment-cross-government-findings-report-html)) dizem porquê: a **redação de documentos** foi a tarefa com maior poupança de tempo reportada — 24 minutos por dia — e, ao mesmo tempo, a avaliação concluiu que a **supervisão humana dos outputs foi necessária em permanência**. Onde mais se ganha tempo é exatamente onde mais é preciso validar. Esta sessão é sobre as duas coisas.
+
 > O Copilot é um redator júnior brilhante. Faz draft em 30 segundos. Mas não assina atos. Tu assinas — e a tua assinatura cobre o output dele.
 
 {: .note }
@@ -126,7 +128,7 @@ A sessão arranca com três demonstrações ao vivo, em direto **dentro do Word*
 
 **Parte B — Reformulação do parecer com ambiguidade.** Primeiro, o gesto mais "Word" de todos: selecionar um parágrafo denso do *Parecer sobre prescrição de propinas* (DOC-B) e usar o ***Rewrite* inline** (botão direito → reescrever com Copilot, com opções de tom) — a reescrita acontece dentro do documento, sem chat. Depois, a reformulação completa por prompt. A armadilha: o prazo de prescrição está assente (8 anos — as propinas são taxas, decidiu o STA em 2015), mas o parecer mantém **deliberadamente em aberto** uma questão que os tribunais ainda não uniformizaram: o acordo de pagamento que o estudante assinou em 2020 suspendeu o prazo só enquanto foi cumprido (dívida prescrita) ou até hoje (dívida cobrável)? O Copilot tipicamente *decide* — declara a dívida prescrita ou cobrável — e é exatamente o que **não pode** acontecer. Vão ver o Copilot derrapar e vão ver como se corrige.
 
-**Parte C — Redigir a partir do resumo validado.** O fecho do ciclo, e a terceira capacidade da tabela: com o resumo do Caso #1 validado, o ***Draft* with Copilot** gera dentro do Word um rascunho de ofício de envio aos quatro coordenadores — registo institucional, máximo 150 palavras. Em 30 segundos há um rascunho. A regra de sempre: o draft é dele, a assinatura é sua.
+**Parte C — Redigir a partir do resumo validado.** O fecho do ciclo, e a terceira capacidade da tabela: com o resumo do Caso #1 validado, o ***Draft* with Copilot** gera dentro do Word um rascunho de ofício de envio aos quatro coordenadores — registo institucional, máximo 150 palavras. Em 30 segundos há um rascunho — e a decisão formal que o Word pede a seguir: **Manter, Regenerar ou Descartar**, com afinação possível ("torna-o mais conciso"). A regra de sempre: o draft é dele, a assinatura é sua.
 
 Nos dois casos que se seguem, passam de observadores a praticantes — fazem o trabalho com as próprias mãos.
 
@@ -141,6 +143,8 @@ A Helena vai entregar a cada coordenador um resumo executivo de 1 página. Tem 3
 📎 **Para fazer este exercício, descarregue o dataset:** [Dataset_S04_Documentos.docx]({{ site.baseurl }}/sessoes/sessao-04/Dataset_S04_Documentos.docx) — abra no Word e vá à secção DOC-A (se for colar no Copilot Chat, copie apenas essa secção).
 
 ### Prompt de trabalho
+
+Antes do prompt completo, o contraste de 30 segundos que mostra porque é que o framework importa: corra primeiro, tal e qual, o prompt fraco da S3 — *"Resume este regulamento."* — e guarde o resultado. Depois o prompt completo; no fim, compare os dois outputs lado a lado. A diferença que vai ver é o GCSE a trabalhar.
 
 > *Objetivo: Produz um resumo executivo do Regulamento de Avaliação dos Mestrados da UVV: 1 parágrafo de abertura (3-4 linhas) + 5 a 7 pontos-chave em bullets. Cita o número do artigo em cada ponto. Mantém os termos jurídicos técnicos (não simplifiques "audiência prévia", "regime especial", "época especial").*
 >
@@ -410,6 +414,8 @@ Técnica de validação em 30 segundos, três passos:
 **2. Confirma.** Abrir o índice do regulamento e confirmar **um a um** que os artigos citados existem. 5-10 segundos por artigo.
 
 **3. Conta.** Contar capítulos do regulamento e contar quantos estão representados no resumo. Se o regulamento tem 5 capítulos e o resumo só fala de 3, **falta um capítulo** — alucinação por omissão de escala.
+
+E cronometre-se. No [piloto de Copilot da administração pública australiana](https://www.digital.gov.au/initiatives/copilot-trial/summary-evaluation-findings/cts-evaluation-findings) (7 600 funcionários), o tempo gasto a verificar e editar outputs anulou parte dos ganhos de eficiência. Um método de validação rápido não é burocracia — é o que protege o tempo que o Copilot lhe poupou.
 
 ### Cobertura do método CCC
 
