@@ -26,7 +26,7 @@ Mas o trabalho da Helena Albuquerque, Diretora de Serviços Académicos, tem efe
 > O Copilot é um redator júnior brilhante. Faz draft em 30 segundos. Mas não assina atos. Tu assinas — e a tua assinatura cobre o output dele.
 
 {: .note }
-> **Com e sem licença.** O Copilot **dentro do Word** (barra lateral, comando `/`) exige licença Microsoft 365 Copilot. **Sem licença**, os exercícios fazem-se no **Copilot Chat** ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)): abra o dataset no Word, copie **apenas o texto do documento em causa** (o DOC-A termina onde começa o DOC-B) e cole-o na conversa juntamente com o prompt, substituindo a linha *Fonte* por "o texto colado abaixo". **Com licença**, guarde primeiro o dataset descarregado no seu **OneDrive institucional** — o comando `/` só vê ficheiros aí indexados, e a indexação pode demorar uns minutos — ou, mais simples, abra o dataset no Word e trabalhe sobre o documento aberto, pedindo "usa apenas a secção DOC-A". Os defeitos típicos do output e o método de validação são exatamente os mesmos nos dois caminhos.
+> **Com e sem licença.** O Copilot **dentro do Word** (barra lateral, comando `/`) exige licença Microsoft 365 Copilot. **Sem licença**, os exercícios fazem-se no **Copilot Chat** ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)): carregue o dataset com o botão **"+ Adicionar conteúdo"** e peça "usa apenas a secção DOC-A" — ou, se o upload estiver desativado no seu tenant, abra o dataset no Word, copie **apenas o texto do documento em causa** (o DOC-A termina onde começa o DOC-B) e cole-o na conversa com o prompt, substituindo a linha *Fonte* por "o texto colado abaixo". O ficheiro carregado fica guardado no seu OneDrive institucional. **Com licença**, guarde o dataset no **OneDrive institucional antes da sessão** — o comando `/` só vê ficheiros aí indexados, e a indexação pode demorar de alguns minutos a meia hora — ou, mais simples, abra o dataset no Word e trabalhe sobre o documento aberto, pedindo "usa apenas a secção DOC-A". Os defeitos típicos do output e o método de validação são exatamente os mesmos em todos os caminhos.
 
 ## Objetivos
 
@@ -75,7 +75,7 @@ Como nas restantes apps M365, o Copilot no Word permite referenciar ficheiros do
 /Regulamento de Avaliação dos Mestrados v2024
 ```
 
-Limites: até 10 ficheiros por referência; só funciona no modo *Trabalho* (com licença Copilot); os ficheiros têm de estar no SharePoint/OneDrive da organização — um ficheiro descarregado para o Desktop **não aparece** no `/` até ser guardado no OneDrive institucional e indexado (pode demorar uns minutos).
+Limites: até **20 itens** por referência (ficheiros, e-mails ou reuniões); requer licença Microsoft 365 Copilot; os ficheiros têm de estar no SharePoint/OneDrive da organização — um ficheiro descarregado para o Desktop **não aparece** no `/` até ser guardado no OneDrive institucional e indexado (de alguns minutos a meia hora — guarde o dataset antes da sessão).
 
 *Fontes Microsoft:* [Create a summary of your document with Copilot in Word](https://support.microsoft.com/en-us/office/create-a-summary-of-your-document-with-copilot-in-word-79bb7a0a-3bf7-41fe-8c09-56f855b669bf) · [Draft and add content with Copilot in Word](https://support.microsoft.com/en-us/office/draft-and-add-content-with-copilot-in-word-069c91f0-9e42-4c9a-bbce-fddf5d581541)
 
@@ -100,7 +100,7 @@ Não é sinónimo de simplificação. Pode haver linguagem clara sobre temas com
 | Norma | Artigo | O que diz, em 1 linha |
 |---|---|---|
 | Decreto-Lei n.º 135/99 | art. 11.º | Princípio da clareza na relação Administração-administrados |
-| Código do Procedimento Administrativo | art. 9.º | Princípio da boa administração |
+| Código do Procedimento Administrativo | art. 5.º | Princípio da boa administração |
 | CPA | art. 153.º | Fundamentação dos atos administrativos deve ser acessível ao destinatário |
 | LabX/AMA — Oficinas de Simplificação da Linguagem | metodologia | Iniciativa do laboratório de inovação da AMA para simplificar linguagem em serviços públicos |
 
@@ -122,9 +122,9 @@ Não é sinónimo de simplificação. Pode haver linguagem clara sobre temas com
 
 A sessão arranca com duas demonstrações ao vivo, em direto no Copilot. O objetivo é estabelecer o tom: *o Copilot dá 70% do trabalho em 10 segundos; os outros 30% somos nós.*
 
-**Parte A — Sumarização do regulamento.** Vão observar a geração ao vivo de um resumo executivo do *Regulamento de Avaliação dos Mestrados da UVV* (DOC-A do dataset). Enquanto vêem, anotem três coisas: o que o Copilot faz bem, o que esquece, e o que inventa. **Estes três padrões repetem-se em qualquer sumarização que façam.**
+**Parte A — Sumarização do regulamento.** Vão observar a geração ao vivo de um resumo executivo do *Regulamento de Avaliação dos Mestrados da UVV* (DOC-A do dataset). Enquanto vêem, anotem três coisas: o que o Copilot faz bem, o que esquece, e o que inventa. **Estes três padrões repetem-se em qualquer sumarização que façam.** E vão vê-lo correr **duas vezes, com o prompt exatamente igual** — os dois resumos não vão ser iguais. As divergências entre execuções são o mapa das omissões: o que aparece numa e falta na outra é onde o Copilot está a "escolher" sozinho.
 
-**Parte B — Reformulação do parecer com ambiguidade.** Vão observar uma reformulação ao vivo do *Parecer sobre prescrição de propinas* (DOC-B) em linguagem clara. A armadilha: o parecer tem **ambiguidade deliberada entre o prazo de 8 anos (LGT) e 20 anos (CC)** que o STA ainda não uniformizou. O Copilot tipicamente *escolhe uma das posições* — é exatamente o que **não pode** acontecer. Vão ver o Copilot derrapar e vão ver como se corrige.
+**Parte B — Reformulação do parecer com ambiguidade.** Vão observar uma reformulação ao vivo do *Parecer sobre prescrição de propinas* (DOC-B) em linguagem clara. A armadilha: o prazo de prescrição está assente (8 anos — as propinas são taxas, decidiu o STA em 2015), mas o parecer mantém **deliberadamente em aberto** uma questão que os tribunais ainda não uniformizaram: o acordo de pagamento que o estudante assinou em 2020 suspendeu o prazo só enquanto foi cumprido (dívida prescrita) ou até hoje (dívida cobrável)? O Copilot tipicamente *decide* — declara a dívida prescrita ou cobrável — e é exatamente o que **não pode** acontecer. Vão ver o Copilot derrapar e vão ver como se corrige.
 
 Nos dois casos que se seguem, passam de observadores a praticantes — fazem o trabalho com as próprias mãos.
 
@@ -171,11 +171,16 @@ Estes são detalhes que tipicamente um coordenador vai precisar. O resumo dá 70
 
 ### Versão modelo (validada manualmente)
 
+Tente primeiro; só depois abra.
+
+<details markdown="1">
+<summary>Ver a versão modelo</summary>
+
 ```
-O Regulamento de Avaliação dos Mestrados da UVV (Despacho Reitoral n.º 87/2024, em vigor desde 01-10-2024) regula as três modalidades de avaliação aplicáveis às unidades curriculares de mestrado, excluindo dissertação, projeto e estágio. Aplica o Decreto-Lei n.º 65/2018 (Regime Jurídico dos Graus). Os pontos críticos para a aplicação prática são:
+O Regulamento de Avaliação dos Mestrados da UVV (Despacho Reitoral n.º 87/2024, em vigor desde 01-10-2024) regula as três modalidades de avaliação aplicáveis às unidades curriculares de mestrado, excluindo dissertação, projeto e estágio. Aplica o Regime Jurídico dos Graus e Diplomas (Decreto-Lei n.º 74/2006, na redação atual). Os pontos críticos para a aplicação prática são:
 
 1. Avaliação contínua (art. 3.º) — preferencial; ≥3 elementos avaliativos, peso definido na ficha da UC; aprovação exige cumulativamente ≥10 valores e ≥75% de assiduidade. Falta sem justificação a >1 elemento determina remissão automática para exame final.
-2. Exame final (art. 4.º) — ≥120 min; peso de 100%; aprovação ≥10 valores. Inscrição obrigatória em plataforma eletrónica institucional (art. 7.º), com taxa para época especial.
+2. Exame final (art. 4.º) — ≥120 min; peso de 100%; aprovação ≥10 valores. Inscrição obrigatória em plataforma eletrónica institucional (art. 7.º), com taxa para a época de recurso.
 3. Avaliação especial (art. 5.º) — disponível para 5 estatutos: trabalhador-estudante, atleta de alta competição, dirigente associativo, alta competência artística e necessidades educativas especiais. Requerimento até 15 dias úteis após calendário académico.
 4. Desistência (art. 8.º) — formalizada por escrito até 5 dias úteis antes do último elemento de avaliação contínua.
 5. Classificação (art. 9.º) — escala 0-20, sem casas decimais, arredondamento por defeito até décimas e à unidade no resultado final.
@@ -183,22 +188,41 @@ O Regulamento de Avaliação dos Mestrados da UVV (Despacho Reitoral n.º 87/202
 7. Reprovação repetida (art. 11.º) — 3 inscrições consecutivas ativam apreciação pelo coordenador, com possível reorientação académica.
 ```
 
-Esta versão cumpre: estrutura 1 parágrafo + 7 bullets, citação dos artigos com n.º, termos técnicos preservados ("aprovação cumulativa", "remissão automática", "época especial"), e inclui os detalhes que o Copilot tipicamente esquece — desistência, arredondamento, os 5 estatutos especiais.
+Esta versão cumpre: estrutura 1 parágrafo + 7 bullets, citação dos artigos com n.º, termos técnicos preservados ("aprovação cumulativa", "remissão automática", "época de recurso"), e inclui os detalhes que o Copilot tipicamente esquece — desistência, arredondamento, os 5 estatutos especiais.
+
+</details>
 
 {: .discussao }
 > Três perguntas para discutir em sala:
 >
-> 1. *"Que pontos do regulamento ficaram de fora deste resumo?"* — tipicamente ficam de fora a desistência (art. 8.º), o arredondamento (art. 9.º) e a taxa de inscrição em exame de recurso (art. 7.º/2).
-> 2. *"Algum bullet está formalmente incorreto?"* — sim, na maioria das execuções: aprovação não exige só ≥10 valores; exige cumulativamente ≥10 + ≥75% assiduidade (art. 3.º/2 + art. 10.º — são duas condições, não uma).
-> 3. *"Algum termo deslizou para inglês ou pt-BR?"* — variável entre execuções.
+> 1. *"Que pontos do regulamento ficaram de fora deste resumo?"*
+>
+> 2. *"Algum bullet está formalmente incorreto?"*
+>
+> 3. *"Algum termo deslizou para inglês ou pt-BR?"*
+
+<details markdown="1">
+<summary>Ver as respostas — depois de discutir</summary>
+
+1. Tipicamente ficam de fora a desistência (art. 8.º), o arredondamento (art. 9.º) e a taxa de inscrição na época de recurso (art. 7.º/2).
+
+2. Sim, na maioria das execuções: a aprovação não exige só ≥10 valores — exige cumulativamente ≥10 **e** ≥75% de assiduidade (art. 3.º/2 + art. 10.º: são duas condições, não uma).
+
+3. Variável entre execuções — quando acontecer, é o Sinal 2 em ação.
+
+</details>
 
 > O Copilot deu-vos 70% do trabalho em 10 segundos. Os outros 30% são vocês. Sumarizar não é entregar. É entregar **depois de validar**.
 
-Prompt validado? Guarde-o na biblioteca pessoal da Sessão 3 — categoria **Resumir** —, com o método CCC no campo *Validação*.
+Prompt validado? Guarde-o na biblioteca pessoal da Sessão 3 — categoria **Resumir** —, com o método **CCC** no campo *Validação* (é a técnica de 30 segundos que detalhamos na Consolidação, mais abaixo).
 
 ## Demonstração curta — pedir ao Copilot que identifique ambiguidades
 
 Esta é a peça de impacto da sessão — a pergunta que quase ninguém pensa em fazer. **Não é um terceiro caso prático**; é uma demonstração de 8 minutos integrada no exercício guiado, depois de terem feito o resumo do Caso #1.
+
+### Primeiro, o duelo
+
+Antes de pedir ao Copilot: **3 minutos, à mão.** Releia o regulamento e anote as ambiguidades que encontrar — pontos onde o texto deixa margem para interpretação, ou não trata um caso previsível. Guarde a lista: vai precisar dela já a seguir.
 
 ### O prompt
 
@@ -214,11 +238,13 @@ Em ~30 segundos, o Copilot devolve uma tabela com 5 ambiguidades concretas.
 
 ### Exemplos típicos do que aparece
 
-Não é exaustivo nem garantido — o Copilot identifica tipicamente 4-5 das 6 ambiguidades reais do DOC-A. Três do tipo que costuma encontrar:
+Não é exaustivo nem garantido — o Copilot identifica tipicamente 4-5 das **7** ambiguidades reais do DOC-A. Três do tipo que costuma encontrar:
 
 - **Aprovação vs. assiduidade** (art. 3.º/2 vs art. 10.º) — aluno com 9 valores e 70% assiduidade: reprova ou aprova?
 - **Estatutos cumulativos** (art. 5.º) — aluno-atleta-trabalhador em jogo internacional na semana de exame: que tratamento?
 - **"3 inscrições consecutivas"** (art. 11.º/2) — anos letivos seguidos? qualquer época? inclui melhorias?
+
+Agora compare com a sua lista do duelo: quantas apanhou você, quantas apanhou ele — e, mais interessante, **quais apanhou você que ele não viu?** Há pelo menos uma falha jurídica no DOC-A que o Copilot quase nunca deteta sozinho (quem conhecer bem o estatuto do trabalhador-estudante tem vantagem; o gabarito completo das 7 fica com o formador).
 
 ### A frase a fixar
 
@@ -232,7 +258,7 @@ A técnica aplica-se a regulamentos, pareceres, cadernos de encargos, despachos 
 
 A Helena recebeu hoje do Gabinete Jurídico o *Parecer sobre prescrição de propinas* (DOC-B). Tem de explicá-lo a 3 técnicos da Divisão de Matrículas (não-juristas) em reunião de 30 min.
 
-Vai usar Copilot para reformular o parecer em linguagem clara mantendo o rigor — em particular, **a ambiguidade entre os prazos de 8 e 20 anos não deve ser resolvida**, porque o parecer não a resolve. O resumo tem de honrar a complexidade.
+Vai usar Copilot para reformular o parecer em linguagem clara mantendo o rigor — em particular, **a questão central do parecer não deve ser resolvida**: o acordo de pagamento que o estudante assinou em 2020 suspendeu o prazo de prescrição só enquanto foi cumprido, ou até hoje? O parecer deixa-a deliberadamente em aberto (os tribunais ainda não a uniformizaram), e o resumo tem de honrar essa complexidade.
 
 📎 **Para fazer este exercício, descarregue o dataset:** [Dataset_S04_Documentos.docx]({{ site.baseurl }}/sessoes/sessao-04/Dataset_S04_Documentos.docx) — abra no Word e vá à secção DOC-B (se for colar no Copilot Chat, copie apenas essa secção).
 
@@ -241,7 +267,7 @@ Vai usar Copilot para reformular o parecer em linguagem clara mantendo o rigor �
 
 ### Prompt de trabalho
 
-> *Objetivo: Reformula este parecer jurídico em linguagem clara para um técnico administrativo (não-jurista). Mantém o rigor — em particular, mantém a ambiguidade entre prazo de 8 anos (LGT) e 20 anos (CC) que o parecer não resolve.*
+> *Objetivo: Reformula este parecer jurídico em linguagem clara para um técnico administrativo (não-jurista). Mantém o rigor — em particular, mantém em aberto a questão do efeito do acordo de pagamento de 2020 (suspensão do prazo limitada ao período de cumprimento vs. prolongada até hoje), que o parecer não resolve.*
 >
 > *Contexto: Vou apresentar o resumo a 3 técnicos da Divisão de Matrículas da UVV.*
 >
@@ -251,39 +277,63 @@ Vai usar Copilot para reformular o parecer em linguagem clara mantendo o rigor �
 
 ### A armadilha — o que o Copilot tende a fazer
 
-A tentação que podem sentir (e que o Copilot vai propor) é **decidir** qual prazo se aplica. Quando o output diz coisas como *"o prazo aplicável é o de 20 anos do Código Civil"* ou *"a propina já prescreveu"*, está a inventar uma posição que o Gabinete Jurídico não tomou.
+A tentação que podem sentir (e que o Copilot vai propor) é **decidir** se a dívida está prescrita. Quando o output diz coisas como *"a dívida prescreveu em dezembro de 2025"* ou *"o prazo continua suspenso, pelo que a cobrança é viável"*, está a inventar uma posição que o Gabinete Jurídico não tomou.
 
 **Não cedam.** O Copilot pode descrever a divergência mas não a resolver — ou estamos a comprometer a integridade do parecer.
 
 ### Versão modelo (preserva ambiguidade)
 
+Tente primeiro; só depois abra.
+
+<details markdown="1">
+<summary>Ver a versão modelo</summary>
+
 ```
-O Gabinete Jurídico analisou se ainda podemos cobrar a propina em atraso do dossier TS-2018/0421 (€1 050,00, vencida em Março de 2018).
+O Gabinete Jurídico analisou se ainda podemos cobrar a propina em atraso do dossier TS-2018/0421 (€1 050,00, do ano letivo 2017/2018).
 
-A resposta não é simples. Depende de qual prazo legal de prescrição se aplica — e essa questão ainda não está decidida uniformemente nos tribunais administrativos.
+Um ponto está assente desde 2015: as propinas prescrevem em 8 anos, porque são taxas — foi o Supremo Tribunal Administrativo que o uniformizou. O prazo começou a contar com a inscrição, em setembro de 2017.
 
-- Se aplicarmos o prazo da Lei Geral Tributária (8 anos), a propina já está prescrita e não podemos cobrar. Esta posição está a ganhar terreno na jurisprudência.
-- Se aplicarmos o prazo geral do Código Civil (20 anos), a propina ainda não prescreveu. Esta é a posição maioritária nos tribunais até hoje.
+A complicação é o acordo de pagamento que o estudante assinou em maio de 2020: pagou duas prestações e deixou de pagar, e o plano nunca foi formalmente encerrado. A lei diz que um plano de prestações autorizado suspende o prazo de prescrição. O que a lei não diz — e os tribunais ainda não uniformizaram — é por quanto tempo:
 
-O Supremo Tribunal Administrativo está a apreciar um recurso para uniformizar jurisprudência (desde Fevereiro de 2025). Até essa decisão, subsiste divergência.
+- Se a suspensão valeu apenas enquanto o estudante cumpriu (cerca de dois meses e meio), o prazo terminou no início de dezembro de 2025 — a dívida está prescrita e não podemos cobrar.
 
-As cartas registadas que enviámos em 2019 e 2020 não interromperam os prazos, à luz da doutrina maioritária — por não serem notificações judiciais.
+- Se a suspensão se mantém enquanto o plano não for formalmente encerrado, o prazo está parado — a dívida não está prescrita e ainda podemos cobrar.
 
-Recomendação do Gabinete: não instaurar execução fiscal até o STA decidir. Encaminhar o processo para abate à dívida ativa, conforme regulamento de cobrança.
+As cartas registadas de 2019 e 2020 não contam para esta contagem: não estão entre as causas de interrupção previstas na lei fiscal.
+
+Recomendação do Gabinete: não avançar para execução fiscal sem decisão superior. Se a opção for encerrar o caso, o caminho é a declaração de incobrabilidade prevista no regulamento de cobrança.
 ```
 
-Esta reformulação cumpre: linguagem clara em pt-pt, frases curtas em voz ativa, **as duas posições igualmente expostas** (preserva a ambiguidade), termos técnicos mantidos quando importam ("prescrição", "jurisprudência", "execução fiscal", "abate à dívida ativa"), e termos simplificados sem perder rigor ("podemos cobrar" em vez de "exigibilidade da obrigação").
+Esta reformulação cumpre: linguagem clara em pt-pt, frases curtas em voz ativa, **as duas leituras igualmente expostas** (preserva a ambiguidade), termos técnicos mantidos quando importam ("prescrição", "suspensão", "execução fiscal", "declaração de incobrabilidade"), e termos simplificados sem perder rigor ("o prazo está parado" em vez de "o prazo permanece suspenso"; "podemos cobrar" em vez de "a cobrança coerciva permanece juridicamente viável").
+
+</details>
 
 {: .discussao }
 > Três perguntas para discutir em sala:
 >
-> 1. *"Manteve a ambiguidade?"* — tipicamente o output tende a tomar uma das posições, e é esse o ponto a apanhar.
-> 2. *"Que termos técnicos foram mantidos? Quais simplificados?"* — mantidos: prescrição, jurisprudência. Simplificados (corretamente): "não podemos cobrar" em vez de "extinção da exigibilidade".
-> 3. *"Há simplificação que perdeu rigor?"* — possível: "não interromperam o prazo" é correto mas poderia manter ressalva "à luz da doutrina maioritária".
+> 1. *"Manteve a ambiguidade?"*
+>
+> 2. *"Que termos técnicos foram mantidos? Quais simplificados?"*
+>
+> 3. *"Há simplificação que perdeu rigor?"*
+
+<details markdown="1">
+<summary>Ver as respostas — depois de discutir</summary>
+
+1. Tipicamente o output decide — declara a dívida prescrita ou cobrável. É esse o ponto a apanhar: o parecer não decidiu.
+
+2. Mantidos: prescrição, suspensão, execução fiscal. Simplificados (corretamente): "deixou de pagar" em vez de "incumpriu as prestações subsequentes"; "o prazo está parado" em vez de "o prazo permanece suspenso".
+
+3. Possível: dizer só "o acordo suspendeu o prazo" sem explicar que a *duração* da suspensão é precisamente a questão em aberto — simplificação que engole a ambiguidade inteira.
+
+</details>
 
 > Linguagem clara **não é** simplificação. É comunicação rigorosa sem jargão desnecessário.
 
 Este prompt também merece a biblioteca — categoria **Reformular**, com a regra "preservar ambiguidades intencionais" registada no campo *Validação*.
+
+{: .note }
+> **Desafio para quem quer ir mais longe:** consegue fazer o Copilot *decidir* a questão **apesar** de o prompt o proibir? (Reformule o pedido até ele ceder.) E consegue fazê-lo *preservar* a ambiguidade **sem** a proibição explícita? Os dois exercícios ensinam o mesmo: a instrução de rigor é uma defesa — mas não é infalível, e a validação final é sempre sua.
 
 ## Validar em 30 segundos — os sinais e o método CCC {#validar-30-segundos}
 
@@ -291,7 +341,7 @@ Esta é a peça nomeada que vai viver com vocês para além da S04. Os **5 sinai
 
 ### Os 5 sinais de output problemático {#sinais-output}
 
-Há cinco sinais a apanhar em qualquer output do Copilot. **Três** aparecem em qualquer superfície (documentos, e-mails, transcrições). **Dois** são contextuais — dominam consoante o tipo de tarefa. A vista rápida:
+Na S3 usaram a checklist de validação de pesquisas — fontes que não existem, datas erradas, exemplos inventados são todos variantes do mesmo fenómeno. Hoje o catálogo especializa-se para documentos. Há cinco sinais a apanhar em qualquer output do Copilot: **três** aparecem em qualquer superfície (documentos, e-mails, transcrições) e **dois** são contextuais — dominam consoante o tipo de tarefa. A vista rápida:
 
 | # | Sinal | Exemplo numa linha | Deteção rápida |
 |---|---|---|---|
@@ -311,11 +361,11 @@ O detalhe de cada sinal fica a seguir — para ler com calma depois da sessão.
 
 **Sinal 3 — Sobre-simplificação.** O Copilot transforma afirmações cautelosas em categóricas — perde-se a nuance que dá rigor.
 
-> Original: *"O STA tem doutrina dominante mas não unanimidade, com decisão uniformizadora pendente..."*
+> Original: *"Não se conhece jurisprudência uniformizada sobre a extensão temporal da suspensão, registando-se decisões de primeira instância em ambos os sentidos..."*
 >
-> Output: *"O STA já decidiu que se aplica o prazo de 20 anos."*
+> Output: *"O prazo está suspenso, pelo que a dívida não prescreveu."*
 
-Inverteu a realidade. Deteção: comparar o tom categórico do output com a cautela do original.
+Transformou cautela em certeza. Deteção: comparar o tom categórico do output com a prudência do original.
 
 #### Contextuais (dominam em superfícies específicas)
 
@@ -392,10 +442,10 @@ Analogia: como pedires duas vezes a mesma redação a um redator humano — vai 
 
 ### Limitações específicas do Copilot no Word
 
-- **Só vê o documento aberto** + ficheiros que indicas explicitamente com `/`.
-- **Não acede a regulamentos em PDF** que não estão indexados no Graph.
-- **Pode confundir versões** — se há `Regulamento_v2.docx` e `Regulamento_v3.docx` no SharePoint, pode pegar na errada. Referenciar sempre o caminho completo no `/`.
-- **Não vê comentários** (Track Changes, comments) por defeito — para os incluir, tem de pedir explicitamente.
+- **Só vê o documento aberto** + ficheiros que indica explicitamente com `/`.
+- **Lê PDFs via `/`** desde que estejam no OneDrive/SharePoint do tenant; PDFs locais ou recebidos de fora não são acessíveis sem serem lá guardados.
+- **Pode confundir versões** — se há `Regulamento_v2.docx` e `Regulamento_v3.docx` no SharePoint, pode pegar na errada. Ao usar o `/`, confirme na lista de sugestões o nome e a localização do ficheiro — ou dê às versões nomes distintivos (data no nome, em vez de v2/v3).
+- **Não vê comentários** (Track Changes, comments) por defeito — para os incluir, tem de pedir explicitamente (capacidade recente, em rollout desde junho de 2026: pode ainda não estar disponível no vosso canal de atualização do Word).
 
 ## Avançado (worksheet) — orquestração multi-versão
 
@@ -414,17 +464,17 @@ A **abordagem profissional** usa prompt em cascata, três passos:
 
 1. **Extração** — pede ao Copilot uma matriz do regulamento com 3 colunas (artigo · tema · audiência relevante: Executiva / Técnica / Alunos).
 2. **Geração paralela** — para cada audiência, pede uma versão usando **a mesma matriz** como input, com restrições específicas de tom e comprimento.
-3. **Validação cruzada** — pede ao Copilot que compare as 3 versões e identifique inconsistências factuais.
+3. **Validação cruzada** — pede ao Copilot que compare as 3 versões e identifique inconsistências factuais. Atenção à circularidade: o mesmo modelo que gerou as versões pode confirmar os próprios erros, sobretudo os herdados da matriz do passo 1 — esta comparação é triagem, e a palavra final é do CCC e sua.
 
 **Mensagem central.** Sem matriz, há inconsistências entre versões que nem se apercebem. Com matriz, há coerência. Esta técnica permite entregar 3 versões em 15 minutos em vez das 2 horas que demorariam manualmente — mas obriga a disciplina de prompt.
 
-Esta técnica **não se ensina no Office**. É contribuição genuína desta formação. O detalhe completo (com prompts verbatim para cada passo) está no worksheet S04, secção Sub-B.
+A técnica é conhecida na literatura como **prompt chaining** (encadeamento de prompts) — aqui aplicada ao caso multi-audiência típico das IES. Os três prompts completos, prontos a colar, estão no worksheet S04, secção Sub-B.
 
 ## E na segunda-feira, com os seus documentos?
 
 O dataset da sessão é material de estufa — curto, limpo, sem dados pessoais. Os documentos reais não são. Três situações típicas e o que fazer:
 
-- **É um PDF.** O Copilot no Word não lê PDFs que não estão indexados no Graph: abra o PDF no Word (a conversão é automática) ou copie o texto para o Copilot Chat.
+- **É um PDF.** Com licença, o caminho mais simples é guardá-lo no OneDrive institucional e referenciá-lo com `/` — o Copilot lê PDFs aí guardados. Em alternativa, abra o PDF no Word (converte-o num documento editável; confirme o aviso de conversão) ou copie o texto para o Copilot Chat. **Atenção:** se o PDF for uma digitalização, o Word não faz OCR — abre como imagem, sem texto utilizável; é preciso passá-lo primeiro por OCR.
 
 - **É longo (dezenas de páginas).** Divida por capítulos ou secções e sumarize parte a parte, consolidando no fim — pedir tudo de uma vez multiplica as omissões silenciosas (Sinal 4).
 
@@ -440,7 +490,7 @@ A S04 foi a primeira sessão aplicada. Saímos com três coisas:
 
 A demonstração de pedir ambiguidades ao Copilot, no fim, é a técnica que vai voltar quando trabalharem com cadernos de encargos, pareceres e despachos antes de assinar.
 
-E os dois prompts de trabalho de hoje não se perdem: são as entradas seguintes da biblioteca pessoal da Sessão 3 (categorias **Resumir** e **Reformular**) — guarde-os com nome, "quando usar" e o CCC no campo *Validação*.
+E os prompts de trabalho de hoje não se perdem: são as entradas seguintes da biblioteca pessoal da Sessão 3 — o resumo executivo (categoria **Resumir**), a reformulação com ambiguidade preservada (**Reformular**) e a auditoria de omissões do worksheet (**Analisar**) — guardados com nome, "quando usar" e o CCC no campo *Validação*.
 
 > O Copilot é um redator júnior brilhante. Faz draft em 30 segundos. Mas não assina atos. Tu assinas — e a tua assinatura cobre o output dele.
 
@@ -448,7 +498,7 @@ E os dois prompts de trabalho de hoje não se perdem: são as entradas seguintes
 
 ### Para descarregar
 
-- [Worksheet S04 — Word, ofícios, despachos e pareceres (DOCX)]({{ site.baseurl }}/sessoes/sessao-04/Worksheet_S04_Word_Oficios.docx) — documento de trabalho para preencher durante a sessão
+- [Worksheet S04 — Word com Copilot: resumir, reformular e validar (DOCX)]({{ site.baseurl }}/sessoes/sessao-04/Worksheet_S04_Word_Oficios.docx) — documento de trabalho para preencher durante a sessão
 - [Dataset S04 — Regulamento + Parecer (DOCX)]({{ site.baseurl }}/sessoes/sessao-04/Dataset_S04_Documentos.docx) — os dois documentos: DOC-A regulamento de avaliação dos mestrados, DOC-B parecer sobre prescrição de propinas
 
 {: .note }

@@ -407,7 +407,7 @@ O Bloco 1 deu as ferramentas. O Bloco 2 vai pôr as mãos na massa.
 
 ## Próxima sessão
 
-Na Sessão 4, os formandos irão trabalhar com o Copilot no Word: sumarizar documentos longos, reformular para linguagem clara e redigir a partir de modelos institucionais.
+Na Sessão 4, os formandos irão trabalhar com o Copilot no Word: sumarizar documentos longos, reformular para linguagem clara e validar o output com critério jurídico.
 
 {: .note }
 > **Para quem não tem licença:** o Copilot dentro do Word exige licença — mas as sessões do Bloco 2 estão desenhadas para todos. As funcionalidades são demonstradas ao vivo em ecrã partilhado, e cada exercício tem um caminho paralelo no Copilot Chat gratuito (colar o texto e trabalhar a partir daí). O método é o mesmo; muda apenas o sítio onde se cola.
