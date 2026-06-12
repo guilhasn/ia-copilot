@@ -161,13 +161,20 @@ O Copilot tipicamente devolve algo do género:
 > - *Melhoria de classificação só é possível para classificações ≤14 valores e numa única vez por unidade curricular (art. 12.º).*
 > - *Reprovação em 3 inscrições consecutivas ativa apreciação do coordenador (art. 11.º).*
 
-**Há três coisas a apanhar neste output:**
+**Há três coisas a apanhar neste output.** Encontre-as primeiro — só depois abra:
+
+<details markdown="1">
+<summary>Ver as três falhas do output</summary>
 
 1. **Esqueceu a desistência (art. 8.º)** — passou despercebida. Um coordenador pode precisar dela.
+
 2. **Esqueceu a regra dos arredondamentos (art. 9.º).**
-3. **Esqueceu a taxa de inscrição em exame de recurso (art. 7.º/2).**
+
+3. **Esqueceu a taxa de inscrição na época de recurso (art. 7.º/2).**
 
 Estes são detalhes que tipicamente um coordenador vai precisar. O resumo dá 70% do trabalho — faltam os outros 30%.
+
+</details>
 
 ### Versão modelo (validada manualmente)
 
@@ -277,7 +284,7 @@ Vai usar Copilot para reformular o parecer em linguagem clara mantendo o rigor �
 
 ### A armadilha — o que o Copilot tende a fazer
 
-A tentação que podem sentir (e que o Copilot vai propor) é **decidir** se a dívida está prescrita. Quando o output diz coisas como *"a dívida prescreveu em dezembro de 2025"* ou *"o prazo continua suspenso, pelo que a cobrança é viável"*, está a inventar uma posição que o Gabinete Jurídico não tomou.
+A tentação que podem sentir (e que o Copilot vai propor) é **decidir** se a dívida está prescrita. Quando o output diz coisas como *"a dívida prescreveu em outubro de 2025"* ou *"o prazo continua suspenso, pelo que a cobrança é viável"*, está a inventar uma posição que o Gabinete Jurídico não tomou.
 
 **Não cedam.** O Copilot pode descrever a divergência mas não a resolver — ou estamos a comprometer a integridade do parecer.
 
@@ -289,13 +296,13 @@ Tente primeiro; só depois abra.
 <summary>Ver a versão modelo</summary>
 
 ```
-O Gabinete Jurídico analisou se ainda podemos cobrar a propina em atraso do dossier TS-2018/0421 (€1 050,00, do ano letivo 2017/2018).
+O Gabinete Jurídico analisou se ainda podemos cobrar a propina em atraso do dossier TS-2017/0421 (€840,00 por pagar, do ano letivo 2016/2017).
 
-Um ponto está assente desde 2015: as propinas prescrevem em 8 anos, porque são taxas — foi o Supremo Tribunal Administrativo que o uniformizou. O prazo começou a contar com a inscrição, em setembro de 2017.
+Um ponto está assente desde 2015: as propinas prescrevem em 8 anos, porque são taxas — foi o Supremo Tribunal Administrativo que o uniformizou. O prazo começou a contar no fim do ano letivo, em julho de 2017.
 
 A complicação é o acordo de pagamento que o estudante assinou em maio de 2020: pagou duas prestações e deixou de pagar, e o plano nunca foi formalmente encerrado. A lei diz que um plano de prestações autorizado suspende o prazo de prescrição. O que a lei não diz — e os tribunais ainda não uniformizaram — é por quanto tempo:
 
-- Se a suspensão valeu apenas enquanto o estudante cumpriu (cerca de dois meses e meio), o prazo terminou no início de dezembro de 2025 — a dívida está prescrita e não podemos cobrar.
+- Se a suspensão valeu apenas enquanto o estudante cumpriu (cerca de dois meses e meio), o prazo terminou em meados de outubro de 2025 — a dívida está prescrita e não podemos cobrar.
 
 - Se a suspensão se mantém enquanto o plano não for formalmente encerrado, o prazo está parado — a dívida não está prescrita e ainda podemos cobrar.
 
