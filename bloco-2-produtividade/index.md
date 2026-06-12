@@ -1,7 +1,6 @@
 ---
 title: "Bloco 2 · Produtividade Individual"
 layout: default
-published: false
 nav_order: 3
 has_children: true
 ---

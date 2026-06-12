@@ -1,7 +1,6 @@
 ---
 title: "S4 — Word"
 layout: default
-published: false
 parent: "Bloco 2 · Produtividade Individual"
 nav_order: 1
 ---
@@ -27,7 +26,7 @@ Mas o trabalho da Helena Albuquerque, Diretora de Serviços Académicos, tem efe
 > O Copilot é um redator júnior brilhante. Faz draft em 30 segundos. Mas não assina atos. Tu assinas — e a tua assinatura cobre o output dele.
 
 {: .note }
-> **Com e sem licença.** O Copilot **dentro do Word** (barra lateral, comando `/`) exige licença Microsoft 365 Copilot. Quem não tem licença faz os mesmos exercícios no **Copilot Chat** ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)): abra o dataset no Word, copie o texto do documento em causa (DOC-A ou DOC-B) e cole-o na conversa juntamente com o prompt, substituindo a linha *Fonte* por "o texto colado abaixo". Os defeitos típicos do output e o método de validação são exatamente os mesmos.
+> **Com e sem licença.** O Copilot **dentro do Word** (barra lateral, comando `/`) exige licença Microsoft 365 Copilot. **Sem licença**, os exercícios fazem-se no **Copilot Chat** ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)): abra o dataset no Word, copie **apenas o texto do documento em causa** (o DOC-A termina onde começa o DOC-B) e cole-o na conversa juntamente com o prompt, substituindo a linha *Fonte* por "o texto colado abaixo". **Com licença**, guarde primeiro o dataset descarregado no seu **OneDrive institucional** — o comando `/` só vê ficheiros aí indexados, e a indexação pode demorar uns minutos — ou, mais simples, abra o dataset no Word e trabalhe sobre o documento aberto, pedindo "usa apenas a secção DOC-A". Os defeitos típicos do output e o método de validação são exatamente os mesmos nos dois caminhos.
 
 ## Objetivos
 
@@ -76,7 +75,7 @@ Como nas restantes apps M365, o Copilot no Word permite referenciar ficheiros do
 /Regulamento de Avaliação dos Mestrados v2024
 ```
 
-Limites: até 10 ficheiros por referência; só funciona no modo *Trabalho* (com licença Copilot); os ficheiros têm de estar no SharePoint/OneDrive da organização.
+Limites: até 10 ficheiros por referência; só funciona no modo *Trabalho* (com licença Copilot); os ficheiros têm de estar no SharePoint/OneDrive da organização — um ficheiro descarregado para o Desktop **não aparece** no `/` até ser guardado no OneDrive institucional e indexado (pode demorar uns minutos).
 
 *Fontes Microsoft:* [Create a summary of your document with Copilot in Word](https://support.microsoft.com/en-us/office/create-a-summary-of-your-document-with-copilot-in-word-79bb7a0a-3bf7-41fe-8c09-56f855b669bf) · [Draft and add content with Copilot in Word](https://support.microsoft.com/en-us/office/draft-and-add-content-with-copilot-in-word-069c91f0-9e42-4c9a-bbce-fddf5d581541)
 
@@ -127,7 +126,7 @@ A sessão arranca com duas demonstrações ao vivo, em direto no Copilot. O obje
 
 **Parte B — Reformulação do parecer com ambiguidade.** Vão observar uma reformulação ao vivo do *Parecer sobre prescrição de propinas* (DOC-B) em linguagem clara. A armadilha: o parecer tem **ambiguidade deliberada entre o prazo de 8 anos (LGT) e 20 anos (CC)** que o STA ainda não uniformizou. O Copilot tipicamente *escolhe uma das posições* — é exatamente o que **não pode** acontecer. Vão ver o Copilot derrapar e vão ver como se corrige.
 
-Nos três casos que se seguem, passam de observadores a praticantes — fazem o trabalho com as próprias mãos.
+Nos dois casos que se seguem, passam de observadores a praticantes — fazem o trabalho com as próprias mãos.
 
 ## Caso #1 — Sumarizar regulamento com citação validada
 
@@ -137,7 +136,7 @@ A Helena Albuquerque tem reunião amanhã, 16-06-2026, com os 4 coordenadores de
 
 A Helena vai entregar a cada coordenador um resumo executivo de 1 página. Tem 30 minutos. Vai usar Copilot — mas a versão final é dela.
 
-📎 **Para fazeres este exercício, descarrega o dataset:** [Dataset_S04_Documentos.docx]({{ site.baseurl }}/sessoes/sessao-04/Dataset_S04_Documentos.docx) — abre no Word, vai à secção DOC-A.
+📎 **Para fazer este exercício, descarregue o dataset:** [Dataset_S04_Documentos.docx]({{ site.baseurl }}/sessoes/sessao-04/Dataset_S04_Documentos.docx) — abra no Word e vá à secção DOC-A (se for colar no Copilot Chat, copie apenas essa secção).
 
 ### Prompt de trabalho
 
@@ -168,7 +167,7 @@ O Copilot tipicamente devolve algo do género:
 2. **Esqueceu a regra dos arredondamentos (art. 9.º).**
 3. **Esqueceu a taxa de inscrição em exame de recurso (art. 7.º/2).**
 
-Estes são detalhes que tipicamente um coordenador vai precisar. O resumo dá 70% do trabalho — falta os outros 30%.
+Estes são detalhes que tipicamente um coordenador vai precisar. O resumo dá 70% do trabalho — faltam os outros 30%.
 
 ### Versão modelo (validada manualmente)
 
@@ -189,13 +188,43 @@ Esta versão cumpre: estrutura 1 parágrafo + 7 bullets, citação dos artigos c
 {: .discussao }
 > Três perguntas para discutir em sala:
 >
-> 1. *"Que pontos do regulamento ficaram de fora deste resumo?"* — tipicamente ficam de fora a desistência (art. 8.º), o arredondamento (art. 9.º), e os estatutos especiais.
+> 1. *"Que pontos do regulamento ficaram de fora deste resumo?"* — tipicamente ficam de fora a desistência (art. 8.º), o arredondamento (art. 9.º) e a taxa de inscrição em exame de recurso (art. 7.º/2).
 > 2. *"Algum bullet está formalmente incorreto?"* — sim, na maioria das execuções: aprovação não exige só ≥10 valores; exige cumulativamente ≥10 + ≥75% assiduidade (art. 3.º/2 + art. 10.º — são duas condições, não uma).
 > 3. *"Algum termo deslizou para inglês ou pt-BR?"* — variável entre execuções.
 
 > O Copilot deu-vos 70% do trabalho em 10 segundos. Os outros 30% são vocês. Sumarizar não é entregar. É entregar **depois de validar**.
 
 Prompt validado? Guarde-o na biblioteca pessoal da Sessão 3 — categoria **Resumir** —, com o método CCC no campo *Validação*.
+
+## Demonstração curta — pedir ao Copilot que identifique ambiguidades
+
+Esta é a peça de impacto da sessão — a pergunta que quase ninguém pensa em fazer. **Não é um terceiro caso prático**; é uma demonstração de 8 minutos integrada no exercício guiado, depois de terem feito o resumo do Caso #1.
+
+### O prompt
+
+Depois de produzir o resumo, correr este follow-up **na mesma conversa** (sem licença, isto é essencial: numa conversa nova o Copilot já não tem o texto do DOC-A):
+
+> *Agora lê o regulamento na íntegra e identifica 5 pontos onde o texto deixa margem para interpretação ou omite tratamento de casos previsíveis.*
+>
+> *Para cada ponto: cita o artigo e número exato; descreve a ambiguidade em 1 frase; sugere que aplicação prática poderia gerar conflito; propõe redação alternativa que resolveria.*
+>
+> *Devolve em tabela Markdown.*
+
+Em ~30 segundos, o Copilot devolve uma tabela com 5 ambiguidades concretas.
+
+### Exemplos típicos do que aparece
+
+Não é exaustivo nem garantido — o Copilot identifica tipicamente 4-5 das 6 ambiguidades reais do DOC-A. Três do tipo que costuma encontrar:
+
+- **Aprovação vs. assiduidade** (art. 3.º/2 vs art. 10.º) — aluno com 9 valores e 70% assiduidade: reprova ou aprova?
+- **Estatutos cumulativos** (art. 5.º) — aluno-atleta-trabalhador em jogo internacional na semana de exame: que tratamento?
+- **"3 inscrições consecutivas"** (art. 11.º/2) — anos letivos seguidos? qualquer época? inclui melhorias?
+
+### A frase a fixar
+
+> Pedir ao Copilot *"identifica ambiguidades"* é a pergunta mais barata e mais rentável que vão fazer este ano.
+
+A técnica aplica-se a regulamentos, pareceres, cadernos de encargos, despachos antes de assinar.
 
 ## Caso #2 — Reformular parecer jurídico preservando ambiguidade
 
@@ -205,7 +234,7 @@ A Helena recebeu hoje do Gabinete Jurídico o *Parecer sobre prescrição de pro
 
 Vai usar Copilot para reformular o parecer em linguagem clara mantendo o rigor — em particular, **a ambiguidade entre os prazos de 8 e 20 anos não deve ser resolvida**, porque o parecer não a resolve. O resumo tem de honrar a complexidade.
 
-📎 **Para fazeres este exercício, descarrega o dataset:** [Dataset_S04_Documentos.docx]({{ site.baseurl }}/sessoes/sessao-04/Dataset_S04_Documentos.docx) — abre no Word, vai à secção DOC-B.
+📎 **Para fazer este exercício, descarregue o dataset:** [Dataset_S04_Documentos.docx]({{ site.baseurl }}/sessoes/sessao-04/Dataset_S04_Documentos.docx) — abra no Word e vá à secção DOC-B (se for colar no Copilot Chat, copie apenas essa secção).
 
 {: .important }
 > **DOC-B é fictício — produzido para fins pedagógicos.** Num caso real, um parecer jurídico identificável (com número de dossier, valor, datas, identificação de estudante) **não deve ser colado tal e qual no Copilot** sem avaliação prévia de minimização de dados pessoais e de legitimidade funcional. Para o exercício da sessão, o dataset foi construído sem dados pessoais identificáveis.
@@ -256,49 +285,29 @@ Esta reformulação cumpre: linguagem clara em pt-pt, frases curtas em voz ativa
 
 Este prompt também merece a biblioteca — categoria **Reformular**, com a regra "preservar ambiguidades intencionais" registada no campo *Validação*.
 
-## Demonstração curta — pedir ao Copilot que identifique ambiguidades
-
-Esta é a peça de impacto da sessão — a pergunta que quase ninguém pensa em fazer. **Não é um terceiro caso prático**; é uma demonstração de 8 minutos integrada no exercício guiado, depois de terem feito o resumo do Caso #1.
-
-### O prompt
-
-Depois de produzir o resumo, correr este follow-up:
-
-> *Agora lê o regulamento na íntegra e identifica 5 pontos onde o texto deixa margem para interpretação ou omite tratamento de casos previsíveis.*
->
-> *Para cada ponto: cita o artigo e número exato; descreve a ambiguidade em 1 frase; sugere que aplicação prática poderia gerar conflito; propõe redação alternativa que resolveria.*
->
-> *Devolve em tabela Markdown.*
-
-Em ~30 segundos, o Copilot devolve uma tabela com 5 ambiguidades concretas.
-
-### Exemplos típicos do que aparece
-
-Não é exaustivo nem garantido — o Copilot identifica tipicamente 4-5 das 6 ambiguidades reais do DOC-A. Três do tipo que costuma encontrar:
-
-- **Aprovação vs. assiduidade** (art. 3.º/2 vs art. 10.º) — aluno com 9 valores e 70% assiduidade: reprova ou aprova?
-- **Estatutos cumulativos** (art. 5.º) — aluno-atleta-trabalhador em jogo internacional na semana de exame: que tratamento?
-- **"3 inscrições consecutivas"** (art. 11.º/2) — anos letivos seguidos? qualquer época? inclui melhorias?
-
-### A frase a fixar
-
-> Pedir ao Copilot *"identifica ambiguidades"* é a pergunta mais barata e mais rentável que vão fazer este ano.
-
-A técnica aplica-se a regulamentos, pareceres, cadernos de encargos, despachos antes de assinar.
-
 ## Validar em 30 segundos — os sinais e o método CCC {#validar-30-segundos}
 
 Esta é a peça nomeada que vai viver com vocês para além da S04. Os **5 sinais** descrevem *o que detetar*. O **método CCC** descreve *como detetar em 30 segundos*.
 
 ### Os 5 sinais de output problemático {#sinais-output}
 
-Há cinco sinais a apanhar em qualquer output do Copilot. **Três** aparecem em qualquer superfície (documentos, e-mails, transcrições). **Dois** são contextuais — dominam consoante o tipo de tarefa.
+Há cinco sinais a apanhar em qualquer output do Copilot. **Três** aparecem em qualquer superfície (documentos, e-mails, transcrições). **Dois** são contextuais — dominam consoante o tipo de tarefa. A vista rápida:
+
+| # | Sinal | Exemplo numa linha | Deteção rápida |
+|---|---|---|---|
+| 1 | Alucinação factual | Cita um "art. 12.º-A" que não existe | Confirmar cada artigo contra o índice |
+| 2 | Mistura de línguas | *"a inscription em compliance com a deadline"* | Leitura atenta; pedir "português europeu" no prompt |
+| 3 | Sobre-simplificação | Cauteloso no original, categórico no resumo | Comparar o tom do output com o do original |
+| 4 | Omissão silenciosa | Cita o art. 3.º mas cala o n.º 3 (a exceção) | Verificar os subníveis dos artigos citados |
+| 5 | Sycophancy (bajulação) | O output espelha o ângulo de quem perguntou | Pedir "registo neutro institucional" |
+
+O detalhe de cada sinal fica a seguir — para ler com calma depois da sessão.
 
 #### Universais (em qualquer tarefa)
 
-**Sinal 1 — Alucinação de algo factual.** O Copilot inventa algo verificável: referências de artigos, prazos, intervenientes, números. Em documentos: *"...nos termos do art. 12.º-A do Regulamento..."* — não existe nenhum 12.º-A. Deteção: confirmar contra a fonte (índice do regulamento, citações numeradas do Summarize, timestamp da transcrição). **Tempo: poucos segundos.** É o mais visível.
+**Sinal 1 — Alucinação de algo factual.** O Copilot inventa algo verificável: referências de artigos, prazos, intervenientes, números. Em documentos: *"...nos termos do art. 12.º-A do Regulamento..."* — não existe nenhum 12.º-A. Deteção: confirmar contra a fonte (neste caso, o índice do regulamento). **Tempo: poucos segundos.** É o mais visível.
 
-**Sinal 2 — Code-switching.** O output desliza para pt-BR ou inglês em registos formais: *"O regulamento estabelece que a inscription em compliance com a deadline..."*. Comum quando não pedimos explicitamente "português europeu" no prompt. Deteção: leitura atenta. Mitigação: cláusula explícita no prompt.
+**Sinal 2 — Mistura de línguas (*code-switching*).** O output desliza para pt-BR ou inglês em registos formais: *"O regulamento estabelece que a inscription em compliance com a deadline..."*. Comum quando não pedimos explicitamente "português europeu" no prompt. Deteção: leitura atenta. Mitigação: cláusula explícita no prompt.
 
 **Sinal 3 — Sobre-simplificação.** O Copilot transforma afirmações cautelosas em categóricas — perde-se a nuance que dá rigor.
 
@@ -328,7 +337,7 @@ Tudo o que está é **verdade**. Mas omitiu o n.º 3 — exatamente a regra que 
 
 Deteção: para cada artigo citado, verificar se tem subníveis (n.º 1, 2, 3...). Se sim, ver se o resumo cita o número específico ("art. 3.º n.º 1") ou só o artigo ("art. 3.º"). Se cita só o artigo sem número, **provavelmente** está a omitir números seguintes.
 
-**Sinal 5 — Sycophancy** *(mais frequente em redação assistida — e-mails, drafts, propostas).* O Copilot espelha o ângulo do prompt. Se enviesarem a pergunta, viesam o output. É o tema central da Sessão 5; em documentos longos é menos crítico do que em comunicação institucional. Mitigação rápida: pedir explicitamente *"em registo neutro institucional, sem caracterizar intenções"*.
+**Sinal 5 — Sycophancy (bajulação)** *(mais frequente em redação assistida — e-mails, drafts, propostas).* O Copilot espelha o ângulo do prompt. Se enviesarem a pergunta, viesam o output. É o tema central da Sessão 5; em documentos longos é menos crítico do que em comunicação institucional. Mitigação rápida: pedir explicitamente *"em registo neutro institucional, sem caracterizar intenções"*.
 
 {: .important }
 > **Cinco coisas que o Copilot faz mal. Em documentos longos, a pior é a que não vês — a omissão silenciosa de subníveis.**
@@ -361,19 +370,19 @@ Em 30 segundos, o CCC apanha **três dos cinco sinais**: artigos inventados (Sin
 
 ### O RAG sobre o tenant institucional
 
-O Microsoft 365 Copilot **não trabalha no vácuo**. Quando referencias um ficheiro com `/`, o Copilot:
+O Microsoft 365 Copilot **não trabalha no vácuo**. Quando referencia um ficheiro com `/`, o Copilot:
 
 1. Faz **retrieval** — pesquisa nos índices do Microsoft Graph (SharePoint, OneDrive, Outlook, Teams) por conteúdo relevante.
-2. Faz **augmentation** — combina o que recuperou com o teu prompt.
+2. Faz **augmentation** — combina o que recuperou com o seu prompt.
 3. Faz **generation** — produz a resposta usando esse contexto.
 
-Analogia: como uma biblioteca onde só vês os livros que tens cartão para entrar. **O Copilot trabalha com informação a que tu tens permissões de acesso**, respeitando controlos e políticas do Microsoft 365 — etiquetas de sensibilidade, permissões de pastas, políticas DLP. O problema típico não é o Copilot ver o que não devia; é estar a ver documentos a que tu próprio já tinhas acesso indevido por *oversharing* prévio do SharePoint. Antes de adoção em larga escala, esta é a primeira coisa a resolver.
+Analogia: como uma biblioteca onde só vê os livros para que tem cartão. **O Copilot trabalha com a informação a que o utilizador tem permissões de acesso**, respeitando controlos e políticas do Microsoft 365 — etiquetas de sensibilidade, permissões de pastas, políticas DLP. O problema típico não é o Copilot ver o que não devia; é estar a ver documentos a que o próprio utilizador já tinha acesso indevido por *oversharing* prévio do SharePoint. Antes de adoção em larga escala, esta é a primeira coisa a resolver.
 
 ### O context window
 
 O Copilot tem limites quanto à quantidade de texto que consegue considerar numa única interação. Em documentos longos, pode dar maior peso a certas partes e omitir outras sem aviso.
 
-Analogia: como uma mesa onde cabem só algumas dezenas de páginas em simultâneo. Se trazes mais, não consegues pôr tudo. Em regulamentos extensos, boa prática: **dividir por capítulos ou secções e sumarizar parte a parte**, depois consolidar. Esta é também a recomendação oficial da Microsoft para documentos longos.
+Analogia: como uma mesa onde cabem só algumas dezenas de páginas em simultâneo. Se trouxer mais, não cabe tudo. Em regulamentos extensos, boa prática: **dividir por capítulos ou secções e sumarizar parte a parte**, depois consolidar. Esta é também a recomendação oficial da Microsoft para documentos longos.
 
 ### Não-determinismo
 
@@ -386,7 +395,7 @@ Analogia: como pedires duas vezes a mesma redação a um redator humano — vai 
 - **Só vê o documento aberto** + ficheiros que indicas explicitamente com `/`.
 - **Não acede a regulamentos em PDF** que não estão indexados no Graph.
 - **Pode confundir versões** — se há `Regulamento_v2.docx` e `Regulamento_v3.docx` no SharePoint, pode pegar na errada. Referenciar sempre o caminho completo no `/`.
-- **Não vê comentários** (Track Changes, comments) por defeito — para os incluir, tens de pedir explicitamente.
+- **Não vê comentários** (Track Changes, comments) por defeito — para os incluir, tem de pedir explicitamente.
 
 ## Avançado (worksheet) — orquestração multi-versão
 
@@ -411,6 +420,16 @@ A **abordagem profissional** usa prompt em cascata, três passos:
 
 Esta técnica **não se ensina no Office**. É contribuição genuína desta formação. O detalhe completo (com prompts verbatim para cada passo) está no worksheet S04, secção Sub-B.
 
+## E na segunda-feira, com os seus documentos?
+
+O dataset da sessão é material de estufa — curto, limpo, sem dados pessoais. Os documentos reais não são. Três situações típicas e o que fazer:
+
+- **É um PDF.** O Copilot no Word não lê PDFs que não estão indexados no Graph: abra o PDF no Word (a conversão é automática) ou copie o texto para o Copilot Chat.
+
+- **É longo (dezenas de páginas).** Divida por capítulos ou secções e sumarize parte a parte, consolidando no fim — pedir tudo de uma vez multiplica as omissões silenciosas (Sinal 4).
+
+- **Tem dados pessoais** (nomes de estudantes, números de dossier, valores individuais). Antes de colar seja onde for: substitua nomes por papéis ("a estudante", "o requerente"), remova números de processo e datas, e pergunte-se se a tarefa funciona sem esses dados. Em dúvida, é a [Matriz Semáforo da S1]({% link bloco-1-enquadramento/sessao-01.md %}) a decidir — não o prazo.
+
 ## Síntese da sessão
 
 A S04 foi a primeira sessão aplicada. Saímos com três coisas:
@@ -433,7 +452,7 @@ E os dois prompts de trabalho de hoje não se perdem: são as entradas seguintes
 - [Dataset S04 — Regulamento + Parecer (DOCX)]({{ site.baseurl }}/sessoes/sessao-04/Dataset_S04_Documentos.docx) — os dois documentos: DOC-A regulamento de avaliação dos mestrados, DOC-B parecer sobre prescrição de propinas
 
 {: .note }
-> Alguns materiais podem estar protegidos por password. A password é fornecida pelo formador.
+> Se algum material pedir password, ela é fornecida pelo formador (o dataset desta sessão abre sem password).
 
 ### Para aprofundar
 
@@ -442,7 +461,7 @@ E os dois prompts de trabalho de hoje não se perdem: são as entradas seguintes
 - Microsoft Support — [Draft and add content with Copilot in Word](https://support.microsoft.com/en-us/office/draft-and-add-content-with-copilot-in-word-069c91f0-9e42-4c9a-bbce-fddf5d581541)
 - [Microsoft 365 Copilot Prompts Gallery](https://m365.cloud.microsoft/copilot-prompts) — galeria oficial
 - [Legal Scenario Library — Microsoft Adoption](https://adoption.microsoft.com/en-us/scenario-library/legal/) — contexto US corporate, complementar
-- [LabX — Centro para a Inovação do Setor Público](https://www.arte.gov.pt/centro-para-a-inovacao-do-setor-publico-labx/) — sucessor do LabX em labx.gov.pt; trabalho da AMA em simplificação de linguagem
+- [LabX — Centro para a Inovação do Setor Público](https://www.arte.gov.pt/centro-para-a-inovacao-do-setor-publico-labx/) — trabalho em simplificação de linguagem nos serviços públicos
 - [Plain Language Action Network (PLAIN)](https://www.plainlanguage.gov/guidelines/) — referência internacional de princípios de linguagem clara
 - [Referências Microsoft]({% link recursos/referencias-microsoft.md %}) — todos os recursos oficiais
 
