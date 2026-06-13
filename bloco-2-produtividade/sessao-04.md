@@ -153,7 +153,7 @@ O prompt de trabalho não nasce pronto: constrói-se degrau a degrau, acrescenta
 | **Melhor** | + **Fonte** | *"…em particular os artigos sobre avaliação contínua e melhoria de classificação."* |
 | **Ótimo** | + **Expectativas** | *"…em 5 a 7 pontos, com o número do artigo em cada um, em português europeu, sem simplificar os termos técnicos."* |
 
-Corra os quatro na sequência e veja o resumo a ganhar foco a cada degrau (o exercício guiado completo — com a validação CCC e a compilação de várias fontes — está em **[Exercícios → A Escada de Prompts]({% link exercicios/s04-escada-de-prompts.md %})**). O último degrau é o **prompt de trabalho** desta tarefa:
+Corra os quatro na sequência e veja o resumo a ganhar foco a cada degrau (a mesma escada, reproduzida do módulo oficial da Microsoft para Word, PowerPoint, Excel, Teams, Outlook e Copilot Chat, está no exercício **[Resumir e simplificar com o Copilot]({% link exercicios/s04-escada-de-prompts.md %})**). O último degrau é o **prompt de trabalho** desta tarefa:
 
 > *Objetivo: Produz um resumo executivo do Regulamento de Avaliação dos Mestrados da UVV: 1 parágrafo de abertura (3-4 linhas) + 5 a 7 pontos-chave em bullets. Cita o número do artigo em cada ponto. Mantém os termos jurídicos técnicos (não simplifiques "audiência prévia", "regime especial", "época especial").*
 >
