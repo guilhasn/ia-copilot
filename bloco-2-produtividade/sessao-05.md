@@ -1,7 +1,6 @@
 ---
 title: "S5 — Outlook e Teams"
 layout: default
-published: false
 parent: "Bloco 2 · Produtividade Individual"
 nav_order: 2
 ---
@@ -44,7 +43,7 @@ No final da sessão, os formandos deverão ser capazes de:
 - **detetar e neutralizar sycophancy** — o output que espelha o ângulo do prompt — pedindo registo neutro explícito;
 - redigir uma resposta institucional mantendo posições em conflito mapeadas, sem que o Copilot decida entre elas;
 - extrair uma tabela de ações/responsáveis/prazos de uma transcrição de reunião, com **validação obrigatória por timestamp**;
-- aplicar o princípio **MAPEIA, NÃO DECIDAS** como regra-mãe das três tarefas.
+- aplicar a regra de **mapear sem decidir** às três tarefas.
 
 ## Ligação às sessões anteriores
 
@@ -250,6 +249,9 @@ Depois, **colem no chat da sessão a frase mais carregada do vosso output** — 
 >
 > 2. *"Se o resumo do grupo 1 fosse vazado com o nome da Catarina, que efeito teria na relação dela com o EPD?"*
 
+{: .note }
+> **Se os três retratos saírem parecidos:** é também uma lição. Os modelos mais recentes resistem melhor ao enquadramento tendencioso — mas raramente o eliminam. Olhem para os **verbos** (o grupo 1 escreveu "complica", "exige"? o grupo 3 escreveu "conclui", "recomenda"?). E a diferença que cá não apareceu hoje aparece amanhã, com um prompt mais carregado e um colega menos atento.
+
 A lição numa frase: **a neutralidade não é default. É escolha** — e escreve-se no prompt. Uma nota de prudência que fica para o mundo real: prompts que pedem juízos sobre colegas identificados ("nível de urgência percebido", "quem está a bloquear") são admissíveis aqui porque o dataset é ficção — com pessoas reais, isso aproxima-se de perfilagem, e a Matriz Semáforo manda parar.
 
 ## Caso #2 — Redigir o e-mail ao Reitor
@@ -305,7 +307,7 @@ Esta versão cumpre: 250 palavras, tom institucional, **as duas posições igual
 
 </details>
 
-### A armadilha — MAPEIA, NÃO DECIDAS em ação
+### A armadilha — em ação
 
 O output tipicamente **propõe setembro** como adquirido, porque foi o pedido inicial do Reitor — sycophancy estrutural: o prompt nasce de quem quer setembro. O re-prompt que corrige:
 
@@ -474,7 +476,7 @@ Os restantes, em modo comunicação:
 
 ## Disciplina de validação — checklist por superfície {#disciplina-validacao}
 
-A S4 deu o **método CCC** para documentos. A S5 não inventa acrónimo novo: o princípio **MAPEIA, NÃO DECIDAS** atravessa as três tarefas, e a validação é uma checklist curta por artefacto.
+A S4 deu o **método CCC** para documentos. A S5 não inventa acrónimo novo: a mesma regra de mapear sem decidir atravessa as três tarefas, e a validação é uma checklist curta por artefacto.
 
 **Quando sumarizam uma thread:**
 
