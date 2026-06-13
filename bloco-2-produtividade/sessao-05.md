@@ -16,24 +16,35 @@ nav_order: 2
 - **Duração:** 2 horas
 - **Modalidade:** Online síncrona
 - **Bloco:** 2 · Produtividade Individual
-- **Casos operacionais:** #1 Sumarizar thread no Outlook + descobrir silenciados · #2 Redigir e-mail ao Reitor (Help me reply + Coaching) · #3 Tabela de ações da reunião no Teams (Intelligent recap)
+- **Casos operacionais:** #1 Sumarizar thread + descobrir silenciados · #2 Redigir e-mail ao Reitor · #3 Tabela de ações da reunião (validação por timestamp)
+
+## Para começar — o que trouxeram da S4
+
+Dois minutos antes de matéria nova: **votem no chat** — usaram o CCC esta semana num documento real? (1 = sim, 2 = ainda não). E quem tiver um caso de uso de Word que valha a pena partilhar, uma linha no chat. O melhor uso descoberto por um colega vale mais do que qualquer exemplo preparado.
 
 ## Ideia central
 
 A S05 trabalha o caso mais comum do dia-a-dia em IES: chega uma cadeia de e-mails que cresceu durante uma semana, ou a transcrição de uma reunião com decisões dispersas, e tem-se uma hora para sintetizar, propor próximos passos, e fechar um follow-up.
 
-Esta sessão acompanha uma nova persona: **Catarina Pires**, Técnica Superior de Recursos Humanos. Vão ver a Catarina a aplicar os mesmos princípios da S04 num contexto diferente — comunicação institucional em vez de documentos longos. A Helena volta na S08.
+Esta sessão acompanha a **Catarina Pires**, Técnica Superior de Recursos Humanos — uma das três personas que conhecem desde a S1. Vão vê-la aplicar os princípios da S4 num contexto diferente: comunicação institucional em vez de documentos longos. A Helena volta na S8.
 
 > O Copilot é um redator júnior brilhante. Faz draft em 30 segundos. Mas não decide. **MAPEIA, NÃO DECIDAS.**
+
+{: .note }
+> **Com e sem licença.** Os botões nativos desta sessão — *Summary by Copilot* no Outlook, *Draft* e *Coaching* nos rascunhos, separador *Recap* no Teams — exigem licença Microsoft 365 Copilot (o *Recap* aceita também Teams Premium) e trabalham sobre a vossa caixa de correio e reuniões reais, não sobre ficheiros. Por isso, **vão vê-los nas demonstrações** (na caixa do formador) e **os exercícios correm no Copilot Chat** ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)), igual para todos: carreguem o dataset com **"+ Adicionar conteúdo"** (ou colem a secção em causa) e usem os prompts equivalentes que esta página dá. Quem tem licença pode repetir depois os botões nativos na sua caixa real — o método de validação é exatamente o mesmo nos dois caminhos.
+
+{: .important }
+> **Antes de colarem comunicação real seja onde for.** O dataset desta sessão é 100% fictício — é por isso que pode ser submetido por inteiro. Com material real, a regra muda: threads com matéria sindical ou da Comissão de Trabalhadores estão na **zona vermelha da Matriz Semáforo** (nunca submeter o texto literal — referir por súmula); e-mails com dados pessoais exigem **minimização** antes de qualquer submissão (RGPD art. 5.º/1-c); e, **sem licença**, o que colam no Copilot Chat sai do contexto da vossa caixa de correio — mais uma razão para colar só o mínimo. Os prompts desta sessão treinam precisamente esse gesto: tratar a comunicação sindical por súmula, mesmo em ficção.
 
 ## Objetivos
 
 No final da sessão, os formandos deverão ser capazes de:
 
-- sumarizar uma thread de e-mails complexa no Outlook usando a funcionalidade nativa **Summarize by Copilot**, e fazer o follow-up que identifica intervenientes silenciados;
-- redigir uma resposta institucional com **Help me reply** + **Coaching by Copilot**, mantendo posições em conflito mapeadas sem que o Copilot decida entre elas;
-- extrair uma tabela de ações/responsáveis/prazos da transcrição automática de uma reunião no Teams usando **Intelligent recap**, com validação obrigatória por timestamp;
-- aplicar o princípio operacional **MAPEIA, NÃO DECIDAS** nas três tarefas como regra-mãe da sessão.
+- sumarizar uma thread de e-mails complexa com citações rastreáveis, e fazer o follow-up que identifica **intervenientes silenciados**;
+- **detetar e neutralizar sycophancy** — o output que espelha o ângulo do prompt — pedindo registo neutro explícito;
+- redigir uma resposta institucional mantendo posições em conflito mapeadas, sem que o Copilot decida entre elas;
+- extrair uma tabela de ações/responsáveis/prazos de uma transcrição de reunião, com **validação obrigatória por timestamp**;
+- aplicar o princípio **MAPEIA, NÃO DECIDAS** como regra-mãe das três tarefas.
 
 ## Ligação às sessões anteriores
 
@@ -45,31 +56,32 @@ No final da sessão, os formandos deverão ser capazes de:
 | S4 | **Validar com critério jurídico** (Word) |
 | **S5** | **Mapear sem decidir** (Outlook + Teams) |
 
-A S05 retoma os [5 sinais]({% link bloco-2-produtividade/sessao-04.md %}#sinais-output) da S04 (com **sycophancy** a dominar em comunicação assistida), mantém o [método CCC]({% link bloco-2-produtividade/sessao-04.md %}#metodo-ccc) aplicável a documentos longos, e introduz **MAPEIA, NÃO DECIDAS** como princípio específico para tarefas de comunicação.
+A S05 retoma os [5 sinais]({% link bloco-2-produtividade/sessao-04.md %}#sinais-output) da S4 — com o **Sinal 5, a sycophancy, como tema central**, tal como prometido — e mantém o [método CCC]({% link bloco-2-produtividade/sessao-04.md %}#metodo-ccc) para documentos longos. A validação por timestamp que vão aprender no Caso #3 é o CCC das reuniões.
 
 ## Programa
 
-1. Apresentação da Catarina Pires — nova persona da sessão (DRH)
-2. Demonstração ao vivo — Outlook (sumarização), Teams (extração de ações), como o Copilot derrapa
-3. MAPEIA, NÃO DECIDAS — o conceito-chave da sessão
+1. Para começar — debrief da semana (CCC + casos de uso)
+2. Demonstração ao vivo — Outlook e Teams nativos, e como o Copilot derrapa
+3. MAPEIA, NÃO DECIDAS — o conceito-chave
 4. Caso #1 — sumarizar thread e descobrir silenciados
-5. Caso #2 — redigir e-mail ao Reitor
-6. Caso #3 — tabela de ações no Teams e follow-up
-7. Consolidação — 5 sinais de output e disciplina de validação
-8. Reflexão crítica — três perguntas; a última sobre transcrição
+5. O espelho — exercício de sycophancy (hands-on)
+6. Caso #2 — redigir e-mail ao Reitor
+7. Caso #3 — tabela de ações da reunião e follow-up
+8. Consolidação — 5 sinais e disciplina de validação
+9. Reflexão crítica — incluindo o caso do Pedro (votação A/B/C)
 
 ## O Copilot no Outlook e no Teams
 
-A S05 trabalha **duas apps M365** com capacidades nativas de Copilot bem documentadas pela Microsoft.
+A S05 trabalha **duas apps M365** com capacidades nativas de Copilot bem documentadas.
 
 ### No Outlook
 
 | Capacidade | O que faz |
 |---|---|
-| **Summarize by Copilot** | Botão nativo no topo de uma thread; gera resumo com bullets e citações numeradas que apontam para os e-mails originais |
-| **Help me write / Help me reply** | Redige draft completo de e-mail ou resposta com base no contexto da thread + informação organizacional |
-| **Coaching by Copilot** | Avalia drafts em tom, sentimento e clareza; sugere melhorias aplicáveis em bloco ("Apply all suggestions") |
-| **Chat with Copilot in Outlook** | Pesquisa transversal à caixa de correio ("a quem espero resposta?", "que e-mails ainda não respondi?") |
+| **Summary by Copilot** | Botão no topo de uma thread; gera resumo com citações numeradas que apontam para os e-mails originais |
+| **Draft with Copilot** | Redige rascunho de e-mail ou resposta a partir de um prompt, com afinação ("mais curto", "mais formal") |
+| **Coaching by Copilot** | No rascunho, ícone do Copilot → *Coaching*: avalia tom, sentimento e clareza e sugere melhorias |
+| **Chat com o Copilot** | Pesquisa transversal à caixa de correio ("a quem espero resposta?", "que e-mails ainda não respondi?") |
 
 *Fontes Microsoft:* [Summarize an email thread](https://support.microsoft.com/en-us/office/summarize-an-email-thread-with-copilot-in-outlook-a79873f2-396b-46dc-b852-7fe5947ab640) · [Draft an email message](https://support.microsoft.com/en-us/office/draft-an-email-message-with-copilot-in-outlook-3eb1d053-89b8-491c-8a6e-746015238d9b) · [Chat with Copilot in Outlook](https://support.microsoft.com/en-us/topic/chat-with-copilot-in-outlook-8090e7b3-5b1d-4c6d-9b06-02edac062f58)
 
@@ -77,170 +89,211 @@ A S05 trabalha **duas apps M365** com capacidades nativas de Copilot bem documen
 
 | Capacidade | O que faz |
 |---|---|
-| **Intelligent recap** | Resumo automático pós-reunião com decisões, pontos discutidos, e quem falou; **requer transcrição ativa** durante a reunião |
-| **Action items extraídos** | Copilot identifica automaticamente ações, responsáveis e prazos a partir da transcrição |
-| **Live Copilot na reunião** | Perguntas em tempo real durante a reunião ("o que decidiram sobre X?") |
-| **Post-meeting actions sugeridas** | Geração automática de e-mail de follow-up para os participantes |
+| **Intelligent recap** | Separador *Recap* pós-reunião: notas de IA, oradores, capítulos e **tarefas recomendadas** como ponto de partida; **requer licença (M365 Copilot ou Teams Premium) e transcrição ativa** |
+| **Copilot durante a reunião** | Perguntas em tempo real ("o que decidiram sobre X?", "que perguntas ficaram sem resposta?") |
+| **Share to email** | No Recap, partilhar o resumo por e-mail como base do follow-up — base, não versão final |
+
+As "tarefas recomendadas" do Recap são sugestões extraídas da transcrição: **não atribuem prazos com fiabilidade** e misturam responsáveis com frequência. É exatamente por isso que o Caso #3 existe.
 
 *Fontes Microsoft:* [Use Copilot in Microsoft Teams meetings](https://support.microsoft.com/en-us/office/use-copilot-in-microsoft-teams-meetings-0bf9dd3c-96f7-44e2-8bb8-790bedf066b1) · [Intelligent recap](https://learn.microsoft.com/en-us/microsoftteams/intelligent-recap-calls-meetings) · [Recap in Microsoft Teams](https://support.microsoft.com/en-us/office/recap-in-microsoft-teams-c2e3a0fe-504f-4b2c-bf85-504938f110ef)
 
+{: .important }
+> **Antes de gravar ou transcrever uma reunião real:** os participantes têm de ser informados previamente (RGPD arts. 12.º-14.º — o aviso do Teams ajuda mas não substitui a prática institucional), a gravação deve estar prevista na política interna da instituição, e quem organiza controla as definições de transcrição. Numa reunião com representantes de trabalhadores ou matéria disciplinar, a decisão de gravar não é técnica — é institucional. O DOC-B desta sessão é uma transcrição fictícia precisamente para podermos trabalhar sem essas amarras.
+
 ## MAPEIA, NÃO DECIDAS {#mapeia-nao-decidas}
 
-O princípio operacional da S05. Análogo do método CCC da S04 — uma técnica nomeada, simples, reutilizável.
+O princípio operacional da S05. Análogo do método CCC da S4 — uma técnica nomeada, simples, reutilizável.
 
 **O que significa.** O Copilot é excelente a **mapear**: posições recebidas numa thread, ações extraídas de uma reunião, tom sugerido para um draft. Mas o Copilot **não pode decidir** o que pertence à hierarquia humana: qual posição prevalece num conflito, que prazo é razoável, que prioridade dar entre coordenadores em desacordo.
 
 **Onde se aplica nesta sessão:**
+
 - **Caso #1:** mapear silenciados, **não decidir** quem está certo
 - **Caso #2:** mapear posições em conflito, **não decidir** entre elas
 - **Caso #3:** mapear ações com timestamp, **não inventar** prazos onde não há
 
-**Porquê importa.** Apresentar uma decisão do Copilot como tua mistura papéis: a análise é dele, mas quem assina és tu. O princípio MAPEIA-NÃO-DECIDAS protege contra isso — mantém claro onde acaba o assistente e onde começa o trabalho que tem o teu nome em baixo.
+**Porquê importa.** Apresentar uma decisão do Copilot como vossa mistura papéis: a análise é dele, mas quem assina responde — pelo CPA e pela LTFP, a responsabilidade do ato é de quem o pratica. E quando a "decisão" toca pessoas (quem entra no piloto, quem é avaliado como), entra o art. 22.º do RGPD, que a S1 apresentou: decisões sobre pessoas não se delegam na máquina.
 
 {: .important }
-> **MAPEIA, NÃO DECIDAS.** O Copilot pode mapear, identificar, redigir. **Não pode decidir** o que fica do lado da Direção. Não pode decidir o tom do teu prompt. Não pode decidir o que respondeste numa reunião. Tudo isso é teu.
+> **MAPEIA, NÃO DECIDAS.** O Copilot pode mapear, identificar, redigir. **Não pode decidir** o que fica do lado da Direção. Não pode decidir o tom do vosso prompt. Não pode decidir o que alguém disse numa reunião. Tudo isso é vosso.
 
 ## Demonstração — o que vão ver
 
-A demonstração tem três partes ao vivo, em direto nas duas apps. O objetivo é estabelecer o tom da sessão: **carregar no botão certo é o início, não o fim**.
+Quatro partes, ao vivo, nas duas apps — na caixa de correio e nas reuniões **do formador** (é aqui que veem os botões que exigem licença; os exercícios a seguir correm no chat, para todos). O tom da sessão: **carregar no botão certo é o início, não o fim.**
 
-**Parte A — Sumarização nativa no Outlook.** Vão observar a Catarina abrir a thread "Adoção do Microsoft 365 Copilot na UVV" e clicar em *Summarize by Copilot* (botão nativo). O Copilot devolve resumo com bullets e citações numeradas. Anotem: mapeou os 8 intervenientes formais? Identificou os 3 conflitos? Misturou prazos?
+**Parte A — *Summary by Copilot* no Outlook.** A thread fictícia da Catarina, carregada na caixa do formador, sumarizada com o botão nativo: resumo com citações numeradas que abrem os e-mails originais. Anotem: mapeou todos os intervenientes? Identificou os 3 conflitos? Misturou prazos?
 
-**Parte B — Extração de ações no Teams.** Vão observar a Catarina abrir a reunião do Conselho de Coordenação dos Mestrados, ir ao separador *Recap* e ver as *Action items* extraídas automaticamente. Anotem: quantas ações identificou? Os responsáveis batem certo com quem falou? Algum prazo foi inventado?
+**Parte B — *Draft* + *Coaching* no Outlook.** Um rascunho de resposta gerado por prompt, e depois o *Coaching*: tom, sentimento, clareza. Atenção ao detalhe que ninguém lê: **aplicar todas as sugestões regenera o e-mail inteiro** — não é um retoque, é uma reescrita. Rever sempre o resultado completo.
 
-**Parte C — Como o Copilot derrapa.** Duas armadilhas vão ser demonstradas em sequência:
+**Parte C — *Recap* no Teams.** O separador Recap de uma reunião com transcrição: notas de IA, oradores, tarefas recomendadas. Anotem: as tarefas têm responsáveis certos? Algum prazo apareceu do nada?
 
-1. **Pedido de decisão indevida.** A Catarina pede ao Copilot *"qual mestrado deve entrar primeiro no piloto, MEI ou MGestão?"*. O Copilot responde com aparente solidez — mas essa decisão é da Direção, não da Catarina nem do Copilot.
+**Parte D — Como o Copilot derrapa.** Duas armadilhas em sequência:
 
-2. **Sycophancy.** Três prompts lado-a-lado vão ser corridos com a mesma thread:
-   - *"Resume esta thread em que o EPD está a complicar com prazos"*
-   - *"Resume esta thread em que o Reitor está a impor calendário irrealista"*
-   - *"Resume esta thread em registo neutro institucional, sem caracterizar intenções"*
+1. **Pedido de decisão indevida.** Pede-se ao Copilot *"qual mestrado deve entrar primeiro no piloto, MEI ou MGestão?"*. A resposta vem com aparente solidez — mas essa decisão é da Direção, não do Copilot.
 
-   Os factos vão ser os mesmos. **A tonalidade vai mudar radicalmente.** Vão ver, em 30 segundos, que o Copilot espelha o ângulo do prompt. **A neutralidade não é default. É escolha.**
+2. **Sycophancy — a antestreia.** O mesmo pedido de resumo, com três ângulos: *"o EPD está a complicar"*, *"o Reitor está a impor um calendário irrealista"*, *"registo neutro institucional"*. Os factos não mudam; a tonalidade muda radicalmente. Daqui a pouco vão fazê-lo com as vossas mãos.
 
-Estas três derrapagens reaplicam-se nos casos. Vocês passam de observadores a praticantes.
-
-## Caso #1 — Sumarizar thread no Outlook + descobrir silenciados
+## Caso #1 — Sumarizar thread + descobrir silenciados
 
 ### Cenário
 
-A Catarina recebeu ontem (15-05) o e-mail do Reitor que abriu a thread "Adoção do Microsoft 365 Copilot na UVV". Hoje (22-05), o Reitor encarregou-a de **coordenar o dossier** e responder em 24 horas com síntese e proposta de calendário. A thread tem agora 9 e-mails. Precisa de começar pelo princípio: **o que está cada um a dizer**.
+A Catarina foi posta em cópia, há uma semana (15-05), na thread "Adoção do Microsoft 365 Copilot na UVV", que cresceu até 9 mensagens. Ontem ao fim do dia (21-05), o Reitor encarregou-a de **coordenar o dossier** — e pediu síntese e proposta de calendário **até hoje (22-05) ao final do dia**. Precisa de começar pelo princípio: **o que está cada um a dizer**.
 
-📎 **Para fazerem este exercício, descarreguem o dataset:** [Dataset_S05_Comunicacao.docx]({{ site.baseurl }}/sessoes/sessao-05/Dataset_S05_Comunicacao.docx) — abram no Outlook ou Word, vão à secção DOC-A.
+📎 **Para fazer este exercício, descarregue o dataset:** [Dataset_S05_Comunicacao.docx]({{ site.baseurl }}/sessoes/sessao-05/Dataset_S05_Comunicacao.docx) — secção DOC-A (a thread completa).
 
-### Passo 1 — Sumarização nativa do Outlook
+### Passo 1 — Sumarizar com citações rastreáveis
 
-No Outlook, abrir a thread e clicar em **Summarize by Copilot** (botão nativo no topo). O Copilot devolve resumo com bullets e citações numeradas. Não há prompt a construir — é uma funcionalidade do botão.
+No **Copilot Chat**, carregue o dataset (botão "+ Adicionar conteúdo") ou cole a secção DOC-A, e corra:
+
+> *Objetivo: Resume a thread "Adoção do Microsoft 365 Copilot na UVV" do DOC-A: 1 parágrafo de enquadramento + as posições de cada interveniente em bullets, cada bullet terminando com a referência ao e-mail de origem (E1 a E7). Termina com os pontos de conflito entre intervenientes.*
+>
+> *Contexto: Sou da DRH e fui encarregada pelo Reitor de sintetizar este dossier. Trata a comunicação do Sindicato (E6) por súmula — refere os 4 temas das questões, sem citar o texto.*
+>
+> *Fonte: o DOC-A carregado/colado nesta conversa (ignora o rascunho E8 e o e-mail do aluno E9).*
+>
+> *Expectativas: Português europeu, máximo 250 palavras, sem decidir nem recomendar — apenas mapear.*
+
+Com licença e a thread na caixa de correio real, isto é o botão *Summary by Copilot* — viram-no na demo, com a vantagem das citações clicáveis. O prompt acima é o equivalente universal, e treina um gesto que o botão não treina: a súmula da matéria sindical.
 
 ### Exemplo de output esperado
 
-> *A thread "Adoção do Microsoft 365 Copilot na UVV" envolve 8 intervenientes da UVV e externos. O Reitor anunciou a 15-05 a intenção de avançar com piloto em Setembro 2026. Recebeu resposta da Vice-Reitora (questões de licenciamento e ordem das fases), da DSI (custos €36k não orçamentados e 3-4 semanas-pessoa para preparar tenant), do EPD (AIPD obrigatória, 4-6 semanas, recomenda adiar para Janeiro 2027), do Coordenador do MEI (pedido de prioridade), e do Sindicato (4 perguntas formais sobre direitos dos trabalhadores). Por fim, o Reitor pediu à Catarina coordenar.*
+Tente primeiro; só depois abra.
+
+<details markdown="1">
+<summary>Ver o output típico — e as três falhas a apanhar</summary>
+
+> *A thread envolve a Reitoria e serviços da UVV. O Reitor anunciou a 15-05 a deliberação de avançar com piloto em setembro de 2026 (E1). A Vice-Reitora levanta questões de licenciamento (A3 vs A5) e defende a educação em 2.ª fase (E2). A DSI estima €36k não orçamentados, Purview por configurar e 3-4 semanas-pessoa (E3). O EPD conclui pela obrigatoriedade de AIPD (4-6 semanas) e recomenda adiar para janeiro de 2027 (E4). O coordenador do MEI pede prioridade para o seu mestrado (E5). O Sindicato apresentou pedido formal de informação sobre 4 temas: postos abrangidos, formação, não-vigilância e representação dos trabalhadores (E6, por súmula). O Reitor encarregou a DRH de coordenar (E7).*
 >
-> *Os 3 conflitos principais:*
-> *- Calendário: Setembro (Reitor) vs. Janeiro 2027 (EPD/DSI)*
-> *- Ordem das áreas: educação 1.ª (Carlos Reis) vs. 2.ª fase (Vice-Reitora)*
-> *- Recursos: piloto não cabe no orçamento 2026 sem reforço de €36k*
+> *Conflitos: calendário (setembro vs janeiro 2027) · ordem das áreas (educação 1.ª vs 2.ª fase) · orçamento (€36k sem cabimento).*
 
-**Há três coisas a apanhar neste output:**
+**As três falhas típicas a apanhar:**
 
-1. **Incluiu erradamente o aluno (E9)?** A pergunta informal do aluno João Marques **não pertence** à síntese executiva. Se o Copilot a incluiu, contaminou o resumo.
-2. **A regulação dos prazos da AIPD bate certo?** Validar contra o E4 do EPD.
-3. **O timestamp do E7 do Reitor ("até amanhã ao final do dia") aparece atribuído ao E1?** Erro comum.
+1. **Incluiu o aluno (E9)?** A pergunta informal do João Marques não pertence à síntese executiva — se entrou, contaminou o resumo.
 
-### Passo 2 — Follow-up para descobrir silenciados
+2. **Os prazos da AIPD batem certo?** Validar contra o E4 (4 a 6 semanas — não "4-6 meses", erro frequente).
 
-Depois do resumo, abrir o **Chat with Copilot in Outlook** e colar:
+3. **O prazo "até amanhã ao final do dia" do E7 aparece atribuído ao E1?** Mistura de remetentes é o erro clássico em threads.
 
-> *Releia a thread "Adoção do Microsoft 365 Copilot na UVV". Lista os intervenientes em três categorias:*
-> *(a) quem escreveu pelo menos um e-mail,*
-> *(b) quem foi referido por outros mas não escreveu,*
+</details>
+
+### Passo 2 — O follow-up dos silenciados
+
+Na **mesma conversa**, colar:
+
+> *Relê a thread. Lista os intervenientes em três categorias:*
+>
+> *(a) quem escreveu pelo menos um e-mail;*
+>
+> *(b) quem foi referido por outros mas não escreveu;*
+>
 > *(c) quem, pelo conteúdo, deveria estar no fluxo mas nem escreveu nem foi referido.*
 >
-> *Para cada um, indica nome/cargo e relevância para o assunto (alta/média/baixa).*
->
-> *Não decidas. Apenas mapeia.*
+> *Para cada um, indica nome/cargo e porque é relevante. Não decidas. Apenas mapeia.*
 
-### Output esperado do follow-up
+<details markdown="1">
+<summary>Ver o output esperado do follow-up</summary>
 
-**(a) Autores — escreveram pelo menos um e-mail:**
-1. Reitor (E1, E7) — alta
-2. Vice-Reitora (E2) — alta
-3. Margarida Sá / DSI (E3) — alta
-4. Tiago Faria / EPD (E4) — alta
-5. Carlos Reis / MEI (E5) — média
-6. Sindicato (E6) — alta
-7. Catarina (rascunho próprio E8) — alta
-8. Aluno João Marques (E9) — baixa (fora de escopo)
+**(a) Escreveram:** Reitor (E1, E7) · Vice-Reitora (E2) · Margarida Sá/DSI (E3) · Tiago Faria/EPD (E4) · Carlos Veloso/MEI (E5) · Sindicato (E6) — mais o rascunho da própria Catarina (E8) e o aluno João Marques (E9), fora do fluxo.
 
-**(b) Mencionados — referidos mas não escreveram:**
-1. **Comissão de Trabalhadores** (E6 em Cc + E7 referida pelo Reitor) — **alta relevância**
-2. Anthropic (E4 referida como subprocessor) — baixa (informativa)
+**(b) Mencionados sem voz:** **Comissão de Trabalhadores** (em Cc no E6 e referida pelo Reitor no E7) — relevância alta; Anthropic (referida no parecer do EPD) — informativa.
 
-**(c) Inferidos — deveriam estar no fluxo mas nem escreveram nem foram referidos:**
-1. **Encarregado de Compras / Aprovisionamento** — relevante para os €36k não orçamentados
-2. **Conselho de Coordenação dos Mestrados** — referido implicitamente (Carlos é coordenador, mas o órgão como tal não foi consultado) — média
-3. **Provedor do Estudante** — qualquer adoção institucional de IA com impacto pedagógico devia ouvi-lo — média
+**(c) Inferidos:** Aprovisionamento/Compras (os €36k não orçamentados) · Conselho de Coordenação dos Mestrados (o coordenador escreveu a título individual; o órgão não foi consultado) · Provedor do Estudante (adoção com impacto pedagógico).
+
+</details>
 
 ### O que se descobre
 
-A **Comissão de Trabalhadores** aparece **mencionada duas vezes** na thread mas **nunca escreve**. A Catarina trabalhou todo o dossier sem ler o que a CT pensa.
+A **Comissão de Trabalhadores** aparece **mencionada duas vezes** na thread mas **nunca escreve**. A Catarina ia trabalhar o dossier inteiro sem ler o que a CT pensa.
 
-A descoberta não é a CT em si. **A descoberta é o padrão de prompt**: depois do resumo nativo, fazer um follow-up para *quem foi silenciado*. Esta técnica aplica-se a qualquer thread, ata, regulamento, caderno de encargos ou proposta — em todos esses contextos há sempre alguém mencionado sem voz própria.
+A descoberta não é a CT em si. **A descoberta é o padrão de prompt**: depois do resumo, perguntar *quem ficou silenciado*. Aplica-se a qualquer thread, ata, caderno de encargos ou proposta — há sempre alguém mencionado sem voz própria.
 
 > **O output do Copilot não inclui o que não foi escrito. Mas o Copilot pode ajudar-vos a perceber que algo não foi escrito.**
 
 {: .discussao }
 > Três perguntas para discutir em sala:
 >
-> 1. *"O Copilot identificou os 8 intervenientes formais? Incluiu erradamente o aluno (E9)?"*
-> 2. *"Que mencionados detetou? Detectou a Comissão de Trabalhadores?"*
-> 3. *"Que inferidos sugeriu que não tinham considerado?"*
+> 1. *"O resumo tratou o Sindicato por súmula, como o prompt pedia — ou citou o texto?"*
+>
+> 2. *"O follow-up detetou a Comissão de Trabalhadores?"*
+>
+> 3. *"Que inferidos sugeriu que vocês não tinham considerado?"*
 
-## Caso #2 — Redigir e-mail ao Reitor com Help me reply + Coaching
+<details markdown="1">
+<summary>Ver as respostas — depois de discutir</summary>
+
+1. Tipicamente cita, apesar da instrução — é o momento para reforçar: a instrução de minimização tem de ser verificada no output, não confiada.
+
+2. Na maioria das execuções, sim — está em Cc e é referida no E7. Se não detetou, repetir o follow-up pedindo "inclui quem aparece apenas em Cc".
+
+3. Varia; Aprovisionamento e Provedor do Estudante são os mais frequentes. Qualquer inferido plausível que a sala não tinha pensado é o padrão a funcionar.
+
+</details>
+
+## O espelho — exercício de sycophancy {#o-espelho}
+
+A promessa da S4: a sycophancy é o tema central desta sessão. Agora com as vossas mãos — **5 minutos**.
+
+O formador atribui a cada um, no chat, um número de 1 a 3. Na mesma conversa do Caso #1, corram **apenas o vosso prompt**:
+
+1. *"Resume esta thread em que o EPD está a complicar com prazos."*
+
+2. *"Resume esta thread em que o Reitor está a impor um calendário irrealista."*
+
+3. *"Resume esta thread em registo neutro institucional, sem caracterizar intenções de nenhum interveniente."*
+
+Depois, **colem no chat da sessão a frase mais carregada do vosso output** — só a frase. Em dois minutos, o chat mostra três retratos diferentes **dos mesmos factos**.
+
+{: .discussao }
+> Duas perguntas para fechar o espelho:
+>
+> 1. *"Os factos mudaram entre os grupos 1, 2 e 3 — ou só as palavras de caracterização (verbos, adjetivos)?"*
+>
+> 2. *"Se o resumo do grupo 1 fosse vazado com o nome da Catarina, que efeito teria na relação dela com o EPD?"*
+
+A lição numa frase: **a neutralidade não é default. É escolha** — e escreve-se no prompt. Uma nota de prudência que fica para o mundo real: prompts que pedem juízos sobre colegas identificados ("nível de urgência percebido", "quem está a bloquear") são admissíveis aqui porque o dataset é ficção — com pessoas reais, isso aproxima-se de perfilagem, e a Matriz Semáforo manda parar.
+
+## Caso #2 — Redigir o e-mail ao Reitor
 
 ### Cenário
 
-A Catarina tem a thread sumarizada e os silenciados mapeados. Agora tem de **redigir a resposta ao Reitor** — síntese das posições, identificação dos conflitos a decidir, proposta de calendário em fases que acomode as duas posições principais (Setembro vs Janeiro 2027) sem decidir entre elas.
+A Catarina tem a thread sumarizada e os silenciados mapeados. Agora tem de **redigir a resposta ao Reitor**: síntese das posições, conflitos a decidir, proposta de calendário em fases que acomode setembro **e** janeiro de 2027 — sem decidir entre eles.
 
-📎 **Para fazerem este exercício, continuem com o dataset:** [Dataset_S05_Comunicacao.docx]({{ site.baseurl }}/sessoes/sessao-05/Dataset_S05_Comunicacao.docx) — vão à secção DOC-A (mesma thread).
+### Passo 1 — Gerar o draft
 
-### Passo 1 — Help me reply com prompt construído
+Na mesma conversa do Copilot Chat (a thread já lá está):
 
-No Outlook, abrir o e-mail do Reitor (E7) e clicar em **Help me reply**. Construir prompt usando o framework GCSE da S02:
+> *Objetivo: Redige um e-mail formal da Catarina Pires ao Reitor com: síntese das posições (4-5 linhas), os 3 conflitos a decidir (bullets), proposta de calendário em três fases (maio-junho · julho-agosto · setembro) que mantenha as duas posições principais (setembro vs janeiro 2027) igualmente expostas — **não escolhas entre elas** —, e uma recomendação de reunião com a Comissão de Trabalhadores e o Sindicato antes do anúncio público.*
+>
+> *Contexto: A Catarina é Técnica Superior de RH, designada pelo Reitor para coordenar o dossier; tratamento "Senhor Reitor".*
+>
+> *Fonte: a thread DOC-A desta conversa.*
+>
+> *Expectativas: 4-5 parágrafos curtos, tom institucional formal, português europeu, máximo 250 palavras. Sem "compliance", "alinhar", "aprovar automaticamente".*
 
-> *Goal: redige resposta institucional ao Reitor com:*
-> *- síntese das posições recebidas até à data,*
-> *- identificação dos 3 conflitos a decidir,*
-> *- proposta de calendário em três fases (Maio-Junho · Julho-Agosto · Setembro).*
->
-> *Mantém as duas posições principais (Setembro vs Janeiro 2027) expostas igualmente — **não escolhas entre elas**.*
->
-> *Inclui menção à necessidade de consulta à Comissão de Trabalhadores antes do anúncio público.*
->
-> *Context: sou Catarina Pires, DRH, secretária do Conselho de Coordenação dos Mestrados, designada pelo Reitor para coordenar este dossier.*
->
-> *Source: thread "Adoção do Microsoft 365 Copilot na UVV" (DOC-A).*
->
-> *Expectation: 4-5 parágrafos curtos, tom institucional formal, português europeu, máximo 250 palavras. Não usar "compliance", "alinhar", "aprovar automaticamente".*
+Com licença, o gesto nativo é abrir o E7 no Outlook e usar *Draft with Copilot* na resposta — viram na demo; o prompt é o mesmo.
 
 ### Versão modelo (validada manualmente)
+
+Tente primeiro; só depois abra.
+
+<details markdown="1">
+<summary>Ver a versão modelo</summary>
 
 ```
 Senhor Reitor,
 
-Conforme solicitado por V. Ex.ª, sintetizo as posições recebidas até à presente data sobre a adoção do Microsoft 365 Copilot na UVV.
+Conforme solicitado por V. Ex.ª, sintetizo as posições recebidas sobre a adoção do Microsoft 365 Copilot na UVV.
 
-Síntese. O Conselho de Gestão deliberou avançar com piloto. A Vice-Reitora questiona perfil de licenciamento e ordem das fases. A DSI sinaliza ausência de previsão orçamental (€36k/6m), necessidade de configuração prévia da Purview e 3-4 semanas-pessoa de implementação. O Encarregado de Proteção de Dados conclui pela obrigatoriedade de Avaliação de Impacto sobre a Proteção de Dados (4-6 semanas), recomendando adiamento para Janeiro de 2027. Em paralelo, o Sindicato apresentou pedido formal de informação sobre quatro pontos relativos a direitos dos trabalhadores e formação obrigatória.
+Síntese. O Conselho de Gestão deliberou avançar com piloto. A Vice-Reitora questiona o perfil de licenciamento e defende a educação em segunda fase. A DSI sinaliza ausência de previsão orçamental (€36k/6 meses), Purview por configurar e 3-4 semanas-pessoa de implementação. O EPD conclui pela obrigatoriedade de AIPD (4-6 semanas) e recomenda início em janeiro de 2027. O Sindicato apresentou pedido formal de informação sobre quatro temas relativos a direitos dos trabalhadores.
 
-Conflitos a decidir (três):
-- Calendário: Setembro 2026 (deliberação inicial) vs. Janeiro 2027 (recomendação EPD).
-- Ordem das fases: educação na 1.ª ou 2.ª vaga.
+Conflitos a decidir:
+- Calendário: setembro de 2026 (deliberação inicial) vs. janeiro de 2027 (recomendação do EPD).
+- Ordem das fases: educação na 1.ª ou na 2.ª vaga.
 - Reforço orçamental e de equipa, não previsto em 2026.
 
-Proposta de calendário. Em três fases: (1) Maio-Junho — AIPD do EPD em paralelo com configuração Purview pela DSI, e plano de formação prévia; (2) Julho-Agosto — seleção dos 200 utilizadores e formação obrigatória ao abrigo do art. 4.º do AI Act; (3) Setembro — arranque do piloto, com âmbito reduzido a um serviço administrativo na 1.ª vaga, expansão gradual.
+Proposta de calendário, em três fases: (1) maio-junho — AIPD conduzida pelo EPD em paralelo com a configuração do Purview pela DSI, e desenho do plano de formação prévia (dever de literacia em IA — art. 4.º do AI Act); (2) julho-agosto — seleção dos utilizadores do piloto e realização da formação; (3) setembro — decisão da Direção sobre o arranque, ponderado o resultado da AIPD: piloto reduzido a um serviço administrativo, ou passagem para janeiro de 2027.
 
-Comissão de Trabalhadores. Recomendo agendar reunião antes do dia 1 de Junho, conjuntamente com o Sindicato, para resposta formal às quatro questões, antes do anúncio público do piloto.
+Comissão de Trabalhadores. Recomendo reunião conjunta com a CT e o Sindicato antes de 1 de junho, com resposta formal às quatro questões, previamente ao anúncio público.
 
 Fico ao dispor para esclarecimentos.
 
@@ -248,247 +301,286 @@ Cumprimentos,
 Catarina Pires · DRH
 ```
 
-Esta versão cumpre: 250 palavras, tom institucional formal, **as duas posições igualmente expostas** (não escolhe), inclui a Comissão de Trabalhadores como recomendação, propõe terceiro caminho (fases) que acomoda os dois cenários sem decidir.
+Esta versão cumpre: 250 palavras, tom institucional, **as duas posições igualmente expostas** (a fase 3 entrega a decisão à Direção em vez de a tomar), a CT como recomendação, e nenhuma palavra proibida.
+
+</details>
 
 ### A armadilha — MAPEIA, NÃO DECIDAS em ação
 
-O output tipicamente **propõe Setembro** porque foi o pedido inicial do Reitor. Têm de **re-prompt** para preservar as duas posições:
+O output tipicamente **propõe setembro** como adquirido, porque foi o pedido inicial do Reitor — sycophancy estrutural: o prompt nasce de quem quer setembro. O re-prompt que corrige:
 
-> *Refaz com as duas posições (Setembro vs Janeiro 2027) igualmente expostas. Não escolhas entre elas. A escolha é da Direção.*
+> *Refaz com as duas posições (setembro vs janeiro 2027) igualmente expostas. Não escolhas entre elas. A escolha é da Direção.*
 
-Esta é a aplicação operacional do princípio: o Copilot mapeia; vocês não deixam que ele decida.
+{: .note }
+> **Desafio para quem quer ir mais longe:** consegue fazer o Copilot escolher uma data **apesar** da proibição? (Reformule até ele ceder.) E consegue obter o e-mail equilibrado **sem** proibir explicitamente? A instrução de neutralidade é uma defesa — não é infalível, e a validação final é sempre vossa.
 
-### Passo 2 — Coaching by Copilot
+### Passo 2 — Coaching (na demo) e revisão (sempre)
 
-Após o draft, clicar em **Coach my draft** (botão Coaching by Copilot). O Coach avalia em três dimensões: **tom**, **sentimento**, **clareza**. Sugere melhorias aplicáveis em bloco ("Apply all suggestions") ou caso a caso.
-
-**O que o Coach tipicamente sugere em redação institucional:**
-- Encurtar parágrafos longos
-- Eliminar voz passiva ("foi decidido por") → voz ativa ("decidimos")
-- Suavizar tom condescendente
-- Substituir jargão por palavras concretas
-
-**Quando aceitar em bloco vs caso a caso:** se o Coach sugere mudanças que afetam o conteúdo (não só a forma), avaliar caso a caso. Se são só ajustes de tom e clareza, "Apply all" é seguro.
+Com licença, o *Coaching by Copilot* avalia o rascunho em tom, sentimento e clareza — viram na demo, incluindo o aviso: **aplicar todas as sugestões regenera o e-mail inteiro**, portanto relê-se tudo, não só "o que mudou". Sem licença, o equivalente é um segundo prompt: *"Avalia este e-mail em tom, clareza e adequação ao destinatário (Reitor). Sugere melhorias sem reescrever."* — e a decisão de aplicar é vossa, frase a frase.
 
 {: .discussao }
 > Três perguntas para discutir em sala:
 >
 > 1. *"O Copilot propôs uma das datas? Que palavras tiveram de mudar para preservar as duas?"*
-> 2. *"Coach sugeriu mudanças de tom? Aceitaram tudo, ou avaliaram caso a caso?"*
+>
+> 2. *"Que sugestões de tom aceitaram — e alguma mudava o conteúdo, não a forma?"*
+>
 > 3. *"Se este e-mail fosse vazado, fica defensável como vossa redação?"*
+
+<details markdown="1">
+<summary>Ver as respostas — depois de discutir</summary>
+
+1. Na maioria das execuções, sim — setembro aparece como plano e janeiro como objeção. As palavras-chave a mudar: "manter o calendário" → "duas leituras do calendário"; "mitigar o atraso" → "ponderar o início".
+
+2. Sugestões de encurtar e ativar a voz são de forma; cortar a recomendação da CT "por concisão" é conteúdo — e já aconteceu em execuções reais.
+
+3. A pergunta-teste de toda a comunicação assistida: se a resposta hesita, a redação ainda não é vossa.
+
+</details>
 
 > Linguagem clara em comunicação institucional **não é** ausência de formalidade. É **comunicação rigorosa** com a forma certa para o destinatário certo.
 
-## Caso #3 — Tabela de ações no Teams (Intelligent recap + validação timestamp)
+## Caso #3 — Tabela de ações da reunião (validação por timestamp)
 
 ### Cenário
 
-A Catarina foi secretária da reunião do **Conselho de Coordenação dos Mestrados** de 21-05-2026 (1h45). A reunião está no Teams com transcrição ativa. Agora precisa de extrair a tabela de ações–responsáveis–prazos e enviar follow-up formal aos coordenadores. Tem 30 minutos.
+Esta manhã (22-05, 10h00), a Catarina foi secretária da reunião do **Conselho de Coordenação dos Mestrados** — quinze minutos, quatro pontos, despachada (acontece). A reunião correu no Teams com transcrição ativa. Antes do fim do dia quer enviar o follow-up: **tabela de ações–responsáveis–prazos**, validada.
 
-📎 **Para fazerem este exercício, precisam do dataset:** [Dataset_S05_Comunicacao.docx]({{ site.baseurl }}/sessoes/sessao-05/Dataset_S05_Comunicacao.docx) — vão à secção DOC-B (transcrição da reunião).
+📎 **Continue com o dataset:** secção **DOC-B** (a transcrição integral da reunião).
 
-### Passo 1 — Intelligent recap no Teams
+### Passo 1 — Extrair a tabela
 
-No Teams, abrir a reunião do Conselho de Coordenação dos Mestrados e clicar no separador **Recap**. O Copilot apresenta o resumo da reunião + lista de **Action items** extraídos automaticamente da transcrição.
+No Copilot Chat, com o DOC-B carregado/colado:
+
+> *Objetivo: Extrai da transcrição DOC-B uma tabela com 5 colunas: ação · responsável · prazo · timestamp da intervenção que a originou · estado (acordado/pendente). Uma linha por ação, mesmo quando várias ações saem da mesma intervenção. Se uma ação ficou sem prazo, escreve "(sem data)" — não inventes.*
+>
+> *Contexto: Sou a secretária da reunião e vou enviar esta tabela no follow-up formal.*
+>
+> *Fonte: o DOC-B desta conversa.*
+>
+> *Expectativas: Tabela em português europeu, prazos no formato DD-MM-AAAA quando expressos.*
+
+Com licença e a reunião na vossa conta, o separador *Recap* dá as **tarefas recomendadas** como ponto de partida — viram na demo; e viram também porque é só ponto de partida.
 
 ### Tabela de ações modelo (validada)
 
+Tente primeiro; só depois abra.
+
+<details markdown="1">
+<summary>Ver a tabela modelo</summary>
+
 | # | Ação | Responsável | Prazo | Timestamp |
 |---|---|---|---|---|
-| 1 | Corrigir ata anterior — "Mestrado em Educação **Pré-Escolar e do 1.º Ciclo**" | Catarina | imediato | 14:02:25 |
-| 2 | Produzir FAQ sobre interpretação do Regulamento de Avaliação 2024 (em particular art. 12.º) | Helena | **até 15-06-2026** | 14:07:48 |
-| 3 | Preparar proposta de alteração ao art. 5.º (janela extraordinária) | Helena | **próxima reunião — 18-06-2026** | 14:07:48 |
-| 4 | Enviar 2 parágrafos sobre inclusão no piloto Copilot | Carlos Reis · Mariana Lopes · Pedro Antunes · Rita Carvalho | **até 29-05-2026** | 14:10:58 |
-| 5 | Recolher propostas dos coordenadores e preparar dossier | Catarina | **após 29-05-2026** | 14:11:06 |
-| 6 | Encaminhar para Gab. Comunicação pedido de publicidade Mestrado em Direito | Helena | (sem data) | 14:13:32 |
+| 1 | Corrigir a ata anterior — "Mestrado em Educação **Pré-Escolar e do 1.º Ciclo**" | Catarina | imediato | 00:02:25 |
+| 2 | Produzir FAQ sobre interpretação do Regulamento de Avaliação 2024 (em particular o art. 12.º) | Helena | **até 15-06-2026** | 00:07:48 |
+| 3 | Preparar proposta de alteração ao art. 5.º (janela extraordinária) | Helena | **próxima reunião — 18-06-2026** | 00:07:48 |
+| 4 | Enviar 2 parágrafos sobre inclusão no piloto Copilot | Carlos Veloso · Mariana Lopes · Pedro Antunes · Rita Carvalho | **até 29-05-2026** | 00:10:25 |
+| 5 | Recolher as propostas dos coordenadores e preparar dossier para a Direção | Catarina | **após 29-05-2026** | 00:10:58 |
+| 6 | Encaminhar ao Gab. Comunicação o pedido de publicidade do Mestrado em Direito | Helena | **(sem data)** | 00:13:32 |
 
-### Onde o Intelligent recap tipicamente erra
+</details>
 
-- **Mistura responsáveis** — atribui ao Pedro Antunes uma ação que era do Carlos Reis
-- **Inventa prazos** para ações que ficaram sem data (ação 6 — encaminhar para Gab. Comunicação)
-- **Compacta** duas ações da mesma intervenção numa só (ações 4 e 5 estão implícitas no mesmo timestamp 14:11:06)
-- **Atribui a um só** uma ação que era para **todos** (ação 4 tem 4 responsáveis)
+### Onde o Copilot tipicamente erra aqui
 
-### Validação por timestamp — a peça nomeada do caso
+- **Mistura responsáveis** — atribui ao Pedro uma ação que era do Carlos
+- **Inventa prazos** para ações que ficaram sem data (ação 6)
+- **Compacta** duas ações próximas numa só (as ações 4 e 5 nascem a segundos uma da outra)
+- **Atribui a um só** uma ação que era para **todos** (a ação 4 tem 4 responsáveis)
 
-Para cada ação no output do Intelligent recap:
+### Validação por timestamp — o CCC das reuniões {#validacao-timestamp}
+
+Para cada ação no output:
 
 1. Ir à transcrição.
 2. Localizar o **timestamp** da intervenção.
 3. Confirmar **quem disse**, **quando**, **o quê**.
 4. Se não há timestamp confirmável, **não é ação da reunião**.
 
-Esta disciplina é o equivalente Teams do método CCC da S04. Apanha sobretudo os erros de atribuição (Sinal 1) e parcialmente a sobre-simplificação (Sinal 3). Code-switching e sycophancy exigem leitura crítica do output, não validação por timestamp. Cinco minutos investidos aqui poupam uma hora de mal-entendidos depois.
+Apanha sobretudo as atribuições erradas e os prazos inventados (Sinal 1) e parte da sobre-simplificação (Sinal 3). Não apanha mistura de línguas nem sycophancy — essas exigem leitura do texto. Cinco minutos aqui poupam uma hora de mal-entendidos depois — e, tal como no CCC, cronometrar a validação é a melhor prova de que ela cabe no tempo real do trabalho.
 
-### Passo 2 — Gerar e-mail de follow-up com Post-meeting action
+### Passo 2 — O follow-up formal
 
-No Recap do Teams, clicar em **Create a summary email for meeting participants** (Post-meeting action sugerida). O Copilot redige; a Catarina valida e envia.
+Com a tabela validada, o e-mail de follow-up (na demo, com licença: *Share to email* a partir do Recap — sempre como base):
 
-### Versão modelo do follow-up
+<details markdown="1">
+<summary>Ver a versão modelo do follow-up</summary>
 
 ```
 Caros Colegas,
 
-Em seguimento da reunião de ontem do Conselho de Coordenação dos Mestrados, partilho síntese e tabela de ações para validação.
+Em seguimento da reunião desta manhã do Conselho de Coordenação dos Mestrados, partilho a síntese e a tabela de ações para validação.
 
-Pontos discutidos: aplicação do Regulamento de Avaliação 2024 (com proposta de FAQ e revisão do art. 5.º); piloto Microsoft 365 Copilot (decisão dependente das propostas dos coordenadores); calendário de candidaturas 2026/2027 (aprovado).
+Pontos discutidos: aplicação do Regulamento de Avaliação 2024 (FAQ e revisão do art. 5.º); piloto Microsoft 365 Copilot (propostas dos coordenadores até 29-05); calendário de candidaturas 2026/2027 (aprovado).
 
 Ações acordadas:
 
 | Quem | O quê | Prazo |
 |---|---|---|
-| Catarina | Corrigir ata da reunião anterior | Imediato |
-| Helena | FAQ sobre interpretação do Regulamento 2024 | 15-06-2026 |
+| Catarina | Corrigir a ata da reunião anterior | Imediato |
+| Helena | FAQ sobre o Regulamento 2024 | 15-06-2026 |
 | Helena | Proposta de alteração ao art. 5.º | Próxima reunião |
-| Helena | Encaminhar publicidade Direito ao Gab. Comunicação | (sem data) |
-| Carlos · Mariana · Pedro · Rita | 2 parágrafos sobre inclusão no piloto Copilot | 29-05-2026 |
-| Catarina | Recolher e preparar dossier para Direção | Após 29-05 |
+| Helena | Encaminhar publicidade do Direito ao Gab. Comunicação | (sem data) |
+| Carlos · Mariana · Pedro · Rita | 2 parágrafos sobre inclusão no piloto | 29-05-2026 |
+| Catarina | Recolher propostas e preparar dossier | Após 29-05 |
 
-Próxima reunião: 18-06-2026, mesma hora, mesma modalidade.
+Próxima reunião: 18-06-2026, à mesma hora.
 
-Fico ao dispor para esclarecimentos.
+Qualquer correção à tabela, agradeço resposta até amanhã.
 
 Cumprimentos,
 Catarina Pires · DRH · Secretária do Conselho
 ```
 
+</details>
+
 {: .discussao }
 > Três perguntas para discutir em sala:
 >
-> 1. *"O Copilot atribuiu a ação 4 a TODOS os coordenadores ou só a um?"*
-> 2. *"A ação 6 (encaminhar para Gab. Comunicação) ficou com prazo inventado ou em branco?"*
-> 3. *"Ação 5 (Catarina recolhe propostas) foi destacada ou ficou implícita no mesmo timestamp da 4?"*
+> 1. *"A ação 4 ficou com os quatro responsáveis — ou só com um?"*
+>
+> 2. *"A ação 6 ficou '(sem data)' — ou ganhou um prazo inventado?"*
+>
+> 3. *"As ações 4 e 5 ficaram separadas — ou compactadas numa só?"*
 
-## Os 5 sinais de output problemático {#sinais-output}
+<details markdown="1">
+<summary>Ver as respostas — depois de discutir</summary>
 
-Cinco sinais a apanhar em qualquer output do Copilot. **Três** aparecem em qualquer superfície (documentos, e-mails, transcrições). **Dois** são contextuais — dominam consoante o tipo de tarefa.
+1. Erro mais comum: atribuir só ao Carlos (foi quem falou antes). A instrução da Vice-Reitora às 00:10:25 abrange os quatro.
 
-#### Universais (em qualquer tarefa)
+2. Quando o prompt não diz "não inventes", ganha tipicamente "antes da próxima reunião" — plausível e falso.
 
-**Sinal 1 — Alucinação de algo factual.** O Copilot inventa algo verificável: um prazo para a ação 6 da reunião que ficou sem data; atribui ao Pedro uma intervenção do Carlos; cita um interveniente que não estava na thread. Deteção: cruzar com a fonte (timestamp da transcrição ou citação numerada do Summarize).
+3. Nascem a 33 segundos uma da outra; metade das execuções funde-as. É o caso que justifica a instrução "uma linha por ação, mesmo quando várias saem da mesma intervenção".
 
-**Sinal 2 — Code-switching.** O output desliza para pt-BR ou inglês ("compliance", "stakeholders", "aprovar automaticamente"). Mitigação: pedir explicitamente "português europeu" no prompt.
+</details>
 
-**Sinal 3 — Sobre-simplificação de posições.** O output transforma *"o EPD recomenda adiamento para Janeiro 2027"* em *"o EPD recusa o calendário do Reitor"*. A nuance perde-se, e em comunicação institucional **a nuance é o conteúdo**. Deteção: comparar o tom categórico do output com a cautela do original.
+## Os 5 sinais — e o sinal desta sessão {#sinais-output}
 
-#### Contextuais (dominam em superfícies específicas)
+Os [5 sinais da S4]({% link bloco-2-produtividade/sessao-04.md %}#sinais-output) continuam todos em jogo. Em comunicação, a hierarquia inverte-se: o que lá era contextual aqui domina.
 
-**Sinal 4 — Sycophancy** *(mais frequente em redação assistida — e-mails, drafts, propostas).* O Copilot espelha o ângulo do prompt. Demonstrado na Parte C com 3 prompts lado-a-lado: mudar *"o EPD está a complicar com prazos"* para *"o Reitor está a impor calendário irrealista"* mantém os factos mas inverte a tonalidade.
+**Sinal 5 — Sycophancy (bajulação) — O SINAL DESTA SESSÃO.** O Copilot espelha o ângulo do prompt: *"o EPD está a complicar"* produz um EPD complicador; *"o Reitor está a impor"* produz um Reitor autoritário. Os factos mantêm-se; o tom — que em comunicação institucional é metade do conteúdo — muda tudo. Viram-no no espelho, com as vossas mãos. Deteção: rever verbos e adjetivos de caracterização no output. Mitigação: *"registo neutro institucional, sem caracterizar intenções"*. **A neutralidade não é default. É escolha.**
 
-**Porque é o pior sinal em comunicação:** os outros revelam-se a uma comparação rápida com a fonte. A sycophancy passa despercebida porque os factos estão lá — só o tom mudou. E em comunicação institucional, **o tom é metade do conteúdo**.
+Os restantes, em modo comunicação:
 
-Como detetar: rever as palavras de caracterização no output (verbos, adjetivos) — mantiveram registo neutro ou caricaturaram alguém?
+**Sinal 1 — Alucinação factual.** Um prazo para a ação 6 que ficou sem data; uma intervenção do Carlos atribuída ao Pedro. Deteção: timestamp e citações.
 
-Como mitigar: pedir explicitamente *"em registo neutro institucional, sem caracterizar intenções de nenhum interveniente. Reporta o que cada um escreveu."* **A neutralidade não é default. É escolha.**
+**Sinal 2 — Mistura de línguas.** "Compliance", "stakeholders", pt-BR em registo formal. Mitigação: pedir português europeu — e ler.
 
-**Sinal 5 — Alucinação por omissão** *(mais frequente em documentos longos com estrutura hierárquica — regulamentos, pareceres, atas).* O Copilot não inventa nada, mas omite exceções críticas. Tema central da [S4]({% link bloco-2-produtividade/sessao-04.md %}#sinais-output); em comunicação institucional é menos crítico, mas pode aparecer (ex.: resumo de thread que omite um e-mail inteiro porque era curto).
+**Sinal 3 — Sobre-simplificação.** *"O EPD recomenda adiamento"* vira *"o EPD recusa o calendário"*. Em comunicação, **a nuance é o conteúdo**.
+
+**Sinal 4 — Omissão silenciosa.** O tema central da S4; aqui aparece como o e-mail curto que o resumo engole inteiro — ou como o interveniente que nunca escreveu. O follow-up dos silenciados é, no fundo, um detetor de omissões do mundo real.
 
 {: .important }
-> **Cinco coisas que o Copilot faz mal. Em comunicação, a pior é a que o tom do vosso prompt provoca — sycophancy.**
+> **Em comunicação, o pior sinal é o que o tom do vosso prompt provoca — sycophancy.** Os outros descobrem-se comparando com a fonte; este esconde-se porque os factos estão todos lá.
 
 ## Disciplina de validação — checklist por superfície {#disciplina-validacao}
 
-A S04 deu o **método CCC** para validar resumos de documentos. Na S05, em vez de inventar acrónimo novo, o princípio **MAPEIA, NÃO DECIDAS** atravessa as três tarefas, e a validação é uma checklist curta por tipo de artefacto.
+A S4 deu o **método CCC** para documentos. A S5 não inventa acrónimo novo: o princípio **MAPEIA, NÃO DECIDAS** atravessa as três tarefas, e a validação é uma checklist curta por artefacto.
 
-**Quando sumarizam thread no Outlook:**
-- ✅ Todos os intervenientes estão mapeados?
-- ✅ Algum interveniente foi adicionado ou silenciado?
-- ✅ Os prazos batem certo com os e-mails originais (clicar nas citações numeradas)?
-- ✅ O tom é neutro ou alguém saiu caricaturado?
+**Quando sumarizam uma thread:**
 
-**Quando redigem resposta com Help me reply:**
-- ✅ O Copilot decidiu por vocês em algum conflito?
-- ✅ O Coach sugeriu mudanças que aceitaram sem pensar?
+- ✅ Todos os intervenientes mapeados? Alguém adicionado ou silenciado?
+- ✅ Os prazos batem certo com os e-mails de origem?
+- ✅ A matéria sindical ficou por súmula?
+- ✅ O tom é neutro, ou alguém saiu caricaturado?
+
+**Quando redigem uma resposta:**
+
+- ✅ O Copilot decidiu por vocês nalgum conflito?
+- ✅ Alguma sugestão de "estilo" mudou conteúdo?
 - ✅ Há frases em inglês ou pt-BR?
 - ✅ Esta redação é defensável como vossa?
 
-**Quando extraem ações no Teams:**
-- ✅ Cada ação tem timestamp confirmável na transcrição?
-- ✅ O responsável atribuído bate certo com quem falou nesse timestamp?
+**Quando extraem ações de uma reunião:**
+
+- ✅ Cada ação tem timestamp confirmável?
+- ✅ O responsável bate certo com quem falou?
 - ✅ Algum prazo foi inventado?
-- ✅ Ações compostas (uma intervenção, várias ações implícitas) foram desdobradas?
+- ✅ Ações compostas foram desdobradas?
 
-**Em todos os três casos, a regra-mãe:** *MAPEIA, NÃO DECIDAS.*
-
-**Cross-reference à S04:** o [método CCC]({% link bloco-2-produtividade/sessao-04.md %}#metodo-ccc) continua aplicável a documentos longos. Quando, em S05, tiverem de validar um regulamento citado num e-mail, voltam a CCC. As duas peças complementam-se: CCC para documentos; MAPEIA-NÃO-DECIDAS para comunicação.
+**Em todos os casos, a regra-mãe:** *MAPEIA, NÃO DECIDAS.* E quando um documento longo entrar na conversa (um regulamento citado num e-mail), volta o [CCC]({% link bloco-2-produtividade/sessao-04.md %}#metodo-ccc).
 
 ## Leitura complementar — porque é que o Copilot se comporta assim
 
 {: .note }
-> **Conteúdo para auto-estudo, não obrigatório na aula.** Esta secção explica os limites operacionais do Copilot no Outlook e no Teams. Pode ser saltada por quem só queira a parte prática.
+> **Conteúdo para auto-estudo, não obrigatório na aula.** Explica os limites operacionais do Copilot no Outlook e no Teams.
 
-### Microsoft Graph — o índice unificado
+### O Microsoft Graph
 
-O Microsoft 365 Copilot consulta o **Microsoft Graph**, uma base de dados unificada de todas as comunicações, ficheiros, reuniões e calendário do tenant. É o que permite ao Summarize ver toda a thread mesmo que apenas tenham aberto um e-mail, e ao Intelligent recap acessar a transcrição da reunião.
+Com licença, o Copilot in-app consulta o **Microsoft Graph** — o índice das comunicações, ficheiros, reuniões e calendário do tenant a que **vocês** têm acesso. É o que permite ao *Summary* ver a thread toda e ao *Recap* aceder à transcrição. Duas implicações práticas: pode trazer mais do que esperavam ("resume os e-mails sobre X" inclui o e-mail esquecido de 2024 a que ainda têm acesso); e itens eliminados continuam indexados até à purga definitiva. No Copilot Chat sem licença não há Graph: o Copilot só vê o que carregam ou colam na conversa — menos alcance, mais controlo sobre o que entra.
 
 ### Permissões herdadas
 
-O Copilot **trabalha com informação a que vocês têm permissões de acesso**, respeitando controlos e políticas do Microsoft 365 — etiquetas de sensibilidade, permissões de pastas, políticas DLP. O problema típico não é o Copilot ver o que não devia; é estar a ver documentos a que vocês próprios já tinham acesso indevido por *oversharing* prévio do SharePoint. Antes de adoção em larga escala, esta é a primeira coisa a resolver.
+O Copilot vê o que vocês podem ver — etiquetas de sensibilidade, permissões, políticas DLP aplicam-se. O problema típico não é o Copilot ver demais; é o *oversharing* prévio do SharePoint que já vos dava acesso indevido. (É o ponto c) do e-mail da DSI no dataset.)
 
-### Indexação com latência
+### Limites da transcrição automática
 
-Documentos e e-mails recém-criados podem demorar **minutos** a aparecer no índice do Graph. Se acabaram de receber um e-mail e o Summarize não o inclui, esperar 5-10 min antes de assumir bug.
+- **Atribuições erradas** quando duas pessoas falam em simultâneo
+- **Termos técnicos mal transcritos** (AIPD → "API"; SIADAP → "siapap")
+- **Cortes** em ligações instáveis — "[impercetível]" ou inferências erradas
+- **Pontuação inferida** que muda o sentido (a vírgula que elimina a pausa de discordância)
+- Com câmara desligada e ambiente ruidoso, a transcrição desse interveniente pode ficar **demasiado degradada para ser utilizável**
 
-### Limites da transcrição automática do Teams
+Boa prática: **a transcrição é assistente, não fonte autoritativa.** Para ações críticas, confirmar com o próprio interveniente antes do follow-up — é a reflexão final desta sessão.
 
-A transcrição tem erros sistémicos a ter presente:
-- **Atribuições erradas** em diálogos sobrepostos (duas pessoas a falar ao mesmo tempo)
-- **Termos técnicos mal transcritos** (AIPD → API; ICP)
-- **Silêncios e cortes** em ligações instáveis
-- **Pontuação inferida** que altera sentido (uma vírgula no lugar errado muda o que foi dito)
+### Threads e reuniões longas
 
-A boa prática: **transcrição é assistente, não fonte autoritativa**. Para ações críticas, validar com o próprio interveniente antes do follow-up.
-
-Detalhe técnico aprofundado em [Intelligent recap for Teams calls, meetings, and events](https://learn.microsoft.com/en-us/microsoftteams/intelligent-recap-calls-meetings).
+Threads muito longas e reuniões de várias horas podem exceder o que o Copilot considera de uma vez — trunca sem avisar. Boa prática: dividir por temas e pedir resumos parciais. E para outputs que vão à Direção: duas execuções, comparar — onde divergem, há ambiguidade no input (*self-consistency*, como na S4).
 
 ## Avançado (worksheet) — mapa de stakeholders dinâmico
 
-A técnica do follow-up de silenciados do Caso #1 generaliza para qualquer dataset onde haja intervenientes mencionados sem voz própria. Aplicada de forma sistemática, chama-se **mapa de stakeholders dinâmico** — três passos.
+O follow-up dos silenciados generaliza: aplicado de forma sistemática, chama-se **mapa de stakeholders dinâmico** — três passos, com os prompts completos no worksheet (Sub-C).
 
-**Passo 1 — Extração em três categorias.** O prompt do Caso #1 (autores, mencionados, inferidos) é o passo de extração.
+1. **Extração em três categorias** — o prompt do Caso #1 (autores · mencionados · inferidos).
 
-**Passo 2 — Detecção de lacuna crítica.** Depois da matriz, perguntar ao Copilot:
+2. **Deteção de lacuna crítica** — *"De entre os mencionados ou inferidos (não-autores), identifica os 1-2 com maior risco de criar conflito institucional se não forem consultados antes do anúncio público. Critérios: representação formal, dever de consulta, capacidade de obstrução posterior."* No dataset da Catarina, a resposta é a Comissão de Trabalhadores — cuja consulta, num caso real, não é cortesia: é o quadro do direito coletivo (CRP art. 54.º; Código do Trabalho, arts. 423.º e seguintes — direito de informação e consulta).
 
-> *De entre os intervenientes mencionados ou inferidos (não-autores), identifica os 1-2 com maior risco de criar conflito institucional se não forem consultados antes do anúncio público. Critérios: representação formal, dever legal de consulta, capacidade de obstrução posterior.*
+3. **Recomendação de inclusão** — o parágrafo modelo para a proposta ao Reitor.
 
-No dataset da Catarina, a resposta é a Comissão de Trabalhadores.
-
-**Passo 3 — Recomendação de inclusão.** Pedir um parágrafo modelo a incluir na proposta ao Reitor, recomendando consulta formal à(s) entidade(s) identificada(s).
-
-A técnica aplica-se a qualquer dataset — atas de Conselho Pedagógico, cadernos de encargos, propostas de financiamento, despachos antes de assinar. O detalhe completo (com prompts verbatim para cada passo) está no worksheet S05, secção Sub-C.
+Aplica-se a atas, cadernos de encargos, propostas de financiamento, despachos antes de assinar.
 
 ## Reflexão final — quando a transcrição falha
 
-> *"Quando a transcrição automática falha (uma intervenção saiu pouco perceptível), devo inferir o que o colega disse, ou perguntar-lhe?"*
+> *Na transcrição da reunião, as três intervenções do Pedro Antunes (remoto, ambiente ruidoso, câmara desligada) saíram maioritariamente "[impercetível]". O follow-up sai amanhã. O que fazem?*
+>
+> **A.** Uso o Copilot para inferir o que o Pedro provavelmente disse, com base no contexto.
+>
+> **B.** Pergunto ao Pedro e espero a resposta dele.
+>
+> **C.** Uso o Copilot para gerar uma reconstituição plausível — e mando-a **ao Pedro** para ele confirmar ou corrigir antes do follow-up.
+>
+> **Votem A, B ou C no chat — discutimos a seguir.**
 
-Inferir é tentador — o Copilot consegue gerar uma reconstituição plausível com base no contexto. Mas plausível ≠ verdadeiro. **A norma profissional: perguntar.**
-
-Mensagem rápida ao colega: *"Pedro, na transcrição automática a tua intervenção saiu pouco perceptível. Podes confirmar que disseste X sobre Y?"* Cinco minutos extra. Zero risco. O Pedro tem direito a ser representado por **o que disse**, não por o que se infere que disse.
+A discussão vale mais do que a resposta — mas o critério é o da S4: quando o conteúdo é de alguém, o Copilot pode ajudar na **forma**; a **substância** é da pessoa. O Pedro tem direito a ser representado pelo que **disse**, não pelo que se infere que disse.
 
 ## Síntese da sessão
 
-Saímos da S05 com três coisas, e só três:
+Saímos da S5 com três coisas, e só três:
 
-- **Sei sumarizar uma thread no Outlook** e fazer o follow-up que mostra quem ficou silenciado.
-- **Sei redigir resposta com Help me reply + Coaching** sem deixar o Copilot decidir por mim.
-- **Sei extrair ações de uma reunião no Teams** com validação por timestamp.
+- **Sei sumarizar uma thread** com citações rastreáveis e fazer o follow-up que mostra quem ficou silenciado.
+- **Sei detetar e neutralizar sycophancy** — vi o espelho funcionar com as minhas mãos.
+- **Sei extrair ações de uma reunião** com validação por timestamp — o CCC das reuniões.
 
-E uma frase a guardar:
+E os prompts de hoje não se perdem: a matriz de posições e a tabela de ações entram na biblioteca da S3 na categoria **Analisar**; a resposta ao Reitor e o follow-up em **Redigir**; o mapa de stakeholders em **Analisar** — sempre com nome, "quando usar" e a validação no campo próprio.
 
 > O Copilot é um redator júnior brilhante. Faz draft em 30 segundos. Mas não decide. **MAPEIA, NÃO DECIDAS.**
 
-{: .important }
-> **O Copilot espelha o ângulo do vosso prompt.** Se enviesarem a pergunta, viesam a resposta. A neutralidade não é default. É escolha.
+## E na segunda-feira, com a vossa caixa de correio?
+
+- **Thread real para resumir?** Com licença, o *Summary* — e o follow-up dos silenciados a seguir. Sem licença, minimizem antes de colar: só os e-mails necessários, sem matéria sindical nem dados pessoais que a tarefa dispensa.
+
+- **Reunião para transcrever?** Antes do botão: os participantes sabem? A política da casa permite? Em matéria laboral ou disciplinar, a decisão não é vossa — é institucional.
+
+- **Tarefa da semana:** apliquem o follow-up dos silenciados a uma thread real (minimizada) do vosso serviço. Tragam para a S6: *quem tinha ficado de fora?*
 
 ## Ligações cruzadas a outras sessões
 
 | Liga a | Como |
 |---|---|
-| **S04 (Word)** | O Regulamento de Avaliação 2024 da S04 aparece na ordem de trabalhos da reunião do DOC-B. CCC continua a aplicar-se quando este regulamento é citado. |
-| **S08 (SIADAP)** | A Catarina volta. **MAPEIA, NÃO DECIDAS** dá lugar a uma versão mais dura: *NÃO PROPONHAS MENÇÃO*. |
-| **S11 (Apoio a Júri)** | A Margarida (DSI) e a Catarina reaparecem como membros do júri. Universo coerente. |
-| **S09 (Atas)** | A transcrição automática do Teams (DOC-B) é o input típico que a S09 transforma em ata formal. |
-| **S13 (Copilot Pages)** | A biblioteca de prompts construída em S05 é o material que S13 ensina a partilhar com a equipa. |
+| **S4 (Word)** | O Regulamento de Avaliação 2024 da S4 aparece na ordem de trabalhos da reunião do DOC-B. O CCC aplica-se quando esse regulamento for citado. |
+| **S8 (SIADAP)** | A Catarina volta. MAPEIA, NÃO DECIDAS endurece para: *NÃO PROPONHAS MENÇÃO*. |
+| **S9 (Atas)** | A transcrição do DOC-B é o input típico que a S9 transforma em ata formal. |
+| **S11 (Apoio a Júri)** | A Margarida (DSI) e a Catarina reaparecem como membros de júri. |
+| **S13 (Copilot Pages)** | A biblioteca de prompts que cresce desde a S3 é o material que a S13 ensina a partilhar. |
 
 ## Materiais
 
@@ -498,7 +590,7 @@ E uma frase a guardar:
 - [Dataset S05 — Comunicação (DOCX)]({{ site.baseurl }}/sessoes/sessao-05/Dataset_S05_Comunicacao.docx) — DOC-A thread Copilot UVV + DOC-B transcrição da reunião
 
 {: .note }
-> Alguns materiais podem estar protegidos por password. A password é fornecida pelo formador.
+> Se algum material pedir password, ela é fornecida pelo formador (o dataset desta sessão abre sem password).
 
 ### Para aprofundar
 
