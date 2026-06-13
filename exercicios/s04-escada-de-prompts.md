@@ -48,6 +48,14 @@ Abra **Market Analysis Report for Mystic Spice Premium Chai Tea.docx** no Word e
 
 > *Resume a secção sobre Análise Competitiva (Competitive Analysis) deste documento do Word com uma breve visão geral dos pontos principais para discutir com a minha equipa na reunião de Vendas de amanhã. Mantém o resumo em 5 pontos-chave e usa linguagem simples.*
 
+> 💡 **Dicas no Word** (dos guias oficiais [Welcome to Copilot in Word](https://support.microsoft.com/en-us/office/welcome-to-copilot-in-word-2135e85f-a467-463b-b2f0-c51a46d625d1) e [Rewrite text with Copilot in Word](https://support.microsoft.com/en-US/Word/copilot/rewrite-text-with-copilot-in-word)):
+>
+> - O ícone do Copilot aparece **na margem**, ao lado do parágrafo onde está o cursor — selecione texto e escolha **Auto Rewrite** para obter várias versões: **Substituir**, **Inserir abaixo** (fica com o original *e* a reescrita, lado a lado) ou **Regenerar**. Pode ainda **escrever na própria caixa da sugestão** para a afinar antes de aplicar.
+>
+> - **«Visualizar como tabela»** transforma um parágrafo denso numa tabela; depois afine com *"acrescenta uma coluna…"*.
+>
+> - Percorra as alternativas com as setas **‹ ›** e decida com **Manter · Regenerar · Descartar**. As conversas ficam no **histórico do Copilot**.
+
 ---
 
 ## 2 · PowerPoint — identificar e resumir
@@ -139,24 +147,53 @@ Este é o movimento mais poderoso do módulo: **referenciar vários documentos d
 
 ## Verificação de conhecimentos
 
-<details markdown="1">
-<summary>1. Quais são os quatro elementos de um prompt eficaz?</summary>
+As quatro perguntas do *[knowledge check](https://learn.microsoft.com/en-us/training/modules/summarize-simplify-information-with-microsoft-copilot-microsoft-365/8-knowledge-check)* do módulo, traduzidas. Tente responder antes de abrir a resposta.
 
-**Objetivo, Contexto, Fonte e Expectativas** (Goal, Context, Source, Expectations).
+**1. Qual é a finalidade de incluir um *Objetivo* (Goal) num prompt?**
+
+- a) Dar contexto para a tarefa
+- b) Listar os passos necessários para completar a tarefa
+- c) Indicar claramente o objetivo da tarefa
+
+<details markdown="1"><summary>Ver resposta</summary>
+
+**c)** O Objetivo diz ao Copilot, antes de tudo, *o que* se pretende.
 
 </details>
 
-<details markdown="1">
-<summary>2. O que acrescenta a «Fonte» a um prompt de resumo?</summary>
+**2. Porque é importante incluir *Expectativas* num prompt?**
 
-Diz ao Copilot **qual documento, secção, intervalo ou conjunto de ficheiros** usar — em vez de o deixar resumir tudo. É o que torna a resposta mais precisa (ex.: «a secção sobre Análise Competitiva», «os slides 5 a 10», «`/ficheiro.docx`»).
+- a) Dar contexto para a tarefa
+- b) Comunicar claramente o que se espera do Copilot
+- c) Listar os passos necessários para completar a tarefa
+
+<details markdown="1"><summary>Ver resposta</summary>
+
+**b)** As Expectativas definem formato, extensão e tom da resposta.
 
 </details>
 
-<details markdown="1">
-<summary>3. Como se compila uma síntese a partir de vários documentos?</summary>
+**3. Vai construir um prompt para o Copilot no Word resumir um relatório de desempenho de vendas. Qual destas *Expectativas* funcionaria melhor?**
 
-No **Copilot Chat**, referenciando cada ficheiro com `/` no campo da Fonte e pedindo, nas Expectativas, o formato combinado (ex.: sumário executivo + tabela comparativa).
+- a) Foca-te nas conclusões principais e usa linguagem simples para transmitir a informação de forma eficaz.
+- b) Usa jargão técnico e siglas para o prompt soar profissional.
+- c) Inclui todos os detalhes do relatório numa lista exaustiva.
+
+<details markdown="1"><summary>Ver resposta</summary>
+
+**a)** Boas Expectativas pedem **foco e clareza** — não exaustividade nem jargão.
+
+</details>
+
+**4. Um utilizador precisa de um prompt no Copilot do Excel para resumir um relatório financeiro complexo. O que deve incluir como *Contexto*?**
+
+- a) Procura tendências e padrões comuns para identificar valores atípicos nos dados.
+- b) Procura na Tabela 1 os dados financeiros mais recentes.
+- c) Inclui todos os dados do relatório no prompt.
+
+<details markdown="1"><summary>Ver resposta</summary>
+
+**a)** O Contexto diz ao Copilot *o que procurar* (o propósito da análise). A opção b) é **Fonte** (onde procurar); a c) é o erro de «despejar tudo».
 
 </details>
 

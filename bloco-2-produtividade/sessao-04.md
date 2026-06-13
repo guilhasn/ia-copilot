@@ -81,6 +81,19 @@ Limites: até **20 itens** por referência (ficheiros, e-mails ou reuniões); re
 
 *Fontes Microsoft:* [Create a summary of your document with Copilot in Word](https://support.microsoft.com/en-us/office/create-a-summary-of-your-document-with-copilot-in-word-79bb7a0a-3bf7-41fe-8c09-56f855b669bf) · [Draft and add content with Copilot in Word](https://support.microsoft.com/en-us/office/draft-and-add-content-with-copilot-in-word-069c91f0-9e42-4c9a-bbce-fddf5d581541)
 
+{: .note }
+> 💡 **Dicas práticas para usar o Copilot no Word** (do [guia oficial](https://support.microsoft.com/en-us/office/welcome-to-copilot-in-word-2135e85f-a467-463b-b2f0-c51a46d625d1)):
+>
+> - **O ícone do Copilot aparece na margem**, ao lado do parágrafo onde está o cursor — é o atalho mais rápido para reformular ou transformar esse parágrafo, sem ir ao painel.
+>
+> - **«Visualizar como tabela»** transforma um parágrafo denso numa tabela (experimente nos cinco estatutos do art. 5.º do regulamento) — e depois afina com instruções como *"acrescenta uma coluna com o prazo de requerimento"*.
+>
+> - Cada resposta traz **Manter · Regenerar · Descartar**, e pode percorrer as alternativas com as setas **‹ ›** antes de decidir — não fique pela primeira.
+>
+> - As conversas **ficam guardadas no histórico do Copilot** — pode voltar a um resumo que fez ontem em vez de o refazer.
+>
+> - **Limites a conhecer:** o Copilot lida mal com SmartArt, tabelas e gráficos; processa um número limitado de palavras por prompt (divida documentos longos); e suporta menos línguas do que a interface do Word. E, como sempre, *"reveja e verifique o que ele gera"* — é o CCC.
+
 ## Linguagem clara — porque importa {#linguagem-clara}
 
 **Definição.** Linguagem clara é comunicação administrativa redigida de forma que o destinatário compreenda à primeira leitura, **sem perder o rigor técnico** necessário ao efeito jurídico do ato.
