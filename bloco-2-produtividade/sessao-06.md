@@ -1,7 +1,6 @@
 ---
 title: "S6 — Excel"
 layout: default
-published: false
 parent: "Bloco 2 · Produtividade Individual"
 nav_order: 3
 ---
@@ -18,13 +17,23 @@ nav_order: 3
 - **Bloco:** 2 · Produtividade Individual
 - **Casos operacionais:** #1 Diagnóstico estrutural do dataset · #2 Análise descritiva com salvaguarda · #3 Identificação de anomalias técnicas
 
+## Para começar — o que trouxeram da S5
+
+Dois minutos antes de matéria nova: quem aplicou o **follow-up dos silenciados** a uma thread real do seu serviço — quem tinha ficado de fora? Uma linha no chat. Hoje invertemos a matéria: não documentos nem e-mails, mas uma **folha de cálculo suja**.
+
 ## Ideia central
 
-O Miguel Andrade, Técnico de Contratação Pública da Universidade de Vale Verde, tem de produzir hoje, antes do fim do dia, o relatório trimestral de execução orçamental para a Reitoria. Tem em mãos um dossier Excel com 35 contratos — datas em formatos diferentes, valores como string em alguns, células mescladas, totais errados. Tradicionalmente este trabalho demoraria 5h30. Vai usar Copilot para tentar fazer em 1h30.
+O Miguel Andrade, Técnico de Contratação Pública da Universidade de Vale Verde, tem de produzir hoje, antes do fim do dia, o relatório trimestral de execução orçamental para a Reitoria. Tem em mãos um dossier Excel com 35 contratos — datas em formatos diferentes, valores como texto em alguns, células mescladas, totais errados. Um trabalho que costuma ocupar uma manhã inteira. Vai usar Copilot para tentar fazê-lo numa hora e meia.
 
 Esta sessão completa o trio do Bloco 2: depois da Helena no Word (S4) e da Catarina em Outlook + Teams (S5), entra o Miguel da Contratação Pública no Excel.
 
 > O Copilot lê os dados. Tu ouves a história que eles contam.
+
+{: .note }
+> **Com e sem licença.** O Copilot **dentro do Excel** (perguntar aos dados, gerar fórmulas, análise avançada) exige licença Microsoft 365 Copilot e trabalha sobre a folha aberta — **vê-lo na demonstração**. **Sem licença**, faça os exercícios no **Copilot Chat** ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)): carregue o `.xlsx` com «+ Adicionar conteúdo» e faça as mesmas perguntas — o Chat lê tabelas carregadas e responde, incluindo a pergunta-salvaguarda. (Os gráficos e tabelas dinâmicas geradas *na folha* são exclusivos do Excel com licença; o diagnóstico, a análise descritiva e a validação são iguais nos dois caminhos.)
+
+{: .important }
+> **Matriz Semáforo desta sessão: amarelo.** Dados de execução orçamental e de contratos são informação institucional interna. O dataset é fictício (pode ser carregado por inteiro); com dados reais que identifiquem pessoas singulares (adjudicatários em nome individual, vencimentos), minimize antes de submeter, e — sem licença — lembre-se de que o que carrega no Copilot Chat sai do contexto da folha.
 
 ## Objetivos
 
@@ -50,15 +59,15 @@ A S06 retoma os [5 sinais]({% link bloco-2-produtividade/sessao-04.md %}#sinais-
 
 ## Programa
 
-1. Apresentação do Miguel Andrade — nova persona da sessão (Contratação Pública)
-2. Demonstração ao vivo — análise conversacional, anomalias, silent column skip
+1. Para começar — debrief da S5
+2. Demonstração ao vivo — Excel: análise conversacional, anomalias, silent column skip
 3. Diagnóstico estrutural — o conceito-chave da sessão
 4. Caso #1 — diagnóstico do dataset
 5. Caso #2 — análise descritiva com salvaguarda
 6. Caso #3 — anomalias técnicas
-7. Sub-B — template trimestral reutilizável (para quem termina cedo)
+7. Análise avançada — What-If e relatório executivo (para quem termina cedo)
 8. Consolidação — 5 sinais de output e pergunta-salvaguarda
-9. Reflexão crítica — onde investir o tempo libertado pela poupança calculada
+9. Reflexão crítica — onde investir o tempo libertado
 
 ## O Copilot no Excel
 
@@ -137,6 +146,11 @@ O Miguel abre o `Dataset_S06_Execucao_Orcamental.xlsx` no Excel. **Resiste à te
 
 ### Output esperado
 
+Tente primeiro; só depois abra.
+
+<details markdown="1">
+<summary>Ver o output típico do diagnóstico</summary>
+
 > *Identifiquei os seguintes problemas estruturais:*
 >
 > *1. **Linha 17 — célula mesclada A17:E17** ("Subtotal DSI") que rompe a estrutura tabular.*
@@ -144,6 +158,8 @@ O Miguel abre o `Dataset_S06_Execucao_Orcamental.xlsx` no Excel. **Resiste à te
 > *3. **Coluna J ("Data Adjudicação")** — formatos mistos: 21 datas em formato YYYY-MM-DD, 6 em DD/MM/YYYY, 4 em DD-MM-YYYY, 4 em texto livre 'DD mes YYYY'.*
 > *4. **Coluna F ("Valor Adjudicado")** — alguns valores numéricos, outros como texto com '€'. Cinco linhas com valor como texto.*
 > *5. **Coluna B ("Adjudicatário")** — grafias variadas para a mesma empresa: 'Microsoft Portugal' aparece em 4 grafias; 'Critical Software' em 3; 'NOS Comunicações' em 3.*
+
+</details>
 
 **Mensagem central:** *cinco minutos a diagnosticar poupam trinta minutos a desconfiar dos números.*
 
@@ -168,6 +184,9 @@ Depois do diagnóstico estrutural, o Miguel pede a análise propriamente dita. *
 
 ### Output esperado
 
+<details markdown="1">
+<summary>Ver a tabela típica</summary>
+
 > *Excluí: linha 17 (subtotal mesclado), linha 36 (TOTAL final solto), e 4 linhas com data em texto livre (linhas 12, 21, 28, 31). Análise sobre 30 das 35 linhas.*
 
 | Divisão | Adjudicado | Pagamento | Taxa de execução |
@@ -177,6 +196,8 @@ Depois do diagnóstico estrutural, o Miguel pede a análise propriamente dita. *
 | Divisão Académica | €462.875 | €273.097 | 59% |
 | Divisão Financeira | €313.065 | €144.010 | 46% |
 
+</details>
+
 ### Passo 2 — A pergunta-salvaguarda
 
 A peça nomeada desta sessão. **Aplica-se sempre depois de qualquer número** devolvido pelo Copilot sobre dados estruturados.
@@ -185,10 +206,15 @@ A peça nomeada desta sessão. **Aplica-se sempre depois de qualquer número** d
 
 ### Output esperado da salvaguarda
 
+<details markdown="1">
+<summary>Ver a resposta típica</summary>
+
 > *Usei 30 das 35 linhas. Ignorei:*
 > *- linha 17 (subtotal mesclado)*
 > *- linha 36 (TOTAL final solto)*
 > *- linhas 12, 21, 28 com data em formato de texto livre "DD mes YYYY" que não consegui interpretar como data*
+
+</details>
 
 Cinco segundos a escrever, vinte segundos a ler a resposta. Em troca, transparência sobre o subset analisado.
 
@@ -224,11 +250,16 @@ O Miguel pede ao Copilot que identifique padrões anómalos no dataset — situa
 
 ### Output esperado
 
+<details markdown="1">
+<summary>Ver as anomalias plantadas (3)</summary>
+
 | N.º Contrato | Tipo de anomalia | Severidade |
 |---|---|---|
 | (auditoria externa) | Pagamento (€32.500) > Compromisso (€30.000) | Crítica |
 | (aquisição rede urgente) | Cabimento = 0 | Crítica |
 | (limpeza) | Compromisso (€27.000) > Valor adjudicado (€24.000) | Alta |
+
+</details>
 
 Realisticamente o Copilot identifica 2-3 das 3 anomalias e pode inventar uma 4.ª plausível mas não real. **Validação manual obrigatória.**
 
@@ -272,30 +303,42 @@ Cinco segundos a escrever, vinte segundos a ler a resposta. Em troca, transparê
 {: .important }
 > **A pergunta *"Quantas linhas usaste?"* é a vossa salvaguarda contra silent column skip. Apliquem-na sempre depois de qualquer número.**
 
-## Avançado (worksheet) — template trimestral
+## Análise avançada — What-If e relatório executivo
 
-O Miguel **trimestralmente** repete este trabalho — relatório de execução orçamental para a Reitoria, sempre com dataset sujo. Em vez de partir do zero cada vez, constrói um **template de 4 prompts encadeados** que reaplica.
+Para quem termina cedo (e para o trabalho trimestral a sério), o Copilot no Excel vai além de descrever o passado. Duas técnicas vêm diretamente dos módulos **Finance** e **Executives** do [percurso oficial da Microsoft](https://learn.microsoft.com/en-us/training/paths/empower-workforce-copilot-use-cases/) — aqui adaptadas a uma IES.
 
-**Os quatro prompts encadeados:**
+### Cenários What-If
 
-1. **Diagnóstico estrutural** — identifica problemas no ficheiro (o prompt do Caso #1)
-2. **Análise descritiva parametrizada** — médias, totais, top N por dimensão (parametrizado por divisão, departamento, tipo)
-3. **Identificação de anomalias** — padrões anómalos com severidade (o prompt do Caso #3)
-4. **Resumo executivo** — produzir output pronto a entregar (parametrizado por número de palavras)
+Com licença, o **modo de análise avançada** do Copilot responde a perguntas hipotéticas sobre os dados — o equivalente, em conversa, a uma tabela de cenários:
 
-Cada prompt é encadeado: o output do anterior alimenta o seguinte. No fim, validação pré-entrega (checklist).
+> *Se a dotação da Divisão Financeira for cativada em 10%, qual passa a ser a taxa de execução projetada por divisão, mantendo os compromissos atuais?*
 
-**Valor concreto:**
+⚠️ O What-If é tão bom quanto os pressupostos. O Copilot **calcula** o cenário; o que se cativa e o que se mantém é uma **decisão de gestão, não dele**. E a pergunta-salvaguarda continua a aplicar-se ao subset usado.
 
-| | Tempo |
-|---|---:|
-| Sem Copilot | 5h30 por trimestre × 4 = **22h/ano** |
-| Com Copilot + template | 1h30 por trimestre × 4 = **6h/ano** |
-| **Diferença** | **16h/ano — dois dias úteis recuperados** |
+### Do número ao relatório — e às perguntas que vão fazer
 
-O detalhe completo (prompts verbatim para cada passo + checklist de validação pré-entrega) vive no worksheet S06, secção Sub-B.
+A técnica mais transferível do módulo *Executives*: depois da análise, pedir o resumo executivo e, logo a seguir, **antecipar as perguntas da reunião**.
 
-Esta técnica **não se ensina no Excel padrão**. É contribuição genuína desta formação.
+> *A partir da análise anterior, redige um resumo executivo de meia página para o Conselho de Gestão: 1 parágrafo de enquadramento + a taxa de execução por divisão + 3 pontos de atenção. Tom institucional, português europeu.*
+
+> *Agora gera as 10 perguntas que o Conselho de Gestão provavelmente colocará sobre estes números, com uma resposta sugerida para cada — e assinala as que exigem dados que não estão nesta folha.*
+
+As 10 perguntas são o ensaio da reunião; e a última instrução — *"assinala as que exigem dados que não estão na folha"* — é, de novo, a IA a confessar os próprios limites em vez de inventar.
+
+> 📊 Estes KPIs e o resumo executivo encadeiam diretamente com os slides para o Conselho — matéria da S7 (PowerPoint).
+
+### O template trimestral (worksheet)
+
+O Miguel repete este trabalho todos os trimestres, sempre com dataset sujo. Em vez de partir do zero, encadeia **quatro prompts** que reaplica — é *prompt chaining*, a mesma técnica do arco da S4:
+
+1. **Diagnóstico estrutural** (o prompt do Caso #1)
+2. **Análise descritiva parametrizada** (médias, totais, top-N por divisão/tipo)
+3. **Identificação de anomalias** (o prompt do Caso #3)
+4. **Resumo executivo + 10 perguntas** (a técnica acima)
+
+O output de cada passo alimenta o seguinte; no fim, validação pré-entrega (checklist). O detalhe completo, com os prompts verbatim, vive no worksheet S06 (Sub-B).
+
+**Ganho de tempo (estimativa, a confirmar na vossa realidade):** um relatório que ocupa uma manhã passa a ~hora e meia. Ao trimestre, são várias manhãs por ano libertadas — desde que a validação (diagnóstico + salvaguarda) seja rápida, que é o que esta sessão treina.
 
 ## Leitura complementar — porque o Copilot falha em ficheiros Excel sujos
 
