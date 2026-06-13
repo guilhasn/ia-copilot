@@ -142,9 +142,18 @@ A Helena vai entregar a cada coordenador um resumo executivo de 1 página. Tem 3
 
 📎 **Para fazer este exercício, descarregue o dataset:** [Dataset_S04_Documentos.docx]({{ site.baseurl }}/sessoes/sessao-04/Dataset_S04_Documentos.docx) — abra no Word e vá à secção DOC-A (se for colar no Copilot Chat, copie apenas essa secção).
 
-### Prompt de trabalho
+### A escada de prompts — do «Resume isto» ao prompt de trabalho
 
-Antes do prompt completo, o contraste de 30 segundos que mostra porque é que o framework importa: corra primeiro, tal e qual, o prompt fraco da S3 — *"Resume este regulamento."* — e guarde o resultado. Depois o prompt completo; no fim, compare os dois outputs lado a lado. A diferença que vai ver é o GCSE a trabalhar.
+O prompt de trabalho não nasce pronto: constrói-se degrau a degrau, acrescentando **um elemento GCSE de cada vez** — é a "escada" que a Microsoft ensina no módulo oficial *[Summarize and simplify information with Microsoft 365 Copilot](https://learn.microsoft.com/en-us/training/modules/summarize-simplify-information-with-microsoft-copilot-microsoft-365/)*. Aplicada ao nosso regulamento, sobe assim:
+
+| Degrau | O que acrescenta | Prompt |
+|---|---|---|
+| **Básico** | só o **Objetivo** | *"Resume este regulamento."* (o prompt fraco da S3 — sai genérico) |
+| **Bom** | + **Contexto** | *"…para eu preparar a reunião de amanhã com os 4 coordenadores de mestrado."* |
+| **Melhor** | + **Fonte** | *"…em particular os artigos sobre avaliação contínua e melhoria de classificação."* |
+| **Ótimo** | + **Expectativas** | *"…em 5 a 7 pontos, com o número do artigo em cada um, em português europeu, sem simplificar os termos técnicos."* |
+
+Corra os quatro na sequência e veja o resumo a ganhar foco a cada degrau (o exercício guiado completo — com a validação CCC e a compilação de várias fontes — está em **[Exercícios → A Escada de Prompts]({% link exercicios/s04-escada-de-prompts.md %})**). O último degrau é o **prompt de trabalho** desta tarefa:
 
 > *Objetivo: Produz um resumo executivo do Regulamento de Avaliação dos Mestrados da UVV: 1 parágrafo de abertura (3-4 linhas) + 5 a 7 pontos-chave em bullets. Cita o número do artigo em cada ponto. Mantém os termos jurídicos técnicos (não simplifiques "audiência prévia", "regime especial", "época especial").*
 >
