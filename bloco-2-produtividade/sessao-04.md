@@ -400,7 +400,7 @@ Tudo o que está é **verdade**. Mas omitiu o n.º 3 — exatamente a regra que 
 
 Deteção: para cada artigo citado, verificar se tem subníveis (n.º 1, 2, 3...). Se sim, ver se o resumo cita o número específico ("art. 3.º n.º 1") ou só o artigo ("art. 3.º"). Se cita só o artigo sem número, **provavelmente** está a omitir números seguintes.
 
-**Sinal 5 — Sycophancy (bajulação)** *(mais frequente em redação assistida — e-mails, drafts, propostas).* O Copilot espelha o ângulo do prompt. Se enviesarem a pergunta, viesam o output. É o tema central da Sessão 5; em documentos longos é menos crítico do que em comunicação institucional. Mitigação rápida: pedir explicitamente *"em registo neutro institucional, sem caracterizar intenções"*.
+**Sinal 5 — Sycophancy (bajulação)** *(mais frequente em redação assistida — e-mails, drafts, propostas).* O Copilot espelha o ângulo do prompt. Se enviesarem a pergunta, viesam o output. É o tema central da [Sessão 5]({% link bloco-2-produtividade/sessao-05.md %}#o-espelho); em documentos longos é menos crítico do que em comunicação institucional. Mitigação rápida: pedir explicitamente *"em registo neutro institucional, sem caracterizar intenções"*.
 
 {: .important }
 > **Cinco coisas que o Copilot faz mal. Em documentos longos, a pior é a que não vês — a omissão silenciosa de subníveis.**
