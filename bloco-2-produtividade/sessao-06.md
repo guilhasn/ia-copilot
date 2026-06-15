@@ -75,11 +75,13 @@ O Copilot no Excel tem várias capacidades nativas para trabalhar com dados. As 
 
 | Capacidade | O que faz |
 |---|---|
-| **Ask questions in plain language** | Perguntar aos dados em linguagem natural — médias, totais, padrões, outliers. O Copilot traduz em operações Excel (filtros, somas, tabelas dinâmicas) |
-| **Show data insights** | Sugestões automáticas: gráficos, pivot tables, formatação condicional, deteção de tendências e outliers |
-| **Generate formula columns** | Escrever fórmulas a partir de descrição em linguagem natural — `=` na célula → "Ask Copilot for a formula" |
-| **COPILOT function** | Função nativa do Excel que embute um prompt de IA em célula, com referências a outras células |
-| **Agent Mode** | Conclusão autónoma de tarefas multi-passo (mais recente, em rollout) |
+| **Perguntar em linguagem natural** | Perguntar aos dados — médias, totais, padrões, *outliers*. O Copilot traduz em operações Excel (filtros, somas, tabelas dinâmicas) |
+| **Identificar *insights*** | Sugestões automáticas: gráficos, tabelas dinâmicas, formatação condicional, deteção de tendências e *outliers* |
+| **Gerar e compreender fórmulas** | Escrever fórmulas a partir de descrição em linguagem natural |
+| **Análise avançada (Python)** | Modo «Think Deeper»: gera código Python numa folha dedicada — *forecasting*, simulação, cenários What-If |
+| **Edit with Copilot** *(antes "Agent Mode")* | Conclusão autónoma de tarefas multi-passo. GA em Web/Windows/Mac desde março de 2026 |
+
+A **função `=COPILOT(...)`** em célula (embute um prompt de IA com referências a outras células) está em **pré-visualização** (canais Insider/Frontier; GA prevista para o fim de 2026) — provavelmente ainda não disponível nos PC institucionais da sala.
 
 *Fontes Microsoft:* [Get started with Copilot in Excel](https://support.microsoft.com/en-us/office/get-started-with-copilot-in-excel-d7110502-0334-4b4f-a175-a73abdfc118a) · [Get insights about numerical data](https://support.microsoft.com/en-us/office/get-insights-about-numerical-data-with-copilot-in-excel-52d97339-86c0-431c-b46c-e7b07b2898dd) · [FAQ Copilot in Excel](https://support.microsoft.com/en-us/office/frequently-asked-questions-about-copilot-in-excel-7a13758f-d61e-4a56-8440-f2c9a07802ec)
 
@@ -109,7 +111,7 @@ Estas verificações podem ser feitas com o Copilot — através do prompt do Ca
 
 A diferença entre o que o Copilot faz bem em Excel e o que faz mal pode resumir-se em duas palavras: **descritiva** vs **inferencial**.
 
-- ✅ **Descritiva** — *"A Divisão de Sistemas de Informação tem a maior taxa de execução: 78%."* Isto é cálculo. Vocês calculavam em 30 min; o Copilot calcula em 30 segundos.
+- ✅ **Descritiva** — *"A Divisão de Sistemas de Informação tem a maior taxa de execução: 79%."* Isto é cálculo. Vocês calculavam em 30 min; o Copilot calcula em 30 segundos.
 - ❌ **Inferencial** — *"A Divisão de Sistemas de Informação tem a maior taxa de execução **porque** é mais eficiente."* Isto é interpretação. **Só vocês sabem que a Divisão foi reorganizada em Outubro, tem novos procedimentos, e que o desvio é esperado.**
 
 A IA calcula em segundos o que vocês calculariam em horas. Mas a **história** — porque a divisão Y tem desvio, porque o adjudicatário Z aparece tantas vezes, se há padrão preocupante — **só vocês sabem ouvir**, porque conhecem o contexto institucional.
@@ -153,11 +155,11 @@ Tente primeiro; só depois abra.
 
 > *Identifiquei os seguintes problemas estruturais:*
 >
-> *1. **Linha 17 — célula mesclada A17:E17** ("Subtotal DSI") que rompe a estrutura tabular.*
-> *2. **Linha 36 — TOTAL FINAL** com valor numérico solto, sem cabeçalho.*
-> *3. **Coluna J ("Data Adjudicação")** — formatos mistos: 21 datas em formato YYYY-MM-DD, 6 em DD/MM/YYYY, 4 em DD-MM-YYYY, 4 em texto livre 'DD mes YYYY'.*
-> *4. **Coluna F ("Valor Adjudicado")** — alguns valores numéricos, outros como texto com '€'. Cinco linhas com valor como texto.*
-> *5. **Coluna B ("Adjudicatário")** — grafias variadas para a mesma empresa: 'Microsoft Portugal' aparece em 4 grafias; 'Critical Software' em 3; 'NOS Comunicações' em 3.*
+> *1. **Linha 17 — célula mesclada** ("Subtotal DSI") que rompe a estrutura tabular.*
+> *2. **Linha do TOTAL FINAL** no fim da tabela (linha 42) — valor solto, sem cabeçalho.*
+> *3. **Coluna "Data Adjudicação"** — formatos mistos: a maioria em YYYY-MM-DD, algumas em DD/MM/YYYY e DD-MM-YYYY, e **4 em texto livre 'DD mes YYYY'** (ex.: '15 mar 2025'), que não consigo interpretar como data.*
+> *4. **Coluna "Valor Adjudicado"** — alguns valores numéricos, outros como texto com '€'.*
+> *5. **Coluna "Adjudicatário"** — grafias variadas para a mesma empresa: Microsoft Portugal, Critical Software e NOS Comunicações aparecem cada uma em 3 grafias; Truewind em 2.*
 
 </details>
 
@@ -166,9 +168,9 @@ Tente primeiro; só depois abra.
 {: .discussao }
 > Três perguntas para discutir em sala:
 >
-> 1. *"O Copilot identificou todos os 5 tipos de problema? Quais é que esqueceu?"*
+> 1. *"O Copilot identificou todos os tipos de problema? Quais é que esqueceu?"*
 > 2. *"A linha 17 — assinalou que rompe a estrutura tabular ou só listou como problema visual?"*
-> 3. *"Que adjudicatário foi mencionado com mais grafias?"*
+> 3. *"Quantas empresas aparecem com grafias variadas?"* (são quatro — três com 3 grafias, uma com 2)
 
 ## Caso #2 — Análise descritiva com salvaguarda "Quantas linhas usaste?"
 
@@ -187,14 +189,14 @@ Depois do diagnóstico estrutural, o Miguel pede a análise propriamente dita. *
 <details markdown="1">
 <summary>Ver a tabela típica</summary>
 
-> *Excluí: linha 17 (subtotal mesclado), linha 36 (TOTAL final solto), e 4 linhas com data em texto livre (linhas 12, 21, 28, 31). Análise sobre 30 das 35 linhas.*
+> *Excluí o subtotal mesclado (linha 17) e o TOTAL final (linha 42), que não são contratos. Análise sobre os 35 contratos de detalhe.*
 
-| Divisão | Adjudicado | Pagamento | Taxa de execução |
+| Divisão | Compromisso | Pagamento | Taxa (Pag ÷ Comp) |
 |---|---:|---:|---:|
-| Divisão de Sistemas de Informação | €702.060 | €547.607 | 78% |
-| Divisão de Recursos Humanos | €369.500 | €255.955 | 69% |
-| Divisão Académica | €462.875 | €273.097 | 59% |
-| Divisão Financeira | €313.065 | €144.010 | 46% |
+| Divisão de Sistemas de Informação | €771.070 | €608.993 | 79% |
+| Divisão Financeira | €870.852 | €649.724 | 75% |
+| Divisão de Recursos Humanos | €896.842 | €623.468 | 70% |
+| Divisão Académica | €431.471 | €262.114 | 61% |
 
 </details>
 
@@ -209,10 +211,7 @@ A peça nomeada desta sessão. **Aplica-se sempre depois de qualquer número** d
 <details markdown="1">
 <summary>Ver a resposta típica</summary>
 
-> *Usei 30 das 35 linhas. Ignorei:*
-> *- linha 17 (subtotal mesclado)*
-> *- linha 36 (TOTAL final solto)*
-> *- linhas 12, 21, 28 com data em formato de texto livre "DD mes YYYY" que não consegui interpretar como data*
+> *Usei os 35 contratos de detalhe. Excluí a linha 17 (subtotal mesclado) e a linha 42 (TOTAL final), que não são contratos. Os valores que estavam como texto com '€' foram somados na mesma. Nota: a coluna "Data Adjudicação" tem 4 datas em texto livre que seriam ignoradas numa pergunta sobre datas — é o que vamos ver a seguir.*
 
 </details>
 
@@ -255,9 +254,9 @@ O Miguel pede ao Copilot que identifique padrões anómalos no dataset — situa
 
 | N.º Contrato | Tipo de anomalia | Severidade |
 |---|---|---|
-| (auditoria externa) | Pagamento (€32.500) > Compromisso (€30.000) | Crítica |
-| (aquisição rede urgente) | Cabimento = 0 | Crítica |
-| (limpeza) | Compromisso (€27.000) > Valor adjudicado (€24.000) | Alta |
+| 2026/0015 (auditoria externa) | Pagamento (€32.500) > Compromisso (€30.000) | Crítica |
+| 2026/0016 (aquisição rede urgente) | Cabimento = 0 | Crítica |
+| 2026/0017 (limpeza) | Compromisso (€27.000) > Valor adjudicado (€24.000) | Alta |
 
 </details>
 
@@ -265,7 +264,7 @@ Realisticamente o Copilot identifica 2-3 das 3 anomalias e pode inventar uma 4.�
 
 ### Enquadramento legal leve
 
-Estas 3 anomalias são padrões que o Copilot pode detetar por comparação de colunas. **O significado legal preciso** — pagamento sem cobertura de compromisso viola o RFAP? adicional não autorizado configura nulidade? — **é matéria da S10 (Contratação Pública)**. Aqui ensinamos a detetar; lá vamos enquadrar.
+Estas 3 anomalias são padrões que o Copilot pode detetar por comparação de colunas. **O significado legal preciso** — assumir compromisso sem fundos disponíveis ou sem número de compromisso válido viola a Lei dos Compromissos e Pagamentos em Atraso (LCPA, Lei 8/2012)? um adicional não autorizado configura nulidade à luz do CCP? — **é matéria da S10 (Contratação Pública)**. Aqui ensinamos a detetar; lá vamos enquadrar.
 
 > O Copilot deteta padrões. A validação manual no ficheiro é vossa. **A IA pode inventar anomalias plausíveis que não existem — abram cada linha indicada e confirmem.**
 
@@ -309,11 +308,13 @@ Para quem termina cedo (e para o trabalho trimestral a sério), o Copilot no Exc
 
 ### Cenários What-If
 
-Com licença, o **modo de análise avançada** do Copilot responde a perguntas hipotéticas sobre os dados — o equivalente, em conversa, a uma tabela de cenários:
+Com licença, a **análise avançada com Python** do Copilot (modo «Think Deeper») responde a perguntas hipotéticas — gera o cálculo do cenário numa folha dedicada, deixando os dados originais intactos:
 
 > *Se a dotação da Divisão Financeira for cativada em 10%, qual passa a ser a taxa de execução projetada por divisão, mantendo os compromissos atuais?*
 
-⚠️ O What-If é tão bom quanto os pressupostos. O Copilot **calcula** o cenário; o que se cativa e o que se mantém é uma **decisão de gestão, não dele**. E a pergunta-salvaguarda continua a aplicar-se ao subset usado.
+Pressupõe **dados já normalizados** (é por isso que diagnosticamos antes). **Sem licença:** carregue o `.xlsx` no Copilot Chat e peça o mesmo cenário — o Chat também corre Python sobre o ficheiro.
+
+⚠️ O What-If é tão bom quanto os pressupostos. O Copilot **calcula** o cenário; o que se cativa e o que se mantém é uma **decisão de gestão, não dele**. E valide **duas coisas**: o *subset* usado (a pergunta-salvaguarda) e a própria **conta do cenário** (refaça-a à mão para um caso e confirme).
 
 ### Do número ao relatório — e às perguntas que vão fazer
 
@@ -363,7 +364,7 @@ Converter intervalo para Tabela formal antes de pedir análise faz o Copilot ent
 
 ### Datasets grandes
 
-O Copilot processa bem datasets até ~5 000-10 000 linhas. Acima disso, pode truncar e analisar apenas amostra — **sem avisar**. Para datasets grandes, aplicar filtros antes (limita a 1 ano, 1 divisão, 1 tipo) para análise por partes.
+Não há um limite oficial publicado, mas na prática a análise conversacional **degrada-se ou recusa muito antes do que se espera** — a Microsoft chega a mostrar avisos do tipo *"esta tabela é demasiado grande para analisar tendências"*. Para datasets grandes, filtrar/segmentar antes (1 ano, 1 divisão, 1 tipo) ou usar a análise avançada com Python, que escala melhor — e **nunca assumir que o Copilot leu o ficheiro todo** (volta a pergunta-salvaguarda).
 
 ### Não-determinismo
 
@@ -371,7 +372,7 @@ A mesma pergunta pode dar números **ligeiramente diferentes** entre execuções
 
 ## Reflexão final
 
-> *"Vão sair desta sessão com poupança calculada — ~16h por ano. Onde nas vossas unidades este tempo libertado pode ir para análise inferencial, que é onde acrescentam mais valor?"*
+> *"Vão sair desta sessão com uma poupança real de tempo — meçam-na na vossa realidade. Onde, na vossa unidade, esse tempo libertado pode ir para a análise inferencial, que é onde acrescentam mais valor?"*
 
 O ROI desta sessão é tempo. **O ROI institucional** é mais tempo para a parte que só vocês conseguem fazer — interpretar o porquê.
 
