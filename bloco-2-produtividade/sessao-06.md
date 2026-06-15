@@ -200,18 +200,21 @@ Depois do diagnóstico estrutural, o Miguel pede a análise propriamente dita. *
 
 </details>
 
+{: .important }
+> **Se uma taxa vos aparecer absurda — por exemplo a DSI a 150% — não é erro vosso.** É o *silent column skip* a acontecer ao vivo: o ficheiro tem **17 valores de compromisso/pagamento gravados como texto com `€`**, e o Copilot pode somar os que reconheceu e **descartar silenciosamente** os outros. Uma taxa acima de 100% (pagar mais do que se comprometeu) é fisicamente impossível em execução orçamental — é o sinal visível de que faltam células à conta. É exatamente isto que o Passo 2 vai revelar.
+
 ### Passo 2 — A pergunta-salvaguarda
 
 A peça nomeada desta sessão. **Aplica-se sempre depois de qualquer número** devolvido pelo Copilot sobre dados estruturados.
 
-> *Quantas linhas usaste para esta análise? Se ignoraste alguma linha por dados incompletos ou mal formatados, lista-me essas linhas com a razão.*
+> *Quantas linhas usaste para esta análise? E houve alguma **célula** que não incluíste por estar em formato de texto (por exemplo valores com `€`)? Lista-me as linhas e as células ignoradas, com a razão.*
 
 ### Output esperado da salvaguarda
 
 <details markdown="1">
 <summary>Ver a resposta típica</summary>
 
-> *Usei os 35 contratos de detalhe. Excluí a linha 17 (subtotal mesclado) e a linha 42 (TOTAL final), que não são contratos. Os valores que estavam como texto com '€' foram somados na mesma. Nota: a coluna "Data Adjudicação" tem 4 datas em texto livre que seriam ignoradas numa pergunta sobre datas — é o que vamos ver a seguir.*
+> *Usei 35 linhas (excluí a linha 17, subtotal mesclado, e a linha 42, TOTAL). **Atenção: 17 valores de compromisso e pagamento estavam gravados como texto com `€` e podem não ter entrado na soma** — é por isso que algumas taxas podem sair distorcidas. Recomendo converter essas células para número antes de confiar nos totais. (E a coluna "Data Adjudicação" tem 4 datas em texto livre que seriam ignoradas numa pergunta sobre datas — é o que vamos ver a seguir.)*
 
 </details>
 
@@ -295,7 +298,7 @@ Cross-link: [Os 5 sinais em S04]({% link bloco-2-produtividade/sessao-04.md %}#s
 
 A salvaguarda dedicada contra silent column skip. **Aplica-se sempre depois de qualquer número** devolvido pelo Copilot sobre dados estruturados.
 
-> *Quantas linhas usaste para esta análise? Se ignoraste alguma linha por dados incompletos ou mal formatados, lista-me essas linhas com a razão.*
+> *Quantas linhas usaste para esta análise? E houve alguma **célula** que não incluíste por estar em formato de texto (por exemplo valores com `€`)? Lista-me as linhas e as células ignoradas, com a razão.*
 
 Cinco segundos a escrever, vinte segundos a ler a resposta. Em troca, transparência sobre o subset analisado.
 
@@ -312,7 +315,7 @@ Com licença, a **análise avançada com Python** do Copilot (modo «Think Deepe
 
 > *Se a dotação da Divisão Financeira for cativada em 10%, qual passa a ser a taxa de execução projetada por divisão, mantendo os compromissos atuais?*
 
-Pressupõe **dados já normalizados** (é por isso que diagnosticamos antes). **Sem licença:** carregue o `.xlsx` no Copilot Chat e peça o mesmo cenário — o Chat também corre Python sobre o ficheiro.
+Pressupõe **dados já normalizados** (é por isso que diagnosticamos antes). **Sem licença:** carregue o `.xlsx` no Copilot Chat e peça o mesmo cenário — o Chat raciocina sobre o ficheiro carregado e devolve a estimativa (a execução de Python sobre ficheiros no Chat gratuito é inconsistente, por isso **confirme sempre a conta à mão** para um caso).
 
 ⚠️ O What-If é tão bom quanto os pressupostos. O Copilot **calcula** o cenário; o que se cativa e o que se mantém é uma **decisão de gestão, não dele**. E valide **duas coisas**: o *subset* usado (a pergunta-salvaguarda) e a própria **conta do cenário** (refaça-a à mão para um caso e confirme).
 
