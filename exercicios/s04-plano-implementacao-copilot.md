@@ -7,15 +7,15 @@ nav_order: 4
 
 # Exercícios da Sessão 4 — documentos de gestão com o Copilot no Word
 
-> Dois exercícios, a mesma técnica: **esqueleto → secção a secção → elevar o tom → validar.** Mudam o documento e o cenário; a técnica é a mesma — e é o que leva para o seu dia a dia (relatórios, propostas, planos, candidaturas). Faça um no tempo da sessão (o Exercício 2 é um pouco mais curto, se quiser começar por aí); o outro fica para praticar.
+> Três exercícios sobre a mesma técnica — **esqueleto → secção a secção → elevar o tom → validar** — aplicada a documentos de gestão. Os **Exercícios 1 e 2** são curtos (gerar um documento do zero); o **Exercício 3** é o completo — parte de uma nota informal, mostra a diferença entre um prompt fraco e um prompt estruturado e termina em revisão crítica. Faça um no tempo da sessão; os outros ficam para praticar. O que leva para o dia a dia é a técnica, não o tema.
 
-**Duração:** ~25-30 min cada · individual · **com licença:** Copilot no Word (web) · **sem licença:** Copilot Chat ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat))
+**Duração:** Exercícios 1 e 2 ~25-30 min · Exercício 3 ~45-60 min · individual · **com licença:** Copilot no Word (web) · **sem licença:** Copilot Chat ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat))
 
-## Antes de começar (vale para os dois exercícios)
+## Antes de começar (vale para os três exercícios)
 
 **Abra o ambiente.** Com licença: abra o **Word na versão web**, crie um documento em branco e abra o painel do Copilot (separador **Base**). Sem licença: vá ao **Copilot Chat** ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)) e **vá colando cada secção no Word à medida que a gera**, por baixo da anterior — assim o documento cresce em ordem.
 
-**Não precisa de fazer tudo no tempo da sessão.** O núcleo é: estrutura → **as duas primeiras secções** → **uma** melhoria → releitura. As restantes secções e melhorias ficam para praticar depois.
+**Não precisa de fazer tudo no tempo da sessão** — cada exercício marca o seu **núcleo** (o mínimo a fazer ao vivo); o resto fica para praticar.
 
 **Quatro hábitos que poupam frustração:**
 
@@ -126,6 +126,188 @@ O Copilot **sugere** a formatação; aplicá-la é consigo.
 - O tom gerado pelo Copilot ficou adequado a órgãos de governação?
 
 - Que outras tarefas do seu dia a dia podem ser apoiadas pelo Copilot?
+
+---
+
+## Exercício 3 — Proposta para a adoção responsável de IA na Universidade *(completo · ~45-60 min)*
+
+O exercício mais completo: pegar numa **nota informal** e, com o Copilot, transformá-la passo a passo numa proposta institucional pronta para a Reitoria — vendo, pelo caminho, a diferença entre um prompt fraco e um prompt estruturado, e submetendo o resultado a revisão crítica. Faz-se inteiro no **Copilot Chat** (sem licença): basta colar a nota e seguir os prompts.
+
+**Núcleo (no tempo da sessão, ~35-45 min):** documento-base → Parte A → Parte B → Parte C → Parte E — o arco natural *nota → briefing → proposta → crítica*. As Partes D, F e a variante ficam para praticar (o exercício completo leva ~45-60 min).
+
+### O documento-base
+
+Copie esta nota para um documento do Word (ou para a conversa do Copilot Chat):
+
+```text
+Nota informal — Ideias para adoção da IA na Universidade
+
+A Universidade tem vindo a assistir a uma utilização crescente de ferramentas de Inteligência Artificial por estudantes, docentes, investigadores e serviços administrativos. Há estudantes que usam IA para resumir artigos, preparar trabalhos, gerar ideias, apoiar programação, rever texto e estudar. Alguns docentes já usam ferramentas de IA para preparar materiais, criar exercícios, apoiar feedback e organizar conteúdos. Nos serviços administrativos, existem oportunidades para usar IA na redação de documentos, resposta a pedidos frequentes, análise de dados, apoio à comunicação institucional e automatização de tarefas repetitivas.
+
+Apesar destas oportunidades, a utilização atual é pouco coordenada. Não existe ainda uma orientação clara sobre o que é permitido, o que deve ser evitado, que ferramentas podem ser usadas, como proteger dados pessoais, como garantir integridade académica e como validar os resultados produzidos por IA.
+
+A adoção da IA pode trazer benefícios importantes: melhoria da produtividade, apoio à aprendizagem, inovação pedagógica, maior eficiência nos serviços, apoio à investigação e desenvolvimento de novas competências digitais. No entanto, também há riscos: uso indevido em avaliações, dependência excessiva das ferramentas, perda de pensamento crítico, enviesamentos, respostas incorretas, exposição de dados sensíveis, desigualdade no acesso às ferramentas e falta de preparação dos docentes e trabalhadores.
+
+Poderia ser criada uma estratégia institucional de adoção da IA, com várias iniciativas: criação de orientações para utilização responsável, formação para docentes e trabalhadores, criação de um guia para estudantes, definição de regras para avaliação académica, identificação de casos de uso nos serviços, criação de pilotos com Microsoft 365 Copilot, criação de uma comissão de acompanhamento e definição de indicadores de impacto.
+
+Não está claro quem deve liderar o processo. Poderia envolver a reitoria, serviços de informática, gabinete jurídico, encarregado de proteção de dados, conselho pedagógico, unidades orgânicas, centros de investigação e representantes dos estudantes.
+
+A proposta deveria ser realista e começar por pilotos. Também seria importante evitar uma visão demasiado tecnológica. A IA deve ser adotada para melhorar ensino, investigação e serviços, não apenas porque está na moda.
+```
+
+### Parte A *(núcleo)* — o prompt fraco (para sentir a diferença)
+
+Comece de propósito com um prompt mau:
+
+```text
+Cria uma proposta para adotar IA na universidade.
+```
+
+*(Sem licença: faça este prompt numa conversa **nova**, sem colar a nota — é suposto sair genérico.)*
+
+Olhe para o resultado e pense: o Copilot percebeu o contexto da universidade? O documento ficou demasiado genérico? Tratou riscos como privacidade, avaliação, ética e qualidade? Este texto serviria para uma decisão real?
+
+**A lição:** o prompt é fraco porque pede uma proposta, mas não define finalidade, público-alvo, estrutura, critérios de qualidade nem limites. As partes seguintes corrigem isso.
+
+### Parte B *(núcleo)* — briefing executivo (prompt estruturado)
+
+*(Sem licença: cole primeiro a nota na conversa, depois este prompt.)*
+
+```text
+Analisa o documento como se fosses consultor interno de transformação digital no ensino superior.
+
+Quero que transformes esta nota informal num briefing executivo para a Reitoria sobre a adoção responsável da Inteligência Artificial na Universidade.
+
+A resposta deve ter a seguinte estrutura:
+
+1. Enquadramento
+2. Problema identificado
+3. Oportunidades para a Universidade
+4. Riscos principais
+5. Princípios orientadores
+6. Proposta de abordagem por fases
+7. Áreas que devem ser envolvidas
+8. Decisões que precisam de validação superior
+9. Próximos passos recomendados
+
+Usa português de Portugal, tom institucional e linguagem clara.
+
+Não inventes factos, nomes de unidades, datas ou decisões que não estejam no documento. Sempre que algo não esteja claro, identifica como "ponto a validar".
+```
+
+### Parte C *(núcleo)* — proposta institucional
+
+```text
+Com base no briefing, redige uma proposta institucional para adoção responsável da Inteligência Artificial na Universidade.
+
+A proposta deve estar estruturada como documento formal, com:
+
+- Título;
+- Enquadramento;
+- Justificação;
+- Objetivos;
+- Princípios de utilização responsável;
+- Eixos de intervenção;
+- Plano de implementação por fases;
+- Modelo de governação;
+- Riscos e medidas de mitigação;
+- Indicadores de acompanhamento;
+- Decisão pretendida.
+
+O documento deve ser adequado para revisão pela Reitoria.
+Evita linguagem promocional ou exagerada.
+Mantém um tom rigoroso, prudente e orientado para decisão.
+```
+
+### Parte D — matriz de iniciativas *(praticar)*
+
+```text
+Cria uma matriz de iniciativas para a adoção da IA na Universidade.
+
+A tabela deve ter as seguintes colunas:
+
+- Eixo de intervenção
+- Iniciativa
+- Descrição
+- Público-alvo
+- Prioridade
+- Complexidade
+- Riscos associados
+- Indicadores de sucesso
+
+Inclui iniciativas nas áreas de ensino, aprendizagem, investigação, serviços administrativos, segurança e governação.
+Não inventes departamentos concretos. Usa designações genéricas.
+```
+
+*(Tabela larga, 8 colunas — sem licença, peça antes "apresenta como lista por iniciativa" (cola melhor que uma tabela); ver a dica de tabelas em "Antes de começar".)*
+
+### Parte E *(núcleo)* — revisão crítica (o passo mais importante)
+
+Peça ao Copilot que critique o que ele próprio produziu — **na mesma conversa**, para ter a proposta da Parte C à frente:
+
+```text
+Revê criticamente a proposta criada.
+
+Identifica:
+
+1. Afirmações demasiado genéricas;
+2. Pontos que precisam de fundamentação;
+3. Riscos que estão mal tratados ou ausentes;
+4. Medidas que parecem irrealistas;
+5. Decisões que não devem ser tomadas sem validação jurídica, pedagógica ou técnica;
+6. Sugestões concretas para tornar a proposta mais robusta.
+
+Sê exigente. Não quero apenas melhorias de estilo. Quero uma revisão crítica de conteúdo.
+```
+
+O Copilot ajuda a encontrar as fragilidades do próprio texto — mas a decisão sobre o que aceitar, corrigir ou levar a validação (jurídica, pedagógica, técnica) é sua.
+
+### Parte F — versão final curta *(praticar)*
+
+*(Sem licença, o Chat não conta páginas — se quiser, peça "~600-800 palavras" em vez de "2 páginas".)*
+
+```text
+Com base na proposta e na revisão crítica, cria uma versão final mais curta, com no máximo 2 páginas, adequada para apresentação à Reitoria.
+
+A versão final deve manter:
+
+- problema;
+- oportunidade;
+- proposta;
+- riscos;
+- modelo de governação;
+- próximos passos;
+- decisão pretendida.
+
+Remove repetições e linguagem vaga.
+```
+
+### Discussão (≈15 min)
+
+- O primeiro prompt produziu uma proposta suficientemente boa? Que instruções melhoraram mais a qualidade?
+
+- O Copilot inventou alguma informação? Que riscos foram esquecidos no início?
+
+- A proposta final seria aceitável numa universidade real? Que partes exigem validação humana — jurídica, pedagógica ou técnica?
+
+- Que usos da IA devem ser permitidos, condicionados ou proibidos na vossa instituição?
+
+### Variante avançada
+
+```text
+Transforma esta proposta num plano de ação de 90 dias para iniciar a adoção responsável da IA na Universidade.
+
+Organiza por semanas ou fases.
+
+Inclui:
+
+- ações;
+- responsáveis genéricos;
+- dependências;
+- entregáveis;
+- riscos;
+- critérios de sucesso.
+```
 
 ---
 
