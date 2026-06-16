@@ -49,8 +49,7 @@ No final da sessão, os formandos deverão ser capazes de:
 
 1. O Copilot no Word — resumir, reformular (*Rewrite*), organizar e redigir (*Draft*)
 2. Mãos à obra — as quatro coisas, sobre um regulamento real
-3. E na segunda-feira, com os vossos documentos
-4. Síntese
+3. Síntese
 
 ## O Copilot no Word
 
@@ -164,16 +163,6 @@ Analogia: como pedires duas vezes a mesma redação a um redator humano — vai 
 - **Lê PDFs via `/`** desde que estejam no OneDrive/SharePoint do tenant; PDFs locais ou recebidos de fora não são acessíveis sem serem lá guardados.
 - **Pode confundir versões** — se há `Regulamento_v2.docx` e `Regulamento_v3.docx` no SharePoint, pode pegar na errada. Ao usar o `/`, confirme na lista de sugestões o nome e a localização do ficheiro — ou dê às versões nomes distintivos (data no nome, em vez de v2/v3).
 - **Não vê comentários** (Track Changes, comments) por defeito — para os incluir, tem de pedir explicitamente (capacidade recente, em rollout desde junho de 2026: pode ainda não estar disponível no vosso canal de atualização do Word).
-
-## E na segunda-feira, com os seus documentos?
-
-O regulamento da sessão é material de estufa — curto, limpo, sem dados pessoais. Os documentos reais não são. Três situações típicas e o que fazer:
-
-- **É um PDF.** Com licença, o caminho mais simples é guardá-lo no OneDrive institucional e referenciá-lo com `/` — o Copilot lê PDFs aí guardados. Em alternativa, abra o PDF no Word (converte-o num documento editável; confirme o aviso de conversão) ou copie o texto para o Copilot Chat. **Atenção:** se o PDF for uma digitalização, o Word não faz OCR — abre como imagem, sem texto utilizável; é preciso passá-lo primeiro por OCR.
-
-- **É longo (dezenas de páginas).** Divida por capítulos ou secções e sumarize parte a parte, consolidando no fim — pedir tudo de uma vez multiplica as omissões: partes que o Copilot salta sem avisar.
-
-- **Tem dados pessoais** (nomes de estudantes, números de dossier, valores individuais). Antes de colar seja onde for: substitua nomes por papéis ("a estudante", "o requerente"), remova números de processo e datas, e pergunte-se se a tarefa funciona sem esses dados. Em dúvida, é a [Matriz Semáforo da S1]({% link bloco-1-enquadramento/sessao-01.md %}) a decidir — não o prazo.
 
 ## Síntese da sessão
 
