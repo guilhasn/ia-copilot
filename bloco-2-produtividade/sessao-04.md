@@ -11,7 +11,7 @@ nav_order: 1
 
 - **Formação:** Inteligência Artificial — Aplicações ao trabalho das IES
 - **Ferramenta principal:** Microsoft 365 Copilot
-- **Data:** 15-06-2026
+- **Data:** 16-06-2026
 - **Duração:** 2 horas
 - **Modalidade:** Online síncrona
 - **Bloco:** 2 · Produtividade Individual
@@ -22,8 +22,6 @@ nav_order: 1
 Primeira sessão "aplicada" do curso. Saímos da moldura concetual do Bloco 1 (Classificar → Pedir → Sistematizar) para o trabalho de produtividade real com o Copilot dentro do Word. É o primeiro encontro em que os formandos sentem o ganho de tempo no trabalho que é genuinamente seu.
 
 Mas o trabalho da Helena Albuquerque, Diretora de Serviços Académicos, tem efeito jurídico. Sumarizar mal um regulamento ou reformular mal um parecer propaga erro pela instituição. Validação cruzada não é opcional — é o tema transversal da sessão.
-
-Os números do maior piloto público de Copilot até hoje ([governo britânico, ~20 000 licenças](https://www.gov.uk/government/publications/microsoft-365-copilot-experiment-cross-government-findings-report/microsoft-365-copilot-experiment-cross-government-findings-report-html)) dizem porquê: a **redação de documentos** foi a tarefa com maior poupança de tempo reportada — 24 minutos por dia — e, ao mesmo tempo, a avaliação concluiu que a **supervisão humana dos outputs foi necessária em permanência**. Onde mais se ganha tempo é exatamente onde mais é preciso validar. Esta sessão é sobre as duas coisas.
 
 > O Copilot é um redator júnior brilhante. Faz draft em 30 segundos. Mas não assina atos. Tu assinas — e a tua assinatura cobre o output dele.
 
@@ -149,7 +147,7 @@ Nos dois casos que se seguem, passam de observadores a praticantes — fazem o t
 
 ### Cenário
 
-A Helena Albuquerque tem reunião amanhã, 16-06-2026, com os 4 coordenadores de mestrado da UVV. O assunto é a aplicação do *Regulamento de Avaliação dos Mestrados* (em vigor desde 2024) — querem confirmar pontos críticos antes da abertura do ano letivo 2026/2027.
+A Helena Albuquerque tem reunião amanhã, 17-06-2026, com os 4 coordenadores de mestrado da UVV. O assunto é a aplicação do *Regulamento de Avaliação dos Mestrados* (em vigor desde 2024) — querem confirmar pontos críticos antes da abertura do ano letivo 2026/2027.
 
 A Helena vai entregar a cada coordenador um resumo executivo de 1 página. Tem 30 minutos. Vai usar Copilot — mas a versão final é dela.
 
