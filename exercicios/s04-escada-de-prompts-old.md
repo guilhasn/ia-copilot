@@ -1,8 +1,9 @@
 ---
-title: "S04 — Resumir e Simplificar com o Copilot"
+title: "S04 — Resumir e Simplificar com o Copilot (arquivado)"
 layout: default
 parent: "Exercícios"
-nav_order: 4
+nav_order: 99
+published: false
 ---
 
 # Resumir e simplificar informação com o Microsoft 365 Copilot
