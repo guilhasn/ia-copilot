@@ -48,7 +48,7 @@ No final da sessão, os formandos deverão ser capazes de:
 
 ## Programa
 
-1. Demonstração ao vivo no Word — resumir, reformular (*Rewrite*) e redigir (*Draft*)
+1. O Copilot no Word — resumir, reformular (*Rewrite*) e redigir (*Draft*)
 2. Linguagem clara — 7 princípios AMA e bases legais
 3. Caso #1 — sumarizar DOC-A com demo curta de identificação de ambiguidades
 4. Caso #2 — reformulação de DOC-B para linguagem clara
@@ -131,18 +131,6 @@ Não é sinónimo de simplificação. Pode haver linguagem clara sobre temas com
 - ✅ Gerar drafts de ofícios a partir de modelos institucionais, para depois rever
 - ✅ Detetar incoerências entre o original e o output (validação cruzada)
 
-## Demonstração — o que vão ver
-
-A sessão arranca com três demonstrações ao vivo, em direto **dentro do Word**. O objetivo é estabelecer o tom: *o Copilot dá 70% do trabalho em 10 segundos; os outros 30% somos nós.*
-
-**Parte A — Sumarização do regulamento.** Vão observar a geração ao vivo de um resumo executivo do *Regulamento de Avaliação dos Mestrados da UVV* (DOC-A do dataset) **na barra lateral do Word**, com o documento aberto — e o resumo inserido diretamente no documento. Enquanto vêem, anotem três coisas: o que o Copilot faz bem, o que esquece, e o que inventa. **Estes três padrões repetem-se em qualquer sumarização que façam.** E vão vê-lo correr **duas vezes, com o prompt exatamente igual** — os dois resumos não vão ser iguais. As divergências entre execuções são o mapa das omissões: o que aparece numa e falta na outra é onde o Copilot está a "escolher" sozinho.
-
-**Parte B — Reformulação do parecer com ambiguidade.** Primeiro, o gesto mais "Word" de todos: selecionar um parágrafo denso do *Parecer sobre prescrição de propinas* (DOC-B) e usar o ***Rewrite* inline** (botão direito → reescrever com Copilot, com opções de tom) — a reescrita acontece dentro do documento, sem chat. Depois, a reformulação completa por prompt. A armadilha: o prazo de prescrição está assente (8 anos — as propinas são taxas, decidiu o STA em 2015), mas o parecer mantém **deliberadamente em aberto** uma questão que os tribunais ainda não uniformizaram: o acordo de pagamento que o estudante assinou em 2020 suspendeu o prazo só enquanto foi cumprido (dívida prescrita) ou até hoje (dívida cobrável)? O Copilot tipicamente *decide* — declara a dívida prescrita ou cobrável — e é exatamente o que **não pode** acontecer. Vão ver o Copilot derrapar e vão ver como se corrige.
-
-**Parte C — Redigir a partir do resumo validado.** O fecho do ciclo, e a terceira capacidade da tabela: com o resumo do Caso #1 validado, o ***Draft* with Copilot** gera dentro do Word um rascunho de ofício de envio aos quatro coordenadores — registo institucional, máximo 150 palavras. Em 30 segundos há um rascunho — e a decisão formal que o Word pede a seguir: **Manter, Regenerar ou Descartar**, com afinação possível ("torna-o mais conciso"). A regra de sempre: o draft é dele, a assinatura é sua.
-
-Nos dois casos que se seguem, passam de observadores a praticantes — fazem o trabalho com as próprias mãos.
-
 ## Caso #1 — Sumarizar regulamento com citação validada
 
 ### Cenário
@@ -173,6 +161,8 @@ Corra os quatro na sequência e veja o resumo a ganhar foco a cada degrau (a mes
 > *Fonte: /Dataset_S04_Documentos.docx — secção DOC-A (sem licença: o texto do DOC-A colado abaixo).*
 >
 > *Expectativas: Resumo em português europeu, formato 1 página. Sem inventar artigos. Se houver dúvida, deixa em branco em vez de inventar.*
+
+Antes de olhar para o resultado, **corram o mesmo prompt duas vezes**, com o texto exatamente igual: os dois resumos não vão sair iguais. As divergências são o mapa das omissões — o que aparece numa execução e falta na outra é onde o Copilot está a *decidir* sozinho.
 
 ### Exemplo de output esperado (com defeitos típicos)
 
@@ -226,7 +216,7 @@ Esta versão cumpre: estrutura 1 parágrafo + 7 bullets, citação dos artigos c
 </details>
 
 {: .discussao }
-> Três perguntas para discutir em sala:
+> Três perguntas para discutir:
 >
 > 1. *"Que pontos do regulamento ficaram de fora deste resumo?"*
 >
@@ -248,6 +238,10 @@ Esta versão cumpre: estrutura 1 parágrafo + 7 bullets, citação dos artigos c
 > O Copilot deu-vos 70% do trabalho em 10 segundos. Os outros 30% são vocês. Sumarizar não é entregar. É entregar **depois de validar**.
 
 Prompt validado? Guarde-o na biblioteca pessoal da Sessão 3 — categoria **Resumir** —, com o método **CCC** no campo *Validação* (é a técnica de 30 segundos que detalhamos na Consolidação, mais abaixo).
+
+### Redigir o ofício com *Draft*
+
+Com o resumo validado, falta enviá-lo. Peçam ao Copilot — com **Draft** — um rascunho de ofício de envio aos 4 coordenadores: registo institucional, máximo 150 palavras. Em 30 segundos têm o rascunho, e o Word pede a decisão: **Manter, Regenerar ou Descartar** (com afinação, *torna-o mais conciso*). Fecha-se assim o ciclo **resumir → validar → redigir** — e a regra de sempre: o draft é dele, a assinatura é vossa.
 
 ## Demonstração curta — pedir ao Copilot que identifique ambiguidades
 
@@ -298,6 +292,10 @@ Vai usar Copilot para reformular o parecer em linguagem clara mantendo o rigor �
 {: .important }
 > **DOC-B é fictício — produzido para fins pedagógicos.** Num caso real, um parecer jurídico identificável (com número de dossier, valor, datas, identificação de estudante) **não deve ser colado tal e qual no Copilot** sem avaliação prévia de minimização de dados pessoais e de legitimidade funcional. Para o exercício da sessão, o dataset foi construído sem dados pessoais identificáveis.
 
+### Primeiro, o *Rewrite* inline
+
+Antes do prompt completo, o gesto mais "Word" de todos: selecionem um parágrafo denso do parecer e usem o ***Rewrite* inline** (botão direito → *Reescrever com o Copilot*, com opções de tom) — a reescrita acontece dentro do documento, sem ir ao chat *(no Word, com licença)*. Depois passem à reformulação completa por prompt.
+
 ### Prompt de trabalho
 
 > *Objetivo: Reformula este parecer jurídico em linguagem clara para um técnico administrativo (não-jurista). Mantém o rigor — em particular, mantém em aberto a questão do efeito do acordo de pagamento de 2020 (suspensão do prazo limitada ao período de cumprimento vs. prolongada até hoje), que o parecer não resolve.*
@@ -342,7 +340,7 @@ Esta reformulação cumpre: linguagem clara em pt-pt, frases curtas em voz ativa
 </details>
 
 {: .discussao }
-> Três perguntas para discutir em sala:
+> Três perguntas para discutir:
 >
 > 1. *"Manteve a ambiguidade?"*
 >
