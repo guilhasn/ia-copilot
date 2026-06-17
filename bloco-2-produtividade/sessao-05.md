@@ -127,13 +127,13 @@ Três casos, cada um ancorado numa funcionalidade. O **caminho-base é o Copilot
 {: .note }
 > **Como usar o dataset no Chat.** Para os Casos #1 e #2, trabalhem **só com o DOC-A**: colem essa parte, ou — se anexarem o ficheiro inteiro — comecem o prompt por *"usa apenas a secção DOC-A"* e **confirmem no output que nada do DOC-B se infiltrou**. Casos #1 e #2 correm na **mesma conversa** (o DOC-A já lá está); o Caso #3 abre **conversa nova** com o DOC-B. Não há "output certo" escrito aqui: nunca sabemos ao certo o que o Copilot devolve, por isso o que conta é **validar o que sair**.
 
-### Caso #1 · Outlook *Summary* — resumir a thread e descobrir os silenciados
+### Caso #1 · Outlook *Summary* — o mapa de uma thread (e quem falta)
 
-**O problema:** a Catarina foi posta em cópia, há uma semana, numa thread sobre a **adoção do Copilot na UVV** que cresceu até 9 mensagens. Ontem ao fim do dia, o Reitor encarregou-a de **coordenar o dossier** e pediu síntese e proposta de calendário **até hoje ao final do dia**. Tem de começar pelo princípio: **o que está cada um a dizer.**
+**O problema:** a Catarina foi posta em cópia, há uma semana, numa thread sobre a **adoção do Copilot na UVV** que cresceu até **9 mensagens de 6 pessoas** — Reitor, Vice-Reitora, DSI, EPD, um coordenador e o Sindicato — com posições em conflito sobre calendário, orçamento, conformidade e direitos dos trabalhadores. Ontem ao fim do dia, o Reitor nomeou-a **coordenadora do dossier** e quer síntese + proposta de calendário **até hoje ao final do dia**. Ler e destrinçar aquilo à mão leva-lhe mais de uma hora. **Tem 30 segundos de Copilot a poupar-lhe essa hora.**
 
-**Núcleo (ao vivo):** o prompt de resumo + a 1.ª pergunta de discussão. O *follow-up* dos silenciados pode ficar para praticar.
+**Núcleo (ao vivo):** o mapa **e** o *follow-up* dos silenciados — são o coração do caso.
 
-No **Copilot Chat**, carreguem o **DOC-A** e corram:
+**Passo 1 — de 9 e-mails a um mapa.** No **Copilot Chat**, carreguem o **DOC-A** e corram:
 
 > *Objetivo: Resume a thread sobre a adoção do Microsoft 365 Copilot do DOC-A: 1 parágrafo de enquadramento + as posições de cada interveniente em bullets, cada bullet terminando com a referência ao e-mail de origem (E1 a E7). Termina com os pontos de conflito entre intervenientes.*
 >
@@ -145,31 +145,37 @@ No **Copilot Chat**, carreguem o **DOC-A** e corram:
 
 *(Quem tem licença: na thread real, é o botão* Summary by Copilot*, com citações clicáveis.)*
 
-**O *follow-up* dos silenciados** — na **mesma conversa**, o gesto que vale ouro:
+O que era uma parede de 9 e-mails fica, em segundos, um **mapa**: a posição de cada um, com a referência ao e-mail de origem, e os conflitos no fim. A Catarina passa a começar o trabalho **daqui** — não da caixa de entrada. É este o ganho que justifica a ferramenta.
+
+**Passo 2 — quem falta (o *follow-up* dos silenciados).** O mapa diz-vos o que **foi escrito**. Mas numa decisão destas, o que rebenta mais tarde é muitas vezes **quem não falou**. Na **mesma conversa**, peçam ao Copilot que vos mostre as ausências:
 
 > *Relê a thread. Lista os intervenientes em três categorias: (a) quem escreveu pelo menos um e-mail; (b) quem foi referido por outros mas não escreveu; (c) quem, pelo conteúdo, deveria estar no fluxo mas nem escreveu nem foi referido. Para cada nome da categoria (c), aponta a frase concreta do DOC-A que justifica a ausência — se não consegues apontar a frase, é palpite, não mapa. Não decidas. Apenas mapeia.*
 
-A descoberta não é uma pessoa em concreto — é o **padrão de prompt**: depois do resumo, perguntar *quem ficou silenciado*. Aplica-se a qualquer thread, ata ou caderno de encargos: há sempre alguém mencionado sem voz própria. (Sistematizado, isto é um *mapa de stakeholders* — os passos completos estão no worksheet.)
+Isto não é apanhar o Copilot a falhar — é o Copilot a fazer **algo que vocês, a correr, não fariam**: reparar que a **Comissão de Trabalhadores** foi mencionada (em cópia no E6, referida no E7) e **nunca se pronunciou**. A Catarina ia coordenar o dossier inteiro sem nunca ter lido o que a CT pensa.
 
-> **O output do Copilot não inclui o que não foi escrito. Mas pode ajudar-vos a perceber que algo não foi escrito.**
+A descoberta não é a CT em si — é o **gesto**: depois do resumo, perguntar *quem ficou silenciado*. Aplica-se a qualquer thread, ata ou caderno de encargos. (Sistematizado, é um *mapa de stakeholders* — os passos completos estão no worksheet.)
+
+> **O resumo do Copilot não inclui o que não foi escrito. Mas o Copilot pode ajudar-vos a ver que algo — ou alguém — não foi escrito.**
+
+**Antes de entregar:** um olhar rápido aos factos que levam a vossa assinatura — os 4 temas do Sindicato e as datas estão certos no resumo? A assinatura é vossa.
 
 {: .discussao }
-> Para discutir — três perguntas com resposta verificável no DOC-A:
+> Para discutir:
 >
-> 1. O resumo tratou o **Sindicato (E6) por súmula**, como o prompt pedia — ou citou o texto?
+> 1. Começariam o trabalho a partir deste **mapa** — ou ainda precisavam de ler os 9 e-mails um a um? Quanto tempo pouparam?
 >
-> 2. O prazo da **AIPD** ficou correto?
+> 2. A **Comissão de Trabalhadores** apareceu? E que **outro ausente** o Copilot vos mostrou que não tinham pensado?
 >
-> 3. O **aluno (E9)** entrou na síntese executiva?
+> 3. Na categoria (c), cada nome tem uma **frase do DOC-A** que o justifica — ou escapou algum **palpite** (ou até um nome que nem está na thread)?
 
 <details markdown="1">
-<summary>Ver o que confirmar — depois de discutir</summary>
+<summary>Ver o que esperar — depois de discutir</summary>
 
-1. Tipicamente cita, apesar da instrução. É a lição: a minimização tem de ser **verificada no output**, não confiada ao prompt. Se citou, apaguem e reescrevam por súmula — a mão é vossa.
+1. O mapa entrega as posições e os 3 conflitos prontos a usar; os 9 e-mails passam a consulta, não a ponto de partida. É o ganho de tempo que justifica a ferramenta — e o que se leva para a segunda-feira.
 
-2. No E4 são **4 a 6 semanas** — não "4-6 meses" (erro frequente). E o prazo "até amanhã ao final do dia" é do E7 (Reitor a pedir à Catarina), não do E1 — confundir remetentes é o erro clássico em threads.
+2. A CT aparece quase sempre — está em Cc no E6 e é referida no E7. Os "outros ausentes" variam: a **área financeira** (os €36 000 não orçamentados) é o mais frequente. Qualquer ausente plausível que a sala não tinha pensado é o padrão a funcionar.
 
-3. Não devia. A pergunta informal do aluno (E9) e o rascunho da própria Catarina (E8) ficam **fora** da síntese. Se entraram, contaminaram o resumo — provável sinal de que o DOC-B ou o ficheiro inteiro entraram sem filtro.
+3. A categoria (c) é onde o Copilot **adivinha**: por vezes propõe nomes sem frase de suporte (palpite), ou — se carregaram o ficheiro inteiro — pesca alguém que afinal vem do DOC-B (a reunião), não da thread. É por isso que o prompt exige a frase justificativa, e são vocês que a confirmam.
 
 </details>
 
