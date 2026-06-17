@@ -25,7 +25,7 @@ Dois minutos antes de matéria nova: quem aplicou o **follow-up dos silenciados*
 
 O Miguel Andrade, Técnico de Contratação Pública da Universidade de Vale Verde, tem de produzir hoje, antes do fim do dia, o relatório trimestral de execução orçamental para a Reitoria. Tem em mãos um dossier Excel com 35 contratos — datas em formatos diferentes, valores como texto em alguns, células mescladas, totais errados. Um trabalho que costuma ocupar uma manhã inteira. Vai usar Copilot para tentar fazê-lo numa hora e meia.
 
-Esta sessão completa o trio do Bloco 2: depois da Helena no Word (S4) e da Catarina em Outlook + Teams (S5), entra o Miguel da Contratação Pública no Excel.
+Esta sessão completa o trio do Bloco 2: depois do Copilot no Word (S4) e em Outlook + Teams (S5, com a Catarina), entra o Miguel da Contratação Pública no Excel.
 
 > O Copilot lê os dados. Tu ouves a história que eles contam.
 
@@ -55,7 +55,7 @@ No final da sessão, os formandos deverão ser capazes de:
 | S5 | **Mapear sem decidir** (Outlook + Teams) |
 | **S6** | **Diagnosticar antes de analisar** (Excel) |
 
-A S06 retoma os [5 sinais]({% link bloco-2-produtividade/sessao-04.md %}#sinais-output) da S04 — em Excel, o Sinal 4 (alucinação por omissão) manifesta-se como **silent column skip**, com âncora dedicada [mais abaixo](#silent-column-skip). A pergunta-salvaguarda desta sessão é a aplicação operacional de [MAPEIA, NÃO DECIDAS]({% link bloco-2-produtividade/sessao-05.md %}#mapeia-nao-decidas) em contexto de dados estruturados.
+A S06 trabalha um risco que reaparece em todas as superfícies — a **alucinação por omissão** (o Copilot a ignorar o que não consegue interpretar): em Excel chama-se **silent column skip**, com âncora dedicada [mais abaixo](#silent-column-skip). A pergunta-salvaguarda desta sessão é a aplicação operacional de [MAPEIA, NÃO DECIDAS]({% link bloco-2-produtividade/sessao-05.md %}#mapeia-nao-decidas) em contexto de dados estruturados.
 
 ## Programa
 
@@ -66,7 +66,7 @@ A S06 retoma os [5 sinais]({% link bloco-2-produtividade/sessao-04.md %}#sinais-
 5. Caso #2 — análise descritiva com salvaguarda
 6. Caso #3 — anomalias técnicas
 7. Análise avançada — What-If e relatório executivo (para quem termina cedo)
-8. Consolidação — 5 sinais de output e pergunta-salvaguarda
+8. Consolidação — silent column skip e pergunta-salvaguarda
 9. Reflexão crítica — onde investir o tempo libertado
 
 ## O Copilot no Excel
@@ -89,7 +89,7 @@ A **função `=COPILOT(...)`** em célula (embute um prompt de IA com referênci
 
 ## Diagnóstico estrutural antes da análise {#diagnostico-estrutural}
 
-O princípio operacional da S06. Análogo do [método CCC]({% link bloco-2-produtividade/sessao-04.md %}#metodo-ccc) da S04 e do [MAPEIA, NÃO DECIDAS]({% link bloco-2-produtividade/sessao-05.md %}#mapeia-nao-decidas) da S05 — uma técnica nomeada, simples, reutilizável.
+O princípio operacional da S06. Como o [MAPEIA, NÃO DECIDAS]({% link bloco-2-produtividade/sessao-05.md %}#mapeia-nao-decidas) da S05 — uma técnica nomeada, simples, reutilizável.
 
 **O que significa.** O Copilot no Excel é excelente a calcular médias, somar colunas, identificar padrões — **quando o ficheiro está limpo**. Quando o ficheiro está sujo (subtotais a meio, datas mistas, valores como string), o Copilot **não recusa**: calcula com o que conseguiu interpretar e devolve um número. Esse número parece certo mas pode estar errado por silêncio.
 
@@ -278,19 +278,19 @@ Estas 3 anomalias são padrões que o Copilot pode detetar por comparação de c
 > 2. *"Foram à linha indicada e confirmaram, ou aceitaram a tabela como certa?"*
 > 3. *"A anomalia 3 (compromisso > adjudicado) é mais subtil — quem a detetou?"*
 
-## Silent column skip — Sinal 4 em superfície Excel {#silent-column-skip}
+## Silent column skip — alucinação por omissão em Excel {#silent-column-skip}
 
-Em S04 vimos a **alucinação por omissão** em documentos longos: o Copilot omite silenciosamente subníveis de artigos. Em S05 referimo-la como um dos sinais contextuais — manifesta-se também em comunicação. Em Excel, esta mesma mecânica chama-se **silent column skip** — o Copilot ignora silenciosamente linhas ou colunas que não conseguiu interpretar.
+A **alucinação por omissão** — o Copilot a ignorar o que não conseguiu interpretar — aparece em qualquer superfície. Em documentos longos, são subníveis de artigos que desaparecem de um resumo; em comunicação, é o interveniente silencioso que o resumo de uma thread engole. Em Excel, esta mesma mecânica chama-se **silent column skip** — o Copilot ignora silenciosamente linhas ou colunas que não conseguiu interpretar.
 
 É **a mesma mecânica subjacente**: omitir sem avisar. As manifestações mudam consoante a superfície:
 
-| Superfície | Manifestação do Sinal 4 |
+| Superfície | Manifestação da omissão |
 |---|---|
-| Documentos longos (S04) | Omite subníveis de artigos (n.º 2, n.º 3) |
+| Documentos longos (S04) | Omite subníveis de artigos num resumo |
 | Comunicação (S05) | Omite intervenientes silenciosos numa thread |
 | **Dados estruturados (S06)** | **Omite linhas com formato que não interpretou** |
 
-Cross-link: [Os 5 sinais em S04]({% link bloco-2-produtividade/sessao-04.md %}#sinais-output) · [Os 5 sinais em S05]({% link bloco-2-produtividade/sessao-05.md %}#sinais-output)
+Cross-link: a mesma mecânica de omissão aparece no *follow-up dos silenciados* da [S05]({% link bloco-2-produtividade/sessao-05.md %}).
 
 **Porque é o pior sinal em Excel.** Quando perdem um subnível num resumo de regulamento, o erro afeta uma regra. Quando perdem 5 das 35 linhas numa tabela de execução orçamental, **o erro afeta todos os números agregados sem aviso.** O Copilot devolveu uma taxa de execução e nem disse que era sobre 30 contratos em vez de 35.
 
