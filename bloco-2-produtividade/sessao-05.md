@@ -68,7 +68,7 @@ O princípio operacional de hoje. Uma regra simples, com nome, reutilizável em 
 > **E o art. 22.º do RGPD?** Esse só se ativa quando a decisão é tomada **exclusivamente** por meios automáticos, ou quando a IA tem papel **determinante** (TJUE, *SCHUFA*, C-634/21), com efeito significativo na pessoa — por exemplo, uma menção SIADAP gerada sem juízo próprio do avaliador. O uso de hoje, com a decisão sempre humana, **não cai no art. 22.º**. A avaliação de pessoas, essa sim, é território de alto risco do AI Act e entra a sério na S8 — hoje ficamos no apoio à comunicação.
 
 {: .important }
-> **MAPEIA, NÃO DECIDAS.** O Copilot pode mapear, identificar, redigir. **Não pode decidir** o que fica do lado da Direção. Não pode decidir o tom do vosso prompt. Não pode decidir o que alguém disse numa reunião. Tudo isso é vosso.
+> **MAPEIA, NÃO DECIDAS.** O que fica do lado da Direção, o tom do vosso prompt, o que alguém disse numa reunião — **nada disto o Copilot decide. É vosso.**
 
 ### O espelho — o tom é uma escolha
 
