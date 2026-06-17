@@ -344,7 +344,7 @@ Saímos da S5 com três coisas, e só três:
 
 E os prompts de hoje não se perdem: guardem-nos na vossa biblioteca pessoal — a matriz de posições e a tabela de ações em **Analisar**; a resposta ao Reitor e o *follow-up* em **Redigir**.
 
-> O Copilot é um redator júnior brilhante. Faz o primeiro jato em 30 segundos. Mas não decide. **MAPEIA, NÃO DECIDAS.**
+> Em qualquer thread, qualquer reunião, qualquer rascunho: o Copilot mapeia; quem lê, decide e assina são vocês. **MAPEIA, NÃO DECIDAS.**
 
 ## E na segunda-feira, com a vossa caixa de correio?
 
