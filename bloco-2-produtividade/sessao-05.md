@@ -89,36 +89,22 @@ As funcionalidades-estrela desta sessão vivem **dentro** do Outlook e do Teams,
 
 ### No Outlook
 
-| Funcionalidade | O que faz |
-|---|---|
-| **Summary by Copilot** | Botão no topo de uma thread; gera um resumo com citações numeradas que apontam para os e-mails originais |
-| **Draft with Copilot** | Redige um rascunho de e-mail ou resposta a partir de um prompt, com afinação ("mais curto", "mais formal") |
-| **Coaching by Copilot** | No rascunho, avalia tom, sentimento e clareza e sugere melhorias |
-| **Copilot Chat no Outlook** | Pesquisa transversal à caixa ("a quem espero resposta?") e prioriza a entrada — *exige licença/Graph; no Chat gratuito o Copilot só vê o que carregam* |
-
-**Para verem** (oficial é o essencial; o do criador é para aprofundar):
-
-- **Summary** — [Copilot tutorial: Summarize an email](https://support.microsoft.com/en-us/topic/copilot-tutorial-summarize-an-email-1b7816de-d246-4b2a-88ff-b9032fc8aaa6) (Microsoft, vídeo curto embebido + botão *Try in Outlook*; reparem nas citações numeradas) · aprofundar: [AlfaPeople — Summarize e-mail threads](https://alfapeople.com/video-tutorials/copilot-in-outlook-summarize-e-mail-threads/).
-
-- **Draft** — [Copilot tutorial: Draft an email](https://support.microsoft.com/en-us/topic/copilot-tutorial-draft-an-email-f2c0e349-053a-442c-b618-78542c1f7b1a) (Microsoft) · aprofundar: [Mike Tholfsen — Copilot in Outlook (2026)](https://www.youtube.com/watch?v=wTm-AOm5Ia8) (ver o segmento de redação dentro do e-mail).
-
-- **Coaching** — [Copilot tutorial: Get email coaching with Copilot](https://support.microsoft.com/en-us/topic/copilot-tutorial-get-email-coaching-with-copilot-c59f13dd-af04-4759-852b-a8235d70d421) (Microsoft) · aprofundar: [Dawn Bjork — Coaching with Copilot](https://www.youtube.com/watch?v=3Q-kXttfxxw).
-
-- **Priorizar a caixa** — [Copilot in Outlook — Prioritize My Inbox](https://www.youtube.com/watch?v=QDTj2Ttu2e4) (Microsoft 365) · aprofundar: [Giuliano De Luca, MVP](https://www.youtube.com/watch?v=91WuRsYlRvE).
+| Funcionalidade | O que faz | Para verem (oficial · criador p/ aprofundar) |
+|---|---|---|
+| **Summary by Copilot** | Botão no topo de uma thread; gera um resumo com citações numeradas que apontam para os e-mails originais | [Summarize an email](https://support.microsoft.com/en-us/topic/copilot-tutorial-summarize-an-email-1b7816de-d246-4b2a-88ff-b9032fc8aaa6) (vídeo embebido + *Try in Outlook*) · [AlfaPeople](https://alfapeople.com/video-tutorials/copilot-in-outlook-summarize-e-mail-threads/) |
+| **Draft with Copilot** | Redige um rascunho de e-mail ou resposta a partir de um prompt, com afinação ("mais curto", "mais formal") | [Draft an email](https://support.microsoft.com/en-us/topic/copilot-tutorial-draft-an-email-f2c0e349-053a-442c-b618-78542c1f7b1a) · [Mike Tholfsen (2026)](https://www.youtube.com/watch?v=wTm-AOm5Ia8) |
+| **Coaching by Copilot** | No rascunho, avalia tom, sentimento e clareza e sugere melhorias | [Get email coaching](https://support.microsoft.com/en-us/topic/copilot-tutorial-get-email-coaching-with-copilot-c59f13dd-af04-4759-852b-a8235d70d421) · [Dawn Bjork](https://www.youtube.com/watch?v=3Q-kXttfxxw) |
+| **Copilot Chat no Outlook** | Pesquisa transversal à caixa ("a quem espero resposta?") e prioriza a entrada — *exige licença/Graph; no Chat gratuito o Copilot só vê o que carregam* | [Prioritize My Inbox](https://www.youtube.com/watch?v=QDTj2Ttu2e4) (Microsoft 365) · [Giuliano De Luca, MVP](https://www.youtube.com/watch?v=91WuRsYlRvE) |
 
 ### No Teams
 
-| Funcionalidade | O que faz |
-|---|---|
-| **Intelligent Recap** | Separador *Recap* pós-reunião: notas de IA, oradores e **tarefas recomendadas** como ponto de partida; requer licença (M365 Copilot ou Teams Premium) e transcrição ativa |
-| **Copilot durante a reunião** | Perguntas em tempo real ("o que decidiram sobre X?", "que perguntas ficaram sem resposta?") |
-| **Share to email** | No Recap, partilhar o resumo por e-mail como base do *follow-up* — base, não versão final |
+| Funcionalidade | O que faz | Para verem (oficial · criador p/ aprofundar) |
+|---|---|---|
+| **Intelligent Recap** | Separador *Recap* pós-reunião: notas de IA, oradores e **tarefas recomendadas** como ponto de partida; requer licença (M365 Copilot ou Teams Premium) e transcrição ativa | [Turn meetings into actionable insights](https://www.youtube.com/watch?v=Lvis6ejOaB4) (Microsoft Teams) · [Mike Tholfsen (Maio 2026)](https://www.youtube.com/watch?v=cMdVSkSEYaw) |
+| **Copilot durante a reunião** | Perguntas em tempo real ("o que decidiram sobre X?", "que perguntas ficaram sem resposta?") | [Introducing Team Copilot](https://www.youtube.com/watch?v=4k2T5sfGIP4) (Microsoft 365) · [Scott Brant](https://www.youtube.com/watch?v=W6g6lr9NM6Y) |
+| **Share to email** | No Recap, partilhar o resumo por e-mail como base do *follow-up* — base, não versão final | — |
 
-**Para verem:**
-
-- **Intelligent Recap** — [Turn meetings into actionable insights](https://www.youtube.com/watch?v=Lvis6ejOaB4) (Microsoft Teams) · aprofundar: [Mike Tholfsen — Video Recap with Copilot](https://www.youtube.com/watch?v=cMdVSkSEYaw) (Maio 2026).
-
-- **Copilot na reunião** — [Introducing Team Copilot](https://www.youtube.com/watch?v=4k2T5sfGIP4) (Microsoft 365) · aprofundar: [Scott Brant — Copilot in Teams](https://www.youtube.com/watch?v=W6g6lr9NM6Y). Para o guião das perguntas em tempo real, a página oficial [Catch up on meetings with Copilot in Teams](https://support.microsoft.com/en-us/office/use-copilot-in-microsoft-teams-meetings-0bf9dd3c-96f7-44e2-8bb8-790bedf066b1) lista prompts úteis.
+Para o guião das perguntas em tempo real, a página oficial [Catch up on meetings with Copilot in Teams](https://support.microsoft.com/en-us/office/use-copilot-in-microsoft-teams-meetings-0bf9dd3c-96f7-44e2-8bb8-790bedf066b1) lista prompts úteis.
 
 As "tarefas recomendadas" do Recap são sugestões extraídas da transcrição: **não atribuem prazos com fiabilidade** e misturam responsáveis com frequência. É exatamente por isso que o Caso #3 existe.
 
