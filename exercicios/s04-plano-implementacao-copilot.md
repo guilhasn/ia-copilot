@@ -7,9 +7,9 @@ nav_order: 4
 
 # Exercícios da Sessão 4 — documentos de gestão com o Copilot no Word
 
-> Três exercícios sobre a mesma técnica — **esqueleto → secção a secção → elevar o tom → validar** — aplicada a documentos de gestão. Os **Exercícios 1 e 2** são curtos (gerar um documento do zero); o **Exercício 3** é o completo — parte de uma nota informal, mostra a diferença entre um prompt fraco e um prompt estruturado e termina em revisão crítica. Faça um no tempo da sessão; os outros ficam para praticar. O que leva para o dia a dia é a técnica, não o tema.
+> Três exercícios sobre a mesma família de tarefas — **produzir um documento de gestão com o Copilot**. O **Ex. 1** gera um plano do zero. O **Ex. 2** parte dos **dados reais do serviço** (ficheiros de execução + objetivos SIADAP) para escrever o relatório anual e avaliar o cumprimento das metas. O **Ex. 3** (o completo) transforma uma nota informal numa proposta, com prompt fraco→forte e revisão crítica. Faça um no tempo da sessão; os outros ficam para praticar. O que leva para o dia a dia é o método, não o tema.
 
-**Duração:** Exercícios 1 e 2 ~25-30 min · Exercício 3 ~45-60 min · individual · **com licença:** Copilot no Word (web) · **sem licença:** Copilot Chat ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat))
+**Duração:** Ex. 1 ~25-30 min · Ex. 2 ~30-40 min · Ex. 3 ~45-60 min · individual · **com licença:** Copilot no Word (web) · **sem licença:** Copilot Chat ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat))
 
 ## Antes de começar (vale para os três exercícios)
 
@@ -81,51 +81,75 @@ O Copilot **sugere** a formatação; aplicá-la é consigo.
 
 ---
 
-## Exercício 2 — Relatório Anual de Atividades para o Conselho de Diretores
+## Exercício 2 — Relatório Anual de Atividades, a partir dos dados do serviço
 
-**O problema:** a Reitoria pediu ao seu serviço o **Relatório Anual de Atividades 2025/2026** para apresentar ao Conselho de Diretores — realizações, desafios, indicadores e propostas para o próximo ano. E o prazo é já.
+**O problema:** você é **diretor dos Serviços Académicos** e tem de entregar ao Conselho de Diretores o **Relatório Anual de Atividades 2025/2026** — o que foi feito e, sobretudo, **se os objetivos (SIADAP) foram cumpridos**. Os dados existem, mas espalhados por vários ficheiros. O Copilot junta-os e escreve o relatório; os números e o cumprimento das metas é você que os confirma.
 
-Escolha **um** serviço — o seu — e use-o em todos os prompts (ex.: Serviços Académicos, Recursos Humanos, Infraestruturas, Planeamento Estratégico).
+**Os ficheiros de trabalho** (descarregue todos — é sobre eles que o Copilot vai trabalhar; os dados são da fictícia UVV, troque pelos do seu serviço quando quiser):
 
-**1. Estrutura (só o esqueleto):**
+- [Processos 2025-2026 (XLSX)]({{ site.baseurl }}/sessoes/sessao-04/SA_Processos_2025-2026.xlsx) — volume e prazos por tipo de processo e mês
 
-> *Cria apenas a estrutura (a lista de títulos de secção) para um Relatório Anual de Atividades de um serviço de uma universidade pública portuguesa, para apresentar ao Conselho de Diretores. Não desenvolvas o conteúdo ainda. Inclui: sumário executivo, introdução, principais realizações, indicadores de desempenho, desafios e constrangimentos, propostas e objetivos para o próximo ano, e conclusão.*
+- [Atendimentos 2025-2026 (XLSX)]({{ site.baseurl }}/sessoes/sessao-04/SA_Atendimentos_2025-2026.xlsx) — volume e satisfação por canal e mês
 
-**2. Desenvolver as secções** — uma de cada vez; no tempo da sessão, faça as **duas primeiras** e deixe as restantes para praticar:
+- [Atividades 2025-2026 (DOCX)]({{ site.baseurl }}/sessoes/sessao-04/SA_Atividades_2025-2026.docx) — realizações e constrangimentos do ano
 
-> *Escreve um sumário executivo forte e conciso (150-200 palavras) para o Relatório Anual de Atividades do serviço de [o seu serviço], destacando os pontos mais relevantes para dirigentes universitários.*
+- [QUAR / SIADAP 1 (DOCX)]({{ site.baseurl }}/sessoes/sessao-04/SA_SIADAP1_QUAR_2026.docx) — objetivos e metas do serviço
 
-> *Descreve as principais realizações do serviço de [o seu serviço] numa universidade portuguesa durante o ano letivo 2025/2026, em tom formal e orientado a resultados.*
+- [Objetivos do dirigente / SIADAP 2 (DOCX)]({{ site.baseurl }}/sessoes/sessao-04/SA_SIADAP2_Dirigente_2026.docx) — objetivos do diretor
 
-> *Cria uma tabela com os indicadores-chave de desempenho (KPI) do serviço.*
+**Dar os ficheiros ao Copilot:** com licença, guarde-os no OneDrive e referencie-os com `/` (até 20 itens); sem licença, no Copilot Chat carregue-os com **"+ Adicionar conteúdo"**. *(Sem licença, o Chat lê os ficheiros, mas o cálculo sobre Excel pode falhar — por isso o passo de confirmação no fim é essencial.)*
 
-> *Lista os principais desafios e constrangimentos do serviço, cada um com uma sugestão de melhoria.*
+**Núcleo (no tempo da sessão):** estrutura → realizações + indicadores → **avaliar o cumprimento dos objetivos** → confirmar os números. As propostas e o refinamento ficam para praticar.
 
-> *Elabora um conjunto de propostas estratégicas e realistas para o próximo ano, incluindo a adoção do Microsoft 365 Copilot no serviço.*
+*Sem licença, se o cálculo sobre o Excel falhar, reduza o núcleo à avaliação de um ou dois objetivos à sua escolha (lendo os valores diretamente nas folhas) e deixe a tabela completa de indicadores para praticar.*
 
-**3. Melhorar** (uma chega, no tempo da sessão):
+### 1. Estrutura (só o esqueleto)
 
-> *Torna esta secção mais formal, estratégica e adequada para apresentação à Reitoria e ao Conselho de Diretores.*
+> *Com base nos ficheiros, cria a estrutura (só os títulos) de um Relatório Anual de Atividades dos Serviços Académicos para o Conselho de Diretores. Inclui: sumário executivo, principais realizações, indicadores de desempenho, grau de cumprimento dos objetivos (SIADAP 1 e 2), desafios e propostas para o próximo ano. Não desenvolvas o conteúdo ainda.*
 
-> *Resume esta secção para ficar mais objetiva e impactante.*
+### 2. Realizações (da nota de atividades)
 
-> *Melhora o tom desta secção para ser mais persuasivo nas propostas.*
+> *A partir do ficheiro de Atividades, escreve a secção "Principais realizações" do ano, em tom formal e orientado a resultados.*
 
-> *Cria uma conclusão com recomendações claras e próximos passos.*
+### 3. Indicadores (dos ficheiros Excel)
 
-**4. Toque final:**
+> *A partir dos ficheiros de Processos e de Atendimentos, cria uma tabela de indicadores-chave do ano: total de processos entrados e concluídos, taxa de conclusão, prazo médio de conclusão, prazo médio das certidões, total de atendimentos, satisfação média e percentagem de atendimentos em canais digitais (portal online + e-mail, conforme o QUAR). As médias (prazos e satisfação) são ponderadas pelo volume, não a média simples das linhas mensais. Usa apenas os valores dos ficheiros — não inventes.*
 
-> *Sugere uma formatação profissional (títulos, numeração, tabelas) para este relatório.*
+### 4. Cumprimento dos objetivos — o coração do relatório
 
-O Copilot **sugere** a formatação; aplicá-la é consigo.
+> *Compara os indicadores apurados com as metas do QUAR (SIADAP 1) e com os objetivos do dirigente (SIADAP 2). Para cada objetivo, apresenta numa tabela: a meta, o valor alcançado e o grau de cumprimento (cumprido / parcialmente cumprido / não cumprido). Usa apenas valores dos ficheiros — não inventes.*
 
-**Discussão (≈15 min):**
+*Os objetivos do dirigente (SIADAP 2) confirmam-se sobretudo na nota de Atividades — portal, formação, digitalização; só o prazo médio vem dos Excel.*
 
-- Quanto tempo poupou face à forma habitual de fazer estes relatórios?
+### 5. Desafios e propostas *(praticar)*
 
-- O tom gerado pelo Copilot ficou adequado a órgãos de governação?
+> *A partir dos constrangimentos da nota de Atividades e dos objetivos não cumpridos, escreve a secção de desafios e propõe medidas concretas para o próximo ano.*
 
-- Que outras tarefas do seu dia a dia podem ser apoiadas pelo Copilot?
+### Refinar e versão executiva *(praticar)*
+
+> *Torna o relatório mais formal e estratégico, adequado ao Conselho de Diretores.*
+
+> *Cria uma versão executiva (~600-800 palavras) com o essencial: realizações, cumprimento dos objetivos, desafios e propostas.*
+
+### ⚠️ Confirmar antes de entregar (a parte que não se salta)
+
+O Copilot **junta e calcula**; a leitura do cumprimento é sua. Antes de fechar, volte aos ficheiros e confirme:
+
+- Os totais e as taxas que ele apresentou batem certo com os Excel? Recalcule um ou dois à mão.
+
+- Avaliou bem cada objetivo? **Não tome nenhum "cumprido" como garantido** — há metas que ficaram à tangente, e arredondar para cima é o erro mais fácil de cometer.
+
+- Inventou algum indicador ou meta que não está nos ficheiros?
+
+**Um relatório de atividades leva a sua assinatura — e a sua assinatura cobre os números.**
+
+### Discussão (≈15 min)
+
+- Quanto tempo poupou face a fazer este relatório à mão?
+
+- O Copilot calculou bem o cumprimento das metas, ou teve de o corrigir?
+
+- Que dados do seu serviço (processos, atendimentos, QUAR) podiam alimentar um relatório destes amanhã?
 
 ---
 
