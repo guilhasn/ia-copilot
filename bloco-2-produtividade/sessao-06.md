@@ -19,7 +19,7 @@ nav_order: 3
 
 ## Para começar — o que trouxeram da S5
 
-Dois minutos antes de matéria nova: quem aplicou o **follow-up dos silenciados** a uma thread real do seu serviço — quem tinha ficado de fora? Uma linha no chat. Hoje invertemos a matéria: não documentos nem e-mails, mas uma **folha de cálculo suja**.
+Dois minutos antes de matéria nova: da S5 trazem o reflexo de **validar o que o Copilot devolve** antes de o dar por vosso. Hoje viramos a matéria — não documentos nem e-mails, mas uma **folha de cálculo suja**.
 
 ## Ideia central
 
