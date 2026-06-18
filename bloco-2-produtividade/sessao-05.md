@@ -347,27 +347,6 @@ E os prompts de hoje não se perdem: guardem-nos na vossa biblioteca pessoal —
 
 - **Tarefa da semana:** apliquem o *follow-up* dos silenciados a uma thread real (minimizada) do vosso serviço. Tragam para a próxima sessão: *quem tinha ficado de fora?*
 
-## Leitura complementar — porque é que o Copilot se comporta assim
-
-{: .note }
-> **Conteúdo para auto-estudo, não obrigatório na aula.** Explica os limites do Copilot no Outlook e no Teams.
-
-**O Microsoft Graph.** Com licença, o Copilot in-app consulta o Microsoft Graph — o índice das comunicações, ficheiros e reuniões a que **vocês** têm acesso. É o que permite ao *Summary* ver a thread toda e ao *Recap* aceder à transcrição. Duas implicações: pode trazer mais do que esperavam (um e-mail antigo a que ainda têm acesso); e o problema típico não é o Copilot ver demais, é o *oversharing* prévio do SharePoint que já vos dava acesso indevido. No Copilot Chat sem licença não há Graph — o Copilot só vê o que carregam ou colam: menos alcance, mais controlo.
-
-**Limites da transcrição automática.** Atribuições erradas quando duas pessoas falam ao mesmo tempo; termos técnicos mal transcritos (AIPD → "API"; SIADAP → "siapap"); cortes em ligações instáveis ("[impercetível]"); pontuação inferida que muda o sentido. Com câmara desligada e ambiente ruidoso, a transcrição desse interveniente pode ficar **demasiado degradada para ser usada**. A transcrição é assistente, não fonte autoritativa.
-
-**Threads e reuniões longas.** Podem exceder o que o Copilot considera de uma vez — trunca sem avisar. Boa prática: dividir por temas e pedir resumos parciais. Para outputs que vão à Direção, duas execuções e comparar: onde divergem, há ambiguidade no input.
-
-## Ligações cruzadas a outras sessões
-
-| Liga a | Como |
-|---|---|
-| **S4 (Word)** | O gesto de trabalhar um documento com o Copilot. Quando um regulamento for citado numa reunião (como o Regulamento de Avaliação de 2024, no ponto 2 do DOC-B), é o mesmo gesto de leitura cuidada. |
-| **S8 (SIADAP)** | A Catarina volta. A regra aperta: nessa sessão o Copilot **nem propõe a menção** — decidi-la é vosso, e aí entram a sério o art. 22.º do RGPD e o AI Act. |
-| **S9 (Atas)** | A transcrição do DOC-B é o input típico que a S9 transforma em ata formal. |
-| **S11 (Apoio a Júri)** | A Margarida (DSI) e a Catarina reaparecem como membros de júri. |
-| **S13 (Copilot Pages)** | A biblioteca de prompts que cresce ao longo do curso é o material que a S13 ensina a partilhar. |
-
 ## Materiais
 
 ### Para descarregar
