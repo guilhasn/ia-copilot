@@ -27,23 +27,23 @@ O curso combina demonstrações práticas, exercícios guiados, casos de uso do 
 
 ## Programa das sessões
 
-| Sessão | Bloco | Tema | Estado |
-|---:|---|---|---|
-| 1 | Enquadramento | Introdução — Porque é que isto não é um curso de Office | Preparada |
-| 2 | Enquadramento | Falar com o Copilot — anatomia do prompt | Preparada |
-| 3 | Enquadramento | Biblioteca pessoal de prompts — fluência | Preparada |
-| 4 | Produtividade | Word com Copilot | A preparar |
-| 5 | Produtividade | Outlook e Teams | A preparar |
-| 6 | Produtividade | Excel com Copilot | A preparar |
-| 7 | Produtividade | PowerPoint com Copilot | A preparar |
-| 8 | Processos universitários | Serviços académicos, pedidos e regulamentos | A preparar |
-| 9 | Processos universitários | Atas e reuniões dos órgãos | A preparar |
-| 10 | Processos universitários | Contratação pública | A preparar |
-| 11 | Processos universitários | Júris e candidaturas | A preparar |
-| 12 | Processos universitários | Qualidade, acreditação e prestação de contas | A preparar |
-| 13 | Automatização | Copilot Pages e bibliotecas partilhadas | A preparar |
-| 14 | Automatização | Literacia sobre agentes Copilot Studio | A preparar |
-| 15 | Governança | Plano de adoção pessoal | A preparar |
+| Sessão | Bloco | Tema |
+|---:|---|---|
+| 1 | Enquadramento | Introdução — Porque é que isto não é um curso de Office |
+| 2 | Enquadramento | Falar com o Copilot — anatomia do prompt |
+| 3 | Enquadramento | Biblioteca pessoal de prompts — fluência |
+| 4 | Produtividade | Word com Copilot |
+| 5 | Produtividade | Outlook e Teams |
+| 6 | Produtividade | Excel com Copilot |
+| 7 | Produtividade | PowerPoint com Copilot |
+| 8 | Processos universitários | Serviços académicos, pedidos e regulamentos |
+| 9 | Processos universitários | Atas e reuniões dos órgãos |
+| 10 | Processos universitários | Contratação pública |
+| 11 | Processos universitários | Júris e candidaturas |
+| 12 | Processos universitários | Qualidade, acreditação e prestação de contas |
+| 13 | Automatização | Copilot Pages e bibliotecas partilhadas |
+| 14 | Automatização | Literacia sobre agentes Copilot Studio |
+| 15 | Governança | Plano de adoção pessoal |
 
 ---
 
