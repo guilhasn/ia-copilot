@@ -284,11 +284,11 @@ Cinco minutos aqui poupam uma hora de mal-entendidos depois — e cronometrar a 
 
 </details>
 
-## Disciplina de validação — checklist por superfície {#disciplina-validacao}
+## Antes de enviar — a vossa checklist de bolso {#disciplina-validacao}
 
-A mesma regra-mãe — *mapear sem decidir* — atravessa as três tarefas. A validação é uma checklist curta por artefacto.
+Cada caso de hoje terminou com uma verificação. Reunidas, são a folha que levam para a segunda-feira: antes de carregar em *Enviar* — ou de assinar — corram a da superfície em que estão. Cinco segundos; é o que separa o rascunho do Copilot do documento que é **vosso**.
 
-**Quando sumarizam uma thread:**
+**Resumo de uma thread:**
 
 - ✅ Todos os intervenientes mapeados? Alguém adicionado ou silenciado?
 
@@ -298,7 +298,7 @@ A mesma regra-mãe — *mapear sem decidir* — atravessa as três tarefas. A va
 
 - ✅ O tom é neutro, ou alguém saiu caricaturado?
 
-**Quando redigem uma resposta:**
+**E-mail que vão enviar:**
 
 - ✅ O Copilot decidiu por vocês nalgum conflito?
 
@@ -308,7 +308,7 @@ A mesma regra-mãe — *mapear sem decidir* — atravessa as três tarefas. A va
 
 - ✅ Esta redação é defensável como vossa?
 
-**Quando extraem ações de uma reunião:**
+**Ações de uma reunião:**
 
 - ✅ Cada ação tem timestamp confirmável **pela frase citada**?
 
