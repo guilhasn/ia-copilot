@@ -94,13 +94,14 @@ As funcionalidades-estrela desta sessão vivem **dentro** do Outlook e do Teams,
 
 ### No Teams
 
-| Funcionalidade | O que faz | Para verem (oficial · criador p/ aprofundar) |
+| Funcionalidade | O que permite fazer | Exemplo de prompt |
 |---|---|---|
-| **Intelligent Recap** | Separador *Recap* pós-reunião: notas de IA, oradores e **tarefas recomendadas** como ponto de partida; requer licença (M365 Copilot ou Teams Premium) e transcrição ativa | [Turn meetings into actionable insights](https://www.youtube.com/watch?v=Lvis6ejOaB4) (Microsoft Teams) · [Mike Tholfsen (Maio 2026)](https://www.youtube.com/watch?v=cMdVSkSEYaw) |
-| **Copilot durante a reunião** | Perguntas em tempo real ("o que decidiram sobre X?", "que perguntas ficaram sem resposta?") | [Introducing Team Copilot](https://www.youtube.com/watch?v=4k2T5sfGIP4) (Microsoft 365) · [Scott Brant](https://www.youtube.com/watch?v=W6g6lr9NM6Y) |
-| **Share to email** | No Recap, partilhar o resumo por e-mail como base do *follow-up* — base, não versão final | — |
-
-Para o guião das perguntas em tempo real, a página oficial [Catch up on meetings with Copilot in Teams](https://support.microsoft.com/en-us/office/use-copilot-in-microsoft-teams-meetings-0bf9dd3c-96f7-44e2-8bb8-790bedf066b1) lista prompts úteis.
+| **[Resumir uma reunião (Recap)](https://support.microsoft.com/en-us/teams/copilot/catch-up-on-meetings-with-microsoft-365-copilot-in-teams)** *(licença + transcrição)* | Pós-reunião: notas de IA com oradores, capítulos e **tarefas recomendadas** como ponto de partida. | *"Resume os principais pontos discutidos, as decisões e as tarefas, com quem ficou responsável."* |
+| **[Apanhar uma reunião perdida](https://support.microsoft.com/en-us/teams/meetings-events/copilot-tutorial-catch-up-on-meetings)** | Destaques, decisões e temas por resolver de uma reunião a que faltaste. | *"O que perdi nesta reunião? Resume decisões, tarefas e temas em aberto."* |
+| **[Extrair tarefas e prazos](https://support.microsoft.com/en-us/teams/meetings-events/generate-meeting-notes)** | A partir do chat da reunião, gera notas com ações, responsáveis e prazos para o follow-up. | *"Lista todas as tarefas mencionadas, quem ficou responsável e qual o prazo."* |
+| **[Perguntar durante a reunião](https://support.microsoft.com/en-us/teams/copilot/catch-up-on-meetings-with-microsoft-365-copilot-in-teams)** | Perguntas em tempo real sobre o que se decidiu ou o que falta resolver. | *"O que ficou por decidir até agora? E que perguntas ainda não tiveram resposta?"* |
+| **[Resumir chats e canais](https://support.microsoft.com/en-us/office/how-to-use-microsoft-365-copilot-in-teams-chats-and-channels-cccccca2-9dc8-49a9-ab76-b1a8ee21486c)** | Pontos principais, decisões e o que exige atenção num chat ou canal, sem ler tudo. | *"Resume as principais decisões deste canal na última semana."* |
+| **[Reescrever uma mensagem](https://support.microsoft.com/en-us/teams/copilot/rewrite-and-adjust-your-messages-with-copilot-in-microsoft-teams)** | Antes de enviar, ajusta tom e extensão de uma mensagem de chat ou canal. | *"Reescreve esta mensagem de forma mais clara, cordial e institucional."* |
 
 As "tarefas recomendadas" do Recap são sugestões extraídas da transcrição: **não atribuem prazos com fiabilidade** e misturam responsáveis com frequência. É exatamente por isso que o Caso #3 existe.
 
