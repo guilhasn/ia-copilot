@@ -105,13 +105,6 @@ As "tarefas recomendadas" do Recap são sugestões extraídas da transcrição: 
 {: .note }
 > Confirmem (*click-test*) que os vídeos reproduzem na véspera da sessão — são ligações externas e a interface pode diferir do vosso tenant.
 
-## Antes de colarem comunicação real
-
-O dataset de hoje é **100% fictício** — pode ser submetido por inteiro. Com material real, a regra muda:
-
-{: .important }
-> **Dois travões que valem para sempre.** (1) Threads com **matéria sindical ou da Comissão de Trabalhadores** estão na zona vermelha da Matriz Semáforo da [S1]({% link bloco-1-enquadramento/sessao-01.md %}): nunca submeter o texto literal — referir por **súmula**. E-mails com dados pessoais exigem **minimização** antes de qualquer submissão (RGPD, art. 5.º/1-c). (2) **Gravar ou transcrever uma reunião** real não é uma decisão técnica: além de informar os participantes (arts. 12.º-14.º), tem de existir **base de licitude** (art. 6.º) e, havendo representantes dos trabalhadores, observar o **quadro laboral e a consulta devida**; numa reunião com matéria disciplinar, a decisão de gravar é **institucional**, não vossa. O dataset usa uma transcrição fictícia precisamente para trabalharmos sem essas amarras.
-
 ## Mãos à obra
 
 Três casos, cada um ancorado numa funcionalidade. O **caminho-base é o Copilot Chat** (que todos têm); quem tem licença faz o mesmo com o botão nativo. Façam o **núcleo** ao vivo; o resto fica para praticar.
