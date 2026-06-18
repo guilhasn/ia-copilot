@@ -235,6 +235,8 @@ Em **conversa nova** no Copilot Chat, com o **DOC-B** carregado:
 
 *(Quem tem licença: o separador* Recap *dá as tarefas recomendadas como ponto de partida — mas validam na mesma.)*
 
+*Antes de fazerem isto numa reunião real:* decidir gravar ou transcrever não é um gesto técnico — é **institucional** (consentimento, política da casa e, em matéria laboral ou disciplinar, a consulta devida). O dataset é fictício precisamente para trabalharmos sem essa amarra.
+
 **Onde o Copilot tipicamente erra aqui:**
 
 - **Mistura responsáveis** — atribui a uma pessoa uma ação que era de outra.
