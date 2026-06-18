@@ -182,29 +182,29 @@ Na **mesma conversa** do Caso #1 (a thread já lá está):
 
 *(Quem tem licença: abrir o E7 no Outlook e usar* Draft with Copilot*.)*
 
-**A armadilha — em ação.** O output propõe tipicamente **setembro** como adquirido, porque foi o pedido inicial do Reitor — sycophancy estrutural: o prompt nasce de quem quer setembro. Antes de corrigir, **localizem no vosso rascunho a palavra que assume setembro** (é aí que o enviesamento mora). Depois, o re-prompt:
+**Repararam? Ele manteve as duas.** Quase sempre, o output devolve setembro **e** janeiro de 2027 como um **ponto de decisão** (cenário A / cenário B), com as duas datas em aberto para a Direção — porque foi isso que o prompt pediu (*"igualmente expostas, não escolhas entre elas"*). **Esta é a lição, e é positiva:** a neutralidade não caiu do céu — **escreveram-na no prompt.** É o espelho a trabalhar a vosso favor.
 
-> *Refaz com as duas posições (setembro vs janeiro 2027) igualmente expostas. Não escolhas entre elas. A escolha é da Direção.*
+**Querem ver o avesso?** Comecem o prompt do outro lado — *"Preciso de justificar ao Reitor o arranque em setembro"* — e vejam janeiro encolher para uma objeção de rodapé. Mesmos factos, outro peso. É por isso que o enquadramento neutro não é decoração: é o que mantém as duas posições vivas para quem decide. *(E se algum output vos pender para uma data, o conserto é uma linha:* "Refaz com as duas posições igualmente expostas. A escolha é da Direção."*)*
 
-**Coaching e revisão.** Sem licença, peçam um segundo olhar: *"Avalia este e-mail em tom, clareza e adequação ao destinatário (Reitor). Sugere melhorias sem reescrever."* — e a decisão de aplicar é vossa, frase a frase. *(Com licença, o* Coaching by Copilot *faz esta avaliação; mas atenção — aplicar **todas** as sugestões de uma vez **regenera o e-mail inteiro**, não é um retoque. Releiam tudo.)*
+**Coaching e revisão.** Sem licença, peçam um segundo olhar: *"Avalia este e-mail em tom, clareza e adequação ao destinatário (Reitor). Sugere melhorias sem reescrever."* — e a decisão de aplicar é vossa, frase a frase. *(Com licença, o* Coaching by Copilot *faz esta avaliação.)* **Aqui mora o risco real:** ao encurtar, é fácil deixar cair **conteúdo** — por exemplo, a recomendação da reunião com a Comissão de Trabalhadores, sacrificada "por concisão". E, com licença, aplicar **todas** as sugestões de uma vez **regenera o e-mail inteiro** — releiam tudo, não só "o que mudou".
 
 {: .discussao }
 > Para discutir:
 >
-> 1. O Copilot **propôs uma das datas**? Que palavras tiveram de mudar para preservar as duas?
+> 1. O e-mail manteve as **duas datas** em aberto (cenário A/B) — ou pendeu para uma? *(Quase sempre mantém: foi o que pediram.)*
 >
-> 2. Alguma sugestão de "estilo" mudou **conteúdo**, não forma?
+> 2. No Coaching/encurtamento, alguma sugestão cortou **conteúdo** e não só forma — a recomendação da CT, por exemplo?
 >
 > 3. Se este e-mail fosse vazado, fica **defensável como vossa redação**?
 
 <details markdown="1">
-<summary>Ver o que confirmar — depois de discutir</summary>
+<summary>Ver o que esperar — depois de discutir</summary>
 
 Os **3 conflitos** que a Direção tem de decidir (verificáveis no DOC-A): (i) **calendário** — setembro de 2026 (E1) vs janeiro de 2027 (E4, parecer do EPD); (ii) **ordem das fases** — educação em 1.ª ou 2.ª vaga (E2) e o pedido de prioridade do MEI (E5); (iii) **reforço orçamental e de equipa** — os ~€36k e as 3-4 semanas-pessoa não previstos (E3).
 
-1. Na maioria das execuções, setembro aparece como plano e janeiro como objeção. As palavras a vigiar: "manter o calendário" → "duas leituras do calendário"; "mitigar o atraso" → "ponderar o início".
+1. Quase sempre mantém as duas — apresenta setembro e janeiro de 2027 como cenários A/B em aberto, porque o prompt pediu equilíbrio. Se o vosso enquadramento tiver pendido para um lado, é aí que o re-prompt endireita.
 
-2. Encurtar e ativar a voz são de forma. Cortar a recomendação de reunião com a Comissão de Trabalhadores "por concisão" é **conteúdo** — e já aconteceu em execuções reais.
+2. No draft, a recomendação da CT costuma sobreviver. O risco aparece no **encurtamento**: pedir "mais curto" pode comê-la. Encurtar e ativar a voz é forma; cortar a CT é conteúdo — confirma-se relendo o resultado completo.
 
 3. A pergunta-teste de toda a comunicação assistida: se a resposta hesita, a redação ainda não é vossa.
 
