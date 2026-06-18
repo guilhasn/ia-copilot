@@ -336,14 +336,6 @@ E os prompts de hoje não se perdem: guardem-nos na vossa biblioteca pessoal —
 
 > Em qualquer thread, qualquer reunião, qualquer rascunho: **o Copilot mapeia; quem lê, decide e assina são vocês.**
 
-## E na segunda-feira, com a vossa caixa de correio?
-
-- **Thread real para resumir?** Minimizem antes de colar no Chat: só os e-mails necessários, sem matéria sindical nem dados pessoais que a tarefa dispensa. Façam o *follow-up* dos silenciados a seguir. *(Com licença, o* Summary *acelera o primeiro passo.)*
-
-- **Reunião para transcrever?** Antes do botão: os participantes sabem? Há base de licitude e política da casa? Em matéria laboral ou disciplinar, a decisão não é vossa — é institucional.
-
-- **Tarefa da semana:** apliquem o *follow-up* dos silenciados a uma thread real (minimizada) do vosso serviço. Tragam para a próxima sessão: *quem tinha ficado de fora?*
-
 ## Materiais
 
 ### Para descarregar
