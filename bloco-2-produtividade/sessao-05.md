@@ -64,12 +64,6 @@ O princípio operacional de hoje. Em três palavras: **MAPEIA, NÃO DECIDAS** �
 
 **Porque importa.** Apresentar uma decisão do Copilot como vossa mistura papéis: a análise é dele, mas quem assina responde. O **CPA** responde pela validade e competência do ato administrativo; a **LTFP**, pela responsabilidade pessoal de quem o pratica (deveres do art. 73.º). É este — a responsabilidade própria do ato — o verdadeiro fundamento de mapear sem decidir.
 
-{: .note }
-> **E o art. 22.º do RGPD?** Esse só se ativa quando a decisão é tomada **exclusivamente** por meios automáticos, ou quando a IA tem papel **determinante** (TJUE, *SCHUFA*, C-634/21), com efeito significativo na pessoa — por exemplo, uma menção SIADAP gerada sem juízo próprio do avaliador. O uso de hoje, com a decisão sempre humana, **não cai no art. 22.º**. A avaliação de pessoas, essa sim, é território de alto risco do AI Act e entra a sério na S8 — hoje ficamos no apoio à comunicação.
-
-{: .important }
-> **O Copilot mapeia; a decisão é vossa.** O que fica do lado da Direção, o tom do vosso prompt, o que alguém disse numa reunião — **nada disto o Copilot decide. É vosso.**
-
 ### O espelho — o tom é uma escolha
 
 Um aviso que cabe dentro da regra, e que vão sentir nas mãos no Caso #1. Peçam ao Copilot o **mesmo resumo** da mesma thread, mudando só uma palavra no enquadramento:
