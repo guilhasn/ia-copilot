@@ -50,7 +50,7 @@ No final da sessão, devem ser capazes de:
 
 ## A regra-mãe: o Copilot mapeia, a decisão é vossa {#mapeia-nao-decidas}
 
-O princípio operacional de hoje. Em três palavras: **MAPEIA, NÃO DECIDAS** — mas reparem a quem se fala. O *não decidas* é dito **ao Copilot** (o redator júnior), não a vocês: **ele mapeia; quem decide são vocês.** É uma regra simples, com nome, reutilizável em qualquer thread ou reunião.
+A regra de hoje, em três palavras: **MAPEIA, NÃO DECIDAS** — dito **ao Copilot**, não a vocês. Ele mapeia; quem decide são vocês. Reutilizável em qualquer thread ou reunião.
 
 **O que significa.** O Copilot é excelente a **mapear**: as posições recebidas numa thread, as ações extraídas de uma reunião, o tom sugerido para um rascunho. Mas o Copilot **não pode decidir** o que pertence à hierarquia humana: que posição prevalece num conflito, que prazo é razoável, que prioridade dar entre coordenadores em desacordo.
 
@@ -62,7 +62,7 @@ O princípio operacional de hoje. Em três palavras: **MAPEIA, NÃO DECIDAS** �
 
 - **Caso #3:** mapear as ações com timestamp — **não inventar** prazos onde não há.
 
-**Porque importa.** Apresentar uma decisão do Copilot como vossa mistura papéis: a análise é dele, mas quem assina responde. O **CPA** responde pela validade e competência do ato administrativo; a **LTFP**, pela responsabilidade pessoal de quem o pratica (deveres do art. 73.º). É este — a responsabilidade própria do ato — o verdadeiro fundamento de mapear sem decidir.
+**Porque importa.** Apresentar uma decisão do Copilot como vossa mistura papéis: a análise é dele, mas **quem assina responde**. A decisão — e a responsabilidade do ato — fica sempre do vosso lado.
 
 ### O espelho — o tom é uma escolha
 
@@ -107,12 +107,15 @@ As "tarefas recomendadas" do Recap são sugestões extraídas da transcrição: 
 
 ## Mãos à obra
 
-Três casos, cada um ancorado numa funcionalidade. O **caminho-base é o Copilot Chat** (que todos têm); quem tem licença faz o mesmo com o botão nativo. Façam o **núcleo** ao vivo; o resto fica para praticar.
+Três casos, cada um ancorado numa funcionalidade (~20-25 min cada). O **caminho-base é o Copilot Chat** (que todos têm); quem tem licença faz o mesmo com o botão nativo. Façam o **núcleo** ao vivo; o resto fica para praticar. **Se o tempo apertar, garantam o Caso #1** (o mapa + silenciados) **e o Caso #3** (validação por timestamp) — o #2 pode ficar para praticar.
 
 📎 **Descarreguem o dataset:** [Dataset_S05_Comunicacao.docx]({{ site.baseurl }}/sessoes/sessao-05/Dataset_S05_Comunicacao.docx) — traz **DOC-A** (a thread) e **DOC-B** (a transcrição da reunião) no mesmo ficheiro.
 
 {: .note }
 > **Como usar o dataset no Chat.** Para os Casos #1 e #2, trabalhem **só com o DOC-A**: colem essa parte, ou — se anexarem o ficheiro inteiro — comecem o prompt por *"usa apenas a secção DOC-A"* e **confirmem no output que nada do DOC-B se infiltrou**. Casos #1 e #2 correm na **mesma conversa** (o DOC-A já lá está); o Caso #3 abre **conversa nova** com o DOC-B. Não há "output certo" escrito aqui: nunca sabemos ao certo o que o Copilot devolve, por isso o que conta é **validar o que sair**.
+
+{: .important }
+> **Antes de fazerem isto com correio real:** o dataset de hoje é fictício e pode ir inteiro. Com threads reais, **minimizem** — só os e-mails necessários, **sem matéria sindical nem dados pessoais que a tarefa dispense**; o Chat gratuito não tem as garantias de tenant da versão com licença.
 
 ### Caso #1 · Outlook *Summary* — o mapa de uma thread (e quem falta)
 
@@ -140,7 +143,7 @@ O que era uma parede de 9 e-mails fica, em segundos, um **mapa**: a posição de
 
 Isto não é apanhar o Copilot a falhar — é o Copilot a fazer **algo que vocês, a correr, não fariam**: reparar que a **Comissão de Trabalhadores** foi mencionada (em cópia no E6, referida no E7) e **nunca se pronunciou**. A Catarina ia coordenar o dossier inteiro sem nunca ter lido o que a CT pensa.
 
-A descoberta não é a CT em si — é o **gesto**: depois do resumo, perguntar *quem ficou silenciado*. Aplica-se a qualquer thread, ata ou caderno de encargos. (Sistematizado, é um *mapa de stakeholders* — os passos completos estão no worksheet.)
+A descoberta não é a CT em si — é o **gesto**: depois do resumo, perguntar *quem ficou silenciado*. Aplica-se a qualquer thread, ata ou caderno de encargos — sistematizado, é um *mapa de stakeholders*.
 
 > **O resumo do Copilot não inclui o que não foi escrito. Mas o Copilot pode ajudar-vos a ver que algo — ou alguém — não foi escrito.**
 
@@ -169,6 +172,8 @@ A descoberta não é a CT em si — é o **gesto**: depois do resumo, perguntar 
 ### Caso #2 · Outlook *Draft + Coaching* — redigir o e-mail ao Reitor
 
 **O problema:** a Catarina tem a thread sumarizada e os silenciados mapeados. Agora tem de **responder ao Reitor**: síntese das posições, conflitos a decidir, e uma proposta de calendário em fases que acomode setembro **e** janeiro de 2027 — **sem decidir entre eles.**
+
+**Núcleo (ao vivo):** o draft + a lição do enquadramento (porque manteve as duas datas).
 
 Na **mesma conversa** do Caso #1 (a thread já lá está):
 
@@ -313,17 +318,9 @@ A mesma regra-mãe — *mapear sem decidir* — atravessa as três tarefas. A va
 
 - ✅ Ações compostas foram desdobradas?
 
-## Reflexão final — quando a transcrição falha
+## Reflexão final
 
-> *Na transcrição da reunião, as intervenções de um colega em remoto (ambiente ruidoso, câmara desligada) saíram quase todas "[impercetível]". O follow-up sai amanhã. O que fazem?*
->
-> **A.** Uso o Copilot para inferir o que ele provavelmente disse, pelo contexto.
->
-> **B.** Pergunto-lhe e espero a resposta.
->
-> **C.** Uso o Copilot para uma reconstituição plausível — e mando-lha **a ele** para confirmar antes do *follow-up*.
-
-Aqui não há resposta colapsável de propósito — o critério é o desta sessão. A **C** parece a mais responsável, mas tem uma armadilha: estão a pôr a pessoa a confirmar palavras que **não disse**, ancorando-a no vosso texto (é mais fácil dizer "sim, está bem" do que reescrever do zero). O mais correto é pedir-lhe a **versão dela em branco** — quando o conteúdo é de alguém, o Copilot ajuda na **forma**; a **substância** é da pessoa, que tem direito a ser representada pelo que **disse**, não pelo que se infere que disse.
+Se a transcrição de um colega saiu quase toda "[impercetível]", não peçam ao Copilot para *reconstituir o que ele provavelmente disse* e depois lho mandem confirmar — isso ancora-o em palavras que não disse. Peçam-lhe a **versão dele, em branco**. A forma o Copilot dá; **a substância é da pessoa**.
 
 ## Síntese da sessão
 
@@ -350,8 +347,6 @@ E os prompts de hoje não se perdem: guardem-nos na vossa biblioteca pessoal —
 ## Materiais
 
 ### Para descarregar
-
-- [Worksheet S05 — Outlook e Teams (DOCX)]({{ site.baseurl }}/sessoes/sessao-05/Worksheet_S05_Outlook_Teams.docx) — documento de trabalho para preencher durante a sessão.
 
 - [Dataset S05 — Comunicação (DOCX)]({{ site.baseurl }}/sessoes/sessao-05/Dataset_S05_Comunicacao.docx) — DOC-A (thread) + DOC-B (transcrição da reunião).
 
