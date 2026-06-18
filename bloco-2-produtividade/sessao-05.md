@@ -79,16 +79,18 @@ Os **factos não mudam** — muda a tonalidade. O Copilot espelha o ângulo do v
 As funcionalidades-estrela desta sessão vivem **dentro** do Outlook e do Teams, trabalham sobre a vossa caixa e as vossas reuniões reais, e **exigem licença Microsoft 365 Copilot**.
 
 {: .important }
-> **Para que servem estes vídeos.** Para perceberem **o que** cada funcionalidade faz e porque importa — **não** para a terem na vossa máquina. Quem tem licença replica-a; quem não tem faz o equivalente no Copilot Chat ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)), e o resultado é o mesmo. **Os três casos de hoje correm na íntegra no Copilot Chat gratuito — nada do que têm de produzir depende de licença.**
+> **Como ler isto.** Estas funcionalidades nativas exigem **licença Microsoft 365 Copilot**: a tabela mostra o que cada uma faz e um prompt para experimentar. **Sem licença, o equivalente corre no Copilot Chat** ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)) — e os três casos de hoje correm na íntegra no Chat gratuito, nada do que têm de produzir depende de licença.
 
 ### No Outlook
 
-| Funcionalidade | O que faz | Para verem (oficial · criador p/ aprofundar) |
+| Funcionalidade | O que podes fazer | Exemplo de prompt |
 |---|---|---|
-| **Summary by Copilot** | Botão no topo de uma thread; gera um resumo com citações numeradas que apontam para os e-mails originais | [Summarize an email](https://support.microsoft.com/en-us/topic/copilot-tutorial-summarize-an-email-1b7816de-d246-4b2a-88ff-b9032fc8aaa6) (vídeo embebido + *Try in Outlook*) · [AlfaPeople](https://alfapeople.com/video-tutorials/copilot-in-outlook-summarize-e-mail-threads/) |
-| **Draft with Copilot** | Redige um rascunho de e-mail ou resposta a partir de um prompt, com afinação ("mais curto", "mais formal") | [Draft an email](https://support.microsoft.com/en-us/topic/copilot-tutorial-draft-an-email-f2c0e349-053a-442c-b618-78542c1f7b1a) · [Mike Tholfsen (2026)](https://www.youtube.com/watch?v=wTm-AOm5Ia8) |
-| **Coaching by Copilot** | No rascunho, avalia tom, sentimento e clareza e sugere melhorias | [Get email coaching](https://support.microsoft.com/en-us/topic/copilot-tutorial-get-email-coaching-with-copilot-c59f13dd-af04-4759-852b-a8235d70d421) · [Dawn Bjork](https://www.youtube.com/watch?v=3Q-kXttfxxw) |
-| **Copilot Chat no Outlook** | Pesquisa transversal à caixa ("a quem espero resposta?") e prioriza a entrada — *exige licença/Graph; no Chat gratuito o Copilot só vê o que carregam* | [Prioritize My Inbox](https://www.youtube.com/watch?v=QDTj2Ttu2e4) (Microsoft 365) · [Giuliano De Luca, MVP](https://www.youtube.com/watch?v=91WuRsYlRvE) |
+| **[Resumir uma thread](https://support.microsoft.com/en-us/office/summarize-an-email-thread-with-copilot-in-outlook-a79873f2-396b-46dc-b852-7fe5947ab640)** | Sintetiza uma conversa longa: pontos principais, decisões e pendências, com referências aos e-mails de origem. | *"Resume esta conversa: pontos principais, decisões, pendências e quem ficou responsável por cada uma."* |
+| **[Redigir ou responder](https://support.microsoft.com/en-us/office/draft-an-email-message-with-copilot-in-outlook-3eb1d053-89b8-491c-8a6e-746015238d9b)** | Cria um e-mail (ou uma resposta) a partir de um objetivo, tom e contexto — ou transforma tópicos soltos num texto completo. | *"Escreve um e-mail formal a pedir ponto de situação sobre este processo, tom cordial mas assertivo."* |
+| **[Coaching — tom e clareza](https://support.microsoft.com/en-us/topic/copilot-tutorial-get-email-coaching-with-copilot-c59f13dd-af04-4759-852b-a8235d70d421)** | Antes de enviar, avalia tom, clareza e como o leitor pode interpretar; sugere melhorias. | *"Revê este e-mail: está demasiado duro, pouco claro ou sujeito a má interpretação?"* |
+| **[Priorizar a caixa](https://support.microsoft.com/en-us/topic/prioritize-my-inbox-65e37040-2c90-4ee3-86d9-e95d5ba0e3cb)** *(licença/Graph)* | Marca os e-mails por prioridade (alta/normal/baixa) à medida que chegam, segundo regras que defines. | *"Ajuda-me a ver os e-mails urgentes e os que exigem resposta hoje."* |
+| **[Chat no Outlook](https://support.microsoft.com/en-us/topic/chat-with-copilot-in-outlook-8090e7b3-5b1d-4c6d-9b06-02edac062f58)** *(licença/Graph)* | Pergunta à tua caixa e ao calendário em linguagem natural, com o chat lado a lado. | *"Que e-mails desta semana sobre contratação pública ainda não tiveram resposta?"* |
+| **[Preparar uma reunião](https://support.microsoft.com/en-us/topic/prepare-for-your-meeting-with-copilot-f23326fc-7721-45f1-875e-23e77aaf3d89)** | A partir de um evento do calendário, reúne contexto, documentos e tópicos para chegares preparado. | *"Prepara-me para esta reunião: resume o contexto, decisões esperadas e perguntas que devo fazer."* |
 
 ### No Teams
 
@@ -103,7 +105,7 @@ Para o guião das perguntas em tempo real, a página oficial [Catch up on meetin
 As "tarefas recomendadas" do Recap são sugestões extraídas da transcrição: **não atribuem prazos com fiabilidade** e misturam responsáveis com frequência. É exatamente por isso que o Caso #3 existe.
 
 {: .note }
-> Confirmem (*click-test*) que os vídeos reproduzem na véspera da sessão — são ligações externas e a interface pode diferir do vosso tenant.
+> Confirmem na véspera que as ligações (guias e vídeos) abrem — são externas, e a interface pode diferir do vosso tenant.
 
 ## Mãos à obra
 
