@@ -284,9 +284,9 @@ Cinco minutos aqui poupam uma hora de mal-entendidos depois — e cronometrar a 
 
 </details>
 
-## Antes de enviar — a vossa checklist de bolso {#disciplina-validacao}
+## Antes de entregar — a vossa checklist de bolso {#disciplina-validacao}
 
-Cada caso de hoje terminou com uma verificação. Reunidas, são a folha que levam para a segunda-feira: antes de carregar em *Enviar* — ou de assinar — corram a da superfície em que estão. Cinco segundos; é o que separa o rascunho do Copilot do documento que é **vosso**.
+Cada caso de hoje terminou com uma verificação. Reunidas, são a folha que levam para a segunda-feira: antes de **entregar** o que o Copilot produziu — enviar, partilhar ou assinar — corram a checklist da superfície em que estão. Cinco segundos; é o que separa o rascunho do Copilot do documento que é **vosso**.
 
 **Resumo de uma thread:**
 
