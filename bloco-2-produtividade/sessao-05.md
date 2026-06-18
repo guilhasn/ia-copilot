@@ -22,7 +22,7 @@ Na S4 viram o Copilot a trabalhar **dentro de um documento** — resumir, reescr
 
 O caso é o mais comum do dia-a-dia numa IES: chega uma cadeia de e-mails que cresceu durante uma semana, ou a transcrição de uma reunião com decisões dispersas, e têm uma hora para sintetizar, propor próximos passos e fechar um *follow-up*. Vão acompanhar a **Catarina Pires**, Técnica Superior de Recursos Humanos, a fazer exatamente isso — primeiro a ver as funcionalidades, depois a usá-las.
 
-> O Copilot é um redator júnior brilhante. Faz o primeiro jato em 30 segundos. Mas não decide. **MAPEIA, NÃO DECIDAS.**
+> O Copilot é um redator júnior brilhante: faz o primeiro jato em 30 segundos. Mas **ele mapeia; quem decide são vocês.**
 
 ## Objetivos
 
@@ -42,15 +42,15 @@ No final da sessão, devem ser capazes de:
 
 ## Programa
 
-1. A regra-mãe — MAPEIA, NÃO DECIDAS
+1. A regra-mãe — o Copilot mapeia, vocês decidem
 2. As funcionalidades — vejam-nas a funcionar (Outlook + Teams)
 3. Mãos à obra — Caso #1 *Summary*, Caso #2 *Draft + Coaching*, Caso #3 *Recap*
 4. Disciplina de validação — checklist por superfície
 5. Síntese e aplicação ao vosso trabalho
 
-## A regra-mãe: MAPEIA, NÃO DECIDAS {#mapeia-nao-decidas}
+## A regra-mãe: o Copilot mapeia, a decisão é vossa {#mapeia-nao-decidas}
 
-O princípio operacional de hoje. Uma regra simples, com nome, reutilizável em qualquer thread ou reunião.
+O princípio operacional de hoje. Em três palavras: **MAPEIA, NÃO DECIDAS** — mas reparem a quem se fala. O *não decidas* é dito **ao Copilot** (o redator júnior), não a vocês: **ele mapeia; quem decide são vocês.** É uma regra simples, com nome, reutilizável em qualquer thread ou reunião.
 
 **O que significa.** O Copilot é excelente a **mapear**: as posições recebidas numa thread, as ações extraídas de uma reunião, o tom sugerido para um rascunho. Mas o Copilot **não pode decidir** o que pertence à hierarquia humana: que posição prevalece num conflito, que prazo é razoável, que prioridade dar entre coordenadores em desacordo.
 
@@ -68,7 +68,7 @@ O princípio operacional de hoje. Uma regra simples, com nome, reutilizável em 
 > **E o art. 22.º do RGPD?** Esse só se ativa quando a decisão é tomada **exclusivamente** por meios automáticos, ou quando a IA tem papel **determinante** (TJUE, *SCHUFA*, C-634/21), com efeito significativo na pessoa — por exemplo, uma menção SIADAP gerada sem juízo próprio do avaliador. O uso de hoje, com a decisão sempre humana, **não cai no art. 22.º**. A avaliação de pessoas, essa sim, é território de alto risco do AI Act e entra a sério na S8 — hoje ficamos no apoio à comunicação.
 
 {: .important }
-> **MAPEIA, NÃO DECIDAS.** O que fica do lado da Direção, o tom do vosso prompt, o que alguém disse numa reunião — **nada disto o Copilot decide. É vosso.**
+> **O Copilot mapeia; a decisão é vossa.** O que fica do lado da Direção, o tom do vosso prompt, o que alguém disse numa reunião — **nada disto o Copilot decide. É vosso.**
 
 ### O espelho — o tom é uma escolha
 
@@ -350,7 +350,7 @@ Saímos da S5 com três coisas, e só três:
 
 E os prompts de hoje não se perdem: guardem-nos na vossa biblioteca pessoal — a matriz de posições e a tabela de ações em **Analisar**; a resposta ao Reitor e o *follow-up* em **Redigir**.
 
-> Em qualquer thread, qualquer reunião, qualquer rascunho: o Copilot mapeia; quem lê, decide e assina são vocês. **MAPEIA, NÃO DECIDAS.**
+> Em qualquer thread, qualquer reunião, qualquer rascunho: **o Copilot mapeia; quem lê, decide e assina são vocês.**
 
 ## E na segunda-feira, com a vossa caixa de correio?
 
@@ -376,7 +376,7 @@ E os prompts de hoje não se perdem: guardem-nos na vossa biblioteca pessoal —
 | Liga a | Como |
 |---|---|
 | **S4 (Word)** | O gesto de trabalhar um documento com o Copilot. Quando um regulamento for citado numa reunião (como o Regulamento de Avaliação de 2024, no ponto 2 do DOC-B), é o mesmo gesto de leitura cuidada. |
-| **S8 (SIADAP)** | A Catarina volta. *MAPEIA, NÃO DECIDAS* endurece para: **NÃO PROPONHAS MENÇÃO** — e aí entram a sério o art. 22.º do RGPD e o AI Act. |
+| **S8 (SIADAP)** | A Catarina volta. A regra aperta: nessa sessão o Copilot **nem propõe a menção** — decidi-la é vosso, e aí entram a sério o art. 22.º do RGPD e o AI Act. |
 | **S9 (Atas)** | A transcrição do DOC-B é o input típico que a S9 transforma em ata formal. |
 | **S11 (Apoio a Júri)** | A Margarida (DSI) e a Catarina reaparecem como membros de júri. |
 | **S13 (Copilot Pages)** | A biblioteca de prompts que cresce ao longo do curso é o material que a S13 ensina a partilhar. |
