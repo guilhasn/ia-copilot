@@ -14,7 +14,8 @@ nav_order: 2
 - **Data:** 18-06-2026
 - **Duração:** 2 horas
 - **Modalidade:** Online síncrona
-- **Casos:** #1 Outlook *Summary* — resumir thread + descobrir silenciados · #2 Outlook *Draft + Coaching* — e-mail ao Reitor · #3 Teams *Recap* — tabela de ações validada por timestamp
+- **Demonstração:** Outlook *Summary* — resumir uma thread e descobrir quem ficou silenciado
+- **Exercícios (mãos à obra):** e-mail ao Reitor (núcleo) + tabela de ações do Teams — ver [Exercícios da S05]({% link exercicios/s05-comunicacao.md %})
 
 ## Ideia central
 
@@ -34,9 +35,9 @@ No final da sessão, devem ser capazes de:
 
 - **detetar e neutralizar a sycophancy** — o output que espelha o ângulo do prompt;
 
-- redigir uma resposta institucional **mantendo posições em conflito mapeadas**, sem que o Copilot decida entre elas;
+- redigir uma resposta institucional **mantendo posições em conflito mapeadas**, sem que o Copilot decida entre elas *(no exercício)*;
 
-- extrair uma tabela de ações/responsáveis/prazos de uma transcrição, com **validação por timestamp**;
+- extrair uma tabela de ações/responsáveis/prazos de uma transcrição, com **validação por timestamp** *(no exercício)*;
 
 - aplicar a regra **mapear sem decidir** às três tarefas.
 
@@ -44,7 +45,7 @@ No final da sessão, devem ser capazes de:
 
 1. A regra-mãe — o Copilot mapeia, vocês decidem
 2. As funcionalidades — vejam-nas a funcionar (Outlook + Teams)
-3. Mãos à obra — Caso #1 *Summary*, Caso #2 *Draft + Coaching*, Caso #3 *Recap*
+3. Demonstração — o Caso #1 (*Summary*: mapa + silenciados); o e-mail ao Reitor e a tabela do Teams ficam para os [exercícios]({% link exercicios/s05-comunicacao.md %})
 4. Disciplina de validação — checklist por superfície
 5. Síntese e aplicação ao vosso trabalho
 
@@ -56,17 +57,17 @@ A regra de hoje, em três palavras: **MAPEIA, NÃO DECIDAS** — dito **ao Copil
 
 **Onde se aplica hoje:**
 
-- **Caso #1:** mapear os silenciados — **não decidir** quem tem razão.
+- **Na demonstração:** mapear os silenciados — **não decidir** quem tem razão.
 
-- **Caso #2:** mapear as posições em conflito — **não decidir** entre elas.
+- **No e-mail (exercício):** mapear as posições em conflito — **não decidir** entre elas.
 
-- **Caso #3:** mapear as ações com timestamp — **não inventar** prazos onde não há.
+- **Na tabela do Teams (exercício):** mapear as ações com timestamp — **não inventar** prazos onde não há.
 
 **Porque importa.** Apresentar uma decisão do Copilot como vossa mistura papéis: a análise é dele, mas **quem assina responde**. A decisão — e a responsabilidade do ato — fica sempre do vosso lado.
 
 ### O espelho — o tom é uma escolha
 
-Um aviso que cabe dentro da regra, e que vão sentir nas mãos no Caso #1. Peçam ao Copilot o **mesmo resumo** da mesma thread, mudando só uma palavra no enquadramento:
+Um aviso que cabe dentro da regra, e que vão ver na demonstração. Peçam ao Copilot o **mesmo resumo** da mesma thread, mudando só uma palavra no enquadramento:
 
 - *"Resume esta thread em que o EPD está a complicar com prazos."*
 
@@ -103,28 +104,25 @@ As funcionalidades-estrela desta sessão vivem **dentro** do Outlook e do Teams,
 | **[Resumir chats e canais](https://support.microsoft.com/en-us/office/how-to-use-microsoft-365-copilot-in-teams-chats-and-channels-cccccca2-9dc8-49a9-ab76-b1a8ee21486c)** | Pontos principais, decisões e o que exige atenção num chat ou canal, sem ler tudo. | *"Resume as principais decisões deste canal na última semana."* |
 | **[Reescrever uma mensagem](https://support.microsoft.com/en-us/teams/copilot/rewrite-and-adjust-your-messages-with-copilot-in-microsoft-teams)** | Antes de enviar, ajusta tom e extensão de uma mensagem de chat ou canal. | *"Reescreve esta mensagem de forma mais clara, cordial e institucional."* |
 
-As "tarefas recomendadas" do Recap são sugestões extraídas da transcrição: **não atribuem prazos com fiabilidade** e misturam responsáveis com frequência. É exatamente por isso que o Caso #3 existe.
+As "tarefas recomendadas" do Recap são sugestões extraídas da transcrição: **não atribuem prazos com fiabilidade** e misturam responsáveis com frequência. É exatamente por isso que o exercício de validação (Teams) existe.
 
 {: .note }
 > Confirmem na véspera que as ligações (guias e vídeos) abrem — são externas, e a interface pode diferir do vosso tenant.
 
-## Mãos à obra
+## Demonstração — o que vamos ver juntos
 
-Três casos, cada um ancorado numa funcionalidade (~20-25 min cada). O **caminho-base é o Copilot Chat** (que todos têm); quem tem licença faz o mesmo com o botão nativo. Façam o **núcleo** ao vivo; o resto fica para praticar. **Se o tempo apertar, garantam o Caso #1** (o mapa + silenciados) **e o Caso #3** (validação por timestamp) — o #2 pode ficar para praticar.
+Antes de porem as mãos, vamos ver o Copilot a trabalhar **uma vez, em conjunto**: pegar numa thread caótica, transformá-la num mapa e — o gesto que fica — descobrir **quem ficou silenciado**. As mãos à obra vêm a seguir, e são vossas, nos [exercícios da S05]({% link exercicios/s05-comunicacao.md %}).
 
-📎 **Descarreguem o dataset:** [Dataset_S05_Comunicacao.docx]({{ site.baseurl }}/sessoes/sessao-05/Dataset_S05_Comunicacao.docx) — traz **DOC-A** (a thread) e **DOC-B** (a transcrição da reunião) no mesmo ficheiro.
+📎 O dataset (a thread **DOC-A** e a transcrição **DOC-B**) está na [página dos exercícios]({% link exercicios/s05-comunicacao.md %}) e em **Materiais**, no fim; aqui basta acompanhar.
 
 {: .note }
-> **Como usar o dataset no Chat.** Para os Casos #1 e #2, trabalhem **só com o DOC-A**: colem essa parte, ou — se anexarem o ficheiro inteiro — comecem o prompt por *"usa apenas a secção DOC-A"* e **confirmem no output que nada do DOC-B se infiltrou**. Casos #1 e #2 correm na **mesma conversa** (o DOC-A já lá está); o Caso #3 abre **conversa nova** com o DOC-B. Não há "output certo" escrito aqui: nunca sabemos ao certo o que o Copilot devolve, por isso o que conta é **validar o que sair**.
+> Não há "output certo" escrito aqui — nunca sabemos ao certo o que o Copilot devolve. O que conta é **validar o que sair**.
 
-{: .important }
-> **Antes de fazerem isto com correio real:** o dataset de hoje é fictício e pode ir inteiro. Com threads reais, **minimizem** — só os e-mails necessários, **sem matéria sindical nem dados pessoais que a tarefa dispense**; o Chat gratuito não tem as garantias de tenant da versão com licença.
-
-### Caso #1 · Outlook *Summary* — o mapa de uma thread (e quem falta)
+### Outlook *Summary* — o mapa de uma thread (e quem falta)
 
 **O problema:** a Catarina foi posta em cópia, há uma semana, numa thread sobre a **adoção do Copilot na UVV** que cresceu até **9 mensagens de 6 pessoas** — Reitor, Vice-Reitora, DSI, EPD, um coordenador e o Sindicato — com posições em conflito sobre calendário, orçamento, conformidade e direitos dos trabalhadores. Ontem ao fim do dia, o Reitor nomeou-a **coordenadora do dossier** e quer síntese + proposta de calendário **até hoje ao final do dia**. Ler e destrinçar aquilo à mão leva-lhe mais de uma hora. **Tem 30 segundos de Copilot a poupar-lhe essa hora.**
 
-**Núcleo (ao vivo):** o mapa **e** o *follow-up* dos silenciados — são o coração do caso.
+**O coração da demonstração:** o mapa **e** o *follow-up* dos silenciados.
 
 **Passo 1 — de 9 e-mails a um mapa.** No **Copilot Chat**, carreguem o **DOC-A** e corram:
 
@@ -172,122 +170,15 @@ A descoberta não é a CT em si — é o **gesto**: depois do resumo, perguntar 
 
 </details>
 
-### Caso #2 · Outlook *Draft + Coaching* — redigir o e-mail ao Reitor
+## Agora é a vossa vez — os exercícios
 
-**O problema:** a Catarina tem a thread sumarizada e os silenciados mapeados. Agora tem de **responder ao Reitor**: síntese das posições, conflitos a decidir, e uma proposta de calendário em fases que acomode setembro **e** janeiro de 2027 — **sem decidir entre eles.**
+A demonstração mostrou **um** caso, em conjunto. As mãos à obra são vossas — e em tarefas **novas**, não a repetir o que viram:
 
-**Núcleo (ao vivo):** o draft + a lição do enquadramento (porque manteve as duas datas).
+- **Núcleo — o e-mail ao Reitor:** redigir uma resposta institucional que mantém as posições em conflito **sem deixar o Copilot decidir** entre elas.
 
-Na **mesma conversa** do Caso #1 (a thread já lá está):
+- **Para praticar — a tabela de ações (Teams):** extrair ações, responsáveis e prazos de uma transcrição e **validá-los** contra a fonte.
 
-> *Objetivo: Redige um e-mail formal da Catarina Pires ao Reitor com: síntese das posições (4-5 linhas), os 3 conflitos a decidir (bullets), proposta de calendário em três fases (maio-junho · julho-agosto · setembro) que mantenha as duas posições principais (setembro vs janeiro 2027) igualmente expostas — **não escolhas entre elas** — e uma recomendação de reunião com a Comissão de Trabalhadores e o Sindicato antes do anúncio público.*
->
-> *Contexto: A Catarina é Técnica Superior de RH, designada pelo Reitor para coordenar o dossier; tratamento "Senhor Reitor".*
->
-> *Fonte: a thread DOC-A desta conversa.*
->
-> *Expectativas: tom institucional formal, português europeu, parágrafos curtos. Sem "compliance", "alinhar", "aprovar automaticamente".*
-
-*(Quem tem licença: abrir o E7 no Outlook e usar* Draft with Copilot*.)*
-
-**Repararam? Ele manteve as duas.** Quase sempre, o output devolve setembro **e** janeiro de 2027 como um **ponto de decisão** (cenário A / cenário B), com as duas datas em aberto para a Direção — porque foi isso que o prompt pediu (*"igualmente expostas, não escolhas entre elas"*). **Esta é a lição, e é positiva:** a neutralidade não caiu do céu — **escreveram-na no prompt.** É o espelho a trabalhar a vosso favor.
-
-**Querem ver o avesso?** Comecem o prompt do outro lado — *"Preciso de justificar ao Reitor o arranque em setembro"* — e vejam janeiro encolher para uma objeção de rodapé. Mesmos factos, outro peso. É por isso que o enquadramento neutro não é decoração: é o que mantém as duas posições vivas para quem decide. *(E se algum output vos pender para uma data, o conserto é uma linha:* "Refaz com as duas posições igualmente expostas. A escolha é da Direção."*)*
-
-**Coaching e revisão.** Sem licença, peçam um segundo olhar: *"Avalia este e-mail em tom, clareza e adequação ao destinatário (Reitor). Sugere melhorias sem reescrever."* — e a decisão de aplicar é vossa, frase a frase. *(Com licença, o* Coaching by Copilot *faz esta avaliação.)* **Aqui mora o risco real:** ao encurtar, é fácil deixar cair **conteúdo** — por exemplo, a recomendação da reunião com a Comissão de Trabalhadores, sacrificada "por concisão". E, com licença, aplicar **todas** as sugestões de uma vez **regenera o e-mail inteiro** — releiam tudo, não só "o que mudou".
-
-{: .discussao }
-> Para discutir:
->
-> 1. O e-mail manteve as **duas datas** em aberto (cenário A/B) — ou pendeu para uma? *(Quase sempre mantém: foi o que pediram.)*
->
-> 2. No Coaching/encurtamento, alguma sugestão cortou **conteúdo** e não só forma — a recomendação da CT, por exemplo?
->
-> 3. Se este e-mail fosse vazado, fica **defensável como vossa redação**?
-
-<details markdown="1">
-<summary>Ver o que esperar — depois de discutir</summary>
-
-Os **3 conflitos** que a Direção tem de decidir (verificáveis no DOC-A): (i) **calendário** — setembro de 2026 (E1) vs janeiro de 2027 (E4, parecer do EPD); (ii) **ordem das fases** — educação em 1.ª ou 2.ª vaga (E2) e o pedido de prioridade do MEI (E5); (iii) **reforço orçamental e de equipa** — os ~€36k e as 3-4 semanas-pessoa não previstos (E3).
-
-1. Quase sempre mantém as duas — apresenta setembro e janeiro de 2027 como cenários A/B em aberto, porque o prompt pediu equilíbrio. Se o vosso enquadramento tiver pendido para um lado, é aí que o re-prompt endireita.
-
-2. No draft, a recomendação da CT costuma sobreviver. O risco aparece no **encurtamento**: pedir "mais curto" pode comê-la. Encurtar e ativar a voz é forma; cortar a CT é conteúdo — confirma-se relendo o resultado completo.
-
-3. A pergunta-teste de toda a comunicação assistida: se a resposta hesita, a redação ainda não é vossa.
-
-</details>
-
-> Linguagem clara em comunicação institucional **não é** ausência de formalidade. É comunicação rigorosa, com a forma certa para o destinatário certo.
-
-### Caso #3 · Teams *Recap* — tabela de ações validada por timestamp
-
-**O problema:** esta manhã a Catarina foi secretária da reunião do **Conselho de Coordenação dos Mestrados** — quinze minutos, quatro pontos, despachada. Correu no Teams com transcrição ativa. Antes do fim do dia quer enviar o *follow-up*: **tabela de ações–responsáveis–prazos**, validada.
-
-**Núcleo (ao vivo):** o prompt de extração + a validação por timestamp de duas ou três linhas.
-
-Em **conversa nova** no Copilot Chat, com o **DOC-B** carregado:
-
-> *Objetivo: Extrai da transcrição DOC-B uma tabela com 5 colunas: ação · responsável · prazo · timestamp da intervenção que a originou · estado (acordado/pendente). Uma linha por ação, mesmo quando várias ações saem da mesma intervenção. Se uma ação ficou sem prazo, escreve "(sem data)" — não inventes.*
->
-> *Contexto: Sou a secretária da reunião e vou enviar esta tabela no follow-up formal.*
->
-> *Fonte: o DOC-B desta conversa.*
->
-> *Expectativas: Tabela em português europeu, prazos no formato DD-MM-AAAA quando expressos.*
-
-*(Quem tem licença: o separador* Recap *dá as tarefas recomendadas como ponto de partida — mas validam na mesma.)*
-
-*Antes de fazerem isto numa reunião real:* decidir gravar ou transcrever não é um gesto técnico — é **institucional** (consentimento, política da casa e, em matéria laboral ou disciplinar, a consulta devida). O dataset é fictício precisamente para trabalharmos sem essa amarra.
-
-**Onde o Copilot tipicamente erra aqui:**
-
-- **Mistura responsáveis** — atribui a uma pessoa uma ação que era de outra.
-
-- **Inventa prazos** para ações que ficaram sem data.
-
-- **Funde numa só** duas ações que saíram da **mesma intervenção** (às 00:10:25 saem duas: os coordenadores enviam os 2 parágrafos *e* a Catarina recolhe e prepara o dossier).
-
-- **Atribui a um só** uma ação que era para **todos** (a dos 2 parágrafos tem quatro responsáveis).
-
-#### Validação por timestamp — o gesto que fecha a sessão {#validacao-timestamp}
-
-Para cada ação no output:
-
-1. Ir à transcrição.
-
-2. Localizar o **timestamp** da intervenção.
-
-3. Confirmar **quem disse, quando, o quê**.
-
-4. Se não há timestamp confirmável, **não é uma ação da reunião**.
-
-{: .important }
-> **No Chat gratuito, o próprio timestamp é suspeito.** Sobre uma transcrição colada, o Copilot **desloca e inventa tempos** com frequência. Por isso validem pela **frase citada literal** e pela **ordem da intervenção** — não confiem no número do tempo que ele devolveu. A pergunta extra: *algum timestamp do output não bate com a transcrição?*
-
-Cinco minutos aqui poupam uma hora de mal-entendidos depois — e cronometrar a validação é a melhor prova de que ela cabe no tempo real do trabalho.
-
-**O *follow-up*.** Com a tabela validada, redijam o e-mail. A tabela vai como **proposta para validação** dos colegas — *"qualquer correção, agradeço resposta até amanhã"* — porque a transcrição é assistente, não fonte autoritativa. *(Com licença, o* Share to email *do Recap dá a base.)*
-
-{: .discussao }
-> Para discutir — três perguntas com resposta verificável no DOC-B:
->
-> 1. A ação dos **2 parágrafos sobre o piloto** ficou com **um** responsável, ou com os **quatro** coordenadores?
->
-> 2. A ação de **encaminhar a publicidade do Direito** ao Gabinete de Comunicação ficou **"(sem data)"**, ou ganhou um prazo inventado?
->
-> 3. As **duas ações** da mesma intervenção (coordenadores enviam / Catarina recolhe) ficaram em **duas linhas**, ou compactadas numa só?
-
-<details markdown="1">
-<summary>Ver o que confirmar — depois de discutir</summary>
-
-1. São os **quatro coordenadores presentes** (Carlos, Mariana, Pedro, Rita). A instrução da Vice-Reitora às **00:10:25** abrange "cada coordenador" — o Rui Branco faltou, mas também está abrangido. O erro comum é atribuir só ao Carlos, que falou antes.
-
-2. **"(sem data)"** — a Helena oferece-se para encaminhar às **00:13:20** e a Vice-Reitora confirma às **00:13:32**, sem prazo. Quando o prompt não diz "não inventes", ganha tipicamente "antes da próxima reunião": plausível e falso.
-
-3. Duas linhas. As duas ações nascem na **mesma intervenção, às 00:10:25**; o prazo (29-05) é só confirmado pela Catarina às 00:10:58. Metade das execuções funde-as — é o caso que justifica a instrução "uma linha por ação, mesmo quando várias saem da mesma intervenção".
-
-</details>
+👉 **[Exercícios da Sessão 5 — comunicação com o Copilot]({% link exercicios/s05-comunicacao.md %})** — com o dataset, os prompts e o "para ir mais longe" para quem quer esticar.
 
 ## Antes de entregar — a vossa checklist de bolso {#disciplina-validacao}
 
