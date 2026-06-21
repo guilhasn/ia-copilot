@@ -57,9 +57,15 @@ Aplicar cada sugestão é decisão vossa, frase a frase.
 > 2. Onde é que ele "ajudou" a mais — escolher, suavizar, cortar?
 
 <details markdown="1">
-<summary>Ver o que esperar — depois de discutir</summary>
+<summary>Como saber se o teu e-mail está bom — confronta com o DOC-A</summary>
 
-Quase sempre, se o prompt pediu "igualmente em aberto", o e-mail apresenta setembro de 2026 e janeiro de 2027 como **cenário A / cenário B** para a Direção decidir. Se pendeu para um lado, o conserto é uma linha: *"Refaz com as duas posições igualmente expostas. A escolha é da Direção."* É o espelho a trabalhar a vosso favor — a neutralidade não cai do céu, escreve-se no prompt.
+A régua não é "o que o Copilot devolve"; és tu a confrontar o resultado com o que pediste e com a fonte:
+
+- **As duas datas ficaram em aberto?** Setembro de 2026 (E1) e janeiro de 2027 (parecer do EPD, E4) têm de aparecer as duas, sem o e-mail escolher por ti. Se pendeu para uma, o conserto é uma linha: *"Refaz com as duas posições igualmente expostas. A escolha é da Direção."*
+
+- **Os três conflitos estão lá?** Calendário (E1 vs E4), ordem das fases (E2 vs E5) e orçamento/recursos (os €36k, E3) — todos verificáveis no DOC-A.
+
+- **Sobrou alguma decisão que era da Direção?** Se o e-mail "resolve" um conflito, tiraste-lhe uma escolha que era dela.
 
 </details>
 
@@ -94,11 +100,13 @@ Quase sempre, se o prompt pediu "igualmente em aberto", o e-mail apresenta setem
 > 2. A ação sem prazo ficou **"(sem data)"**, ou ganhou um prazo inventado?
 
 <details markdown="1">
-<summary>Ver o que confirmar — depois de discutir</summary>
+<summary>A verdade do DOC-B — confronta com a tua tabela</summary>
 
-1. São os **quatro coordenadores** — a instrução abrange "cada coordenador". O erro comum é atribuir só a quem falou primeiro.
+- **Ação dos 2 parágrafos:** é de **cada coordenador** (00:10:25) — os quatro presentes (Carlos, Mariana, Pedro, Rita); o Rui faltou, mas está abrangido. Se a tabela a atribuiu a um só, está errada.
 
-2. **"(sem data)"** — quando o prompt não diz "não inventes", a ação sem prazo ganha tipicamente um prazo plausível e falso.
+- **Encaminhar a publicidade do Direito** (Helena → Gabinete de Comunicação, 00:13:20–00:13:32) ficou **sem prazo** na transcrição. A tabela tem de dizer **"(sem data)"** — qualquer data ali é inventada.
+
+**Auditar:** cada linha tem uma frase do DOC-B a confirmá-la? Algum responsável trocado? Algum prazo que não está na transcrição? (No Chat *free*, valida pela **frase** e pela **ordem**, não pelo número do timestamp.)
 
 </details>
 

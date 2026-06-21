@@ -160,13 +160,25 @@ A descoberta não é a CT em si — é o **gesto**: depois do resumo, perguntar 
 > 3. Na categoria (c), cada nome tem uma **frase do DOC-A** que o justifica — ou escapou algum **palpite** (ou até um nome que nem está na thread)?
 
 <details markdown="1">
-<summary>Ver o que esperar — depois de discutir</summary>
+<summary>A verdade do DOC-A — para confrontar com o que saiu</summary>
 
-1. O mapa entrega as posições e os 3 conflitos prontos a usar; os 9 e-mails passam a consulta, não a ponto de partida. É o ganho de tempo que justifica a ferramenta — e o que se leva para a segunda-feira.
+Estes factos não mudam (estão no DOC-A); o que o Copilot devolve, sim. Usem isto como régua.
 
-2. A CT aparece quase sempre — está em Cc no E6 e é referida no E7. Os "outros ausentes" variam: a **área financeira** (os €36 000 não orçamentados) é o mais frequente. Qualquer ausente plausível que a sala não tinha pensado é o padrão a funcionar.
+- **Escreveram seis:** Reitor (E1, E7), Vice-Reitora (E2), DSI/Margarida (E3), EPD/Tiago (E4), Carlos/MEI (E5), Sindicato/Ana (E6).
 
-3. A categoria (c) é onde o Copilot **adivinha**: por vezes propõe nomes sem frase de suporte (palpite), ou — se carregaram o ficheiro inteiro — pesca alguém que afinal vem do DOC-B (a reunião), não da thread. É por isso que o prompt exige a frase justificativa, e são vocês que a confirmam.
+- **O silenciado-chave:** a **Comissão de Trabalhadores** está em **Cc no E6** e é pedida no **E7** ("recomendação sobre a comunicação à Comissão de Trabalhadores") — mas **nunca escreveu**.
+
+- **Ausente de conteúdo:** **ninguém de finanças/orçamento** está no fio, apesar dos **€36 000 não orçamentados** (E3).
+
+- **Não pertencem à thread:** Helena, Mariana, Pedro e Rita são da **reunião (DOC-B)** — se entrarem no mapa, é erro de fonte.
+
+**Auditar o que o Copilot devolveu, contra esta régua:**
+
+- Apanhou a Comissão de Trabalhadores? (Devia — está no DOC-A.)
+
+- Cada "ausente" que ele deu tem uma **frase do DOC-A** a sustentá-lo? Sem frase = palpite.
+
+- Entrou algum nome que afinal vem da **reunião (DOC-B)**, não da thread?
 
 </details>
 
