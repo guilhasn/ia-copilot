@@ -55,7 +55,7 @@ Aplicar cada sugestão é decisão vossa, frase a frase.
 
 A régua não é "o que o Copilot devolve"; és tu a confrontar o resultado com o que pediste e com a fonte:
 
-- **As duas datas ficaram em aberto?** Setembro de 2026 (E1) e janeiro de 2027 (parecer do EPD, E4) têm de aparecer as duas, sem o e-mail escolher por ti. Se pendeu para uma, o conserto é uma linha: *"Refaz com as duas posições igualmente expostas. A escolha é da Direção."*
+- **As duas datas ficaram em aberto?** As duas posições estão no DOC-A — setembro de 2026 (E1) e janeiro de 2027 (parecer do EPD, E4); um bom e-mail mantém as duas, sem escolher por ti. Se pendeu para uma, o conserto é uma linha: *"Refaz com as duas posições igualmente expostas. A escolha é da Direção."*
 
 - **Os três conflitos estão lá?** Calendário (E1 vs E4), ordem das fases (E2 vs E5) e orçamento/recursos (os €36k, E3) — todos verificáveis no DOC-A.
 
