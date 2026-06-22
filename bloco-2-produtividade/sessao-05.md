@@ -15,7 +15,7 @@ nav_order: 2
 - **Duração:** 2 horas
 - **Modalidade:** Online síncrona
 - **Demonstração:** Outlook *Summary* — resumir uma thread e descobrir quem ficou silenciado
-- **Exercícios (mãos à obra):** e-mail ao Reitor (núcleo) + tabela de ações do Teams — ver [Exercícios da S05]({% link exercicios/s05-comunicacao.md %})
+- **Exercícios:** e-mail ao Reitor (núcleo) + tabela de ações do Teams — ver [Exercícios da S05]({% link exercicios/s05-comunicacao.md %})
 
 ## Ideia central
 
@@ -46,7 +46,7 @@ No final da sessão, devem ser capazes de:
 1. A regra-mãe — o Copilot mapeia, vocês decidem
 2. As funcionalidades — vejam-nas a funcionar (Outlook + Teams)
 3. Demonstração — o Caso #1 (*Summary*: mapa + silenciados); o e-mail ao Reitor e a tabela do Teams ficam para os [exercícios]({% link exercicios/s05-comunicacao.md %})
-4. Disciplina de validação — checklist por superfície
+4. Disciplina de validação — lista de verificação por superfície
 5. Síntese e aplicação ao vosso trabalho
 
 ## A regra-mãe: o Copilot mapeia, a decisão é vossa {#mapeia-nao-decidas}
@@ -111,7 +111,7 @@ As "tarefas recomendadas" do Recap são sugestões extraídas da transcrição: 
 
 ## Demonstração — o que vamos ver juntos
 
-Antes de porem as mãos, vamos ver o Copilot a trabalhar **uma vez, em conjunto**: pegar numa thread caótica, transformá-la num mapa e — o gesto que fica — descobrir **quem ficou silenciado**. As mãos à obra vêm a seguir, e são vossas, nos [exercícios da S05]({% link exercicios/s05-comunicacao.md %}).
+Antes de praticarem, vamos ver o Copilot a trabalhar **uma vez, em conjunto**: pegar numa thread caótica, transformá-la num mapa e — o gesto que fica — descobrir **quem ficou silenciado**. A prática vem a seguir, e é vossa, nos [exercícios da S05]({% link exercicios/s05-comunicacao.md %}).
 
 📎 O dataset (a thread **DOC-A** e a transcrição **DOC-B**) está na [página dos exercícios]({% link exercicios/s05-comunicacao.md %}) e em **Materiais**, no fim; aqui basta acompanhar.
 
@@ -182,7 +182,7 @@ Estes factos não mudam (estão no DOC-A); o que o Copilot devolve, sim. Usem is
 
 ## Agora é a vossa vez — os exercícios
 
-A demonstração mostrou **um** caso, em conjunto. As mãos à obra são vossas — e em tarefas **novas**, não a repetir o que viram:
+A demonstração mostrou **um** caso, em conjunto. Agora praticam vocês — e em tarefas **novas**, não a repetir o que viram:
 
 - **Núcleo — o e-mail ao Reitor:** redigir uma resposta institucional que mantém as posições em conflito **sem deixar o Copilot decidir** entre elas.
 
@@ -190,9 +190,9 @@ A demonstração mostrou **um** caso, em conjunto. As mãos à obra são vossas 
 
 👉 **[Exercícios da Sessão 5 — comunicação com o Copilot]({% link exercicios/s05-comunicacao.md %})** — com o dataset, os prompts e o "para ir mais longe" para quem quer ir mais além.
 
-## Antes de entregar — a vossa checklist de bolso {#disciplina-validacao}
+## Antes de entregar o que o Copilot produziu — a lista de verificação {#disciplina-validacao}
 
-Cada caso de hoje terminou com uma verificação. Reunidas, são a folha que levam para a segunda-feira: antes de **entregar** o que o Copilot produziu — enviar, partilhar ou assinar — corram a checklist da superfície em que estão. Cinco segundos; é o que separa o rascunho do Copilot do documento que é **vosso**.
+Cada caso de hoje terminou com uma verificação. Reunidas, são a folha que levam para a segunda-feira: antes de **enviar, partilhar ou assinar**, corram a lista de verificação da superfície em que estão. Cinco segundos; é o que separa o rascunho do Copilot do documento que é **vosso**.
 
 **Resumo de uma thread:**
 
@@ -223,10 +223,6 @@ Cada caso de hoje terminou com uma verificação. Reunidas, são a folha que lev
 - ✅ Algum prazo foi inventado?
 
 - ✅ Ações compostas foram desdobradas?
-
-## Reflexão final
-
-Se a transcrição de um colega saiu quase toda "[impercetível]", não peçam ao Copilot para *reconstituir o que ele provavelmente disse* e depois lho mandem confirmar — isso ancora-o em palavras que não disse. Peçam-lhe a **versão dele, em branco**. A forma o Copilot dá; **a substância é da pessoa**.
 
 ## Síntese da sessão
 
