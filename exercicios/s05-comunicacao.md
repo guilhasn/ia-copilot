@@ -41,20 +41,14 @@ nav_order: 5
 
 Aplicar cada sugestão é decisão vossa, frase a frase.
 
-**Antes de dar por feito (10 segundos):**
-
-- Manteve as **duas datas** em aberto, ou pendeu para uma?
-
-- Alguma sugestão de "estilo" mudou **conteúdo**?
-
-- Está em português europeu e defensável como **vossa** redação?
-
 {: .discussao }
 > Para discutir:
 >
 > 1. O e-mail deixou as duas datas em aberto (cenário A/B) — ou o Copilot decidiu por vós?
 >
 > 2. Onde é que ele "ajudou" a mais — escolher, suavizar, cortar?
+>
+> 3. Está em português europeu e defensável como **vossa** redação?
 
 <details markdown="1">
 <summary>Como saber se o teu e-mail está bom — confronta com o DOC-A</summary>
