@@ -17,3 +17,4 @@ Mãos no Copilot. Cada sessão tem um exercício prático que aplica o que acabo
 | **S02** — Anatomia do prompt | [A primeira app (vibecoding)]({% link exercicios/s02-primeira-app-vibecoding.md %}) | 15-20 min |
 | **S04** — Word | [Documentos de gestão com o Copilot]({% link exercicios/s04-plano-implementacao-copilot.md %}) (3 exercícios) | 25-60 min |
 | **S05** — Outlook + Teams | [Comunicação com o Copilot]({% link exercicios/s05-comunicacao.md %}) (núcleo + praticar) | 25-55 min |
+| **S06** — Excel | [Excel com o Copilot]({% link exercicios/s06-excel.md %}) (núcleo + praticar) | 20-55 min |

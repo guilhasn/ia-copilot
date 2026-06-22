@@ -15,7 +15,8 @@ nav_order: 3
 - **Duração:** 2 horas
 - **Modalidade:** Online síncrona
 - **Bloco:** 2 · Produtividade Individual
-- **Casos operacionais:** #1 Diagnóstico estrutural do dataset · #2 Análise descritiva com salvaguarda · #3 Identificação de anomalias técnicas
+- **Demonstração:** análise, anomalias e o *silent column skip* ao vivo
+- **Exercícios:** diagnóstico estrutural (núcleo) · análise com salvaguarda · anomalias — ver [Exercícios da S06]({% link exercicios/s06-excel.md %})
 
 ## Para começar — o que trouxeram da S5
 
@@ -59,15 +60,15 @@ A S06 trabalha um risco que reaparece em todas as superfícies — a **alucinaç
 
 ## Programa
 
-1. Para começar — debrief da S5
-2. Demonstração ao vivo — Excel: análise conversacional, anomalias, silent column skip
+1. Para começar — o que trouxeram da S5
+2. O Copilot no Excel — as capacidades
 3. Diagnóstico estrutural — o conceito-chave da sessão
-4. Caso #1 — diagnóstico do dataset
-5. Caso #2 — análise descritiva com salvaguarda
-6. Caso #3 — anomalias técnicas
-7. Análise avançada — What-If e relatório executivo (para quem termina cedo)
-8. Consolidação — silent column skip e pergunta-salvaguarda
-9. Reflexão crítica — onde investir o tempo libertado
+4. Descritiva vs inferencial
+5. Demonstração ao vivo — análise, anomalias e o silent column skip
+6. Agora é a vossa vez — os exercícios (diagnóstico · análise com salvaguarda · anomalias)
+7. Consolidação — silent column skip e pergunta-salvaguarda
+8. Análise avançada — What-If e relatório executivo (para quem termina cedo)
+9. Reflexão — onde investir o tempo libertado
 
 ## O Copilot no Excel
 
@@ -102,7 +103,7 @@ O princípio operacional da S06. Como o [MAPEIA, NÃO DECIDAS]({% link bloco-2-p
 - ✅ **Sem subtotais a meio** — só dados de detalhe; agregados vivem em folha separada
 - ✅ **Sem linhas em branco** dentro dos dados
 
-Estas verificações podem ser feitas com o Copilot — através do prompt do Caso #1. **A IA não tem de detetar tudo manualmente; só temos de pedir.**
+Estas verificações podem ser feitas com o Copilot — é o que o exercício de diagnóstico faz. **A IA não tem de detetar tudo manualmente; só temos de pedir.**
 
 {: .important }
 > **Antes de perguntar aos dados, perguntar sobre os dados.**
@@ -125,158 +126,6 @@ A demonstração tem três partes ao vivo no Excel.
 **Parte B — Identificação de anomalias.** Vão observar uma pergunta sobre situações anómalas: pagamentos que excedem compromissos, compromissos sem cabimento. O Copilot identifica algumas — mas pode inventar uma quarta que não existe. Anotem: confirmaram cada anomalia abrindo a linha original?
 
 **Parte C — Silent column skip.** A peça que vai ficar convosco todos os dias. Vão observar o Copilot a responder a *"qual o contrato mais antigo?"* — devolve uma data plausível. Mas no ficheiro há contratos com datas em três formatos diferentes (`2025-03-15`, `15/03/2025`, `15 mar 2025`). O Copilot pode ter analisado apenas as datas que reconheceu, descartando silenciosamente as outras. Vão ver como a pergunta *"quantas linhas usaste?"* revela isto em cinco segundos.
-
-## Caso #1 — Diagnóstico estrutural do dataset
-
-### Cenário
-
-O Miguel abre o `Dataset_S06_Execucao_Orcamental.xlsx` no Excel. **Resiste à tentação** de saltar diretamente para a análise. Em vez disso, pede ao Copilot que identifique problemas estruturais primeiro.
-
-📎 **Para fazerem este exercício, descarreguem o dataset:** [Dataset_S06_Execucao_Orcamental.xlsx]({{ site.baseurl }}/sessoes/sessao-06/Dataset_S06_Execucao_Orcamental.xlsx) — abram no Excel.
-
-### Prompt de trabalho
-
-> *Antes de eu pedir análise, identifica problemas estruturais nesta tabela:*
-> *- tipos inconsistentes por coluna (datas, números, texto misturados)*
-> *- células mescladas dentro da área de dados*
-> *- totais ou subtotais a meio das linhas*
-> *- datas em formatos diferentes*
-> *- valores monetários como string vs número*
-> *- grafias variadas para a mesma entidade*
->
-> *Não corrijas. Apenas lista por linha. Português europeu.*
-
-### Output esperado
-
-Tente primeiro; só depois abra.
-
-<details markdown="1">
-<summary>Ver o output típico do diagnóstico</summary>
-
-> *Identifiquei os seguintes problemas estruturais:*
->
-> *1. **Linha 17 — célula mesclada** ("Subtotal DSI") que rompe a estrutura tabular.*
-> *2. **Linha do TOTAL FINAL** no fim da tabela (linha 42) — valor solto, sem cabeçalho.*
-> *3. **Coluna "Data Adjudicação"** — formatos mistos: a maioria em YYYY-MM-DD, algumas em DD/MM/YYYY e DD-MM-YYYY, e **4 em texto livre 'DD mes YYYY'** (ex.: '15 mar 2025'), que não consigo interpretar como data.*
-> *4. **Coluna "Valor Adjudicado"** — alguns valores numéricos, outros como texto com '€'.*
-> *5. **Coluna "Adjudicatário"** — grafias variadas para a mesma empresa: Microsoft Portugal, Critical Software e NOS Comunicações aparecem cada uma em 3 grafias; Truewind em 2.*
-
-</details>
-
-**Mensagem central:** *cinco minutos a diagnosticar poupam trinta minutos a desconfiar dos números.*
-
-{: .discussao }
-> Três perguntas para discutir em sala:
->
-> 1. *"O Copilot identificou todos os tipos de problema? Quais é que esqueceu?"*
-> 2. *"A linha 17 — assinalou que rompe a estrutura tabular ou só listou como problema visual?"*
-> 3. *"Quantas empresas aparecem com grafias variadas?"* (são quatro — três com 3 grafias, uma com 2)
-
-## Caso #2 — Análise descritiva com salvaguarda "Quantas linhas usaste?"
-
-### Cenário
-
-Depois do diagnóstico estrutural, o Miguel pede a análise propriamente dita. **Aplica a salvaguarda obrigatória** logo a seguir ao número devolvido.
-
-📎 **Continuem com o dataset:** [Dataset_S06_Execucao_Orcamental.xlsx]({{ site.baseurl }}/sessoes/sessao-06/Dataset_S06_Execucao_Orcamental.xlsx)
-
-### Passo 1 — Análise descritiva
-
-> *Calcula a taxa de execução média (Pagamento ÷ Compromisso) por divisão. Apresenta em tabela ordenada por taxa decrescente. Exclui as linhas com problemas estruturais identificados no diagnóstico anterior. Indica quantas linhas excluíste e a razão. Português europeu.*
-
-### Output esperado
-
-<details markdown="1">
-<summary>Ver a tabela típica</summary>
-
-> *Excluí o subtotal mesclado (linha 17) e o TOTAL final (linha 42), que não são contratos. Análise sobre os 35 contratos de detalhe.*
-
-| Divisão | Compromisso | Pagamento | Taxa (Pag ÷ Comp) |
-|---|---:|---:|---:|
-| Divisão de Sistemas de Informação | €771.070 | €608.993 | 79% |
-| Divisão Financeira | €870.852 | €649.724 | 75% |
-| Divisão de Recursos Humanos | €896.842 | €623.468 | 70% |
-| Divisão Académica | €431.471 | €262.114 | 61% |
-
-</details>
-
-{: .important }
-> **Se uma taxa vos aparecer absurda — por exemplo a DSI a 150% — não é erro vosso.** É o *silent column skip* a acontecer ao vivo: o ficheiro tem **17 valores de compromisso/pagamento gravados como texto com `€`**, e o Copilot pode somar os que reconheceu e **descartar silenciosamente** os outros. Uma taxa acima de 100% (pagar mais do que se comprometeu) é fisicamente impossível em execução orçamental — é o sinal visível de que faltam células à conta. É exatamente isto que o Passo 2 vai revelar.
-
-### Passo 2 — A pergunta-salvaguarda
-
-A peça nomeada desta sessão. **Aplica-se sempre depois de qualquer número** devolvido pelo Copilot sobre dados estruturados.
-
-> *Quantas linhas usaste para esta análise? E houve alguma **célula** que não incluíste por estar em formato de texto (por exemplo valores com `€`)? Lista-me as linhas e as células ignoradas, com a razão.*
-
-### Output esperado da salvaguarda
-
-<details markdown="1">
-<summary>Ver a resposta típica</summary>
-
-> *Usei 35 linhas (excluí a linha 17, subtotal mesclado, e a linha 42, TOTAL). **Atenção: 17 valores de compromisso e pagamento estavam gravados como texto com `€` e podem não ter entrado na soma** — é por isso que algumas taxas podem sair distorcidas. Recomendo converter essas células para número antes de confiar nos totais. (E a coluna "Data Adjudicação" tem 4 datas em texto livre que seriam ignoradas numa pergunta sobre datas — é o que vamos ver a seguir.)*
-
-</details>
-
-Cinco segundos a escrever, vinte segundos a ler a resposta. Em troca, transparência sobre o subset analisado.
-
-**Mensagem central.** Esta pergunta funciona em qualquer dataset, com qualquer LLM, em qualquer momento. **É a aplicação operacional de MAPEIA-NÃO-DECIDAS em contexto Excel** — o Copilot mapeia o subset que conseguiu interpretar; não decide o que vale a pena interpretar.
-
-{: .discussao }
-> Três perguntas para discutir em sala:
->
-> 1. *"O Copilot disse-vos quantas linhas excluiu?"*
-> 2. *"Que linhas faltaram? Bate certo com o diagnóstico do Caso #1?"*
-> 3. *"Se aceitassem a tabela sem a salvaguarda, qual seria o erro na taxa média?"*
-
-## Caso #3 — Identificação de anomalias técnicas
-
-### Cenário
-
-O Miguel pede ao Copilot que identifique padrões anómalos no dataset — situações que merecem atenção da Divisão Financeira.
-
-📎 **Continuem com o dataset:** [Dataset_S06_Execucao_Orcamental.xlsx]({{ site.baseurl }}/sessoes/sessao-06/Dataset_S06_Execucao_Orcamental.xlsx)
-
-### Prompt de trabalho
-
-> *Verifica se há contratos com situações anómalas nos dados:*
-> *(a) Pagamento > Compromisso*
-> *(b) Cabimento = 0*
-> *(c) Compromisso > Valor adjudicado*
-> *(d) Datas inconsistentes (data fim < data adjudicação)*
-> *(e) Adjudicatários com grafias variadas que possam ser a mesma empresa*
->
-> *Para cada anomalia, indica número de contrato, tipo de anomalia, e severidade (Crítica / Alta / Média / Baixa).*
-> *Aplica apenas às linhas que conseguiste interpretar corretamente.*
-> *Português europeu.*
-
-### Output esperado
-
-<details markdown="1">
-<summary>Ver as anomalias plantadas (3)</summary>
-
-| N.º Contrato | Tipo de anomalia | Severidade |
-|---|---|---|
-| 2026/0015 (auditoria externa) | Pagamento (€32.500) > Compromisso (€30.000) | Crítica |
-| 2026/0016 (aquisição rede urgente) | Cabimento = 0 | Crítica |
-| 2026/0017 (limpeza) | Compromisso (€27.000) > Valor adjudicado (€24.000) | Alta |
-
-</details>
-
-Realisticamente o Copilot identifica 2-3 das 3 anomalias e pode inventar uma 4.ª plausível mas não real. **Validação manual obrigatória.**
-
-### Enquadramento legal leve
-
-Estas 3 anomalias são padrões que o Copilot pode detetar por comparação de colunas. **O significado legal preciso** — assumir compromisso sem fundos disponíveis ou sem número de compromisso válido viola a Lei dos Compromissos e Pagamentos em Atraso (LCPA, Lei 8/2012)? um adicional não autorizado configura nulidade à luz do CCP? — **é matéria da S10 (Contratação Pública)**. Aqui ensinamos a detetar; lá vamos enquadrar.
-
-> O Copilot deteta padrões. A validação manual no ficheiro é vossa. **A IA pode inventar anomalias plausíveis que não existem — abram cada linha indicada e confirmem.**
-
-{: .discussao }
-> Três perguntas para discutir em sala:
->
-> 1. *"Quantas anomalias o Copilot identificou? Inventou alguma?"*
-> 2. *"Foram à linha indicada e confirmaram, ou aceitaram a tabela como certa?"*
-> 3. *"A anomalia 3 (compromisso > adjudicado) é mais subtil — quem a detetou?"*
 
 ## Silent column skip — alucinação por omissão em Excel {#silent-column-skip}
 
@@ -304,6 +153,18 @@ Cinco segundos a escrever, vinte segundos a ler a resposta. Em troca, transparê
 
 {: .important }
 > **A pergunta *"Quantas linhas usaste?"* é a vossa salvaguarda contra silent column skip. Apliquem-na sempre depois de qualquer número.**
+
+## Agora é a vossa vez — os exercícios
+
+A demonstração mostrou o arco completo, em conjunto. A prática é vossa — sobre o mesmo dataset, no Copilot Chat:
+
+- **Núcleo — diagnóstico estrutural:** perguntar *sobre* os dados antes de perguntar *aos* dados, e auditar o que o Copilot lista contra o ficheiro.
+
+- **Para praticar — análise com salvaguarda:** a taxa por divisão + a pergunta *"Quantas linhas usaste?"* para apanhar o *silent column skip*.
+
+- **Para praticar — anomalias:** encontrar e validar as situações anómalas contra a fonte.
+
+👉 **[Exercícios da Sessão 6 — Excel com o Copilot]({% link exercicios/s06-excel.md %})** — com o dataset, os prompts, os gabaritos *verdade-da-fonte* e o "para ir mais longe".
 
 ## Análise avançada — What-If e relatório executivo
 
@@ -335,9 +196,9 @@ As 10 perguntas são o ensaio da reunião; e a última instrução — *"assinal
 
 O Miguel repete este trabalho todos os trimestres, sempre com dataset sujo. Em vez de partir do zero, encadeia **quatro prompts** que reaplica — é *prompt chaining*, a mesma técnica do arco da S4:
 
-1. **Diagnóstico estrutural** (o prompt do Caso #1)
+1. **Diagnóstico estrutural** (o prompt do exercício de diagnóstico)
 2. **Análise descritiva parametrizada** (médias, totais, top-N por divisão/tipo)
-3. **Identificação de anomalias** (o prompt do Caso #3)
+3. **Identificação de anomalias** (o prompt do exercício de anomalias)
 4. **Resumo executivo + 10 perguntas** (a técnica acima)
 
 O output de cada passo alimenta o seguinte; no fim, validação pré-entrega (checklist). O detalhe completo, com os prompts verbatim, vive no worksheet S06 (Sub-B).
