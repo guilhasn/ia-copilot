@@ -69,7 +69,7 @@ A régua não é "o que o Copilot devolve"; és tu a confrontar o resultado com 
 
 </details>
 
-**Para ir mais longe** *(se isto vos soube a pouco):*
+**Para ir mais longe:**
 
 - Estruturem o pedido em **Objetivo / Contexto / Fonte / Expectativas** (o GCSE da S2) e comparem com o e-mail simples — o que muda na qualidade?
 
@@ -106,7 +106,7 @@ A régua não é "o que o Copilot devolve"; és tu a confrontar o resultado com 
 
 - **Encaminhar a publicidade do Direito** (Helena → Gabinete de Comunicação, 00:13:20–00:13:32) ficou **sem prazo** na transcrição. A tabela tem de dizer **"(sem data)"** — qualquer data ali é inventada.
 
-**Auditar:** cada linha tem uma frase do DOC-B a confirmá-la? Algum responsável trocado? Algum prazo que não está na transcrição? (No Chat *free*, valida pela **frase** e pela **ordem**, não pelo número do timestamp.)
+**Auditar:** cada linha tem uma frase do DOC-B a confirmá-la? Algum responsável trocado? Algum prazo que não está na transcrição? (No Chat grátis, valida pela **frase** e pela **ordem**, não pelo número do tempo.)
 
 </details>
 
