@@ -101,17 +101,6 @@ A régua não é "o que o Copilot devolve"; és tu a confrontar o resultado com 
 >
 > 2. A ação sem prazo ficou **"(sem data)"**, ou ganhou um prazo inventado?
 
-<details markdown="1">
-<summary>A verdade do DOC-B — confronta com a tua tabela</summary>
-
-- **Ação dos 2 parágrafos:** é de **cada coordenador** (00:10:25) — os quatro presentes (Carlos, Mariana, Pedro, Rita); o Rui faltou, mas está abrangido. Se a tabela a atribuiu a um só, está errada.
-
-- **Encaminhar a publicidade do Direito** (Helena → Gabinete de Comunicação, 00:13:20–00:13:32) ficou **sem prazo** na transcrição. A tabela tem de dizer **"(sem data)"** — qualquer data ali é inventada.
-
-**Auditar:** cada linha tem uma frase do DOC-B a confirmá-la? Algum responsável trocado? Algum prazo que não está na transcrição? (No Chat grátis, valida pela **frase** e pela **ordem**, não pelo número do tempo.)
-
-</details>
-
 **Para ir mais longe:** depois da tabela validada, encadeiem — *"a partir desta tabela, redige o e-mail de follow-up, com a tabela como proposta para validação dos colegas (qualquer correção, agradeço resposta até amanhã)."* A transcrição é assistente, não fonte autoritativa.
 
 ---
