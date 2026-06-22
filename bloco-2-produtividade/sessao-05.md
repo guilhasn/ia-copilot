@@ -33,7 +33,7 @@ No final da sessão, devem ser capazes de:
 
 - resumir uma thread de e-mails complexa e fazer o *follow-up* que identifica **quem ficou silenciado**;
 
-- **detetar e neutralizar a sycophancy** — o output que espelha o ângulo do prompt;
+- **detetar e neutralizar a sycophancy** — o resultado que espelha o ângulo do prompt;
 
 - redigir uma resposta institucional **mantendo posições em conflito mapeadas**, sem que o Copilot decida entre elas *(no exercício)*;
 
@@ -107,7 +107,7 @@ As funcionalidades-estrela desta sessão vivem **dentro** do Outlook e do Teams,
 As "tarefas recomendadas" do Recap são sugestões extraídas da transcrição: **não atribuem prazos com fiabilidade** e misturam responsáveis com frequência. É exatamente por isso que o exercício de validação (Teams) existe.
 
 {: .note }
-> Confirmem na véspera que as ligações (guias e vídeos) abrem — são externas, e a interface pode diferir do vosso tenant.
+> As ligações abrem páginas oficiais da Microsoft; a interface pode diferir do vosso tenant (versão, idioma, canal de atualização).
 
 ## Demonstração — o que vamos ver juntos
 
@@ -116,13 +116,11 @@ Antes de porem as mãos, vamos ver o Copilot a trabalhar **uma vez, em conjunto*
 📎 O dataset (a thread **DOC-A** e a transcrição **DOC-B**) está na [página dos exercícios]({% link exercicios/s05-comunicacao.md %}) e em **Materiais**, no fim; aqui basta acompanhar.
 
 {: .note }
-> Não há "output certo" escrito aqui — nunca sabemos ao certo o que o Copilot devolve. O que conta é **validar o que sair**.
+> Não há "resultado certo" escrito aqui — nunca sabemos ao certo o que o Copilot devolve. O que conta é **validar o que sair**.
 
 ### Outlook *Summary* — o mapa de uma thread (e quem falta)
 
 **O problema:** a Catarina foi posta em cópia, há uma semana, numa thread sobre a **adoção do Copilot na UVV** que cresceu até **9 mensagens de 6 pessoas** — Reitor, Vice-Reitora, DSI, EPD, um coordenador e o Sindicato — com posições em conflito sobre calendário, orçamento, conformidade e direitos dos trabalhadores. Ontem ao fim do dia, o Reitor nomeou-a **coordenadora do dossier** e quer síntese + proposta de calendário **até hoje ao final do dia**. Ler e destrinçar aquilo à mão leva-lhe mais de uma hora. **Tem 30 segundos de Copilot a poupar-lhe essa hora.**
-
-**O coração da demonstração:** o mapa **e** o *follow-up* dos silenciados.
 
 **Passo 1 — de 9 e-mails a um mapa.** No **Copilot Chat**, carreguem o **DOC-A** e corram:
 
@@ -136,15 +134,15 @@ Antes de porem as mãos, vamos ver o Copilot a trabalhar **uma vez, em conjunto*
 
 *(Quem tem licença: na thread real, é o botão* Summary by Copilot*, com citações clicáveis.)*
 
-O que era uma parede de 9 e-mails fica, em segundos, um **mapa**: a posição de cada um, com a referência ao e-mail de origem, e os conflitos no fim. A Catarina passa a começar o trabalho **daqui** — não da caixa de entrada. É este o ganho que justifica a ferramenta.
+O que era complexo deixa de o ser: em segundos, os **9 e-mails** tornam-se um **mapa** — a posição de cada um, com a referência ao e-mail de origem, e os conflitos no fim. A Catarina passa a começar o trabalho **daqui** — não da caixa de entrada. É este o ganho que justifica a ferramenta.
 
-**Passo 2 — quem falta (o *follow-up* dos silenciados).** O mapa diz-vos o que **foi escrito**. Mas numa decisão destas, o que rebenta mais tarde é muitas vezes **quem não falou**. Na **mesma conversa**, peçam ao Copilot que vos mostre as ausências:
+**Passo 2 — quem falta (o *follow-up* dos silenciados).** O mapa diz-vos o que **foi escrito**. Mas numa decisão destas, o que mais tarde se complica é muitas vezes **quem não falou**. Na **mesma conversa**, peçam ao Copilot que vos mostre as ausências:
 
 > *Relê a thread. Lista os intervenientes em três categorias: (a) quem escreveu pelo menos um e-mail; (b) quem foi referido por outros mas não escreveu; (c) quem, pelo conteúdo, deveria estar no fluxo mas nem escreveu nem foi referido. Para cada nome da categoria (c), aponta a frase concreta do DOC-A que justifica a ausência — se não consegues apontar a frase, é palpite, não mapa. Não decidas. Apenas mapeia.*
 
 Isto não é apanhar o Copilot a falhar — é o Copilot a fazer **algo que vocês, a correr, não fariam**: reparar que a **Comissão de Trabalhadores** foi mencionada (em cópia no E6, referida no E7) e **nunca se pronunciou**. A Catarina ia coordenar o dossier inteiro sem nunca ter lido o que a CT pensa.
 
-A descoberta não é a CT em si — é o **gesto**: depois do resumo, perguntar *quem ficou silenciado*. Aplica-se a qualquer thread, ata ou caderno de encargos — sistematizado, é um *mapa de stakeholders*.
+A descoberta não é a CT em si — é o **gesto**: depois do resumo, perguntar *quem ficou silenciado*. Aplica-se a qualquer thread, ata ou caderno de encargos — sistematizado, é um *mapa de partes interessadas*.
 
 > **O resumo do Copilot não inclui o que não foi escrito. Mas o Copilot pode ajudar-vos a ver que algo — ou alguém — não foi escrito.**
 
@@ -190,7 +188,7 @@ A demonstração mostrou **um** caso, em conjunto. As mãos à obra são vossas 
 
 - **Para praticar — a tabela de ações (Teams):** extrair ações, responsáveis e prazos de uma transcrição e **validá-los** contra a fonte.
 
-👉 **[Exercícios da Sessão 5 — comunicação com o Copilot]({% link exercicios/s05-comunicacao.md %})** — com o dataset, os prompts e o "para ir mais longe" para quem quer esticar.
+👉 **[Exercícios da Sessão 5 — comunicação com o Copilot]({% link exercicios/s05-comunicacao.md %})** — com o dataset, os prompts e o "para ir mais longe" para quem quer ir mais além.
 
 ## Antes de entregar — a vossa checklist de bolso {#disciplina-validacao}
 
