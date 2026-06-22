@@ -65,9 +65,17 @@ A régua não é "o que o Copilot devolve"; és tu a confrontar o resultado com 
 
 **Para ir mais longe:**
 
-- Estruturem o pedido em **Objetivo / Contexto / Fonte / Expectativas** (o GCSE da S2) e comparem com o e-mail simples — o que muda na qualidade?
+**O mesmo pedido, mas estruturado.** Em vez do prompt simples, deem o GCSE da S2 (Objetivo / Contexto / Fonte / Expectativas) e comparem a qualidade do resultado:
 
-- Virem o enquadramento ao contrário — *"preciso de justificar o arranque em setembro"* — e vejam janeiro encolher para uma objeção de rodapé. Mesmos factos, outro peso.
+> *Objetivo: redige um e-mail formal da Catarina Pires ao Reitor — síntese das posições (4-5 linhas), os pontos de conflito a decidir (em bullets) e uma proposta de calendário em fases que mantenha setembro de 2026 e janeiro de 2027 igualmente expostas; não escolhas entre elas.*
+>
+> *Contexto: a Catarina é Técnica Superior de RH, designada pelo Reitor para coordenar o dossier; tratamento "Senhor Reitor".*
+>
+> *Fonte: a thread (DOC-A) desta conversa.*
+>
+> *Expectativas: tom institucional formal, português europeu, parágrafos curtos; mapeia os conflitos para a Direção decidir, não os decidas.*
+
+**Virem o enquadramento ao contrário.** Comecem o pedido por *"preciso de justificar o arranque em setembro"* e vejam janeiro encolher para uma objeção de rodapé. Mesmos factos, outro peso.
 
 ---
 
