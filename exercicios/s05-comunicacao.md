@@ -7,9 +7,9 @@ nav_order: 5
 
 # Exercícios da Sessão 5 — comunicação com o Copilot (Outlook + Teams)
 
-> Dois exercícios sobre a mesma família de tarefas — **transformar comunicação dispersa em algo pronto a enviar**. O **núcleo** é redigir um e-mail institucional sem deixar o Copilot decidir o que é vosso decidir; o **para praticar** extrai e valida uma tabela de ações de uma reunião. Façam o núcleo no tempo da sessão; o resto fica para praticar. O que levam para o dia a dia é o método, não o caso.
+> Dois exercícios sobre a mesma família de tarefas — **transformar comunicação dispersa em algo pronto a enviar**. O **Exercício 1** (o núcleo) redige um e-mail institucional sem deixar o Copilot decidir o que é vosso decidir; o **Exercício 2** extrai e valida uma tabela de ações de uma reunião. Façam o Exercício 1 no tempo da sessão; o 2 fica para praticar. O que levam para o dia a dia é o método, não o caso.
 
-**Duração:** núcleo ~25-30 min · praticar ~20-25 min · individual · **sem licença:** Copilot Chat ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)) · **com licença:** os mesmos passos com os botões nativos do Outlook e do Teams
+**Duração:** Ex. 1 ~25-30 min · Ex. 2 ~20-25 min · individual · **sem licença:** Copilot Chat ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)) · **com licença:** os mesmos passos com os botões nativos do Outlook e do Teams
 
 ## Antes de começar
 
@@ -25,7 +25,7 @@ nav_order: 5
 
 ---
 
-## Núcleo — o e-mail ao Reitor
+## Exercício 1 — o e-mail ao Reitor
 
 **O problema:** és a **Catarina Pires**, da DRH. O Reitor pôs-te a coordenar o dossier da adoção do Copilot e quer hoje uma resposta: síntese das posições e proposta de calendário. Estão duas datas em cima da mesa — **setembro de 2026** e **janeiro de 2027** — e **não és tu que escolhes entre elas**. Mapeias e devolves a decisão à Direção.
 
@@ -79,7 +79,7 @@ A régua não é "o que o Copilot devolve"; és tu a confrontar o resultado com 
 
 ---
 
-## Para praticar — a tabela de ações (Teams)
+## Exercício 2 — a tabela de ações do Teams
 
 **O problema:** foste secretária de uma reunião curta (correu no Teams, com transcrição). Antes do fim do dia queres enviar o *follow-up*: uma **tabela de ações–responsáveis–prazos**, validada.
 

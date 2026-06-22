@@ -158,11 +158,11 @@ Cinco segundos a escrever, vinte segundos a ler a resposta. Em troca, transparê
 
 A demonstração mostrou o arco completo, em conjunto. A prática é vossa — sobre o mesmo dataset, no Copilot Chat:
 
-- **Núcleo — diagnóstico estrutural:** perguntar *sobre* os dados antes de perguntar *aos* dados, e auditar o que o Copilot lista contra o ficheiro.
+- **Exercício 1 — diagnóstico estrutural** (núcleo): perguntar *sobre* os dados antes de perguntar *aos* dados, e auditar o que o Copilot lista contra o ficheiro.
 
-- **Para praticar — análise com salvaguarda:** a taxa por divisão + a pergunta *"Quantas linhas usaste?"* para apanhar o *silent column skip*.
+- **Exercício 2 — análise com salvaguarda** (praticar): a taxa por divisão + a pergunta *"Quantas linhas usaste?"* para apanhar o *silent column skip*.
 
-- **Para praticar — anomalias:** encontrar e validar as situações anómalas contra a fonte.
+- **Exercício 3 — anomalias** (praticar): encontrar e validar as situações anómalas contra a fonte.
 
 👉 **[Exercícios da Sessão 6 — Excel com o Copilot]({% link exercicios/s06-excel.md %})** — com o dataset, os prompts, os gabaritos *verdade-da-fonte* e o "para ir mais longe".
 

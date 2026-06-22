@@ -184,9 +184,9 @@ Estes factos não mudam (estão no DOC-A); o que o Copilot devolve, sim. Usem is
 
 A demonstração mostrou **um** caso, em conjunto. Agora praticam vocês — e em tarefas **novas**, não a repetir o que viram:
 
-- **Núcleo — o e-mail ao Reitor:** redigir uma resposta institucional que mantém as posições em conflito **sem deixar o Copilot decidir** entre elas.
+- **Exercício 1 — o e-mail ao Reitor** (núcleo): redigir uma resposta institucional que mantém as posições em conflito **sem deixar o Copilot decidir** entre elas.
 
-- **Para praticar — a tabela de ações (Teams):** extrair ações, responsáveis e prazos de uma transcrição e **validá-los** contra a fonte.
+- **Exercício 2 — a tabela de ações do Teams** (praticar): extrair ações, responsáveis e prazos de uma transcrição e **validá-los** contra a fonte.
 
 👉 **[Exercícios da Sessão 5 — comunicação com o Copilot]({% link exercicios/s05-comunicacao.md %})** — com o dataset, os prompts e o "para ir mais longe" para quem quer ir mais além.
 

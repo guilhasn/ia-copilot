@@ -7,9 +7,9 @@ nav_order: 6
 
 # Exercícios da Sessão 6 — Excel com o Copilot (perguntar aos dados)
 
-> Três exercícios sobre a mesma família de tarefas — **pôr o Copilot a trabalhar sobre uma folha de cálculo suja e validar o que ele devolve**. O **núcleo** é o diagnóstico estrutural (perguntar *sobre* os dados antes de perguntar *aos* dados); o **para praticar** faz a análise com a pergunta-salvaguarda e procura anomalias. Façam o núcleo no tempo da sessão; o resto fica para praticar. O método vale para qualquer folha suja, não só para esta.
+> Três exercícios sobre a mesma família de tarefas — **pôr o Copilot a trabalhar sobre uma folha de cálculo suja e validar o que ele devolve**. O **Exercício 1** (o núcleo) é o diagnóstico estrutural (perguntar *sobre* os dados antes de perguntar *aos* dados); os **Exercícios 2 e 3** fazem a análise com a pergunta-salvaguarda e procuram anomalias. Façam o Exercício 1 no tempo da sessão; os outros ficam para praticar. O método vale para qualquer folha suja, não só para esta.
 
-**Duração:** núcleo ~20-25 min · praticar ~25-30 min · individual · **sem licença:** Copilot Chat ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)), que lê o `.xlsx` carregado · **com licença:** o Copilot dentro do Excel, sobre a folha aberta
+**Duração:** Ex. 1 ~20-25 min · Ex. 2-3 ~25-30 min · individual · **sem licença:** Copilot Chat ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)), que lê o `.xlsx` carregado · **com licença:** o Copilot dentro do Excel, sobre a folha aberta
 
 ## Antes de começar
 
@@ -25,7 +25,7 @@ nav_order: 6
 
 ---
 
-## Núcleo — diagnóstico estrutural
+## Exercício 1 — diagnóstico estrutural
 
 **O problema:** és o **Miguel Andrade**, da Contratação Pública, com um dossier de 35 contratos para o relatório trimestral. Antes de pedir qualquer média ou total, **pergunta primeiro sobre a estrutura** — porque o Copilot, num ficheiro sujo, não recusa: calcula com o que conseguiu ler e devolve um número que parece certo.
 
@@ -71,7 +71,7 @@ Estes problemas estão no ficheiro (confirmados célula a célula); o que o Copi
 
 ---
 
-## Para praticar — a análise com salvaguarda
+## Exercício 2 — a análise com salvaguarda
 
 **O problema:** com o ficheiro diagnosticado, o Miguel pede a taxa de execução por divisão. Mas aplica a **pergunta-salvaguarda** logo a seguir ao número — porque o ficheiro tem valores como texto que o Copilot pode descartar em silêncio.
 
@@ -113,7 +113,7 @@ Taxa global: **72%**.
 
 ---
 
-## Para praticar — as anomalias
+## Exercício 3 — as anomalias
 
 **O problema:** o Miguel quer assinalar contratos com situações anómalas para a Divisão Financeira.
 
