@@ -15,7 +15,7 @@ nav_order: 3
 - **Duração:** 2 horas
 - **Modalidade:** Online síncrona
 - **Bloco:** 2 · Produtividade Individual
-- **Demonstração:** análise, anomalias e o *silent column skip* ao vivo
+- **Demonstração:** análise, anomalias e o *silent column skip*, no Excel
 - **Exercícios:** diagnóstico estrutural (núcleo) · análise com salvaguarda · anomalias — ver [Exercícios da S06]({% link exercicios/s06-excel.md %})
 
 ## Para começar — o que trouxeram da S5
@@ -31,10 +31,10 @@ Esta sessão completa o trio do Bloco 2: depois do Copilot no Word (S4) e em Out
 > O Copilot lê os dados. Tu ouves a história que eles contam.
 
 {: .note }
-> **Com e sem licença.** O Copilot **dentro do Excel** (perguntar aos dados, gerar fórmulas, análise avançada) exige licença Microsoft 365 Copilot e trabalha sobre a folha aberta — **vê-lo na demonstração**. **Sem licença**, faça os exercícios no **Copilot Chat** ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)): carregue o `.xlsx` com «+ Adicionar conteúdo» e faça as mesmas perguntas — o Chat lê tabelas carregadas e responde, incluindo a pergunta-salvaguarda. (Os gráficos e tabelas dinâmicas geradas *na folha* são exclusivos do Excel com licença; o diagnóstico, a análise descritiva e a validação são iguais nos dois caminhos.)
+> **Com e sem licença.** O Copilot **dentro do Excel** (perguntar aos dados, gerar fórmulas, análise avançada) exige licença Microsoft 365 Copilot e trabalha sobre a folha aberta — **vão vê-lo na demonstração**. **Sem licença**, façam os exercícios no **Copilot Chat** ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)): carreguem o `.xlsx` com «+ Adicionar conteúdo» e façam as mesmas perguntas — o Chat lê tabelas carregadas e responde, incluindo a pergunta-salvaguarda. (Os gráficos e tabelas dinâmicas geradas *na folha* são exclusivos do Excel com licença; o diagnóstico, a análise descritiva e a validação são iguais nos dois caminhos.)
 
 {: .important }
-> **Matriz Semáforo desta sessão: amarelo.** Dados de execução orçamental e de contratos são informação institucional interna. O dataset é fictício (pode ser carregado por inteiro); com dados reais que identifiquem pessoas singulares (adjudicatários em nome individual, vencimentos), minimize antes de submeter, e — sem licença — lembre-se de que o que carrega no Copilot Chat sai do contexto da folha.
+> **Matriz Semáforo desta sessão: amarelo.** Dados de execução orçamental e de contratos são informação institucional interna. O dataset é fictício (pode ser carregado por inteiro); com dados reais que identifiquem pessoas singulares (adjudicatários em nome individual, vencimentos), minimizem antes de submeter, e — sem licença — lembrem-se de que o que carregam no Copilot Chat sai do contexto da folha.
 
 ## Objetivos
 
@@ -64,7 +64,7 @@ A S06 trabalha um risco que reaparece em todas as superfícies — a **alucinaç
 2. O Copilot no Excel — as capacidades
 3. Diagnóstico estrutural — o conceito-chave da sessão
 4. Descritiva vs inferencial
-5. Demonstração ao vivo — análise, anomalias e o silent column skip
+5. Demonstração — análise, anomalias e o silent column skip
 6. Agora é a vossa vez — os exercícios (diagnóstico · análise com salvaguarda · anomalias)
 7. Consolidação — silent column skip e pergunta-salvaguarda
 8. Análise avançada — What-If e relatório executivo (para quem termina cedo)
@@ -117,15 +117,15 @@ A diferença entre o que o Copilot faz bem em Excel e o que faz mal pode resumir
 
 A IA calcula em segundos o que vocês calculariam em horas. Mas a **história** — porque a divisão Y tem desvio, porque o adjudicatário Z aparece tantas vezes, se há padrão preocupante — **só vocês sabem ouvir**, porque conhecem o contexto institucional.
 
-## Demonstração — o que vão ver
+## Demonstração — o que vamos ver juntos
 
-A demonstração tem três partes ao vivo no Excel.
+Antes de praticarem, vamos ver o Copilot a trabalhar sobre a folha suja, em três momentos:
 
-**Parte A — Análise conversacional.** Vão observar o Miguel abrir o `Dataset_S06_Execucao_Orcamental.xlsx` e perguntar ao Copilot em linguagem natural a taxa de execução média por divisão. O Copilot devolve uma tabela. Anotem: a linha do subtotal mesclada (linha 17) afetou o cálculo?
+**Análise conversacional.** O Miguel pergunta a taxa de execução por divisão e o Copilot devolve uma tabela. Reparem se a linha do subtotal mesclada (linha 17) entrou na conta.
 
-**Parte B — Identificação de anomalias.** Vão observar uma pergunta sobre situações anómalas: pagamentos que excedem compromissos, compromissos sem cabimento. O Copilot identifica algumas — mas pode inventar uma quarta que não existe. Anotem: confirmaram cada anomalia abrindo a linha original?
+**Anomalias.** Uma pergunta sobre situações anómalas — pagamentos acima do compromisso, compromissos sem cabimento: o Copilot apanha algumas e pode inventar uma que não existe. A regra é confirmar cada uma na linha original.
 
-**Parte C — Silent column skip.** A peça que vai ficar convosco todos os dias. Vão observar o Copilot a responder a *"qual o contrato mais antigo?"* — devolve uma data plausível. Mas no ficheiro há contratos com datas em três formatos diferentes (`2025-03-15`, `15/03/2025`, `15 mar 2025`). O Copilot pode ter analisado apenas as datas que reconheceu, descartando silenciosamente as outras. Vão ver como a pergunta *"quantas linhas usaste?"* revela isto em cinco segundos.
+**Silent column skip — a peça que fica convosco.** À pergunta *"qual o contrato mais antigo?"*, o Copilot devolve uma data plausível; mas as datas estão em formatos mistos (`AAAA-MM-DD`, `DD/MM/AAAA` e texto livre como `23 Oct 2025`) e ele pode ter lido só as que reconheceu. A pergunta *"quantas linhas usaste?"* revela isso em cinco segundos.
 
 ## Silent column skip — alucinação por omissão em Excel {#silent-column-skip}
 
@@ -176,9 +176,9 @@ Com licença, a **análise avançada com Python** do Copilot (modo «Think Deepe
 
 > *Se a dotação da Divisão Financeira for cativada em 10%, qual passa a ser a taxa de execução projetada por divisão, mantendo os compromissos atuais?*
 
-Pressupõe **dados já normalizados** (é por isso que diagnosticamos antes). **Sem licença:** carregue o `.xlsx` no Copilot Chat e peça o mesmo cenário — o Chat raciocina sobre o ficheiro carregado e devolve a estimativa (a execução de Python sobre ficheiros no Chat gratuito é inconsistente, por isso **confirme sempre a conta à mão** para um caso).
+Pressupõe **dados já normalizados** (é por isso que diagnosticamos antes). **Sem licença:** carreguem o `.xlsx` no Copilot Chat e peçam o mesmo cenário — o Chat raciocina sobre o ficheiro carregado e devolve a estimativa (a execução de Python sobre ficheiros no Chat gratuito é inconsistente, por isso **confirmem sempre a conta à mão** para um caso).
 
-⚠️ O What-If é tão bom quanto os pressupostos. O Copilot **calcula** o cenário; o que se cativa e o que se mantém é uma **decisão de gestão, não dele**. E valide **duas coisas**: o *subset* usado (a pergunta-salvaguarda) e a própria **conta do cenário** (refaça-a à mão para um caso e confirme).
+⚠️ O What-If é tão bom quanto os pressupostos. O Copilot **calcula** o cenário; o que se cativa e o que se mantém é uma **decisão de gestão, não dele**. E validem **duas coisas**: o *subset* usado (a pergunta-salvaguarda) e a própria **conta do cenário** (refaçam-na à mão para um caso e confirmem).
 
 ### Do número ao relatório — e às perguntas que vão fazer
 
@@ -201,7 +201,7 @@ O Miguel repete este trabalho todos os trimestres, sempre com dataset sujo. Em v
 3. **Identificação de anomalias** (o prompt do exercício de anomalias)
 4. **Resumo executivo + 10 perguntas** (a técnica acima)
 
-O output de cada passo alimenta o seguinte; no fim, validação pré-entrega (checklist). O detalhe completo, com os prompts verbatim, vive no worksheet S06 (Sub-B).
+O resultado de cada passo alimenta o seguinte; no fim, validação pré-entrega (lista de verificação). O detalhe completo, com os prompts, vive no worksheet S06 (Sub-B).
 
 **Ganho de tempo (estimativa, a confirmar na vossa realidade):** um relatório que ocupa uma manhã passa a ~hora e meia. Ao trimestre, são várias manhãs por ano libertadas — desde que a validação (diagnóstico + salvaguarda) seja rápida, que é o que esta sessão treina.
 
