@@ -106,13 +106,21 @@ A diferença entre o que o Copilot faz bem e o que não deve decidir cabe em dua
 
 ## Demonstração — o que vamos ver juntos
 
-Antes de praticarem, vamos ver o Copilot a trabalhar sobre a folha de pedidos, com um momento que fica:
+Vamos ver, ao vivo, sobre o `Dataset_S06_Pedidos_IES.xlsx`, em três passos:
 
-**A pergunta direta.** Pedimos a percentagem de pedidos fora do prazo por serviço. O Copilot devolve uma tabela — e os **Serviços Académicos** podem aparecer impecáveis, a **0% fora do prazo**.
+**1. A pergunta direta.** Pedimos ao Copilot:
 
-**A desconfiança.** Mas dois pedidos dos Serviços Académicos (creditação e equivalência) têm os **Dias gravados como texto** — e o Copilot pode tê-los saltado em silêncio. Esses dois estavam fora do prazo: a verdade é **50%**, não 0%.
+> *Calcula, por serviço, a percentagem de pedidos fora do prazo (Dias maior do que Prazo_Dias). Apresenta em tabela.*
 
-**A salvaguarda.** A pergunta *"Quantas linhas usaste para os Serviços Académicos?"* mostra o que entrou na conta — 2 de 4. É o **silent column skip** apanhado em flagrante.
+Os Serviços Académicos podem aparecer a **0% fora do prazo** — impecáveis.
+
+**2. A salvaguarda.** Logo a seguir:
+
+> *Quantas linhas usaste para os Serviços Académicos? Algum pedido ficou de fora por ter os Dias em texto?*
+
+A resposta revela que usou **2 de 4** — saltou a creditação e a equivalência.
+
+**3. O flagrante.** Esses dois estavam fora do prazo → a verdade é **50%, não 0%**. É o *silent column skip* apanhado: o serviço atrasado pareceu perfeito porque os pedidos problemáticos foram saltados em silêncio.
 
 ## Silent column skip — alucinação por omissão em Excel {#silent-column-skip}
 
