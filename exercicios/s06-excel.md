@@ -7,148 +7,151 @@ nav_order: 6
 
 # Exercícios da Sessão 6 — Excel com o Copilot (perguntar aos dados)
 
-> Três exercícios sobre a mesma família de tarefas — **pôr o Copilot a trabalhar sobre uma folha de cálculo suja e validar o que ele devolve**. O **Exercício 1** (o núcleo) é o diagnóstico estrutural (perguntar *sobre* os dados antes de perguntar *aos* dados); os **Exercícios 2 e 3** fazem a análise com a pergunta-salvaguarda e procuram anomalias. Façam o Exercício 1 no tempo da sessão; os outros ficam para praticar. O método vale para qualquer folha suja, não só para esta.
+> Três exercícios sobre a mesma ideia: **o Copilot ajuda a analisar dados mais depressa, mas só é útil se soubermos preparar, perguntar e validar**. O **Exercício 1** (o núcleo) diagnostica a folha antes de a analisar; o **Exercício 2** faz a análise e aplica a pergunta-salvaguarda; o **Exercício 3** isola os casos críticos e prepara uma síntese. Façam o Exercício 1 no tempo da sessão; os outros ficam para praticar. O método vale para qualquer folha, não só para esta.
 
 **Duração:** Ex. 1 ~20-25 min · Ex. 2-3 ~25-30 min · individual · **sem licença:** Copilot Chat ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)), que lê o `.xlsx` carregado · **com licença:** o Copilot dentro do Excel, sobre a folha aberta
 
 ## Antes de começar
 
-📎 **Descarreguem o dataset:** [Dataset_S06_Execucao_Orcamental.xlsx]({{ site.baseurl }}/sessoes/sessao-06/Dataset_S06_Execucao_Orcamental.xlsx) — 35 contratos de execução orçamental da UVV, com sujidade real (datas mistas, valores como texto, subtotais a meio, grafias variadas).
+📎 **Descarreguem o dataset:** [Dataset_S06_Pedidos_IES.xlsx]({{ site.baseurl }}/sessoes/sessao-06/Dataset_S06_Pedidos_IES.xlsx) — 15 pedidos administrativos de uma IES (serviço, prazo, dias, estado, satisfação), com sujidade real (datas mistas, valores como texto, grafias variadas, um subtotal a meio).
 
-**Como dar o ficheiro ao Copilot.** Sem licença, no Copilot Chat carreguem o `.xlsx` com **"+ Adicionar conteúdo"** e perguntem sobre ele. Com licença, abram o ficheiro no Excel e usem o Copilot sobre a folha. *(No Chat grátis, o cálculo sobre Excel pode falhar — por isso a validação no fim não se salta.)*
+**Como dar o ficheiro ao Copilot.** Sem licença, no Copilot Chat carreguem o `.xlsx` com **"+ Adicionar conteúdo"**. Com licença, abram-no no Excel. *(No Chat grátis o cálculo sobre Excel pode falhar — por isso a validação no fim não se salta.)*
+
+**Boa prática antes de tudo:** convertam os dados numa **Tabela do Excel** (`Ctrl+T`) — o Copilot entende logo as colunas, os tipos e a extensão.
 
 {: .note }
 > Não há "resultado certo" escrito aqui — o que o Copilot devolve varia, e muitas vezes erra. O que conta é **validar o que sair** contra o ficheiro.
 
 {: .important }
-> 🛈 **Matriz Semáforo: amarelo.** Execução orçamental e contratos são informação institucional interna. O dataset é fictício e pode ir inteiro; com dados reais que identifiquem pessoas (adjudicatários em nome individual, vencimentos), minimizem antes de submeter.
+> 🛈 **Matriz Semáforo: amarelo.** Pedidos e prazos são informação institucional interna. O dataset é fictício e pode ir inteiro; com dados reais que identifiquem pessoas, minimizem antes de submeter.
 
 ---
 
-## Exercício 1 — diagnóstico estrutural
+## Exercício 1 — diagnóstico estrutural *(núcleo)*
 
-**O problema:** és o **Miguel Andrade**, da Contratação Pública, com um dossier de 35 contratos para o relatório trimestral. Antes de pedir qualquer média ou total, **pergunta primeiro sobre a estrutura** — porque o Copilot, num ficheiro sujo, não recusa: calcula com o que conseguiu ler e devolve um número que parece certo.
+**O problema:** és o Miguel, e a Direção de Serviços pediu-te uma análise aos pedidos administrativos do semestre. Antes de pedir médias ou percentagens, **pergunta primeiro sobre a estrutura** — porque o Copilot, numa folha suja, não recusa: calcula com o que conseguiu ler e devolve um número que parece certo.
 
-**1.** No Copilot Chat, carreguem o `.xlsx` (ou, com licença, abram-no no Excel).
+**1.** No Copilot Chat, carreguem o `.xlsx` (ou abram-no no Excel, com licença).
 
 **2.** Peçam o diagnóstico — é o coração do exercício:
 
-> *Antes de eu pedir análise, identifica problemas estruturais nesta tabela: tipos inconsistentes por coluna; células mescladas na área de dados; subtotais ou totais a meio das linhas; datas em formatos diferentes; valores monetários como texto em vez de número; grafias variadas para a mesma entidade. Não corrijas — apenas lista por linha. Português europeu.*
+> *Analisa a estrutura desta tabela e indica problemas que possam afetar a análise: valores numéricos gravados como texto, datas em formatos diferentes, grafias variadas para a mesma entidade, linhas em branco, células mescladas ou subtotais a meio dos dados. Não corrijas — apenas lista por linha. Português europeu.*
 
-**3.** **Confrontem com o ficheiro** — é aqui que está a aprendizagem. Abram a folha e confirmem cada problema que ele apontou (e procurem os que ele falhou).
+**3.** **Confrontem com o ficheiro** — abram a folha e confirmem cada problema que ele apontou (e procurem os que falhou).
 
 {: .discussao }
 > Para discutir — com resposta verificável no ficheiro:
 >
-> 1. O Copilot apanhou a **linha de subtotal a meio dos dados**? E o **total errado** no fim?
+> 1. O Copilot apanhou o **subtotal a meio** (linha "Subtotal — Janeiro") e o **total errado** no fim?
 >
-> 2. Quantas **empresas** aparecem com grafias variadas?
+> 2. Quantos pedidos têm os **Dias gravados como texto** em vez de número?
 >
-> 3. Que tipo de problema é que ele **não** apanhou?
+> 3. Quantas **grafias** tem o serviço de Ação Social?
 
 <details markdown="1">
 <summary>A verdade do ficheiro — para confrontar com o que saiu</summary>
 
-Estes problemas estão no ficheiro (confirmados célula a célula); o que o Copilot lista, varia. Usem isto como régua:
+Estes problemas estão no ficheiro (confirmados célula a célula); o que o Copilot lista, varia. Usem como régua:
 
-- **Subtotal mesclado a meio:** linha 17, *"Subtotal DSI (verificar)"* — rompe a estrutura da tabela.
+- **Dias como texto** (em vez de número): nos pedidos **3, 6 e 11** — e é isto que vai distorcer as contas no Exercício 2.
 
-- **Total errado no fim:** linha 42, *"TOTAL (verificar...)"* — um valor que não bate com a soma real.
+- **Grafias variadas:** *Ação Social* e *Acção Social* (pré-AO) são o mesmo serviço — uma análise por serviço separa-os em dois.
 
-- **Datas em formatos mistos** na *Data Adjudicação*: a maioria em `AAAA-MM-DD`, mas há `DD-MM-AAAA` e `DD/MM/AAAA`; e na *Data Fim* há texto livre (ex.: *"23 Oct 2025"*).
+- **Datas em formatos mistos** na *Data_Entrada*: a maioria em `AAAA-MM-DD`, mas há `DD/MM/AAAA` (pedidos 3, 7, 14) e texto livre (*"11 mar 2026"*, pedido 10).
 
-- **Valores monetários como texto** (com `€`): cerca de **10** em compromisso/pagamento, mais alguns no valor adjudicado e no cabimento — é o que vai distorcer as contas.
+- **Subtotal mesclado a meio:** a linha *"Subtotal — Janeiro"* não é um pedido — rompe a estrutura da tabela.
 
-- **Grafias variadas:** **duas** empresas — *Critical Software* (com e sem vírgula) e *Truewind* (*Consulting, Lda* vs *Lda.*).
-
-- **N.º de contrato malformados:** sem barra (`00092026`), com espaços (`  2026/0016`, `2025/ 0006`) ou com traço (`2026-0011`).
+- **Total errado no fim:** a linha *"TOTAL (verificar)"* traz um valor solto que não bate com nada.
 
 **Mensagem central:** *cinco minutos a diagnosticar poupam trinta a desconfiar dos números.*
 
 </details>
 
-**Para ir mais longe:** peçam ao Copilot que **proponha** como preparar o ficheiro para análise (sem o alterar) — e reparem que *propor* é seguro, *alterar sozinho* não.
+**Para ir mais longe:** peçam ao Copilot que **proponha** como preparar o ficheiro (converter os Dias-texto em número, uniformizar as grafias, tirar o subtotal) — sem o alterar. *Propor* é seguro; *alterar sozinho* é decisão vossa.
 
 ---
 
-## Exercício 2 — a análise com salvaguarda
+## Exercício 2 — análise com salvaguarda *(praticar)*
 
-**O problema:** com o ficheiro diagnosticado, o Miguel pede a taxa de execução por divisão. Mas aplica a **pergunta-salvaguarda** logo a seguir ao número — porque o ficheiro tem valores como texto que o Copilot pode descartar em silêncio.
+**O problema:** com a folha diagnosticada, queres saber **que serviços têm mais pedidos fora do prazo**. Mas aplicas a **pergunta-salvaguarda** logo a seguir ao número — porque há Dias gravados como texto que o Copilot pode descartar em silêncio.
 
 **1.** Peçam a análise:
 
-> *Calcula a taxa de execução (Pagamento ÷ Compromisso) por divisão, em tabela ordenada por taxa decrescente. Exclui as linhas com problemas estruturais. Indica quantas linhas excluíste e porquê. Português europeu.*
+> *Calcula, por serviço, a percentagem de pedidos fora do prazo (Dias maior do que Prazo_Dias). Apresenta em tabela ordenada da maior para a menor. Indica quantos pedidos usaste em cada serviço. Português europeu.*
 
 **2.** A seguir ao número, a **pergunta-salvaguarda** (a peça nomeada da sessão):
 
-> *Quantas linhas usaste para esta análise? Houve alguma célula que não incluíste por estar em formato de texto (valores com `€`)? Lista as linhas e as células ignoradas, com a razão.*
+> *Quantas linhas usaste nesta análise? Houve algum pedido que não tenha entrado por ter os Dias gravados como texto? Lista os pedidos ignorados, com a razão.*
 
 {: .important }
-> **Se uma taxa vos sair absurda — a DSI acima de 100%, por exemplo — não é erro vosso.** É o *silent column skip* a acontecer mesmo à vossa frente: o Copilot somou as células que reconheceu e descartou em silêncio as que estavam como texto. Pagar mais do que se comprometeu é impossível — é o sinal de que faltam células à conta.
+> **Se um serviço vos aparecer impecável — 0% fora do prazo — desconfiem.** Pode ser o *silent column skip*: o Copilot somou os pedidos que reconheceu e descartou em silêncio os que tinham os Dias como texto. Um serviço pode parecer perfeito só porque os seus pedidos atrasados foram saltados.
 
 {: .discussao }
 > Para discutir:
 >
-> 1. A vossa taxa da **DSI** saiu plausível, ou disparou acima de 100%?
+> 1. Os **Serviços Académicos** saíram a 0% fora do prazo, ou a 50%?
 >
-> 2. O Copilot disse-vos **quantas linhas e células** deixou de fora?
+> 2. O Copilot disse-vos **quantos pedidos** usou em cada serviço?
 
 <details markdown="1">
 <summary>A verdade do ficheiro — para confrontar com o que saiu</summary>
 
-Com as células-texto convertidas, a conta certa do ficheiro real é:
+A conta certa, com os Dias-texto incluídos:
 
-| Divisão | Taxa (Pag ÷ Comp) |
-|---|---:|
-| Sistemas de Informação | 79% |
-| Financeira | 75% |
-| Recursos Humanos | 70% |
-| Académica | 61% |
+| Serviço | Fora do prazo |
+|---|---|
+| Ação Social *(+ "Acção Social")* | 100% — a mais pressionada (bolsas) |
+| Serviços Financeiros | 67% |
+| **Serviços Académicos** | **50%** |
+| Recursos Humanos | 50% |
+| Gabinete de Qualidade | 50% |
+| Contratação Pública | 100% — mas só **1 pedido** |
 
-Taxa global: **72%**.
+**O sinal do erro:** se o Copilot descartar os Dias-texto (pedidos 3, 6 e 11), os **Serviços Académicos** caem para **0% fora do prazo** — parecem impecáveis quando, na verdade, metade dos pedidos está atrasada. A média de dias também encolhe (~10 em vez de ~13). A salvaguarda *"quantos pedidos usaste?"* é o que revela isto.
 
-**O sinal do erro:** se o Copilot descartar as ~10 células de compromisso/pagamento gravadas como texto, a taxa da **DSI dispara para ~151%** — fisicamente impossível, e a prova de que houve *silent column skip*. A pergunta-salvaguarda é o que torna isto visível em cinco segundos.
+E cuidado com o **N pequeno:** a Contratação Pública dá 100%, mas tem **um único pedido** — não é, por isso, o "pior serviço".
 
 </details>
 
 ---
 
-## Exercício 3 — as anomalias
+## Exercício 3 — casos críticos e síntese *(praticar)*
 
-**O problema:** o Miguel quer assinalar contratos com situações anómalas para a Divisão Financeira.
+**O problema:** a Direção não quer a tabela toda — quer saber **onde arde** e uma síntese curta. Mas "crítico" exige critério humano: o Copilot calcula, não decide.
 
-**1.** Peçam:
+**1.** Peçam os casos críticos:
 
-> *Verifica se há contratos com situações anómalas: (a) pagamento > compromisso; (b) cabimento = 0; (c) compromisso > valor adjudicado. Para cada um, indica o n.º de contrato, o tipo e a gravidade. Aplica só às linhas que conseguiste interpretar. Português europeu.*
+> *Identifica os pedidos mais críticos: em curso, fora do prazo e com satisfação baixa (1 ou 2). Apresenta em tabela com serviço, tipo de pedido, dias, prazo e satisfação, e justifica a escolha. Português europeu.*
 
-**2.** **Validem cada anomalia** abrindo a linha no ficheiro — o Copilot pode apontar uma que não existe, ou falhar uma que existe.
+**2.** Peçam a síntese:
+
+> *Escreve uma síntese executiva para a Direção de Serviços, no máximo 6 pontos, em português europeu: serviços sob mais pressão, riscos identificados e três recomendações concretas.*
+
+**3.** **Validem e interpretem** — é aqui que entra o que só vocês sabem.
 
 {: .discussao }
 > Para discutir:
 >
-> 1. Quantas anomalias o Copilot apontou? **Inventou** alguma?
+> 1. Os pedidos *em curso* contam os **dias decorridos**, não os dias até à resolução — isso muda a leitura de quão "atrasados" estão?
 >
-> 2. Foram à linha confirmar, ou aceitaram a lista como certa?
+> 2. A Ação Social tem 100% fora do prazo. Significa que é o serviço **menos eficiente** — ou há contexto que a folha não mostra (época de bolsas, falta de pessoal, validação externa)?
 
 <details markdown="1">
 <summary>A verdade do ficheiro — para confrontar com o que saiu</summary>
 
-São **três** as anomalias reais (confirmadas no ficheiro):
+**Os dois casos mais críticos** (em curso + fora do prazo + satisfação baixa, confirmáveis no ficheiro):
 
-- **2026/0015** (auditoria externa) — **pagamento > compromisso**.
+- **Pedido 11** — Serviços Académicos, pedido de equivalência: em curso, 25 dias para um prazo de 20, satisfação 2.
 
-- **2026/0016** (equipamento de rede urgente) — **cabimento = 0**.
+- **Pedido 14** — Serviços Financeiros, regularização de propina: em curso, 14 dias para um prazo de 5, satisfação 1.
 
-- **2026/0017** (limpeza) — **compromisso > valor adjudicado**.
+**Sobre a síntese, não há resposta única** — mas uma boa síntese **separa o facto da interpretação**. Facto: *"a Ação Social tem 100% dos pedidos fora do prazo"* (cálculo). Interpretação: *"a Ação Social é ineficiente"* (exige contexto que a folha não tem — época de candidaturas a bolsas, pessoal, validações externas). O Copilot dá o facto; a interpretação e a decisão são vossas.
 
-Se o Copilot apontar outras, abram a linha e confirmem antes de aceitar; se falhar alguma destas, é o lembrete de que a deteção dele não é exaustiva.
+**Frase-chave:** o Copilot calcula; a pessoa interpreta.
 
 </details>
 
-{: .note }
-> O **significado legal** destas anomalias — assumir compromisso sem fundos disponíveis (LCPA, Lei 8/2012), um adicional não autorizado à luz do CCP — é matéria da **S10 (Contratação Pública)**. Aqui treina-se a detetá-las; lá enquadram-se.
-
-**Para ir mais longe:** depois das contas validadas, peçam o **resumo executivo** (um parágrafo + a taxa por divisão + 3 pontos de atenção) e, a seguir, *"as 10 perguntas que o Conselho de Gestão provavelmente fará sobre estes números, assinalando as que exigem dados que não estão na folha"* — é o ensaio da reunião.
+**Para ir mais longe:** peçam ao Copilot uma **coluna calculada** *Cumpriu_Prazo* (`=SE([@Dias]<=[@Prazo_Dias];"Sim";"Não")`) e um **gráfico** dos pedidos fora do prazo por serviço — reparando que, num pedido *em curso*, os Dias são os decorridos, não os de resolução final.
 
 ---
 
