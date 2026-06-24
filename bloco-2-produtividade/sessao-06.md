@@ -15,7 +15,7 @@ nav_order: 3
 - **Duração:** 2 horas
 - **Modalidade:** Online síncrona
 - **Bloco:** 2 · Produtividade Individual
-- **Demonstração:** o que o Copilot faz com uma folha de pedidos — perguntar, gerar fórmulas, gráfico e síntese, no Excel
+- **Demonstração:** o que o Copilot faz com uma folha — perguntar, gerar fórmulas, gráfico e síntese, no Excel (cenários: pedidos administrativos · carga docente)
 - **Exercícios:** diagnóstico estrutural (núcleo) · análise e verificação · casos críticos e síntese — ver [Exercícios da S06]({% link exercicios/s06-excel.md %})
 
 ## Para começar — o que trouxeram da S5
@@ -70,7 +70,7 @@ A S06 trabalha um risco que reaparece em todas as superfícies — a **alucinaç
 1. Para começar — o que trouxeram da S5
 2. A regra de ouro — perguntar sobre os dados antes de perguntar aos dados
 3. Descritiva vs inferencial — o que o Copilot calcula e o que vocês interpretam
-4. Demonstração — o que o Copilot faz com uma folha de pedidos
+4. Demonstração — o que o Copilot faz com uma folha (pedidos · e uma segunda, carga docente)
 5. Verificar — o que o Copilot usou
 6. A rotina segura e os exercícios
 7. Para aprofundar — funcionalidades avançadas (opcional)
@@ -128,7 +128,37 @@ E levamos um passo mais longe — pedimos que **raciocine**, não só que conte:
 
 > *Escreve uma síntese executiva para a Direção de Serviços: principais conclusões, riscos e três recomendações concretas.*
 
-Em poucos minutos, saímos de uma folha para respostas, uma coluna nova, um gráfico e um resumo executivo. **O que cada gesto produz, validamo-lo a seguir** — porque rápido não é o mesmo que certo.
+Em poucos minutos, saímos de uma folha para respostas, uma coluna nova, um gráfico e um resumo executivo.
+
+## Uma segunda demonstração — carga docente
+
+Conforme a sala, há uma segunda folha que costuma falar mais alto — sobretudo nos Serviços Académicos e no Gabinete de Planeamento: a **carga docente**. O arco é o mesmo; muda o cenário, e o impacto (sobrecarga, desgaste, necessidades de contratação). Façam-na **em vez da anterior** ou **logo a seguir**, conforme o tempo e a sala.
+
+*Enquadramento:* a Direção pediu uma análise rápida à carga docente do 1.º semestre — onde há sobrecarga, que departamentos estão em maior risco de desgaste e que ajustamentos fazer antes do próximo semestre. Tudo sobre o `Dataset_S06_Carga_Docente.xlsx`:
+
+**1. Diagnosticar** — o reflexo mantém-se, mesmo numa folha que parece arrumada:
+
+> *Analisa a estrutura desta tabela e indica problemas que possam afetar a análise.*
+
+**2. Perguntar e raciocinar:**
+
+> *Resume os padrões de carga docente. Que departamentos estão mais sobrecarregados e que docentes têm a taxa de ocupação mais alta?*
+
+**3. Gerar uma coluna com regra** — várias condições numa fórmula:
+
+> *Cria uma coluna "Sobrecarga": "Crítica" se a taxa de ocupação for superior a 115%, "Elevada" entre 105% e 115%, "Normal" até 105%. Explica a fórmula.*
+
+**4. Resumir por departamento:**
+
+> *Cria uma tabela-resumo por departamento — número de docentes, taxa de ocupação média, docentes em sobrecarga crítica e média de faltas. Ordena do mais pressionado para o menos.*
+
+**5. Visualizar e comunicar:**
+
+> *Cria um gráfico da taxa de ocupação média por departamento.*
+
+> *Escreve uma síntese executiva (máximo 7 pontos, tom institucional, português europeu) para a Direção: conclusões, riscos e três recomendações realistas para uma IES.*
+
+Mesmo arco — perguntar, gerar, visualizar, comunicar. **E, como em qualquer número, o passo seguinte é verificar o que entrou na conta.**
 
 ## Verificar — o que o Copilot usou {#verificar}
 
@@ -206,6 +236,8 @@ Saímos da S06 com três coisas:
 ### Para descarregar
 
 - [Dataset S06 — Pedidos administrativos (XLSX)]({{ site.baseurl }}/sessoes/sessao-06/Dataset_S06_Pedidos_IES.xlsx) — 15 pedidos de uma IES, com sujidade calibrada para o exercício.
+
+- [Dataset S06 — Carga docente (XLSX)]({{ site.baseurl }}/sessoes/sessao-06/Dataset_S06_Carga_Docente.xlsx) — 10 docentes (horas, taxa de ocupação, faltas), para a segunda demonstração.
 
 {: .note }
 > Se algum material pedir password, é fornecida pelo formador (este dataset abre sem password).
