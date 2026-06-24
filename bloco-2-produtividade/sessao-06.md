@@ -89,7 +89,7 @@ Por isso, antes de qualquer pergunta sobre os dados, faz-se uma pergunta sobre a
 
 - ✅ **Sem linhas em branco** dentro dos dados
 
-E uma boa prática que resolve metade disto: converter o intervalo numa **Tabela do Excel** (`Ctrl+T`) antes de pedir análise.
+E uma boa prática que resolve metade disto: converter o intervalo numa **Tabela do Excel** antes de pedir análise.
 
 {: .important }
 > **Antes de perguntar aos dados, perguntar sobre os dados.**
@@ -153,7 +153,7 @@ Cinco segundos a escrever, vinte a ler. Em troca, **transparência sobre o que e
 
 Para levar para a segunda-feira — a mesma sequência para qualquer folha:
 
-1. **Preparar** — converter os dados em Tabela (`Ctrl+T`).
+1. **Preparar** — converter os dados numa **Tabela do Excel**.
 2. **Diagnosticar** — *"que problemas de estrutura tem esta tabela?"*
 3. **Analisar** — pedir padrões, totais, percentagens.
 4. **Verificar** — *"quantas linhas usaste?"*

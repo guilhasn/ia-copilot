@@ -17,8 +17,6 @@ nav_order: 6
 
 **Como dar o ficheiro ao Copilot.** Sem licença, no Copilot Chat carreguem o `.xlsx` com **"+ Adicionar conteúdo"**. Com licença, abram-no no Excel. *(No Chat grátis o cálculo sobre Excel pode falhar — por isso a validação no fim não se salta.)*
 
-**Boa prática antes de tudo:** convertam os dados numa **Tabela do Excel** (`Ctrl+T`) — o Copilot entende logo as colunas, os tipos e a extensão.
-
 {: .note }
 > Não há "resultado certo" escrito aqui — o que o Copilot devolve varia, e muitas vezes erra. O que conta é **validar o que sair** contra o ficheiro.
 
