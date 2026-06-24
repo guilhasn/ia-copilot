@@ -53,7 +53,7 @@ nav_order: 6
 
 Estes problemas estão no ficheiro (confirmados célula a célula); o que o Copilot lista, varia. Usem como régua:
 
-- **Dias como texto** (em vez de número): nos pedidos **3, 6 e 11** — e é isto que vai distorcer as contas no Exercício 2.
+- **Dias como texto** (em vez de número): nos pedidos **3, 6 e 11** — é o que o Exercício 2 vai pôr à prova.
 
 - **Grafias variadas:** *Ação Social* e *Acção Social* (pré-AO) são o mesmo serviço — uma análise por serviço separa-os em dois.
 
@@ -71,7 +71,7 @@ Estes problemas estão no ficheiro (confirmados célula a célula); o que o Copi
 
 ---
 
-## Exercício 2 — análise com salvaguarda *(praticar)*
+## Exercício 2 — análise e verificação *(praticar)*
 
 **O problema:** com a folha diagnosticada, queres saber **que serviços têm mais pedidos fora do prazo**. Mas aplicas a **pergunta-salvaguarda** logo a seguir ao número — porque há Dias gravados como texto que o Copilot pode descartar em silêncio.
 
@@ -84,14 +84,14 @@ Estes problemas estão no ficheiro (confirmados célula a célula); o que o Copi
 > *Quantas linhas usaste nesta análise? Houve algum pedido que não tenha entrado por ter os Dias gravados como texto? Lista os pedidos ignorados, com a razão.*
 
 {: .important }
-> **Se um serviço vos aparecer impecável — 0% fora do prazo — desconfiem.** Pode ser o *silent column skip*: o Copilot somou os pedidos que reconheceu e descartou em silêncio os que tinham os Dias como texto. Um serviço pode parecer perfeito só porque os seus pedidos atrasados foram saltados.
+> **Apliquem a salvaguarda mesmo quando o número parece bom.** Há pedidos com os Dias gravados como texto (3, 6 e 11); na maioria das vezes o Copilot resolve-os, mas *pode* ignorá-los sem avisar — sobretudo em somas e médias. Só sabem o que entrou na conta se perguntarem.
 
 {: .discussao }
 > Para discutir:
 >
-> 1. Os **Serviços Académicos** saíram a 0% fora do prazo, ou a 50%?
+> 1. O Copilot disse-vos **quantos pedidos** usou em cada serviço, ou tiveram de perguntar?
 >
-> 2. O Copilot disse-vos **quantos pedidos** usou em cada serviço?
+> 2. Os pedidos com os Dias em texto (3, 6 e 11) **entraram na conta**? Como confirmaram?
 
 <details markdown="1">
 <summary>A verdade do ficheiro — para confrontar com o que saiu</summary>
@@ -107,7 +107,7 @@ A conta certa, com os Dias-texto incluídos:
 | Gabinete de Qualidade | 50% |
 | Contratação Pública | 100% — mas só **1 pedido** |
 
-**O sinal do erro:** se o Copilot descartar os Dias-texto (pedidos 3, 6 e 11), os **Serviços Académicos** caem para **0% fora do prazo** — parecem impecáveis quando, na verdade, metade dos pedidos está atrasada. A média de dias também encolhe (~10 em vez de ~13). A salvaguarda *"quantos pedidos usaste?"* é o que revela isto.
+**O que verificar:** os pedidos 3, 6 e 11 têm os Dias gravados como texto. Confirmem que entraram na conta — se o Copilot os ignorar (acontece sobretudo em somas e médias), a percentagem de um serviço pode sair mais baixa do que a real. Na maior parte das vezes ele resolve-os e a conta certa é a de cima; a salvaguarda *"quantos pedidos usaste?"* é o que vos dá essa certeza.
 
 E cuidado com o **N pequeno:** a Contratação Pública dá 100%, mas tem **um único pedido** — não é, por isso, o "pior serviço".
 
@@ -134,7 +134,7 @@ E cuidado com o **N pequeno:** a Contratação Pública dá 100%, mas tem **um �
 >
 > 1. Os pedidos *em curso* contam os **dias decorridos**, não os dias até à resolução — isso muda a leitura de quão "atrasados" estão?
 >
-> 2. A Ação Social tem 100% fora do prazo. Significa que é o serviço **menos eficiente** — ou há contexto que a folha não mostra (época de bolsas, falta de pessoal, validação externa)?
+> 2. A Ação Social é o serviço com mais pedidos fora do prazo. Significa que é o **menos eficiente** — ou há contexto que a folha não mostra (época de bolsas, falta de pessoal, validação externa)?
 
 <details markdown="1">
 <summary>A verdade do ficheiro — para confrontar com o que saiu</summary>
@@ -145,7 +145,7 @@ E cuidado com o **N pequeno:** a Contratação Pública dá 100%, mas tem **um �
 
 - **Pedido 14** — Serviços Financeiros, regularização de propina: em curso, 14 dias para um prazo de 5, satisfação 1.
 
-**Sobre a síntese, não há resposta única** — mas uma boa síntese **separa o facto da interpretação**. Facto: *"a Ação Social tem 100% dos pedidos fora do prazo"* (cálculo). Interpretação: *"a Ação Social é ineficiente"* (exige contexto que a folha não tem — época de candidaturas a bolsas, pessoal, validações externas). O Copilot dá o facto; a interpretação e a decisão são vossas.
+**Sobre a síntese, não há resposta única** — mas uma boa síntese **separa o facto da interpretação**. Facto: *"a Ação Social é o serviço com mais pedidos fora do prazo"* (cálculo). Interpretação: *"a Ação Social é ineficiente"* (exige contexto que a folha não tem — época de candidaturas a bolsas, pessoal, validações externas). O Copilot dá o facto; a interpretação e a decisão são vossas.
 
 **Frase-chave:** o Copilot calcula; a pessoa interpreta.
 

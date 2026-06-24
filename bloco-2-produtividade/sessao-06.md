@@ -15,8 +15,8 @@ nav_order: 3
 - **Duração:** 2 horas
 - **Modalidade:** Online síncrona
 - **Bloco:** 2 · Produtividade Individual
-- **Demonstração:** análise de pedidos administrativos e o *silent column skip*, no Excel
-- **Exercícios:** diagnóstico estrutural (núcleo) · análise com salvaguarda · casos críticos e síntese — ver [Exercícios da S06]({% link exercicios/s06-excel.md %})
+- **Demonstração:** o que o Copilot faz com uma folha de pedidos — perguntar, gerar fórmulas, gráfico e síntese, no Excel
+- **Exercícios:** diagnóstico estrutural (núcleo) · análise e verificação · casos críticos e síntese — ver [Exercícios da S06]({% link exercicios/s06-excel.md %})
 
 ## Para começar — o que trouxeram da S5
 
@@ -30,7 +30,7 @@ Mas há uma regra que segura tudo o resto:
 
 > Antes de perguntar **aos** dados, é preciso perguntar **sobre** os dados.
 
-Hoje acompanhamos o **Miguel**, que a Direção de Serviços encarregou de analisar os pedidos administrativos do semestre — e que vai aprender, em três passos, que o Copilot **calcula depressa, mas só ajuda se soubermos preparar, perguntar e validar.**
+Hoje acompanhamos o **Miguel**, que a Direção de Serviços encarregou de analisar os pedidos administrativos do semestre — e vemos que o Copilot **calcula depressa, mas só ajuda se soubermos preparar, perguntar e validar.**
 
 > O Copilot lê os dados. Vocês conhecem a instituição.
 
@@ -46,7 +46,7 @@ No final da sessão, devem ser capazes de:
 
 - **diagnosticar a estrutura** de um ficheiro Excel antes de pedir análise;
 
-- **fazer análise descritiva** (totais, médias, percentagens) e aplicar a pergunta-salvaguarda *"Quantas linhas usaste?"* depois de cada número, para neutralizar o *silent column skip*;
+- **fazer análise descritiva** (totais, médias, percentagens) e **verificar o que o Copilot usou** — porque, com dados sujos, ele pode ignorar o que não interpreta;
 
 - **isolar casos críticos** e validá-los contra a fonte antes de reportar;
 
@@ -63,16 +63,16 @@ No final da sessão, devem ser capazes de:
 | S5 | **Mapear sem decidir** (Outlook + Teams) |
 | **S6** | **Diagnosticar antes de analisar** (Excel) |
 
-A S06 trabalha um risco que reaparece em todas as superfícies — a **alucinação por omissão** (o Copilot a ignorar o que não consegue interpretar): em Excel chama-se **silent column skip** ([âncora abaixo](#silent-column-skip)). A pergunta-salvaguarda é a aplicação, em dados, do [MAPEIA, NÃO DECIDAS]({% link bloco-2-produtividade/sessao-05.md %}#mapeia-nao-decidas) da S05.
+A S06 trabalha um risco que reaparece em todas as superfícies — a **alucinação por omissão** (o Copilot a ignorar o que não consegue interpretar): em Excel chama-se **silent column skip** ([âncora abaixo](#verificar)). Verificar o que ele usou é a aplicação, em dados, do [MAPEIA, NÃO DECIDAS]({% link bloco-2-produtividade/sessao-05.md %}#mapeia-nao-decidas) da S05.
 
 ## Programa
 
 1. Para começar — o que trouxeram da S5
 2. A regra de ouro — perguntar sobre os dados antes de perguntar aos dados
 3. Descritiva vs inferencial — o que o Copilot calcula e o que vocês interpretam
-4. Demonstração — análise de pedidos e o silent column skip
-5. A rotina segura — preparar, diagnosticar, analisar, validar, interpretar, comunicar
-6. Agora é a vossa vez — os exercícios
+4. Demonstração — o que o Copilot faz com uma folha de pedidos
+5. Verificar — o que o Copilot usou
+6. A rotina segura e os exercícios
 7. Para aprofundar — funcionalidades avançadas (opcional)
 
 ## A regra de ouro — perguntar sobre os dados {#diagnostico-estrutural}
@@ -98,52 +98,56 @@ E uma boa prática que resolve metade disto: converter o intervalo numa **Tabela
 
 A diferença entre o que o Copilot faz bem e o que não deve decidir cabe em duas palavras:
 
-- ✅ **Descritiva** — *"A Ação Social tem 100% dos pedidos fora do prazo."* Isto é cálculo. Vocês fá-lo-iam em meia hora; o Copilot em segundos.
+- ✅ **Descritiva** — se o Copilot disser *"a Ação Social é o serviço com mais pedidos fora do prazo"*, isto é cálculo: vocês fá-lo-iam em meia hora, ele em segundos.
 
-- ❌ **Inferencial** — *"A Ação Social é o serviço menos eficiente."* Isto é interpretação — e exige contexto que a folha não mostra: época de candidaturas a bolsas, falta de pessoal, validações externas, prazos legais.
+- ❌ **Inferencial** — concluir *"a Ação Social é o serviço menos eficiente"* já é interpretação — e exige contexto que a folha não mostra: época de candidaturas a bolsas, falta de pessoal, validações externas, prazos legais.
 
 > O Copilot calcula. A pessoa interpreta.
 
-## Demonstração — o que vamos ver juntos
+## Demonstração — o que o Copilot faz com uma folha de pedidos
 
-Vamos ver, ao vivo, sobre o `Dataset_S06_Pedidos_IES.xlsx`, em três passos:
+Ao vivo, sobre o `Dataset_S06_Pedidos_IES.xlsx`, vemos o Copilot levar uma folha crua até uma análise pronta para a Direção — em quatro gestos:
 
-**1. A pergunta direta.** Pedimos ao Copilot:
+**1. Perguntar em português, sem fórmulas.** Começamos por interrogar os dados:
 
-> *Calcula, por serviço, a percentagem de pedidos fora do prazo (Dias maior do que Prazo_Dias). Apresenta em tabela.*
+> *Quais os serviços com mais pedidos e qual a taxa de pedidos fora do prazo de cada um?*
 
-Os Serviços Académicos podem aparecer a **0% fora do prazo** — impecáveis.
+E levamos um passo mais longe — pedimos que **raciocine**, não só que conte:
 
-**2. A salvaguarda.** Logo a seguir:
+> *Há relação entre os pedidos estarem fora do prazo e a satisfação?*
 
-> *Quantas linhas usaste para os Serviços Académicos? Algum pedido ficou de fora por ter os Dias em texto?*
+**2. Gerar uma coluna calculada.** O Copilot não é só conversa — escreve Excel e explica-o:
 
-A resposta revela que usou **2 de 4** — saltou a creditação e a equivalência.
+> *Cria uma coluna que classifique cada pedido como "No prazo" ou "Fora do prazo", e explica a fórmula que usaste.*
 
-**3. O flagrante.** Esses dois estavam fora do prazo → a verdade é **50%, não 0%**. É o *silent column skip* apanhado: o serviço atrasado pareceu perfeito porque os pedidos problemáticos foram saltados em silêncio.
+**3. Visualizar para a Direção.** Um gráfico num pedido:
 
-## Silent column skip — alucinação por omissão em Excel {#silent-column-skip}
+> *Cria um gráfico que mostre os pedidos fora do prazo por serviço.*
 
-A **alucinação por omissão** — o Copilot a ignorar o que não conseguiu interpretar — aparece em qualquer superfície. As manifestações mudam:
+**4. Comunicar.** A tabela vira um texto pronto a enviar:
+
+> *Escreve uma síntese executiva para a Direção de Serviços: principais conclusões, riscos e três recomendações concretas.*
+
+Em poucos minutos, saímos de uma folha para respostas, uma coluna nova, um gráfico e um resumo executivo. **O que cada gesto produz, validamo-lo a seguir** — porque rápido não é o mesmo que certo.
+
+## Verificar — o que o Copilot usou {#verificar}
+
+Depois de qualquer número, há um hábito que vos protege: **perguntar o que entrou na conta.** Não porque o Copilot erre sempre — na maior parte das vezes resolve bem —, mas porque, quando os dados estão sujos, *pode* ignorar o que não interpreta (algumas funções, como `SOMA` e `MÉDIA`, saltam mesmo as células gravadas como texto), e fá-lo **sem avisar**. É a **alucinação por omissão**, o tal *silent column skip*, que já viram noutras superfícies:
 
 | Superfície | Manifestação |
 |---|---|
 | Documentos longos (S04) | Omite subníveis de artigos num resumo |
 | Comunicação (S05) | Omite o interveniente silencioso de uma thread |
-| **Dados (S06)** | **Salta linhas ou valores em formato que não interpretou** |
+| **Dados (S06)** | **Pode ignorar valores em formato que não interpreta** |
 
-**Porque é o pior sinal em Excel.** Num resumo, perder um parágrafo afeta uma frase. Numa tabela, perder algumas linhas afeta **todos os números agregados sem aviso** — e, pior, pode fazer o problema parecer mais pequeno do que é (o serviço atrasado que aparece a 0%).
+A salvaguarda, que se aplica **sempre depois de um número**:
 
-## A pergunta-salvaguarda {#pergunta-salvaguarda}
+> *Quantas linhas usaste nesta análise? Houve algum valor que não entrou por estar em formato de texto? Lista o que ficou de fora.*
 
-A salvaguarda dedicada. **Aplica-se sempre depois de qualquer número** que o Copilot devolva sobre dados:
-
-> *Quantas linhas usaste nesta análise? Houve algum valor que não entrou por estar em formato de texto? Lista o que ficou de fora, com a razão.*
-
-Cinco segundos a escrever, vinte a ler. Em troca, transparência sobre o que entrou na conta.
+Cinco segundos a escrever, vinte a ler. Em troca, **transparência sobre o que entrou na conta** — e, se algo ficou de fora, apanham-no antes de reportar.
 
 {: .important }
-> **A pergunta *"Quantas linhas usaste?"* é a vossa salvaguarda. Apliquem-na sempre depois de qualquer número.**
+> **Depois de qualquer número, perguntem o que entrou na conta.** É a versão Excel do [MAPEIA, NÃO DECIDAS]({% link bloco-2-produtividade/sessao-05.md %}#mapeia-nao-decidas) da S05.
 
 ## A rotina segura
 
@@ -152,7 +156,7 @@ Para levar para a segunda-feira — a mesma sequência para qualquer folha:
 1. **Preparar** — converter os dados em Tabela (`Ctrl+T`).
 2. **Diagnosticar** — *"que problemas de estrutura tem esta tabela?"*
 3. **Analisar** — pedir padrões, totais, percentagens.
-4. **Validar** — *"quantas linhas usaste?"*
+4. **Verificar** — *"quantas linhas usaste?"*
 5. **Interpretar** — separar o cálculo (Copilot) da explicação (vocês).
 6. **Comunicar** — pedir uma síntese executiva e revê-la.
 
@@ -162,7 +166,7 @@ A demonstração mostrou o essencial, em conjunto. A prática é vossa — sobre
 
 - **Exercício 1 — diagnóstico estrutural** (núcleo): perguntar sobre a estrutura antes de analisar, e auditar o que o Copilot lista contra o ficheiro.
 
-- **Exercício 2 — análise com salvaguarda** (praticar): a % de pedidos fora do prazo por serviço + a pergunta *"quantas linhas usaste?"* para apanhar o *silent column skip*.
+- **Exercício 2 — análise e verificação** (praticar): a % de pedidos fora do prazo por serviço + a pergunta *"quantas linhas usaste?"* para confirmar o que entrou na conta.
 
 - **Exercício 3 — casos críticos e síntese** (praticar): isolar o que arde, separar facto de interpretação, e preparar a síntese para a Direção.
 
@@ -184,7 +188,7 @@ Saímos da S06 com três coisas:
 
 - **Sei diagnosticar** uma folha antes de a analisar.
 
-- **Sei perguntar *"Quantas linhas usaste?"*** depois de qualquer número, para neutralizar o silent column skip.
+- **Sei perguntar *"Quantas linhas usaste?"*** depois de qualquer número, para confirmar o que o Copilot usou.
 
 - **Sei separar o que o Copilot calcula do que só eu interpreto.**
 
@@ -194,7 +198,7 @@ Saímos da S06 com três coisas:
 
 | Liga a | Como |
 |---|---|
-| **S05 (Outlook + Teams)** | A pergunta-salvaguarda é a versão Excel do [MAPEIA, NÃO DECIDAS]({% link bloco-2-produtividade/sessao-05.md %}#mapeia-nao-decidas) — pedir transparência sobre o que o Copilot processou |
+| **S05 (Outlook + Teams)** | Verificar o que o Copilot usou é a versão Excel do [MAPEIA, NÃO DECIDAS]({% link bloco-2-produtividade/sessao-05.md %}#mapeia-nao-decidas) — pedir transparência sobre o que ele processou |
 | **S07 (PowerPoint)** | A síntese executiva e os indicadores desta sessão encadeiam com os slides para a Direção — matéria da S07 |
 
 ## Materiais
