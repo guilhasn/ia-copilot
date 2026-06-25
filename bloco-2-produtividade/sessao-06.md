@@ -224,13 +224,6 @@ Saímos da S06 com três coisas:
 
 > O Copilot calcula depressa. A responsabilidade continua a ser nossa.
 
-## Ligações cruzadas
-
-| Liga a | Como |
-|---|---|
-| **S05 (Outlook + Teams)** | Verificar o que o Copilot usou é a versão Excel do [MAPEIA, NÃO DECIDAS]({% link bloco-2-produtividade/sessao-05.md %}#mapeia-nao-decidas) — pedir transparência sobre o que ele processou |
-| **S07 (PowerPoint)** | A síntese executiva e os indicadores desta sessão encadeiam com os slides para a Direção — matéria da S07 |
-
 ## Materiais
 
 ### Para descarregar
