@@ -1,12 +1,12 @@
 ---
-title: "S9 — Atas e reuniões"
+title: "S9 — Serviços académicos e atas"
 layout: default
 published: false
 parent: "Bloco 3 · IA nos Processos Universitários"
-nav_order: 2
+nav_order: 1
 ---
 
-# Sessão 9 — Atas e gestão de reuniões dos órgãos
+# Sessão 9 — Serviços académicos, pedidos, atas e reuniões dos órgãos
 
 **Estado:** A preparar
 **Duração:** 2 horas
@@ -14,7 +14,7 @@ nav_order: 2
 
 ## Objetivo da sessão
 
-Da transcrição Teams ao ato formal — anonimização, cuidados de sigilo profissional, registo auditável.
+Apoiar os processos universitários do dia a dia com o Copilot, em dois arcos: (1) **serviços académicos, pedidos e regulamentos** — redigir e responder sem cair em decisão automatizada, com persona fictícia e validação dupla; (2) **atas e reuniões dos órgãos** — da transcrição do Teams ao ato formal, com anonimização, sigilo profissional e registo auditável.
 
 ## Conteúdos previstos
 
