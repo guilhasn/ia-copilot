@@ -37,9 +37,8 @@ O curso combina demonstrações práticas, exercícios guiados, casos de uso do 
 | 4 | Produtividade | Word com Copilot |
 | 5 | Produtividade | Outlook e Teams |
 | 6 | Produtividade | Excel com Copilot |
-| 7 | Produtividade | PowerPoint com Copilot |
-| 8 | Processos universitários | Serviços académicos, pedidos e regulamentos |
-| 9 | Processos universitários | Atas e reuniões dos órgãos |
+| 8 | Produtividade | PowerPoint com Copilot |
+| 9 | Processos universitários | Serviços académicos, pedidos, atas e reuniões dos órgãos |
 | 10 | Processos universitários | Contratação pública |
 | 11 | Processos universitários | Júris e candidaturas |
 | 12 | Processos universitários | Qualidade, acreditação e prestação de contas |

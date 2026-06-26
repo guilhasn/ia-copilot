@@ -243,4 +243,4 @@ Saímos da S06 com três coisas:
 
 ## Próxima sessão
 
-Na Sessão 7 pegamos na síntese e nos indicadores desta sessão e transformamo-los em slides para a Direção: **PowerPoint com Copilot** — gerar apresentações a partir de documentos, com controlo sobre estrutura, tom e identidade visual.
+Na Sessão 8 pegamos na síntese e nos indicadores desta sessão e transformamo-los em slides para a Direção: **PowerPoint com Copilot** — gerar apresentações a partir de documentos, com controlo sobre estrutura, tom e identidade visual.
