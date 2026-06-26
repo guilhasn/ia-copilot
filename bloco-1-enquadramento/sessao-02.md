@@ -294,6 +294,13 @@ Depois da primeira resposta, testar pedidos de seguimento como:
 
 > *Remove qualquer conclusão que não esteja explicitamente suportada nos e-mails.*
 
+{: .note }
+> **Quando o Copilot tropeça.** Duas situações comuns — e como sair delas:
+>
+> - **Recusa** (*"não consigo fazer isso"* / *"tenta de novo"*): não repitam o mesmo pedido. Reformulem com outras palavras, **partam a tarefa em passos mais pequenos**, ou peçam-lhe o **caminho manual** — *"mostra-me como faço isto à mão"* ou *"que fórmula do Excel uso?"*.
+>
+> - **"Esquece-se" do que vinha atrás:** ao encadear pedidos, o Copilot guia-se sobretudo pelo que está **visível** no ficheiro e na conversa. Mantenham o texto relevante à mão e, se for preciso, **relembrem-no** explicitamente (*"continua a partir da tabela anterior"*).
+
 ## Prompts por aplicação
 
 O mesmo framework (Objetivo, Contexto, Fonte, Expectativas) aplica-se de forma diferente consoante a aplicação. Aqui estão exemplos adaptados ao contexto das IES:
