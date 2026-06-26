@@ -15,7 +15,7 @@ published: true
 - **Duração:** 2 horas
 - **Modalidade:** Online síncrona
 - **Bloco:** 2 · Produtividade Individual
-- **Demonstração:** transformar a síntese da S06 numa apresentação para a Direção — gerar, estruturar, condensar, notas
+- **Demonstração:** transformar a síntese da S06 numa apresentação para a Direção — gerar, estruturar, condensar, notas, traduzir
 - **Exercícios:** validar com a fonte · impor a estrutura de decisão · identidade e limites do bruto — ver [Exercícios da S08]({% link exercicios/s08-powerpoint.md %})
 
 ## Para começar — o que trouxeram da S6
@@ -129,7 +129,7 @@ A perda é a omissão da S06; a invenção é o seu gémeo inverso. A salvaguard
 
 ## Demonstração — do documento da S06 a uma apresentação para a Direção
 
-Antes de praticarem, vamos ver, uma vez em conjunto, o Copilot a transformar a síntese da S06 (`DOC_S08_Sintese_Pedidos.docx`) numa apresentação — pelo PowerPoint Agent, em quatro gestos:
+Antes de praticarem, vamos ver, uma vez em conjunto, o Copilot a transformar a síntese da S06 (`DOC_S08_Sintese_Pedidos.docx`) numa apresentação — pelo PowerPoint Agent, em cinco gestos:
 
 **1. Gerar o rascunho a partir do documento.** No Copilot Chat, em *Agents*, escolhemos o **PowerPoint Agent**, anexamos a síntese com *"+ Adicionar conteúdo"* e pedimos:
 
@@ -152,6 +152,12 @@ O gesto: *"qual é a UMA frase que quem decide tem de levar deste slide?"*
 **4. Notas do orador** *(o wow de baixo risco, para quem tem licença — `Ver ▸ Notas ▸ Gerar notas do orador`)*. Para a sala sem licença, pede-se o equivalente no Chat:
 
 > *Escreve, para cada slide, duas ou três frases de apoio ao orador, em português europeu, que eu possa ler na reunião.*
+
+**5. Traduzir** *(a versão internacional)*. Muitas IES precisam de versões noutra língua — mostramos a capacidade, pedindo uma versão em inglês:
+
+> *Cria uma versão desta apresentação em inglês, mantendo a estrutura, os números e o sentido.*
+
+E o reparo que fecha o arco: traduzir também **comprime e reformula** — a régua é a mesma, agora nas duas línguas.
 
 E, antes de fiar — a **Validação com a fonte**: a apresentação ao lado do `DOC_S08_Sintese_Pedidos.docx`, à procura de perda, deriva e invenção.
 
