@@ -17,6 +17,8 @@ O curso combina demonstrações práticas, exercícios guiados, casos de uso do 
 {: .important }
 > **Microsoft 365 Copilot**
 > Esta formação utiliza o Microsoft 365 Copilot com conta institucional. Consulte a página [Planos e custos do Copilot]({% link recursos/planos-copilot.md %}) para conhecer as opções disponíveis para a sua IES.
+>
+> **Sem licença?** Os exercícios correm todos no Copilot Chat gratuito. Quem quiser experimentar o Copilot *dentro* das aplicações pode ativar a [avaliação gratuita de 1 mês]({% link recursos/planos-copilot.md %}#avaliacao-gratuita) do Microsoft 365 — só para os exercícios (dados fictícios) e **cancelando antes dos 30 dias** para não ser cobrado.
 
 {: .note }
 > **Acesso aos materiais**

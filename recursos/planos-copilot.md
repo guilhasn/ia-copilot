@@ -21,6 +21,7 @@ Esta página compara os diferentes planos do Microsoft Copilot e os respetivos c
 | Copilot gratuito (Bing/Edge) | Grátis | Qualquer pessoa | Não | Não | Não |
 | Copilot Chat (conta institucional) | Grátis | Funcionários com M365 A1/A3/A5 | Limitado | Não | Sim |
 | Copilot Pro (pessoal) | ~€20/mês | Indivíduos | Sim (pessoal) | Não | Não |
+| Avaliação gratuita M365 (1 mês) | Grátis, depois ~€13/mês | Experimentar sem licença | Sim (pessoal, 60 créditos/mês) | Não | Não |
 | M365 Copilot para Empresas | €15,60/mês | PMEs (até 300 utilizadores) | Sim | Sim | Sim |
 | M365 Copilot Enterprise | ~€27/mês | Grandes organizações | Sim | Sim | Sim |
 | M365 Copilot Educação | ~€16,50/mês | IES (staff e estudantes 13+) | Sim | Sim | Sim |
@@ -84,6 +85,29 @@ O que não inclui:
 
 {: .warning }
 > **Este plano é para uso pessoal.** Não tem as proteções necessárias para trabalho institucional. Os funcionários que usem Copilot Pro pessoal para trabalho estão a colocar dados institucionais fora do perímetro de proteção da IES.
+
+---
+
+### Avaliação gratuita de 1 mês (Microsoft 365 Family) — para experimentar {#avaliacao-gratuita}
+
+**Preço:** Grátis durante 1 mês; depois renova automaticamente (~€13/mês) se não for cancelada.
+
+Quem **não tem licença institucional** e quer ver o Copilot a trabalhar **dentro** do Word, Excel e PowerPoint pode ativar a [avaliação gratuita de 1 mês do Microsoft 365 Family](https://www.microsoft.com/pt-pt/microsoft-365/try) — já inclui o Copilot de consumidor nas aplicações. É uma **opção**, não um requisito: os exercícios do curso correm todos sem licença, no Copilot Chat gratuito.
+
+O que dá:
+- Copilot integrado no Word, Excel, PowerPoint e OneNote (conta pessoal)
+
+- Suficiente para fazer os exercícios do curso (os *datasets* são fictícios)
+
+Avisos importantes:
+- **Pede um método de pagamento e renova automaticamente** — só é grátis se for **cancelada antes dos 30 dias** (na conta Microsoft). Marquem um lembrete no calendário.
+
+- **60 créditos de IA por mês** — chegam para experimentar, não para uso intensivo; e só o **titular** da subscrição recebe a IA, não os membros da família.
+
+- É uma **conta pessoal**, sem a proteção de dados empresarial da IES.
+
+{: .warning }
+> **Só para os exercícios do curso, com dados fictícios.** Tal como o Copilot Pro pessoal, esta conta **não** tem as proteções para trabalho institucional — **nunca** introduzam aqui informação real da IES.
 
 ---
 
