@@ -99,6 +99,9 @@ A demonstração de hoje mostra **uma** fatia — documento → apresentação �
 > **Honestidade sobre licença.** Dentro do PowerPoint, estas funções exigem licença **Microsoft 365 Copilot** — e *gerar a partir de um ficheiro* e *adicionar slide* exigem **ainda** licença **Designer**. Sem licença, o caminho é o **PowerPoint Agent** no [Copilot Chat](https://m365.cloud.microsoft/chat) (menu *Agents*), que **constrói o `.pptx`** a partir do documento que anexam. *Resumir*, *perguntar* e *reescrever* correm com o Copilot base, sem Designer.
 
 {: .note }
+> **Atenção à língua.** O Copilot pode devolver a apresentação **em inglês** — ou com inglês à mistura — mesmo partindo de um documento em português: a qualidade do modelo é mais alta em inglês e o *Designer* só é fiável em *en-US*. Por isso peçam **sempre, no prompt, "em português europeu"** (é o que os exemplos acima fazem) e confirmem a língua no fim — é mais um ponto a validar.
+
+{: .note }
 > **Uma palavra sobre o aspeto.** *Designer*, *SmartArt*, transições *Morph* e geração de imagens dão jeito, mas são **não-deterministas** e **frágeis** (o *Designer* só funciona bem em inglês) — não são "o Copilot faz", são trabalho visual vosso. Ficam para a secção [Para aprofundar](#para-aprofundar).
 
 > O Copilot gera os slides. A identidade da apresentação é vossa.
@@ -109,7 +112,7 @@ A demonstração de hoje mostra **uma** fatia — documento → apresentação �
 
 Quando o Copilot transforma um documento numa apresentação, faz três coisas — e cada uma tem um risco que se audita em separado:
 
-- **Comprime** (escolhe o que cabe) → risco de **perda**: uma recomendação, uma ressalva ou um número desaparece "porque não coube".
+- **Comprime** (escolhe o que cabe) → risco de **perda**: uma recomendação, uma ressalva ou um número desaparece "porque não coube". *(E há um limite de palavras por pedido — num documento muito longo, pode nem processar tudo.)*
 
 - **Reformula** (reescreve para caber num título ou num *bullet*) → risco de **deriva**: um *"pode indicar"* da fonte vira *"indica"* no slide; *"três recomendações"* vira *"plano de ação"*.
 
@@ -121,6 +124,8 @@ A perda é a omissão da S06; a invenção é o seu gémeo inverso. A salvaguard
 
 {: .important }
 > **A régua: cada afirmação no slide tem de poder apontar para uma frase do documento. Sem frase que a sustente, é palpite do Copilot.**
+
+> E não é só a nossa régua — a própria Microsoft di-lo: o Copilot *"não percebe o significado nem avalia a exatidão; por isso, lê o que ele escreve e usa o teu critério."*
 
 ## Demonstração — do documento da S06 a uma apresentação para a Direção
 
