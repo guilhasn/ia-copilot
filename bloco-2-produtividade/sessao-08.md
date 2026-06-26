@@ -3,7 +3,7 @@ title: "S8 — PowerPoint"
 layout: default
 parent: "Bloco 2 · Produtividade Individual"
 nav_order: 4
-published: false
+published: true
 ---
 
 # Sessão 8 — PowerPoint com Copilot — do documento ao deck
@@ -42,7 +42,7 @@ E o fecho, que a própria Microsoft confirma (*"o Copilot não altera a apresent
 >
 > - **Sem licença** — o **PowerPoint Agent** no [Copilot Chat](https://m365.cloud.microsoft/chat) (menu *Agents*) **constrói o `.pptx` completo** a partir do documento que anexam, e guarda-o no OneDrive. Não ficam pelo texto — ele constrói mesmo o ficheiro. A licença só muda **de onde** o Copilot puxa informação, não o construir.
 >
-> A demonstração de hoje corre pelo **PowerPoint Agent** — o caminho que toda a sala reproduz.
+> A demonstração de hoje corre pelo **PowerPoint Agent**. ⚠️ Atenção: nalgumas contas institucionais o menu *Agents* só aparece depois de o administrador o ativar — **confirmem na vossa conta antes da sessão**. E há sempre rede: mesmo sem o Agent, o Copilot Chat devolve o **conteúdo dos slides em texto** a partir do documento — e a competência de hoje, *auditar a fidelidade*, faz-se sobre esse texto, não sobre o ficheiro construído.
 
 {: .important }
 > **Matriz Semáforo desta sessão: amarelo.** A síntese e os indicadores são informação institucional interna. O documento é fictício (pode ir inteiro); com dados reais que identifiquem pessoas, minimizem antes de submeter.

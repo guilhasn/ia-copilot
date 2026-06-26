@@ -15,7 +15,7 @@ nav_order: 8
 
 📎 **Descarreguem o documento-fonte:** [DOC_S08_Sintese_Carga_Docente.docx]({{ site.baseurl }}/sessoes/sessao-08/DOC_S08_Sintese_Carga_Docente.docx) — a síntese executiva da carga docente do semestre (contexto, conclusões, riscos e três recomendações). É a vossa **fonte da verdade**: o deck que gerarem tem de lhe ser fiel.
 
-**Como dar o documento ao Copilot.** Sem licença, no Copilot Chat escolham o **PowerPoint Agent** (menu *Agents*) e anexem o `.docx` com *"+ Adicionar conteúdo"*. Com licença, abram o documento e usem o Copilot dentro do PowerPoint. *(Confirmem que o menu Agents aparece na vossa conta — se não aparecer, o caminho é a app PowerPoint com licença.)*
+**Como dar o documento ao Copilot.** No Copilot Chat, escolham o **PowerPoint Agent** (menu *Agents*) e anexem o `.docx` com *"+ Adicionar conteúdo"* — ele constrói o `.pptx`. Com licença, podem antes usar o Copilot dentro do PowerPoint. *(⚠️ Se o menu Agents não aparecer na vossa conta — nalgumas contas institucionais o administrador tem de o ativar —, peçam ao Copilot Chat o **conteúdo dos slides em texto** e auditem esse texto: funciona em qualquer conta, porque o que importa hoje é a auditoria, não o ficheiro.)*
 
 {: .note }
 > Não há "deck certo" escrito aqui — o que o Copilot devolve varia (número de slides, ordem, aspeto). O que conta é **confrontar o que sair com o documento**.
@@ -31,11 +31,11 @@ nav_order: 8
 
 **1. Antes do Copilot — a tese à mão.** Em duas linhas, escrevam o que **vocês** querem que a Direção retenha (ex.: *"um departamento está no limite; é preciso reequilibrar antes do próximo semestre"*). É a vossa bússola para auditar o que o Copilot gerar.
 
-**2. Gerar o deck** a partir do documento:
+**2. Gerar os slides** a partir do documento (com o Agent sai um `.pptx`; sem o Agent, o Chat devolve o **texto** dos slides — serve igual, é o conteúdo que vão auditar):
 
 > *A partir deste documento, cria uma apresentação para a Direção de uma IES, em português europeu, com cerca de 8 slides. Usa apenas o que está no documento; não acrescentes números que não estejam no texto.*
 
-**3. Auditar slide a slide** — o deck ao lado do `.docx`, com as três perguntas:
+**3. Auditar slide a slide** — o deck (ou o texto dos slides) ao lado do `.docx`, com as três perguntas:
 
 > *Confere este deck com o documento: (a) alguma conclusão, risco ou recomendação do documento ficou de fora? (b) algum slide diz algo com mais força do que o documento? (c) há algum número, ano ou percentagem nos slides que não esteja no documento? Lista cada caso.*
 
