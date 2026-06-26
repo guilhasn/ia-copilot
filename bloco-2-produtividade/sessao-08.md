@@ -12,7 +12,6 @@ published: true
 
 - **Formação:** Inteligência Artificial — Aplicações ao trabalho das IES
 - **Ferramenta principal:** Microsoft 365 Copilot (PowerPoint e PowerPoint Agent)
-- **Data:** 25-06-2026
 - **Duração:** 2 horas
 - **Modalidade:** Online síncrona
 - **Bloco:** 2 · Produtividade Individual

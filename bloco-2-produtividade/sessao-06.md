@@ -11,7 +11,6 @@ nav_order: 3
 
 - **Formação:** Inteligência Artificial — Aplicações ao trabalho das IES
 - **Ferramenta principal:** Microsoft 365 Copilot (Excel)
-- **Data:** 22-06-2026
 - **Duração:** 2 horas
 - **Modalidade:** Online síncrona
 - **Bloco:** 2 · Produtividade Individual
