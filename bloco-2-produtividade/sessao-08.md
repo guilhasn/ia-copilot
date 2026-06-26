@@ -6,7 +6,7 @@ nav_order: 4
 published: true
 ---
 
-# Sessão 8 — PowerPoint com Copilot — do documento ao deck
+# Sessão 8 — PowerPoint com Copilot — do documento à apresentação
 
 <button class="btn-print-page" onclick="printPage()">🖨️ PDF</button>
 
@@ -16,7 +16,7 @@ published: true
 - **Duração:** 2 horas
 - **Modalidade:** Online síncrona
 - **Bloco:** 2 · Produtividade Individual
-- **Demonstração:** transformar a síntese da S06 num deck para a Direção — gerar, estruturar, condensar, notas
+- **Demonstração:** transformar a síntese da S06 numa apresentação para a Direção — gerar, estruturar, condensar, notas
 - **Exercícios:** validar com a fonte · impor a estrutura de decisão · identidade e limites do bruto — ver [Exercícios da S08]({% link exercicios/s08-powerpoint.md %})
 
 ## Para começar — o que trouxeram da S6
@@ -25,9 +25,9 @@ Dois minutos antes de matéria nova: da S6 trazem o reflexo de **verificar o que
 
 ## Ideia central
 
-Na S06, o Miguel fechou os números do semestre e escreveu uma **síntese executiva** para a Direção. Hoje a Direção respondeu: *"Bom trabalho — apresenta isto na reunião de quinta."* É quarta à tarde, e montar um deck institucional decente à mão leva-lhe horas que não tem.
+Na S06, o Miguel fechou os números do semestre e escreveu uma **síntese executiva** para a Direção. Hoje a Direção respondeu: *"Bom trabalho — apresenta isto na reunião de quinta."* É quarta à tarde, e montar uma apresentação institucional decente à mão leva-lhe horas que não tem.
 
-O Copilot no PowerPoint transforma aquele documento num deck em segundos. Mas o que ele devolve é um **rascunho** — e numa sala de decisão, o que importa é tudo o que um rascunho não traz: a estrutura certa, os números a baterem com a fonte, a mensagem, a identidade da instituição.
+O Copilot no PowerPoint transforma aquele documento numa apresentação em segundos. Mas o que ele devolve é um **rascunho** — e numa sala de decisão, o que importa é tudo o que um rascunho não traz: a estrutura certa, os números a baterem com a fonte, a mensagem, a identidade da instituição.
 
 > O Copilot gera os slides. Vocês decidem o que fica em cima de cada um.
 
@@ -51,9 +51,9 @@ E o fecho, que a própria Microsoft confirma (*"o Copilot não altera a apresent
 
 No final da sessão, devem ser capazes de:
 
-- **gerar um deck** a partir de um documento, com o Copilot;
+- **gerar uma apresentação** a partir de um documento, com o Copilot;
 
-- **validar o deck com a fonte** — detetar perda, deriva de sentido e invenção de factos;
+- **validar a apresentação com a fonte** — detetar perda, deriva de sentido e invenção de factos;
 
 - **impor a estrutura de decisão** e a mensagem única por slide;
 
@@ -69,30 +69,30 @@ No final da sessão, devem ser capazes de:
 | S4 | **Validar** um documento (Word) |
 | S5 | **Mapear sem decidir** (Outlook + Teams) |
 | S6 | **Diagnosticar antes de analisar** (Excel) |
-| **S8** | **Validar com a fonte** — do documento ao deck (PowerPoint) |
+| **S8** | **Validar com a fonte** — do documento à apresentação (PowerPoint) |
 
-A omissão que a S06 chamou *silent column skip* reaparece aqui, agora com um gémeo: ao passar de documento a slides, o Copilot pode **omitir** o que importava — e também **inventar** o que não estava lá. É a [Validação com a fonte](#validacao-com-a-fonte), a aplicação ao deck do reflexo de validar de toda a S04–S06.
+A omissão que a S06 chamou *silent column skip* reaparece aqui, agora com um gémeo: ao passar de documento a slides, o Copilot pode **omitir** o que importava — e também **inventar** o que não estava lá. É a [Validação com a fonte](#validacao-com-a-fonte), a aplicação à apresentação do reflexo de validar de toda a S04–S06.
 
 ## Programa
 
 1. Para começar — o que trouxeram da S6
 2. O que o Copilot faz no PowerPoint
 3. A Validação com a fonte — o que o Copilot faz a um documento
-4. Demonstração — do documento da S06 a um deck para a Direção
+4. Demonstração — do documento da S06 a uma apresentação para a Direção
 5. A rotina segura
 6. Agora é a vossa vez — os exercícios
 7. Para aprofundar — funcionalidades avançadas (opcional)
 
 ## O que o Copilot faz no PowerPoint
 
-A demonstração de hoje mostra **uma** fatia — documento → deck → auditoria. Mas o Copilot no PowerPoint faz mais. Antes da demonstração, fica o panorama do que dá para pedir — e o que conta sempre é a régua de hoje: **validar o que sair**.
+A demonstração de hoje mostra **uma** fatia — documento → apresentação → validação. Mas o Copilot no PowerPoint faz mais. Antes da demonstração, fica o panorama do que dá para pedir — e o que conta sempre é a régua de hoje: **validar o que sair**.
 
 | Funcionalidade | O que faz | Exemplo de prompt |
 |---|---|---|
-| **Gerar a partir de um documento** | Constrói um deck a partir de um Word ou PDF — o gesto central de hoje (*PowerPoint Agent*) | *"A partir deste documento, cria uma apresentação de cerca de 8 slides para a Direção, em português europeu."* |
-| **Gerar a partir de um tema** | Cria um deck de raiz a partir de uma descrição, sem documento de partida | *"Cria uma apresentação sobre o calendário de pagamento de propinas da nossa unidade orgânica."* |
-| **Adicionar um slide** | Acrescenta um slide sobre um subtema ao deck já aberto | *"Adiciona um slide sobre os prazos de candidatura a bolsas de mérito."* |
-| **Resumir e perguntar** *(Ask)* | Sintetiza os pontos-chave de todo o deck e responde a perguntas sobre o conteúdo | *"Resume os pontos principais desta apresentação em cinco tópicos."* |
+| **Gerar a partir de um documento** | Constrói uma apresentação a partir de um Word ou PDF — o gesto central de hoje (*PowerPoint Agent*) | *"A partir deste documento, cria uma apresentação de cerca de 8 slides para a Direção, em português europeu."* |
+| **Gerar a partir de um tema** | Cria uma apresentação de raiz a partir de uma descrição, sem documento de partida | *"Cria uma apresentação sobre o calendário de pagamento de propinas da nossa unidade orgânica."* |
+| **Adicionar um slide** | Acrescenta um slide sobre um subtema à apresentação já aberta | *"Adiciona um slide sobre os prazos de candidatura a bolsas de mérito."* |
+| **Resumir e perguntar** *(Ask)* | Sintetiza os pontos-chave de toda a apresentação e responde a perguntas sobre o conteúdo | *"Resume os pontos principais desta apresentação em cinco tópicos."* |
 | **Reescrever / condensar** *(Rewrite)* | Reescreve, encurta ou formaliza o texto de uma caixa — o slide mais cheio para a sua mensagem única | *"Reescreve este texto de forma mais profissional e condensa-o."* |
 | **Notas do orador** | Gera duas ou três frases de apoio por slide, para ler na reunião — o *wow* de baixo risco | *"Escreve, para cada slide, duas ou três frases de apoio ao orador, em português europeu."* |
 
@@ -102,7 +102,7 @@ A demonstração de hoje mostra **uma** fatia — documento → deck → auditor
 {: .note }
 > **Uma palavra sobre o aspeto.** *Designer*, *SmartArt*, transições *Morph* e geração de imagens dão jeito, mas são **não-deterministas** e **frágeis** (o *Designer* só funciona bem em inglês) — não são "o Copilot faz", são trabalho visual vosso. Ficam para a secção [Para aprofundar](#para-aprofundar).
 
-> O Copilot gera os slides. A identidade do deck é vossa.
+> O Copilot gera os slides. A identidade da apresentação é vossa.
 
 *Fontes Microsoft:* [Bem-vindo ao Copilot no PowerPoint](https://support.microsoft.com/en-US/PowerPoint/welcome-to-copilot-in-powerpoint) · [Perguntas frequentes sobre o Copilot no PowerPoint](https://support.microsoft.com/en-us/office/frequently-asked-questions-about-copilot-in-powerpoint-3e229188-9086-4f4c-9f9f-824cd25ae84f)
 
@@ -116,16 +116,16 @@ Quando o Copilot transforma um documento numa apresentação, faz três coisas �
 
 - **Preenche** (para o slide parecer completo) → risco de **invenção**: aparece um número, um ano ou um *"20%"* que **não estava** no documento.
 
-A perda é a omissão da S06; a invenção é o seu gémeo inverso. A salvaguarda é pôr o **deck ao lado do documento** e fazer três perguntas:
+A perda é a omissão da S06; a invenção é o seu gémeo inverso. A salvaguarda é pôr a **apresentação ao lado do documento** e fazer três perguntas:
 
 > Está lá tudo o que importava? *(perda)* · Diz o mesmo, sem forçar? *(deriva)* · Há algum facto que não esteja no documento? *(invenção)*
 
 {: .important }
 > **A régua: cada afirmação no slide tem de poder apontar para uma frase do documento. Sem frase que a sustente, é palpite do Copilot.**
 
-## Demonstração — do documento da S06 a um deck para a Direção
+## Demonstração — do documento da S06 a uma apresentação para a Direção
 
-Antes de praticarem, vamos ver, uma vez em conjunto, o Copilot a transformar a síntese da S06 (`DOC_S08_Sintese_Pedidos.docx`) num deck — pelo PowerPoint Agent, em quatro gestos:
+Antes de praticarem, vamos ver, uma vez em conjunto, o Copilot a transformar a síntese da S06 (`DOC_S08_Sintese_Pedidos.docx`) numa apresentação — pelo PowerPoint Agent, em quatro gestos:
 
 **1. Gerar o rascunho a partir do documento.** No Copilot Chat, em *Agents*, escolhemos o **PowerPoint Agent**, anexamos a síntese com *"+ Adicionar conteúdo"* e pedimos:
 
@@ -149,7 +149,7 @@ O gesto: *"qual é a UMA frase que quem decide tem de levar deste slide?"*
 
 > *Escreve, para cada slide, duas ou três frases de apoio ao orador, em português europeu, que eu possa ler na reunião.*
 
-E, antes de fiar — a **Validação com a fonte**: o deck ao lado do `DOC_S08_Sintese_Pedidos.docx`, à procura de perda, deriva e invenção.
+E, antes de fiar — a **Validação com a fonte**: a apresentação ao lado do `DOC_S08_Sintese_Pedidos.docx`, à procura de perda, deriva e invenção.
 
 {: .note }
 > Não há resultado certo escrito aqui — nunca sabemos quantos slides o Copilot devolve, nem com que aspeto. O que conta é **validar o que sair contra o documento**. Isto não é apanhá-lo a falhar — é vê-lo fazer num minuto o esqueleto que vocês, a correr, não fariam.
@@ -158,7 +158,7 @@ E, antes de fiar — a **Validação com a fonte**: o deck ao lado do `DOC_S08_S
 
 Para levar para a segunda-feira — a mesma sequência para qualquer documento que tenha de ir a slides:
 
-1. **Gerar** — o deck a partir do documento (PowerPoint Agent).
+1. **Gerar** — a apresentação a partir do documento (PowerPoint Agent).
 2. **Estruturar** — impor o arco de decisão.
 3. **Condensar** — uma mensagem por slide.
 4. **Auditar** — perda, deriva, invenção, contra a fonte.
@@ -169,11 +169,11 @@ Para levar para a segunda-feira — a mesma sequência para qualquer documento q
 
 A demonstração mostrou o arco sobre os **pedidos**. A prática é vossa, e sobre **outro** material — a carga docente —, no Copilot Chat:
 
-- **Exercício 1 — validar com a fonte** (núcleo): primeiro escrevem a tese à mão; geram o deck a partir da síntese; e confrontam slide a slide com o documento (perda · deriva · invenção).
+- **Exercício 1 — validar com a fonte** (núcleo): primeiro escrevem a tese à mão; geram a apresentação a partir da síntese; e confrontam slide a slide com o documento (perda · deriva · invenção).
 
 - **Exercício 2 — impor a estrutura de decisão** (praticar): reordenar para o arco da reunião e condensar um slide para a mensagem única.
 
-- **Exercício 3 — identidade e os limites do bruto** (praticar): tema vs *template* institucional, tradução para pt-pt, e o que um deck gerado nunca traz de fábrica.
+- **Exercício 3 — identidade e os limites do bruto** (praticar): tema vs *template* institucional, tradução para pt-pt, e o que uma apresentação gerada nunca traz de fábrica.
 
 👉 **[Exercícios da Sessão 8 — PowerPoint com o Copilot]({% link exercicios/s08-powerpoint.md %})** — com o documento-fonte, os prompts, os gabaritos *verdade-da-fonte* e o "para ir mais longe".
 
@@ -185,13 +185,13 @@ Algumas funções do Copilot no PowerPoint dão para mais — sugestões de desi
 
 ## Reflexão final
 
-O ROI desta sessão é tempo: o esqueleto do deck nasce em segundos. O **ROI institucional** é o que fazem com esse tempo — a estrutura, o rigor dos números e a mensagem, que são o que distingue quem leva uma decisão a uma reunião de quem só abre o software.
+O ROI desta sessão é tempo: o esqueleto da apresentação nasce em segundos. O **ROI institucional** é o que fazem com esse tempo — a estrutura, o rigor dos números e a mensagem, que são o que distingue quem leva uma decisão a uma reunião de quem só abre o software.
 
 ## Síntese da sessão
 
 Saímos da S08 com três coisas:
 
-- **Sei gerar** um deck a partir de um documento.
+- **Sei gerar** uma apresentação a partir de um documento.
 
 - **Sei validar com a fonte** — apanho perda, deriva e invenção.
 
