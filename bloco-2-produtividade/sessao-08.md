@@ -76,11 +76,35 @@ A omissão que a S06 chamou *silent column skip* reaparece aqui, agora com um g�
 ## Programa
 
 1. Para começar — o que trouxeram da S6
-2. A Auditoria de Fidelidade — o que o Copilot faz a um documento
-3. Demonstração — do documento da S06 a um deck para a Direção
-4. A rotina segura
-5. Agora é a vossa vez — os exercícios
-6. Para aprofundar — funcionalidades avançadas (opcional)
+2. O que o Copilot faz no PowerPoint
+3. A Auditoria de Fidelidade — o que o Copilot faz a um documento
+4. Demonstração — do documento da S06 a um deck para a Direção
+5. A rotina segura
+6. Agora é a vossa vez — os exercícios
+7. Para aprofundar — funcionalidades avançadas (opcional)
+
+## O que o Copilot faz no PowerPoint
+
+A demonstração de hoje mostra **uma** fatia — documento → deck → auditoria. Mas o Copilot no PowerPoint faz mais. Antes da demonstração, fica o panorama do que dá para pedir — e o que conta sempre é a régua de hoje: **validar o que sair**.
+
+| Funcionalidade | O que faz | Exemplo de prompt |
+|---|---|---|
+| **Gerar a partir de um documento** | Constrói um deck a partir de um Word ou PDF — o gesto central de hoje (*PowerPoint Agent*) | *"A partir deste documento, cria uma apresentação de cerca de 8 slides para a Direção, em português europeu."* |
+| **Gerar a partir de um tema** | Cria um deck de raiz a partir de uma descrição, sem documento de partida | *"Cria uma apresentação sobre o calendário de pagamento de propinas da nossa unidade orgânica."* |
+| **Adicionar um slide** | Acrescenta um slide sobre um subtema ao deck já aberto | *"Adiciona um slide sobre os prazos de candidatura a bolsas de mérito."* |
+| **Resumir e perguntar** *(Ask)* | Sintetiza os pontos-chave de todo o deck e responde a perguntas sobre o conteúdo | *"Resume os pontos principais desta apresentação em cinco tópicos."* |
+| **Reescrever / condensar** *(Rewrite)* | Reescreve, encurta ou formaliza o texto de uma caixa — o slide mais cheio para a sua mensagem única | *"Reescreve este texto de forma mais profissional e condensa-o."* |
+| **Notas do orador** | Gera duas ou três frases de apoio por slide, para ler na reunião — o *wow* de baixo risco | *"Escreve, para cada slide, duas ou três frases de apoio ao orador, em português europeu."* |
+
+{: .note }
+> **Honestidade sobre licença.** Dentro do PowerPoint, estas funções exigem licença **Microsoft 365 Copilot** — e *gerar a partir de um ficheiro* e *adicionar slide* exigem **ainda** licença **Designer**. Sem licença, o caminho é o **PowerPoint Agent** no [Copilot Chat](https://m365.cloud.microsoft/chat) (menu *Agents*), que **constrói o `.pptx`** a partir do documento que anexam. *Resumir*, *perguntar* e *reescrever* correm com o Copilot base, sem Designer.
+
+{: .note }
+> **Uma palavra sobre o aspeto.** *Designer*, *SmartArt*, transições *Morph* e geração de imagens dão jeito, mas são **não-deterministas** e **frágeis** (o *Designer* só funciona bem em inglês) — não são "o Copilot faz", são trabalho visual vosso. Ficam para a secção [Para aprofundar](#para-aprofundar).
+
+> O Copilot gera os slides. A identidade do deck é vossa.
+
+*Fontes Microsoft:* [Bem-vindo ao Copilot no PowerPoint](https://support.microsoft.com/en-US/PowerPoint/welcome-to-copilot-in-powerpoint) · [Perguntas frequentes sobre o Copilot no PowerPoint](https://support.microsoft.com/en-us/office/frequently-asked-questions-about-copilot-in-powerpoint-3e229188-9086-4f4c-9f9f-824cd25ae84f)
 
 ## A Auditoria de Fidelidade {#auditoria-de-fidelidade}
 
@@ -153,7 +177,7 @@ A demonstração mostrou o arco sobre os **pedidos**. A prática é vossa, e sob
 
 👉 **[Exercícios da Sessão 8 — PowerPoint com o Copilot]({% link exercicios/s08-powerpoint.md %})** — com o documento-fonte, os prompts, os gabaritos *verdade-da-fonte* e o "para ir mais longe".
 
-## Para aprofundar — funcionalidades avançadas *(opcional)*
+## Para aprofundar — funcionalidades avançadas *(opcional)* {#para-aprofundar}
 
 Algumas funções do Copilot no PowerPoint dão para mais — sugestões de design (**Designer**), conversão para **SmartArt**, transições **Morph**, geração de imagens. Mas atenção: dependem de **licença** (e o Designer ainda de licença própria), são **não-deterministas**, e o Designer só funciona bem em **inglês (en-US)** — pelo que a identidade visual em pt-pt é, na prática, trabalho humano. Há ainda o **Apresentador de Ensaio** (*Speaker Coach*), útil para treinar a apresentação, mas é uma função separada do Copilot. Nesta sessão ficamo-nos pelo essencial: gerar, estruturar, auditar e comunicar.
 
