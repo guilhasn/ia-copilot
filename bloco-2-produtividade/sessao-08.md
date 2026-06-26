@@ -15,7 +15,7 @@ published: true
 - **Duração:** 2 horas
 - **Modalidade:** Online síncrona
 - **Bloco:** 2 · Produtividade Individual
-- **Demonstração:** transformar a síntese da S06 numa apresentação para a Direção — gerar, estruturar, condensar, notas, traduzir
+- **Demonstração:** transformar a síntese da S06 numa apresentação para a Direção — gerar, estruturar, condensar, notas, traduzir, imagem
 - **Exercícios:** validar com a fonte · impor a estrutura de decisão · identidade e limites do bruto — ver [Exercícios da S08]({% link exercicios/s08-powerpoint.md %})
 
 ## Para começar — o que trouxeram da S6
@@ -129,7 +129,7 @@ A perda é a omissão da S06; a invenção é o seu gémeo inverso. A salvaguard
 
 ## Demonstração — do documento da S06 a uma apresentação para a Direção
 
-Antes de praticarem, vamos ver, uma vez em conjunto, o Copilot a transformar a síntese da S06 (`DOC_S08_Sintese_Pedidos.docx`) numa apresentação — pelo PowerPoint Agent, em cinco gestos:
+Antes de praticarem, vamos ver, uma vez em conjunto, o Copilot a transformar a síntese da S06 (`DOC_S08_Sintese_Pedidos.docx`) numa apresentação — pelo PowerPoint Agent, em seis gestos:
 
 **1. Gerar o rascunho a partir do documento.** No Copilot Chat, em *Agents*, escolhemos o **PowerPoint Agent**, anexamos a síntese com *"+ Adicionar conteúdo"* e pedimos:
 
@@ -158,6 +158,12 @@ O gesto: *"qual é a UMA frase que quem decide tem de levar deste slide?"*
 > *Cria uma versão desta apresentação em inglês, mantendo a estrutura, os números e o sentido.*
 
 E o reparo que fecha o arco: traduzir também **comprime e reformula** — a régua é a mesma, agora nas duas línguas.
+
+**6. Adicionar uma imagem** *(o toque visual — para quem tem licença Copilot + Designer)*. O Copilot insere uma imagem a partir de uma descrição:
+
+> *Adiciona, no slide de capa, uma imagem de um auditório universitário.*
+
+Mostramos a capacidade — com o pé atrás: a imagem é genérica (de stock ou gerada) e pode destoar do contexto institucional. Como todo o aspeto, a identidade visual é **trabalho vosso**: confirma-se se serve, ou troca-se pela imagem da casa.
 
 E, antes de fiar — a **Validação com a fonte**: a apresentação ao lado do `DOC_S08_Sintese_Pedidos.docx`, à procura de perda, deriva e invenção.
 
