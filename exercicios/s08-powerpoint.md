@@ -13,7 +13,7 @@ nav_order: 8
 
 ## Antes de começar
 
-📎 **Descarreguem o documento-fonte:** [DOC_S08_Sintese_Carga_Docente.docx]({{ site.baseurl }}/sessoes/sessao-08/DOC_S08_Sintese_Carga_Docente.docx) — a síntese executiva da carga docente do semestre (contexto, conclusões, riscos e três recomendações). É a vossa **fonte da verdade**: o deck que gerarem tem de lhe ser fiel.
+📎 **Descarreguem o documento-fonte:** [DOC_S08_Sintese_Carga_Docente.docx]({{ site.baseurl }}/sessoes/sessao-08/DOC_S08_Sintese_Carga_Docente.docx) — a síntese executiva da carga docente do semestre (contexto, **tabela de indicadores por departamento**, conclusões, riscos e três recomendações). É a vossa **fonte da verdade**: o deck que gerarem tem de lhe ser fiel.
 
 **Como dar o documento ao Copilot — funciona em qualquer Copilot, incluindo o web.** O caminho à prova de tudo: **copiem o texto do documento e colem no Copilot** (Chat institucional ou web), e peçam o **conteúdo dos slides** (título + pontos por slide) — é esse texto que vão auditar. Quem tiver o **PowerPoint Agent** (menu *Agents* no Copilot Chat) pode antes anexar o `.docx` e deixá-lo **construir o `.pptx`**; com licença, há o Copilot dentro do PowerPoint. Mas o núcleo de hoje — auditar a fidelidade — corre na mesma sobre o **texto**, em qualquer conta.
 
@@ -53,7 +53,9 @@ nav_order: 8
 
 Estes factos estão no `DOC_S08_Sintese_Carga_Docente.docx` (a régua; o que o Copilot gera, varia):
 
-- **Departamento mais pressionado:** Informática (taxa de ocupação média ~119%).
+- **A tabela por departamento** (a régua dos números): Informática **119%** · Matemática **111%** · Gestão **107%** — confirmem que o deck não troca nem inventa nenhum destes.
+
+- **Departamento mais pressionado:** Informática.
 
 - **Sobrecarga:** 1 caso crítico (acima de 115%) e 7 docentes em sobrecarga elevada (105–115%).
 
