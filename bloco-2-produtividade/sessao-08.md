@@ -17,7 +17,7 @@ published: true
 - **Modalidade:** Online síncrona
 - **Bloco:** 2 · Produtividade Individual
 - **Demonstração:** transformar a síntese da S06 num deck para a Direção — gerar, estruturar, condensar, notas
-- **Exercícios:** auditar a fidelidade · impor a estrutura de decisão · identidade e limites do bruto — ver [Exercícios da S08]({% link exercicios/s08-powerpoint.md %})
+- **Exercícios:** validar com a fonte · impor a estrutura de decisão · identidade e limites do bruto — ver [Exercícios da S08]({% link exercicios/s08-powerpoint.md %})
 
 ## Para começar — o que trouxeram da S6
 
@@ -42,7 +42,7 @@ E o fecho, que a própria Microsoft confirma (*"o Copilot não altera a apresent
 >
 > - **Sem licença** — o **PowerPoint Agent** no [Copilot Chat](https://m365.cloud.microsoft/chat) (menu *Agents*) **constrói o `.pptx` completo** a partir do documento que anexam, e guarda-o no OneDrive. Não ficam pelo texto — ele constrói mesmo o ficheiro. A licença só muda **de onde** o Copilot puxa informação, não o construir.
 >
-> A demonstração de hoje corre pelo **PowerPoint Agent**. ⚠️ Atenção: nalgumas contas institucionais o menu *Agents* só aparece depois de o administrador o ativar — **confirmem na vossa conta antes da sessão**. E há sempre rede: mesmo sem o Agent, o Copilot Chat devolve o **conteúdo dos slides em texto** a partir do documento — e a competência de hoje, *auditar a fidelidade*, faz-se sobre esse texto, não sobre o ficheiro construído.
+> A demonstração de hoje corre pelo **PowerPoint Agent**. ⚠️ Atenção: nalgumas contas institucionais o menu *Agents* só aparece depois de o administrador o ativar — **confirmem na vossa conta antes da sessão**. E há sempre rede: mesmo sem o Agent, o Copilot Chat devolve o **conteúdo dos slides em texto** a partir do documento — e a competência de hoje, *validar com a fonte*, faz-se sobre esse texto, não sobre o ficheiro construído.
 
 {: .important }
 > **Matriz Semáforo desta sessão: amarelo.** A síntese e os indicadores são informação institucional interna. O documento é fictício (pode ir inteiro); com dados reais que identifiquem pessoas, minimizem antes de submeter.
@@ -53,7 +53,7 @@ No final da sessão, devem ser capazes de:
 
 - **gerar um deck** a partir de um documento, com o Copilot;
 
-- **auditar a fidelidade à fonte** — detetar perda, deriva de sentido e invenção de factos;
+- **validar o deck com a fonte** — detetar perda, deriva de sentido e invenção de factos;
 
 - **impor a estrutura de decisão** e a mensagem única por slide;
 
@@ -69,15 +69,15 @@ No final da sessão, devem ser capazes de:
 | S4 | **Validar** um documento (Word) |
 | S5 | **Mapear sem decidir** (Outlook + Teams) |
 | S6 | **Diagnosticar antes de analisar** (Excel) |
-| **S8** | **Auditar a fidelidade** — do documento ao deck (PowerPoint) |
+| **S8** | **Validar com a fonte** — do documento ao deck (PowerPoint) |
 
-A omissão que a S06 chamou *silent column skip* reaparece aqui, agora com um gémeo: ao passar de documento a slides, o Copilot pode **omitir** o que importava — e também **inventar** o que não estava lá. É a [Auditoria de Fidelidade](#auditoria-de-fidelidade), a aplicação ao deck do reflexo de validar de toda a S04–S06.
+A omissão que a S06 chamou *silent column skip* reaparece aqui, agora com um gémeo: ao passar de documento a slides, o Copilot pode **omitir** o que importava — e também **inventar** o que não estava lá. É a [Validação com a fonte](#validacao-com-a-fonte), a aplicação ao deck do reflexo de validar de toda a S04–S06.
 
 ## Programa
 
 1. Para começar — o que trouxeram da S6
 2. O que o Copilot faz no PowerPoint
-3. A Auditoria de Fidelidade — o que o Copilot faz a um documento
+3. A Validação com a fonte — o que o Copilot faz a um documento
 4. Demonstração — do documento da S06 a um deck para a Direção
 5. A rotina segura
 6. Agora é a vossa vez — os exercícios
@@ -106,7 +106,7 @@ A demonstração de hoje mostra **uma** fatia — documento → deck → auditor
 
 *Fontes Microsoft:* [Bem-vindo ao Copilot no PowerPoint](https://support.microsoft.com/en-US/PowerPoint/welcome-to-copilot-in-powerpoint) · [Perguntas frequentes sobre o Copilot no PowerPoint](https://support.microsoft.com/en-us/office/frequently-asked-questions-about-copilot-in-powerpoint-3e229188-9086-4f4c-9f9f-824cd25ae84f)
 
-## A Auditoria de Fidelidade {#auditoria-de-fidelidade}
+## A Validação com a fonte {#validacao-com-a-fonte}
 
 Quando o Copilot transforma um documento numa apresentação, faz três coisas — e cada uma tem um risco que se audita em separado:
 
@@ -149,7 +149,7 @@ O gesto: *"qual é a UMA frase que quem decide tem de levar deste slide?"*
 
 > *Escreve, para cada slide, duas ou três frases de apoio ao orador, em português europeu, que eu possa ler na reunião.*
 
-E, antes de fiar — a **Auditoria de Fidelidade**: o deck ao lado do `DOC_S08_Sintese_Pedidos.docx`, à procura de perda, deriva e invenção.
+E, antes de fiar — a **Validação com a fonte**: o deck ao lado do `DOC_S08_Sintese_Pedidos.docx`, à procura de perda, deriva e invenção.
 
 {: .note }
 > Não há resultado certo escrito aqui — nunca sabemos quantos slides o Copilot devolve, nem com que aspeto. O que conta é **validar o que sair contra o documento**. Isto não é apanhá-lo a falhar — é vê-lo fazer num minuto o esqueleto que vocês, a correr, não fariam.
@@ -169,7 +169,7 @@ Para levar para a segunda-feira — a mesma sequência para qualquer documento q
 
 A demonstração mostrou o arco sobre os **pedidos**. A prática é vossa, e sobre **outro** material — a carga docente —, no Copilot Chat:
 
-- **Exercício 1 — auditar a fidelidade** (núcleo): primeiro escrevem a tese à mão; geram o deck a partir da síntese; e auditam slide a slide contra o documento (perda · deriva · invenção).
+- **Exercício 1 — validar com a fonte** (núcleo): primeiro escrevem a tese à mão; geram o deck a partir da síntese; e confrontam slide a slide com o documento (perda · deriva · invenção).
 
 - **Exercício 2 — impor a estrutura de decisão** (praticar): reordenar para o arco da reunião e condensar um slide para a mensagem única.
 
@@ -193,7 +193,7 @@ Saímos da S08 com três coisas:
 
 - **Sei gerar** um deck a partir de um documento.
 
-- **Sei auditar a fidelidade** — perda, deriva, invenção — contra a fonte.
+- **Sei validar com a fonte** — apanho perda, deriva e invenção.
 
 - **Sei que a estrutura, o rigor e a identidade são meus**, não do Copilot.
 

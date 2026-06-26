@@ -7,7 +7,7 @@ nav_order: 8
 
 # Exercícios da Sessão 8 — do documento ao deck (PowerPoint)
 
-> Três exercícios sobre a mesma ideia: **o Copilot gera o deck; vocês respondem pelo que lá fica**. O **Exercício 1** (o núcleo) gera um deck a partir de um documento e **audita a sua fidelidade à fonte**; o **Exercício 2** impõe a estrutura de uma reunião; o **Exercício 3** trata a identidade institucional e os limites do que sai de fábrica. Façam o Exercício 1 no tempo da sessão; os outros ficam para praticar. O método vale para qualquer documento que tenha de ir a slides.
+> Três exercícios sobre a mesma ideia: **o Copilot gera o deck; vocês respondem pelo que lá fica**. O **Exercício 1** (o núcleo) gera um deck a partir de um documento e **valida-o com a fonte**; o **Exercício 2** impõe a estrutura de uma reunião; o **Exercício 3** trata a identidade institucional e os limites do que sai de fábrica. Façam o Exercício 1 no tempo da sessão; os outros ficam para praticar. O método vale para qualquer documento que tenha de ir a slides.
 
 **Duração:** Ex. 1 ~25-30 min · Ex. 2-3 ~25-30 min · individual · **sem licença:** PowerPoint Agent no Copilot Chat ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)), que constrói o `.pptx` no OneDrive · **com licença:** o Copilot dentro do PowerPoint
 
@@ -15,7 +15,7 @@ nav_order: 8
 
 📎 **Descarreguem o documento-fonte:** [DOC_S08_Sintese_Carga_Docente.docx]({{ site.baseurl }}/sessoes/sessao-08/DOC_S08_Sintese_Carga_Docente.docx) — a síntese executiva da carga docente do semestre (contexto, **tabela de indicadores por departamento**, conclusões, riscos e três recomendações). É a vossa **fonte da verdade**: o deck que gerarem tem de lhe ser fiel.
 
-**Como dar o documento ao Copilot — funciona em qualquer Copilot, incluindo o web.** O caminho à prova de tudo: **copiem o texto do documento e colem no Copilot** (Chat institucional ou web), e peçam o **conteúdo dos slides** (título + pontos por slide) — é esse texto que vão auditar. Quem tiver o **PowerPoint Agent** (menu *Agents* no Copilot Chat) pode antes anexar o `.docx` e deixá-lo **construir o `.pptx`**; com licença, há o Copilot dentro do PowerPoint. Mas o núcleo de hoje — auditar a fidelidade — corre na mesma sobre o **texto**, em qualquer conta.
+**Como dar o documento ao Copilot — funciona em qualquer Copilot, incluindo o web.** O caminho à prova de tudo: **copiem o texto do documento e colem no Copilot** (Chat institucional ou web), e peçam o **conteúdo dos slides** (título + pontos por slide) — é esse texto que vão validar. Quem tiver o **PowerPoint Agent** (menu *Agents* no Copilot Chat) pode antes anexar o `.docx` e deixá-lo **construir o `.pptx`**; com licença, há o Copilot dentro do PowerPoint. Mas o núcleo de hoje — validar com a fonte — corre na mesma sobre o **texto**, em qualquer conta.
 
 {: .note }
 > Não há "deck certo" escrito aqui — o que o Copilot devolve varia (número de slides, ordem, aspeto). O que conta é **confrontar o que sair com o documento**.
@@ -25,7 +25,7 @@ nav_order: 8
 
 ---
 
-## Exercício 1 — auditar a fidelidade *(núcleo)*
+## Exercício 1 — validar com a fonte *(núcleo)*
 
 **O problema:** és o Miguel. A síntese da carga docente está fechada e a Direção quer slides. O Copilot gera o deck em segundos — mas tu não levas um rascunho à reunião sem o confrontar com a fonte: um slide que perde um risco, ou que inventa um número, leva-te a dizer à Direção algo que o teu documento não dizia.
 
@@ -35,7 +35,7 @@ nav_order: 8
 
 > *Transforma este documento numa apresentação para a Direção de uma IES, em português europeu, com cerca de 8 slides: dá-me, slide a slide, o título e dois ou três pontos. Usa apenas o que está no documento; não acrescentes números que não estejam no texto.*
 
-**3. Auditar slide a slide** — o deck (ou o texto dos slides) ao lado do `.docx`, com as três perguntas:
+**3. Confrontar slide a slide** — o deck (ou o texto dos slides) ao lado do `.docx`, com as três perguntas:
 
 > *Confere este deck com o documento: (a) alguma conclusão, risco ou recomendação do documento ficou de fora? (b) algum slide diz algo com mais força do que o documento? (c) há algum número, ano ou percentagem nos slides que não esteja no documento? Lista cada caso.*
 
@@ -63,11 +63,17 @@ Estes factos estão no `DOC_S08_Sintese_Carga_Docente.docx` (a régua; o que o C
 
 - **Os dois riscos:** o desgaste do caso crítico; a margem reduzida para absorver novas unidades curriculares.
 
-**Auditar:** cada afirmação do deck aponta para uma frase do documento? Faltou uma recomendação (**perda**)? Algum *"pode"* virou *"vai"* (**deriva**)? Apareceu um número que não está no `.docx` (**invenção**)? Sem frase na fonte que a sustente, é palpite do Copilot.
+**Confrontar:** cada afirmação do deck aponta para uma frase do documento? Faltou uma recomendação (**perda**)? Algum *"pode"* virou *"vai"* (**deriva**)? Apareceu um número que não está no `.docx` (**invenção**)? Sem frase na fonte que a sustente, é palpite do Copilot.
 
 </details>
 
-**Para ir mais longe:** peçam ao Copilot para **resumir o próprio deck numa frase** e comparem-na com a vossa tese do passo 1. Se não baterem certo, o deck está a contar outra história.
+**Para ir mais longe** *(para quem domina o Copilot):*
+
+- **O teste do espelho:** peçam ao Copilot para **resumir o próprio deck numa frase** e comparem-na com a vossa tese do passo 1. Se não baterem certo, o deck está a contar outra história.
+
+- **A tabela de rastreabilidade:** peçam — *"Faz uma tabela: na primeira coluna, cada ponto dos slides; na segunda, a frase exata do documento que o sustenta — ou «NÃO CONSTA»."* Depois validam **só** as linhas marcadas *«NÃO CONSTA»*: é a auditoria assistida, e apanha a invenção que escapa a olho.
+
+- **Gerar duas vezes:** gerem o deck **duas vezes** com o mesmo pedido; onde os dois discordarem num número ou numa ênfase, é candidato a invenção ou deriva — a própria variação denuncia o que não está na fonte.
 
 ---
 
