@@ -234,4 +234,4 @@ Saímos da S08 com três coisas:
 
 ## Próxima sessão
 
-A Sessão 9 abre o Bloco 3 — os processos universitários: **serviços académicos, pedidos, atas e reuniões dos órgãos**, onde o Copilot encontra os fluxos próprios de uma IES.
+A Sessão 9 abre o Bloco 3 — os processos universitários: começa pelo **SIADAP — apoiar a redação de objetivos SMART**, onde o Copilot deixa de redigir documentos para passar a apoiar decisões sobre pessoas (sem as tomar).

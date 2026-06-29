@@ -19,3 +19,4 @@ Mãos no Copilot. Cada sessão tem um exercício prático que aplica o que acabo
 | **S05** — Outlook + Teams | [Comunicação com o Copilot]({% link exercicios/s05-comunicacao.md %}) (núcleo + praticar) | 25-55 min |
 | **S06** — Excel | [Excel com o Copilot]({% link exercicios/s06-excel.md %}) (núcleo + praticar + avançado) | 20-95 min |
 | **S08** — PowerPoint | [PowerPoint com o Copilot]({% link exercicios/s08-powerpoint.md %}) (núcleo + praticar) | 25-60 min |
+| **S09** — SIADAP | [O objetivo sobrevive ao Copilot?]({% link exercicios/s09-siadap.md %}) | ~30 min |

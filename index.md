@@ -38,7 +38,7 @@ O curso combina demonstrações práticas, exercícios guiados, casos de uso do 
 | 5 | Produtividade | Outlook e Teams |
 | 6 | Produtividade | Excel com Copilot |
 | 8 | Produtividade | PowerPoint com Copilot |
-| 9 | Processos universitários | Serviços académicos, pedidos, atas e reuniões dos órgãos |
+| 9 | Processos universitários | SIADAP — apoiar a redação de objetivos SMART |
 | 10 | Processos universitários | Contratação pública |
 | 11 | Processos universitários | Júris e candidaturas |
 | 12 | Processos universitários | Qualidade, acreditação e prestação de contas |
