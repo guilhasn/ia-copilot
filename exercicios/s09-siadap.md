@@ -50,7 +50,7 @@ nav_order: 9
 
 7. Discuta se o objetivo ficou mais claro, mais mensurável e mais justo.
 
-Os prompts estão no [Banco essencial de prompts]({% link bloco-3-processos-universitarios/sessao-09.md %}#banco-essencial-de-prompts) da página da sessão.
+Os prompts estão na secção [Prompts essenciais]({% link bloco-3-processos-universitarios/sessao-09.md %}#prompts-essenciais) da página da sessão.
 
 ## Template de entrega
 

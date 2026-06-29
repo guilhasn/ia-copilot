@@ -223,7 +223,7 @@ Respondidas essas perguntas pela Helena — não pelo Copilot —, o objetivo pa
 
 **Risco** — Se medir apenas rapidez, pode prejudicar a qualidade da resposta.
 
-## 9. Banco essencial de prompts {#banco-essencial-de-prompts}
+## 9. Prompts essenciais {#prompts-essenciais}
 
 Quatro prompts cobrem quase tudo o que precisam. Copiem, colem o vosso objetivo e adaptem o contexto.
 
