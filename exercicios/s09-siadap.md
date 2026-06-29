@@ -36,19 +36,19 @@ nav_order: 9
 
 ## Instruções
 
-1. Escolha um dos objetivos frágeis.
+1. Escolham um dos objetivos frágeis.
 
-2. Dê contexto funcional fictício ou genérico (função, serviço, atividades, constrangimentos, fontes possíveis).
+2. Deem contexto funcional fictício ou genérico (função, serviço, atividades, constrangimentos, fontes possíveis).
 
-3. Use o Copilot para diagnosticar as fragilidades (Prompt 1).
+3. Usem o Copilot para diagnosticar as fragilidades (Prompt 1).
 
-4. Identifique as perguntas que ainda precisam de **resposta humana**.
+4. Identifiquem as perguntas que ainda precisam de **resposta humana**.
 
-5. Reformule o objetivo (Prompt 2 ou 3 ajudam a estruturar).
+5. Reformulem o objetivo (Prompt 2 ou 3 ajudam a estruturar).
 
-6. Preencha o modelo de entrega.
+6. Preencham o modelo de entrega.
 
-7. Discuta se o objetivo ficou mais claro, mais mensurável e mais justo.
+7. Discutam se o objetivo ficou mais claro, mais mensurável e mais justo.
 
 Os prompts estão na secção [Prompts essenciais]({% link bloco-3-processos-universitarios/sessao-09.md %}#prompts-essenciais) da página da sessão.
 
