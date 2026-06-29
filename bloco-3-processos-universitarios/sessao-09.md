@@ -201,13 +201,13 @@ Contexto fictício:
 - Serviço: Serviços Académicos
 - Atividades: atendimento presencial, resposta a e-mails, emissão de declarações e apoio a matrículas
 - Constrangimentos: picos de procura em setembro e fevereiro
-- Fontes possíveis: sistema de tickets, registo de atendimento, relatório mensal e inquérito de satisfação
+- Fontes possíveis: sistema de gestão de pedidos, registo de atendimento, relatório mensal e inquérito de satisfação
 
 Não inventes metas.
 Identifica fragilidades, perguntas de clarificação e uma versão reformulada.
 ```
 
-O Copilot tende a devolver perguntas como: que canal de atendimento está em causa? Qual o prazo atualmente praticado? Existe sistema de tickets fiável? A meta deve ser igual nos meses normais e nos de pico? A qualidade mede-se por reclamações, retrabalho ou satisfação?
+O Copilot tende a devolver perguntas como: que canal de atendimento está em causa? Qual o prazo atualmente praticado? Existe um sistema de gestão de pedidos fiável? A meta deve ser igual nos meses normais e nos de pico? A qualidade mede-se por reclamações, retrabalho ou satisfação?
 
 Respondidas essas perguntas pela Helena — não pelo Copilot —, o objetivo passa a:
 
@@ -219,7 +219,7 @@ Respondidas essas perguntas pela Helena — não pelo Copilot —, o objetivo pa
 
 **Meta** — A definir pelo avaliador e avaliado, com base no histórico real do serviço.
 
-**Fonte** — Sistema de tickets, registo de atendimento ou relatório mensal.
+**Fonte** — Sistema de gestão de pedidos, registo de atendimento ou relatório mensal.
 
 **Risco** — Se medir apenas rapidez, pode prejudicar a qualidade da resposta.
 

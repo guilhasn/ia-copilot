@@ -22,7 +22,7 @@ nav_order: 9
 | 2 | 7 min | Usar o Prompt 1 para diagnóstico |
 | 3 | 7 min | Usar o Prompt 2 ou 3 para melhorar a estrutura |
 | 4 | 6 min | Reformular o objetivo |
-| 5 | 5 min | Preencher o template final |
+| 5 | 5 min | Preencher o modelo final |
 
 ## Objetivos frágeis para escolher
 
@@ -46,13 +46,13 @@ nav_order: 9
 
 5. Reformule o objetivo (Prompt 2 ou 3 ajudam a estruturar).
 
-6. Preencha o template de entrega.
+6. Preencha o modelo de entrega.
 
 7. Discuta se o objetivo ficou mais claro, mais mensurável e mais justo.
 
 Os prompts estão na secção [Prompts essenciais]({% link bloco-3-processos-universitarios/sessao-09.md %}#prompts-essenciais) da página da sessão.
 
-## Template de entrega
+## Modelo de entrega
 
 | Campo | Resposta |
 |---|---|
