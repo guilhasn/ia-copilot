@@ -170,6 +170,8 @@ A [Matriz Semáforo]({% link recursos/matriz-semaforo.md %}) do curso aplica-se 
 
 ## 7. Anatomia simples de um objetivo defensável
 
+**SMART** quer dizer **e**specífico, **m**ensurável, **a**tingível, **r**elevante e **t**emporal. Na prática, traduz-se nos seis elementos abaixo — com duas adições que o SIADAP exige: a **fonte** (onde verificar) e as **dependências** (o que não está no controlo da equipa).
+
 | Elemento | Pergunta a responder |
 |---|---|
 | Objetivo | Que resultado queremos alcançar? |
