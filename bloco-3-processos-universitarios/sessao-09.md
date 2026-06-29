@@ -13,7 +13,7 @@ published: true
 - **Formação:** Inteligência Artificial — Aplicações ao trabalho das IES
 - **Ferramenta principal:** Microsoft 365 Copilot (Copilot Chat — funciona com ou sem licença)
 - **Duração:** 2 horas
-- **Modalidade:** Online síncrona
+- **Modalidade:** Em linha (síncrona)
 - **Bloco:** 3 · IA nos Processos Universitários
 
 Nesta sessão vamos trabalhar uma dificuldade muito comum no SIADAP: transformar intenções vagas em objetivos claros, mensuráveis e defensáveis.
@@ -332,7 +332,7 @@ Partem de um objetivo SIADAP frágil, usam o Copilot para o diagnosticar e produ
 
 👉 **[Ver exercício prático]({% link exercicios/s09-siadap.md %})**
 
-## 11. Checklist final
+## 11. Lista de verificação final
 
 Antes de validar um objetivo, confirmem que:
 

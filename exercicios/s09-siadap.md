@@ -71,7 +71,7 @@ Os prompts estão na secção [Prompts essenciais]({% link bloco-3-processos-uni
 {: .note }
 > O objetivo não precisa de ficar perfeito. Precisa de ficar mais **claro**, mais **mensurável** e mais **discutível**.
 
-## Mini-checklist final
+## Lista de verificação final
 
 {: .discussao }
 > Antes de fechar, confirmem:
