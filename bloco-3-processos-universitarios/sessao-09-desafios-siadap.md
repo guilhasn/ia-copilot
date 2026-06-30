@@ -58,8 +58,10 @@ O Copilot não resolve o SIADAP enquanto sistema. Resolve **microproblemas concr
 | 15 | Objetivo sem possibilidade de superação | Binário, tudo-ou-nada | Desenhar níveis de atingido e superado | 🟢 / 🟡 |
 | 16 | Objetivo composto mal definido | Várias componentes sem pesos nem critérios | Decompor em componentes, pesos e critérios | 🟢 / 🟡 |
 | 17 | Dados pessoais ou sensíveis | Aproxima-se de decisão sobre pessoas | Reconstruir como cenário fictício | ⚫ / 🔴 |
+| 18 | Sistemas de Informação — disponibilidade | Meta de *uptime* sem histórico; depende de infraestrutura e fornecedores | Separar o controlável; distinguir paragem planeada de não planeada | 🟢 / 🟡 |
+| 19 | Projetos de desenvolvimento informático | Binário, sem superação; depende de terceiros; mede entrega, não adoção | Decompor em marcos; definir atingido e superado | 🟢 / 🟡 |
 
-## 3. Os 17 desafios
+## 3. Os 19 desafios
 
 Cada cartão segue a mesma estrutura: contexto fictício · objetivo problemático · porque parece aceitável · fragilidade escondida · pergunta-chave · como o Copilot ajuda · prompt · resultado esperado · limite · semáforo.
 
@@ -737,6 +739,87 @@ Mantém a decisão sobre pessoas inteiramente humana.
 **Limite.** O Copilot **não** ordena trabalhadores, não prevê desempenho individual e não sugere menções. Os dados de assiduidade, saúde, disciplina ou situações individuais não entram.
 
 **Semáforo** — ⚫ Nunca para dados sensíveis ou desnecessários · 🔴 Vermelho para decisão sobre pessoas com dados nominais · 🟢 Verde apenas depois de reconstruído como cenário fictício.
+
+---
+
+### Cartão 18 · Sistemas de Informação — disponibilidade
+
+**Contexto fictício.** A unidade de Sistemas de Informação garante o funcionamento das plataformas de que todos os serviços dependem. A direção quer um objetivo que "demonstre fiabilidade" no próximo ciclo.
+
+**Objetivo problemático**
+
+> "Assegurar a disponibilidade dos sistemas de informação críticos do organismo, garantindo um nível de funcionamento de 99,5% e tempos de reposição reduzidos em caso de incidente, contribuindo para a continuidade dos serviços."
+
+**Porque parece aceitável.** Tem uma percentagem concreta (99,5%), fala em continuidade e em reposição — soa técnico e rigoroso.
+
+**Fragilidade escondida.** Os 99,5% podem não ter histórico que os sustente; a disponibilidade depende de infraestrutura, energia, fornecedores e serviços externos (não só da equipa); e "tempos de reposição reduzidos" é vago e não distingue paragem **planeada** de **não planeada**.
+
+**Pergunta-chave para o Copilot.** "Que parte da disponibilidade está sob controlo da equipa — e os 99,5% têm histórico que os sustente?"
+
+**Como o Copilot pode ajudar.** Separa o controlável (manutenção própria) do não-controlável (infraestrutura, energia, fornecedores), distingue indisponibilidade planeada de não planeada, identifica os dados precisos para fixar a meta e propõe uma fonte (monitorização, registo de incidentes).
+
+**Prompt recomendado**
+
+```text
+Analisa este objetivo de disponibilidade de sistemas:
+
+[colar objetivo]
+
+1. que parte da disponibilidade depende da equipa e que parte depende de infraestrutura, energia ou fornecedores;
+2. como distinguir paragem planeada de não planeada;
+3. que dados são precisos para justificar a meta de 99,5%;
+4. que indicador e que fonte de verificação propões.
+
+Não confirmes que 99,5% é adequado — não tens dados para isso. Não inventes metas.
+Quando faltar informação, escreve "a definir pelo avaliador e avaliado".
+```
+
+**Resultado esperado.** A separação controlável/não-controlável, a distinção planeada/não planeada, os dados em falta e um indicador com fonte.
+
+**Limite.** Não valida os 99,5% como realista nem assume responsabilidades de fornecedores externos.
+
+**Semáforo** — 🟢 / 🟡. Verde na formulação e na separação de responsabilidades; Amarelo quando se fixa a meta de disponibilidade.
+
+---
+
+### Cartão 19 · Projetos de desenvolvimento informático
+
+**Contexto fictício.** Uma equipa de desenvolvimento vai construir uma nova aplicação interna. O objetivo do ciclo resume-se a "entregar a aplicação".
+
+**Objetivo problemático**
+
+> "Desenvolver e colocar em produção a nova aplicação de gestão de processos do serviço, assegurando o levantamento de requisitos junto das unidades, o desenvolvimento, os testes e a entrada em funcionamento até ao final do ciclo avaliativo."
+
+**Porque parece aceitável.** É concreto, tem um produto final claro (a aplicação em produção) e um prazo.
+
+**Fragilidade escondida.** É praticamente **binário** (entrou em produção ou não), sem níveis de superação; depende de terceiros (requisitos das unidades, validações, fornecedores); o desenvolvimento de software tem incerteza inerente e os prazos deslizam por razões legítimas; e mede a **entrega**, não a qualidade nem a adoção. Junta várias fases numa só frase — candidato a objetivo composto, por marcos.
+
+**Pergunta-chave para o Copilot.** "Como medir um projeto de desenvolvimento sem o reduzir a 'entrou em produção / não entrou'?"
+
+**Como o Copilot pode ajudar.** Decompõe o projeto em marcos (requisitos, desenvolvimento, testes, produção), propõe um indicador de progresso e uma fonte por marco, separa o controlável (código, testes) do não-controlável (requisitos de terceiros, validações) e ajuda a definir superação (marco antecipado, qualidade, adoção) sem inventar prazos.
+
+**Prompt recomendado**
+
+```text
+Este objetivo descreve um projeto de desenvolvimento informático numa só frase:
+
+[colar objetivo]
+
+1. decompõe-o em marcos (ex.: requisitos, desenvolvimento, testes, produção);
+2. para cada marco, propõe um indicador de progresso e uma fonte de verificação;
+3. separa o que depende da equipa do que depende de terceiros;
+4. sugere como definir "atingido" e "superado" sem o reduzir a "entrou em produção / não entrou";
+5. distingue entrega de qualidade e de adoção.
+
+Não inventes prazos nem metas finais. Quando faltar informação, escreve "a definir pelo avaliador e avaliado".
+Identifica as decisões humanas necessárias.
+```
+
+**Resultado esperado.** O projeto repartido em marcos com indicador e fonte, a separação controlável/não-controlável e uma proposta de níveis de atingido e superado.
+
+**Limite.** Não fixa os prazos nem garante a viabilidade do calendário — a incerteza do desenvolvimento é real e a calendarização é decisão humana.
+
+**Semáforo** — 🟢 / 🟡. Verde na decomposição por marcos; Amarelo quando entram prazos e metas dependentes de terceiros.
 
 ---
 

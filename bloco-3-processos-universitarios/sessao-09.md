@@ -103,7 +103,7 @@ Vista a armadilha, fica o uso que compensa. O Copilot é útil para:
 > O Copilot é **fraco a inventar metas**, mas **forte a criticar rascunhos**.
 
 {: .note }
-> Querem trabalhar casos mais próximos da realidade dos serviços? Vejam os [Desafios SIADAP · Casos práticos para trabalhar com o Copilot]({% link bloco-3-processos-universitarios/sessao-09-desafios-siadap.md %}) — 17 objetivos problemáticos, com fragilidades escondidas, desafios de medição e um prompt específico para cada um.
+> Querem trabalhar casos mais próximos da realidade dos serviços? Vejam os [Desafios SIADAP · Casos práticos para trabalhar com o Copilot]({% link bloco-3-processos-universitarios/sessao-09-desafios-siadap.md %}) — 19 objetivos problemáticos, com fragilidades escondidas, desafios de medição e um prompt específico para cada um.
 
 ## 5. Semáforo SIADAP com IA
 
