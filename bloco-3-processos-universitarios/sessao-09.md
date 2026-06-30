@@ -225,6 +225,16 @@ Respondidas essas perguntas pela Helena — não pelo Copilot —, o objetivo pa
 
 **Risco** — Se medir apenas rapidez, pode prejudicar a qualidade da resposta.
 
+### Objetivo simples vs. composto
+
+Esse *Risco* aponta para uma solução: o **objetivo composto**.
+
+Um objetivo **simples** mede-se por **um** indicador. Um objetivo **composto** tem **dois ou mais** indicadores que, juntos, captam o que um só deixaria de fora — e o grau de realização (não atingido · atingido · superado) resulta da **combinação** desses indicadores, segundo os critérios de superação fixados à partida.
+
+No caso da Helena: um indicador de **prazo** (a rapidez) *e* um de **qualidade** (ex.: reclamações ou retrabalho), cada um com o seu critério. Assim, ninguém cumpre o objetivo a despachar depressa e a responder mal — as duas dimensões contam.
+
+> O Copilot ajuda a **desenhá-los**: a partir de um objetivo vago, sugere que indicadores o compõem e onde se medem. Os pesos e os critérios de superação são decisão vossa. Os Prompts 1 e 2 servem exatamente para isto.
+
 ## 9. Prompts essenciais {#prompts-essenciais}
 
 Quatro prompts cobrem quase tudo o que precisam. Copiem, colem o vosso objetivo e adaptem o contexto.
