@@ -10,13 +10,13 @@ has_children: true
 
 **Duração:** 8 horas (4 sessões)
 
-Aplicação do Copilot a processos sensíveis das IES, com enquadramento legal reforçado: avaliação de desempenho, contratação pública, júris e prestação de contas.
+Aplicação do Copilot a processos sensíveis das IES, com enquadramento legal reforçado: avaliação de desempenho, atas e reuniões dos órgãos, júris e prestação de contas.
 
 ## Sessões deste bloco
 
 | Sessão | Tema | Casos de uso |
 |---:|---|---|
 | 9 | SIADAP — apoiar a redação de objetivos SMART | Apoio à redação de objetivos SIADAP SMART |
-| 10 | Contratação pública e análise documental | Comparação de propostas em concurso público |
+| 10 | Atas e gestão de reuniões dos órgãos | Redação de atas · Reuniões dos órgãos (aprofundamento) |
 | 11 | Júris, candidaturas e decisões sobre pessoas | Apoio a júri — demonstração negativa e reconstrução |
 | 12 | Qualidade, acreditação e prestação de contas | Execução orçamental completa; newsletter |
