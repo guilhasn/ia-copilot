@@ -21,6 +21,7 @@ DOCS = RAIZ  # o script vive dentro de materiais/
 
 # ---------------------------------------------------------------- conteúdo
 
+HUB_URL = "https://guilhasn.github.io/ia-copilot/"
 CURSO = "IA Generativa e Copilot Microsoft 365"
 SUBTITULO = "Formação ANFUP · Materiais para os formandos"
 NOTA_FICTICIO = (
@@ -119,7 +120,15 @@ body{
 a{color:inherit}
 
 /* cabeçalho editorial */
-.masthead{padding:44px 0 28px;border-bottom:3px double var(--filete)}
+.masthead{padding:44px 0 28px;border-bottom:3px double var(--filete);position:relative}
+.link-hub{
+  position:absolute;top:18px;right:0;text-decoration:none;font-weight:700;
+  font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--cinza);
+  border:1px solid var(--filete);padding:7px 14px;border-radius:999px;
+  transition:color .15s,border-color .15s;
+}
+.link-hub:hover{color:var(--acc);border-color:var(--acc)}
+@media (max-width:640px){.link-hub{position:static;display:inline-block;margin-bottom:14px}}
 .masthead .antetitulo{
   font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--cinza);
   display:flex;align-items:center;gap:14px;margin-bottom:18px;
@@ -432,6 +441,7 @@ def gerar_index():
 </script>"""
     corpo = f"""
 <header class="masthead">
+  <a class="link-hub" href="{HUB_URL}">&#8962; Hub da formação</a>
   <p class="antetitulo">Formação ANFUP · 2026</p>
   <h1 class="curso">{html.escape(CURSO)}</h1>
   <p class="sub">{html.escape(SUBTITULO)}</p>
@@ -441,7 +451,7 @@ def gerar_index():
 {seccoes}
 <footer class="rodape">
   <span>{html.escape(CURSO)} — Formação ANFUP</span>
-  <span>Materiais de formação · dados fictícios</span>
+  <span><a href="{HUB_URL}">Hub da formação</a> · Materiais de formação · dados fictícios</span>
 </footer>
 {script}"""
     with open(os.path.join(DOCS, "index.html"), "w", encoding="utf-8") as f:
@@ -482,7 +492,7 @@ def gerar_paginas_leitura():
 </article>
 <footer class="rodape">
   <span>{html.escape(CURSO)} — Formação ANFUP</span>
-  <span>Materiais de formação · dados fictícios</span>
+  <span><a href="{HUB_URL}">Hub da formação</a> · Materiais de formação · dados fictícios</span>
 </footer>"""
         destino = os.path.join(DOCS, slug, saida)
         with open(destino, "w", encoding="utf-8") as f:
