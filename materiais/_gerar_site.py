@@ -145,6 +145,30 @@ h1.curso{
 }
 .nota-ficticio strong{color:var(--tinta)}
 
+/* menu de sessões (sticky) */
+nav.menu-sessoes{
+  position:sticky;top:0;z-index:20;display:flex;flex-wrap:wrap;gap:10px;
+  padding:14px 0;margin-top:6px;background:var(--papel);
+  border-bottom:1px solid var(--filete);
+}
+nav.menu-sessoes .rotulo-menu{
+  align-self:center;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--cinza);font-weight:700;margin-right:6px;
+}
+nav.menu-sessoes a{
+  display:inline-flex;align-items:baseline;gap:9px;text-decoration:none;
+  border:1.5px solid var(--acc-m,#3d5342);color:var(--acc-m,#3d5342);
+  padding:8px 16px;border-radius:999px;font-weight:700;font-size:.92rem;
+  transition:background .15s,color .15s,transform .15s;
+}
+nav.menu-sessoes a .num{
+  font-family:"Fraunces",serif;font-weight:640;font-size:1.05rem;line-height:1;
+}
+nav.menu-sessoes a:hover{transform:translateY(-1px)}
+nav.menu-sessoes a.ativo{background:var(--acc-m,#3d5342);color:var(--papel)}
+body.js-tabs .sessao{display:none}
+body.js-tabs .sessao.visivel{display:block;margin-top:34px}
+
 /* secções de sessão */
 .sessao{margin-top:64px;position:relative}
 .sessao-cab{
@@ -368,6 +392,44 @@ def seccao_sessao(s):
 
 def gerar_index():
     seccoes = "".join(seccao_sessao(s) for s in SESSOES)
+    itens_menu = "".join(
+        f'<a href="#{s["slug"]}" data-slug="{s["slug"]}" style="--acc-m:{s["acento"]}">'
+        f'<span class="num">{s["numero"]}</span> {html.escape(s["titulo"])}</a>'
+        for s in SESSOES
+    )
+    menu = (
+        '<nav class="menu-sessoes" aria-label="Sessões">'
+        '<span class="rotulo-menu">Sessões</span>'
+        f"{itens_menu}</nav>"
+    )
+    # comutação de sessões: mostra uma de cada vez; sem JS, ficam todas
+    # visíveis e o menu funciona como âncoras. O hash (#sessao-10) continua
+    # a servir de link directo a partir das páginas das sessões do hub.
+    script = """
+<script>
+(function () {
+  var slugs = Array.prototype.map.call(
+    document.querySelectorAll("nav.menu-sessoes a"),
+    function (a) { return a.getAttribute("data-slug"); }
+  );
+  if (!slugs.length) { return; }
+  document.body.classList.add("js-tabs");
+  function ativar(slug) {
+    if (slugs.indexOf(slug) === -1) { slug = slugs[0]; }
+    document.querySelectorAll(".sessao").forEach(function (s) {
+      s.classList.toggle("visivel", s.id === slug);
+    });
+    document.querySelectorAll("nav.menu-sessoes a").forEach(function (a) {
+      a.classList.toggle("ativo", a.getAttribute("data-slug") === slug);
+    });
+  }
+  window.addEventListener("hashchange", function () {
+    ativar(location.hash.replace("#", ""));
+    window.scrollTo(0, 0);
+  });
+  ativar(location.hash.replace("#", ""));
+})();
+</script>"""
     corpo = f"""
 <header class="masthead">
   <p class="antetitulo">Formação ANFUP · 2026</p>
@@ -375,11 +437,13 @@ def gerar_index():
   <p class="sub">{html.escape(SUBTITULO)}</p>
   <p class="nota-ficticio"><strong>Nota:</strong> {html.escape(NOTA_FICTICIO)}</p>
 </header>
+{menu}
 {seccoes}
 <footer class="rodape">
   <span>{html.escape(CURSO)} — Formação ANFUP</span>
   <span>Materiais de formação · dados fictícios</span>
-</footer>"""
+</footer>
+{script}"""
     with open(os.path.join(DOCS, "index.html"), "w", encoding="utf-8") as f:
         f.write(esqueleto(
             f"{CURSO} — Formação ANFUP",

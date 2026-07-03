@@ -51,6 +51,30 @@ h1.curso{
 }
 .nota-ficticio strong{color:var(--tinta)}
 
+/* menu de sessões (sticky) */
+nav.menu-sessoes{
+  position:sticky;top:0;z-index:20;display:flex;flex-wrap:wrap;gap:10px;
+  padding:14px 0;margin-top:6px;background:var(--papel);
+  border-bottom:1px solid var(--filete);
+}
+nav.menu-sessoes .rotulo-menu{
+  align-self:center;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--cinza);font-weight:700;margin-right:6px;
+}
+nav.menu-sessoes a{
+  display:inline-flex;align-items:baseline;gap:9px;text-decoration:none;
+  border:1.5px solid var(--acc-m,#3d5342);color:var(--acc-m,#3d5342);
+  padding:8px 16px;border-radius:999px;font-weight:700;font-size:.92rem;
+  transition:background .15s,color .15s,transform .15s;
+}
+nav.menu-sessoes a .num{
+  font-family:"Fraunces",serif;font-weight:640;font-size:1.05rem;line-height:1;
+}
+nav.menu-sessoes a:hover{transform:translateY(-1px)}
+nav.menu-sessoes a.ativo{background:var(--acc-m,#3d5342);color:var(--papel)}
+body.js-tabs .sessao{display:none}
+body.js-tabs .sessao.visivel{display:block;margin-top:34px}
+
 /* secções de sessão */
 .sessao{margin-top:64px;position:relative}
 .sessao-cab{
@@ -177,6 +201,7 @@ footer.rodape{
   <p class="sub">Formação ANFUP · Materiais para os formandos</p>
   <p class="nota-ficticio"><strong>Nota:</strong> Todos os dados destes materiais são fictícios e foram criados exclusivamente para fins de formação. Nomes, entidades, avaliações e deliberações são inventados; qualquer semelhança com pessoas ou instituições reais é coincidência.</p>
 </header>
+<nav class="menu-sessoes" aria-label="Sessões"><span class="rotulo-menu">Sessões</span><a href="#sessao-9" data-slug="sessao-9" style="--acc-m:#96520f"><span class="num">9</span> Análise de fichas SIADAP</a><a href="#sessao-10" data-slug="sessao-10" style="--acc-m:#155e68"><span class="num">10</span> Da convocatória à ata</a></nav>
 
 <section class="sessao" id="sessao-9" style="--acc:#96520f;--papel-2:#f3e3cf">
   <div class="sessao-cab">
@@ -200,6 +225,31 @@ footer.rodape{
   <span>IA Generativa e Copilot Microsoft 365 — Formação ANFUP</span>
   <span>Materiais de formação · dados fictícios</span>
 </footer>
+
+<script>
+(function () {
+  var slugs = Array.prototype.map.call(
+    document.querySelectorAll("nav.menu-sessoes a"),
+    function (a) { return a.getAttribute("data-slug"); }
+  );
+  if (!slugs.length) { return; }
+  document.body.classList.add("js-tabs");
+  function ativar(slug) {
+    if (slugs.indexOf(slug) === -1) { slug = slugs[0]; }
+    document.querySelectorAll(".sessao").forEach(function (s) {
+      s.classList.toggle("visivel", s.id === slug);
+    });
+    document.querySelectorAll("nav.menu-sessoes a").forEach(function (a) {
+      a.classList.toggle("ativo", a.getAttribute("data-slug") === slug);
+    });
+  }
+  window.addEventListener("hashchange", function () {
+    ativar(location.hash.replace("#", ""));
+    window.scrollTo(0, 0);
+  });
+  ativar(location.hash.replace("#", ""));
+})();
+</script>
 </div>
 </body>
 </html>

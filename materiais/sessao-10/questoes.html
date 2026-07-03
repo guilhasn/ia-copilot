@@ -51,6 +51,30 @@ h1.curso{
 }
 .nota-ficticio strong{color:var(--tinta)}
 
+/* menu de sessões (sticky) */
+nav.menu-sessoes{
+  position:sticky;top:0;z-index:20;display:flex;flex-wrap:wrap;gap:10px;
+  padding:14px 0;margin-top:6px;background:var(--papel);
+  border-bottom:1px solid var(--filete);
+}
+nav.menu-sessoes .rotulo-menu{
+  align-self:center;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--cinza);font-weight:700;margin-right:6px;
+}
+nav.menu-sessoes a{
+  display:inline-flex;align-items:baseline;gap:9px;text-decoration:none;
+  border:1.5px solid var(--acc-m,#3d5342);color:var(--acc-m,#3d5342);
+  padding:8px 16px;border-radius:999px;font-weight:700;font-size:.92rem;
+  transition:background .15s,color .15s,transform .15s;
+}
+nav.menu-sessoes a .num{
+  font-family:"Fraunces",serif;font-weight:640;font-size:1.05rem;line-height:1;
+}
+nav.menu-sessoes a:hover{transform:translateY(-1px)}
+nav.menu-sessoes a.ativo{background:var(--acc-m,#3d5342);color:var(--papel)}
+body.js-tabs .sessao{display:none}
+body.js-tabs .sessao.visivel{display:block;margin-top:34px}
+
 /* secções de sessão */
 .sessao{margin-top:64px;position:relative}
 .sessao-cab{
