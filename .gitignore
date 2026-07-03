@@ -16,3 +16,17 @@ node_modules/
 desktop.ini
 ~$*
 Guia_Sessao_01.pdf
+
+# materiais/ — proteção contra publicação de material exclusivo do formador
+materiais/**/00_LEIA-ME*
+materiais/**/04_Grelha_Correcao/
+materiais/**/06_Solucoes_Formador/
+materiais/**/07_Material_Apresentacao/
+materiais/**/*Formador*
+materiais/**/*Solucao*
+materiais/**/*Solucoes*
+materiais/**/*Grelha_Correcao*
+materiais/**/*Armadilhas*
+materiais/**/*Twist*
+materiais/**/*LEIA-ME*
+password.txt

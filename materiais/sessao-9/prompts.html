@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Versão de leitura de Prompts_Prontos_a_Usar_Copilot_M365.docx (o download do documento Word continua disponível).">
+<title>Prompts prontos a usar — Copilot Microsoft 365 · Sessão 9 — Formação ANFUP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,300;9..144,600;9..144,640&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f7f3ec'/%3E%3Ctext x='16' y='23' font-family='Georgia' font-size='19' font-weight='bold' text-anchor='middle' fill='%23155e68'%3EAI%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --papel:#f7f3ec; --papel-2:#efe9dd; --tinta:#23271f; --cinza:#6d6a5c;
+  --filete:#d8d0bf; --acc:#3d5342;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--papel); color:var(--tinta);
+  font-family:"Atkinson Hyperlegible",system-ui,sans-serif;
+  font-size:17px; line-height:1.6;
+  background-image:radial-gradient(rgba(35,39,31,.035) 1px, transparent 1px);
+  background-size:22px 22px;
+}
+.pagina{max-width:1060px;margin:0 auto;padding:0 24px 96px}
+a{color:inherit}
+
+/* cabeçalho editorial */
+.masthead{padding:44px 0 28px;border-bottom:3px double var(--filete)}
+.masthead .antetitulo{
+  font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--cinza);
+  display:flex;align-items:center;gap:14px;margin-bottom:18px;
+}
+.masthead .antetitulo::before,.masthead .antetitulo::after{
+  content:"";height:1px;background:var(--filete);flex:0 0 42px;
+}
+h1.curso{
+  font-family:"Fraunces",serif;font-optical-sizing:auto;font-weight:640;
+  font-size:clamp(2rem,5.4vw,3.4rem);line-height:1.06;margin:0 0 10px;
+  letter-spacing:-.015em;
+}
+.masthead .sub{color:var(--cinza);font-size:1.02rem;margin:0}
+
+.nota-ficticio{
+  margin:30px 0 0;padding:14px 18px 14px 22px;position:relative;
+  background:var(--papel-2);border:1px solid var(--filete);font-size:.92rem;
+  color:#4c4a3e;
+}
+.nota-ficticio::before{
+  content:"";position:absolute;left:-1px;top:-1px;bottom:-1px;width:5px;
+  background:repeating-linear-gradient(-45deg,#b3a684 0 6px,var(--papel) 6px 12px);
+}
+.nota-ficticio strong{color:var(--tinta)}
+
+/* secções de sessão */
+.sessao{margin-top:64px;position:relative}
+.sessao-cab{
+  display:grid;grid-template-columns:auto 1fr;gap:6px 26px;align-items:baseline;
+  border-bottom:1px solid var(--filete);padding-bottom:22px;
+}
+.sessao-num{
+  grid-row:1/span 2;font-family:"Fraunces",serif;font-weight:300;
+  font-size:clamp(4.6rem,10vw,7rem);line-height:.82;color:transparent;
+  -webkit-text-stroke:1.6px var(--acc);letter-spacing:-.04em;
+  transform:translateY(6px);
+}
+.sessao h2{
+  font-family:"Fraunces",serif;font-weight:600;letter-spacing:-.01em;
+  font-size:clamp(1.5rem,3.4vw,2.2rem);margin:0;
+}
+.sessao h2 .kicker{
+  display:block;font-family:"Atkinson Hyperlegible",sans-serif;font-weight:700;
+  font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--acc);
+  margin-bottom:8px;
+}
+.sessao .descricao{margin:8px 0 0;max-width:62ch;color:#3d4136}
+
+.leitura{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 8px}
+.leitura a{
+  display:inline-flex;align-items:center;gap:9px;text-decoration:none;
+  border:1.5px solid var(--acc);color:var(--acc);background:transparent;
+  padding:9px 16px;font-weight:700;font-size:.92rem;border-radius:2px;
+  transition:background .15s,color .15s,transform .15s;
+}
+.leitura a::before{content:"❧";font-size:1rem}
+.leitura a:hover{background:var(--acc);color:var(--papel);transform:translateY(-1px)}
+
+.grupos{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px;margin-top:26px}
+.grupo{border:1px solid var(--filete);background:rgba(255,255,255,.5);padding:18px 20px 14px}
+.grupo.largo{grid-column:1/-1}
+.grupo h3{
+  font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cinza);
+  margin:0 0 12px;display:flex;align-items:center;gap:10px;font-weight:700;
+}
+.grupo h3::after{content:"";flex:1;height:1px;background:var(--filete)}
+ul.ficheiros{list-style:none;margin:0;padding:0}
+ul.ficheiros li{border-top:1px dashed var(--filete)}
+ul.ficheiros li:first-child{border-top:0}
+ul.ficheiros a{
+  display:flex;align-items:center;gap:11px;padding:8px 4px;text-decoration:none;
+  transition:background .12s;
+}
+ul.ficheiros a:hover{background:var(--papel-2)}
+ul.ficheiros a:hover .nome{text-decoration:underline;text-underline-offset:3px}
+.nome{flex:1;font-size:.95rem}
+.tam{color:var(--cinza);font-size:.8rem;white-space:nowrap}
+.seta{color:var(--acc);font-weight:700}
+.badge{
+  flex:0 0 auto;font-size:.62rem;font-weight:700;letter-spacing:.08em;
+  padding:3px 7px;border-radius:2px;color:#fff;min-width:44px;text-align:center;
+}
+.badge.docx{background:#2b579a}.badge.xlsx{background:#217346}
+.badge.vtt{background:#8a4baf}.badge.outro{background:#666}
+
+.fichas-grelha ul.ficheiros{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:2px 22px;
+}
+.fichas-grelha ul.ficheiros li{border-top:1px dashed var(--filete)!important}
+
+/* páginas de documento */
+.doc-topo{
+  display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;
+  padding:18px 0;border-bottom:1px solid var(--filete);font-size:.9rem;
+}
+.doc-topo .voltar{text-decoration:none;color:var(--cinza);letter-spacing:.06em;text-transform:uppercase;font-size:.76rem;font-weight:700}
+.doc-topo .voltar:hover{color:var(--acc)}
+.btn-docx{
+  display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;
+  background:var(--acc);color:var(--papel);padding:9px 16px;border-radius:2px;font-size:.88rem;
+  transition:transform .15s,box-shadow .15s;
+}
+.btn-docx:hover{transform:translateY(-1px);box-shadow:0 3px 10px rgba(0,0,0,.18)}
+article.doc{max-width:74ch;margin:0 auto;padding-top:14px}
+article.doc h1{
+  font-family:"Fraunces",serif;font-weight:640;letter-spacing:-.015em;
+  font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.12;margin:26px 0 6px;
+}
+article.doc .sessao-tag{
+  font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--acc);
+  font-weight:700;margin-top:30px;
+}
+article.doc h2{
+  font-family:"Fraunces",serif;font-weight:600;font-size:1.45rem;margin:2.1em 0 .5em;
+  padding-top:.9em;border-top:1px solid var(--filete);
+}
+article.doc h3{font-family:"Fraunces",serif;font-weight:600;font-size:1.15rem;margin:1.6em 0 .4em}
+article.doc p{margin:.7em 0}
+article.doc li{margin:.35em 0}
+article.doc table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.93rem}
+article.doc td,article.doc th{border:1px solid var(--filete);padding:8px 12px;vertical-align:top;text-align:left}
+article.doc tr:first-child td{background:var(--papel-2);font-weight:700}
+article.doc td p{margin:0}
+article.doc em{color:#50503f}
+article.doc pre,article.doc code{white-space:pre-wrap;word-break:break-word}
+.doc-rodape{margin-top:56px;padding-top:18px;border-top:3px double var(--filete);text-align:center}
+
+footer.rodape{
+  margin-top:80px;padding-top:22px;border-top:3px double var(--filete);
+  color:var(--cinza);font-size:.85rem;display:flex;flex-wrap:wrap;gap:8px 24px;
+  justify-content:space-between;
+}
+@media (max-width:640px){
+  .sessao-cab{grid-template-columns:1fr}
+  .sessao-num{grid-row:auto;transform:none;margin-bottom:4px}
+}
+@media print{
+  body{background:#fff}
+  .leitura,.btn-docx,.doc-topo .voltar{display:none}
+}
+</style>
+</head>
+<body>
+<div class="pagina">
+
+<div class="doc-topo" style="--acc:#96520f">
+  <a class="voltar" href="../index.html#sessao-9">&#8592; Todos os materiais</a>
+  <a class="btn-docx" href="05_Prompts_Copilot/Prompts_Prontos_a_Usar_Copilot_M365.docx" download>&#8595; Descarregar Prompts_Prontos_a_Usar_Copilot_M365.docx</a>
+</div>
+<article class="doc" style="--acc:#96520f;--papel-2:#f3e3cf">
+  <p class="sessao-tag">Sessão 9 · Análise de fichas SIADAP</p>
+  <h1>Prompts prontos a usar — Copilot Microsoft 365</h1>
+  <p><strong>Questões e Prompts — Copilot Microsoft 365</strong></p><p><em>Sessão 9 — Caso prático SIADAP · Documento único de trabalho: para cada questão, o problema a resolver e o prompt pronto a usar · Dados fictícios</em></p><p><strong>Como usar este documento na aula:</strong> as questões estão organizadas em 5 níveis de dificuldade crescente. Para cada uma, leia primeiro o problema/objetivo (o que se pretende descobrir ou produzir) e use depois o prompt sugerido — copiando-o para o Copilot e adaptando-o se necessário. Registe o prompt que efetivamente usou e valide sempre a resposta nos documentos originais.</p><p><strong>Notas práticas:</strong> adapte os prompts à ferramenta em uso (Copilot no Word, no chat do Microsoft 365 ou no SharePoint com os ficheiros carregados). Se houver limites ao número de ficheiros, trabalhe por unidade orgânica (4 fichas de cada vez) e consolide no fim.</p><h2>Nível 1 — Análise simples</h2><p>Objetivo do nível: obter a visão global das 20 fichas e construir a tabela de controlo. Sem julgamentos ainda — apenas ler, resumir e organizar.</p><p><strong>1. Problema / objetivo:</strong> Obter uma primeira visão global das 20 fichas, antes de qualquer análise de detalhe.</p><p><em>Estás a apoiar o serviço de Recursos Humanos de um município na verificação de fichas de avaliação de desempenho SIADAP 3. Analisa as fichas em anexo e resume as principais conclusões: níveis de desempenho, menções propostas e aspetos que mereçam atenção.</em></p><p><strong>2. Problema / objetivo:</strong> Construir a tabela de controlo que servirá de base a todo o trabalho seguinte.</p><p><em>Cria uma tabela mais detalhada, ao nível do objetivo, com as colunas: trabalhador, unidade orgânica, objetivo, resultado obtido, classificação atribuída, fundamentação (resumida) e eventuais incoerências que detetes entre estes elementos.</em></p><p><strong>3. Problema / objetivo:</strong> Identificar as boas práticas: quem fundamenta bem serve de referência para corrigir os restantes.</p><p><em>Identifica os trabalhadores com fundamentações mais completas: as que referem o resultado apurado, o critério contratualizado e a evidência de verificação. Justifica a escolha com exemplos.</em></p><p><strong>4. Problema / objetivo:</strong> Detetar o problema inverso: fundamentações que nada dizem sobre o desempenho concreto.</p><p><em>Identifica os trabalhadores com fundamentações demasiado genéricas, que não referem resultados, critérios nem evidência. Transcreve um exemplo de cada.</em></p><p><strong>5. Problema / objetivo:</strong> Perceber como os trabalhadores se autoavaliam e que estilos existem.</p><p><em>Resume as autoavaliações dos trabalhadores, agrupadas por unidade orgânica, e classifica cada uma quanto ao estilo: objetiva e baseada em resultados; genérica; centrada no esforço; inflacionada face aos resultados.</em></p><p><strong>6. Problema / objetivo:</strong> Comparar o desempenho global entre unidades orgânicas.</p><p><em>Identifica as unidades orgânicas com melhores resultados globais, considerando as pontuações finais e as menções propostas. Apresenta o resultado em tabela, com a média por unidade orgânica.</em></p><p><strong>7. Problema / objetivo:</strong> Mapear os tipos de objetivos usados no município — base para discutir a qualidade da contratualização.</p><p><em>Lista os tipos de objetivos mais frequentes nas fichas analisadas (cumprimento de prazos, qualidade técnica, atendimento, digitalização, etc.) e indica quantas fichas contêm cada tipo.</em></p><h2>Nível 2 — Deteção de falhas e incoerências</h2><p>Objetivo do nível: encontrar os problemas — campos em falta, notas contrárias aos critérios, fundamentações fracas ou copiadas, menções não suportadas. É aqui que o Copilot mais poupa tempo face à leitura manual.</p><p><strong>1. Problema / objetivo:</strong> Verificar a completude da contratualização — há pelo menos um objetivo sem indicador de medida.</p><p><em>Verifica, ficha a ficha, se todos os objetivos têm: indicador de medida, meta, critério de cumprimento e critério de superação. Apresenta uma tabela apenas com as falhas encontradas, indicando a ficha, o objetivo e o elemento em falta.</em></p><p><strong>2. Problema / objetivo:</strong> Encontrar indicadores sem meta e critérios de superação não mensuráveis (por exemplo, baseados em &quot;empenho&quot;).</p><p><a id="OLE_LINK1"></a><em>Identifica objetivos com indicadores sem meta definida e critérios de superação vagos ou não mensuráveis. Cita o texto exato de cada caso e indica a ficha e o objetivo.</em></p><p><strong>3. Problema / objetivo:</strong> Detetar fundamentações que não justificam a classificação — elogios em vez de resultados e critérios.</p><p><em>Deteta fundamentações que não justificam adequadamente a classificação atribuída: as que não referem o resultado apurado nem o critério contratualizado. Para cada caso, indica a ficha, o objetivo e a razão.</em></p><p><strong>4. Problema / objetivo:</strong> Encontrar notas contrárias aos critérios contratualizados — existem casos nos dois sentidos (a mais e a menos).</p><p><em>Verifica, para cada objetivo com resultado quantitativo, se a classificação atribuída (1, 3 ou 5) corresponde à aplicação correta dos critérios de cumprimento e superação contratualizados. Lista os casos em que a nota deveria ser diferente, indicando o resultado, o critério e a nota correta.</em></p><p><strong>5. Problema / objetivo:</strong> Verificar se as menções finais propostas são suportadas pelas avaliações parcelares.</p><p><em>Verifica se a menção final proposta em cada ficha está alinhada com as avaliações parcelares e com a pontuação final. Assinala as menções que não estão suportadas e explica porquê.</em></p><p><strong>6. Problema / objetivo:</strong> Comparar a perceção do trabalhador com a avaliação atribuída — atenção aos desalinhamentos nos dois sentidos.</p><p><em>Compara a autoavaliação de cada trabalhador com a avaliação atribuída pelo avaliador e identifica divergências relevantes, indicando em que sentido divergem e se a divergência foi tratada na apreciação global.</em></p><p><strong>7. Problema / objetivo:</strong> Detetar fundamentações copiadas entre trabalhadores — sinal de avaliação em série.</p><p><em>Compara as fundamentações de todas as fichas e identifica textos copiados ou demasiado semelhantes entre trabalhadores diferentes. Transcreve os textos em causa e indica as fichas onde aparecem.</em></p><p><strong>8. Problema / objetivo:</strong> Encontrar apreciações globais vagas, genéricas ou em falta.</p><p><em>Verifica se alguma ficha tem a apreciação global em falta, incompleta ou demasiado genérica (sem referência aos resultados concretos do trabalhador). Transcreve o texto encontrado em cada caso.</em></p><p><strong>9. Problema / objetivo:</strong> Confirmar a identificação correta das unidades orgânicas — as designações devem corresponder exatamente à estrutura orgânica oficial.</p><p><em>Verifica se o nome da unidade orgânica indicado em cada ficha corresponde exatamente a uma das cinco divisões oficiais do Município listadas no documento de contexto. Assinala qualquer divergência de designação.</em></p><h2>Nível 3 — Uniformização e melhoria das fundamentações</h2><p>Objetivo do nível: passar da deteção à correção — reescrever, uniformizar e criar instrumentos de qualidade reutilizáveis.</p><p><strong>1. Problema / objetivo:</strong> Caracterizar as diferenças de estilo entre avaliadores — primeiro passo para uniformizar.</p><p><em>Compara as fundamentações das 20 fichas e descreve as principais diferenças de estilo entre as cinco unidades orgânicas: extensão, uso de evidência, objetividade da linguagem. Apresenta as conclusões numa tabela.</em></p><p><strong>2. Problema / objetivo:</strong> Definir uma estrutura uniforme de fundamentação para todo o município.</p><p><em>Propõe uma estrutura uniforme para a fundamentação de cada objetivo, com quatro elementos: resultado verificado, critério contratualizado aplicado, evidência de suporte e conclusão. Dá um exemplo preenchido.</em></p><p><strong>3. Problema / objetivo:</strong> Praticar a reescrita: transformar fundamentações frágeis em texto institucional, sem alterar o sentido da avaliação.</p><p><em>Reescreve as três fundamentações mais frágeis destas fichas em linguagem objetiva e institucional, seguindo a estrutura: resultado, critério aplicado, evidência, conclusão. Mantém o sentido da avaliação original.</em></p><p><strong>4. Problema / objetivo:</strong> Identificar e substituir linguagem subjetiva (elogios pessoais em vez de factos).</p><p><em>Identifica expressões subjetivas ou não institucionais nas fundamentações e apreciações globais (por exemplo, elogios à personalidade) e propõe, para cada uma, uma formulação objetiva equivalente.</em></p><p><strong>5. Problema / objetivo:</strong> Criar um instrumento reutilizável de validação de fundamentações.</p><p><em>Cria uma checklist para validação de fundamentações SIADAP, com 8 a 10 pontos de verificação, em tabela com colunas: ponto de controlo, sim/não e observações.</em></p><p><strong>6. Problema / objetivo:</strong> Definir critérios mínimos de qualidade — o que distingue uma fundamentação aceitável de uma insuficiente.</p><p><em>Sugere critérios mínimos para considerar uma fundamentação SIADAP bem elaborada. Organiza-os em &quot;obrigatórios&quot; e &quot;recomendados&quot;.</em></p><p><strong>7. Problema / objetivo:</strong> Uniformizar as apreciações globais de uma unidade orgânica, preservando o sentido de cada avaliação.</p><p><em>Normaliza a redação das apreciações globais das quatro fichas da Divisão de Administração e Recursos Humanos, usando um modelo comum, mantendo o sentido e o nível de cada avaliação.</em></p><p><em>Prompt complementar / alternativo:</em></p><p><em>Reescreve esta apreciação global em linguagem institucional e objetiva, mantendo o sentido da avaliação: [colar aqui o texto da apreciação].</em></p><p><em>Prompt complementar / alternativo:</em></p><p><em>Propõe um modelo-tipo de apreciação global do desempenho, com 4 a 6 frases, que os avaliadores deste município possam usar como referência.</em></p><h2>Nível 4 — Análise avançada</h2><p>Objetivo do nível: análises que exigem comparação entre fichas e entre unidades orgânicas — padrões, desigualdades de critério e matriz de risco. É o nível onde a análise em lote com IA mostra o maior valor acrescentado.</p><p><strong>1. Problema / objetivo:</strong> Detetar padrões por unidade orgânica: avaliadores mais generosos, mais exigentes, mais rigorosos na evidência.</p><p><em>Identifica padrões de avaliação por unidade orgânica: nível médio das classificações, frequência de superações, estilo das fundamentações. Que unidades orgânicas parecem mais generosas ou mais exigentes? Justifica.</em></p><p><strong>2. Problema / objetivo:</strong> Encontrar o par de trabalhadores com desempenhos quase idênticos e classificações diferentes — só se deteta comparando fichas.</p><p><em>Existem trabalhadores com resultados semelhantes em objetivos do mesmo tipo mas com classificações diferentes? Compara em particular as fichas dos assistentes operacionais da mesma unidade orgânica e identifica desigualdades de tratamento, citando os resultados e critérios de cada um.</em></p><p><strong>3. Problema / objetivo:</strong> Procurar desigualdades de critério entre unidades orgânicas (metas e limiares diferentes para objetivos idênticos).</p><p><em>Deteta possíveis desigualdades de critério entre unidades orgânicas: objetivos do mesmo tipo com metas ou limiares de superação diferentes, sem justificação aparente. Compara os critérios de superação de objetivos idênticos entre fichas.</em></p><p><strong>4. Problema / objetivo:</strong> Construir a matriz de risco — o instrumento de decisão dos RH.</p><p><em>Cria uma matriz de risco para os Recursos Humanos, classificando cada uma das 20 fichas como risco baixo, médio ou elevado, com base na gravidade das não conformidades detetadas. Justifica cada classificação numa coluna própria.</em></p><p><strong>5. Problema / objetivo:</strong> Transformar a análise em decisão: que fichas devolver e o que corrigir em cada uma.</p><p><em>Indica quais as fichas que devem ser devolvidas ao avaliador para correção antes da reunião do Conselho Coordenador da Avaliação, e descreve, para cada uma, exatamente o que deve ser corrigido.</em></p><p><strong>6. Problema / objetivo:</strong> Passar do caso concreto à melhoria do processo: recomendações para o próximo ciclo.</p><p><em>Com base em todos os problemas detetados, propõe recomendações concretas para melhorar a qualidade global do processo avaliativo no próximo ciclo, separadas em: fase de contratualização, fase de avaliação e fase de verificação pelos RH.</em></p><p><strong>7. Problema / objetivo:</strong> Sintetizar tudo para decisão superior — capacidade de síntese com apoio de IA.</p><p><em>Elabora uma síntese executiva, com o máximo de meia página, para o dirigente dos Recursos Humanos: número de fichas analisadas, principais problemas, fichas a devolver e próximos passos.</em></p><h2>Nível 5 — Produção de documentos</h2><p>Objetivo do nível: transformar a análise em entregáveis institucionais — relatório, plano de correção, comunicações e instrumentos de prevenção.</p><p><strong>1. Problema / objetivo:</strong> Produzir o relatório executivo completo da verificação.</p><p><em>Elabora um relatório executivo para o dirigente dos Recursos Humanos com as principais conclusões da análise destas fichas, com a estrutura: sumário executivo; objetivo; metodologia; caracterização das fichas; principais conclusões; não conformidades; riscos; recomendações; plano de ação; conclusão. Máximo duas páginas, linguagem institucional.</em></p><p><strong>2. Problema / objetivo:</strong> Formalizar as não conformidades numa tabela de gestão.</p><p><em>Cria uma tabela de não conformidades detetadas, com as colunas: ficha, trabalhador, unidade orgânica, tipo de problema, gravidade (baixa/média/elevada) e ação proposta.</em></p><p><strong>3. Problema / objetivo:</strong> Planear a correção com prioridades e prazos realistas.</p><p><em>Cria um plano de correção das fichas com não conformidades, em tabela com: ficha, correção necessária, responsável (avaliador ou RH), prioridade e prazo sugerido, considerando que o Conselho Coordenador da Avaliação reúne dentro de três semanas.</em></p><p><strong>4. Problema / objetivo:</strong> Comunicar as correções sem criar conflito — tom cordial e não acusatório.</p><p><em>Redige um email institucional, em português de Portugal, dirigido aos avaliadores do Município, a solicitar a revisão das fichas com inconformidades. O tom deve ser cordial e construtivo, sem identificar culpados. Estrutura: assunto, enquadramento, situações-tipo a rever, pedido, prazo, disponibilidade para apoio e fecho institucional.</em></p><p><strong>5. Problema / objetivo:</strong> Criar o instrumento de prevenção para os ciclos futuros.</p><p><em>Cria uma checklist para validação futura de fichas SIADAP antes da apreciação pelo Conselho Coordenador da Avaliação, em tabela com as colunas: ponto de controlo, sim/não, observações, necessidade de correção e prioridade. Inclui pontos sobre identificação, objetivos, indicadores, metas, critérios de superação, resultados, fundamentações, autoavaliação, apreciação global, menção final e linguagem.</em></p><p><strong>6. Problema / objetivo:</strong> Difundir boas práticas a toda a organização.</p><p><em>Cria uma minuta de comunicação interna, dirigida a todos os avaliadores, sobre boas práticas na fundamentação das avaliações SIADAP, com exemplos de &quot;antes e depois&quot; (fundamentação frágil vs. fundamentação correta).</em></p><p><strong>7. Problema / objetivo:</strong> Preparar a apresentação dos resultados aos dirigentes.</p><p><a id="OLE_LINK2"></a><em>Cria o conteúdo de 5 diapositivos para apresentar aos dirigentes as conclusões da verificação das fichas SIADAP: 1) âmbito da análise; 2) principais números; 3) não conformidades mais relevantes; 4) matriz de risco; 5) recomendações e próximos passos. Texto curto, orientado a tópicos.</em></p><p><strong>8. Problema / objetivo:</strong> Fechar o exercício com a demonstração de valor: manual vs. assistido por IA.</p><p><em>Cria um quadro comparativo entre a análise manual destas 20 fichas e a análise assistida por Copilot, nas dimensões: tempo estimado, cobertura, capacidade de comparação entre fichas, riscos de cada abordagem e qualidade dos documentos produzidos. Usa os tempos reais que registámos durante o exercício: [inserir tempos].</em></p><h2>Boas práticas de prompt neste contexto</h2><ul><li><strong>Dar papel e contexto</strong>: começar por &quot;Estás a apoiar o serviço de Recursos Humanos na verificação de fichas SIADAP 3…&quot;;</li><li><strong>Pedir formato</strong>: tabelas para verificações, listas curtas para conclusões, texto corrido para relatórios;</li><li><strong>Exigir localização</strong>: pedir sempre a ficha, o objetivo e a citação exata que suporta cada problema reportado;</li><li><strong>Iterar</strong>: refinar o prompt quando a resposta for genérica (&quot;sê mais específico&quot;, &quot;cita o texto exato&quot;);</li><li><strong>Validar</strong>: confirmar cada conclusão no documento original antes de a usar — dados pessoais e avaliações exigem verificação humana;</li><li><strong>Proteger dados</strong>: em contexto real, usar apenas o Copilot Microsoft 365 licenciado da organização, nunca ferramentas públicas, e respeitar o RGPD.</li></ul>
+  <div class="doc-rodape">
+    <a class="btn-docx" href="05_Prompts_Copilot/Prompts_Prontos_a_Usar_Copilot_M365.docx" download>&#8595; Descarregar Prompts_Prontos_a_Usar_Copilot_M365.docx</a>
+  </div>
+</article>
+<footer class="rodape">
+  <span>IA Generativa e Copilot Microsoft 365 — Formação ANFUP</span>
+  <span>Materiais de formação · dados fictícios</span>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Versão de leitura de Enunciado_Sessao10_Da_Convocatoria_a_Ata.docx (o download do documento Word continua disponível).">
+<title>Enunciado — Da convocatória à ata · Sessão 10 — Formação ANFUP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,300;9..144,600;9..144,640&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f7f3ec'/%3E%3Ctext x='16' y='23' font-family='Georgia' font-size='19' font-weight='bold' text-anchor='middle' fill='%23155e68'%3EAI%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --papel:#f7f3ec; --papel-2:#efe9dd; --tinta:#23271f; --cinza:#6d6a5c;
+  --filete:#d8d0bf; --acc:#3d5342;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--papel); color:var(--tinta);
+  font-family:"Atkinson Hyperlegible",system-ui,sans-serif;
+  font-size:17px; line-height:1.6;
+  background-image:radial-gradient(rgba(35,39,31,.035) 1px, transparent 1px);
+  background-size:22px 22px;
+}
+.pagina{max-width:1060px;margin:0 auto;padding:0 24px 96px}
+a{color:inherit}
+
+/* cabeçalho editorial */
+.masthead{padding:44px 0 28px;border-bottom:3px double var(--filete)}
+.masthead .antetitulo{
+  font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--cinza);
+  display:flex;align-items:center;gap:14px;margin-bottom:18px;
+}
+.masthead .antetitulo::before,.masthead .antetitulo::after{
+  content:"";height:1px;background:var(--filete);flex:0 0 42px;
+}
+h1.curso{
+  font-family:"Fraunces",serif;font-optical-sizing:auto;font-weight:640;
+  font-size:clamp(2rem,5.4vw,3.4rem);line-height:1.06;margin:0 0 10px;
+  letter-spacing:-.015em;
+}
+.masthead .sub{color:var(--cinza);font-size:1.02rem;margin:0}
+
+.nota-ficticio{
+  margin:30px 0 0;padding:14px 18px 14px 22px;position:relative;
+  background:var(--papel-2);border:1px solid var(--filete);font-size:.92rem;
+  color:#4c4a3e;
+}
+.nota-ficticio::before{
+  content:"";position:absolute;left:-1px;top:-1px;bottom:-1px;width:5px;
+  background:repeating-linear-gradient(-45deg,#b3a684 0 6px,var(--papel) 6px 12px);
+}
+.nota-ficticio strong{color:var(--tinta)}
+
+/* secções de sessão */
+.sessao{margin-top:64px;position:relative}
+.sessao-cab{
+  display:grid;grid-template-columns:auto 1fr;gap:6px 26px;align-items:baseline;
+  border-bottom:1px solid var(--filete);padding-bottom:22px;
+}
+.sessao-num{
+  grid-row:1/span 2;font-family:"Fraunces",serif;font-weight:300;
+  font-size:clamp(4.6rem,10vw,7rem);line-height:.82;color:transparent;
+  -webkit-text-stroke:1.6px var(--acc);letter-spacing:-.04em;
+  transform:translateY(6px);
+}
+.sessao h2{
+  font-family:"Fraunces",serif;font-weight:600;letter-spacing:-.01em;
+  font-size:clamp(1.5rem,3.4vw,2.2rem);margin:0;
+}
+.sessao h2 .kicker{
+  display:block;font-family:"Atkinson Hyperlegible",sans-serif;font-weight:700;
+  font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--acc);
+  margin-bottom:8px;
+}
+.sessao .descricao{margin:8px 0 0;max-width:62ch;color:#3d4136}
+
+.leitura{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 8px}
+.leitura a{
+  display:inline-flex;align-items:center;gap:9px;text-decoration:none;
+  border:1.5px solid var(--acc);color:var(--acc);background:transparent;
+  padding:9px 16px;font-weight:700;font-size:.92rem;border-radius:2px;
+  transition:background .15s,color .15s,transform .15s;
+}
+.leitura a::before{content:"❧";font-size:1rem}
+.leitura a:hover{background:var(--acc);color:var(--papel);transform:translateY(-1px)}
+
+.grupos{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px;margin-top:26px}
+.grupo{border:1px solid var(--filete);background:rgba(255,255,255,.5);padding:18px 20px 14px}
+.grupo.largo{grid-column:1/-1}
+.grupo h3{
+  font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cinza);
+  margin:0 0 12px;display:flex;align-items:center;gap:10px;font-weight:700;
+}
+.grupo h3::after{content:"";flex:1;height:1px;background:var(--filete)}
+ul.ficheiros{list-style:none;margin:0;padding:0}
+ul.ficheiros li{border-top:1px dashed var(--filete)}
+ul.ficheiros li:first-child{border-top:0}
+ul.ficheiros a{
+  display:flex;align-items:center;gap:11px;padding:8px 4px;text-decoration:none;
+  transition:background .12s;
+}
+ul.ficheiros a:hover{background:var(--papel-2)}
+ul.ficheiros a:hover .nome{text-decoration:underline;text-underline-offset:3px}
+.nome{flex:1;font-size:.95rem}
+.tam{color:var(--cinza);font-size:.8rem;white-space:nowrap}
+.seta{color:var(--acc);font-weight:700}
+.badge{
+  flex:0 0 auto;font-size:.62rem;font-weight:700;letter-spacing:.08em;
+  padding:3px 7px;border-radius:2px;color:#fff;min-width:44px;text-align:center;
+}
+.badge.docx{background:#2b579a}.badge.xlsx{background:#217346}
+.badge.vtt{background:#8a4baf}.badge.outro{background:#666}
+
+.fichas-grelha ul.ficheiros{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:2px 22px;
+}
+.fichas-grelha ul.ficheiros li{border-top:1px dashed var(--filete)!important}
+
+/* páginas de documento */
+.doc-topo{
+  display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;
+  padding:18px 0;border-bottom:1px solid var(--filete);font-size:.9rem;
+}
+.doc-topo .voltar{text-decoration:none;color:var(--cinza);letter-spacing:.06em;text-transform:uppercase;font-size:.76rem;font-weight:700}
+.doc-topo .voltar:hover{color:var(--acc)}
+.btn-docx{
+  display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;
+  background:var(--acc);color:var(--papel);padding:9px 16px;border-radius:2px;font-size:.88rem;
+  transition:transform .15s,box-shadow .15s;
+}
+.btn-docx:hover{transform:translateY(-1px);box-shadow:0 3px 10px rgba(0,0,0,.18)}
+article.doc{max-width:74ch;margin:0 auto;padding-top:14px}
+article.doc h1{
+  font-family:"Fraunces",serif;font-weight:640;letter-spacing:-.015em;
+  font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.12;margin:26px 0 6px;
+}
+article.doc .sessao-tag{
+  font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--acc);
+  font-weight:700;margin-top:30px;
+}
+article.doc h2{
+  font-family:"Fraunces",serif;font-weight:600;font-size:1.45rem;margin:2.1em 0 .5em;
+  padding-top:.9em;border-top:1px solid var(--filete);
+}
+article.doc h3{font-family:"Fraunces",serif;font-weight:600;font-size:1.15rem;margin:1.6em 0 .4em}
+article.doc p{margin:.7em 0}
+article.doc li{margin:.35em 0}
+article.doc table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.93rem}
+article.doc td,article.doc th{border:1px solid var(--filete);padding:8px 12px;vertical-align:top;text-align:left}
+article.doc tr:first-child td{background:var(--papel-2);font-weight:700}
+article.doc td p{margin:0}
+article.doc em{color:#50503f}
+article.doc pre,article.doc code{white-space:pre-wrap;word-break:break-word}
+.doc-rodape{margin-top:56px;padding-top:18px;border-top:3px double var(--filete);text-align:center}
+
+footer.rodape{
+  margin-top:80px;padding-top:22px;border-top:3px double var(--filete);
+  color:var(--cinza);font-size:.85rem;display:flex;flex-wrap:wrap;gap:8px 24px;
+  justify-content:space-between;
+}
+@media (max-width:640px){
+  .sessao-cab{grid-template-columns:1fr}
+  .sessao-num{grid-row:auto;transform:none;margin-bottom:4px}
+}
+@media print{
+  body{background:#fff}
+  .leitura,.btn-docx,.doc-topo .voltar{display:none}
+}
+</style>
+</head>
+<body>
+<div class="pagina">
+
+<div class="doc-topo" style="--acc:#155e68">
+  <a class="voltar" href="../index.html#sessao-10">&#8592; Todos os materiais</a>
+  <a class="btn-docx" href="01_Enunciado/Enunciado_Sessao10_Da_Convocatoria_a_Ata.docx" download>&#8595; Descarregar Enunciado_Sessao10_Da_Convocatoria_a_Ata.docx</a>
+</div>
+<article class="doc" style="--acc:#155e68;--papel-2:#d8e8e6">
+  <p class="sessao-tag">Sessão 10 · Da convocatória à ata</p>
+  <h1>Enunciado — Da convocatória à ata</h1>
+  <p><strong>Caso Prático — Sessão 10</strong></p><p><strong>Da Convocatória à Ata: o Ciclo Completo de uma Reunião de Órgão</strong></p><p><em>Documento fictício, criado exclusivamente para fins de formação. Todos os nomes, entidades e dados são inventados.</em></p><h2>1. Enquadramento</h2><p>O Conselho Científico (CC) da Faculdade de Ciências e Tecnologia da Universidade de Vale Verde (UVV, entidade fictícia) reúne ordinariamente a 16 de junho de 2026. A Dra. Odete Bicho Fragoso, secretária do órgão, gere todo o ciclo da reunião: recebe os pedidos de agendamento, prepara a convocatória e a ordem de trabalhos, apoia a reunião (gravada no Teams com transcrição automática), lavra a minuta da ata e assegura as comunicações posteriores.</p><p>Neste exercício, o seu grupo é a <strong>equipa de apoio ao secretariado do CC</strong> e percorre o ciclo completo com o Copilot Microsoft 365: <strong>antes</strong> (Fase A — da caixa de entrada à convocatória), <strong>durante/depois</strong> (Estações 1 a 4 — da transcrição à ata, com sigilo, anonimização e registo auditável) e <strong>fecho</strong> (Fase C — as comunicações pós-reunião, incluindo uma muito delicada).</p><h2>2. Objetivo</h2><ul><li>Triar pedidos de agendamento e construir a ordem de trabalhos e a convocatória formais;</li><li>Produzir uma minuta de ata fiel, no modelo institucional, a partir da transcrição Teams;</li><li>Distinguir o que consta da ata, o que não consta, e o que consta de forma protegida;</li><li>Produzir o extrato público anonimizado e o registo auditável de deliberações;</li><li>Redigir as comunicações pós-reunião com o tom institucional adequado — mesmo quando o assunto é desconfortável;</li><li>Detetar as armadilhas plantadas ao longo de todo o ciclo (a transcrição não é o único sítio onde elas vivem).</li></ul><h2>3. Documentos disponíveis</h2><table><tr><td><p><strong>Pasta</strong></p></td><td><p><strong>Conteúdo</strong></p></td></tr><tr><td><p>02_Transcricao_Reuniao</p></td><td><p>Transcrição da reunião (Word, como o Teams exporta) e ficheiro .vtt original com marcas temporais.</p></td></tr><tr><td><p>03_Dados_Apoio</p></td><td><p>Caixa de entrada da secretária (pedidos de agendamento), contexto da UVV e do CC, registo de presenças, modelo institucional de ata e mapa de deliberações pendentes.</p></td></tr><tr><td><p>05_Prompts_Copilot</p></td><td><p>Questões e prompts prontos a usar, organizados por fase e estação.</p></td></tr></table><p><em>Nota: as pastas 04 e 06 são de uso exclusivo do formador. Durante a atividade, o formador entregará um documento adicional a cada grupo — não o abram antes de ele o indicar.</em></p><h2>4. O percurso — ciclo completo (≈ 135 min + discussão)</h2><h3>Fase A — Antes da reunião: da caixa de entrada à convocatória (20 min)</h3><p>Situação: é dia 5 de junho de 2026. A convocatória tem de ser expedida até 10 de junho (antecedência regimental — a confirmar com o regimento do órgão). Na caixa de entrada da secretária estão cinco mensagens com pedidos para a reunião.</p><ol><li>Trie os pedidos recebidos: o que entra na ordem de trabalhos, o que fica para «outros assuntos», o que fica de fora — e porquê (prazo? competência do órgão?);</li><li>Construa a ordem de trabalhos e redija a convocatória formal com o Copilot, atenção redobrada ao ponto de natureza reservada;</li><li>Redija a minuta do email de convocatória aos membros: destinatários, anexos corretos (há um anexo que NÃO pode circular), prazos e formato da reunião;</li><li>Redija a resposta ao pedido que não pode ser atendido, em tom cordial e fundamentado.</li></ol><h3>Estação 1 — Da transcrição à minuta de ata (25 min)</h3><ol><li>Peça ao Copilot um resumo da reunião estruturado pelos pontos da ordem de trabalhos (a vossa, da Fase A);</li><li>Extraia as deliberações e votações — e confronte as contagens com o registo de presenças (há surpresas);</li><li>Inventarie o que exige confirmação humana: [inaudível], oradores não identificados, falas de quem já saíra;</li><li>Produza a minuta de ata no modelo institucional, com a declaração de voto textual.</li></ol><h3>Estação 2 — Sigilo e anonimização (20 min)</h3><ol><li>Identifique todos os dados pessoais e sensíveis presentes na transcrição (há mais do que parece);</li><li>Decida, ponto a ponto: ata integral, forma protegida, ou exclusão;</li><li>Redija o ponto 4 nas duas versões: ata integral e extrato público (estudante não identificável);</li><li>Trate corretamente o «isto não fica em ata» e o parecer jurídico confidencial.</li></ol><h3>Estação 3 — Registo auditável (15 min)</h3><ol><li>Construa o mapa de deliberações da reunião: número, assunto, votação, responsável, prazo;</li><li>Atualize o mapa de deliberações pendentes;</li><li>Extraia os action items com responsável e prazo;</li><li>Guarde o registo dos prompts utilizados — o vosso diário de auditoria.</li></ol><h3>Estação 4 — Auditoria cruzada (20 min)</h3><ol><li>Troque a minuta de ata com outro grupo;</li><li>Audite a ata recebida: dados pessoais que escaparam? Contagens erradas? Falas de quem já saíra? Declaração de voto completa?</li><li>Registe as falhas com evidência — cada armadilha detetada vale pontos;</li><li>Devolva o resultado com propostas de correção.</li></ol><h3>Fase C — Depois da reunião: as comunicações (15 min)</h3><p>A minuta está feita, mas o trabalho do secretariado não acabou. Há três emails para escrever — um deles exige diplomacia de alto nível.</p><ol><li>Email à conselheira Cristiana Vilaça Moniz: pedir a confirmação do texto exato da declaração de voto (a gravação tem um trecho inaudível);</li><li>Nota reservada ao presidente do órgão: expor, em tom factual e não acusatório, os dois problemas do ponto 5 (participação de membro impedido; contagem de votos da transcrição incompatível com os presentes no ponto 3) e sugerir o caminho de regularização;</li><li>Email aos Serviços Académicos: comunicar a deliberação do regime especial — sem qualquer referência ao motivo clínico;</li><li>Atualize o mapa de deliberações pendentes e esboce a agenda preliminar da reunião de 14 de julho.</li></ol><h2>5. Entregáveis</h2><ol><li>Fase A: ordem de trabalhos + convocatória formal, minuta do email de convocatória e resposta ao pedido não atendido;</li><li>Minuta de ata formal (modelo institucional);</li><li>Extrato público anonimizado;</li><li>Mapa de deliberações e action items (incluindo pendentes atualizadas);</li><li>Resposta ao documento-surpresa entregue pelo formador;</li><li>Fase C: as três minutas de email pós-reunião;</li><li>Registo dos prompts utilizados (diário de auditoria);</li><li>Relatório da auditoria cruzada.</li></ol><h2>6. Critérios de sucesso</h2><ul><li>Fase A: ordem de trabalhos correta (ponto reservado sem identificação; pedido tardio tratado com fundamento; anexo confidencial não circulado);</li><li>Fidelidade: a ata reflete o que foi deliberado — nada inventado para preencher lacunas;</li><li>Proteção: nenhum dado pessoal sensível desnecessário; extrato público sem pessoas identificáveis;</li><li>Rigor formal: contagens compatíveis com as presenças; impedimentos e saídas registados; declaração de voto textual;</li><li>Fase C: comunicações com o tom certo — em especial a nota ao presidente, factual sem ser acusatória;</li><li>Auditabilidade: deliberações numeradas, action items com dono e prazo, log de prompts completo.</li></ul><h2>7. Regras de utilização do Copilot neste exercício</h2><ul><li>A IA propõe, o secretário dispõe: nenhum texto sai do grupo sem validação humana;</li><li>Nunca pedir à IA para «completar» trechos inaudíveis ou ambíguos — assinalar para confirmação;</li><li>Em contexto real, transcrições e documentos de órgãos só no Copilot Microsoft 365 licenciado da instituição — contêm dados pessoais e matéria reservada;</li><li>A gravação e a transcrição são instrumentos auxiliares temporários; o ato formal é a ata aprovada e assinada (a confirmar com a legislação aplicável e os estatutos).</li></ul>
+  <div class="doc-rodape">
+    <a class="btn-docx" href="01_Enunciado/Enunciado_Sessao10_Da_Convocatoria_a_Ata.docx" download>&#8595; Descarregar Enunciado_Sessao10_Da_Convocatoria_a_Ata.docx</a>
+  </div>
+</article>
+<footer class="rodape">
+  <span>IA Generativa e Copilot Microsoft 365 — Formação ANFUP</span>
+  <span>Materiais de formação · dados fictícios</span>
+</footer>
+</div>
+</body>
+</html>
