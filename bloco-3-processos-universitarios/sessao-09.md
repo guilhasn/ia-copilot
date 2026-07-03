@@ -347,6 +347,9 @@ Partem de um objetivo SIADAP frágil, usam o Copilot para o diagnosticar e produ
 
 👉 **[Ver exercício prático]({% link exercicios/s09-siadap.md %})**
 
+{: .note }
+> **Caso prático completo — Análise de fichas SIADAP.** Para trabalhar em grande: no papel de técnicos da DARH do fictício Município de Vila Nova do Alva, analisam com o Copilot as 20 fichas de avaliação remetidas pelas unidades orgânicas. Todos os materiais (enunciado, fichas, dados de apoio e prompts prontos a usar) estão no **[site de materiais da formação — Sessão 9](https://guilhasn.github.io/ia-copilot/materiais/index.html#sessao-9)**.
+
 ## 11. Lista de verificação final
 
 Antes de validar um objetivo, confirmem que:
