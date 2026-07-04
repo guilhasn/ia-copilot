@@ -71,6 +71,27 @@ SESSOES = [
             ("questoes.html", "Questões e prompts por fase"),
         ],
     },
+    {
+        "slug": "sessao-11",
+        "numero": "11",
+        "acento": "#6d3341",
+        "acento_suave": "#eddde1",
+        "titulo": "Análise documental para contratação pública",
+        "descricao": (
+            "Do caderno de encargos ao relatório final: rever peças do "
+            "procedimento, analisar 4 propostas de concorrentes e preparar "
+            "os relatórios do júri (arts. 146.º–148.º do CCP), com o Copilot "
+            "como apoio analítico — nunca como decisor."
+        ),
+        "nota": (
+            "As referências ao CCP devem ser confirmadas na versão "
+            "consolidada do Diário da República."
+        ),
+        "leitura": [
+            ("enunciado.html", "Enunciado do caso prático"),
+            ("questoes.html", "Questões e prompts do exercício"),
+        ],
+    },
 ]
 
 # páginas de leitura: (sessão, ficheiro html, docx de origem relativo à sessão, título)
@@ -90,13 +111,21 @@ PAGINAS_LEITURA = [
     ("sessao-10", "questoes.html",
      "05_Prompts_Copilot/Questoes_e_Prompts_Copilot_Sessao10.docx",
      "Questões e prompts — Sessão 10"),
+    ("sessao-11", "enunciado.html",
+     "01_Enunciado/Enunciado_Sessao11_Contratacao_Publica.docx",
+     "Enunciado — Análise documental para contratação pública"),
+    ("sessao-11", "questoes.html",
+     "05_Prompts_Copilot/Questoes_e_Prompts_Copilot_Sessao11.docx",
+     "Questões e prompts — Sessão 11"),
 ]
 
 NOMES_PASTAS = {
     "01_Enunciado": "Enunciado",
     "02_Fichas_Avaliacao": "Fichas de avaliação (20 trabalhadores)",
     "02_Transcricao_Reuniao": "Transcrição da reunião",
+    "02_Pecas_Procedimento": "Peças do procedimento",
     "03_Dados_Apoio": "Dados de apoio",
+    "03_Propostas_Concorrentes": "Propostas dos concorrentes",
     "05_Prompts_Copilot": "Prompts Copilot",
 }
 
@@ -200,6 +229,10 @@ body.js-tabs .sessao.visivel{display:block;margin-top:34px}
   margin-bottom:8px;
 }
 .sessao .descricao{margin:8px 0 0;max-width:62ch;color:#3d4136}
+.sessao .nota-sessao{
+  margin:12px 0 0;max-width:62ch;font-size:.88rem;color:#4c4a3e;
+  border-left:3px solid var(--acc);padding-left:12px;font-style:italic;
+}
 
 .leitura{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 8px}
 .leitura a{
@@ -347,6 +380,12 @@ def rotulo(nome):
     if m:
         pessoa = m.group(2).replace("_", " ")
         return f"Ficha {m.group(1)} — {pessoa} ({m.group(3)})"
+    m = re.match(r"Proposta_([A-Z])_(.+)$", base)
+    if m:
+        return f"Proposta {m.group(1)} — {m.group(2)}"
+    m = re.match(r"Mapa_Precos_([A-Z])_(.+)$", base)
+    if m:
+        return f"Mapa de preços {m.group(1)} — {m.group(2)}"
     return base.replace("_", " ")
 
 
@@ -387,12 +426,15 @@ def seccao_sessao(s):
     leitura = "".join(
         f'<a href="{s["slug"]}/{f}">{html.escape(t)}</a>' for f, t in s["leitura"]
     )
+    nota = ""
+    if s.get("nota"):
+        nota = f'<p class="nota-sessao">&#9878; {html.escape(s["nota"])}</p>'
     return f"""
 <section class="sessao" id="{s['slug']}" style="--acc:{s['acento']};--papel-2:{s['acento_suave']}">
   <div class="sessao-cab">
     <div class="sessao-num" aria-hidden="true">{s['numero']}</div>
     <h2><span class="kicker">Sessão {s['numero']} · Caso prático</span>{html.escape(s['titulo'])}</h2>
-    <p class="descricao">{html.escape(s['descricao'])}</p>
+    <p class="descricao">{html.escape(s['descricao'])}</p>{nota}
   </div>
   <div class="leitura">{leitura}</div>
   <div class="grupos">{grupos}</div>
