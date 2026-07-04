@@ -40,7 +40,7 @@ O curso combina demonstrações práticas, exercícios guiados, casos de uso do 
 | 8 | Produtividade | PowerPoint com Copilot |
 | 9 | Processos universitários | SIADAP — apoiar a redação de objetivos SMART |
 | 10 | Processos universitários | Atas e gestão de reuniões dos órgãos |
-| 11 | Processos universitários | Júris e candidaturas |
+| 11 | Processos universitários | Análise documental para contratação pública |
 | 12 | Processos universitários | Qualidade, acreditação e prestação de contas |
 | 13 | Automatização | Copilot Pages e bibliotecas partilhadas |
 | 14 | Automatização | Literacia sobre agentes Copilot Studio |
