@@ -38,7 +38,7 @@ E há uma fronteira que atravessa a sessão inteira:
 
 ## 1. O problema: uma tarde de leitura para cada proposta
 
-Quem apoia procedimentos de contratação conhece o ciclo — e é o que o **Miguel Andrade**, técnico de contratação pública da Universidade de Vale Verde, tem em mãos no concurso dos 60 portáteis (aquele cuja demora o conselheiro lamentava na reunião da Sessão 10):
+Quem apoia procedimentos de contratação conhece o ciclo — e é o que o **Miguel Andrade**, técnico de contratação pública da Universidade de Vale Verde, tem em mãos no concurso dos 60 portáteis:
 
 - um caderno de encargos redigido «para sair hoje», com cláusulas que ninguém releu;
 
@@ -264,6 +264,8 @@ A atividade principal é o caso **«Do caderno de encargos ao relatório final»
 👉 **Todos os materiais estão no [site de materiais da formação](https://guilhasn.github.io/ia-copilot/materiais/index.html#sessao-11):** enunciado, peças do procedimento, as quatro propostas com mapas de preços, e prompts por fase.
 
 O formador indica o ritmo; o que não se concluir na sessão fica como trabalho da semana.
+
+Para praticar noutro registo — o de **quem prepara uma compra de IA**, e não o de quem analisa propostas recebidas — há um [banco de prompts de contratação pública]({% link exercicios/s11-contratacao-publica.md %}), do levantamento de fontes oficiais à síntese final, todo com dados públicos ou fictícios.
 
 {: .important }
 > 🛈 **Matriz Semáforo: verde na formação** — concorrentes e propostas são fictícios. O mesmo trabalho num procedimento real é **amarelo**: propostas já abertas, legitimidade funcional, ambiente institucional e validação integral — e as propostas de concorrentes **nunca** saem desse ambiente.

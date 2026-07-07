@@ -20,3 +20,4 @@ Mãos no Copilot. Cada sessão tem um exercício prático que aplica o que acabo
 | **S06** — Excel | [Excel com o Copilot]({% link exercicios/s06-excel.md %}) (núcleo + praticar + avançado) | 20-95 min |
 | **S08** — PowerPoint | [PowerPoint com o Copilot]({% link exercicios/s08-powerpoint.md %}) (núcleo + praticar) | 25-60 min |
 | **S09** — SIADAP | [O objetivo sobrevive ao Copilot?]({% link exercicios/s09-siadap.md %}) | ~30 min |
+| **S11** — Contratação pública | [Banco de prompts (contratar IA)]({% link exercicios/s11-contratacao-publica.md %}) | livre |
