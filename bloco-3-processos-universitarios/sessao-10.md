@@ -285,6 +285,8 @@ O caso está desenhado para mais tempo do que a sessão tem: na sessão trabalha
 
 👉 **Todos os materiais estão no [site de materiais da formação](https://guilhasn.github.io/ia-copilot/materiais/):** enunciado, transcrição da reunião (Word e `.vtt`), caixa de entrada da secretária, contexto e composição do órgão, modelo institucional de ata, mapa de deliberações pendentes e prompts por fase.
 
+Para ir mais longe — de utilizador a construtor — há um exercício técnico opcional: [construir a vossa própria app de transcrição]({% link exercicios/s10-transcricao-assemblyai.md %}) com um serviço de IA. Percebe-se por dentro como a fala vira texto — e, ao ver o ficheiro sair para um servidor externo, percebe-se na pele porque é que uma transcrição real **nunca** faz esse caminho.
+
 {: .important }
 > 🛈 **Matriz Semáforo: verde na formação** — todos os dados são fictícios. O mesmo trabalho com uma transcrição real é **amarelo**: só no ambiente institucional, com legitimidade funcional e validação integral.
 
