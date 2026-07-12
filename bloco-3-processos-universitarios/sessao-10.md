@@ -97,7 +97,7 @@ Vista a armadilha, fica o uso que compensa — e é muito. Ao longo do ciclo com
 
 - **proteção** — levantar todos os dados pessoais e sensíveis presentes na transcrição, propor o tratamento de cada um, redigir versões protegidas e extratos públicos anonimizados;
 
-- **registo** — construir o mapa de deliberações numeradas, atualizar pendentes, extrair *action items* com responsável e prazo, e documentar o próprio uso da IA;
+- **registo** — construir o mapa de deliberações numeradas, atualizar pendentes, extrair pontos de ação com responsável e prazo, e documentar o próprio uso da IA;
 
 - **fecho** — redigir as comunicações pós-reunião, incluindo as delicadas, em tom estritamente factual.
 
@@ -162,7 +162,7 @@ A [Matriz Semáforo]({% link recursos/matriz-semaforo.md %}) aplica-se às reuni
 
 5. **Proteger ponto a ponto** — decidir o destino de cada dado pessoal ou matéria reservada (ver a regra seguinte) e só depois fechar a minuta e o extrato público.
 
-6. **Registar tudo** — deliberações numeradas, *action items* com dono e prazo, pendentes atualizadas — e o diário dos prompts usados, porque a auditabilidade inclui o próprio uso da IA. O formato é uma tabela simples (etapa · prompt · resultado · validação humana feita), guardada junto ao processo da reunião.
+6. **Registar tudo** — deliberações numeradas, pontos de ação com dono e prazo, pendentes atualizadas — e o diário dos prompts usados, porque a auditabilidade inclui o próprio uso da IA. O formato é uma tabela simples (etapa · prompt · resultado · validação humana feita), guardada junto ao processo da reunião.
 
 > Regra prática: a minuta está pronta quando **cada frase tem fonte** — na transcrição, nas presenças ou numa confirmação humana registada.
 
@@ -306,7 +306,7 @@ Antes de dar a minuta por fechada, confirmem que:
 
 - documentos reservados não circularam por e-mail geral;
 
-- o mapa de deliberações e os *action items* têm dono e prazo;
+- o mapa de deliberações e os pontos de ação têm dono e prazo;
 
 - o registo de prompts e validações está guardado;
 
