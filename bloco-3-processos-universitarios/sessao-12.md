@@ -272,7 +272,7 @@ decisão. Não geres avaliações nem alteres a graduação do júri.
 
 A atividade principal é o caso **«O júri que a máquina não pode ser»**: individualmente, no papel de apoio a um júri da UVV, recebem quatro candidaturas fictícias com armadilhas plantadas — um hiato que é licença parental, uma competência que a IA tende a inventar, um requisito formal em falta e um critério de mérito que não está no aviso. Produzem a tabela de conformidade formal e apanham o instante exato em que a IA passa de escrivão a jurado.
 
-👉 **Todos os materiais estão na [página do exercício]({% link exercicios/s12-juri-candidaturas.md %}):** o aviso de abertura, as quatro candidaturas, a grelha, os prompts e a regra de segurança.
+👉 **Todos os materiais estão no [site de materiais da formação](https://guilhasn.github.io/ia-copilot/materiais/index.html#sessao-12):** o aviso de abertura, as quatro candidaturas, a grelha de avaliação e as questões e prompts por fase.
 
 O formador indica o ritmo; o que não se concluir na sessão fica como trabalho da semana.
 

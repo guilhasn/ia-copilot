@@ -92,6 +92,29 @@ SESSOES = [
             ("questoes.html", "Questões e prompts do exercício"),
         ],
     },
+    {
+        "slug": "sessao-12",
+        "numero": "12",
+        "acento": "#3d4f6b",
+        "acento_suave": "#dde4ee",
+        "titulo": "O júri que a máquina não pode ser",
+        "descricao": (
+            "No papel de apoio ao júri de um concurso da fictícia Universidade "
+            "de Vale Verde, verifica a conformidade formal de quatro "
+            "candidaturas, distingue faltas de admissão de juízos de mérito e "
+            "reconhece o momento em que a IA deixa de preparar o trabalho do "
+            "júri e começa, indevidamente, a decidir por ele."
+        ),
+        "nota": (
+            "As decisões sobre pessoas (recrutamento, bolsas, admissões) são de "
+            "alto risco no AI Act; a graduação por mérito é sempre do júri "
+            "(RGPD, art. 22.º)."
+        ),
+        "leitura": [
+            ("enunciado.html", "Enunciado do caso prático"),
+            ("questoes.html", "Questões e prompts do exercício"),
+        ],
+    },
 ]
 
 # páginas de leitura: (sessão, ficheiro html, docx de origem relativo à sessão, título)
@@ -117,6 +140,12 @@ PAGINAS_LEITURA = [
     ("sessao-11", "questoes.html",
      "05_Prompts_Copilot/Questoes_e_Prompts_Copilot_Sessao11.docx",
      "Questões e prompts — Sessão 11"),
+    ("sessao-12", "enunciado.html",
+     "01_Enunciado/Enunciado_Sessao12_Apoio_a_Juri.docx",
+     "Enunciado — Apoio a júri de candidaturas"),
+    ("sessao-12", "questoes.html",
+     "05_Prompts_Copilot/Questoes_e_Prompts_Copilot_Sessao12.docx",
+     "Questões e prompts — Sessão 12"),
 ]
 
 NOMES_PASTAS = {
@@ -126,6 +155,7 @@ NOMES_PASTAS = {
     "02_Pecas_Procedimento": "Peças do procedimento",
     "03_Dados_Apoio": "Dados de apoio",
     "03_Propostas_Concorrentes": "Propostas dos concorrentes",
+    "03_Candidaturas": "Candidaturas",
     "05_Prompts_Copilot": "Prompts Copilot",
 }
 

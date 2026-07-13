@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Versão de leitura de Questoes_e_Prompts_Copilot_Sessao12.docx (o download do documento Word continua disponível).">
+<title>Questões e prompts — Sessão 12 · Sessão 12 — Formação ANFUP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,300;9..144,600;9..144,640&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23f7f3ec'/%3E%3Ctext x='16' y='23' font-family='Georgia' font-size='19' font-weight='bold' text-anchor='middle' fill='%23155e68'%3EAI%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --papel:#f7f3ec; --papel-2:#efe9dd; --tinta:#23271f; --cinza:#6d6a5c;
+  --filete:#d8d0bf; --acc:#3d5342;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--papel); color:var(--tinta);
+  font-family:"Atkinson Hyperlegible",system-ui,sans-serif;
+  font-size:17px; line-height:1.6;
+  background-image:radial-gradient(rgba(35,39,31,.035) 1px, transparent 1px);
+  background-size:22px 22px;
+}
+.pagina{max-width:1060px;margin:0 auto;padding:0 24px 96px}
+a{color:inherit}
+
+/* cabeçalho editorial */
+.masthead{padding:44px 0 28px;border-bottom:3px double var(--filete);position:relative}
+.link-hub{
+  position:absolute;top:18px;right:0;text-decoration:none;font-weight:700;
+  font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--cinza);
+  border:1px solid var(--filete);padding:7px 14px;border-radius:999px;
+  transition:color .15s,border-color .15s;
+}
+.link-hub:hover{color:var(--acc);border-color:var(--acc)}
+@media (max-width:640px){.link-hub{position:static;display:inline-block;margin-bottom:14px}}
+.masthead .antetitulo{
+  font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--cinza);
+  display:flex;align-items:center;gap:14px;margin-bottom:18px;
+}
+.masthead .antetitulo::before,.masthead .antetitulo::after{
+  content:"";height:1px;background:var(--filete);flex:0 0 42px;
+}
+h1.curso{
+  font-family:"Fraunces",serif;font-optical-sizing:auto;font-weight:640;
+  font-size:clamp(2rem,5.4vw,3.4rem);line-height:1.06;margin:0 0 10px;
+  letter-spacing:-.015em;
+}
+.masthead .sub{color:var(--cinza);font-size:1.02rem;margin:0}
+
+.nota-ficticio{
+  margin:30px 0 0;padding:14px 18px 14px 22px;position:relative;
+  background:var(--papel-2);border:1px solid var(--filete);font-size:.92rem;
+  color:#4c4a3e;
+}
+.nota-ficticio::before{
+  content:"";position:absolute;left:-1px;top:-1px;bottom:-1px;width:5px;
+  background:repeating-linear-gradient(-45deg,#b3a684 0 6px,var(--papel) 6px 12px);
+}
+.nota-ficticio strong{color:var(--tinta)}
+
+/* menu de sessões (sticky) */
+nav.menu-sessoes{
+  position:sticky;top:0;z-index:20;display:flex;flex-wrap:wrap;gap:10px;
+  padding:14px 0;margin-top:6px;background:var(--papel);
+  border-bottom:1px solid var(--filete);
+}
+nav.menu-sessoes .rotulo-menu{
+  align-self:center;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--cinza);font-weight:700;margin-right:6px;
+}
+nav.menu-sessoes a{
+  display:inline-flex;align-items:baseline;gap:9px;text-decoration:none;
+  border:1.5px solid var(--acc-m,#3d5342);color:var(--acc-m,#3d5342);
+  padding:8px 16px;border-radius:999px;font-weight:700;font-size:.92rem;
+  transition:background .15s,color .15s,transform .15s;
+}
+nav.menu-sessoes a .num{
+  font-family:"Fraunces",serif;font-weight:640;font-size:1.05rem;line-height:1;
+}
+nav.menu-sessoes a:hover{transform:translateY(-1px)}
+nav.menu-sessoes a.ativo{background:var(--acc-m,#3d5342);color:var(--papel)}
+body.js-tabs .sessao{display:none}
+body.js-tabs .sessao.visivel{display:block;margin-top:34px}
+
+/* secções de sessão */
+.sessao{margin-top:64px;position:relative}
+.sessao-cab{
+  display:grid;grid-template-columns:auto 1fr;gap:6px 26px;align-items:baseline;
+  border-bottom:1px solid var(--filete);padding-bottom:22px;
+}
+.sessao-num{
+  grid-row:1/span 2;font-family:"Fraunces",serif;font-weight:300;
+  font-size:clamp(4.6rem,10vw,7rem);line-height:.82;color:transparent;
+  -webkit-text-stroke:1.6px var(--acc);letter-spacing:-.04em;
+  transform:translateY(6px);
+}
+.sessao h2{
+  font-family:"Fraunces",serif;font-weight:600;letter-spacing:-.01em;
+  font-size:clamp(1.5rem,3.4vw,2.2rem);margin:0;
+}
+.sessao h2 .kicker{
+  display:block;font-family:"Atkinson Hyperlegible",sans-serif;font-weight:700;
+  font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--acc);
+  margin-bottom:8px;
+}
+.sessao .descricao{margin:8px 0 0;max-width:62ch;color:#3d4136}
+.sessao .nota-sessao{
+  margin:12px 0 0;max-width:62ch;font-size:.88rem;color:#4c4a3e;
+  border-left:3px solid var(--acc);padding-left:12px;font-style:italic;
+}
+
+.leitura{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 8px}
+.leitura a{
+  display:inline-flex;align-items:center;gap:9px;text-decoration:none;
+  border:1.5px solid var(--acc);color:var(--acc);background:transparent;
+  padding:9px 16px;font-weight:700;font-size:.92rem;border-radius:2px;
+  transition:background .15s,color .15s,transform .15s;
+}
+.leitura a::before{content:"❧";font-size:1rem}
+.leitura a:hover{background:var(--acc);color:var(--papel);transform:translateY(-1px)}
+
+.grupos{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px;margin-top:26px}
+.grupo{border:1px solid var(--filete);background:rgba(255,255,255,.5);padding:18px 20px 14px}
+.grupo.largo{grid-column:1/-1}
+.grupo h3{
+  font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cinza);
+  margin:0 0 12px;display:flex;align-items:center;gap:10px;font-weight:700;
+}
+.grupo h3::after{content:"";flex:1;height:1px;background:var(--filete)}
+ul.ficheiros{list-style:none;margin:0;padding:0}
+ul.ficheiros li{border-top:1px dashed var(--filete)}
+ul.ficheiros li:first-child{border-top:0}
+ul.ficheiros a{
+  display:flex;align-items:center;gap:11px;padding:8px 4px;text-decoration:none;
+  transition:background .12s;
+}
+ul.ficheiros a:hover{background:var(--papel-2)}
+ul.ficheiros a:hover .nome{text-decoration:underline;text-underline-offset:3px}
+.nome{flex:1;font-size:.95rem}
+.tam{color:var(--cinza);font-size:.8rem;white-space:nowrap}
+.seta{color:var(--acc);font-weight:700}
+.badge{
+  flex:0 0 auto;font-size:.62rem;font-weight:700;letter-spacing:.08em;
+  padding:3px 7px;border-radius:2px;color:#fff;min-width:44px;text-align:center;
+}
+.badge.docx{background:#2b579a}.badge.xlsx{background:#217346}
+.badge.vtt{background:#8a4baf}.badge.outro{background:#666}
+
+.fichas-grelha ul.ficheiros{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:2px 22px;
+}
+.fichas-grelha ul.ficheiros li{border-top:1px dashed var(--filete)!important}
+
+/* páginas de documento */
+.doc-topo{
+  display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;
+  padding:18px 0;border-bottom:1px solid var(--filete);font-size:.9rem;
+}
+.doc-topo .voltar{text-decoration:none;color:var(--cinza);letter-spacing:.06em;text-transform:uppercase;font-size:.76rem;font-weight:700}
+.doc-topo .voltar:hover{color:var(--acc)}
+.btn-docx{
+  display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;
+  background:var(--acc);color:var(--papel);padding:9px 16px;border-radius:2px;font-size:.88rem;
+  transition:transform .15s,box-shadow .15s;
+}
+.btn-docx:hover{transform:translateY(-1px);box-shadow:0 3px 10px rgba(0,0,0,.18)}
+article.doc{max-width:74ch;margin:0 auto;padding-top:14px}
+article.doc h1{
+  font-family:"Fraunces",serif;font-weight:640;letter-spacing:-.015em;
+  font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.12;margin:26px 0 6px;
+}
+article.doc .sessao-tag{
+  font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--acc);
+  font-weight:700;margin-top:30px;
+}
+article.doc h2{
+  font-family:"Fraunces",serif;font-weight:600;font-size:1.45rem;margin:2.1em 0 .5em;
+  padding-top:.9em;border-top:1px solid var(--filete);
+}
+article.doc h3{font-family:"Fraunces",serif;font-weight:600;font-size:1.15rem;margin:1.6em 0 .4em}
+article.doc p{margin:.7em 0}
+article.doc li{margin:.35em 0}
+article.doc table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.93rem}
+article.doc td,article.doc th{border:1px solid var(--filete);padding:8px 12px;vertical-align:top;text-align:left}
+article.doc tr:first-child td{background:var(--papel-2);font-weight:700}
+article.doc td p{margin:0}
+article.doc em{color:#50503f}
+article.doc pre,article.doc code{white-space:pre-wrap;word-break:break-word}
+.doc-rodape{margin-top:56px;padding-top:18px;border-top:3px double var(--filete);text-align:center}
+
+footer.rodape{
+  margin-top:80px;padding-top:22px;border-top:3px double var(--filete);
+  color:var(--cinza);font-size:.85rem;display:flex;flex-wrap:wrap;gap:8px 24px;
+  justify-content:space-between;
+}
+@media (max-width:640px){
+  .sessao-cab{grid-template-columns:1fr}
+  .sessao-num{grid-row:auto;transform:none;margin-bottom:4px}
+}
+@media print{
+  body{background:#fff}
+  .leitura,.btn-docx,.doc-topo .voltar{display:none}
+}
+</style>
+</head>
+<body>
+<div class="pagina">
+
+<div class="doc-topo" style="--acc:#3d4f6b">
+  <a class="voltar" href="../index.html#sessao-12">&#8592; Todos os materiais</a>
+  <a class="btn-docx" href="05_Prompts_Copilot/Questoes_e_Prompts_Copilot_Sessao12.docx" download>&#8595; Descarregar Questoes_e_Prompts_Copilot_Sessao12.docx</a>
+</div>
+<article class="doc" style="--acc:#3d4f6b;--papel-2:#dde4ee">
+  <p class="sessao-tag">Sessão 12 · O júri que a máquina não pode ser</p>
+  <h1>Questões e prompts — Sessão 12</h1>
+  <h2>Questões e prompts — Sessão 12</h2><p><strong>O júri que a máquina não pode ser</strong></p><p><em>Documento fictício, criado exclusivamente para fins de formação. Nomes, entidades, candidaturas e dados são inventados; qualquer semelhança com pessoas ou instituições reais é coincidência.</em></p><p>Nenhum destes prompts pede à IA que avalie, ordene ou recomende candidatos — exceto o da Fase C, que existe para ser criticado, não para ser usado.</p><h2>Fase A — Extrair os requisitos formais do aviso</h2><p>A partir do aviso de abertura em anexo, extrai a lista de requisitos formais e documentos obrigatórios que cada candidatura tem de cumprir:</p><p>1. grau académico e habilitações exigidas;</p><p>2. documentos obrigatórios;</p><p>3. prazos e condições de entrega.</p><p>Apresenta como lista de verificação reutilizável. Não incluas critérios de mérito nem pesos de avaliação.</p><h2>Fase B — Conformidade formal de uma candidatura</h2><p>Verifica esta candidatura contra os requisitos formais do aviso (em anexo).</p><p>Tabela: requisito/documento · o que a candidatura apresenta · situação (cumpre / não cumpre / falta / a confirmar) · localização no processo.</p><p>Não avalies o mérito, não ordenes e não recomendes candidatos.</p><p>(Correr o mesmo prompt para todas as candidaturas — igualdade de tratamento.)</p><h2>Fase C — O prompt proibido (para criticar, não para usar)</h2><p>Analisa as quatro candidaturas e ordena os candidatos por adequação ao cargo. Indica quem deve ganhar e justifica.</p><h2>Fase D — Minuta de ata depois da deliberação</h2><p>Com base na deliberação do júri (em anexo: candidatos admitidos, candidatos excluídos com o fundamento formal, graduação decidida pelo júri e respetivas razões), estrutura a minuta da ata: identificação do procedimento, admissões, exclusões com fundamento, graduação final e diligências pendentes.</p><p>Escreve «o júri deliberou» e deixa campos [CONFIRMAR] onde faltar decisão. Não geres avaliações nem alteres a graduação do júri.</p><h2>Perguntas para a Fase C</h2><ol><li>Que critério é que a IA usou para ordenar que não está no aviso?</li><li>Como é que a IA tratou o período sem atividade de uma das candidaturas? Que informação faltava para sequer o interpretar?</li><li>A IA atribuiu a algum candidato uma competência ou experiência que o texto da candidatura não menciona?</li><li>Se o júri assinasse esta ordenação «depois de a rever», a decisão seria do júri ou da máquina?</li></ol>
+  <div class="doc-rodape">
+    <a class="btn-docx" href="05_Prompts_Copilot/Questoes_e_Prompts_Copilot_Sessao12.docx" download>&#8595; Descarregar Questoes_e_Prompts_Copilot_Sessao12.docx</a>
+  </div>
+</article>
+<footer class="rodape">
+  <span>IA Generativa e Copilot Microsoft 365 — Formação ANFUP</span>
+  <span><a href="https://guilhasn.github.io/ia-copilot/">Hub da formação</a> · Materiais de formação · dados fictícios</span>
+</footer>
+</div>
+</body>
+</html>
