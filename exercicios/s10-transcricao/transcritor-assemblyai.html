@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AssemblyAI - Transcrição MP4/MP3 com Oradores</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --border: #dbe4f0;
+      --success: #16a34a;
+      --danger: #dc2626;
+      --warning: #b45309;
+      --chip: #eef4ff;
+      --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(180deg, #f8fbff, #eef5ff);
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: 32px auto;
+      padding: 0 18px 40px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0f172a, #1d4ed8);
+      color: white;
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: 30px;
+    }
+
+    .hero p {
+      margin: 0;
+      color: rgba(255,255,255,0.9);
+      max-width: 900px;
+      line-height: 1.5;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      padding: 18px;
+    }
+
+    .card h2 {
+      margin: 0 0 14px;
+      font-size: 18px;
+    }
+
+    .field {
+      margin-bottom: 14px;
+    }
+
+    .field label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .field input[type="text"],
+    .field input[type="password"],
+    .field select,
+    .field textarea {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 11px 12px;
+      font-size: 14px;
+      outline: none;
+      background: white;
+      color: var(--text);
+    }
+
+    .field textarea {
+      min-height: 110px;
+      resize: vertical;
+      line-height: 1.45;
+    }
+
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+    }
+
+    .hint {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 6px;
+      line-height: 1.4;
+    }
+
+    .dropzone {
+      border: 2px dashed #9db7df;
+      border-radius: 16px;
+      background: #f8fbff;
+      padding: 20px;
+      text-align: center;
+      transition: 0.2s ease;
+      cursor: pointer;
+    }
+
+    .dropzone.dragover {
+      border-color: var(--primary);
+      background: #eff6ff;
+    }
+
+    .dropzone strong {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .dropzone small {
+      color: var(--muted);
+    }
+
+    .file-meta {
+      margin-top: 10px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    button {
+      border: none;
+      border-radius: 12px;
+      padding: 11px 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s ease;
+      font-size: 14px;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-hover);
+    }
+
+    .btn-secondary {
+      background: #eef2ff;
+      color: #1e3a8a;
+    }
+
+    .btn-secondary:hover {
+      background: #e0e7ff;
+    }
+
+    .btn-danger {
+      background: #fef2f2;
+      color: var(--danger);
+    }
+
+    .btn-danger:hover {
+      background: #fee2e2;
+    }
+
+    .status-box {
+      margin-top: 14px;
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .status-line {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .spinner {
+      width: 18px;
+      height: 18px;
+      border: 3px solid #dbeafe;
+      border-top-color: var(--primary);
+      border-radius: 50%;
+      animation: spin 0.9s linear infinite;
+      display: inline-block;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .progress {
+      width: 100%;
+      height: 10px;
+      background: #e5edf8;
+      border-radius: 999px;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #2563eb, #60a5fa);
+      transition: width 0.3s ease;
+    }
+
+    .content-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .chips {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .chip {
+      background: var(--chip);
+      color: #1d4ed8;
+      border: 1px solid #c9dcff;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .transcript-card {
+      min-height: 560px;
+    }
+
+    .segments {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .segment {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px;
+      background: #fcfdff;
+    }
+
+    .segment-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .speaker-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      font-weight: 700;
+      font-size: 12px;
+    }
+
+    .speaker-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      background: var(--primary);
+      display: inline-block;
+    }
+
+    .segment-text {
+      white-space: pre-wrap;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .raw-text {
+      white-space: pre-wrap;
+      line-height: 1.6;
+      font-size: 15px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px;
+      min-height: 220px;
+    }
+
+    .footer-note {
+      margin-top: 14px;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .error {
+      color: var(--danger);
+      font-weight: 700;
+    }
+
+    .success {
+      color: var(--success);
+      font-weight: 700;
+    }
+
+    @media (max-width: 980px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <h1>Transcrição AssemblyAI com identificação de oradores</h1>
+      <p>
+        Faça upload de um ficheiro MP4, MP3, WAV ou M4A, envie para a AssemblyAI e obtenha a transcrição em Português Europeu
+        com identificação de oradores, progresso de processamento e exportação do resultado.
+      </p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Configuração</h2>
+
+        <div class="field">
+          <label for="apiKey">AssemblyAI API Key</label>
+          <input type="password" id="apiKey" placeholder="Cole aqui a sua API key" />
+          <div class="hint">Para uso local. A chave ficará no browser; não recomendado para produção.</div>
+        </div>
+
+        <div class="field">
+          <label for="fileInput">Ficheiro de áudio/vídeo</label>
+          <div id="dropzone" class="dropzone">
+            <strong>Arraste aqui o seu ficheiro</strong>
+            <small>ou clique para escolher MP4 / MP3 / WAV / M4A</small>
+            <input type="file" id="fileInput" accept=".mp4,.mp3,.wav,.m4a,audio/*,video/*" style="display:none" />
+            <div id="fileMeta" class="file-meta">Nenhum ficheiro selecionado.</div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="languageCode">Language code</label>
+          <select id="languageCode">
+            <option value="pt" selected>pt — Português</option>
+            <option value="pt-PT">pt-PT (se suportado pelo fluxo)</option>
+            <option value="pt-BR">pt-BR</option>
+            <option value="en">en</option>
+            <option value="es">es</option>
+          </select>
+          <div class="hint">Para PT-PT, use <code>pt</code> e um prompt contextual a orientar a ortografia europeia.</div>
+        </div>
+
+        <div class="field">
+          <label for="prompt">Prompt</label>
+          <textarea id="prompt">Transcreva o áudio em Português de Portugal, usando ortografia europeia. Preserve nomes próprios, termos técnicos e siglas. Se houver vários oradores, mantenha a separação por intervenções.</textarea>
+          <div class="hint">O prompt melhora o reconhecimento de contexto, nomes, termos e estilo de escrita.</div>
+        </div>
+
+        <div class="field">
+          <label for="keyterms">Keyterms / termos importantes</label>
+          <textarea id="keyterms" placeholder="Ex.: AssemblyAI, Leiria, Pombal, SIGA, ERP, nome do projeto"></textarea>
+          <div class="hint">Se quiser, separe por vírgulas. Estes termos ajudam a reforçar nomes próprios e vocabulário específico.</div>
+        </div>
+
+        <div class="field">
+          <label for="maxSpeakers">Número máximo de oradores</label>
+          <select id="maxSpeakers">
+            <option value="2">2</option>
+            <option value="3" selected>3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="10">10</option>
+          </select>
+          <div class="hint">A AssemblyAI suporta <code>speaker_labels</code> e pode beneficiar de um limite máximo de oradores.</div>
+        </div>
+
+        <div class="field">
+          <label>
+            <input type="checkbox" id="useSpeakerLabels" checked />
+            Ativar identificação de oradores
+          </label>
+          <div class="hint">Liga o parâmetro <code>speaker_labels</code>.</div>
+        </div>
+
+        <div class="field">
+          <label>
+            <input type="checkbox" id="usePunctuate" checked />
+            Pontuar automaticamente
+          </label>
+        </div>
+
+        <div class="field">
+          <label>
+            <input type="checkbox" id="useFormatText" checked />
+            Formatar texto automaticamente
+          </label>
+        </div>
+
+        <div class="actions">
+          <button class="btn-primary" id="btnTranscribe">Iniciar transcrição</button>
+          <button class="btn-secondary" id="btnCopy">Copiar texto</button>
+          <button class="btn-secondary" id="btnExport">Exportar TXT</button>
+          <button class="btn-danger" id="btnClear">Limpar</button>
+        </div>
+
+        <div class="status-box">
+          <div class="status-line">
+            <span id="spinner" class="spinner" style="display:none;"></span>
+            <span id="statusText">Aguardando ficheiro...</span>
+          </div>
+          <div class="progress">
+            <div id="progressBar" class="progress-bar"></div>
+          </div>
+          <div id="statusDetail" class="hint" style="margin-top:10px;">Pronto.</div>
+        </div>
+
+        <div class="footer-note">
+          <strong>Nota:</strong> este exemplo é para execução local sem backend. A API key fica visível no browser e não deve ser usada assim em produção.
+          Para produção, o ideal é um backend que faça upload e submissão à AssemblyAI.
+        </div>
+      </div>
+
+      <div class="card transcript-card">
+        <div class="content-head">
+          <div>
+            <h2 style="margin-bottom:6px;">Resultado</h2>
+            <div class="chips">
+              <span class="chip">Upload</span>
+              <span class="chip">Transcrição</span>
+              <span class="chip">Speaker Labels</span>
+              <span class="chip">PT-PT</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="transcriptOutput" class="segments">
+          <div class="raw-text" id="rawTranscript">
+            A transcrição aparecerá aqui.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const fileInput = document.getElementById("fileInput");
+    const dropzone = document.getElementById("dropzone");
+    const fileMeta = document.getElementById("fileMeta");
+    const statusText = document.getElementById("statusText");
+    const statusDetail = document.getElementById("statusDetail");
+    const progressBar = document.getElementById("progressBar");
+    const spinner = document.getElementById("spinner");
+    const btnTranscribe = document.getElementById("btnTranscribe");
+    const btnCopy = document.getElementById("btnCopy");
+    const btnExport = document.getElementById("btnExport");
+    const btnClear = document.getElementById("btnClear");
+    const transcriptOutput = document.getElementById("transcriptOutput");
+    const rawTranscript = document.getElementById("rawTranscript");
+
+    let lastTranscript = null;
+
+    const STORAGE_KEY = "assemblyai_last_transcript_v1";
+
+    function setStatus(message, detail = "", loading = false, progress = null) {
+      statusText.textContent = message;
+      statusDetail.textContent = detail;
+      spinner.style.display = loading ? "inline-block" : "none";
+      if (progress !== null) progressBar.style.width = `${progress}%`;
+    }
+
+    function formatBytes(bytes) {
+      const units = ["B","KB","MB","GB"];
+      let i = 0;
+      let num = bytes;
+      while (num >= 1024 && i < units.length - 1) {
+        num /= 1024;
+        i++;
+      }
+      return `${num.toFixed(num >= 10 || i === 0 ? 0 : 1)} ${units[i]}`;
+    }
+
+    function getFile() {
+      return fileInput.files && fileInput.files[0];
+    }
+
+    function saveLastTranscript(data) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    }
+
+    function loadLastTranscript() {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (!saved) return;
+      try {
+        const data = JSON.parse(saved);
+        renderTranscript(data);
+        lastTranscript = data;
+        setStatus("Última transcrição carregada", "Dados recuperados do navegador.", false, 100);
+      } catch (e) {}
+    }
+
+    function clearTranscript() {
+      lastTranscript = null;
+      localStorage.removeItem(STORAGE_KEY);
+      transcriptOutput.innerHTML = `<div class="raw-text" id="rawTranscript">A transcrição aparecerá aqui.</div>`;
+      setStatus("Limpo", "Resultado removido.", false, 0);
+      progressBar.style.width = "0%";
+    }
+
+    function renderTranscript(data) {
+      if (!data) return;
+
+      const text = data.text || "";
+      const utterances = data.utterances || [];
+
+      if (utterances.length) {
+        transcriptOutput.innerHTML = "";
+
+        utterances.forEach((u, index) => {
+          const speaker = u.speaker || u.speaker_label || `Speaker ${index + 1}`;
+          const div = document.createElement("div");
+          div.className = "segment";
+
+          const start = typeof u.start === "number" ? `${(u.start / 1000).toFixed(2)}s` : "—";
+          const end = typeof u.end === "number" ? `${(u.end / 1000).toFixed(2)}s` : "—";
+
+          div.innerHTML = `
+            <div class="segment-header">
+              <span class="speaker-pill"><span class="speaker-dot"></span> ${speaker}</span>
+              <span>${start} → ${end}</span>
+            </div>
+            <div class="segment-text">${escapeHtml(u.text || "")}</div>
+          `;
+          transcriptOutput.appendChild(div);
+        });
+      } else {
+        transcriptOutput.innerHTML = `<div class="raw-text" id="rawTranscript">${escapeHtml(text || "")}</div>`;
+      }
+    }
+
+    function escapeHtml(str) {
+      return String(str)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function getKeytermsArray() {
+      const text = document.getElementById("keyterms").value.trim();
+      if (!text) return [];
+      return text
+        .split(",")
+        .map(s => s.trim())
+        .filter(Boolean);
+    }
+
+    async function uploadFileToAssemblyAI(apiKey, file) {
+      const response = await fetch("https://api.assemblyai.com/v2/upload", {
+        method: "POST",
+        headers: {
+          "Authorization": apiKey,
+          "Content-Type": "application/octet-stream"
+        },
+        body: file
+      });
+
+      if (!response.ok) {
+        const errText = await response.text();
+        throw new Error(`Falha no upload (${response.status}): ${errText}`);
+      }
+
+      return response.json();
+    }
+
+    async function createTranscript(apiKey, uploadUrl) {
+      const body = {
+        audio_url: uploadUrl,
+        speech_models: ["universal-3-5-pro", "universal-2"],
+        language_code: document.getElementById("languageCode").value || "pt",
+        prompt: document.getElementById("prompt").value.trim(),
+        punctuate: document.getElementById("usePunctuate").checked,
+        format_text: document.getElementById("useFormatText").checked
+      };
+
+      if (document.getElementById("useSpeakerLabels").checked) {
+        body.speaker_labels = true;
+        body.max_speakers = parseInt(document.getElementById("maxSpeakers").value, 10);
+      }
+
+      const keyterms = getKeytermsArray();
+      if (keyterms.length) {
+        body.keyterms_prompt = keyterms;
+      }
+
+      const response = await fetch("https://api.assemblyai.com/v2/transcript", {
+        method: "POST",
+        headers: {
+          "Authorization": apiKey,
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(body)
+      });
+
+      if (!response.ok) {
+        const errText = await response.text();
+        throw new Error(`Falha ao criar transcrição (${response.status}): ${errText}`);
+      }
+
+      return response.json();
+    }
+
+    async function pollTranscript(apiKey, id) {
+      let attempts = 0;
+      let waitMs = 2500;
+
+      while (true) {
+        attempts++;
+        const response = await fetch(`https://api.assemblyai.com/v2/transcript/${id}`, {
+          headers: {
+            "Authorization": apiKey
+          }
+        });
+
+        if (!response.ok) {
+          const errText = await response.text();
+          throw new Error(`Erro ao consultar transcrição (${response.status}): ${errText}`);
+        }
+
+        const data = await response.json();
+
+        if (data.status === "completed") return data;
+
+        if (data.status === "error") {
+          throw new Error(data.error || "A AssemblyAI devolveu um erro.");
+        }
+
+        const pct = Math.min(95, attempts * 10);
+        setStatus(
+          `A transcrever... (${data.status})`,
+          `Tentativa ${attempts}. Aguardando conclusão.`,
+          true,
+          pct
+        );
+
+        await new Promise(resolve => setTimeout(resolve, waitMs));
+        waitMs = Math.min(waitMs * 1.2, 6000);
+      }
+    }
+
+    function buildDisplayData(data) {
+      const utterances = [];
+
+      if (Array.isArray(data.utterances) && data.utterances.length) {
+        data.utterances.forEach((u, idx) => {
+          utterances.push({
+            speaker: u.speaker || u.speaker_label || `Speaker ${idx + 1}`,
+            start: u.start,
+            end: u.end,
+            text: u.text || ""
+          });
+        });
+      } else if (Array.isArray(data.words) && data.words.length) {
+        const grouped = [];
+        let current = null;
+
+        data.words.forEach((w) => {
+          const speaker = w.speaker || "Speaker";
+          if (!current || current.speaker !== speaker) {
+            current = {
+              speaker,
+              start: w.start,
+              end: w.end,
+              text: w.text || ""
+            };
+            grouped.push(current);
+          } else {
+            current.end = w.end;
+            current.text += " " + (w.text || "");
+          }
+        });
+
+        return {
+          text: data.text || "",
+          utterances: grouped
+        };
+      }
+
+      return {
+        text: data.text || "",
+        utterances
+      };
+    }
+
+    async function transcribe() {
+      const file = getFile();
+      const apiKey = document.getElementById("apiKey").value.trim();
+
+      if (!apiKey) {
+        alert("Introduza a API key da AssemblyAI.");
+        return;
+      }
+
+      if (!file) {
+        alert("Selecione um ficheiro MP4, MP3, WAV ou M4A.");
+        return;
+      }
+
+      btnTranscribe.disabled = true;
+      setStatus("A enviar ficheiro...", `${file.name} (${formatBytes(file.size)})`, true, 5);
+
+      try {
+        const upload = await uploadFileToAssemblyAI(apiKey, file);
+        if (!upload.upload_url) {
+          throw new Error("Upload concluído sem upload_url.");
+        }
+
+        setStatus("A criar job de transcrição...", "Upload concluído. A submeter para transcrição.", true, 15);
+
+        const transcript = await createTranscript(apiKey, upload.upload_url);
+        if (!transcript.id) {
+          throw new Error("Não foi possível obter o ID da transcrição.");
+        }
+
+        setStatus("A aguardar processamento...", `Job criado com ID: ${transcript.id}`, true, 25);
+
+        const result = await pollTranscript(apiKey, transcript.id);
+
+        const prepared = buildDisplayData(result);
+        lastTranscript = prepared;
+        saveLastTranscript(prepared);
+        renderTranscript(prepared);
+
+        setStatus("Transcrição concluída", "Resultado pronto.", false, 100);
+      } catch (err) {
+        console.error(err);
+        setStatus("Erro", err.message || "Erro desconhecido.", false, 0);
+        transcriptOutput.innerHTML = `<div class="raw-text error">${escapeHtml(err.message || "Erro desconhecido.")}</div>`;
+      } finally {
+        btnTranscribe.disabled = false;
+      }
+    }
+
+    fileInput.addEventListener("change", () => {
+      const file = getFile();
+      if (!file) {
+        fileMeta.textContent = "Nenhum ficheiro selecionado.";
+        return;
+      }
+      fileMeta.textContent = `${file.name} • ${formatBytes(file.size)} • ${file.type || "tipo desconhecido"}`;
+    });
+
+    dropzone.addEventListener("click", () => fileInput.click());
+
+    dropzone.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      dropzone.classList.add("dragover");
+    });
+
+    dropzone.addEventListener("dragleave", () => {
+      dropzone.classList.remove("dragover");
+    });
+
+    dropzone.addEventListener("drop", (e) => {
+      e.preventDefault();
+      dropzone.classList.remove("dragover");
+      if (e.dataTransfer.files && e.dataTransfer.files.length) {
+        fileInput.files = e.dataTransfer.files;
+        const file = getFile();
+        fileMeta.textContent = `${file.name} • ${formatBytes(file.size)} • ${file.type || "tipo desconhecido"}`;
+      }
+    });
+
+    btnTranscribe.addEventListener("click", transcribe);
+
+    btnCopy.addEventListener("click", async () => {
+      const text = lastTranscript?.text || document.getElementById("rawTranscript")?.innerText || "";
+      if (!text.trim()) {
+        alert("Não há texto para copiar.");
+        return;
+      }
+      await navigator.clipboard.writeText(text);
+      setStatus("Texto copiado", "A transcrição foi copiada para a área de transferência.", false, 100);
+    });
+
+    btnExport.addEventListener("click", () => {
+      const text = lastTranscript?.text || document.getElementById("rawTranscript")?.innerText || "";
+      if (!text.trim()) {
+        alert("Não há texto para exportar.");
+        return;
+      }
+
+      const blob = new Blob([text], { type: "text/plain;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `transcricao_assemblyai_${new Date().toISOString().slice(0,19).replaceAll(":","-")}.txt`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    });
+
+    btnClear.addEventListener("click", clearTranscript);
+
+    loadLastTranscript();
+  </script>
+</body>
+</html>

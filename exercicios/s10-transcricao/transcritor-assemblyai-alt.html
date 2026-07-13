@@ -1,0 +1,891 @@
+
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Transcritor MP4 - AssemblyAI com Oradores</title>
+
+<style>
+:root{
+    --azul:#0f4c81;
+    --azul-escuro:#0b3b63;
+    --fundo:#f4f6f8;
+    --texto:#1f2933;
+    --cinza:#52616b;
+    --borda:#d9e2ec;
+    --sucesso:#137333;
+    --aviso:#8a5a00;
+    --erro:#b00020;
+}
+
+body{
+    font-family:Segoe UI,Arial,sans-serif;
+    background:var(--fundo);
+    margin:0;
+    padding:30px;
+    color:var(--texto);
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+h1{
+    margin-top:0;
+    color:var(--azul);
+}
+
+h2{
+    color:var(--azul);
+    margin-top:28px;
+}
+
+p{
+    line-height:1.5;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    box-sizing:border-box;
+    border:1px solid var(--borda);
+    border-radius:6px;
+    font-size:14px;
+}
+
+input[type="file"]{
+    margin-top:10px;
+    padding:10px;
+    border:1px dashed var(--borda);
+    border-radius:8px;
+    width:100%;
+    box-sizing:border-box;
+    background:#f8fafc;
+}
+
+button{
+    background:var(--azul);
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:6px;
+    cursor:pointer;
+    margin-top:10px;
+    margin-right:5px;
+    font-size:14px;
+}
+
+button:hover{
+    background:var(--azul-escuro);
+}
+
+button:disabled{
+    background:#9fb3c8;
+    cursor:not-allowed;
+}
+
+.btn-secundario{
+    background:#52616b;
+}
+
+.btn-secundario:hover{
+    background:#3e4c59;
+}
+
+.btn-perigo{
+    background:#a61b1b;
+}
+
+.btn-perigo:hover{
+    background:#7c1111;
+}
+
+#status{
+    margin-top:20px;
+    font-weight:bold;
+    color:#444;
+    padding:12px;
+    border-radius:8px;
+    background:#eef5ff;
+    border-left:4px solid var(--azul);
+}
+
+.status-ok{
+    color:var(--sucesso) !important;
+    background:#eaf6ed !important;
+    border-left-color:var(--sucesso) !important;
+}
+
+.status-erro{
+    color:var(--erro) !important;
+    background:#fdecea !important;
+    border-left-color:var(--erro) !important;
+}
+
+.status-aviso{
+    color:var(--aviso) !important;
+    background:#fff7e6 !important;
+    border-left-color:#f5a623 !important;
+}
+
+#resultado{
+    width:100%;
+    height:420px;
+    margin-top:20px;
+    padding:12px;
+    box-sizing:border-box;
+    border:1px solid var(--borda);
+    border-radius:8px;
+    font-family:Consolas,"Courier New",monospace;
+    font-size:14px;
+    line-height:1.5;
+    resize:vertical;
+}
+
+video{
+    margin-top:15px;
+    width:100%;
+    max-height:380px;
+    background:#000;
+    border-radius:10px;
+}
+
+hr{
+    margin:25px 0;
+    border:none;
+    border-top:1px solid #e5e7eb;
+}
+
+.nota{
+    margin-top:15px;
+    padding:12px;
+    border-radius:8px;
+    background:#fff7e6;
+    color:#6b4e16;
+    border-left:4px solid #f5a623;
+    font-size:14px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+}
+
+@media(max-width:800px){
+    .grid{
+        grid-template-columns:1fr;
+    }
+}
+
+.speaker-card{
+    border:1px solid #ddd;
+    border-radius:8px;
+    padding:12px;
+    margin-top:10px;
+    background:#fafafa;
+}
+
+.speaker-card strong{
+    display:block;
+    margin-bottom:6px;
+    color:var(--azul);
+}
+
+.speaker-card input{
+    width:100%;
+    padding:8px;
+    box-sizing:border-box;
+    border:1px solid var(--borda);
+    border-radius:6px;
+}
+
+.speaker-preview{
+    font-size:13px;
+    color:#52616b;
+    margin-top:6px;
+    line-height:1.4;
+}
+
+.meta{
+    margin-top:12px;
+    font-size:14px;
+    color:var(--cinza);
+}
+
+.badge{
+    display:inline-block;
+    padding:3px 8px;
+    border-radius:999px;
+    background:#e5eef7;
+    color:var(--azul);
+    font-size:12px;
+    margin-right:5px;
+    margin-top:5px;
+}
+
+.progress-wrap{
+    width:100%;
+    background:#e5e7eb;
+    border-radius:20px;
+    overflow:hidden;
+    height:12px;
+    margin-top:12px;
+}
+
+.progress-bar{
+    width:0%;
+    height:12px;
+    background:var(--azul);
+    transition:width .3s ease;
+}
+
+.small{
+    font-size:13px;
+    color:var(--cinza);
+}
+
+.acoes{
+    margin-top:8px;
+}
+
+.debug{
+    margin-top:12px;
+}
+
+.debug summary{
+    cursor:pointer;
+    color:var(--azul);
+    font-weight:bold;
+}
+
+#jsonDebug{
+    width:100%;
+    min-height:180px;
+    margin-top:10px;
+    font-family:Consolas,"Courier New",monospace;
+    font-size:12px;
+    white-space:pre-wrap;
+    background:#0f172a;
+    color:#dbeafe;
+    padding:12px;
+    border-radius:8px;
+    box-sizing:border-box;
+    overflow:auto;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎙️ Transcritor MP4 - AssemblyAI com Oradores</h1>
+
+<p class="small">
+    Protótipo pedagógico para demonstrar upload de vídeo/áudio, transcrição automática, diarização de oradores e associação manual de nomes aos speakers devolvidos pela AssemblyAI.
+</p>
+
+<div class="nota">
+    <strong>Nota de segurança:</strong> esta versão guarda a API Key no browser/localStorage e é adequada para demonstração/formação. Para produção, a chave deve ficar num backend local ou servidor, nunca diretamente no frontend.
+</div>
+
+<hr>
+
+<h2>1. Configuração</h2>
+
+<label for="apiKey">API Key AssemblyAI</label>
+<input
+    type="password"
+    id="apiKey"
+    placeholder="Cole aqui a API Key da AssemblyAI">
+
+<button onclick="guardarApiKey()">💾 Guardar chave</button>
+<button class="btn-secundario" onclick="mostrarOuOcultarChave()">👁️ Mostrar/Ocultar</button>
+<button class="btn-perigo" onclick="apagarApiKey()">🗑️ Apagar chave</button>
+
+<div class="grid">
+    <div>
+        <label for="baseUrl">Região / Endpoint</label>
+        <select id="baseUrl">
+            <option value="https://api.assemblyai.com">US / Global - https://api.assemblyai.com</option>
+            <option value="https://api.eu.assemblyai.com">EU - https://api.eu.assemblyai.com</option>
+        </select>
+        <div class="small">Use EU se existir requisito de residência de dados na União Europeia.</div>
+    </div>
+
+    <div>
+        <label for="maxSpeakers">Número máximo de oradores, opcional</label>
+        <input type="number" id="maxSpeakers" min="1" max="10" placeholder="Ex.: 5">
+        <div class="small">Se não souber, deixe em branco. A diarização funciona na mesma.</div>
+    </div>
+</div>
+
+<hr>
+
+<h2>2. Selecionar ficheiro</h2>
+
+<label for="videoFile">Selecionar MP4, MP3, WAV, M4A, MOV ou WEBM</label>
+<input
+    type="file"
+    id="videoFile"
+    accept=".mp4,.mov,.m4v,.webm,.mp3,.wav,.m4a,.flac,.ogg,.aac">
+
+<video id="preview" controls></video>
+
+<div class="meta" id="fileInfo"></div>
+
+<br>
+
+<button id="btnTranscrever" onclick="transcrever()">▶ Iniciar transcrição</button>
+<button class="btn-secundario" onclick="limparTudo()">🧹 Limpar</button>
+
+<div id="status">Pronto.</div>
+
+<div class="progress-wrap">
+    <div id="progressBar" class="progress-bar"></div>
+</div>
+
+<div class="meta" id="transcriptMeta"></div>
+
+<hr>
+
+<h2>3. Associação de Oradores</h2>
+
+<p class="small">
+    A AssemblyAI identifica os intervenientes como Speaker A, Speaker B, Speaker C, etc. Aqui pode associar manualmente cada speaker ao nome real do orador.
+</p>
+
+<div id="speakerMap">
+    Os oradores aparecerão após a transcrição.
+</div>
+
+<div class="acoes">
+    <button onclick="aplicarOradores()">✅ Aplicar nomes aos oradores</button>
+    <button class="btn-secundario" onclick="mostrarTextoOriginal()">↩ Ver Speaker A/B/C</button>
+    <button class="btn-secundario" onclick="guardarMapaOradores()">💾 Guardar mapa de oradores</button>
+    <button class="btn-perigo" onclick="limparMapaOradores()">🗑️ Limpar nomes guardados</button>
+</div>
+
+<hr>
+
+<h2>4. Transcrição</h2>
+
+<textarea
+    id="resultado"
+    placeholder="A transcrição aparecerá aqui...">
+</textarea>
+
+<br>
+
+<button onclick="copiarTexto()">📋 Copiar</button>
+<button onclick="exportarTxt()">⬇ Exportar TXT</button>
+<button onclick="exportarJson()">⬇ Exportar JSON</button>
+
+<details class="debug">
+    <summary>Ver JSON técnico devolvido pela AssemblyAI</summary>
+    <pre id="jsonDebug">Sem dados ainda.</pre>
+</details>
+
+</div>
+
+<script>
+const preview = document.getElementById("preview");
+const videoFile = document.getElementById("videoFile");
+const resultado = document.getElementById("resultado");
+const statusDiv = document.getElementById("status");
+const progressBar = document.getElementById("progressBar");
+const transcriptMeta = document.getElementById("transcriptMeta");
+const fileInfo = document.getElementById("fileInfo");
+const jsonDebug = document.getElementById("jsonDebug");
+const btnTranscrever = document.getElementById("btnTranscrever");
+
+let utterancesGlobais = [];
+let respostaCompleta = null;
+let ultimoTranscriptId = null;
+
+window.onload = () => {
+    const key = localStorage.getItem("assembly_api_key");
+    const baseUrl = localStorage.getItem("assembly_base_url");
+
+    if(key){
+        document.getElementById("apiKey").value = key;
+    }
+
+    if(baseUrl){
+        document.getElementById("baseUrl").value = baseUrl;
+    }
+
+    atualizarStatus("Pronto.", "normal");
+};
+
+function guardarApiKey(){
+    const key = document.getElementById("apiKey").value.trim();
+    const baseUrl = document.getElementById("baseUrl").value;
+
+    if(!key){
+        alert("Introduza primeiro a API Key.");
+        return;
+    }
+
+    localStorage.setItem("assembly_api_key", key);
+    localStorage.setItem("assembly_base_url", baseUrl);
+    alert("API Key e endpoint guardados neste browser.");
+}
+
+function apagarApiKey(){
+    localStorage.removeItem("assembly_api_key");
+    document.getElementById("apiKey").value = "";
+    alert("API Key apagada deste browser.");
+}
+
+function mostrarOuOcultarChave(){
+    const campo = document.getElementById("apiKey");
+    campo.type = campo.type === "password" ? "text" : "password";
+}
+
+videoFile.addEventListener("change", (e) => {
+    const file = e.target.files[0];
+
+    if(file){
+        preview.src = URL.createObjectURL(file);
+        fileInfo.innerHTML =
+            `<span class="badge">Nome: ${escaparHtml(file.name)}</span>` +
+            `<span class="badge">Tipo: ${escaparHtml(file.type || "n/d")}</span>` +
+            `<span class="badge">Tamanho: ${formatarBytes(file.size)}</span>`;
+        atualizarStatus("Ficheiro selecionado.", "normal");
+        setProgress(0);
+    }
+});
+
+function atualizarStatus(msg, tipo = "normal"){
+    statusDiv.innerText = msg;
+    statusDiv.classList.remove("status-ok", "status-erro", "status-aviso");
+
+    if(tipo === "ok") statusDiv.classList.add("status-ok");
+    if(tipo === "erro") statusDiv.classList.add("status-erro");
+    if(tipo === "aviso") statusDiv.classList.add("status-aviso");
+}
+
+function setProgress(percentagem){
+    progressBar.style.width = Math.max(0, Math.min(100, percentagem)) + "%";
+}
+
+async function transcrever(){
+    try{
+        const apiKey = document.getElementById("apiKey").value.trim();
+        const baseUrl = document.getElementById("baseUrl").value;
+        const file = videoFile.files[0];
+
+        localStorage.setItem("assembly_base_url", baseUrl);
+
+        if(!apiKey){
+            alert("Introduza a API Key.");
+            return;
+        }
+
+        if(!file){
+            alert("Selecione um ficheiro primeiro.");
+            return;
+        }
+
+        btnTranscrever.disabled = true;
+        resultado.value = "";
+        transcriptMeta.innerText = "";
+        jsonDebug.innerText = "Sem dados ainda.";
+        utterancesGlobais = [];
+        respostaCompleta = null;
+        ultimoTranscriptId = null;
+        document.getElementById("speakerMap").innerHTML = "Os oradores aparecerão após a transcrição.";
+
+        atualizarStatus("Upload do ficheiro para a AssemblyAI...", "normal");
+        setProgress(10);
+
+        const uploadResp = await fetch(
+            `${baseUrl}/v2/upload`,
+            {
+                method:"POST",
+                headers:{
+                    authorization:apiKey
+                },
+                body:file
+            }
+        );
+
+        if(!uploadResp.ok){
+            const erroUpload = await lerRespostaErro(uploadResp);
+            throw new Error("Erro no upload: " + erroUpload);
+        }
+
+        const uploadData = await uploadResp.json();
+
+        if(!uploadData.upload_url){
+            throw new Error("A resposta de upload não devolveu upload_url.");
+        }
+
+        setProgress(30);
+        atualizarStatus("Ficheiro enviado. A criar pedido de transcrição...", "normal");
+
+        const maxSpeakersRaw = document.getElementById("maxSpeakers").value;
+        const maxSpeakers = maxSpeakersRaw ? Number(maxSpeakersRaw) : null;
+
+        const bodyTranscript = {
+            audio_url: uploadData.upload_url,
+            speaker_labels:true,
+            language_detection:true,
+            punctuate:true,
+            format_text:true,
+            speech_models:[
+                "universal-3-5-pro",
+                "universal-2"
+            ],
+            prompt:"Transcrição de reunião institucional em português europeu, com linguagem administrativa, intervenções formais, nomes próprios e eventuais termos técnicos."
+        };
+
+        if(maxSpeakers && maxSpeakers >= 1 && maxSpeakers <= 10){
+            bodyTranscript.speakers_expected = maxSpeakers;
+        }
+
+        const transcriptResp = await fetch(
+            `${baseUrl}/v2/transcript`,
+            {
+                method:"POST",
+                headers:{
+                    authorization:apiKey,
+                    "Content-Type":"application/json"
+                },
+                body:JSON.stringify(bodyTranscript)
+            }
+        );
+
+        if(!transcriptResp.ok){
+            const erroTranscript = await lerRespostaErro(transcriptResp);
+            throw new Error("Erro ao criar transcrição: " + erroTranscript);
+        }
+
+        const transcriptData = await transcriptResp.json();
+        const transcriptId = transcriptData.id;
+        ultimoTranscriptId = transcriptId;
+
+        if(!transcriptId){
+            throw new Error("A resposta da transcrição não devolveu ID.");
+        }
+
+        setProgress(45);
+        atualizarStatus("A transcrever... ID: " + transcriptId, "normal");
+
+        let status = "";
+        let tentativas = 0;
+
+        while(status !== "completed" && status !== "error"){
+            await new Promise(r => setTimeout(r, 5000));
+            tentativas++;
+
+            const polling = await fetch(
+                `${baseUrl}/v2/transcript/${transcriptId}`,
+                {
+                    headers:{
+                        authorization:apiKey
+                    }
+                }
+            );
+
+            if(!polling.ok){
+                const erroPolling = await lerRespostaErro(polling);
+                throw new Error("Erro ao consultar estado: " + erroPolling);
+            }
+
+            const data = await polling.json();
+            respostaCompleta = data;
+            status = data.status;
+
+            const progressoEstimado = Math.min(90, 45 + tentativas * 5);
+            setProgress(progressoEstimado);
+
+            atualizarStatus("Estado: " + status, "normal");
+
+            if(status === "completed"){
+                setProgress(100);
+                processarTranscricaoConcluida(data);
+                atualizarStatus("Transcrição concluída.", "ok");
+            }
+
+            if(status === "error"){
+                setProgress(0);
+                jsonDebug.innerText = JSON.stringify(data, null, 2);
+                atualizarStatus("Erro: " + (data.error || "erro desconhecido"), "erro");
+            }
+        }
+    }
+    catch(ex){
+        setProgress(0);
+        atualizarStatus("Erro: " + ex.message, "erro");
+    }
+    finally{
+        btnTranscrever.disabled = false;
+    }
+}
+
+function processarTranscricaoConcluida(data){
+    respostaCompleta = data;
+    jsonDebug.innerText = JSON.stringify(data, null, 2);
+
+    utterancesGlobais = Array.isArray(data.utterances) ? data.utterances : [];
+
+    transcriptMeta.innerHTML =
+        `<span class="badge">Transcript ID: ${escaparHtml(data.id || "n/d")}</span>` +
+        `<span class="badge">Idioma: ${escaparHtml(data.language_code || "n/d")}</span>` +
+        `<span class="badge">Duração: ${escaparHtml(String(data.audio_duration || "n/d"))} s</span>` +
+        `<span class="badge">Confiança: ${data.confidence ? Math.round(data.confidence * 100) + "%" : "n/d"}</span>`;
+
+    if(utterancesGlobais.length > 0){
+        criarMapaOradores(utterancesGlobais);
+        mostrarTextoOriginal();
+    }else{
+        resultado.value = data.text || "";
+        document.getElementById("speakerMap").innerHTML =
+            "A transcrição foi concluída, mas a resposta não trouxe lista de utterances/oradores. Verifique o JSON técnico.";
+    }
+}
+
+function criarMapaOradores(utterances){
+    const div = document.getElementById("speakerMap");
+    div.innerHTML = "";
+
+    const speakers = [...new Set(utterances.map(u => u.speaker))].sort();
+
+    if(speakers.length === 0){
+        div.innerHTML = "Não foram encontrados speakers na resposta.";
+        return;
+    }
+
+    speakers.forEach(speaker => {
+        const nomeGuardado = localStorage.getItem("speaker_" + speaker) || "";
+        const exemplo = obterExemploSpeaker(speaker, utterances);
+
+        div.innerHTML += `
+            <div class="speaker-card">
+                <strong>Speaker ${escaparHtml(speaker)}</strong>
+                <input
+                    id="speaker_${escaparHtml(speaker)}"
+                    value="${escaparHtml(nomeGuardado)}"
+                    placeholder="Nome do orador, ex.: Presidente da Câmara">
+                <div class="speaker-preview">
+                    Exemplo: ${escaparHtml(exemplo)}
+                </div>
+            </div>
+        `;
+    });
+}
+
+function obterExemploSpeaker(speaker, utterances){
+    const item = utterances.find(u => u.speaker === speaker && u.text);
+    if(!item) return "sem exemplo disponível";
+    return item.text.length > 160 ? item.text.substring(0, 160) + "..." : item.text;
+}
+
+function mostrarTextoOriginal(){
+    if(!utterancesGlobais || utterancesGlobais.length === 0){
+        if(respostaCompleta && respostaCompleta.text){
+            resultado.value = respostaCompleta.text;
+        }else{
+            alert("Ainda não existem oradores para mostrar.");
+        }
+        return;
+    }
+
+    let texto = "";
+
+    utterancesGlobais.forEach(u => {
+        texto += "ORADOR " + u.speaker + "\n";
+        texto += (u.text || "") + "\n\n";
+    });
+
+    resultado.value = texto.trim();
+}
+
+function aplicarOradores(){
+    if(!utterancesGlobais || utterancesGlobais.length === 0){
+        alert("Ainda não existem oradores para aplicar.");
+        return;
+    }
+
+    let texto = "";
+
+    utterancesGlobais.forEach(u => {
+        const campo = document.getElementById("speaker_" + u.speaker);
+        let nome = campo && campo.value ? campo.value.trim() : "";
+
+        if(!nome){
+            nome = "ORADOR " + u.speaker;
+        }
+
+        localStorage.setItem("speaker_" + u.speaker, nome);
+
+        texto += nome + "\n";
+        texto += (u.text || "") + "\n\n";
+    });
+
+    resultado.value = texto.trim();
+    atualizarStatus("Nomes dos oradores aplicados à transcrição.", "ok");
+}
+
+function guardarMapaOradores(){
+    const campos = document.querySelectorAll("[id^='speaker_']");
+
+    if(campos.length === 0){
+        alert("Não existem oradores para guardar.");
+        return;
+    }
+
+    campos.forEach(campo => {
+        const speaker = campo.id.replace("speaker_", "");
+        localStorage.setItem("speaker_" + speaker, campo.value.trim());
+    });
+
+    alert("Mapa de oradores guardado neste browser.");
+}
+
+function limparMapaOradores(){
+    const chaves = [];
+
+    for(let i = 0; i < localStorage.length; i++){
+        const chave = localStorage.key(i);
+        if(chave && chave.startsWith("speaker_")){
+            chaves.push(chave);
+        }
+    }
+
+    chaves.forEach(chave => localStorage.removeItem(chave));
+
+    const campos = document.querySelectorAll("[id^='speaker_']");
+    campos.forEach(campo => campo.value = "");
+
+    alert("Nomes de oradores apagados deste browser.");
+}
+
+function copiarTexto(){
+    if(!resultado.value.trim()){
+        alert("Não existe transcrição para copiar.");
+        return;
+    }
+
+    resultado.select();
+    document.execCommand("copy");
+    alert("Texto copiado.");
+}
+
+function exportarTxt(){
+    const texto = resultado.value;
+
+    if(!texto.trim()){
+        alert("Não existe transcrição para exportar.");
+        return;
+    }
+
+    const blob = new Blob(
+        [texto],
+        {type:"text/plain;charset=utf-8"}
+    );
+
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = nomeFicheiroExportacao("transcricao", "txt");
+    a.click();
+}
+
+function exportarJson(){
+    if(!respostaCompleta){
+        alert("Ainda não existe JSON para exportar.");
+        return;
+    }
+
+    const blob = new Blob(
+        [JSON.stringify(respostaCompleta, null, 2)],
+        {type:"application/json;charset=utf-8"}
+    );
+
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = nomeFicheiroExportacao("assemblyai_resposta", "json");
+    a.click();
+}
+
+function limparTudo(){
+    videoFile.value = "";
+    preview.removeAttribute("src");
+    resultado.value = "";
+    fileInfo.innerHTML = "";
+    transcriptMeta.innerHTML = "";
+    jsonDebug.innerText = "Sem dados ainda.";
+    document.getElementById("speakerMap").innerHTML = "Os oradores aparecerão após a transcrição.";
+    utterancesGlobais = [];
+    respostaCompleta = null;
+    ultimoTranscriptId = null;
+    setProgress(0);
+    atualizarStatus("Pronto.", "normal");
+}
+
+async function lerRespostaErro(resp){
+    try{
+        const texto = await resp.text();
+        if(!texto) return resp.status + " " + resp.statusText;
+
+        try{
+            const json = JSON.parse(texto);
+            return json.error || json.message || JSON.stringify(json);
+        }catch(e){
+            return texto;
+        }
+    }catch(e){
+        return resp.status + " " + resp.statusText;
+    }
+}
+
+function formatarBytes(bytes){
+    if(bytes === 0) return "0 Bytes";
+    const k = 1024;
+    const sizes = ["Bytes", "KB", "MB", "GB"];
+    const i = Math.floor(Math.log(bytes) / Math.log(k));
+    return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + " " + sizes[i];
+}
+
+function nomeFicheiroExportacao(prefixo, extensao){
+    const agora = new Date();
+    const yyyy = agora.getFullYear();
+    const mm = String(agora.getMonth() + 1).padStart(2, "0");
+    const dd = String(agora.getDate()).padStart(2, "0");
+    const hh = String(agora.getHours()).padStart(2, "0");
+    const mi = String(agora.getMinutes()).padStart(2, "0");
+    return `${prefixo}_${yyyy}${mm}${dd}_${hh}${mi}.${extensao}`;
+}
+
+function escaparHtml(valor){
+    return String(valor)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+}
+</script>
+
+</body>
+</html>

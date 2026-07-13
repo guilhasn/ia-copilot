@@ -120,7 +120,18 @@ No final da atividade os participantes terão desenvolvido uma aplicação funci
 
 3. **Ficheiro de teste** — gravem 30 a 60 segundos a ler um diálogo inventado a duas vozes (dá logo para ver a identificação de oradores a funcionar), ou usem um ficheiro de exemplo público.
 
-4. **Como construir** — dão esta especificação ao Copilot ou a uma ferramenta de *vibecoding* e deixam-no gerar a app; depois iteram. Se é a vossa primeira app, revisitem o [exercício da S02]({% link exercicios/s02-primeira-app-vibecoding.md %}) e o recurso [Vibecoding]({% link recursos/vibecoding.md %}).
+4. **Como construir** — dão o **prompt para o agente de código** (nos materiais abaixo) ao Copilot ou a uma ferramenta de *vibecoding* e deixam-no gerar a app; depois iteram. Se é a vossa primeira app, revisitem o [exercício da S02]({% link exercicios/s02-primeira-app-vibecoding.md %}) e o recurso [Vibecoding]({% link recursos/vibecoding.md %}).
+
+## Materiais desta sessão
+
+- **[Prompt para o agente de código]({{ '/exercicios/s10-transcricao/assemblyprompt.txt' | relative_url }})** — instruções completas para um agente de código (Copilot, Cursor, Claude Code) construir a integração com a AssemblyAI, com ligação à documentação viva do serviço. É o ponto de partida de quem quer *vibecodar* a app.
+
+- **[Aplicação de referência]({{ '/exercicios/s10-transcricao/transcritor-assemblyai.html' | relative_url }})** — uma app pronta a usar: carregam um MP4/MP3/WAV/M4A, introduzem a **vossa** chave da AssemblyAI e obtêm a transcrição em português europeu com identificação de oradores. A chave fica só no vosso *browser* — usem uma chave de teste descartável.
+
+- **[Versão alternativa da app]({{ '/exercicios/s10-transcricao/transcritor-assemblyai-alt.html' | relative_url }})** — uma variante para comparar abordagens.
+
+{: .important }
+> 🛈 A aplicação de referência serve para **ver o resultado e comparar** — mas o objetivo do exercício é construírem a vossa. Abram-na depois de tentarem, não antes.
 
 ## Reflexão final
 
