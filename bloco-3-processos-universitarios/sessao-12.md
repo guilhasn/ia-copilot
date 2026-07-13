@@ -16,7 +16,7 @@ published: true
 - **Modalidade:** Em linha (síncrona)
 - **Bloco:** 3 · IA nos Processos Universitários
 
-Esta é a sessão em que a fronteira do curso fica mais nítida — e mais cara de atravessar. Um júri de candidaturas decide sobre **pessoas**: quem é recrutado, quem recebe a bolsa, quem entra no mestrado. E há uma frase que atravessa a sessão inteira:
+Um júri de candidaturas decide sobre **pessoas**: quem é recrutado, quem recebe uma bolsa, quem é admitido a um curso. Por isso, um princípio orienta toda a sessão:
 
 > A máquina pode **ler** as candidaturas. Não pode **escolher** a pessoa.
 >
@@ -41,11 +41,11 @@ A **Catarina Pires**, técnica de recursos humanos da Universidade de Vale Verde
 
 - um prazo apertado e a pressão silenciosa de «despachar isto»;
 
-- e, à espreita, a tentação mais perigosa do curso: *«e se eu pedisse ao Copilot para pré-ordenar os candidatos, só para adiantar?»*.
+- e a tentação mais perigosa do curso: pedir ao Copilot que **pré-ordene** os candidatos, «só para adiantar».
 
-Ler tudo à mão consome dias. Mas o atalho — deixar a IA ordenar — não é lentidão a menos: é o procedimento a ficar **ferido de nulidade** e uma pessoa a ser prejudicada por uma máquina.
+Ler tudo à mão consome dias. Mas o atalho de deixar a IA ordenar não poupa tempo: torna o procedimento juridicamente frágil e prejudica uma pessoa.
 
-> O risco aqui não é escrever mal uma ata. É uma decisão sobre a carreira, a bolsa ou o futuro académico de alguém assentar, ainda que em parte, num juízo que ninguém consegue explicar.
+> O risco não está em escrever mal uma ata. Está em fazer assentar uma decisão sobre a carreira, a bolsa ou o futuro académico de alguém — ainda que só em parte — num juízo que ninguém consegue explicar.
 
 ## 2. A regra de ouro: verificar factos, nunca ordenar pessoas
 
@@ -69,20 +69,20 @@ E porque um concurso obedece a princípios próprios — igualdade, imparcialida
 >
 > **Saída (simulada, a não copiar):** uma tabela impecável, com pontuações até à décima e um «candidato recomendado» — que pesou critérios que o aviso não previa, penalizou um percurso com um hiato de catorze meses, e atribuiu a um candidato uma competência que o CV não menciona.
 
-O texto sai confiante e limpo. E é aí que mora o perigo. Quatro armadilhas típicas deste terreno:
+O texto sai confiante e limpo — e é precisamente aí que está o perigo. Quatro armadilhas típicas deste terreno:
 
 - **O critério fantasma** — a IA pontua «liderança» ou «dinamismo» que o aviso nunca pediu. Ninguém aprovou aqueles pesos; a ordenação é opaca por construção.
 
-- **O hiato penalizado** — catorze meses sem emprego podem ser uma licença parental, uma doença, um período de cuidado a um familiar. A IA lê «lacuna» e desconta — discriminação por uma variável-proxy que a lei protege.
+- **O hiato penalizado** — catorze meses sem emprego podem ser uma licença parental, uma doença ou um período de cuidado a um familiar. A IA lê «lacuna» e desconta pontos: é uma discriminação indireta, assente numa circunstância que a lei protege.
 
 - **A competência alucinada** — a IA «melhora» um CV atribuindo-lhe experiência que lá não está. Sobre uma proposta, é um erro; sobre uma pessoa, é inventar-lhe o currículo.
 
 - **A pontuação determinante** — mesmo que o júri «só confirme» a ordenação da IA, se essa pontuação teve papel **determinante** na decisão, o artigo 22.º do RGPD é ativado (foi o que o acórdão SCHUFA esclareceu: não precisa de ser 100% automática).
 
-> A regra tem uma só perna, mas é de aço: a IA verifica **factos objetivos**; o **mérito** é deliberação humana. No momento em que a IA pontua adequação, passou de escrivão a jurado — e o jurado não pode ser uma máquina.
+> A regra é uma só, e não admite exceção: a IA verifica **factos objetivos**; o **mérito** é deliberação humana. No momento em que a IA pontua a adequação de um candidato, deixa de ser escrivão e passa a jurado — e o jurado não pode ser uma máquina.
 
 {: .note }
-> **Para discutir em conjunto** (sobre a tabela «recomendada» acima):
+> **Para discutir** (sobre a tabela «recomendada» acima):
 >
 > 1. Que critério é que a IA usou que **não** está no aviso?
 > 2. O hiato de catorze meses justifica descontar pontos? Que informação falta para sequer o interpretar?
@@ -97,9 +97,9 @@ Sem transformar a sessão numa aula de Direito, há um teste de bolso que resolv
 3. O decisor conhece os **dados e critérios** usados?
 4. Há tempo e condições reais para **revisão humana**?
 
-> Um «não» ou «talvez» a qualquer uma delas — e o uso passa a crítico.
+> Basta um «não» ou um «talvez» a qualquer uma delas para o uso passar a crítico.
 
-E o enquadramento por trás disto tem dois pilares, que entram como etiqueta e não como sermão:
+O enquadramento assenta em dois pilares:
 
 - **RGPD, artigo 22.º** — o titular tem o direito de não ficar sujeito a uma decisão baseada apenas em tratamento automatizado que o afete significativamente. O acórdão **SCHUFA** (TJUE, 2023) esclareceu: basta a pontuação ter **papel determinante**.
 
@@ -107,7 +107,7 @@ E o enquadramento por trás disto tem dois pilares, que entram como etiqueta e n
 
 ## 5. O Copilot como escrivão do júri
 
-Vista a armadilha, o uso que compensa — e é muito — ao longo do ciclo:
+Vista a armadilha, fica o uso que compensa, ao longo de todo o ciclo:
 
 - **antes de abrir as candidaturas** — extrair do aviso a lista de requisitos formais e documentos obrigatórios; ajudar a redigir a grelha de avaliação e a fixar os critérios **antes** de ver quem concorre (para a régua não se moldar às pessoas);
 
@@ -172,7 +172,7 @@ A [Matriz Semáforo]({% link recursos/matriz-semaforo.md %}) aplica-se aqui com 
 
 5. **A ata depois** — a fundamentação sai do Copilot **depois** da decisão, nas palavras do júri, com campos `[CONFIRMAR]` onde faltar deliberação. É a **Validação com a fonte** da [Sessão 8]({% link bloco-2-produtividade/sessao-08.md %}): a régua são o aviso e os documentos — na vossa mão.
 
-6. **As quatro perguntas como travão** — antes de aceitar qualquer resultado, correr o teste de bolso do §4. Um «talvez» chega para parar.
+6. **As quatro perguntas como travão** — antes de aceitar qualquer resultado, correr o teste de bolso do §4. Um «talvez» é razão suficiente para parar.
 
 > Regra prática: no procedimento, a linguagem é sempre «o júri deliberou» — a IA não aparece como autora de nenhuma avaliação.
 
@@ -201,7 +201,7 @@ A validação faz-se abrindo a candidatura na página citada — se a tabela diz
 
 ## 9. As três faces: a mesma fronteira
 
-O caso é de recrutamento, mas a regra não muda de forma nas outras decisões sobre pessoas que os serviços das IES tomam:
+O caso é de recrutamento, mas a regra é a mesma nas outras decisões sobre pessoas que os serviços das IES tomam:
 
 - **Recrutamento** (concursos docentes e não docentes) — Anexo III, ponto 4 (emprego). A IA verifica requisitos; o júri avalia mérito.
 
@@ -270,7 +270,7 @@ decisão. Não geres avaliações nem alteres a graduação do júri.
 
 ## 11. Exercício prático
 
-A atividade principal é o caso **«O júri que a máquina não pode ser»**: em grupos, como equipa de apoio a um júri da UVV, recebem quatro candidaturas fictícias com armadilhas plantadas — um hiato que é licença parental, uma competência que a IA tende a inventar, um requisito formal em falta e um critério de mérito que não está no aviso. Produzem a tabela de conformidade formal e apanham o instante exato em que a IA passa de escrivão a jurado.
+A atividade principal é o caso **«O júri que a máquina não pode ser»**: individualmente, no papel de apoio a um júri da UVV, recebem quatro candidaturas fictícias com armadilhas plantadas — um hiato que é licença parental, uma competência que a IA tende a inventar, um requisito formal em falta e um critério de mérito que não está no aviso. Produzem a tabela de conformidade formal e apanham o instante exato em que a IA passa de escrivão a jurado.
 
 👉 **Todos os materiais estão na [página do exercício]({% link exercicios/s12-juri-candidaturas.md %}):** o aviso de abertura, as quatro candidaturas, a grelha, os prompts e a regra de segurança.
 
@@ -293,7 +293,7 @@ Antes de fechar a triagem, confirmem que:
 
 - todas as candidaturas foram tratadas com os mesmos prompts e o mesmo escrutínio;
 
-- nenhum hiato ou variável-proxy foi usado para desqualificar sem informação real;
+- nenhuma candidatura foi desqualificada por um hiato no percurso sem informação real que o justifique;
 
 - a ata diz «o júri deliberou» — e a graduação é do júri;
 

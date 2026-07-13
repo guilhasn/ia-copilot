@@ -7,9 +7,9 @@ nav_order: 12
 
 # Exercício · O júri que a máquina não pode ser
 
-> Como equipa de apoio a um júri, recebem quatro candidaturas a um concurso. A tarefa não é escolher o vencedor — é preparar tudo o que o júri precisa para escolher bem, e apanhar o momento exato em que a IA se oferece para decidir por vocês.
+> No papel de apoio a um júri, recebem quatro candidaturas a um concurso. A tarefa não é escolher o vencedor — é preparar tudo o que o júri precisa para escolher bem, e reconhecer o momento exato em que a IA se oferece para decidir por vocês.
 
-**Modalidade:** grupos de 2-3 · **Copilot Chat** ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)), com ou sem licença · dados 100% fictícios.
+**Modalidade:** individual · **Copilot Chat** ([m365.cloud.microsoft/chat](https://m365.cloud.microsoft/chat)), com ou sem licença · dados 100% fictícios.
 
 {: .important }
 > 🛈 **Matriz Semáforo: verde.** Aviso, candidatos e candidaturas são inventados. O mesmo trabalho com candidaturas reais é **amarelo** — só no ambiente institucional, com legitimidade no júri e validação integral — e a graduação por mérito **nunca** sai das mãos do júri.
@@ -19,7 +19,7 @@ nav_order: 12
 
 ## O procedimento (fictício)
 
-A **Universidade de Vale Verde (UVV)** abriu o concurso **CP-RH/03/2026** para um posto de **Técnico Superior — área de gestão e administração**. Fazem parte da equipa de apoio ao júri.
+A **Universidade de Vale Verde (UVV)** abriu o concurso **CP-RH/03/2026** para um posto de **Técnico Superior — área de gestão e administração**. Apoiam o júri deste procedimento.
 
 **Requisitos formais (do aviso de abertura):**
 
@@ -72,7 +72,7 @@ Analisa as quatro candidaturas e ordena os candidatos por adequação
 ao cargo. Indica quem deve ganhar e justifica.
 ```
 
-Leiam a resposta com olhos críticos e respondam, em grupo:
+Leiam a resposta com espírito crítico e respondam:
 
 1. Que **critério** é que a IA usou para ordenar que **não** está no aviso?
 2. Como é que a IA tratou o **período sem atividade** de uma das candidaturas? Que informação faltava para sequer o interpretar?
@@ -83,7 +83,7 @@ Este é o coração do exercício: ver, ao vivo, a IA a passar de escrivão a ju
 
 ### Fase D — A ata, depois da deliberação
 
-Só agora o «júri» (o vosso grupo) delibera o mérito **por si**, com a grelha à frente. Fixada a decisão e as razões, usem o **Prompt 3** para redigir a minuta da ata — em linguagem «o júri deliberou», com `[CONFIRMAR]` onde faltar.
+Só agora assumem o papel do júri e deliberam o mérito, com a grelha à frente. Fixada a decisão e as razões, usem o **Prompt 3** para redigir a minuta da ata — em linguagem «o júri deliberou», com `[CONFIRMAR]` onde faltar.
 
 ## Prompts
 
@@ -97,7 +97,7 @@ Os três prompts do núcleo estão na secção [Prompts essenciais]({% link bloc
 
 3. Respostas às quatro perguntas da Fase C — a análise crítica da ordenação da IA.
 
-4. Minuta de ata com a graduação **deliberada pelo grupo**, em linguagem «o júri deliberou».
+4. Minuta de ata com a graduação **que deliberaram**, em linguagem «o júri deliberou».
 
 ## Critérios de sucesso
 
@@ -105,9 +105,9 @@ Os três prompts do núcleo estão na secção [Prompts essenciais]({% link bloc
 
 - nenhum candidato foi desqualificado por um **período sem atividade** sem informação real que o justifique;
 
-- o grupo identificou pelo menos um critério que a IA introduziu e que **não** consta do aviso;
+- identificaram pelo menos um critério que a IA introduziu e que **não** consta do aviso;
 
-- em nenhum entregável a IA aparece a pontuar, ordenar ou recomendar — a graduação é do grupo;
+- em nenhum entregável a IA aparece a pontuar, ordenar ou recomendar — a graduação é vossa;
 
 - a ata diz «o júri deliberou» e a fundamentação é do júri.
 
