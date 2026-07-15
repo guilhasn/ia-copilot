@@ -23,3 +23,4 @@ Mãos no Copilot. Cada sessão tem um exercício prático que aplica o que acabo
 | **S10** — Atas e reuniões | [Transcrição com IA (AssemblyAI)]({% link exercicios/s10-transcricao-assemblyai.md %}) | livre |
 | **S11** — Contratação pública | [Banco de prompts (contratar IA)]({% link exercicios/s11-contratacao-publica.md %}) | livre |
 | **S13** — Uso coletivo | [O espaço coletivo do gabinete]({% link exercicios/s13-uso-coletivo.md %}) | livre |
+| **S14** — Agentes | [Cria o teu agente]({% link exercicios/s14-especificar-agente.md %}) | livre |
