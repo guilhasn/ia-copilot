@@ -7,7 +7,7 @@ nav_order: 15
 
 # Laboratório 1 · O teu primeiro agente: um Assistente de Matrículas com fontes
 
-> Na S13 escolheste fontes para o Notebook do gabinete. Hoje empacotas esse gesto numa **ferramenta com nome próprio**: o Assistente de Matrículas, um agente ancorado em regulamentos **reais e públicos** da Universidade de Aveiro, que responde **só a partir das fontes**, cita a origem e não inventa. É o agente de FAQ ⭐ do catálogo, construído — e é mais fácil do que parece: descreves o que queres, carregas as fontes, desligas um interruptor.
+> Vais construir uma **ferramenta com nome próprio**: o Assistente de Matrículas, um agente ancorado em regulamentos **reais e públicos** da Universidade de Aveiro, que responde **só a partir das fontes**, cita a origem e não inventa. É o agente de FAQ ⭐ do catálogo, construído — e é mais fácil do que parece: descreves o que queres, carregas as fontes, desligas um interruptor.
 
 **Modalidade:** individual, com partilha de ecrã do formador · **Microsoft Copilot Studio** (licença ou *trial*) · duração: 45–60 min.
 
