@@ -95,6 +95,8 @@ Testa-se no painel — e, num segundo momento, mostra-se que **um agente também
 
 > O que observar não é a resposta bonita — é onde o agente **para**: cita a fonte, admite o que não sabe, e não decide nada sozinho.
 
+👉 O guião completo da construção no Copilot Studio, passo a passo e com capturas de ecrã, está no **[Laboratório: o teu primeiro agente no Copilot Studio]({% link exercicios/s14-lab-copilot-studio.md %})** — serve para acompanhar a demonstração e para replicar depois, com licença ou *trial*.
+
 ## 6. A linha vermelha, agora que o agente age
 
 Um agente que executa ações levanta a fasquia do risco. A doutrina do curso aplica-se inteira:
@@ -140,7 +142,7 @@ Cada um especifica o **seu** agente na **grelha dos 10 pontos** — quem usa, qu
 
 👉 **O guião e o catálogo estão na [página do exercício]({% link exercicios/s14-especificar-agente.md %}).**
 
-Quem tem acesso constrói o agente no Agent Builder ou no Copilot Studio; a **[Agent Academy](https://microsoft.github.io/agent-academy/)** da Microsoft serve de apoio para ir mais longe.
+Quem tem acesso constrói o agente no Agent Builder ou no Copilot Studio — o **[laboratório passo a passo]({% link exercicios/s14-lab-copilot-studio.md %})** replica a demonstração do formador; a **[Agent Academy](https://microsoft.github.io/agent-academy/)** da Microsoft serve de apoio para ir mais longe.
 
 ## 9. Lista de verificação final
 
