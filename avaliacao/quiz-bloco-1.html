@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz · Bloco 1 — Enquadramento | IA aplicada às IES</title>
+<style>
+  :root{
+    --azul:#1F4E78; --azul2:#2E74B5; --claro:#DEEBF7; --ok:#2e7d32; --okbg:#e8f5e9;
+    --erro:#c62828; --errobg:#fdecea; --cinza:#595959; --borda:#d9d9d9;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  body{font-family:'Segoe UI',Calibri,system-ui,sans-serif; background:#f4f6f9; color:#222; line-height:1.55; padding:24px 12px}
+  .wrap{max-width:760px; margin:0 auto}
+  header{background:var(--azul); color:#fff; border-radius:14px 14px 0 0; padding:26px 28px}
+  header h1{font-size:1.35rem; font-weight:700}
+  header p{opacity:.85; font-size:.95rem; margin-top:6px}
+  .card{background:#fff; border:1px solid var(--borda); border-top:none; border-radius:0 0 14px 14px; padding:28px}
+  .progress{height:8px; background:#e4e9f0; border-radius:99px; margin-bottom:22px; overflow:hidden}
+  .progress > div{height:100%; background:var(--azul2); width:0; transition:width .3s}
+  .qnum{font-size:.85rem; color:var(--cinza); text-transform:uppercase; letter-spacing:.06em; margin-bottom:8px}
+  .qtext{font-size:1.12rem; font-weight:600; margin-bottom:18px}
+  .opt{display:block; width:100%; text-align:left; background:#fff; border:1.5px solid var(--borda); border-radius:10px;
+       padding:13px 16px; margin-bottom:10px; font-size:1rem; cursor:pointer; transition:all .15s; font-family:inherit}
+  .opt:hover:not(:disabled){border-color:var(--azul2); background:var(--claro)}
+  .opt:disabled{cursor:default}
+  .opt.correta{border-color:var(--ok); background:var(--okbg); font-weight:600}
+  .opt.errada{border-color:var(--erro); background:var(--errobg)}
+  .letra{display:inline-block; width:1.6em; font-weight:700; color:var(--azul2)}
+  .feedback{border-radius:10px; padding:14px 16px; margin-top:14px; font-size:.97rem; display:none}
+  .feedback.show{display:block}
+  .feedback.ok{background:var(--okbg); border-left:5px solid var(--ok)}
+  .feedback.ko{background:var(--errobg); border-left:5px solid var(--erro)}
+  .feedback b{display:block; margin-bottom:4px}
+  .nav{display:flex; justify-content:flex-end; margin-top:20px}
+  button.next{background:var(--azul); color:#fff; border:none; border-radius:10px; padding:12px 26px; font-size:1rem;
+       cursor:pointer; font-family:inherit; display:none}
+  button.next.show{display:inline-block}
+  button.next:hover{background:var(--azul2)}
+  .resultado{text-align:center; display:none}
+  .resultado.show{display:block}
+  .score{font-size:3rem; font-weight:800; color:var(--azul); margin:14px 0 4px}
+  .nivel{font-size:1.15rem; font-weight:600; margin-bottom:14px}
+  .msg{color:var(--cinza); margin-bottom:22px}
+  .rev{text-align:left; border-top:1px solid var(--borda); padding-top:18px; margin-top:8px}
+  .rev h3{font-size:1rem; color:var(--azul); margin-bottom:10px}
+  .rev-item{font-size:.92rem; margin-bottom:8px; padding-left:22px; position:relative}
+  .rev-item::before{content:attr(data-i); position:absolute; left:0; font-weight:700; color:var(--azul2)}
+  .rev-item.certa::after{content:" ✓"; color:var(--ok); font-weight:700}
+  .rev-item.errada2::after{content:" ✗"; color:var(--erro); font-weight:700}
+  button.retry{background:#fff; color:var(--azul); border:1.5px solid var(--azul); border-radius:10px;
+       padding:12px 26px; font-size:1rem; cursor:pointer; font-family:inherit; margin-top:18px}
+  button.retry:hover{background:var(--claro)}
+  footer{text-align:center; color:var(--cinza); font-size:.82rem; margin-top:16px}
+  footer a{color:var(--azul2)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Quiz · Bloco 1 — Enquadramento</h1>
+    <p>Sessões 1 a 3: fundamentos, Matriz Semáforo, anatomia do prompt e biblioteca · 20 perguntas · anónimo, com feedback imediato</p>
+  </header>
+  <div class="card">
+    <div class="progress"><div id="bar"></div></div>
+    <div id="quiz"></div>
+    <div class="nav"><button class="next" id="btnNext" onclick="proxima()">Próxima pergunta →</button></div>
+    <div class="resultado" id="res">
+      <div class="qnum">Resultado final</div>
+      <div class="score" id="scoreTxt"></div>
+      <div class="nivel" id="nivelTxt"></div>
+      <div class="msg" id="msgTxt"></div>
+      <div class="rev" id="revisao"></div>
+      <button class="retry" onclick="reiniciar()">↻ Repetir o quiz</button>
+    </div>
+  </div>
+  <footer>IA — Aplicações ao trabalho das IES · ANFUP · Formador: Nuno Salvador · <a href="index.html">voltar à Avaliação</a></footer>
+</div>
+
+<script>
+const QUESTOES = [
+ {
+  "q": "Na Matriz Semáforo do curso, o que caracteriza um uso VERDE do Copilot?",
+  "opts": [
+   "Qualquer uso feito dentro do horário de trabalho e com conta institucional",
+   "Usos autorizados por escrito pelo superior hierárquico antes de cada tarefa",
+   "Usos com conteúdo fictício ou público, sem dados pessoais nem matéria reservada",
+   "Usos em que o resultado é revisto por dois colegas antes de ser enviado"
+  ],
+  "c": 2,
+  "exp": "O verde é o território recomendado: trabalhar com conteúdo fictício ou já público, sem dados pessoais nem informação reservada. A conta institucional é necessária, mas não chega para tornar um uso verde — o que conta é a natureza do conteúdo."
+ },
+ {
+  "q": "E o AMARELO da Matriz Semáforo — o que exige?",
+  "opts": [
+   "Validação humana e ambiente institucional, com atenção a permissões e minimização",
+   "Proibição total: amarelo é apenas um aviso prévio do que virá a ser vermelho",
+   "Uma licença Microsoft 365 Copilot ativa, porque o Chat gratuito não é seguro",
+   "Autorização da CNPD antes de qualquer tratamento com ferramentas de IA"
+  ],
+  "c": 0,
+  "exp": "Amarelo não é proibido — é «pode, com cuidados»: informação institucional interna trabalhada no ambiente Microsoft 365 da instituição, com validação humana e minimização do que se submete. A licença não é o critério; o conteúdo e o ambiente é que são."
+ },
+ {
+  "q": "Porque é que «decidir sobre pessoas» é o VERMELHO transversal a todo o curso?",
+  "opts": [
+   "Porque os modelos de IA ainda cometem demasiados erros ortográficos em português",
+   "Porque a lei só permite IA em decisões sobre pessoas a partir de 2030",
+   "Porque as decisões sobre pessoas exigem sempre despacho escrito do dirigente máximo do serviço, ouvido o interessado",
+   "Porque o RGPD limita decisões exclusivamente automatizadas e o AI Act classifica esses usos como alto risco"
+  ],
+  "c": 3,
+  "exp": "O art. 22.º do RGPD dá às pessoas o direito de não ficarem sujeitas a decisões exclusivamente automatizadas com efeitos significativos, e o Anexo III do AI Act classifica usos em emprego e avaliação de pessoas como alto risco. A decisão fica sempre no humano."
+ },
+ {
+  "q": "Um colega quer usar a conta PESSOAL do ChatGPT para resumir um documento interno do serviço. Qual é a resposta do curso?",
+  "opts": [
+   "Pode, desde que apague a conversa no fim e não guarde o histórico",
+   "Nunca — ferramentas pessoais não têm a proteção de dados empresarial da conta institucional",
+   "Pode, porque resumir não é decidir e portanto o uso é sempre verde",
+   "Pode, se o documento tiver menos de dez páginas, não citar nomes próprios nem valores orçamentais"
+  ],
+  "c": 1,
+  "exp": "É a regra absoluta da Sessão 2: o Copilot Chat com sessão iniciada na conta institucional tem proteção de dados empresarial e não usa os prompts para treinar modelos; contas pessoais e ferramentas públicas não oferecem essas garantias. Documento interno em conta pessoal: nunca."
+ },
+ {
+  "q": "O que distingue o Copilot Chat institucional do ChatGPT pessoal, segundo a Sessão 2?",
+  "opts": [
+   "O Copilot institucional não usa os prompts para treinar modelos e tem proteção empresarial",
+   "O Copilot institucional é sempre gratuito e o ChatGPT é sempre pago",
+   "O ChatGPT é tecnicamente superior, mas está bloqueado nas redes das universidades",
+   "Não há diferença relevante: ambos usam modelos de linguagem da mesma família"
+  ],
+  "c": 0,
+  "exp": "A diferença que importa não é o modelo — é o contrato: com conta institucional, os prompts e os dados não treinam modelos e ficam sob a proteção de dados empresarial. É isso que permite trabalhar conteúdo interno (amarelo) no ambiente institucional."
+ },
+ {
+  "q": "No framework GCSE da Microsoft, os quatro componentes de um bom prompt são:",
+  "opts": [
+   "Gramática, Clareza, Simplicidade e Estrutura",
+   "Geração, Correção, Síntese e Edição",
+   "Objetivo, Contexto, Fonte e Expectativas",
+   "Objetivo, Criatividade, Segurança e Eficiência"
+  ],
+  "c": 2,
+  "exp": "GCSE vem do inglês Goal, Context, Source, Expectations — Objetivo, Contexto, Fonte e Expectativas. É o esqueleto de todos os prompts do curso: o que quero, para quê e para quem, a partir de quê, e em que formato/tom/extensão."
+ },
+ {
+  "q": "«Faz um resumo deste regulamento.» À luz do GCSE, o que falta sobretudo a este prompt?",
+  "opts": [
+   "Nada — é curto e direto, exatamente como os prompts devem ser",
+   "Contexto e expectativas: para quem é, com que propósito, em que formato e extensão",
+   "Uma fórmula de cortesia inicial, que comprovadamente melhora a qualidade e o tom das respostas",
+   "A indicação do modelo de IA a usar e da temperatura da resposta"
+  ],
+  "c": 1,
+  "exp": "A fonte até existe (o regulamento), mas falta o resto: resumo para quem? para que decisão? em quantos pontos, com que tom? Sem contexto e expectativas, o Copilot preenche as lacunas com suposições — e o resultado é genérico."
+ },
+ {
+  "q": "O mesmo prompt, submetido duas vezes, deu respostas diferentes. O que significa isto?",
+  "opts": [
+   "Que o serviço estava sobrecarregado nesse momento e conviria repetir o pedido fora das horas de ponta",
+   "Que o prompt violou alguma regra e o Copilot alternou para um modo restrito",
+   "Que houve um erro de sessão: com a mesma instrução, a resposta é sempre igual",
+   "É o comportamento normal de um modelo não-determinista — o output trata-se como rascunho"
+  ],
+  "c": 3,
+  "exp": "Os modelos geram texto com alguma aleatoriedade — o mesmo prompt pode dar resultados diferentes, e isso não é avaria. A consequência prática atravessa o curso inteiro: o output é sempre um rascunho a validar, nunca um produto final."
+ },
+ {
+  "q": "O artigo 4.º do AI Act (em vigor desde 02-02-2025) obriga as organizações a quê?",
+  "opts": [
+   "Garantir literacia em IA a quem opera sistemas de IA em seu nome",
+   "Registar todos os prompts submetidos pelos trabalhadores durante três anos",
+   "Nomear um Encarregado de Inteligência Artificial em cada unidade orgânica",
+   "Proibir ferramentas de IA generativa em serviços com dados pessoais"
+  ],
+  "c": 0,
+  "exp": "O art. 4.º impõe às organizações que assegurem um nível suficiente de literacia em IA ao pessoal que usa estes sistemas — é a base legal desta própria formação. Não exige registos de prompts, nomeações específicas nem proibições genéricas."
+ },
+ {
+  "q": "O que é o meta-prompt («o prompt que escreve prompts»), a entrada #0 da biblioteca?",
+  "opts": [
+   "Um prompt de sistema secreto que a Microsoft instala em todas as contas institucionais",
+   "Um atalho de teclado que abre a Prompt Gallery dentro do Copilot Chat",
+   "Um prompt que transforma uma descrição desleixada da tarefa num prompt bem-formado GCSE",
+   "Uma funcionalidade paga que guarda os prompts favoritos entre sessões"
+  ],
+  "c": 2,
+  "exp": "É o «engenheiro de prompts»: colas o meta-prompt, descreves a tarefa em linguagem corrente, e ele devolve um prompt estruturado com Objetivo, Contexto, Fonte e Expectativas — que revês, testas e guardas na biblioteca."
+ },
+ {
+  "q": "Na segunda-feira, um colega cola a tarefa no Copilot Chat e «a magia deixou de funcionar». O que se esqueceu ele de fazer?",
+  "opts": [
+   "De ativar o modo Trabalho no seletor do Copilot Chat",
+   "De colar primeiro o meta-prompt — o Chat não guarda instruções entre conversas",
+   "De iniciar sessão com a conta pessoal, que tem menos restrições",
+   "De atualizar o navegador, porque o Copilot Chat só funciona na versão mais recente do Edge"
+  ],
+  "c": 1,
+  "exp": "O Copilot Chat não memoriza instruções entre conversas: cada conversa nova começa do zero. Por isso o meta-prompt é a entrada #0 e vive no topo da biblioteca — é a primeira coisa a colar em cada conversa nova, antes de descrever a tarefa."
+ },
+ {
+  "q": "Uma entrada bem-formada da biblioteca de prompts do curso tem quatro campos. Quais?",
+  "opts": [
+   "Nome · quando usar · o prompt · como validar o resultado",
+   "Autor · data de criação · número de utilizações · classificação",
+   "Aplicação · licença exigida · custo estimado · tempo poupado",
+   "Título · palavras-chave · versão · hiperligação para a fonte"
+  ],
+  "c": 0,
+  "exp": "Cada entrada guarda o nome, a situação em que se usa, o texto íntegro do prompt e — o campo que distingue a biblioteca do curso — a validação: o que verificar no resultado antes de o aproveitar."
+ },
+ {
+  "q": "Para que serve o «colega simulado» (entrada #7 da biblioteca)?",
+  "opts": [
+   "Para gerar respostas automáticas aos e-mails dos colegas em período de férias",
+   "Para dividir uma tarefa longa em subtarefas mais pequenas e distribuí-las pelos membros da equipa",
+   "Para simular a assinatura de outro utilizador em documentos de teste",
+   "Para testar um prompt «a frio» numa conversa nova, como se outro colega o usasse sem contexto"
+  ],
+  "c": 3,
+  "exp": "Um prompt só está pronto quando é autossuficiente: o colega simulado pede ao Copilot que faça de colega que recebe o prompt sem qualquer contexto, e o ciclo corrigir-repetir continua até o prompt funcionar sozinho. Só então entra na biblioteca."
+ },
+ {
+  "q": "Que extras ganha quem tem licença Microsoft 365 Copilot, face ao Copilot Chat gratuito (S3)?",
+  "opts": [
+   "Respostas sem qualquer aleatoriedade e com garantia de exatidão factual",
+   "Um limite de caracteres dez vezes superior em cada prompt submetido",
+   "O modo Trabalho (dados da organização) e a partilha de prompts via Prompt Gallery",
+   "Acesso à internet em tempo real e sem filtros, uma capacidade que o Chat gratuito não tem"
+  ],
+  "c": 2,
+  "exp": "Os exercícios do curso correm todos no Chat gratuito com conta institucional. A licença acrescenta o modo Trabalho — o Copilot passa a aceder a e-mails, ficheiros e reuniões da organização — e extras como a partilha via Prompt Gallery."
+ },
+ {
+  "q": "O primeiro resultado do Copilot não serve. Qual é o gesto correto, segundo o curso?",
+  "opts": [
+   "Apagar a conversa e recomeçar do zero com um prompt completamente diferente",
+   "Iterar na mesma conversa: dizer o que está mal e pedir o ajuste concreto",
+   "Aceitar o resultado e corrigi-lo à mão, porque insistir gasta os créditos da conta",
+   "Reformular a pergunta em inglês, porque o modelo responde melhor nessa língua"
+  ],
+  "c": 1,
+  "exp": "A iteração é parte do método: o Copilot mantém o contexto da conversa, por isso «encurta para 5 pontos», «usa tom mais formal», «mantém as datas» funcionam. Recomeçar do zero deita fora o contexto já construído."
+ },
+ {
+  "q": "«A IA local protege melhor os dados» — mas, segundo a Sessão 1, o que é que isso NÃO legitima?",
+  "opts": [
+   "A utilização de modelos de código aberto instalados em servidores próprios da instituição",
+   "O processamento de documentos públicos sem autorização prévia",
+   "A instalação de ferramentas de IA nos portáteis de serviço",
+   "Decisões automatizadas sobre pessoas — a privacidade não resolve o problema da decisão"
+  ],
+  "c": 3,
+  "exp": "São dois problemas distintos: onde os dados são processados (privacidade) e quem decide (autonomia da decisão). Correr o modelo localmente protege os dados, mas uma decisão automatizada sobre pessoas continua vedada — o art. 22.º do RGPD não desaparece com o servidor."
+ },
+ {
+  "q": "O que é uma «alucinação» de um modelo de linguagem?",
+  "opts": [
+   "Conteúdo plausível e bem escrito, mas factualmente falso, gerado com toda a confiança",
+   "Uma resposta interrompida a meio por limite de comprimento da conversa",
+   "Um erro de formatação que troca tabelas por listas numeradas",
+   "A recusa sistemática do modelo em responder a perguntas sobre temas sensíveis ou controversos"
+  ],
+  "c": 0,
+  "exp": "O modelo gera o texto mais provável, não o texto verdadeiro — e apresenta invenções com a mesma fluência das verdades. Por isso a validação com a fonte é um hábito, não um extra: quanto mais plausível parece, mais perigosa é."
+ },
+ {
+  "q": "Na demonstração-armadilha da Sessão 2, o mesmo pedido foi feito com um prompt vago e com um prompt GCSE. Qual foi a lição?",
+  "opts": [
+   "O prompt vago foi mais rápido de escrever e o resultado final foi praticamente idêntico",
+   "O Copilot recusou o prompt vago e exigiu os quatro componentes",
+   "Contexto e fonte mudam radicalmente o resultado — o prompt vago produz texto genérico",
+   "O prompt GCSE é demasiado longo e confundiu o modelo"
+  ],
+  "c": 2,
+  "exp": "A armadilha mostra o mecanismo: sem contexto nem fonte, o Copilot preenche as lacunas com o mais provável — texto genérico que serve qualquer instituição e não serve a nossa. Os quatro componentes não são burocracia, são o volante."
+ },
+ {
+  "q": "Terminaste um prompt novo para a biblioteca. Antes de o guardar, o que exige o método do curso?",
+  "opts": [
+   "Traduzi-lo para inglês, para maximizar a qualidade das respostas futuras",
+   "Testá-lo pelo menos uma vez e definir como validar o que ele devolve",
+   "Submetê-lo à Prompt Gallery da Microsoft para aprovação da comunidade",
+   "Encurtá-lo para menos de 280 caracteres, o limite recomendado"
+  ],
+  "c": 1,
+  "exp": "Só entra na biblioteca o que foi testado e é reutilizável — e cada entrada leva o campo «validação»: o que verificar no resultado. Guardar prompts nunca testados é acumular promessas, não construir uma ferramenta."
+ },
+ {
+  "q": "Qual destas tarefas do dia a dia de uma IES seria classificada como VERDE sem mais cuidados?",
+  "opts": [
+   "Resumir as candidaturas reais a uma bolsa para ordenar os candidatos",
+   "Analisar a folha Excel interna com os tempos de resposta e os nomes dos técnicos do serviço",
+   "Transcrever uma reunião de órgão de gestão com a gravação real",
+   "Pedir ao Copilot um primeiro rascunho de aviso sobre um regulamento já publicado"
+  ],
+  "c": 3,
+  "exp": "O regulamento é público e o aviso é um rascunho a validar — verde típico. As outras três envolvem dados pessoais ou matéria interna real: candidaturas reais tocam decisões sobre pessoas (vermelho), e as restantes exigem pelo menos o amarelo (ambiente institucional, minimização, validação)."
+ }
+];
+
+let i = 0, certas = 0, respostas = [];
+const $ = id => document.getElementById(id);
+
+function render(){
+  $('bar').style.width = (i / QUESTOES.length * 100) + '%';
+  const Q = QUESTOES[i];
+  let h = `<div class="qnum">Pergunta ${i+1} de ${QUESTOES.length}</div>`;
+  h += `<div class="qtext">${Q.q}</div>`;
+  Q.opts.forEach((o, k) => {
+    h += `<button class="opt" onclick="responder(${k})"><span class="letra">${'abcd'[k]})</span>${o}</button>`;
+  });
+  h += `<div class="feedback" id="fb"></div>`;
+  $('quiz').innerHTML = h;
+  $('btnNext').classList.remove('show');
+  $('btnNext').textContent = (i === QUESTOES.length - 1) ? 'Ver resultado →' : 'Próxima pergunta →';
+}
+
+function responder(k){
+  const Q = QUESTOES[i];
+  const botoes = document.querySelectorAll('.opt');
+  botoes.forEach(b => b.disabled = true);
+  botoes[Q.c].classList.add('correta');
+  const ok = (k === Q.c);
+  if(ok){ certas++; } else { botoes[k].classList.add('errada'); }
+  respostas.push(ok);
+  const fb = $('fb');
+  fb.className = 'feedback show ' + (ok ? 'ok' : 'ko');
+  fb.innerHTML = `<b>${ok ? '✓ Correto!' : '✗ Não é essa.'}</b>${Q.exp}`;
+  $('btnNext').classList.add('show');
+}
+
+function proxima(){
+  i++;
+  if(i < QUESTOES.length){ render(); }
+  else { resultado(); }
+}
+
+function resultado(){
+  $('bar').style.width = '100%';
+  $('quiz').innerHTML = '';
+  $('btnNext').classList.remove('show');
+  const pct = Math.round(certas / QUESTOES.length * 100);
+  $('scoreTxt').textContent = `${certas}/${QUESTOES.length}`;
+  let nivel, msg;
+  if(pct >= 90){ nivel = '🏆 Domínio do enquadramento'; msg = 'Excelente. A Matriz Semáforo e o GCSE já são teus — usa-os para desafiar o resto do curso.'; }
+  else if(pct >= 70){ nivel = '👍 Base sólida'; msg = 'Muito bom. Revê as explicações das perguntas falhadas — as armadilhas típicas estão na fronteira entre verde e amarelo.'; }
+  else if(pct >= 50){ nivel = '📈 No bom caminho'; msg = 'A meio da viagem. Sugestão: relê a Matriz Semáforo (recurso do hub) e a anatomia GCSE da Sessão 2.'; }
+  else { nivel = '🌱 Ponto de partida'; msg = 'Sem stress — é para isto que serve a formação. Volta a este quiz depois de rever as Sessões 1 a 3 e compara.'; }
+  $('nivelTxt').textContent = nivel;
+  $('msgTxt').textContent = msg;
+  let rev = '<h3>Revisão rápida</h3>';
+  QUESTOES.forEach((Q, k) => {
+    rev += `<div class="rev-item ${respostas[k] ? 'certa' : 'errada2'}" data-i="${k+1}.">${Q.q.substring(0, 90)}${Q.q.length > 90 ? '…' : ''}</div>`;
+  });
+  $('revisao').innerHTML = rev;
+  $('res').classList.add('show');
+}
+
+function reiniciar(){
+  i = 0; certas = 0; respostas = [];
+  $('res').classList.remove('show');
+  render();
+}
+
+render();
+</script>
+</body>
+</html>

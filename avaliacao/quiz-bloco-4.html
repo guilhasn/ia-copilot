@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz · Bloco 4 — Automatização ligeira | IA aplicada às IES</title>
+<style>
+  :root{
+    --azul:#1F4E78; --azul2:#2E74B5; --claro:#DEEBF7; --ok:#2e7d32; --okbg:#e8f5e9;
+    --erro:#c62828; --errobg:#fdecea; --cinza:#595959; --borda:#d9d9d9;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  body{font-family:'Segoe UI',Calibri,system-ui,sans-serif; background:#f4f6f9; color:#222; line-height:1.55; padding:24px 12px}
+  .wrap{max-width:760px; margin:0 auto}
+  header{background:var(--azul); color:#fff; border-radius:14px 14px 0 0; padding:26px 28px}
+  header h1{font-size:1.35rem; font-weight:700}
+  header p{opacity:.85; font-size:.95rem; margin-top:6px}
+  .card{background:#fff; border:1px solid var(--borda); border-top:none; border-radius:0 0 14px 14px; padding:28px}
+  .progress{height:8px; background:#e4e9f0; border-radius:99px; margin-bottom:22px; overflow:hidden}
+  .progress > div{height:100%; background:var(--azul2); width:0; transition:width .3s}
+  .qnum{font-size:.85rem; color:var(--cinza); text-transform:uppercase; letter-spacing:.06em; margin-bottom:8px}
+  .qtext{font-size:1.12rem; font-weight:600; margin-bottom:18px}
+  .opt{display:block; width:100%; text-align:left; background:#fff; border:1.5px solid var(--borda); border-radius:10px;
+       padding:13px 16px; margin-bottom:10px; font-size:1rem; cursor:pointer; transition:all .15s; font-family:inherit}
+  .opt:hover:not(:disabled){border-color:var(--azul2); background:var(--claro)}
+  .opt:disabled{cursor:default}
+  .opt.correta{border-color:var(--ok); background:var(--okbg); font-weight:600}
+  .opt.errada{border-color:var(--erro); background:var(--errobg)}
+  .letra{display:inline-block; width:1.6em; font-weight:700; color:var(--azul2)}
+  .feedback{border-radius:10px; padding:14px 16px; margin-top:14px; font-size:.97rem; display:none}
+  .feedback.show{display:block}
+  .feedback.ok{background:var(--okbg); border-left:5px solid var(--ok)}
+  .feedback.ko{background:var(--errobg); border-left:5px solid var(--erro)}
+  .feedback b{display:block; margin-bottom:4px}
+  .nav{display:flex; justify-content:flex-end; margin-top:20px}
+  button.next{background:var(--azul); color:#fff; border:none; border-radius:10px; padding:12px 26px; font-size:1rem;
+       cursor:pointer; font-family:inherit; display:none}
+  button.next.show{display:inline-block}
+  button.next:hover{background:var(--azul2)}
+  .resultado{text-align:center; display:none}
+  .resultado.show{display:block}
+  .score{font-size:3rem; font-weight:800; color:var(--azul); margin:14px 0 4px}
+  .nivel{font-size:1.15rem; font-weight:600; margin-bottom:14px}
+  .msg{color:var(--cinza); margin-bottom:22px}
+  .rev{text-align:left; border-top:1px solid var(--borda); padding-top:18px; margin-top:8px}
+  .rev h3{font-size:1rem; color:var(--azul); margin-bottom:10px}
+  .rev-item{font-size:.92rem; margin-bottom:8px; padding-left:22px; position:relative}
+  .rev-item::before{content:attr(data-i); position:absolute; left:0; font-weight:700; color:var(--azul2)}
+  .rev-item.certa::after{content:" ✓"; color:var(--ok); font-weight:700}
+  .rev-item.errada2::after{content:" ✗"; color:var(--erro); font-weight:700}
+  button.retry{background:#fff; color:var(--azul); border:1.5px solid var(--azul); border-radius:10px;
+       padding:12px 26px; font-size:1rem; cursor:pointer; font-family:inherit; margin-top:18px}
+  button.retry:hover{background:var(--claro)}
+  footer{text-align:center; color:var(--cinza); font-size:.82rem; margin-top:16px}
+  footer a{color:var(--azul2)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Quiz · Bloco 4 — Automatização ligeira</h1>
+    <p>Sessões 13 e 14: do uso individual ao coletivo, e o agente no Copilot Studio · 20 perguntas · anónimo, com feedback imediato</p>
+  </header>
+  <div class="card">
+    <div class="progress"><div id="bar"></div></div>
+    <div id="quiz"></div>
+    <div class="nav"><button class="next" id="btnNext" onclick="proxima()">Próxima pergunta →</button></div>
+    <div class="resultado" id="res">
+      <div class="qnum">Resultado final</div>
+      <div class="score" id="scoreTxt"></div>
+      <div class="nivel" id="nivelTxt"></div>
+      <div class="msg" id="msgTxt"></div>
+      <div class="rev" id="revisao"></div>
+      <button class="retry" onclick="reiniciar()">↻ Repetir o quiz</button>
+    </div>
+  </div>
+  <footer>IA — Aplicações ao trabalho das IES · ANFUP · Formador: Nuno Salvador · <a href="index.html">voltar à Avaliação</a></footer>
+</div>
+
+<script>
+const QUESTOES = [
+ {
+  "q": "Na Sessão 13, qual é a diferença essencial entre uma Página (Copilot Pages) e um Notebook?",
+  "opts": [
+   "A Página é um documento vivo partilhado; o Notebook responde a partir das fontes que a equipa escolheu",
+   "A Página é gratuita para todos; o Notebook faz parte do plano Premium do Teams",
+   "A Página guarda prompts; o Notebook guarda apenas ficheiros Excel",
+   "Não há diferença relevante — são dois nomes comerciais da mesma funcionalidade em versões diferentes do produto"
+  ],
+  "c": 0,
+  "exp": "São degraus diferentes do uso coletivo: a Página é o documento vivo onde a equipa trabalha e cola resultados; o Notebook é o conhecimento ancorado — junta as fontes escolhidas e responde a perguntas só a partir delas, citando a origem."
+ },
+ {
+  "q": "Fazes ao Notebook uma pergunta cuja resposta NÃO está nas fontes anexadas. O que deve acontecer?",
+  "opts": [
+   "Responde com o conhecimento geral do modelo, devidamente assinalado a itálico",
+   "Reencaminha a pergunta automaticamente para o responsável do gabinete",
+   "Diz que não encontra resposta nas fontes — sem inventar",
+   "Pesquisa na internet e devolve o resultado mais recente que encontrar"
+  ],
+  "c": 2,
+  "exp": "É o teste dos limites da S13: o valor do Notebook está em responder a partir das fontes e admitir o que lá não está. Se «respondesse na mesma», perdia-se a âncora — e voltávamos ao chatbot genérico que tanto trabalho deu a domesticar."
+ },
+ {
+  "q": "Porque é que partilhar um Notebook com o gabinete exige atenção às permissões (S13)?",
+  "opts": [
+   "Porque o número de licenças da instituição é limitado e cada partilha consome uma",
+   "Porque partilhar o Notebook é dar acesso ao conteúdo das suas fontes",
+   "Porque cada novo membro pode reordenar as fontes dos outros",
+   "Porque a Microsoft cobra por utilizador ativo em cada Notebook"
+  ],
+  "c": 1,
+  "exp": "Quem entra no Notebook passa a poder interrogar as fontes — partilhar o caderno é partilhar o que está lá dentro. Por isso as fontes escolhem-se a pensar em quem vai ter acesso, e dados pessoais nunca entram num caderno partilhado."
+ },
+ {
+  "q": "Qual é a diferença entre um Notebook e um AGENTE, na ponte que a S13/S14 constrói?",
+  "opts": [
+   "O Notebook é mais rigoroso nas citações das fontes; o agente responde mais depressa mas com menos detalhe",
+   "O agente é a versão paga do Notebook, com as mesmas funções",
+   "O Notebook aceita mais fontes; o agente está limitado a três documentos",
+   "O Notebook responde-te a ti, que o abres; o agente responde a toda a gente, com nome próprio, e pode agir"
+  ],
+  "c": 3,
+  "exp": "A diferença é de empacotamento, não de inteligência: o Notebook exige saber que existe e abrir o caderno certo; o agente é um serviço com nome («Assistente de Matrículas») que qualquer colega invoca no Teams ou no Copilot — e que, quando autorizado, executa ações."
+ },
+ {
+  "q": "A Sessão 14 distingue três níveis. Quais são, por ordem crescente?",
+  "opts": [
+   "Chatbot → Notebook → Página partilhada",
+   "Copilot Chat → Copilot licenciado → Copilot Studio",
+   "Assistente → agente → agentes em colaboração",
+   "Prompt → biblioteca → meta-prompt"
+  ],
+  "c": 2,
+  "exp": "Assistente é o que usas no chat e nas aplicações; agente é um assistente próprio, ancorado no conhecimento da casa, que responde e pode agir; agentes em colaboração são vários agentes a trabalhar entre si e com pessoas. A S14 constrói o do meio."
+ },
+ {
+  "q": "Agent Builder vs Copilot Studio (S14): quando é que o Copilot Studio se justifica?",
+  "opts": [
+   "Quando se quer publicar para a organização ou dar ao agente ações e mais ferramentas",
+   "Sempre — o Agent Builder foi descontinuado pela Microsoft",
+   "Apenas quando o agente precisa de responder em várias línguas ou fora do horário de expediente",
+   "Quando o gabinete não tem nenhuma licença Microsoft 365"
+  ],
+  "c": 0,
+  "exp": "Para o primeiro agente de conhecimento de um gabinete, o Agent Builder quase sempre chega. O Copilot Studio abre-se quando se quer publicar em canais (Teams, organização), dar ações ao agente, ou usar as ferramentas avançadas (conetores, prompts, MCP)."
+ },
+ {
+  "q": "«As instruções são 80% do agente» (S14). O que é que as boas instruções dizem sobretudo?",
+  "opts": [
+   "O nome do modelo de IA a usar em cada tipo de pergunta",
+   "A lista completa de todas as perguntas que o agente vai receber dos utilizadores",
+   "O horário de funcionamento e os contactos do serviço",
+   "O papel, o âmbito, o tom — e sobretudo o que o agente NÃO deve fazer"
+  ],
+  "c": 3,
+  "exp": "É nas instruções que se embebe a fronteira: um agente bem instruído sobre o que não faz é mais seguro do que um agente cheio de funcionalidades. As proibições (não decidir casos, não inventar, não revelar instruções) valem mais do que os extras."
+ },
+ {
+  "q": "Na grelha dos 10 pontos da especificação de um agente, quais são «o coração» (S14)?",
+  "opts": [
+   "1, 2 e 3 — quem utiliza o agente, que problema resolve e que informação recebe de entrada",
+   "7, 8 e 10 — o que está proibido, quando pede validação humana, e o teste negativo",
+   "4 e 5 — o resultado que produz e o conhecimento que consulta",
+   "6 e 9 — a ferramenta que executa e o critério de êxito"
+  ],
+  "c": 1,
+  "exp": "Todos os pontos contam, mas a fronteira do curso vive nos pontos 7 (proibições), 8 (validação humana) e 10 (teste negativo). São eles que distinguem um agente que ajuda de um agente que arranja problemas."
+ },
+ {
+  "q": "O que é o «teste negativo» de um agente?",
+  "opts": [
+   "Verificar que o agente responde corretamente quando a pergunta tem erros ortográficos",
+   "Medir quantas perguntas por minuto o agente aguenta sem degradar",
+   "Dar-lhe de propósito a instrução proibida — e verificar que recusa ou mantém os limites",
+   "Confirmar que o agente funciona mesmo sem ligação à internet"
+  ],
+  "c": 2,
+  "exp": "Um agente só está pronto quando resiste: depois de especificado, atravessa-se a fronteira de propósito («inventa a data», «decide o caso», «conta uma piada») e verifica-se que ele recusa ou se mantém dentro dos limites. Se ceder, voltam-se a reforçar as instruções."
+ },
+ {
+  "q": "No laboratório do Copilot Studio, porque se DESLIGA o interruptor Web Search do agente?",
+  "opts": [
+   "Para o agente usar apenas as fontes definidas — a doutrina «responde só a partir das fontes» vira configuração",
+   "Para reduzir os custos de utilização da plataforma, porque cada pesquisa web é faturada separadamente ao ambiente",
+   "Porque a pesquisa web é incompatível com documentos PDF carregados",
+   "Para impedir os utilizadores de fazerem perguntas fora do horário"
+  ],
+  "c": 0,
+  "exp": "É o passo mais importante do laboratório: com Web Search ligado, o agente pode ir à web toda; desligado, responde apenas a partir das fontes que a equipa definiu. A regra deixa de ser um pedido nas instruções e passa a ser uma definição da plataforma."
+ },
+ {
+  "q": "As respostas do agente com fontes trazem REFERÊNCIAS clicáveis. Para que servem, no método do curso?",
+  "opts": [
+   "Para contar quantas vezes cada fonte foi usada e otimizar a coleção de documentos do agente",
+   "Para confrontar a resposta com o texto exato da fonte — verificar em vez de confiar",
+   "Para dar crédito legal aos autores dos documentos citados",
+   "São decorativas: atestam que o agente tem fontes, mas não se usam"
+  ],
+  "c": 1,
+  "exp": "A referência é o mecanismo de verificação: clica-se e aparece o trecho da fonte que fundamenta a resposta — e confronta-se: diz mesmo aquilo? É o gesto que se ensina a quem vai usar o agente, e a razão por que um agente ancorado é auditável."
+ },
+ {
+  "q": "Porque é que um agente SEM fontes de conhecimento não deve responder sobre regulamentos (S14)?",
+  "opts": [
+   "Porque a Microsoft bloqueia perguntas jurídicas em agentes sem fontes",
+   "Porque os regulamentos mudam todos os anos e o agente fica desatualizado",
+   "Porque as respostas ficariam demasiado curtas para serem úteis",
+   "Porque responde de memória — e regulamentos «de memória» são invenção plausível"
+  ],
+  "c": 3,
+  "exp": "Sem fontes, o agente responde com o que o modelo «acha provável» — prazos e artigos inventados com toda a confiança. Foi por isso que o laboratório sem fontes usou apoio informático genérico, e o Assistente de Matrículas só nasceu no laboratório com fontes."
+ },
+ {
+  "q": "Um agente pode enviar e-mails e criar eventos. Que regra do curso se aplica a estas ações?",
+  "opts": [
+   "Toda a ação com consequências é confirmada por uma pessoa antes de executar",
+   "As ações só podem correr fora do horário de expediente, para não interferir",
+   "O agente pode agir livremente desde que registe tudo num log auditável",
+   "Ações automáticas são proibidas em qualquer circunstância, sem exceção"
+  ],
+  "c": 0,
+  "exp": "A pessoa é o ponto de decisão, nunca decorativa: enviar, agendar, publicar — tudo o que tem consequências passa por confirmação humana. Não é proibir a ação (o agente pode preparar tudo); é garantir que o gatilho final é humano."
+ },
+ {
+  "q": "«Publicar um agente é dar acesso.» A que, exatamente (S14)?",
+  "opts": [
+   "Ao código-fonte completo do agente, que fica visível e copiável para todos os utilizadores da organização que o instalem",
+   "À conta institucional de quem criou o agente",
+   "Às fontes do agente — quem o usa alcança o que lá está dentro; por isso a publicação passa pelo administrador",
+   "Ao painel de administração do Copilot Studio da instituição"
+  ],
+  "c": 2,
+  "exp": "Um agente publicado expõe as suas fontes a quem o usa: se os documentos têm matéria reservada, ela passa a estar ao alcance de qualquer utilizador do agente. Daí as duas regras: fontes sem dados pessoais nem matéria reservada, e publicação com aprovação e controlo de acesso."
+ },
+ {
+  "q": "O «Verificador de completude de pedidos» confirma se um pedido traz os elementos exigidos. Onde está a fronteira que ele NÃO pode atravessar?",
+  "opts": [
+   "Não pode funcionar fora do horário dos serviços académicos",
+   "Não pode verificar mais de vinte pedidos por dia",
+   "Não pode aceitar pedidos entregues em papel e digitalizados, por limitações técnicas de leitura",
+   "Verifica a presença dos elementos (forma), nunca se o pedido merece deferimento (mérito)"
+  ],
+  "c": 3,
+  "exp": "É a fronteira forma/mérito de todo o curso aplicada aos agentes: confirmar que os documentos exigidos estão presentes é verificação formal (verde); decidir se o pedido deve ser aprovado é mérito — decisão humana, e sobre pessoas é vermelho (art. 22.º RGPD, Anexo III do AI Act)."
+ },
+ {
+  "q": "O que é um agente DECLARATIVO, no sentido do laboratório 2 da S14?",
+  "opts": [
+   "Um agente que declara os seus erros num relatório mensal de qualidade",
+   "Uma versão personalizada do Microsoft 365 Copilot: declara-se o que ele é e faz — sem programar",
+   "Um agente registado em declaração própria junto da CNPD",
+   "Qualquer agente cujo código-fonte é aberto, documentado e auditável publicamente pela comunidade"
+  ],
+  "c": 1,
+  "exp": "«Declarativo» porque se declara — nome, descrição, instruções, ferramentas — e o resultado vive dentro do Microsoft 365 Copilot e do Teams. Não se programa nada: a especificação É a construção, razão pela qual a grelha dos 10 pontos é o verdadeiro trabalho."
+ },
+ {
+  "q": "Ao ligar um site SharePoint como fonte de um agente, o que acontece com as permissões?",
+  "opts": [
+   "O agente ganha acesso total ao site, independentemente de quem pergunta",
+   "As permissões são geridas pela Microsoft e não podem ser configuradas",
+   "O agente só usa na resposta o que QUEM PERGUNTA tem permissão para ver",
+   "O site fica público durante o tempo em que estiver ligado ao agente"
+  ],
+  "c": 2,
+  "exp": "Fontes autenticadas como o SharePoint respeitam as permissões do utilizador que faz a pergunta — cada um só recebe o que já podia ver. Ainda assim, ligar um site real é território amarelo: exige permissões verificadas e aprovação institucional."
+ },
+ {
+  "q": "«Os agentes proliferam.» Que resposta de governação é referida na S14 para este problema?",
+  "opts": [
+   "Limitar cada gabinete a um único agente registado",
+   "Apagar automaticamente os agentes sem utilização há 30 dias",
+   "Proibir a criação de novos agentes fora do departamento de informática e dos seus técnicos autorizados",
+   "Registar, permissionar e auditar os agentes (Agent 365) — governação desde o desenho"
+  ],
+  "c": 3,
+  "exp": "Numa organização os agentes multiplicam-se e alguns ficam esquecidos — com fontes e permissões ativas. A resposta não é proibir, é governar: inventário, permissões e auditoria (é para isso que existe o Agent 365), pensados desde o desenho e não depois do susto."
+ },
+ {
+  "q": "Qual destes agentes seria VERMELHO na matriz do curso, por mais bem construído que estivesse?",
+  "opts": [
+   "O agente de FAQ que responde sobre prazos a partir dos regulamentos e cita a fonte",
+   "Um agente que pontua candidaturas de estudantes e recomenda admissões",
+   "O agente que prepara rascunhos de divulgação de eventos, enviados após confirmação",
+   "O verificador que confirma se os pedidos trazem os documentos exigidos"
+  ],
+  "c": 1,
+  "exp": "Pontuar candidaturas e recomendar admissões é decidir (ou pré-decidir) sobre pessoas — alto risco no AI Act e art. 22.º do RGPD, seja qual for a qualidade técnica do agente. Os outros três são conhecimento, produção com confirmação e verificação formal — verde/amarelo."
+ },
+ {
+  "q": "Fecho do bloco: qual é a pergunta que fica, mais importante do que «como crio um agente?»",
+  "opts": [
+   "Quem aprova, que dados usa, quem acede — e quem responde se ele der uma má sugestão",
+   "Que modelo de IA corre por baixo e quantos tokens consome cada resposta",
+   "Quantos agentes tem a instituição vizinha e como se compara a nossa",
+   "Que orçamento anual é preciso para manter os agentes a funcionar"
+  ],
+  "c": 0,
+  "exp": "Construir é fácil — o laboratório prova-o em menos de uma hora. A competência que interessa numa instituição pública é a governação: quem aprova o agente, que dados o alimentam, quem lhe acede, e quem responde pelos seus erros. É a pergunta do fecho da S14."
+ }
+];
+
+let i = 0, certas = 0, respostas = [];
+const $ = id => document.getElementById(id);
+
+function render(){
+  $('bar').style.width = (i / QUESTOES.length * 100) + '%';
+  const Q = QUESTOES[i];
+  let h = `<div class="qnum">Pergunta ${i+1} de ${QUESTOES.length}</div>`;
+  h += `<div class="qtext">${Q.q}</div>`;
+  Q.opts.forEach((o, k) => {
+    h += `<button class="opt" onclick="responder(${k})"><span class="letra">${'abcd'[k]})</span>${o}</button>`;
+  });
+  h += `<div class="feedback" id="fb"></div>`;
+  $('quiz').innerHTML = h;
+  $('btnNext').classList.remove('show');
+  $('btnNext').textContent = (i === QUESTOES.length - 1) ? 'Ver resultado →' : 'Próxima pergunta →';
+}
+
+function responder(k){
+  const Q = QUESTOES[i];
+  const botoes = document.querySelectorAll('.opt');
+  botoes.forEach(b => b.disabled = true);
+  botoes[Q.c].classList.add('correta');
+  const ok = (k === Q.c);
+  if(ok){ certas++; } else { botoes[k].classList.add('errada'); }
+  respostas.push(ok);
+  const fb = $('fb');
+  fb.className = 'feedback show ' + (ok ? 'ok' : 'ko');
+  fb.innerHTML = `<b>${ok ? '✓ Correto!' : '✗ Não é essa.'}</b>${Q.exp}`;
+  $('btnNext').classList.add('show');
+}
+
+function proxima(){
+  i++;
+  if(i < QUESTOES.length){ render(); }
+  else { resultado(); }
+}
+
+function resultado(){
+  $('bar').style.width = '100%';
+  $('quiz').innerHTML = '';
+  $('btnNext').classList.remove('show');
+  const pct = Math.round(certas / QUESTOES.length * 100);
+  $('scoreTxt').textContent = `${certas}/${QUESTOES.length}`;
+  let nivel, msg;
+  if(pct >= 90){ nivel = '🏆 Especificador de agentes'; msg = 'Excelente. Sabes o que faz um agente seguro — e, mais importante, o que o faz perigoso. Leva a grelha dos 10 pontos contigo.'; }
+  else if(pct >= 70){ nivel = '👍 Construtor consciente'; msg = 'Muito bom. Revê as perguntas falhadas — as armadilhas típicas estão nas fontes, nas permissões e na fronteira da decisão.'; }
+  else if(pct >= 50){ nivel = '📈 No bom caminho'; msg = 'A meio da viagem. Sugestão: relê a anatomia do agente (S14) e refaz mentalmente o teste negativo de cada exemplo.'; }
+  else { nivel = '🌱 Ponto de partida'; msg = 'Sem stress. Revê as Sessões 13 e 14 — e, se puderes, segue os dois laboratórios do Copilot Studio passo a passo.'; }
+  $('nivelTxt').textContent = nivel;
+  $('msgTxt').textContent = msg;
+  let rev = '<h3>Revisão rápida</h3>';
+  QUESTOES.forEach((Q, k) => {
+    rev += `<div class="rev-item ${respostas[k] ? 'certa' : 'errada2'}" data-i="${k+1}.">${Q.q.substring(0, 90)}${Q.q.length > 90 ? '…' : ''}</div>`;
+  });
+  $('revisao').innerHTML = rev;
+  $('res').classList.add('show');
+}
+
+function reiniciar(){
+  i = 0; certas = 0; respostas = [];
+  $('res').classList.remove('show');
+  render();
+}
+
+render();
+</script>
+</body>
+</html>

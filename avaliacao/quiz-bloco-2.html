@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz · Bloco 2 — Produtividade | IA aplicada às IES</title>
+<style>
+  :root{
+    --azul:#1F4E78; --azul2:#2E74B5; --claro:#DEEBF7; --ok:#2e7d32; --okbg:#e8f5e9;
+    --erro:#c62828; --errobg:#fdecea; --cinza:#595959; --borda:#d9d9d9;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  body{font-family:'Segoe UI',Calibri,system-ui,sans-serif; background:#f4f6f9; color:#222; line-height:1.55; padding:24px 12px}
+  .wrap{max-width:760px; margin:0 auto}
+  header{background:var(--azul); color:#fff; border-radius:14px 14px 0 0; padding:26px 28px}
+  header h1{font-size:1.35rem; font-weight:700}
+  header p{opacity:.85; font-size:.95rem; margin-top:6px}
+  .card{background:#fff; border:1px solid var(--borda); border-top:none; border-radius:0 0 14px 14px; padding:28px}
+  .progress{height:8px; background:#e4e9f0; border-radius:99px; margin-bottom:22px; overflow:hidden}
+  .progress > div{height:100%; background:var(--azul2); width:0; transition:width .3s}
+  .qnum{font-size:.85rem; color:var(--cinza); text-transform:uppercase; letter-spacing:.06em; margin-bottom:8px}
+  .qtext{font-size:1.12rem; font-weight:600; margin-bottom:18px}
+  .opt{display:block; width:100%; text-align:left; background:#fff; border:1.5px solid var(--borda); border-radius:10px;
+       padding:13px 16px; margin-bottom:10px; font-size:1rem; cursor:pointer; transition:all .15s; font-family:inherit}
+  .opt:hover:not(:disabled){border-color:var(--azul2); background:var(--claro)}
+  .opt:disabled{cursor:default}
+  .opt.correta{border-color:var(--ok); background:var(--okbg); font-weight:600}
+  .opt.errada{border-color:var(--erro); background:var(--errobg)}
+  .letra{display:inline-block; width:1.6em; font-weight:700; color:var(--azul2)}
+  .feedback{border-radius:10px; padding:14px 16px; margin-top:14px; font-size:.97rem; display:none}
+  .feedback.show{display:block}
+  .feedback.ok{background:var(--okbg); border-left:5px solid var(--ok)}
+  .feedback.ko{background:var(--errobg); border-left:5px solid var(--erro)}
+  .feedback b{display:block; margin-bottom:4px}
+  .nav{display:flex; justify-content:flex-end; margin-top:20px}
+  button.next{background:var(--azul); color:#fff; border:none; border-radius:10px; padding:12px 26px; font-size:1rem;
+       cursor:pointer; font-family:inherit; display:none}
+  button.next.show{display:inline-block}
+  button.next:hover{background:var(--azul2)}
+  .resultado{text-align:center; display:none}
+  .resultado.show{display:block}
+  .score{font-size:3rem; font-weight:800; color:var(--azul); margin:14px 0 4px}
+  .nivel{font-size:1.15rem; font-weight:600; margin-bottom:14px}
+  .msg{color:var(--cinza); margin-bottom:22px}
+  .rev{text-align:left; border-top:1px solid var(--borda); padding-top:18px; margin-top:8px}
+  .rev h3{font-size:1rem; color:var(--azul); margin-bottom:10px}
+  .rev-item{font-size:.92rem; margin-bottom:8px; padding-left:22px; position:relative}
+  .rev-item::before{content:attr(data-i); position:absolute; left:0; font-weight:700; color:var(--azul2)}
+  .rev-item.certa::after{content:" ✓"; color:var(--ok); font-weight:700}
+  .rev-item.errada2::after{content:" ✗"; color:var(--erro); font-weight:700}
+  button.retry{background:#fff; color:var(--azul); border:1.5px solid var(--azul); border-radius:10px;
+       padding:12px 26px; font-size:1rem; cursor:pointer; font-family:inherit; margin-top:18px}
+  button.retry:hover{background:var(--claro)}
+  footer{text-align:center; color:var(--cinza); font-size:.82rem; margin-top:16px}
+  footer a{color:var(--azul2)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Quiz · Bloco 2 — Produtividade</h1>
+    <p>Sessões 4 a 8: Word, Outlook e Teams, Excel e PowerPoint · 20 perguntas · anónimo, com feedback imediato</p>
+  </header>
+  <div class="card">
+    <div class="progress"><div id="bar"></div></div>
+    <div id="quiz"></div>
+    <div class="nav"><button class="next" id="btnNext" onclick="proxima()">Próxima pergunta →</button></div>
+    <div class="resultado" id="res">
+      <div class="qnum">Resultado final</div>
+      <div class="score" id="scoreTxt"></div>
+      <div class="nivel" id="nivelTxt"></div>
+      <div class="msg" id="msgTxt"></div>
+      <div class="rev" id="revisao"></div>
+      <button class="retry" onclick="reiniciar()">↻ Repetir o quiz</button>
+    </div>
+  </div>
+  <footer>IA — Aplicações ao trabalho das IES · ANFUP · Formador: Nuno Salvador · <a href="index.html">voltar à Avaliação</a></footer>
+</div>
+
+<script>
+const QUESTOES = [
+ {
+  "q": "Sem licença Microsoft 365 Copilot, como se trabalha um regulamento em Word com o Copilot (S4)?",
+  "opts": [
+   "Não se trabalha — as tarefas de documentos exigem sempre licença paga",
+   "No Copilot Chat: carrega-se o ficheiro com «+ Adicionar conteúdo» e usam-se os mesmos prompts",
+   "Convertendo primeiro o documento para PDF, o único formato aceite pelo Chat",
+   "Pedindo a um colega do serviço que tenha licença que corra os prompts e reencaminhe o resultado por e-mail"
+  ],
+  "c": 1,
+  "exp": "É o dual-track de todo o Bloco 2: as tarefas e os prompts são os mesmos nos dois caminhos. A licença acrescenta o conforto de tudo acontecer dentro do documento (barra lateral do Word); sem ela, o Copilot Chat gratuito com o ficheiro carregado faz o mesmo trabalho."
+ },
+ {
+  "q": "O que é que a licença Microsoft 365 Copilot acrescenta ao trabalho no Word, segundo a S4?",
+  "opts": [
+   "Respostas mais exatas e completas, porque usa um modelo de IA de geração muito superior",
+   "A garantia de que o texto gerado não precisa de revisão humana",
+   "O corretor ortográfico avançado com sugestões de estilo académico",
+   "O Copilot dentro do documento aberto — barra lateral e comandos no próprio Word"
+  ],
+  "c": 3,
+  "exp": "A diferença é de onde se trabalha, não do que se consegue: com licença, o Copilot vive dentro do Word e opera sobre o documento aberto. As tarefas (resumir, reescrever, tabelar, redigir) fazem-se igualmente no Chat gratuito com o ficheiro carregado."
+ },
+ {
+  "q": "Qual destas NÃO é uma das cinco tarefas do «Mãos à obra» da Sessão 4 (Word)?",
+  "opts": [
+   "Aprovar a versão final do regulamento e submetê-la a despacho",
+   "Resumir o regulamento e reescrever um parágrafo pouco claro",
+   "Transformar texto corrido numa tabela organizada",
+   "Redigir um artigo de divulgação e gerar um aviso à comunidade"
+  ],
+  "c": 0,
+  "exp": "O Copilot produz rascunhos: resume, reescreve, tabela, redige. Aprovar e submeter a despacho é ato humano com responsabilidade própria — nunca esteve nem estará na lista de tarefas da ferramenta."
+ },
+ {
+  "q": "A regra-mãe da Sessão 5 é «o Copilot mapeia, a decisão é vossa». O que significa «mapear»?",
+  "opts": [
+   "Desenhar o organograma completo da instituição a partir dos e-mails trocados entre os serviços",
+   "Localizar geograficamente os remetentes das mensagens da thread",
+   "Levantar posições, ações e tons — sem escolher que posição prevalece nem que prazo fixar",
+   "Converter a caixa de correio numa base de dados pesquisável"
+  ],
+  "c": 2,
+  "exp": "O Copilot é excelente a organizar o que foi dito: posições numa thread, ações de uma reunião, tom de um rascunho. Decidir que posição prevalece, que prazo é razoável, que prioridade dar — isso pertence à hierarquia humana. Quem assina responde."
+ },
+ {
+  "q": "No caso da Catarina (S5), depois do mapa da thread pede-se o «follow-up dos silenciados». Porquê?",
+  "opts": [
+   "Para calcular o tempo médio de resposta de cada interveniente da conversa",
+   "Para identificar quem deve ser retirado da lista de destinatários",
+   "Para ordenar todos os intervenientes da conversa por relevância hierárquica no processo de decisão",
+   "Porque o que mais se complica depois é quem NÃO se pronunciou — o resumo não mostra ausências"
+  ],
+  "c": 3,
+  "exp": "O resumo do Copilot não inclui o que não foi escrito. Mas pode ajudar a ver que alguém não falou: no caso, o mapa de partes interessadas revela ausências (como a Comissão de Trabalhadores) que, ignoradas, rebentam mais tarde no processo."
+ },
+ {
+  "q": "Um recap de reunião do Copilot atribui uma decisão a um colega. Como se valida, segundo a S5?",
+  "opts": [
+   "Confirmando pelo carimbo temporal da gravação, que é gerado pelo sistema e por isso totalmente fiável",
+   "Confrontando a frase citada com a transcrição — o próprio timestamp pode estar errado",
+   "Perguntando ao Copilot se tem a certeza, para forçar uma segunda verificação",
+   "Verificando se a decisão aparece também no resumo automático do Teams"
+  ],
+  "c": 1,
+  "exp": "A régua é a frase, não o metadado: procura-se na transcrição a frase que sustenta a atribuição. O timestamp indicado pelo Copilot é ele próprio um output — também pode estar errado. Máquina não valida máquina."
+ },
+ {
+  "q": "Porque é que «apresentar uma análise do Copilot como decisão vossa» é um problema (S5)?",
+  "opts": [
+   "Porque quem assina responde pelo ato — a análise é da ferramenta, a responsabilidade é de quem decide",
+   "Porque o Copilot guarda um registo de todas as interações e a fraude seria facilmente detetável numa auditoria interna",
+   "Porque a análise da ferramenta é juridicamente propriedade da Microsoft",
+   "Porque os colegas reconhecem facilmente o estilo de escrita da IA"
+  ],
+  "c": 0,
+  "exp": "Misturar papéis é o risco: o Copilot mapeia e propõe, mas a decisão — e a responsabilidade do ato administrativo — fica sempre do lado de quem assina. Validade do ato e dever de diligência não se delegam numa ferramenta."
+ },
+ {
+  "q": "A regra de ouro da Sessão 6 (Excel) é:",
+  "opts": [
+   "Nunca deixar o Copilot ver mais do que vinte linhas de dados de cada vez",
+   "Converter sempre a folha para valores antes de a submeter ao Copilot",
+   "Antes de perguntar AOS dados, perguntar SOBRE os dados",
+   "Pedir os resultados sempre em tabela dinâmica, nunca em texto corrido"
+  ],
+  "c": 2,
+  "exp": "É o diagnóstico estrutural: primeiro pergunta-se que colunas existem, que tipos têm, que problemas se veem (datas em texto, células vazias, valores em texto). Só depois se fazem as perguntas de análise — senão, os defeitos da folha contaminam as respostas em silêncio."
+ },
+ {
+  "q": "Porque é que uma coluna com números guardados COMO TEXTO é perigosa numa análise (S6)?",
+  "opts": [
+   "Funções como SOMA e MÉDIA podem ignorar essas células sem avisar, enviesando os resultados",
+   "O ficheiro fica demasiado pesado e o Copilot recusa-se a carregá-lo",
+   "O Excel converte automaticamente o texto em zeros, anulando os totais",
+   "O Copilot deteta sempre automaticamente o problema e interrompe a análise até o utilizador o corrigir"
+  ],
+  "c": 0,
+  "exp": "É o erro silencioso clássico: certas funções saltam células em texto sem qualquer aviso, e o total «parece certo». Nem o Excel avisa de forma fiável, nem se deve assumir que o Copilot apanha tudo — daí o diagnóstico estrutural primeiro e a verificação depois."
+ },
+ {
+  "q": "A Sessão 6 classifica-se como AMARELO na Matriz Semáforo. Porquê?",
+  "opts": [
+   "Porque o Excel é a aplicação com mais erros de cálculo do Office",
+   "Porque pedidos, prazos e satisfação são informação institucional interna",
+   "Porque a análise de dados exige sempre licença Microsoft 365 Copilot",
+   "Porque os gráficos gerados podem ser publicados por engano"
+  ],
+  "c": 1,
+  "exp": "O dataset do exercício é fictício (pode ir inteiro), mas o tipo de informação — pedidos administrativos, prazos, satisfação — é interno. Com dados reais que identifiquem pessoas, a regra é minimizar antes de submeter e trabalhar no ambiente institucional."
+ },
+ {
+  "q": "O Copilot devolve «a taxa de resposta dentro do prazo é 78%». O que fazer antes de levar o número à Direção (S6)?",
+  "opts": [
+   "Arredondar para 80%, porque valores redondos transmitem mais confiança",
+   "Nada — os números do Copilot resultam de cálculo, não de geração de texto",
+   "Pedir ao Copilot que confirme o valor, repetindo a mesma pergunta",
+   "Verificar: recalcular na folha ou conferir contra a fonte antes de o citar"
+  ],
+  "c": 3,
+  "exp": "Números «por fora» validam-se com a fonte: recalcular na folha (uma fórmula simples chega) ou conferir os valores de base. Repetir a pergunta ao Copilot não é validação — máquina não valida máquina, e o hábito de verificação é a salvaguarda da sessão."
+ },
+ {
+  "q": "Na Sessão 8 (PowerPoint) há DOIS produtos que se confundem. Quais são, e o que os distingue?",
+  "opts": [
+   "PowerPoint Online e PowerPoint Desktop — só o segundo aceita comandos de IA e geração de diapositivos",
+   "Designer e SmartArt — o primeiro é pago, o segundo vem incluído",
+   "Copilot no PowerPoint (exige licença) e PowerPoint Agent no Chat (constrói o .pptx sem licença)",
+   "Copilot Chat e ChatGPT — ambos geram diapositivos, mas só um é institucional"
+  ],
+  "c": 2,
+  "exp": "Confundi-los é o erro que rebenta ao vivo: o Copilot dentro do PowerPoint exige licença (e gerar a partir de ficheiro exige ainda Designer); o PowerPoint Agent, no menu Agents do Copilot Chat, constrói o ficheiro .pptx a partir do documento anexado — sem licença."
+ },
+ {
+  "q": "A «Validação com a fonte» da Sessão 8 diz que cada afirmação num diapositivo tem de…",
+  "opts": [
+   "Ser aprovada pelo superior hierárquico antes da apresentação",
+   "Poder apontar para uma frase do documento de origem — sem frase, é palpite do Copilot",
+   "Caber numa linha, para garantir a legibilidade em ecrã grande",
+   "Estar formulada exatamente com as mesmas palavras do documento de origem, sem qualquer paráfrase"
+  ],
+  "c": 1,
+  "exp": "É a régua da sessão: afirmação a afirmação, procura-se a frase do documento que a sustenta. Não precisa de ser literal — precisa de ter suporte. O que não tiver frase que o sustente sai do diapositivo ou volta à fonte para confirmação."
+ },
+ {
+  "q": "Pediste uma apresentação e o Copilot devolveu-a em inglês. Qual é a explicação e o remédio (S8)?",
+  "opts": [
+   "O modelo tende para o inglês (e o Designer só é fiável em inglês) — pedir explicitamente «em português europeu»",
+   "A conta institucional está mal configurada — o serviço de informática tem de alterar a região e o idioma predefinido do tenant",
+   "O documento de origem tinha uma citação em inglês, o que obriga a traduzir tudo à mão",
+   "É um limite do plano gratuito: só as licenças pagas geram conteúdo em português"
+  ],
+  "c": 0,
+  "exp": "A qualidade do modelo é mais alta em inglês e o Designer só é fiável em en-US, por isso a apresentação pode sair em inglês sem ninguém pedir. O remédio é pedir a língua explicitamente — «em português europeu» — e, como sempre, confirmar o que sai."
+ },
+ {
+  "q": "Dentro do PowerPoint, «gerar apresentação a partir de um ficheiro» e «adicionar um diapositivo» exigem o quê (S8)?",
+  "opts": [
+   "Apenas a licença Microsoft 365 Copilot, como todas as outras funções",
+   "Nada além do PowerPoint atualizado — são funções de base",
+   "Uma conta de administrador do tenant Microsoft 365",
+   "Licença Microsoft 365 Copilot E ainda licença Designer"
+  ],
+  "c": 3,
+  "exp": "É a honestidade sobre licenças da sessão: resumir, perguntar e reescrever correm com o Copilot base (com licença); gerar a partir de ficheiro e adicionar diapositivo exigem ainda o Designer. Sem licença nenhuma, o caminho é o PowerPoint Agent no Chat."
+ },
+ {
+  "q": "Que estatuto têm Designer, SmartArt e transições Morph no método da Sessão 8?",
+  "opts": [
+   "São a parte central da sessão, porque o aspeto é o que a Direção avalia",
+   "São funções descontinuadas pela Microsoft, mantidas apenas por compatibilidade com versões antigas",
+   "São úteis mas não-deterministas e frágeis — trabalho visual humano, não «o Copilot faz»",
+   "São as únicas funções verdadeiramente fiáveis do Copilot no PowerPoint"
+  ],
+  "c": 2,
+  "exp": "Dão jeito, mas são não-deterministas e frágeis (o Designer só funciona bem em inglês). O núcleo da sessão é o conteúdo validado com a fonte; o polimento visual é trabalho humano e fica na secção «Para aprofundar»."
+ },
+ {
+  "q": "Qual é a régua transversal a TODO o Bloco 2, de Word a PowerPoint?",
+  "opts": [
+   "O output do Copilot é um rascunho — confirmar sempre o que saiu antes de usar",
+   "Cada aplicação tem um limite diário de prompts que convém não esgotar",
+   "As tarefas fazem-se sempre primeiro sem IA, para haver termo de comparação",
+   "O Copilot só deve ser usado em documentos com menos de 20 páginas"
+  ],
+  "c": 0,
+  "exp": "Resumo do bloco numa linha: a IA acelera a produção, o humano garante a verdade. Em todas as aplicações o gesto final é o mesmo — confirmar o que saiu contra a fonte, porque o output é proposta, não produto."
+ },
+ {
+  "q": "Para que serve o «Coaching» do Copilot no Outlook (S5)?",
+  "opts": [
+   "Para agendar sessões de formação individual com um tutor virtual",
+   "Para medir quantos e-mails cada trabalhador envia por semana",
+   "Para responder automaticamente às mensagens durante as férias",
+   "Para rever um rascunho de e-mail e sugerir melhorias de tom e clareza"
+  ],
+  "c": 3,
+  "exp": "O Coaching analisa o rascunho que escreveste e sugere ajustes de tom, clareza e impacto no destinatário — o e-mail continua a ser teu. É mapear (sugerir), não decidir (enviar): a decisão de aceitar as sugestões e enviar é sempre humana."
+ },
+ {
+  "q": "Num caso da S5, o Copilot resume uma thread onde a proposta de um coordenador nunca foi aprovada. O resumo di-la «aprovada». O que falhou e o que se aprende?",
+  "opts": [
+   "Falhou a rede durante a análise; repetindo o pedido, o erro desaparece",
+   "O Copilot leu e-mails a mais; convém apagar as mensagens antigas da thread",
+   "O modelo transformou uma proposta em decisão — validar posições contra as mensagens originais",
+   "Nada falhou: se o resumo o diz, a aprovação deve ter acontecido noutra conversa ou reunião paralela"
+  ],
+  "c": 2,
+  "exp": "É um erro típico de resumo: o modelo «fecha» o que ficou em aberto, transformando propostas em decisões. A validação faz-se contra as mensagens originais — quem propôs, quem respondeu, o que ficou decidido e o que ficou pendente."
+ },
+ {
+  "q": "Sem licença, como se produz o ficheiro .pptx de uma apresentação a partir de um relatório (S8)?",
+  "opts": [
+   "Não se produz — sem licença só é possível criar o texto dos diapositivos",
+   "Com o PowerPoint Agent no Copilot Chat, anexando o documento de origem",
+   "Exportando a conversa do Chat para PDF e convertendo-a em diapositivos",
+   "Pedindo o código VBA ao Copilot e correndo-o no PowerPoint"
+  ],
+  "c": 1,
+  "exp": "O PowerPoint Agent (menu Agents do Copilot Chat) constrói o .pptx a partir do documento anexado, sem licença Copilot nem Designer. Depois aplica-se a régua da sessão: validar cada afirmação dos diapositivos com a fonte."
+ }
+];
+
+let i = 0, certas = 0, respostas = [];
+const $ = id => document.getElementById(id);
+
+function render(){
+  $('bar').style.width = (i / QUESTOES.length * 100) + '%';
+  const Q = QUESTOES[i];
+  let h = `<div class="qnum">Pergunta ${i+1} de ${QUESTOES.length}</div>`;
+  h += `<div class="qtext">${Q.q}</div>`;
+  Q.opts.forEach((o, k) => {
+    h += `<button class="opt" onclick="responder(${k})"><span class="letra">${'abcd'[k]})</span>${o}</button>`;
+  });
+  h += `<div class="feedback" id="fb"></div>`;
+  $('quiz').innerHTML = h;
+  $('btnNext').classList.remove('show');
+  $('btnNext').textContent = (i === QUESTOES.length - 1) ? 'Ver resultado →' : 'Próxima pergunta →';
+}
+
+function responder(k){
+  const Q = QUESTOES[i];
+  const botoes = document.querySelectorAll('.opt');
+  botoes.forEach(b => b.disabled = true);
+  botoes[Q.c].classList.add('correta');
+  const ok = (k === Q.c);
+  if(ok){ certas++; } else { botoes[k].classList.add('errada'); }
+  respostas.push(ok);
+  const fb = $('fb');
+  fb.className = 'feedback show ' + (ok ? 'ok' : 'ko');
+  fb.innerHTML = `<b>${ok ? '✓ Correto!' : '✗ Não é essa.'}</b>${Q.exp}`;
+  $('btnNext').classList.add('show');
+}
+
+function proxima(){
+  i++;
+  if(i < QUESTOES.length){ render(); }
+  else { resultado(); }
+}
+
+function resultado(){
+  $('bar').style.width = '100%';
+  $('quiz').innerHTML = '';
+  $('btnNext').classList.remove('show');
+  const pct = Math.round(certas / QUESTOES.length * 100);
+  $('scoreTxt').textContent = `${certas}/${QUESTOES.length}`;
+  let nivel, msg;
+  if(pct >= 90){ nivel = '🏆 Produtividade com rédea curta'; msg = 'Excelente. Dominas as ferramentas E as réguas de validação — a combinação que o curso pede.'; }
+  else if(pct >= 70){ nivel = '👍 Utilizador sólido'; msg = 'Muito bom. Revê as perguntas falhadas — as armadilhas típicas estão nos limites de licença e na validação com a fonte.'; }
+  else if(pct >= 50){ nivel = '📈 No bom caminho'; msg = 'A meio da viagem. Sugestão: relê a regra-mãe da S5 (mapeia, não decidas) e o diagnóstico estrutural da S6.'; }
+  else { nivel = '🌱 Ponto de partida'; msg = 'Sem stress. Volta às Sessões 4 a 8 — cada uma tem uma demonstração e uma régua — e repete o quiz depois.'; }
+  $('nivelTxt').textContent = nivel;
+  $('msgTxt').textContent = msg;
+  let rev = '<h3>Revisão rápida</h3>';
+  QUESTOES.forEach((Q, k) => {
+    rev += `<div class="rev-item ${respostas[k] ? 'certa' : 'errada2'}" data-i="${k+1}.">${Q.q.substring(0, 90)}${Q.q.length > 90 ? '…' : ''}</div>`;
+  });
+  $('revisao').innerHTML = rev;
+  $('res').classList.add('show');
+}
+
+function reiniciar(){
+  i = 0; certas = 0; respostas = [];
+  $('res').classList.remove('show');
+  render();
+}
+
+render();
+</script>
+</body>
+</html>

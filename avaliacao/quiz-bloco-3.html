@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz · Bloco 3 — Processos universitários | IA aplicada às IES</title>
+<style>
+  :root{
+    --azul:#1F4E78; --azul2:#2E74B5; --claro:#DEEBF7; --ok:#2e7d32; --okbg:#e8f5e9;
+    --erro:#c62828; --errobg:#fdecea; --cinza:#595959; --borda:#d9d9d9;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  body{font-family:'Segoe UI',Calibri,system-ui,sans-serif; background:#f4f6f9; color:#222; line-height:1.55; padding:24px 12px}
+  .wrap{max-width:760px; margin:0 auto}
+  header{background:var(--azul); color:#fff; border-radius:14px 14px 0 0; padding:26px 28px}
+  header h1{font-size:1.35rem; font-weight:700}
+  header p{opacity:.85; font-size:.95rem; margin-top:6px}
+  .card{background:#fff; border:1px solid var(--borda); border-top:none; border-radius:0 0 14px 14px; padding:28px}
+  .progress{height:8px; background:#e4e9f0; border-radius:99px; margin-bottom:22px; overflow:hidden}
+  .progress > div{height:100%; background:var(--azul2); width:0; transition:width .3s}
+  .qnum{font-size:.85rem; color:var(--cinza); text-transform:uppercase; letter-spacing:.06em; margin-bottom:8px}
+  .qtext{font-size:1.12rem; font-weight:600; margin-bottom:18px}
+  .opt{display:block; width:100%; text-align:left; background:#fff; border:1.5px solid var(--borda); border-radius:10px;
+       padding:13px 16px; margin-bottom:10px; font-size:1rem; cursor:pointer; transition:all .15s; font-family:inherit}
+  .opt:hover:not(:disabled){border-color:var(--azul2); background:var(--claro)}
+  .opt:disabled{cursor:default}
+  .opt.correta{border-color:var(--ok); background:var(--okbg); font-weight:600}
+  .opt.errada{border-color:var(--erro); background:var(--errobg)}
+  .letra{display:inline-block; width:1.6em; font-weight:700; color:var(--azul2)}
+  .feedback{border-radius:10px; padding:14px 16px; margin-top:14px; font-size:.97rem; display:none}
+  .feedback.show{display:block}
+  .feedback.ok{background:var(--okbg); border-left:5px solid var(--ok)}
+  .feedback.ko{background:var(--errobg); border-left:5px solid var(--erro)}
+  .feedback b{display:block; margin-bottom:4px}
+  .nav{display:flex; justify-content:flex-end; margin-top:20px}
+  button.next{background:var(--azul); color:#fff; border:none; border-radius:10px; padding:12px 26px; font-size:1rem;
+       cursor:pointer; font-family:inherit; display:none}
+  button.next.show{display:inline-block}
+  button.next:hover{background:var(--azul2)}
+  .resultado{text-align:center; display:none}
+  .resultado.show{display:block}
+  .score{font-size:3rem; font-weight:800; color:var(--azul); margin:14px 0 4px}
+  .nivel{font-size:1.15rem; font-weight:600; margin-bottom:14px}
+  .msg{color:var(--cinza); margin-bottom:22px}
+  .rev{text-align:left; border-top:1px solid var(--borda); padding-top:18px; margin-top:8px}
+  .rev h3{font-size:1rem; color:var(--azul); margin-bottom:10px}
+  .rev-item{font-size:.92rem; margin-bottom:8px; padding-left:22px; position:relative}
+  .rev-item::before{content:attr(data-i); position:absolute; left:0; font-weight:700; color:var(--azul2)}
+  .rev-item.certa::after{content:" ✓"; color:var(--ok); font-weight:700}
+  .rev-item.errada2::after{content:" ✗"; color:var(--erro); font-weight:700}
+  button.retry{background:#fff; color:var(--azul); border:1.5px solid var(--azul); border-radius:10px;
+       padding:12px 26px; font-size:1rem; cursor:pointer; font-family:inherit; margin-top:18px}
+  button.retry:hover{background:var(--claro)}
+  footer{text-align:center; color:var(--cinza); font-size:.82rem; margin-top:16px}
+  footer a{color:var(--azul2)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Quiz · Bloco 3 — Processos universitários</h1>
+    <p>Sessões 9 a 12: SIADAP, atas, contratação pública e júris · 20 perguntas · anónimo, com feedback imediato</p>
+  </header>
+  <div class="card">
+    <div class="progress"><div id="bar"></div></div>
+    <div id="quiz"></div>
+    <div class="nav"><button class="next" id="btnNext" onclick="proxima()">Próxima pergunta →</button></div>
+    <div class="resultado" id="res">
+      <div class="qnum">Resultado final</div>
+      <div class="score" id="scoreTxt"></div>
+      <div class="nivel" id="nivelTxt"></div>
+      <div class="msg" id="msgTxt"></div>
+      <div class="rev" id="revisao"></div>
+      <button class="retry" onclick="reiniciar()">↻ Repetir o quiz</button>
+    </div>
+  </div>
+  <footer>IA — Aplicações ao trabalho das IES · ANFUP · Formador: Nuno Salvador · <a href="index.html">voltar à Avaliação</a></footer>
+</div>
+
+<script>
+const QUESTOES = [
+ {
+  "q": "O lema da Sessão 9 (SIADAP) é: «A inteligência fica no humano; …». Como continua?",
+  "opts": [
+   "…a responsabilidade fica na chefia»",
+   "…a velocidade fica no processador»",
+   "…a memória fica na nuvem»",
+   "…a fricção vai para a máquina»"
+  ],
+  "c": 3,
+  "exp": "A divisão de trabalho da sessão: quem conhece o serviço e decide o que é um bom objetivo és tu; o trabalho friccional — reformular, testar variantes, apontar fragilidades — vai para o Copilot. A máquina cansa-se por ti; não pensa por ti."
+ },
+ {
+  "q": "Qual é a «inversão» que a Sessão 9 propõe no trabalho com objetivos SIADAP?",
+  "opts": [
+   "Escrever primeiro os indicadores e só depois o texto do objetivo",
+   "Não pedir objetivos ao Copilot — interrogar com ele os objetivos que TU escreves",
+   "Começar pelos objetivos da unidade orgânica e só depois pelos individuais",
+   "Pedir dez objetivos ao Copilot e escolher os três melhores"
+  ],
+  "c": 1,
+  "exp": "Pedir «cria-me 5 objetivos SMART» devolve texto genérico e plausível que serve qualquer serviço — e nenhum. A inversão: escreves tu o objetivo (só tu conheces o serviço) e usas o Copilot para o interrogar, atacar e testar até ficar defensável."
+ },
+ {
+  "q": "A saída simulada da S9 — «5 objetivos SMART com indicadores e metas» — parece impecável. Qual é o perigo?",
+  "opts": [
+   "Os objetivos vêm redigidos em português do Brasil e o avaliador nota imediatamente a diferença de registo",
+   "O SIADAP proíbe expressamente objetivos redigidos com apoio informático",
+   "É genérica e plausível: indicadores que o serviço não mede e metas sem base real, prontos a assinar",
+   "O Copilot cobra créditos adicionais por cada objetivo gerado"
+  ],
+  "c": 2,
+  "exp": "O perigo é parecer certo: objetivos bem formatados, com indicadores que ninguém no serviço mede e metas inventadas. Quem assina fica com um contrato de avaliação frágil. Por isso a saída está marcada «simulada, a não copiar» — é o contraexemplo."
+ },
+ {
+  "q": "Como se usa o Copilot como «revisor crítico» de um objetivo SIADAP (S9)?",
+  "opts": [
+   "Pedindo-lhe que ataque o objetivo: ambiguidades, indicadores não mensuráveis, dependências externas",
+   "Pedindo-lhe que o classifique de 1 a 5 e o aprove quando chegar ao 4",
+   "Pedindo-lhe que o compare com objetivos equivalentes publicados por outras universidades públicas europeias",
+   "Pedindo-lhe que o reescreva em linguagem mais técnica e formal"
+  ],
+  "c": 0,
+  "exp": "O papel do Copilot é adversarial: «o que está ambíguo? que indicador não é mensurável neste serviço? que dependências externas podem impedir a meta?». O objetivo sai mais defensável — e a decisão sobre o que fica continua humana."
+ },
+ {
+  "q": "No semáforo do SIADAP com IA (S9), o que é VERMELHO?",
+  "opts": [
+   "Usar o Copilot para reformular o texto de um objetivo da unidade orgânica",
+   "Usar IA para avaliar, pontuar ou comparar o desempenho de pessoas concretas",
+   "Pedir exemplos de indicadores típicos de serviços académicos",
+   "Testar a clareza de um objetivo com o teste do colega simulado"
+  ],
+  "c": 1,
+  "exp": "Preparar objetivos é verde/amarelo; avaliar pessoas é vermelho. A avaliação de desempenho é decisão sobre pessoas — art. 22.º do RGPD e alto risco no AI Act. O Copilot prepara a forma; o mérito e a nota são humanos."
+ },
+ {
+  "q": "O lema da Sessão 10 (atas) é:",
+  "opts": [
+   "«A transcrição faz fé; a ata é um resumo»",
+   "«Quem grava, acata; quem escreve, aprova»",
+   "«O Teams transcreve; o Copilot assina»",
+   "«A IA propõe; o secretário dispõe»"
+  ],
+  "c": 3,
+  "exp": "O Copilot pode propor a minuta, extrair decisões e ações, organizar intervenções — mas a ata é um ato formal da responsabilidade do secretário e do órgão. A palavra final, linha a linha, é humana."
+ },
+ {
+  "q": "«A transcrição não é a ata» (S10). Porquê?",
+  "opts": [
+   "A ata é um ato formal seletivo — decisões e fundamentos —, não o registo integral do que se disse",
+   "A transcrição tem erros de ortografia que a ata não pode ter",
+   "A ata tem de ser manuscrita para ter valor legal em Portugal",
+   "A transcrição pertence tecnicamente à Microsoft e não pode ser citada em documentos oficiais portugueses"
+  ],
+  "c": 0,
+  "exp": "São documentos de natureza diferente: a transcrição é matéria-prima integral (com hesitações, conversas cruzadas, inaudíveis); a ata é o ato formal que fixa deliberações, votações e fundamentos. Passar de uma à outra é trabalho de critério — humano."
+ },
+ {
+  "q": "A transcrição tem um trecho [inaudível] num momento decisivo. O que manda o método da S10?",
+  "opts": [
+   "Pedir ao Copilot que complete com a versão mais plausível, dada a conversa à volta",
+   "Cortar o trecho da ata — o que não se ouviu não aconteceu",
+   "Marcar [CONFIRMAR] e verificar com quem esteve na reunião — nunca completar lacunas",
+   "Substituir pelo texto da convocatória, que descreve o ponto em discussão"
+  ],
+  "c": 2,
+  "exp": "«Nunca completar lacunas» é regra absoluta: um [inaudível] transformado em frase plausível é uma declaração que ninguém proferiu — numa ata que faz fé. Marca-se [CONFIRMAR] e resolve-se com humanos, não com probabilidade."
+ },
+ {
+  "q": "Qual é a «regra dos três destinos» da Sessão 10?",
+  "opts": [
+   "Cada reunião gera obrigatoriamente três documentos distintos: a convocatória, a minuta e a versão final da ata",
+   "Cada conteúdo da transcrição vai para um de três destinos: ata integral, forma protegida ou exclusão",
+   "A ata circula três vezes: pelo secretário, pelo presidente e pelo plenário",
+   "Guardar três cópias da gravação: local, na nuvem e no arquivo do órgão"
+  ],
+  "c": 1,
+  "exp": "Nem tudo o que se disse pertence à ata da mesma forma: há o que entra tal e qual (deliberações), o que entra em forma protegida (situações pessoais referidas, anonimizadas ou generalizadas) e o que se exclui (conversas laterais, dados clínicos). Triagem humana, conteúdo a conteúdo."
+ },
+ {
+  "q": "O Copilot contou os votos a partir da transcrição: «7 a favor, 2 contra». O que fazer antes de fixar a votação na ata?",
+  "opts": [
+   "Recontar por leitura humana da transcrição — a contagem de uma votação não se delega",
+   "Confirmar com o Copilot numa segunda pergunta, formulada de outra maneira para despistar o erro",
+   "Aceitar: contar é uma tarefa mecânica em que os modelos não falham",
+   "Arredondar para o resultado da convocatória, que previa a aprovação"
+  ],
+  "c": 0,
+  "exp": "A votação é o coração do ato formal — e os modelos erram contagens com toda a confiança (e «acertam por arredondamento»). A recontagem é humana; máquina não valida máquina. O Copilot organiza; o número que faz fé conta-o o secretário."
+ },
+ {
+  "q": "Com uma transcrição REAL de um órgão, o que muda no uso do Copilot (S10)?",
+  "opts": [
+   "Nada, desde que a reunião não tenha tratado matéria confidencial",
+   "Só pode ser tratada em ferramentas locais instaladas no computador de serviço, nunca em serviços alojados na nuvem",
+   "Tem de ser apagada no prazo de 24 horas após a reunião",
+   "Só em ambiente institucional (conta da instituição); ferramentas públicas e contas pessoais, nunca"
+  ],
+  "c": 3,
+  "exp": "Transcrição real = dados pessoais de quem interveio (amarelo). O Copilot Chat com sessão institucional tem proteção de dados empresarial; contas pessoais e ferramentas públicas estão excluídas. Ficheiro grande ou anexo a falhar? Plano B: colar o excerto, ponto a ponto."
+ },
+ {
+  "q": "O lema da Sessão 11 (contratação pública) é:",
+  "opts": [
+   "«O júri propõe; o Copilot dispõe»",
+   "«Quem analisa mais depressa, adjudica melhor»",
+   "«Nenhum resultado do Copilot é uma decisão»",
+   "«A proposta mais barata é a mais defensável»"
+  ],
+  "c": 2,
+  "exp": "O Copilot extrai, confronta e organiza — mas exclusões, admissões e adjudicações são atos do júri e do órgão competente, com fundamentação própria. Nenhum output da ferramenta é, em si, uma decisão."
+ },
+ {
+  "q": "A regra de ouro da S11 para analisar propostas é «extrair e confrontar, nunca escolher». O que significa na prática?",
+  "opts": [
+   "Pedir requisitos e evidências lado a lado — e nunca perguntar «qual deve ganhar?»",
+   "Extrair só os preços, porque o resto da proposta é subjetivo",
+   "Confrontar cada proposta com as anteriores do mesmo fornecedor",
+   "Escolher primeiro a proposta vencedora e usar o Copilot apenas para redigir a justificação da escolha"
+  ],
+  "c": 0,
+  "exp": "O uso legítimo: extrair os requisitos do caderno de encargos e confrontar cada proposta com eles — o que está presente, ausente ou ambíguo. «Qual deve ganhar?» pede uma decisão à ferramenta, e a saída simulada da sessão mostra o desastre: exclusões sem base legal e um CCP citado a dizer o que não diz."
+ },
+ {
+  "q": "Porque é que a S11 exige «os mesmos prompts para todas as propostas»?",
+  "opts": [
+   "Para poupar tempo: reutilizar prompts é mais eficiente do que os reescrever",
+   "Porque o Copilot confunde as propostas se as perguntas variarem",
+   "Para permitir comparar os tempos de resposta entre as propostas",
+   "Igualdade de tratamento: se uma proposta é escrutinada com uma pergunta, todas são"
+  ],
+  "c": 3,
+  "exp": "O princípio da igualdade de tratamento dos concorrentes aplica-se também à ferramenta: escrutinar uma proposta com perguntas que as outras não receberam desequilibra o procedimento. O guião de prompts corre igual para todas."
+ },
+ {
+  "q": "A resposta do Copilot cita um artigo do CCP para justificar uma exclusão. O que manda a doutrina do curso?",
+  "opts": [
+   "Aceitar se o número do artigo existir no índice do Código",
+   "Verificar o artigo no diploma: o Copilot cita normas que não dizem o que a resposta afirma",
+   "Pedir ao Copilot a transcrição integral do artigo citado, para a confirmar na própria conversa",
+   "Ignorar citações legais do Copilot — nunca têm qualquer utilidade"
+  ],
+  "c": 1,
+  "exp": "A citação legal plausível mas errada é das alucinações mais perigosas: o artigo existe, mas não diz aquilo. Verifica-se no diploma (versão consolidada), nunca na própria conversa — pedir a transcrição ao Copilot é pedir ao suspeito que confirme o álibi."
+ },
+ {
+  "q": "Qual destas tarefas é VERDE no semáforo da contratação pública (S11)?",
+  "opts": [
+   "Decidir que propostas ficam excluídas por incumprimento dos requisitos",
+   "Submeter as propostas reais dos concorrentes numa conta pessoal, por ser mais rápido",
+   "Extrair os requisitos do caderno de encargos para uma grelha de verificação",
+   "Pedir ao Copilot que recomende a adjudicação com base no preço"
+  ],
+  "c": 2,
+  "exp": "Transformar o caderno de encargos numa grelha de requisitos é trabalho de forma sobre documento do próprio procedimento — verde típico. Excluir e adjudicar são decisões do júri; propostas reais em conta pessoal violam a regra do ambiente institucional (dados de terceiros)."
+ },
+ {
+  "q": "O lema da Sessão 12 (júris de candidaturas) é:",
+  "opts": [
+   "«O júri delega; o algoritmo pondera»",
+   "«Verificar as pessoas, nunca ordenar os factos do procedimento»",
+   "«Quem ordena primeiro, decide melhor»",
+   "«Nenhuma ordenação do Copilot é uma decisão do júri»"
+  ],
+  "c": 3,
+  "exp": "Ordenar candidatos é o ato central da decisão do júri — e é precisamente o que não se pede à ferramenta. O Copilot verifica factos (documentos presentes, requisitos formais); a seriação e o mérito pertencem ao júri. (E a regra de ouro é «verificar factos, nunca ordenar pessoas» — a alínea b) troca os termos.)"
+ },
+ {
+  "q": "A saída simulada da S12 — uma tabela que ordena candidatos «por adequação», com pontuações à décima — tem três vícios. Quais?",
+  "opts": [
+   "Critérios que o aviso não prevê, uma competência que o CV não menciona e a penalização de um hiato no percurso",
+   "Falta de logótipo institucional, colunas desalinhadas e ausência de data",
+   "Uso de inglês nos cabeçalhos das colunas, casas decimais a mais nas pontuações e ordenação alfabética invertida",
+   "Excesso de candidatos, formato de tabela e ausência de gráfico-resumo"
+  ],
+  "c": 0,
+  "exp": "A tabela parece rigor e é invenção estruturada: pesou critérios fora do aviso (viola a vinculação ao aviso), atribuiu competências não documentadas (alucinação) e penalizou um hiato de catorze meses (enviesamento com potencial discriminatório). É o vermelho em forma de tabela."
+ },
+ {
+  "q": "Que quadro legal «morde» quando um júri encosta a seriação de candidatos a um sistema de IA (S12)?",
+  "opts": [
+   "O Código do Trabalho, pelo regime das faltas justificadas",
+   "A Lei da Nacionalidade e o regime jurídico do reagrupamento familiar de cidadãos estrangeiros residentes em Portugal",
+   "O art. 22.º do RGPD (decisões automatizadas) e o AI Act, que classifica o emprego como alto risco (Anexo III)",
+   "O Regulamento Geral das Bibliotecas do Ensino Superior"
+  ],
+  "c": 2,
+  "exp": "Duas mandíbulas: o art. 22.º do RGPD limita decisões exclusivamente automatizadas com efeitos significativos, e o Anexo III do AI Act classifica sistemas de IA no recrutamento e seleção como alto risco, com obrigações pesadas. A seriação é do júri, com fundamentação humana."
+ },
+ {
+  "q": "No semáforo da S12, o que é «NUNCA» ao trabalhar candidaturas com IA?",
+  "opts": [
+   "Usar o Copilot para verificar, candidatura a candidatura, se cada processo entrega todos os documentos exigidos no aviso de abertura",
+   "Dar categorias especiais de dados (saúde, filiação, origem) a alimentar juízos — e dados reais fora do ambiente institucional",
+   "Preparar a grelha de verificação formal antes da primeira reunião do júri",
+   "Redigir com o Copilot o rascunho da ata da reunião de admissão de candidaturas"
+  ],
+  "c": 1,
+  "exp": "Categorias especiais de dados (art. 9.º RGPD) nunca alimentam juízos com IA, e candidaturas reais nunca saem do ambiente institucional — são dados de terceiros à guarda da instituição. Verificação formal e escrivania são os usos legítimos."
+ }
+];
+
+let i = 0, certas = 0, respostas = [];
+const $ = id => document.getElementById(id);
+
+function render(){
+  $('bar').style.width = (i / QUESTOES.length * 100) + '%';
+  const Q = QUESTOES[i];
+  let h = `<div class="qnum">Pergunta ${i+1} de ${QUESTOES.length}</div>`;
+  h += `<div class="qtext">${Q.q}</div>`;
+  Q.opts.forEach((o, k) => {
+    h += `<button class="opt" onclick="responder(${k})"><span class="letra">${'abcd'[k]})</span>${o}</button>`;
+  });
+  h += `<div class="feedback" id="fb"></div>`;
+  $('quiz').innerHTML = h;
+  $('btnNext').classList.remove('show');
+  $('btnNext').textContent = (i === QUESTOES.length - 1) ? 'Ver resultado →' : 'Próxima pergunta →';
+}
+
+function responder(k){
+  const Q = QUESTOES[i];
+  const botoes = document.querySelectorAll('.opt');
+  botoes.forEach(b => b.disabled = true);
+  botoes[Q.c].classList.add('correta');
+  const ok = (k === Q.c);
+  if(ok){ certas++; } else { botoes[k].classList.add('errada'); }
+  respostas.push(ok);
+  const fb = $('fb');
+  fb.className = 'feedback show ' + (ok ? 'ok' : 'ko');
+  fb.innerHTML = `<b>${ok ? '✓ Correto!' : '✗ Não é essa.'}</b>${Q.exp}`;
+  $('btnNext').classList.add('show');
+}
+
+function proxima(){
+  i++;
+  if(i < QUESTOES.length){ render(); }
+  else { resultado(); }
+}
+
+function resultado(){
+  $('bar').style.width = '100%';
+  $('quiz').innerHTML = '';
+  $('btnNext').classList.remove('show');
+  const pct = Math.round(certas / QUESTOES.length * 100);
+  $('scoreTxt').textContent = `${certas}/${QUESTOES.length}`;
+  let nivel, msg;
+  if(pct >= 90){ nivel = '🏆 Guardião da fronteira'; msg = 'Excelente. Dominas o que distingue preparar de decidir — exatamente a competência que o Bloco 3 quer instalar.'; }
+  else if(pct >= 70){ nivel = '👍 Fronteira bem desenhada'; msg = 'Muito bom. Revê as perguntas falhadas — as armadilhas vivem quase todas entre a forma (que a IA trata) e o mérito (que é humano).'; }
+  else if(pct >= 50){ nivel = '📈 No bom caminho'; msg = 'A meio da viagem. Sugestão: relê os quatro lemas das sessões 9 a 12 — cada um resume a fronteira do seu processo.'; }
+  else { nivel = '🌱 Ponto de partida'; msg = 'Sem stress — este é o bloco mais exigente do curso. Revê as sessões 9 a 12 e volta: o quiz fica cá.'; }
+  $('nivelTxt').textContent = nivel;
+  $('msgTxt').textContent = msg;
+  let rev = '<h3>Revisão rápida</h3>';
+  QUESTOES.forEach((Q, k) => {
+    rev += `<div class="rev-item ${respostas[k] ? 'certa' : 'errada2'}" data-i="${k+1}.">${Q.q.substring(0, 90)}${Q.q.length > 90 ? '…' : ''}</div>`;
+  });
+  $('revisao').innerHTML = rev;
+  $('res').classList.add('show');
+}
+
+function reiniciar(){
+  i = 0; certas = 0; respostas = [];
+  $('res').classList.remove('show');
+  render();
+}
+
+render();
+</script>
+</body>
+</html>
