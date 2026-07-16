@@ -24,5 +24,5 @@ Mãos no Copilot. Cada sessão tem um exercício prático que aplica o que acabo
 | **S11** — Contratação pública | [Banco de prompts (contratar IA)]({% link exercicios/s11-contratacao-publica.md %}) | livre |
 | **S13** — Uso coletivo | [O espaço coletivo do gabinete]({% link exercicios/s13-uso-coletivo.md %}) | livre |
 | **S14** — Agentes | [Cria o teu agente]({% link exercicios/s14-especificar-agente.md %}) | livre |
-| **S14** — Agentes | [Laboratório: o teu primeiro agente no Copilot Studio]({% link exercicios/s14-lab-copilot-studio.md %}) | 45-60 min |
-| **S14** — Agentes | [Laboratório 2: o agente ganha fontes de conhecimento]({% link exercicios/s14-lab2-agente-com-fontes.md %}) | 45-60 min |
+| **S14** — Agentes | [Laboratório 1: agente com fontes de conhecimento]({% link exercicios/s14-lab1-agente-com-fontes.md %}) | 45-60 min |
+| **S14** — Agentes | [Laboratório 2: agente declarativo, ferramentas e publicação]({% link exercicios/s14-lab2-agente-declarativo.md %}) | 45-60 min |

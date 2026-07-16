@@ -1,20 +1,23 @@
 ---
-title: "S14 — Laboratório Copilot Studio"
+title: "S14 — Laboratório 2: agente declarativo"
 layout: default
 parent: "Exercícios"
-nav_order: 15
+nav_order: 16
 ---
 
-# Laboratório · O teu primeiro agente no Copilot Studio
+# Laboratório 2 · O agente declarativo: ferramentas e publicação
 
-> Vais construir, do zero, um **agente declarativo** para o Microsoft 365 Copilot: o **Balcão Informático UVV**, o agente de apoio informático da Universidade de Vale Verde. No fim, o agente responde no Copilot e no Teams — e recusa o que está fora do seu âmbito.
+> No [Laboratório 1]({% link exercicios/s14-lab1-agente-com-fontes.md %}) construíste um agente de conhecimento. Agora sobes um degrau: um **agente declarativo** para o Microsoft 365 Copilot — o **Balcão Informático UVV** — que invoca um **prompt como ferramenta**, é **publicado** no Copilot e no Teams, e se deixa espreitar por dentro com o **modo de programador**. No fim, recusa o que está fora do seu âmbito.
 
 **Modalidade:** individual, com partilha de ecrã do formador · **Microsoft Copilot Studio** (licença ou *trial*) · duração: 45–60 min.
 
-Este laboratório é a [anatomia do agente da Sessão 14]({% link bloco-4-agentes/sessao-14.md %}) a ganhar vida, peça a peça: nome e descrição → instruções → ferramenta → teste → publicação. É uma adaptação em português do laboratório [Mission 03 da Agent Academy](https://microsoft.github.io/agent-academy/recruit/03-create-a-declarative-agent-for-M365Copilot/) da Microsoft — as capturas de ecrã são do original (em inglês, com o cenário «Contoso»); os textos para copiar estão nesta página, já em português e no cenário da UVV.
+Este laboratório é a [anatomia do agente da Sessão 14]({% link bloco-4-agentes/sessao-14.md %}) a ganhar vida, peça a peça: nome e descrição → instruções → ferramenta → teste → publicação. É uma adaptação em português do laboratório [Mission 03 da Agent Academy](https://microsoft.github.io/agent-academy/recruit/03-create-a-declarative-agent-for-M365Copilot/) da Microsoft.
 
 {: .important }
-> 🛈 **Matriz Semáforo: verde.** Tudo neste laboratório é fictício ou genérico — o agente não tem fontes de conhecimento nem dados internos. É exatamente por isso que o cenário é apoio informático genérico e **não** o Assistente de Matrículas: um agente **sem fontes** responde de memória, e regulamentos «de memória» são invenção. Conhecimento ancorado em fontes é o passo seguinte da Agent Academy.
+> 📷 **Sobre as capturas de ecrã:** são do laboratório original da Microsoft — mostram o cenário «Contoso Tech Support Pro», **em inglês**. Servem para localizares os botões e os campos. O que **tu escreves** em cada campo são os blocos em **português** desta página. Sempre que a captura mostrar texto diferente do teu, é isso que está a acontecer.
+
+{: .important }
+> 🛈 **Matriz Semáforo: verde.** Tudo neste laboratório é fictício ou genérico — este agente **não tem fontes de conhecimento**. É exatamente por isso que o cenário é apoio informático genérico e **não** o Assistente de Matrículas do Laboratório 1: um agente **sem fontes** responde de memória, e regulamentos «de memória» são invenção. Aqui o que se aprende é o resto da anatomia: a ferramenta, a publicação e a depuração.
 
 ## O que é um agente declarativo?
 
@@ -509,7 +512,7 @@ Antes de dares a demonstração por concluída, confirma que:
 
 ## Ir mais longe
 
-- 🧪 **[Laboratório 2: o agente ganha fontes de conhecimento]({% link exercicios/s14-lab2-agente-com-fontes.md %})** — o passo seguinte deste arco: um agente ancorado em regulamentos reais e públicos, que cita a origem e não inventa.
+- 🧪 Ainda não fizeste o **[Laboratório 1: agente com fontes]({% link exercicios/s14-lab1-agente-com-fontes.md %})**? É o complemento deste: um agente ancorado em regulamentos reais e públicos, que cita a origem e não inventa.
 
 - 🎓 [Agent Academy — Recruit](https://microsoft.github.io/agent-academy/recruit/) — o percurso original completo: as lições seguintes acrescentam soluções, tópicos com gatilhos, cartões adaptáveis e fluxos.
 

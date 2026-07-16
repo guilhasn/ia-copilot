@@ -1,26 +1,27 @@
 ---
-title: "S14 — Laboratório 2: agente com fontes"
+title: "S14 — Laboratório 1: agente com fontes"
 layout: default
 parent: "Exercícios"
-nav_order: 16
+nav_order: 15
 ---
 
-# Laboratório 2 · O agente ganha fontes de conhecimento
+# Laboratório 1 · O teu primeiro agente: um Assistente de Matrículas com fontes
 
-> No [primeiro laboratório]({% link exercicios/s14-lab-copilot-studio.md %}) construíste um agente **sem fontes** — e viste o limite: responde de memória. Agora vais construir um **Assistente de Matrículas** ancorado em regulamentos **reais e públicos** da Universidade de Aveiro: responde **só a partir das fontes**, cita a origem e não inventa. É o agente da demonstração da S14, a sério.
+> Na S13 escolheste fontes para o Notebook do gabinete. Hoje empacotas esse gesto numa **ferramenta com nome próprio**: o Assistente de Matrículas, um agente ancorado em regulamentos **reais e públicos** da Universidade de Aveiro, que responde **só a partir das fontes**, cita a origem e não inventa. É o agente de FAQ ⭐ do catálogo, construído — e é mais fácil do que parece: descreves o que queres, carregas as fontes, desligas um interruptor.
 
 **Modalidade:** individual, com partilha de ecrã do formador · **Microsoft Copilot Studio** (licença ou *trial*) · duração: 45–60 min.
 
-Este é o segundo laboratório do arco da Sessão 14 e fecha o ciclo que começou na S13: na altura, as fontes do Notebook eram fictícias; hoje usamos regulamentos verdadeiros de uma IES verdadeira — e no fim podes replicar tudo com os regulamentos públicos da **tua** instituição. É uma adaptação em português do laboratório [Mission 06 da Agent Academy](https://microsoft.github.io/agent-academy/recruit/06-create-agent-from-conversation/) da Microsoft — as capturas são do original (em inglês, cenário «Contoso Helpdesk»); os textos para copiar estão nesta página, em português e no cenário das IES.
+Este é o primeiro de dois laboratórios do arco da Sessão 14 (no [Laboratório 2]({% link exercicios/s14-lab2-agente-declarativo.md %}) vais dar ferramentas a um agente e publicá-lo). É uma adaptação em português do laboratório [Mission 06 da Agent Academy](https://microsoft.github.io/agent-academy/recruit/06-create-agent-from-conversation/) da Microsoft.
+
+{: .important }
+> 📷 **Sobre as capturas de ecrã:** são do laboratório original da Microsoft — mostram o cenário «Contoso Helpdesk», **em inglês**. Servem para localizares os botões e os campos no ecrã. O que **tu escreves** em cada campo são os blocos em **português** desta página, adaptados ao nosso cenário. Sempre que a captura mostrar texto diferente do teu, é isso que está a acontecer.
 
 {: .important }
 > 🛈 **Matriz Semáforo: verde.** As fontes deste laboratório são **públicas**: o site da DGES e regulamentos da Universidade de Aveiro publicados em acesso livre. É por isso que podem entrar num exercício sem aprovações. O passo do SharePoint é opcional e assinalado como **amarelo**: ligar um agente a um site SharePoint real da tua instituição exige permissões verificadas e aprovação — não o faças por tua conta neste exercício.
 
-## Agente declarativo vs. agente personalizado
+## O que vais construir
 
-No laboratório 1 criaste um **agente declarativo** — uma versão personalizada que vive *dentro* do Microsoft 365 Copilot. Hoje crias um **agente personalizado** (*custom agent*): um assistente autónomo, criado a partir da página inicial do Copilot Studio, com o seu próprio motor de orquestração. Por isso o caminho no menu é diferente — não estranhes.
-
-O que ele traz de novo é a **orquestração generativa**: quando alguém faz uma pergunta, o agente
+Um **agente personalizado** (*custom agent*): um assistente autónomo, criado a partir da página inicial do Copilot Studio, com o seu próprio motor de **orquestração generativa**. Quando alguém faz uma pergunta, o agente
 
 - interpreta a pergunta com IA;
 
@@ -31,6 +32,8 @@ O que ele traz de novo é a **orquestração generativa**: quando alguém faz um
 - pesquisa nessas fontes;
 
 - e gera a resposta a partir do que encontrou — com **referências** para poderes verificar.
+
+(Há um segundo tipo, o **agente declarativo**, que vive *dentro* do Microsoft 365 Copilot e pode usar ferramentas — fica para o Laboratório 2.)
 
 ## Os tipos de fontes de conhecimento
 
@@ -68,7 +71,7 @@ O que ele traz de novo é a **orquestração generativa**: quando alguém faz um
 
 ## Passo 1 — Criar o agente por descrição em linguagem natural
 
-**1.1.** Vai à página **Home** do Copilot Studio. No campo central, cola esta descrição do agente — repara que é, no fundo, a **grelha dos 10 pontos escrita em prosa**: papel, fontes, formato, encaminhamento e proibições:
+**1.1.** Vai à página **Home** do Copilot Studio. Vês a pergunta «What would you like to build?» com um seletor **Agent | Workflow** — confirma que **Agent** está selecionado. No campo por baixo, cola esta descrição — repara que é, no fundo, a **grelha dos 10 pontos escrita em prosa**: papel, fontes, formato, encaminhamento e proibições:
 
 ```text
 És o Assistente de Matrículas dos Serviços Académicos da Universidade de
@@ -107,17 +110,21 @@ O que esta descrição cobre — compara com a grelha:
 
 - **fronteira** — não pede dados pessoais, não decide casos individuais.
 
+*(Na captura: a versão original em inglês, um agente de helpdesk IT. O teu texto é o de cima.)*
+
 ![Descrição do agente na página inicial](https://microsoft.github.io/agent-academy/assets/6.1_01_Prompt.D1YruWRQ.png)
 
-**1.2.** (Se aparecer) Ao lado do campo há um ícone de roda dentada com as definições do agente — no percurso original serve para escolher a «solução» onde o agente é criado, algo que não precisamos aqui. Se o abrires, sai com **Cancel**.
+**1.2.** (Se aparecer) No canto do campo há um ícone de roda dentada com definições — no percurso original serve para escolher a «solução» onde o agente é criado, algo que não precisamos aqui. Se o abrires, sai com **Cancel**.
 
 ![Definições do agente](https://microsoft.github.io/agent-academy/assets/6.1_02_AgentSettings.CwtYdA1p.png)
 
-**1.3.** Submete a descrição. O Copilot Studio começa a aprovisionar o agente — e a IA gera automaticamente o **nome**, a **descrição** e as **instruções** a partir do que escreveste. A orquestração generativa fica ativa por omissão.
+**1.3.** Submete a descrição (seta no canto do campo). O Copilot Studio aprovisiona o agente — aparece a faixa verde **«Your agent has been provisioned»** — e repara no que a IA fez à tua descrição: **reestruturou-a** em instruções organizadas por secções (na captura: `# Purpose`, `# General Guidelines`, `# Skills`, `# Step-by-Step Instructions`; a tua versão virá organizada de forma equivalente, provavelmente em português). Gerou também um **nome** provisório para o agente. A orquestração generativa fica ativa por omissão.
 
-![Agente aprovisionado](https://microsoft.github.io/agent-academy/assets/6.1_03_AgentProvisioned.IpXnrCCx.png)
+> Vale a pena ler as instruções geradas com atenção: é a primeira demonstração de valor da sessão — a IA transformou um parágrafo desleixado num «system prompt» estruturado. Confirma que as tuas **proibições** (dados pessoais, casos individuais) sobreviveram à reescrita; se não, corrige-as com **Edit**.
 
-**1.4.** Desce a página e revê as **sugestões da IA**: fontes de conhecimento, ferramentas e gatilhos propostos a partir da tua descrição.
+![Agente aprovisionado, com as instruções reestruturadas](https://microsoft.github.io/agent-academy/assets/6.1_03_AgentProvisioned.IpXnrCCx.png)
+
+**1.4.** Desce a página até à secção **Knowledge**. As sugestões da IA aparecem como linhas tracejadas **«Suggestion:»**, cada uma com **+ Add** e **× Dismiss**. Se puseste o URL da DGES na descrição, deve estar aqui sugerido *(na captura: os dois sites Microsoft do original)*. Mais abaixo, na secção **Tools**, a IA pode sugerir ferramentas (publicar no Teams, enviar e-mail) — **dispensa-as** com × Dismiss; ferramentas são o tema do Laboratório 2.
 
 ![Sugestões de conhecimento e ferramentas](https://microsoft.github.io/agent-academy/assets/6.1_04_KnowledgeAndTools.D5AEHJ87.png)
 
@@ -133,11 +140,11 @@ O que esta descrição cobre — compara com a grelha:
 
 ![Definições avançadas](https://microsoft.github.io/agent-academy/assets/6.1_07_AdvancedSettings.DlO_NUtI.png)
 
-**1.8.** Vamos acertar o nome do agente. Na secção **Details**, seleciona **Edit**.
+**1.8.** Vamos acertar o nome que a IA inventou. Na secção **Details**, seleciona **Edit**.
 
 ![Editar detalhes](https://microsoft.github.io/agent-academy/assets/6.1_08_EditDetails.QlIV4I0s.png)
 
-**1.9.** No nome, escreve o seguinte e **Save**:
+**1.9.** No campo **Name**, escreve o seguinte e seleciona **Save** (canto superior direito da secção). Aproveita para ler a **Description** gerada — se não te agradar, reescreve-a. *(Na captura: «Contoso Helpdesk Agent».)*
 
 ```text
 Assistente de Matrículas UA (demo)
@@ -147,24 +154,30 @@ Assistente de Matrículas UA (demo)
 
 ### Adicionar o site público e desligar a pesquisa web
 
-**1.10.** Na secção **Knowledge**, a IA deve ter sugerido o site que pusemos na descrição. Seleciona **+ Add** na sugestão do site da DGES (`https://www.dges.gov.pt`).
+**1.10.** Na secção **Knowledge**, seleciona **+ Add** na linha de sugestão do site da DGES *(na captura: a sugestão equivalente do original, support.microsoft.com)*. Se a IA não tiver sugerido o site, adiciona-o manualmente: **+ Add knowledge → Public websites**.
 
 ![Adicionar o site sugerido](https://microsoft.github.io/agent-academy/assets/6.1_10_AddSuggestedWebsite.PPWN9doI.png)
 
-**1.11.** Aparece a janela **Add public websites** com o URL preenchido. Seleciona **Add** e depois **Add to agent**.
+**1.11.** Abre-se a janela **Add public websites**, com o campo **Public website link**. Confirma o URL:
+
+```text
+https://www.dges.gov.pt
+```
+
+Seleciona **Add** e depois **Add to agent**. Repara no aviso em rodapé da janela: a pesquisa em sites públicos usa o *Grounding with Bing* — pode implicar fluxo de dados para fora da fronteira de conformidade da organização. Para um site público como a DGES, sem problema; é mais um motivo para as fontes serem uma decisão consciente.
 
 ![Adicionar site público](https://microsoft.github.io/agent-academy/assets/6.1_11_AddWebsite.D2rIjfvE.png)
 
 {: .important }
-> No original adicionam-se aqui **dois** sites (Microsoft Support e Microsoft Learn). Nós ficamos por um — a DGES chega para demonstrar a fonte «site público». Se a IA não tiver sugerido o site, adiciona-o manualmente: **+ Add knowledge → Public websites**.
+> No original adicionam-se aqui **dois** sites (Microsoft Support e Microsoft Learn — é o que vês nas capturas). Nós ficamos por um: a DGES chega para demonstrar a fonte «site público».
 
 ![Adicionar um segundo site, no original](https://microsoft.github.io/agent-academy/assets/6.1_12_AddAdditionalWebsite.66hUAcXR.png)
 
-**1.12.** Se a IA tiver proposto mais sugestões de fontes que não queres, dispensa-as com **X Dismiss**.
+**1.12.** Se a IA tiver proposto mais sugestões de fontes que não queres, dispensa-as com **× Dismiss**.
 
 ![Dispensar sugestões](https://microsoft.github.io/agent-academy/assets/6.1_13_SelectDismiss.MSEx8zRh.png)
 
-**1.13.** **O passo mais importante do laboratório:** por omissão, a **Web Search** está ligada — o agente pode ir à web toda. Desliga o interruptor, para o agente usar **apenas as fontes que definimos**.
+**1.13.** **O passo mais importante do laboratório:** logo abaixo da lista de fontes, na mesma secção Knowledge, está o interruptor **Web Search** — por omissão, **Enabled**: o agente pode ir à web toda. Desliga-o (fica **Disabled**), para o agente usar **apenas as fontes que definimos**.
 
 ![Desligar a pesquisa web](https://microsoft.github.io/agent-academy/assets/6.1_14_DisableWebSearch.C2XRvyh5.png)
 
@@ -172,11 +185,11 @@ Assistente de Matrículas UA (demo)
 
 ### Primeiro teste
 
-**1.14.** No painel **Testing**, à direita, seleciona o ícone de **nova sessão de teste**.
+**1.14.** No painel **Test your agent**, à direita, seleciona o ícone de **nova sessão de teste**.
 
 ![Nova sessão de teste](https://microsoft.github.io/agent-academy/assets/6.1_15_StartNewTestSession.DmzMMWtr.png)
 
-**1.15.** Faz uma pergunta que só o **site público** responde:
+**1.15.** Faz uma pergunta que só o **site público** responde *(na captura: a pergunta original sobre a garantia de um Surface — a tua é esta)*:
 
 ```text
 Quantas fases tem o concurso nacional de acesso ao ensino superior?
@@ -188,7 +201,7 @@ Quantas fases tem o concurso nacional de acesso ao ensino superior?
 
 ![Resposta com referências](https://microsoft.github.io/agent-academy/assets/6.1_17_References.DGAHEdMi.png)
 
-✅ Criaste um agente personalizado a partir de uma descrição. Agora vamos dar-lhe as fontes internas.
+✅ Criaste um agente personalizado a partir de uma descrição. Agora vamos dar-lhe as fontes que interessam.
 
 ---
 
@@ -219,7 +232,7 @@ Agora as fontes que mandam: os dois PDFs da UA que descarregaste no início.
 
 ![Carregar ficheiro](https://microsoft.github.io/agent-academy/assets/6.3_01_SelectUploadFile.CCC-q2U4.png)
 
-**3.2.** No explorador de ficheiros, seleciona o **Regulamento de Estudos da UA** e **Open**.
+**3.2.** No explorador de ficheiros, seleciona o **Regulamento de Estudos da UA** e **Open**. *(Na captura: o ficheiro Word do original — o gesto é o mesmo com o teu PDF.)*
 
 ![Selecionar o ficheiro](https://microsoft.github.io/agent-academy/assets/6.3_02_SelectWordFile.BMjgKlhs.png)
 
@@ -245,7 +258,7 @@ Agora as fontes que mandam: os dois PDFs da UA que descarregaste no início.
 
 O agente tem agora fontes de dois tipos: um site público e dois regulamentos carregados. Vamos confirmar que ele escolhe a fonte certa para cada pergunta — e que **mostra** de onde veio a resposta.
 
-**4.1.** Abre uma **nova sessão de teste** e faz uma pergunta para a fonte **pública**:
+**4.1.** Abre uma **nova sessão de teste** e faz uma pergunta para a fonte **pública** *(as capturas deste passo mostram as perguntas IT do original; as tuas são as dos blocos)*:
 
 ```text
 Que documentos são precisos para a candidatura ao ensino superior?
@@ -326,7 +339,9 @@ Resposta esperada: o agente explica o que o regulamento prevê em geral, mas **r
 
 ## Ir mais longe
 
-- 🎓 [Mission 07 — Add a new Topic with trigger](https://microsoft.github.io/agent-academy/recruit/07-add-new-topic-with-trigger/) — o passo seguinte no percurso original: **tópicos com gatilhos**, o item 4 da anatomia da S14 («se perguntarem por um caso individual, encaminha») construído como caminho de conversa explícito.
+- 🧪 **[Laboratório 2: o agente declarativo — ferramentas e publicação]({% link exercicios/s14-lab2-agente-declarativo.md %})** — o passo seguinte deste arco: um agente que vive dentro do Microsoft 365 Copilot, invoca um prompt como ferramenta, e é publicado no Copilot e no Teams (com o modo de programador para ver por dentro).
+
+- 🎓 [Mission 07 — Add a new Topic with trigger](https://microsoft.github.io/agent-academy/recruit/07-add-new-topic-with-trigger/) — no percurso original: **tópicos com gatilhos**, o item 4 da anatomia da S14 («se perguntarem por um caso individual, encaminha») construído como caminho de conversa explícito.
 
 - 📖 [Quickstart: criar e implementar um agente](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-get-started) — documentação Microsoft Learn.
 
@@ -334,4 +349,4 @@ Resposta esperada: o agente explica o que o regulamento prevê em geral, mas **r
 
 ## Reflexão final
 
-Compara os dois laboratórios. No primeiro, o agente respondia de memória — competente, mas sem lastro. Neste, cada resposta tem uma origem que podes clicar e confrontar. A diferença não foi mais inteligência: foram **as fontes escolhidas** — regulamentos públicos, verdadeiros — e um interruptor desligado. E repara que o exercício se repete tal e qual com os regulamentos públicos da tua instituição: a qualidade de um agente de conhecimento decide-se na **cura das fontes**, não na ferramenta.
+Repara no que acabaste de fazer: descreveste o agente num parágrafo, carregaste dois PDFs públicos e desligaste um interruptor — e o resultado responde com referências clicáveis, admite o que não sabe, e não decide casos. Nenhum destes gestos exigiu saber programar; **todos** exigiram saber o que o agente devia e não devia fazer. E o exercício repete-se tal e qual com os regulamentos públicos da tua instituição: a qualidade de um agente de conhecimento decide-se na **cura das fontes**, não na ferramenta.
