@@ -95,7 +95,7 @@ Testa-se no painel — e, num segundo momento, mostra-se que **um agente também
 
 > O que observar não é a resposta bonita — é onde o agente **para**: cita a fonte, admite o que não sabe, e não decide nada sozinho.
 
-👉 O guião completo da construção no Copilot Studio, passo a passo e com capturas de ecrã, está no **[Laboratório: o teu primeiro agente no Copilot Studio]({% link exercicios/s14-lab-copilot-studio.md %})** — serve para acompanhar a demonstração e para replicar depois, com licença ou *trial*.
+👉 Os guiões completos da construção no Copilot Studio, passo a passo e com capturas de ecrã, estão nos laboratórios: **[Laboratório 1 — o teu primeiro agente]({% link exercicios/s14-lab-copilot-studio.md %})** (agente declarativo com ferramenta) e **[Laboratório 2 — o agente ganha fontes]({% link exercicios/s14-lab2-agente-com-fontes.md %})** (agente ancorado em regulamentos reais, que cita a origem). Servem para acompanhar a demonstração e para replicar depois, com licença ou *trial*.
 
 ## 6. A linha vermelha, agora que o agente age
 

@@ -11,7 +11,7 @@ nav_order: 14
 
 **Modalidade:** individual ou por gabinete · **Copilot Studio** / **Agent Builder** (com licença ou *trial*) · a especificação faz-se em qualquer caso.
 
-> 🧪 Para a construção propriamente dita, segue o **[Laboratório: o teu primeiro agente no Copilot Studio]({% link exercicios/s14-lab-copilot-studio.md %})** — o passo a passo completo da demonstração, com capturas de ecrã.
+> 🧪 Para a construção propriamente dita, segue os laboratórios passo a passo da demonstração: **[Laboratório 1 — o teu primeiro agente no Copilot Studio]({% link exercicios/s14-lab-copilot-studio.md %})** e **[Laboratório 2 — o agente ganha fontes de conhecimento]({% link exercicios/s14-lab2-agente-com-fontes.md %})** (este último é a construção do agente de FAQ ⭐ do catálogo abaixo).
 
 {: .important }
 > 🛈 **Matriz Semáforo: verde.** Especificar e testar com conhecimento **fictício ou público**. Um agente sobre documentos internos reais é **amarelo** (permissões + aprovação); um agente que **decide sobre pessoas** é **vermelho** — não é para aqui.
