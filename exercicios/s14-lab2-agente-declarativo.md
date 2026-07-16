@@ -512,8 +512,6 @@ Antes de dares a demonstração por concluída, confirma que:
 
 ## Ir mais longe
 
-- 🧪 Ainda não fizeste o **[Laboratório 1: agente com fontes]({% link exercicios/s14-lab1-agente-com-fontes.md %})**? É o complemento deste: um agente ancorado em regulamentos reais e públicos, que cita a origem e não inventa.
-
 - 🎓 [Agent Academy — Recruit](https://microsoft.github.io/agent-academy/recruit/) — o percurso original completo: as lições seguintes acrescentam soluções, tópicos com gatilhos, cartões adaptáveis e fluxos.
 
 - 📖 [Criar um agente declarativo no Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/microsoft-copilot-extend-copilot-extensions) — documentação Microsoft Learn.
