@@ -128,48 +128,62 @@ Relê os dois exemplos: o prompt tem sempre as mesmas quatro peças. São elas q
 4. **Cláusula de fronteira** — «não respondas ao e-mail e não tomes qualquer decisão administrativa». Um agente que age sem ninguém presente precisa de ouvir, por escrito, **onde para**. É a linha «a IA propõe, a pessoa dispõe» — escrita dentro do próprio fluxo.
 
 {: .amarelo }
-> **Semáforo: amarelo.** Um fluxo de trabalho destes corre no ambiente Microsoft 365 institucional, sobre correio real — é território de construção com aprovação: verifica com a tua equipa e o administrador antes de pôr um fluxo a correr sobre a caixa de correio do serviço. Para especificar (o exercício abaixo), é verde: não corre nada.
+> **Semáforo: amarelo.** Um fluxo de trabalho destes corre no ambiente Microsoft 365 institucional, sobre correio real — é território de construção com aprovação: verifica com a tua equipa e o administrador antes de pôr um fluxo a correr sobre a caixa de correio do serviço. E **testa sempre com caixas e dados fictícios** — nunca com e-mails reais de estudantes: uma triagem automática de correio toca em dados pessoais desde o primeiro minuto. Para especificar (o exercício abaixo), é verde: não corre nada.
 
 ## Receitas para adaptar — uma por área
 
-Cinco pontos de partida, um por área presente na turma, cada um a atacar uma dor levantada no levantamento de processos das S13–S14. São **prompts a adaptar**, não a copiar às cegas: muda os nomes, os assuntos e os destinos para os teus — e repara que todos terminam com a cláusula de fronteira.
+Cinco pontos de partida, um por área presente na turma, cada um a atacar uma dor levantada no levantamento de processos das S13–S14. São **prompts a adaptar**, não a copiar às cegas: muda os nomes, os assuntos e os destinos para os teus. E repara em duas coisas: os melhores **começam por dizer ao agente quem és e o que gere** — contexto primeiro, como sempre —, e todos terminam com a **cláusula de fronteira**.
 
 **1 · Serviços Académicos — o pico de matrículas**
 
-O problema: no pico de matrículas, a caixa de correio enche-se de dúvidas repetitivas — e triar é meia manhã perdida.
+O problema: no pico de matrículas, a caixa de correio enche-se de dúvidas repetidas de estudantes — documentos em falta, referências de propinas, prazos de inscrição — e triar é meia manhã perdida.
 
 ```text
-Todos os dias às 8h, verifica os e-mails não lidos da minha caixa de
-entrada que mencionem "matrícula", "inscrição" ou "propina", agrupa-os
-por tema e envia-me um resumo no Teams com o número de pedidos por
-categoria e os 3 mais urgentes. Não respondas a nenhum e-mail.
+Sou responsável pelos Serviços Académicos. No período de matrículas,
+a minha caixa de entrada enche-se de dúvidas repetidas de estudantes
+sobre documentos em falta, referências de pagamento de propinas e
+prazos de inscrição em unidades curriculares. Todos os dias úteis às
+8h30, verifica os e-mails não lidos recebidos nas últimas 24h que
+mencionem "matrícula", "propina", "inscrição" ou "documento", agrupa-os
+pelas três categorias (Documentos, Propinas, Inscrições) e envia-me um
+resumo no Teams com o número de e-mails por categoria e os 3 casos
+mais urgentes ou com prazo mais próximo a expirar.
+Não respondas a nenhum e-mail.
 ```
 
 **2 · Qualidade — os prazos das ações corretivas**
 
-O problema: perseguir manualmente os prazos das ações corretivas — a dor mais custosa da área.
+O problema: perseguir manualmente os prazos das ações corretivas — sem alertas automáticos, as ações caem no esquecimento até ser tarde.
 
 ```text
-Todas as segundas-feiras de manhã, verifica na lista "Ações Corretivas"
-quais têm prazo nos próximos 7 dias e envia-me um resumo no Teams com
-o nome da ação, o responsável e os dias em atraso, se houver.
+Sou responsável pela Qualidade, Ambiente e Segurança. Tenho um Excel
+com o plano de ações corretivas de não conformidades, com colunas para
+Ação, Responsável e Prazo. Todas as segundas-feiras às 9h, verifica
+esse ficheiro no meu OneDrive, identifica as ações com prazo nos
+próximos 7 dias ou já em atraso, e envia-me um resumo no Teams
+organizado em duas listas — "A vencer esta semana" e "Em atraso" —
+com o nome da ação, o responsável e os dias em atraso, se houver.
 Apenas listar — não contactes os responsáveis.
 ```
 
-> Se o teu registo de ações corretivas vive num Excel, o caminho robusto é passá-lo para uma **lista SharePoint** — é com listas que o Workflows fala (viste no Exemplo 2), e ganhas de borla o botão «Fluxos de trabalho» na própria lista.
+> A ligação a ficheiros Excel **não está na lista de serviços documentados** do Workflows — testa com antecedência. O caminho garantido é o plano viver numa **lista SharePoint** (é com listas que o Workflows fala, como viste no Exemplo 2 — e ganhas o botão «Fluxos de trabalho» na própria lista).
 
-**3 · Financeiro / Tesouraria — o reporte de fim do mês**
+**3 · Financeiro / Tesouraria — as autorizações paradas no topo**
 
-O problema: mapas de reporte manuais para a tutela e o Tribunal de Contas, montados à mão a partir do que se decidiu durante o mês.
+O problema: os circuitos de assinatura são lentos e os pendentes acumulam-se no dirigente — sem qualquer visibilidade sobre o que está parado, nem há quanto tempo.
 
 ```text
-No último dia útil de cada mês, resume as reuniões do Teams sobre
-execução orçamental que tive esse mês e envia-me por e-mail um resumo
-com as decisões tomadas e as ações pendentes. Não envies nada a
-mais ninguém.
+Sou responsável pelos Serviços Financeiros. Envio frequentemente
+informações de pagamento para autorização do dirigente, e muitas vezes
+acumulam-se sem resposta, sem que eu tenha visibilidade sobre o que
+está parado. Todos os dias úteis às 9h, verifica no meu Outlook os
+e-mails com "informação de pagamento" ou "autorização" que enviei e
+que estejam há mais de 3 dias sem resposta, e envia-me um resumo no
+Teams com o assunto, o destinatário e há quantos dias está pendente.
+Não envies lembretes nem reencaminhes nada ao dirigente.
 ```
 
-> As ações sobre conteúdo de reuniões dependem do que o Workflows consegue ler no teu ambiente — testa primeiro; se não passar, a alternativa robusta é resumir os **e-mails** do mês com «execução orçamental» no assunto.
+> Este fluxo é diferente dos outros: não reduz ruído — dá **visibilidade sobre o que está fora do teu controlo**. Não podes obrigar o dirigente a despachar mais depressa; mas passas a saber, sem esforço, o que está parado e há quanto tempo.
 
 **4 · Contratação Pública — o prazo que não pode escapar**
 
