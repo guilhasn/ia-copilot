@@ -115,9 +115,43 @@ O que observar:
 
 E é aqui que o padrão **transfere** para o teu serviço: troca «MFAs Desativados» por uma lista de **despesas a autorizar**, de **atividades a validar**, de **pedidos de divulgação** — qualquer processo em que hoje o pedido circula por e-mail e a aprovação se perde numa caixa de correio. O registo entra na lista, o responsável recebe o pedido no Approvals (no Teams, onde já está), e a decisão fica com rasto. **A pessoa continua a ser o ponto de decisão — o fluxo só lhe leva o processo à mão.**
 
+## Exemplo 3 — o fluxo com IA lá dentro (Copilot Studio)
+
+Terceira porta, e mudança de patamar. O **Copilot Studio** — a ferramenta onde construíste os agentes dos Laboratórios 1 e 2 — tem uma secção de **fluxos** (*agent flows*): automações de nível institucional, criadas da mesma maneira («quando X, faz Y», em linguagem natural), mas com o que faltava aos exemplos anteriores — conectores, partilha, e sobretudo **um tipo de passo novo: a ação de IA**, um passo do fluxo que é ele próprio um modelo de linguagem a trabalhar.
+
+Até aqui, os fluxos **transportavam** informação: notificavam, registavam, pediam aprovação. Este **lê e avalia**. O cenário: um formulário Forms onde os funcionários registam atividades — e descrições tão vagas que o registo não serve para nada:
+
+```text
+Quando for adicionada uma nova resposta ao formulário, lê o texto do
+campo "Descrição da Atividade". Classifica-o como "Boa" se descrever
+concretamente o que foi feito e incluir pelo menos um elemento
+mensurável (quantidade, público-alvo ou resultado). Classifica-o como
+"A rever" se for uma descrição genérica que não permita perceber o que
+foi realmente feito (por exemplo: "trabalho habitual", "diversas
+tarefas", "normal", ou uma única palavra). Regista o resultado na
+coluna "Qualidade do Registo" da tabela associada ao formulário.
+Se classificares como "A rever", envia-me uma mensagem no Teams com o
+nome do funcionário, a data e o texto original, para eu poder pedir-lhe
+para completar. Não alteres o texto da descrição nem contactes o
+funcionário diretamente.
+```
+
+O que este prompt ensina, para além da anatomia que já conheces:
+
+- **critérios com exemplos, não adjetivos.** Não diz «classifica a qualidade» — define as duas classes e dá exemplos concretos do que é mau («trabalho habitual», «diversas tarefas», uma única palavra). Quando um passo do fluxo é IA, a precisão dos critérios é o que separa uma ferramenta útil de uma lotaria;
+
+- **a IA sinaliza, o humano conversa.** O resultado vai para uma coluna e para um aviso ao responsável — e a última linha proíbe o resto: «não alteres o texto nem contactes o funcionário diretamente». A conversa entre pessoas continua entre pessoas;
+
+- **a cláusula de fronteira mudou de casa.** Nos exemplos anteriores vivia no prompt do fluxo; aqui vive **dentro do passo de IA** — porque é o passo de IA que tem o poder de julgar, é aí que os limites têm de estar escritos.
+
+{: .vermelho }
+> **A linha que este fluxo não pisa — e que tu também não podes pisar.** O fluxo avalia a **completude do registo**, nunca o desempenho da pessoa. Se as classificações «Boa»/«A rever» alimentassem automaticamente uma avaliação de desempenho (SIADAP ou outra), estaríamos em decisão automatizada sobre pessoas — território do art. 22.º do RGPD e da doutrina da Sessão 9. É por isso que o resultado é um pedido de **completar o registo**, feito por uma pessoa, e não uma nota que fica.
+
+A progressão dos três exemplos é o mapa mental para levar para casa: **Workflows** (a automação pessoal, na tua caixa de correio) → **fluxos da lista** (a automação da equipa, onde os dados vivem) → **fluxos do Copilot Studio** (a automação institucional, partilhável, com IA dentro). O gesto de criação é sempre o mesmo: descrever bem, em português, o que deve acontecer — e onde parar.
+
 ## A anatomia do bom prompt de fluxo de trabalho
 
-Relê os dois exemplos: o prompt tem sempre as mesmas quatro peças. São elas que vais usar no exercício — e valem para qualquer ferramenta de automação:
+Relê os exemplos: o prompt tem sempre as mesmas quatro peças. São elas que vais usar no exercício — e valem para qualquer ferramenta de automação:
 
 1. **Gatilho preciso** — não «quando chegarem e-mails importantes», mas «quando o assunto contiver "MFA Disabled in Microsoft 365"». O agente não julga o que é importante; tu defines o critério objetivo.
 
@@ -218,6 +252,6 @@ Depois, corre o **teste negativo no papel**: lê a tua especificação e pergunt
 
 ## Para ir mais longe
 
-- Se a tua ideia precisa de serviços fora do Microsoft 365, de partilhar o fluxo com a equipa, ou de lógica com muitos ramos — o caminho é o **Power Automate** (a especificação que escreveste serve na mesma).
+- Se a tua ideia precisa de serviços fora do Microsoft 365, de partilhar o fluxo com a equipa, ou de lógica com muitos ramos — o caminho são os **fluxos do Copilot Studio** (o Exemplo 3) ou o **Power Automate** (a especificação que escreveste serve na mesma).
 
 - Antes de confiar num fluxo: **simula o gatilho** no painel de teste e visita o **Activity** nos primeiros dias. Um fluxo que corre sozinho merece a mesma desconfiança saudável que qualquer resultado do Copilot: verificar antes de confiar.

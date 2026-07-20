@@ -107,7 +107,7 @@ Por agora liga só a serviços Microsoft 365 — Outlook, Teams, SharePoint, Pla
 
 E há um detalhe que muda tudo na doutrina: um agente que age **sem pedido no momento** precisa de instruções ainda mais explícitas sobre o que **não** faz — ninguém está a ver quando ele corre. A cláusula de fronteira deixa de ser boa prática e passa a ser peça obrigatória do prompt. Cada fluxo é pessoal (não se partilha), pode confundir canais com nomes parecidos, e merece vigilância no histórico de execuções antes de merecer confiança.
 
-👉 A demonstração ao vivo — o alerta de segurança MFA em duas iterações (notificar a equipa no Teams → notificar **e** registar numa lista SharePoint) e o **circuito de aprovação criado a partir da própria lista** — e as receitas para adaptar estão no **[Laboratório 3 — o agente que age sozinho]({% link exercicios/s14-lab3-workflows.md %})**.
+👉 A demonstração ao vivo — o alerta de segurança MFA em duas iterações (notificar a equipa no Teams → notificar **e** registar numa lista SharePoint), o **circuito de aprovação criado a partir da própria lista** e um **fluxo do Copilot Studio com um passo de IA** que avalia a qualidade de um registo do Forms — e as receitas para adaptar estão no **[Laboratório 3 — o agente que age sozinho]({% link exercicios/s14-lab3-workflows.md %})**.
 
 ## 7. A linha vermelha, agora que o agente age
 
