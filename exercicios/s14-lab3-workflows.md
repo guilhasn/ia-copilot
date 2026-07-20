@@ -22,7 +22,7 @@ Descreves o que queres — «quando X, faz Y» — e o agente identifica o gatil
 |---|---|
 | **Outlook** | receber e-mails (gatilho), enviar, responder, criar rascunhos e eventos |
 | **Teams** | publicar mensagens em canais e chats, criar chats |
-| **SharePoint** | criar, listar e apagar itens de listas |
+| **SharePoint** | reagir a itens adicionados ou modificados numa lista (gatilho); criar, listar e apagar itens |
 | **Planner** | listar tarefas |
 | **Approvals** | criar aprovações e esperar pela resposta |
 | **Integrados** | gatilhos de recorrência (agenda) e ações de IA (ex.: resumir) |
@@ -86,9 +86,38 @@ Três lições neste gesto:
 
 - **o fluxo não vive sozinho** — depende de estrutura preparada do outro lado (a lista, as colunas, os tipos). A conversa com o agente é iterativa: ele diz-te o que lhe falta, tu preparas ou corriges os nomes, e só depois o fluxo corre. Especificar bem inclui preparar o destino.
 
+## Exemplo 2 — aprovações a partir da própria lista
+
+O primeiro exemplo nasceu no chat do Copilot. Este nasce **no sítio onde os dados vivem**: abrindo a lista SharePoint, há um botão **«Fluxos de trabalho»** — e é o mesmo motor, com outra porta de entrada. O painel oferece três caminhos:
+
+- **modelos prontos** — os padrões mais comuns já feitos, como «Notificar uma conversa quando for adicionado um novo item» ou, o que nos interessa aqui, **«Pedir aprovação quando um item de lista do SharePoint for…»**;
+
+- a **caixa de descrição** — «encontre modelos ou descreva o que pretende fazer», a mesma linguagem natural de sempre;
+
+- **«Começar de raiz»** — para quem quer montar o fluxo passo a passo.
+
+Na demonstração, o formador liga à lista «MFAs Desativados» um fluxo de aprovação real:
+
+```text
+Quando um item for modificado na lista "MFAs Desativados",
+envia um pedido de aprovação a [nome do responsável].
+```
+
+O que muda em relação ao Exemplo 1 é a natureza do fluxo: deixa de ser um estafeta que entrega e passa a ser um **circuito administrativo** — o fluxo cria o pedido de aprovação, **pausa**, e só retoma quando a pessoa decide. O caminho bifurca: aprovado ou rejeitado, e cada resposta fica registada no Approvals, com data e autor.
+
+O que observar:
+
+- o gatilho agora é **um acontecimento na lista** (item adicionado ou modificado) — não um e-mail. Qualquer lista de pedidos serve de ponto de partida;
+
+- o fluxo aparece depois em «Os seus fluxos de trabalho», na própria lista, com o estado (ativo/inativo) — a gestão faz-se onde o fluxo vive;
+
+- detalhe honesto: mesmo com a interface em português, o nome gerado do fluxo pode aparecer em inglês («When an item is modified…»). É cosmético — os passos correm na mesma.
+
+E é aqui que o padrão **transfere** para o teu serviço: troca «MFAs Desativados» por uma lista de **despesas a autorizar**, de **atividades a validar**, de **pedidos de divulgação** — qualquer processo em que hoje o pedido circula por e-mail e a aprovação se perde numa caixa de correio. O registo entra na lista, o responsável recebe o pedido no Approvals (no Teams, onde já está), e a decisão fica com rasto. **A pessoa continua a ser o ponto de decisão — o fluxo só lhe leva o processo à mão.**
+
 ## A anatomia do bom prompt de fluxo de trabalho
 
-Relê o exemplo: tem sempre as mesmas quatro peças. São elas que vais usar no exercício — e valem para qualquer ferramenta de automação:
+Relê os dois exemplos: o prompt tem sempre as mesmas quatro peças. São elas que vais usar no exercício — e valem para qualquer ferramenta de automação:
 
 1. **Gatilho preciso** — não «quando chegarem e-mails importantes», mas «quando o assunto contiver "MFA Disabled in Microsoft 365"». O agente não julga o que é importante; tu defines o critério objetivo.
 
@@ -131,7 +160,7 @@ Só depois de aprovada, publica no canal "Divulgação" uma mensagem com
 o texto do pedido. Se for rejeitada, não publiques nada.
 ```
 
-A terceira receita mostra o padrão mais importante para uma instituição pública: **a pessoa dentro do circuito**. O fluxo prepara e espera — quem decide é o responsável, no Approvals.
+A terceira receita é o padrão do Exemplo 2 com gatilho de e-mail: **a pessoa dentro do circuito**. O fluxo prepara e espera — quem decide é o responsável, no Approvals.
 
 ## O teu exercício — especifica o teu fluxo de trabalho
 
