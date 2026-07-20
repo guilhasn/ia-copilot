@@ -119,33 +119,88 @@ E é aqui que o padrão **transfere** para o teu serviço: troca «MFAs Desativa
 
 Terceira porta, e mudança de patamar. O **Copilot Studio** — a ferramenta onde construíste os agentes dos Laboratórios 1 e 2 — tem uma secção de **fluxos** (*agent flows*): automações de nível institucional, criadas da mesma maneira («quando X, faz Y», em linguagem natural), mas com o que faltava aos exemplos anteriores — conectores, partilha, e sobretudo **um tipo de passo novo: a ação de IA**, um passo do fluxo que é ele próprio um modelo de linguagem a trabalhar.
 
-Até aqui, os fluxos **transportavam** informação: notificavam, registavam, pediam aprovação. Este **lê e avalia**. O cenário: um formulário Forms onde os funcionários registam atividades — e descrições tão vagas que o registo não serve para nada:
+Até aqui, os fluxos **transportavam** informação: notificavam, registavam, pediam aprovação. Este **lê e avalia**. O cenário: um formulário Forms onde os funcionários registam atividades — e descrições tão vagas que o registo não serve para nada.
+
+Construído no Copilot Studio, o fluxo tem quatro passos: o **gatilho** («Quando for submetida uma nova resposta» ao formulário), o **Get response details** (que vai buscar o conteúdo da resposta), o passo de IA **M365 Copilot** (que avalia a descrição) e o **Atualizar uma linha** (que regista o veredicto na tabela Excel associada ao formulário):
+
+![Vista geral do fluxo no Copilot Studio: quatro passos ligados em sequência — gatilho do Forms «Quando for submetida uma nova resposta», Get response details, M365 Copilot e Atualizar uma linha — com o painel de configuração do gatilho aberto, mostrando a conexão, o tipo de gatilho «Conector» e o formulário «Registo de Atividades Diárias»]({{ site.baseurl }}/assets/images/s14-lab3-fluxo-01-visao-geral.png)
+
+Cada passo configura-se no painel lateral, sempre com a mesma lógica: a conexão (a conta que executa), a fonte (o formulário) e o conteúdo dinâmico que vem do passo anterior (o «ID da resposta»):
+
+![Painel de configuração do passo Get response details: a conexão, o campo «Formulário de ID» com o formulário «Registo de Atividades Diárias» selecionado e o campo «ID da resposta» preenchido com conteúdo dinâmico vindo do gatilho]({{ site.baseurl }}/assets/images/s14-lab3-fluxo-02-get-response-details.png)
+
+O coração do fluxo é o passo de IA — e o prompt que lá vive é isto:
+
+![Painel de configuração do passo M365 Copilot, com o campo Message a mostrar o prompt de avaliação da qualidade dos registos de atividades]({{ site.baseurl }}/assets/images/s14-lab3-fluxo-03-passo-ia.png)
 
 ```text
-Quando for adicionada uma nova resposta ao formulário, lê o texto do
-campo "Descrição da Atividade". Classifica-o como "Boa" se descrever
-concretamente o que foi feito e incluir pelo menos um elemento
-mensurável (quantidade, público-alvo ou resultado). Classifica-o como
-"A rever" se for uma descrição genérica que não permita perceber o que
-foi realmente feito (por exemplo: "trabalho habitual", "diversas
-tarefas", "normal", ou uma única palavra). Regista o resultado na
-coluna "Qualidade do Registo" da tabela associada ao formulário.
-Se classificares como "A rever", envia-me uma mensagem no Teams com o
-nome do funcionário, a data e o texto original, para eu poder pedir-lhe
-para completar. Não alteres o texto da descrição nem contactes o
-funcionário diretamente.
+Atua como avaliador da qualidade de registos de atividades
+profissionais.
+
+Avalia exclusivamente a qualidade da descrição fornecida. Não avalies
+o desempenho, a produtividade ou a competência da pessoa. Não inventes
+informação nem assumas tarefas que não estejam explicitamente
+descritas.
+
+Uma descrição de qualidade deve permitir compreender:
+
+1. que atividade foi realizada;
+2. sobre que sistema, serviço, processo, pedido ou destinatário incidiu;
+3. qual foi a ação concreta executada;
+4. sempre que aplicável, qual foi o resultado, estado ou seguimento
+   da atividade.
+
+Critérios de avaliação:
+
+- Clareza: o texto é compreensível?
+- Especificidade: identifica concretamente o que foi realizado?
+- Contexto: identifica o sistema, serviço, processo ou objeto da
+  atividade?
+- Resultado: indica o resultado, estado ou seguimento, quando aplicável?
+- Utilidade: permite que outra pessoa compreenda o trabalho realizado?
+
+Classifica como:
+
+- ADEQUADA: descrição clara, específica e suficientemente informativa;
+- A MELHORAR: permite compreender parcialmente a atividade, mas falta
+  contexto, resultado ou especificidade;
+- INSUFICIENTE: texto vazio, demasiado genérico, constituído apenas
+  por números, siglas sem contexto ou conteúdo sem significado
+  descritivo.
+
+Atribui uma pontuação entre 0 e 100.
+
+Responde obrigatoriamente numa única linha e exatamente neste formato:
+
+CLASSIFICAÇÃO | PONTUAÇÃO/100 | JUSTIFICAÇÃO CURTA
+
+Não uses Markdown. Não acrescentes qualquer outro texto.
+
+Descrição da atividade é esta:
 ```
+
+(A seguir à última linha entra o **conteúdo dinâmico** — o texto da descrição, vindo do Get response details.)
+
+O último passo fecha o circuito: o **Atualizar uma linha** liga-se ao ficheiro Excel do formulário (no OneDrive), aponta à tabela e identifica **que** linha atualizar — a coluna de chave «Id», com o «ID da resposta» como valor. É assim que o veredicto cai na linha certa e não noutra qualquer:
+
+![Painel de configuração do passo Atualizar uma linha: localização OneDrive for Business, ficheiro Excel «Registo de Atividades Diárias.xlsx», Tabela1, coluna de chave «Id» e valor chave preenchido com o conteúdo dinâmico «ID da resposta»]({{ site.baseurl }}/assets/images/s14-lab3-fluxo-04-atualizar-linha.png)
+
+E, nas propriedades do item, só se escreve **uma** coluna — a «Qualidade IA» recebe a «Response» do passo M365 Copilot. Todas as outras (nome, e-mail, data, a própria descrição) ficam em branco, ou seja, **intocadas** — a fronteira «não alteres o texto da descrição» não vive só no prompt, vive também na configuração:
+
+![Propriedades do item no passo Atualizar uma linha: os campos Hora, E-mail, Nome, Data, Classificação da atividade e Descrição da Atividade vazios, e apenas o campo «Qualidade IA» preenchido com o conteúdo dinâmico «Response» do passo de IA]({{ site.baseurl }}/assets/images/s14-lab3-fluxo-05-qualidade-ia.png)
 
 O que este prompt ensina, para além da anatomia que já conheces:
 
-- **critérios com exemplos, não adjetivos.** Não diz «classifica a qualidade» — define as duas classes e dá exemplos concretos do que é mau («trabalho habitual», «diversas tarefas», uma única palavra). Quando um passo do fluxo é IA, a precisão dos critérios é o que separa uma ferramenta útil de uma lotaria;
+- **critérios com exemplos, não adjetivos.** Não diz «classifica a qualidade» — define três classes e diz concretamente o que faz cair na pior («texto vazio, demasiado genérico, constituído apenas por números, siglas sem contexto»). Quando um passo do fluxo é IA, a precisão dos critérios é o que separa uma ferramenta útil de uma lotaria;
 
-- **a IA sinaliza, o humano conversa.** O resultado vai para uma coluna e para um aviso ao responsável — e a última linha proíbe o resto: «não alteres o texto nem contactes o funcionário diretamente». A conversa entre pessoas continua entre pessoas;
+- **o formato de saída é parte do contrato.** «Responde numa única linha e exatamente neste formato (…) Não uses Markdown. Não acrescentes qualquer outro texto» — porque a resposta não é para uma pessoa ler, é para o passo seguinte (o Atualizar uma linha) **processar**. Sempre que a IA alimenta outro passo do fluxo, o formato tem de estar amarrado por escrito;
 
-- **a cláusula de fronteira mudou de casa.** Nos exemplos anteriores vivia no prompt do fluxo; aqui vive **dentro do passo de IA** — porque é o passo de IA que tem o poder de julgar, é aí que os limites têm de estar escritos.
+- **a IA sinaliza, o humano conversa.** O veredicto fica registado na tabela — e é o responsável, uma pessoa, que decide se e como pede ao funcionário para completar o registo. A conversa entre pessoas continua entre pessoas;
+
+- **a cláusula de fronteira mudou de casa.** Nos exemplos anteriores vivia no prompt do fluxo; aqui vive **dentro do passo de IA**, e logo nas primeiras linhas: «Não avalies o desempenho, a produtividade ou a competência da pessoa. Não inventes informação» — porque é o passo de IA que tem o poder de julgar, é aí que os limites têm de estar escritos.
 
 {: .vermelho }
-> **A linha que este fluxo não pisa — e que tu também não podes pisar.** O fluxo avalia a **completude do registo**, nunca o desempenho da pessoa. Se as classificações «Boa»/«A rever» alimentassem automaticamente uma avaliação de desempenho (SIADAP ou outra), estaríamos em decisão automatizada sobre pessoas — território do art. 22.º do RGPD e da doutrina da Sessão 9. É por isso que o resultado é um pedido de **completar o registo**, feito por uma pessoa, e não uma nota que fica.
+> **A linha que este fluxo não pisa — e que tu também não podes pisar.** O fluxo avalia a **completude do registo**, nunca o desempenho da pessoa. Se as classificações «ADEQUADA»/«A MELHORAR»/«INSUFICIENTE» — ou a pontuação — alimentassem automaticamente uma avaliação de desempenho (SIADAP ou outra), estaríamos em decisão automatizada sobre pessoas — território do art. 22.º do RGPD e da doutrina da Sessão 9. É por isso que o resultado é um pedido de **completar o registo**, feito por uma pessoa, e não uma nota que fica.
 
 {: .important }
 > **A automação institucional tem medidor.** Ao contrário do Workflows (incluído na licença Copilot), os fluxos do Copilot Studio consomem **créditos** (pacotes pré-pagos ou pagamento por utilização, ativados pelo administrador) — cêntimos por execução, mas sem capacidade ativada o fluxo **publica e não corre**. Não é um pormenor técnico: é a diferença entre *experimentar* e *adotar* — e é por isso que a proposta estratégica da [Sessão 15]({% link bloco-5-governanca/sessao-15.md %}) tem uma secção de investimento. Adotar IA institucionalmente é uma decisão orçamental, não só técnica.
