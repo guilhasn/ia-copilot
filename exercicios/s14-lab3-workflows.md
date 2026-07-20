@@ -147,6 +147,9 @@ O que este prompt ensina, para além da anatomia que já conheces:
 {: .vermelho }
 > **A linha que este fluxo não pisa — e que tu também não podes pisar.** O fluxo avalia a **completude do registo**, nunca o desempenho da pessoa. Se as classificações «Boa»/«A rever» alimentassem automaticamente uma avaliação de desempenho (SIADAP ou outra), estaríamos em decisão automatizada sobre pessoas — território do art. 22.º do RGPD e da doutrina da Sessão 9. É por isso que o resultado é um pedido de **completar o registo**, feito por uma pessoa, e não uma nota que fica.
 
+{: .important }
+> **A automação institucional tem medidor.** Ao contrário do Workflows (incluído na licença Copilot), os fluxos do Copilot Studio consomem **créditos** (pacotes pré-pagos ou pagamento por utilização, ativados pelo administrador) — cêntimos por execução, mas sem capacidade ativada o fluxo **publica e não corre**. Não é um pormenor técnico: é a diferença entre *experimentar* e *adotar* — e é por isso que a proposta estratégica da [Sessão 15]({% link bloco-5-governanca/sessao-15.md %}) tem uma secção de investimento. Adotar IA institucionalmente é uma decisão orçamental, não só técnica.
+
 A progressão dos três exemplos é o mapa mental para levar para casa: **Workflows** (a automação pessoal, na tua caixa de correio) → **fluxos da lista** (a automação da equipa, onde os dados vivem) → **fluxos do Copilot Studio** (a automação institucional, partilhável, com IA dentro). O gesto de criação é sempre o mesmo: descrever bem, em português, o que deve acontecer — e onde parar.
 
 ## A anatomia do bom prompt de fluxo de trabalho
