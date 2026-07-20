@@ -130,37 +130,71 @@ Relê os dois exemplos: o prompt tem sempre as mesmas quatro peças. São elas q
 {: .amarelo }
 > **Semáforo: amarelo.** Um fluxo de trabalho destes corre no ambiente Microsoft 365 institucional, sobre correio real — é território de construção com aprovação: verifica com a tua equipa e o administrador antes de pôr um fluxo a correr sobre a caixa de correio do serviço. Para especificar (o exercício abaixo), é verde: não corre nada.
 
-## Receitas para adaptar (IES)
+## Receitas para adaptar — uma por área
 
-Três pontos de partida ancorados no trabalho dos serviços — **prompts a adaptar**, não a copiar às cegas: muda os nomes, os assuntos e os destinos para os teus. Em todos, repara na cláusula de fronteira.
+Cinco pontos de partida, um por área presente na turma, cada um a atacar uma dor levantada no levantamento de processos das S13–S14. São **prompts a adaptar**, não a copiar às cegas: muda os nomes, os assuntos e os destinos para os teus — e repara que todos terminam com a cláusula de fronteira.
 
-**1 · O recurso que não pode ficar parado** (serviços académicos)
+**1 · Serviços Académicos — o pico de matrículas**
 
-```text
-Sempre que chegar um e-mail cujo assunto contenha "recurso", publica
-uma mensagem no canal "Serviços Académicos - Pendentes" com o remetente,
-o assunto, a data de receção e um resumo numa única frase.
-Não respondas ao e-mail nem o encaminhes.
-```
-
-**2 · O ponto de sexta-feira** (qualquer serviço)
+O problema: no pico de matrículas, a caixa de correio enche-se de dúvidas repetitivas — e triar é meia manhã perdida.
 
 ```text
-Todas as sextas-feiras às 16h00, envia-me um e-mail com a lista dos
-e-mails recebidos nos últimos 7 dias a que ainda não respondi,
-com remetente, assunto e data. Apenas listar — não respondas a nenhum.
+Todos os dias às 8h, verifica os e-mails não lidos da minha caixa de
+entrada que mencionem "matrícula", "inscrição" ou "propina", agrupa-os
+por tema e envia-me um resumo no Teams com o número de pedidos por
+categoria e os 3 mais urgentes. Não respondas a nenhum e-mail.
 ```
 
-**3 · A divulgação que espera por aprovação** (comunicação / gabinetes)
+**2 · Qualidade — os prazos das ações corretivas**
+
+O problema: perseguir manualmente os prazos das ações corretivas — a dor mais custosa da área.
 
 ```text
-Sempre que chegar um e-mail com o assunto "Pedido de divulgação", cria
-uma aprovação dirigida a [nome do responsável] com o resumo do pedido.
-Só depois de aprovada, publica no canal "Divulgação" uma mensagem com
-o texto do pedido. Se for rejeitada, não publiques nada.
+Todas as segundas-feiras de manhã, verifica na lista "Ações Corretivas"
+quais têm prazo nos próximos 7 dias e envia-me um resumo no Teams com
+o nome da ação, o responsável e os dias em atraso, se houver.
+Apenas listar — não contactes os responsáveis.
 ```
 
-A terceira receita é o padrão do Exemplo 2 com gatilho de e-mail: **a pessoa dentro do circuito**. O fluxo prepara e espera — quem decide é o responsável, no Approvals.
+> Se o teu registo de ações corretivas vive num Excel, o caminho robusto é passá-lo para uma **lista SharePoint** — é com listas que o Workflows fala (viste no Exemplo 2), e ganhas de borla o botão «Fluxos de trabalho» na própria lista.
+
+**3 · Financeiro / Tesouraria — o reporte de fim do mês**
+
+O problema: mapas de reporte manuais para a tutela e o Tribunal de Contas, montados à mão a partir do que se decidiu durante o mês.
+
+```text
+No último dia útil de cada mês, resume as reuniões do Teams sobre
+execução orçamental que tive esse mês e envia-me por e-mail um resumo
+com as decisões tomadas e as ações pendentes. Não envies nada a
+mais ninguém.
+```
+
+> As ações sobre conteúdo de reuniões dependem do que o Workflows consegue ler no teu ambiente — testa primeiro; se não passar, a alternativa robusta é resumir os **e-mails** do mês com «execução orçamental» no assunto.
+
+**4 · Contratação Pública — o prazo que não pode escapar**
+
+O problema: a articulação entre serviços falha e o prazo da plataforma aparece em cima da hora.
+
+```text
+Quando receber um e-mail com "prazo" e "concurso" no assunto,
+notifica-me no Teams e resume o prazo mencionado no corpo do e-mail.
+Não respondas ao e-mail.
+```
+
+**5 · Comunicação — o pedido informal e incompleto**
+
+O problema: os pedidos de divulgação chegam informais e incompletos — e a triagem consome o dia.
+
+```text
+Sempre que receber um e-mail a pedir divulgação ou publicação, resume
+o pedido num formato padrão (o quê, para quando, quem pede) e
+envia-mo no Teams para eu confirmar antes de avançar.
+Não publiques nada sem a minha confirmação.
+```
+
+> Versão mais formal: substituir a confirmação por um **pedido de aprovação** no Approvals, como no Exemplo 2 — a decisão fica registada, com data e autor.
+
+Em todas, o padrão é o mesmo: **a pessoa dentro do circuito**. O fluxo tria, agrupa, resume e espera — quem responde, contacta e decide és tu.
 
 ## O teu exercício — especifica o teu fluxo de trabalho
 
