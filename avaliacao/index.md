@@ -1,7 +1,7 @@
 ---
 title: "Avaliação"
 layout: default
-nav_order: 8
+nav_order: 9
 ---
 
 # Avaliação — quizzes por bloco

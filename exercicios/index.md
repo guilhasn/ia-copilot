@@ -1,7 +1,7 @@
 ---
 title: "Exercícios"
 layout: default
-nav_order: 6
+nav_order: 7
 has_children: true
 ---
 
@@ -27,3 +27,4 @@ Mãos no Copilot. Cada sessão tem um exercício prático que aplica o que acabo
 | **S14** — Agentes | [Laboratório 1: agente com fontes de conhecimento]({% link exercicios/s14-lab1-agente-com-fontes.md %}) | 45-60 min |
 | **S14** — Agentes | [Laboratório 2: agente declarativo, ferramentas e publicação]({% link exercicios/s14-lab2-agente-declarativo.md %}) | 45-60 min |
 | **S14** — Agentes | [Laboratório 3: Workflows — o agente que age sozinho]({% link exercicios/s14-lab3-workflows.md %}) | 30-45 min |
+| **S15** — Estratégia | [A tua proposta estratégica de adoção de IA]({% link exercicios/s15-proposta-estrategica.md %}) | 35-45 min |
