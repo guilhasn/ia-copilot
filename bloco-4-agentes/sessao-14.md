@@ -97,7 +97,19 @@ Testa-se no painel — e, num segundo momento, mostra-se que **um agente também
 
 👉 Os guiões completos da construção no Copilot Studio, passo a passo e com capturas de ecrã, estão nos laboratórios: **[Laboratório 1 — o agente com fontes]({% link exercicios/s14-lab1-agente-com-fontes.md %})** (o agente de FAQ ancorado em regulamentos reais, que cita a origem — é a demonstração desta secção) e **[Laboratório 2 — o agente declarativo]({% link exercicios/s14-lab2-agente-declarativo.md %})** (ferramentas, publicação no Copilot e no Teams, modo de programador). Servem para acompanhar a demonstração e para replicar depois, com licença ou *trial*.
 
-## 6. A linha vermelha, agora que o agente age
+## 6. O agente que age sozinho: Workflows (Frontier)
+
+Todos os agentes até aqui têm uma coisa em comum: **respondem quando alguém lhes fala**. Há um terceiro movimento — agentes que reagem a um **acontecimento** (chegou um e-mail, é segunda de manhã) e executam os passos combinados, sem que ninguém lhes peça nada naquele momento. No Microsoft 365 Copilot, isso chama-se **Workflows**: um agente do programa **Frontier** (acesso antecipado — experimental, pode mudar) que cria automações a partir de uma descrição em linguagem natural.
+
+> «Quando X, faz Y» — descreves o que deve acontecer, e o agente escolhe o gatilho, os serviços e monta os passos. O mesmo gesto de sempre: especificar bem, em português, o que se quer.
+
+Por agora liga só a serviços Microsoft 365 — Outlook, Teams, SharePoint, Planner, Approvals, mais gatilhos de agenda e ações de IA. Para além disso (serviços externos, fluxos partilhados, lógica complexa), o caminho é o **Power Automate** — o Workflows é a porta de entrada sem código.
+
+E há um detalhe que muda tudo na doutrina: um agente que age **sem pedido no momento** precisa de instruções ainda mais explícitas sobre o que **não** faz — ninguém está a ver quando ele corre. A cláusula de fronteira deixa de ser boa prática e passa a ser peça obrigatória do prompt. Cada fluxo é pessoal (não se partilha), pode confundir canais com nomes parecidos, e merece vigilância no histórico de execuções antes de merecer confiança.
+
+👉 A demonstração ao vivo (o alerta de segurança MFA, em duas iterações: notificar a equipa no Teams → notificar **e** registar numa lista SharePoint) e as receitas para adaptar estão no **[Laboratório 3 — o agente que age sozinho]({% link exercicios/s14-lab3-workflows.md %})**.
+
+## 7. A linha vermelha, agora que o agente age
 
 Um agente que executa ações levanta a fasquia do risco. A doutrina do curso aplica-se inteira:
 
@@ -109,7 +121,7 @@ Um agente que executa ações levanta a fasquia do risco. A doutrina do curso ap
 
 - **Agentes proliferam.** Numa organização, os agentes multiplicam-se e alguns ficam esquecidos. O **Agent 365** existe para os registar, permissionar e auditar — a governação faz-se **desde o desenho**, não depois.
 
-## 7. Semáforo dos agentes
+## 8. Semáforo dos agentes
 
 {: .verde }
 > **Verde — recomendado**
@@ -136,7 +148,7 @@ Um agente que executa ações levanta a fasquia do risco. A doutrina do curso ap
 > - dar a um agente **dados pessoais ou sensíveis** como fonte partilhada;
 > - deixar um agente **executar sem confirmação** ações com consequências.
 
-## 8. Exercício prático
+## 9. Exercício prático
 
 Cada um especifica o **seu** agente na **grelha dos 10 pontos** — quem usa, que problema resolve, que conhecimento consulta, o que está proibido de fazer, e o **teste negativo** que prova que a fronteira aguenta. Escolhem uma ideia de um catálogo adaptado às IES.
 
@@ -144,7 +156,7 @@ Cada um especifica o **seu** agente na **grelha dos 10 pontos** — quem usa, qu
 
 Quem tem acesso constrói o agente no Agent Builder ou no Copilot Studio — os **[laboratórios passo a passo]({% link exercicios/s14-lab1-agente-com-fontes.md %})** replicam a demonstração do formador; a **[Agent Academy](https://microsoft.github.io/agent-academy/)** da Microsoft serve de apoio para ir mais longe.
 
-## 9. Lista de verificação final
+## 10. Lista de verificação final
 
 Antes de dar um agente por pronto, confirmem que:
 
@@ -162,7 +174,7 @@ Antes de dar um agente por pronto, confirmem que:
 
 - o **teste negativo** foi corrido — e o agente manteve os limites.
 
-## 10. Fecho da sessão
+## 11. Fecho da sessão
 
 Construir um agente é fácil; construir um agente **seguro, ancorado e governado** é a competência que interessa numa instituição pública. O agente empacota o conhecimento da equipa e poupa horas de repetição — mas a pergunta que fica não é «como o crio?». É **quem aprova, que dados usa, quem acede, e quem responde se ele der uma má sugestão**.
 
