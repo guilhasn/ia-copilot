@@ -82,10 +82,10 @@ const QUESTOES = [
  {
   "q": "Na Matriz Semáforo, o que torna um uso do Copilot VERDE?",
   "opts": [
-   "Ser feito em horário de trabalho, com o computador de serviço",
-   "A natureza do conteúdo: fictício ou público, sem dados pessoais nem matéria reservada",
-   "A autorização prévia do superior hierárquico",
-   "A revisão do resultado por dois colegas antes de enviar"
+   "Ser feito em horário de trabalho, com o computador e a conta de correio do serviço",
+   "A natureza do conteúdo: fictício ou público, sem dados pessoais",
+   "A autorização prévia e por escrito do superior hierárquico para a tarefa concreta",
+   "A revisão do resultado por dois colegas antes de o enviar ou publicar"
   ],
   "c": 1,
   "exp": "S1: o critério é sempre o conteúdo, não a hora nem o equipamento. Verde é trabalhar com o que é fictício ou já público — o território recomendado para aprender e experimentar sem rede."
@@ -93,10 +93,10 @@ const QUESTOES = [
  {
   "q": "Um colega quer resumir um documento interno na conta pessoal do ChatGPT «porque é só um minuto». A resposta do curso é:",
   "opts": [
-   "Pode, desde que apague a conversa no fim",
-   "Pode, porque resumir não é decidir",
-   "Nunca — ferramentas pessoais não têm a proteção de dados empresarial da conta institucional",
-   "Pode, se o documento não citar nomes próprios"
+   "Pode, desde que apague a conversa no fim e desative o histórico da conta",
+   "Pode, porque resumir não é decidir e o uso é por isso sempre verde",
+   "Nunca — a conta pessoal não tem a proteção de dados empresarial",
+   "Pode, se o documento não citar nomes próprios nem valores orçamentais concretos"
   ],
   "c": 2,
   "exp": "S2: com sessão iniciada na conta institucional, os prompts não treinam modelos e ficam sob proteção de dados empresarial. Contas pessoais não dão essas garantias — documento interno em conta pessoal, nunca. Nem por um minuto."
@@ -104,10 +104,10 @@ const QUESTOES = [
  {
   "q": "Qual é o VERMELHO transversal a todo o curso — do SIADAP aos júris, dos fluxos aos agentes?",
   "opts": [
-   "Usar IA fora do horário de expediente",
-   "Submeter documentos com mais de 50 páginas",
-   "Gerar conteúdo em línguas estrangeiras sem revisão",
-   "Decidir sobre pessoas: avaliar, pontuar, ordenar ou excluir com IA"
+   "Usar IA fora do horário de expediente sem conhecimento da chefia",
+   "Submeter documentos com mais de cinquenta páginas numa única conversa",
+   "Gerar conteúdo em línguas estrangeiras sem revisão de um falante nativo",
+   "Decidir sobre pessoas: avaliar, pontuar, ordenar ou excluir"
   ],
   "c": 3,
   "exp": "O art. 22.º do RGPD limita decisões exclusivamente automatizadas com efeitos significativos, e o Anexo III do AI Act classifica emprego e avaliação de pessoas como alto risco. Apareceu na S1 e nunca mais saiu: a decisão sobre pessoas é humana."
@@ -126,10 +126,10 @@ const QUESTOES = [
  {
   "q": "O mesmo prompt deu duas respostas diferentes em dois dias. Isto significa que…",
   "opts": [
-   "…o serviço estava sobrecarregado num dos dias",
-   "…é o comportamento normal de um modelo não-determinista — o output trata-se como rascunho",
-   "…houve uma atualização do modelo entre os dois dias",
-   "…o prompt tem um erro que confunde o modelo"
+   "…o serviço estava sobrecarregado num dos dias e conviria repetir fora das horas de ponta",
+   "…é o comportamento normal de um modelo não-determinista",
+   "…houve uma atualização silenciosa do modelo entre os dois dias",
+   "…o prompt tem um erro de formulação que confunde o modelo"
   ],
   "c": 1,
   "exp": "S2: os modelos geram texto com aleatoriedade — não é avaria. A consequência atravessa o curso inteiro, do Word ao Designer do PowerPoint aos fluxos: o output é sempre rascunho a validar, nunca produto final."
@@ -137,10 +137,10 @@ const QUESTOES = [
  {
   "q": "O que é uma alucinação de um modelo de linguagem — e porque é perigosa?",
   "opts": [
-   "Uma resposta interrompida por limite de comprimento; perigosa porque perde conteúdo",
-   "Uma recusa em responder; perigosa porque atrasa o trabalho",
-   "Conteúdo plausível mas falso, gerado com confiança; perigosa porque quanto mais plausível parece, menos se verifica",
-   "Um erro de formatação; perigoso porque desalinha tabelas"
+   "Uma resposta interrompida por limite de comprimento; perigosa porque perde conteúdo sem avisar",
+   "Uma recusa em responder a temas sensíveis; perigosa porque atrasa o trabalho do serviço",
+   "Conteúdo plausível mas falso; perigosa porque quanto mais plausível, menos se verifica",
+   "Um erro de formatação; perigoso porque desalinha tabelas e listas numeradas"
   ],
   "c": 2,
   "exp": "S1: o modelo gera o texto mais provável, não o verdadeiro — e apresenta invenções com a mesma fluência das verdades. Por isso a validação com a fonte é hábito, não extra. Do resumo de e-mails ao artigo do CCP citado, a régua é a mesma."
@@ -148,10 +148,10 @@ const QUESTOES = [
  {
   "q": "«Na segunda-feira a magia deixou de funcionar»: o colega colou a tarefa no Copilot Chat e saiu texto genérico. O que se esqueceu ele de fazer?",
   "opts": [
-   "De colar primeiro o meta-prompt — o Chat não guarda instruções entre conversas",
-   "De ativar o histórico de conversas nas definições",
-   "De atualizar o navegador para a versão mais recente",
-   "De escrever o pedido em inglês"
+   "De colar primeiro o meta-prompt: cada conversa nova começa do zero",
+   "De ativar o histórico de conversas nas definições da conta institucional",
+   "De atualizar o navegador para a versão mais recente antes de iniciar sessão",
+   "De escrever o pedido em inglês, a língua em que o modelo trabalha melhor"
   ],
   "c": 0,
   "exp": "S3: cada conversa nova começa do zero — o Copilot Chat não memoriza instruções entre sessões. O meta-prompt é a entrada #0 da biblioteca: a primeira coisa a colar em cada conversa nova, antes de descrever a tarefa."
@@ -181,10 +181,10 @@ const QUESTOES = [
  {
   "q": "O recap de reunião atribui uma decisão a um colega. Validas como?",
   "opts": [
-   "Confirmando o carimbo temporal indicado pelo Copilot",
-   "Perguntando ao Copilot se tem a certeza",
-   "Confrontando a frase citada com a transcrição — o próprio timestamp pode estar errado",
-   "Verificando se aparece também no resumo automático do Teams"
+   "Confirmando o carimbo temporal indicado pelo Copilot, que é gerado pelo sistema",
+   "Perguntando ao Copilot se tem a certeza, para forçar uma segunda verificação",
+   "Confrontando a frase citada com a transcrição",
+   "Verificando se a decisão aparece também no resumo automático do Teams"
   ],
   "c": 2,
   "exp": "S5: a régua é a frase, não o metadado — o timestamp é ele próprio um output. E pedir confirmação ao Copilot é pedir ao suspeito que confirme o álibi: máquina não valida máquina."
@@ -192,10 +192,10 @@ const QUESTOES = [
  {
   "q": "«Máquina não valida máquina» — o que exige este princípio, na prática?",
   "opts": [
-   "Validar contra a fonte original: recalcular na folha, reler a transcrição, abrir o diploma ou o documento",
-   "Usar dois modelos de IA diferentes e comparar as respostas",
-   "Repetir a mesma pergunta três vezes e ficar com a resposta maioritária",
-   "Pedir ao Copilot o grau de confiança de cada afirmação"
+   "Validar contra a fonte: a folha, a transcrição, o diploma, o documento",
+   "Usar dois modelos de IA diferentes e só aceitar o que ambos responderem de forma igual",
+   "Repetir a mesma pergunta três vezes e ficar com a resposta maioritária das três",
+   "Pedir ao Copilot que indique o grau de confiança de cada afirmação que produz"
   ],
   "c": 0,
   "exp": "Transversal a todo o curso: a validação faz-se contra a fonte — a folha de cálculo, a transcrição, o diploma, o documento de origem. Repetir perguntas ou cruzar modelos continua dentro da máquina; a fonte está fora."
@@ -225,10 +225,10 @@ const QUESTOES = [
  {
   "q": "Na Sessão 8 (PowerPoint), quais são os DOIS produtos que se confundem — e a diferença que importa?",
   "opts": [
-   "Designer e SmartArt — o primeiro é pago",
-   "PowerPoint Online e Desktop — só o segundo tem IA",
-   "Copilot no PowerPoint (exige licença) e PowerPoint Agent no Chat (constrói o .pptx sem licença)",
-   "Copilot Chat e ChatGPT — só um é institucional"
+   "Designer e SmartArt — o primeiro exige subscrição, o segundo vem incluído no Office",
+   "PowerPoint Online e PowerPoint Desktop — só o segundo aceita comandos de IA",
+   "Copilot no PowerPoint (com licença) e PowerPoint Agent (sem licença)",
+   "Copilot Chat e ChatGPT — ambos geram diapositivos, mas só um é institucional"
   ],
   "c": 2,
   "exp": "S8: confundi-los é o erro que rebenta ao vivo. O Copilot dentro do PowerPoint exige licença (e o Designer para gerar de ficheiro); o PowerPoint Agent, no menu Agents do Chat, constrói o ficheiro a partir do documento anexado — sem licença."
@@ -236,10 +236,10 @@ const QUESTOES = [
  {
   "q": "A técnica «Validação com a fonte» exige que cada afirmação num diapositivo (ou relatório)…",
   "opts": [
-   "…seja aprovada pelo superior antes da apresentação",
-   "…possa apontar para uma frase do documento de origem — sem frase, é palpite",
-   "…esteja formulada com as palavras exatas do original",
-   "…tenha menos de uma linha de comprimento"
+   "…seja aprovada pelo superior hierárquico antes da apresentação pública",
+   "…possa apontar para uma frase do documento de origem",
+   "…esteja formulada exatamente com as palavras do original, sem qualquer paráfrase",
+   "…tenha menos de uma linha, para garantir a legibilidade em ecrã grande"
   ],
   "c": 1,
   "exp": "S8 — e depois S15, ao nível mais alto: afirmação a afirmação, procura-se a frase que a sustenta. Não precisa de ser literal; precisa de ter suporte. O que não tiver, sai ou volta à fonte."
@@ -247,10 +247,10 @@ const QUESTOES = [
  {
   "q": "A «inversão» da Sessão 9 (SIADAP) manda:",
   "opts": [
-   "Escrever os indicadores antes dos objetivos",
-   "Pedir dez objetivos ao Copilot e escolher três",
-   "Começar pelos objetivos da unidade orgânica",
-   "Não pedir objetivos ao Copilot — interrogar com ele os objetivos que TU escreves"
+   "Escrever primeiro os indicadores e as metas, e só depois o texto do objetivo",
+   "Pedir dez objetivos ao Copilot, eliminar sete e afinar os três melhores",
+   "Começar pelos objetivos da unidade orgânica e só depois descer aos individuais",
+   "Não pedir objetivos ao Copilot — interrogar os que TU escreves"
   ],
   "c": 3,
   "exp": "S9: «cria-me 5 objetivos SMART» devolve texto plausível que serve qualquer serviço — e nenhum. Só tu conheces o serviço: escreves o objetivo e usas o Copilot como revisor adversarial, até o objetivo ficar defensável."
@@ -258,10 +258,10 @@ const QUESTOES = [
  {
   "q": "A transcrição da reunião tem um [inaudível] num momento decisivo. O método da Sessão 10 manda:",
   "opts": [
-   "Marcar [CONFIRMAR] e verificar com quem esteve na reunião — nunca completar lacunas",
-   "Pedir ao Copilot a versão mais plausível, dado o contexto",
-   "Cortar o trecho da ata",
-   "Substituir pelo texto da convocatória"
+   "Marcar [CONFIRMAR] e verificar com quem esteve na reunião",
+   "Pedir ao Copilot que complete com a versão mais plausível, dado o contexto à volta",
+   "Cortar o trecho da ata — o que não se ouviu não se registou",
+   "Substituir pelo texto da convocatória, que descreve o ponto em discussão"
   ],
   "c": 0,
   "exp": "S10: um [inaudível] transformado em frase plausível é uma declaração que ninguém proferiu — numa ata que faz fé. Lacunas resolvem-se com humanos, não com probabilidade."
@@ -269,10 +269,10 @@ const QUESTOES = [
  {
   "q": "O Copilot contou os votos da transcrição: «7 a favor, 2 contra». Antes de fixar a votação na ata:",
   "opts": [
-   "Aceitar — contar é tarefa mecânica",
-   "Recontar por leitura humana da transcrição — a contagem de uma votação não se delega",
-   "Confirmar com o Copilot, reformulando a pergunta",
-   "Usar o resultado previsto na convocatória"
+   "Aceitar — contar é uma tarefa mecânica em que os modelos não falham",
+   "Recontar por leitura humana da transcrição",
+   "Confirmar com o Copilot, reformulando a pergunta de outra maneira para despistar o erro",
+   "Usar o resultado previsto na convocatória, que antecipava a aprovação do ponto"
   ],
   "c": 1,
   "exp": "S10: a votação é o coração do ato formal — e os modelos erram contagens com toda a confiança. O número que faz fé conta-o o secretário."
@@ -280,10 +280,10 @@ const QUESTOES = [
  {
   "q": "Porque é que a Sessão 11 (contratação pública) exige «os mesmos prompts para todas as propostas»?",
   "opts": [
-   "Para poupar tempo de escrita",
-   "Porque o Copilot confunde as propostas se as perguntas variarem",
-   "Igualdade de tratamento: se uma proposta é escrutinada com uma pergunta, todas são",
-   "Para comparar os tempos de resposta"
+   "Para poupar tempo de escrita ao longo do procedimento de análise",
+   "Porque o Copilot confunde as propostas entre si se as perguntas variarem de uma para outra",
+   "Igualdade de tratamento: o escrutínio tem de ser igual para todas",
+   "Para permitir comparar os tempos de resposta entre as diferentes propostas"
   ],
   "c": 2,
   "exp": "S11: o princípio da igualdade de tratamento dos concorrentes aplica-se também à ferramenta. O guião de prompts corre igual para todas — escrutinar uma com perguntas que as outras não receberam desequilibra o procedimento."
@@ -291,10 +291,10 @@ const QUESTOES = [
  {
   "q": "A resposta do Copilot cita um artigo do CCP para justificar uma exclusão. A doutrina do curso manda:",
   "opts": [
-   "Aceitar se o número do artigo existir no índice",
-   "Pedir ao Copilot a transcrição integral do artigo",
-   "Ignorar sempre citações legais da IA",
-   "Verificar o artigo no diploma consolidado — o Copilot cita normas que não dizem o que a resposta afirma"
+   "Aceitar se o número do artigo existir no índice da versão consolidada do Código",
+   "Pedir ao Copilot a transcrição integral do artigo citado e confirmá-la na própria conversa",
+   "Ignorar sempre as citações legais da IA — nunca têm qualquer utilidade prática",
+   "Verificar o artigo no diploma consolidado — a citação pode não dizer aquilo"
   ],
   "c": 3,
   "exp": "S11: a citação legal plausível mas errada é das alucinações mais perigosas — o artigo existe, mas não diz aquilo. Verifica-se no diploma, nunca na própria conversa."
@@ -324,10 +324,10 @@ const QUESTOES = [
  {
   "q": "Partilhar um Notebook com o gabinete exige atenção porque…",
   "opts": [
-   "…cada partilha consome uma licença",
-   "…os novos membros podem reordenar as fontes",
-   "…partilhar o Notebook é dar acesso ao conteúdo das suas fontes",
-   "…a Microsoft cobra por utilizador ativo"
+   "…cada partilha consome uma das licenças limitadas da instituição",
+   "…os novos membros podem reordenar ou remover as fontes dos outros",
+   "…partilhar o Notebook é dar acesso às suas fontes",
+   "…a Microsoft cobra por cada utilizador ativo em cada Notebook partilhado"
   ],
   "c": 2,
   "exp": "S13: quem entra passa a poder interrogar as fontes — partilhar o caderno é partilhar o que está lá dentro. As fontes escolhem-se a pensar em quem vai ter acesso; dados pessoais nunca entram num caderno partilhado."
@@ -335,9 +335,9 @@ const QUESTOES = [
  {
   "q": "As quatro peças da anatomia de um bom prompt de fluxo de trabalho (S14):",
   "opts": [
-   "Objetivo · Contexto · Fonte · Expectativas",
-   "Quem · o quê · quando · onde",
-   "Entrada · processamento · saída · arquivo",
+   "Objetivo · Contexto · Fonte · Expectativas — o GCSE aplicado aos fluxos",
+   "Quem pede · o que faz · quando corre · onde regista o resultado",
+   "Entrada · processamento · saída · arquivo — o ciclo clássico da informação",
    "Gatilho preciso · destino nomeado · conteúdo enumerado · cláusula de fronteira"
   ],
   "c": 3,
@@ -346,10 +346,10 @@ const QUESTOES = [
  {
   "q": "Num fluxo em que um passo de IA alimenta o passo seguinte (S14), porque é que o formato de saída «é parte do contrato»?",
   "opts": [
-   "Porque a resposta não é para uma pessoa ler — é para o passo seguinte processar",
-   "Porque o Markdown consome mais créditos",
-   "Porque os passos seguintes só aceitam inglês",
-   "Porque o formato bonito facilita a auditoria"
+   "Porque a resposta é para o passo seguinte processar, não para uma pessoa ler",
+   "Porque o Markdown consome mais créditos em cada execução do fluxo",
+   "Porque os passos seguintes do fluxo só aceitam texto em inglês",
+   "Porque o formato bonito facilita a auditoria posterior no separador Activity"
   ],
   "c": 0,
   "exp": "S14, Exemplo 3: «responde numa única linha, exatamente neste formato, sem Markdown» — porque quem consome a resposta é o passo «Atualizar uma linha». Sempre que a IA alimenta outro passo, o formato amarra-se por escrito."
@@ -357,10 +357,10 @@ const QUESTOES = [
  {
   "q": "O fluxo da S14 avalia a qualidade dos registos de atividades. Qual é a linha que NÃO pode pisar?",
   "opts": [
-   "Processar mais de cem registos por dia",
-   "Alimentar automaticamente uma avaliação de desempenho com as classificações",
-   "Escrever o veredicto numa coluna da tabela",
-   "Usar três classes em vez de duas"
+   "Processar mais de cem registos de atividades num único dia útil",
+   "Alimentar com as classificações uma avaliação de desempenho",
+   "Escrever o veredicto numa coluna da tabela Excel associada ao formulário",
+   "Usar três classes de qualidade em vez de duas, mais a pontuação numérica"
   ],
   "c": 1,
   "exp": "S14: o fluxo avalia a completude do registo, nunca o desempenho da pessoa. Se as classificações alimentassem o SIADAP automaticamente, seria decisão automatizada sobre pessoas — art. 22.º do RGPD. O resultado é um pedido de completar, feito por uma pessoa."
@@ -368,10 +368,10 @@ const QUESTOES = [
  {
   "q": "Das cinco camadas que uma consultora vende (S15), a IA compressa a pesquisa, os frameworks e o diagnóstico. O que fica humano?",
   "opts": [
-   "A formatação do relatório e a revisão ortográfica",
-   "A escolha das ferramentas e o calendário",
+   "A formatação institucional do relatório e a revisão ortográfica final",
+   "A escolha das ferramentas tecnológicas e o calendário de implementação",
    "O juízo adaptado à casa e a legitimidade de quem assina",
-   "Nada — é essa a tese da sessão"
+   "Nada — a compressão total das cinco camadas é a tese da sessão"
   ],
   "c": 2,
   "exp": "S15: «internalizar o gabinete de estudos — não terceirizar o juízo». O que é realista nesta instituição, com este orçamento e esta cultura, decide-o o dirigente. E quem assina com trabalho sólido atrás ganha o que a consultora nunca daria: autoria."
@@ -379,9 +379,9 @@ const QUESTOES = [
  {
   "q": "A auditoria a um relatório de investigação (S15) faz-se com uma pergunta fechada por afirmação:",
   "opts": [
-   "«A fonte é de uma instituição prestigiada?»",
-   "«O relatório está bem organizado?»",
-   "«O Copilot indicou nível de confiança elevado?»",
+   "«A fonte citada é de uma organização internacional prestigiada?»",
+   "«O relatório está bem organizado por temas e com secções claras?»",
+   "«O Copilot indicou um nível de confiança elevado nesta afirmação?»",
    "«Esta afirmação está mesmo na fonte citada — sim ou não?»"
   ],
   "c": 3,
@@ -390,10 +390,10 @@ const QUESTOES = [
  {
   "q": "O prompt mestre do consultor da S15 não foi escrito à mão. Como nasceu?",
   "opts": [
-   "Por meta-prompting: um meta-prompt (o Arquiteto) entrevistou o formador e desenhou o prompt do agente",
-   "Foi copiado de um modelo da Prompt Gallery da Microsoft",
-   "Foi gerado pelo Researcher a partir de relatórios de consultoras",
-   "Foi escrito pela equipa da ANFUP para o curso"
+   "Por meta-prompting: o Arquiteto entrevistou o formador e desenhou-o",
+   "Foi adaptado de um modelo público da Prompt Gallery da Microsoft",
+   "Foi gerado pelo Researcher a partir de relatórios públicos de consultoras internacionais",
+   "Foi escrito de raiz pela equipa pedagógica da ANFUP para este curso"
   ],
   "c": 0,
   "exp": "S15: quatro respostas ao Arquiteto — problema, utilizadores, produto final, ferramenta — seguidas de entrevista, e o meta-prompt produziu o prompt mestre. Dois prompts, dois papéis: um desenha, o outro executa. Mudando as quatro respostas, crias o próximo consultor."
