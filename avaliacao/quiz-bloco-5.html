@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz · Bloco 5 — Estratégia e Adoção | IA aplicada às IES</title>
+<style>
+  :root{
+    --azul:#1F4E78; --azul2:#2E74B5; --claro:#DEEBF7; --ok:#2e7d32; --okbg:#e8f5e9;
+    --erro:#c62828; --errobg:#fdecea; --cinza:#595959; --borda:#d9d9d9;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  body{font-family:'Segoe UI',Calibri,system-ui,sans-serif; background:#f4f6f9; color:#222; line-height:1.55; padding:24px 12px}
+  .wrap{max-width:760px; margin:0 auto}
+  header{background:var(--azul); color:#fff; border-radius:14px 14px 0 0; padding:26px 28px}
+  header h1{font-size:1.35rem; font-weight:700}
+  header p{opacity:.85; font-size:.95rem; margin-top:6px}
+  .card{background:#fff; border:1px solid var(--borda); border-top:none; border-radius:0 0 14px 14px; padding:28px}
+  .progress{height:8px; background:#e4e9f0; border-radius:99px; margin-bottom:22px; overflow:hidden}
+  .progress > div{height:100%; background:var(--azul2); width:0; transition:width .3s}
+  .qnum{font-size:.85rem; color:var(--cinza); text-transform:uppercase; letter-spacing:.06em; margin-bottom:8px}
+  .qtext{font-size:1.12rem; font-weight:600; margin-bottom:18px}
+  .opt{display:block; width:100%; text-align:left; background:#fff; border:1.5px solid var(--borda); border-radius:10px;
+       padding:13px 16px; margin-bottom:10px; font-size:1rem; cursor:pointer; transition:all .15s; font-family:inherit}
+  .opt:hover:not(:disabled){border-color:var(--azul2); background:var(--claro)}
+  .opt:disabled{cursor:default}
+  .opt.correta{border-color:var(--ok); background:var(--okbg); font-weight:600}
+  .opt.errada{border-color:var(--erro); background:var(--errobg)}
+  .letra{display:inline-block; width:1.6em; font-weight:700; color:var(--azul2)}
+  .feedback{border-radius:10px; padding:14px 16px; margin-top:14px; font-size:.97rem; display:none}
+  .feedback.show{display:block}
+  .feedback.ok{background:var(--okbg); border-left:5px solid var(--ok)}
+  .feedback.ko{background:var(--errobg); border-left:5px solid var(--erro)}
+  .feedback b{display:block; margin-bottom:4px}
+  .nav{display:flex; justify-content:flex-end; margin-top:20px}
+  button.next{background:var(--azul); color:#fff; border:none; border-radius:10px; padding:12px 26px; font-size:1rem;
+       cursor:pointer; font-family:inherit; display:none}
+  button.next.show{display:inline-block}
+  button.next:hover{background:var(--azul2)}
+  .resultado{text-align:center; display:none}
+  .resultado.show{display:block}
+  .score{font-size:3rem; font-weight:800; color:var(--azul); margin:14px 0 4px}
+  .nivel{font-size:1.15rem; font-weight:600; margin-bottom:14px}
+  .msg{color:var(--cinza); margin-bottom:22px}
+  .rev{text-align:left; border-top:1px solid var(--borda); padding-top:18px; margin-top:8px}
+  .rev h3{font-size:1rem; color:var(--azul); margin-bottom:10px}
+  .rev-item{font-size:.92rem; margin-bottom:8px; padding-left:22px; position:relative}
+  .rev-item::before{content:attr(data-i); position:absolute; left:0; font-weight:700; color:var(--azul2)}
+  .rev-item.certa::after{content:" ✓"; color:var(--ok); font-weight:700}
+  .rev-item.errada2::after{content:" ✗"; color:var(--erro); font-weight:700}
+  button.retry{background:#fff; color:var(--azul); border:1.5px solid var(--azul); border-radius:10px;
+       padding:12px 26px; font-size:1rem; cursor:pointer; font-family:inherit; margin-top:18px}
+  button.retry:hover{background:var(--claro)}
+  footer{text-align:center; color:var(--cinza); font-size:.82rem; margin-top:16px}
+  footer a{color:var(--azul2)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Quiz · Bloco 5 — Estratégia e Adoção</h1>
+    <p>Sessão 15: a proposta estratégica, o Researcher, o prompt mestre e o meta-prompting · 20 perguntas · anónimo, com feedback imediato</p>
+  </header>
+  <div class="card">
+    <div class="progress"><div id="bar"></div></div>
+    <div id="quiz"></div>
+    <div class="nav"><button class="next" id="btnNext" onclick="proxima()">Próxima pergunta →</button></div>
+    <div class="resultado" id="res">
+      <div class="qnum">Resultado final</div>
+      <div class="score" id="scoreTxt"></div>
+      <div class="nivel" id="nivelTxt"></div>
+      <div class="msg" id="msgTxt"></div>
+      <div class="rev" id="revisao"></div>
+      <button class="retry" onclick="reiniciar()">↻ Repetir o quiz</button>
+    </div>
+  </div>
+  <footer>IA — Aplicações ao trabalho das IES · ANFUP · Formador: Nuno Salvador · <a href="index.html">voltar à Avaliação</a></footer>
+</div>
+
+<script>
+const QUESTOES = [
+ {
+  "q": "Das cinco coisas que uma consultora vende (S15), quais são as DUAS que a IA não substitui?",
+  "opts": [
+   "A pesquisa e benchmark, e os frameworks — são demasiado técnicos para um modelo de linguagem",
+   "O juízo adaptado à casa e a legitimidade da assinatura",
+   "O diagnóstico interno e a estrutura do relatório",
+   "Nenhuma — com o prompt certo, as cinco camadas compressam-se por igual"
+  ],
+  "c": 1,
+  "exp": "Pesquisa, frameworks e diagnóstico compressam-se (e o diagnóstico até já estava feito — as S13–14). O que fica, por direito, do lado humano: o juízo sobre o que é realista NESTA instituição, e a autoria de quem assina a proposta com trabalho sólido atrás."
+ },
+ {
+  "q": "A tese da Sessão 15 é «internalizar o gabinete de estudos — …». Como continua?",
+  "opts": [
+   "…e terceirizar a execução»",
+   "…e dispensar a consultora para sempre»",
+   "…não terceirizar o juízo»",
+   "…e automatizar a decisão»"
+  ],
+  "c": 2,
+  "exp": "As camadas de investigação, estrutura e diagnóstico fazem-se com IA e com o que já produziste no curso. O juízo — o que é realista, com este orçamento e esta cultura — não se entrega nem a consultoras nem a modelos: fica no dirigente."
+ },
+ {
+  "q": "A consultora cobraria semanas para produzir o diagnóstico interno. No curso, esse diagnóstico já existe. De onde vem?",
+  "opts": [
+   "Do levantamento de processos das Sessões 13–14 — as dores documentadas, área a área",
+   "Do relatório anual de atividades da instituição",
+   "Do inquérito de satisfação aos estudantes",
+   "Da auditoria externa mais recente ao sistema de gestão"
+  ],
+  "c": 0,
+  "exp": "É a surpresa da última sessão: o levantamento de processos que fizeste nas S13–14 É o diagnóstico que a consultora entrevistaria os serviços para produzir. O teu trabalho de todos os dias era a matéria-prima da estratégia."
+ },
+ {
+  "q": "O que é o agente Researcher do Microsoft 365 Copilot (S15)?",
+  "opts": [
+   "Um corretor avançado que valida automaticamente as citações de qualquer relatório",
+   "Um motor de busca académico restrito a artigos científicos com revisão por pares",
+   "A versão paga do PowerPoint Agent, especializada em apresentações de dados",
+   "Um agente de investigação profunda: clarifica o âmbito, trabalha vários minutos e devolve um relatório com secções e citações"
+  ],
+  "c": 3,
+  "exp": "Dás-lhe uma pergunta de investigação; ele faz perguntas de clarificação para afinar o âmbito e trabalha sozinho — pesquisa, cruza, organiza — até devolver um relatório estruturado com citações. É o «consultor de secretária» da sessão."
+ },
+ {
+  "q": "Quem NÃO tem licença Microsoft 365 Copilot fica de fora da Sessão 15?",
+  "opts": [
+   "Sim — sem Researcher não há investigação, e sem investigação não há proposta",
+   "Não: o relatório da demonstração é partilhado, e validar citações e especificar a investigação não exigem licença",
+   "Sim, mas pode assistir à demonstração como observador",
+   "Não, porque o Researcher está incluído no Copilot Chat gratuito"
+  ],
+  "c": 1,
+  "exp": "O Researcher exige licença (25 investigações/mês) — mas a competência central da sessão não: auditar o relatório partilhado e escrever a especificação da investigação fazem-se sem licença nenhuma. Quem especifica com precisão manda no resultado."
+ },
+ {
+  "q": "A auditoria ao relatório do Researcher faz-se com uma pergunta fechada. Qual?",
+  "opts": [
+   "«O relatório está bem escrito e organizado por temas?»",
+   "«As fontes citadas são de instituições prestigiadas?»",
+   "«Esta afirmação está mesmo na fonte citada — sim ou não?»",
+   "«O Copilot tem a certeza desta afirmação?»"
+  ],
+  "c": 2,
+  "exp": "É a validação com a fonte ao nível mais alto: escolhem-se afirmações com citação, abrem-se as fontes, e verifica-se afirmação a afirmação. E se está: a fonte diz AQUILO, ou diz menos do que o relatório afirma? Prestígio da fonte não substitui a verificação."
+ },
+ {
+  "q": "«Um benchmark com citações por verificar não é um benchmark — é…» (S15)",
+  "opts": [
+   "…um rascunho aceitável para uma primeira versão»",
+   "…um risco com formatação bonita»",
+   "…uma opinião como outra qualquer»",
+   "…material suficiente, desde que venha do Researcher»"
+  ],
+  "c": 1,
+  "exp": "Um relatório estratégico só vale o que as suas citações aguentarem. Só o que sobreviver à auditoria entra na proposta ao Reitor — o resto é aparência de rigor, que é pior do que ausência de rigor."
+ },
+ {
+  "q": "Porque é que o semáforo da investigação com o Researcher é AMARELO no contexto interno?",
+  "opts": [
+   "Porque o Researcher gasta créditos da instituição em cada pesquisa",
+   "Porque os relatórios do Researcher são públicos por defeito",
+   "Porque a investigação demora vários minutos e bloqueia a conta",
+   "Porque o Researcher também lê os teus ficheiros e e-mails — e o relatório vai circular"
+  ],
+  "c": 3,
+  "exp": "O benchmark sobre fontes públicas é verde. Mas em contexto de trabalho o Researcher acede a ficheiros, e-mails e reuniões — num relatório que vai circular, entram agregados e processos; dados pessoais de estudantes ou colegas, nunca."
+ },
+ {
+  "q": "A «página 1» da proposta — o resumo executivo — tem três parágrafos. Quais?",
+  "opts": [
+   "Porquê agora · o que proponho · o que peço",
+   "Missão · visão · valores",
+   "Diagnóstico · benchmark · orçamento",
+   "Contexto legal · riscos · cronograma"
+  ],
+  "c": 0,
+  "exp": "É a única página que tens a certeza de que o Reitor lê: a urgência (art. 4.º do AI Act + IA-sombra + uma dor concreta), a proposta (formação, um piloto, governação) e um pedido específico e pequeno — uma proposta que pede tudo não consegue nada."
+ },
+ {
+  "q": "O método manda escrever a página 1 primeiro SEM IA. Porquê?",
+  "opts": [
+   "Porque o Copilot não consegue escrever resumos executivos",
+   "Porque são três parágrafos sobre o que tu sabes melhor do que ninguém — nesta página, a voz tem de ser a tua",
+   "Porque o regulamento da formação exige produção manual nos exercícios finais",
+   "Para poupar as interações da licença para a investigação"
+  ],
+  "c": 1,
+  "exp": "A ordem é deliberada: primeiro a tua voz, depois — se quiseres — o Copilot para apertar o texto. A inversa produziria um resumo genérico que serve qualquer instituição e não convence nenhum Reitor."
+ },
+ {
+  "q": "Na secção «porquê agora» da proposta, o argumento da IA-sombra é:",
+  "opts": [
+   "A IA ainda não entrou na instituição, e convém preparar a chegada",
+   "Os fornecedores de software vão aumentar os preços das licenças",
+   "A IA já entrou na instituição, com ou sem regras — não decidir é decidir mal",
+   "As outras instituições já têm estratégias publicadas, e ficar atrás fica mal"
+  ],
+  "c": 2,
+  "exp": "O par que sustenta a urgência: o art. 4.º do AI Act obriga à literacia em IA (esta formação foi o primeiro cumprimento), e a IA-sombra já circula nos serviços com ou sem política. Adiar a decisão é deixar o uso sem regras a consolidar-se."
+ },
+ {
+  "q": "Sem licença, a peça de benchmark de cada formando é a «especificação da investigação». O que contém?",
+  "opts": [
+   "O relatório completo, escrito à mão a partir de pesquisas no Google",
+   "Uma lista de dez universidades com hiperligações para os respetivos sítios institucionais",
+   "O texto do prompt mestre, adaptado à instituição",
+   "A pergunta de investigação, o âmbito, as fontes a privilegiar e o formato do relatório"
+  ],
+  "c": 3,
+  "exp": "É o caderno de encargos que qualquer colega com licença executa no Researcher em minutos. E é a mesma competência das quatro peças dos fluxos de trabalho: quem sabe especificar com precisão manda no resultado — com ou sem licença."
+ },
+ {
+  "q": "No prompt mestre do «University AI Strategy Advisor», qual é a separação de papéis?",
+  "opts": [
+   "O consultor pergunta, investiga e recomenda; o responsável institucional fornece conhecimento e toma as decisões",
+   "O consultor decide a estratégia; o responsável valida a ortografia do relatório final",
+   "O consultor executa os pilotos; o responsável escreve o relatório",
+   "Não há separação — consultor e responsável trabalham as fases em conjunto e decidem por consenso"
+  ],
+  "c": 0,
+  "exp": "É a doutrina do curso escrita dentro do prompt: «Tu és o consultor: perguntas, investigas, interpretas, desafias, estruturas e recomendas. Eu sou o responsável institucional: forneço conhecimento interno, oriento, corrijo e tomo as decisões.»"
+ },
+ {
+  "q": "O prompt mestre obriga o consultor a etiquetar o que produz. Quais são as quatro etiquetas?",
+  "opts": [
+   "VERDE · AMARELO · VERMELHO · CINZENTO",
+   "FACTO · INTERPRETAÇÃO · RECOMENDAÇÃO · PRESSUPOSTO",
+   "FONTE · RESUMO · ANÁLISE · CONCLUSÃO",
+   "URGENTE · IMPORTANTE · ADIÁVEL · DESCARTÁVEL"
+  ],
+  "c": 1,
+  "exp": "FACTO está sustentado por uma fonte; INTERPRETAÇÃO é leitura da informação; RECOMENDAÇÃO é proposta para a estratégia; PRESSUPOSTO é informação por validar. As etiquetas são a validação com a fonte embutida no fluxo de trabalho — e só valem se as auditares."
+ },
+ {
+  "q": "Para que serve o comando RECUPERAR do prompt mestre?",
+  "opts": [
+   "Para repor a última resposta apagada por engano",
+   "Para reverter uma decisão tomada numa fase anterior",
+   "Para pedir um prompt de continuação e retomar o projeto numa conversa nova",
+   "Para recuperar os créditos gastos numa investigação falhada"
+  ],
+  "c": 2,
+  "exp": "As conversas têm limites de comprimento — e um projeto de 9 fases pode lá chegar. O RECUPERAR pede ao consultor um resumo-prompt do estado do projeto, pronto a colar numa conversa nova. Usa-o proativamente (por exemplo, no fim da Fase 5), não quando já for tarde."
+ },
+ {
+  "q": "«Se te limitares a escrever CONTINUAR, o consultor escreve a estratégia dele, não a tua.» Qual é a regra prática que evita isto?",
+  "opts": [
+   "Escrever os comandos sempre em maiúsculas, para o consultor os levar a sério",
+   "Pedir VER ESTADO ao fim de cada fase e guardar uma cópia do caderno",
+   "Refazer o projeto duas vezes e comparar os relatórios",
+   "Em cada fase, corrigir ou acrescentar pelo menos uma coisa que só tu sabes"
+  ],
+  "c": 3,
+  "exp": "É a defesa contra o piloto automático: o valor da estratégia está no conhecimento interno que só tu tens. CORRIGIR e ACRESCENTAR são os comandos onde a tua parte do trabalho acontece — CONTINUAR sem discussão é delegar o juízo."
+ },
+ {
+  "q": "O que é meta-prompting, a técnica com que se chegou ao prompt mestre?",
+  "opts": [
+   "Escrever prompts com mais de mil palavras",
+   "Pedir a uma IA que desenhe o prompt de outra IA",
+   "Encadear vários prompts pequenos numa única conversa",
+   "Traduzir um prompt para inglês para melhorar os resultados"
+  ],
+  "c": 1,
+  "exp": "O prompt mestre não foi escrito à mão: um meta-prompt — o Arquiteto — entrevistou o formador e produziu o prompt do consultor. Dois prompts, dois papéis: o Arquiteto desenha; o Consultor executa. Tu só precisas do segundo — mas o primeiro é o que te permite criar os próximos."
+ },
+ {
+  "q": "Quais foram as quatro respostas dadas ao Arquiteto para desenhar o consultor da S15?",
+  "opts": [
+   "Orçamento · prazo · equipa · tecnologia",
+   "Missão · visão · objetivos · indicadores",
+   "Problema · utilizadores · produto final · ferramenta",
+   "Gatilho · destino · conteúdo · fronteira"
+  ],
+  "c": 2,
+  "exp": "Problema (estratégia de adoção de IA para uma área universitária), utilizadores (dirigentes, docentes, investigadores, pessoal técnico), produto final (relatório pronto a apresentar ao Reitor) e ferramenta (Copilot na web, sem agentes pagos). Mudando as quatro respostas, chega-se ao próximo consultor."
+ },
+ {
+  "q": "O prompt mestre exige um portefólio de 8 a 15 casos de uso, mas só 2 ou 3 pilotos. Porquê os dois números?",
+  "opts": [
+   "Uma estratégia não é um caso de uso: o portefólio mostra a visão completa; os pilotos são o começo realista",
+   "Porque o Copilot não consegue acompanhar mais de 3 casos ao mesmo tempo",
+   "Porque cada piloto exige uma licença própria e o orçamento é limitado",
+   "Por tradição das consultoras — os relatórios têm sempre esta estrutura"
+  ],
+  "c": 0,
+  "exp": "«A estratégia não pode ficar limitada a uma ferramenta, agente ou caso de uso» — o portefólio completo mostra onde a IA pode criar valor; os 2–3 pilotos são o que se consegue executar bem já. Os restantes ficam no portefólio, priorizados, à espera da sua vez."
+ },
+ {
+  "q": "O «teste do Reitor» diz que a página 1 tem de responder a três perguntas em trinta segundos. Quais?",
+  "opts": [
+   "Quem escreveu? · com que ferramentas? · em quanto tempo?",
+   "Quanto custa? · que riscos me traz? · porquê agora e não para o ano?",
+   "É legal? · é ético? · é popular?",
+   "Que universidades já o fizeram? · com que resultados? · com que fornecedores?"
+  ],
+  "c": 1,
+  "exp": "Antes de dares a proposta por pronta, lê-la como ele a lerá: custo, risco, urgência. Se a página 1 não responder às três em trinta segundos, reescreve-se — porque é a única página com leitura garantida."
+ }
+];
+
+let i = 0, certas = 0, respostas = [];
+const $ = id => document.getElementById(id);
+
+function render(){
+  $('bar').style.width = (i / QUESTOES.length * 100) + '%';
+  const Q = QUESTOES[i];
+  let h = `<div class="qnum">Pergunta ${i+1} de ${QUESTOES.length}</div>`;
+  h += `<div class="qtext">${Q.q}</div>`;
+  Q.opts.forEach((o, k) => {
+    h += `<button class="opt" onclick="responder(${k})"><span class="letra">${'abcd'[k]})</span>${o}</button>`;
+  });
+  h += `<div class="feedback" id="fb"></div>`;
+  $('quiz').innerHTML = h;
+  $('btnNext').classList.remove('show');
+  $('btnNext').textContent = (i === QUESTOES.length - 1) ? 'Ver resultado →' : 'Próxima pergunta →';
+}
+
+function responder(k){
+  const Q = QUESTOES[i];
+  const botoes = document.querySelectorAll('.opt');
+  botoes.forEach(b => b.disabled = true);
+  botoes[Q.c].classList.add('correta');
+  const ok = (k === Q.c);
+  if(ok){ certas++; } else { botoes[k].classList.add('errada'); }
+  respostas.push(ok);
+  const fb = $('fb');
+  fb.className = 'feedback show ' + (ok ? 'ok' : 'ko');
+  fb.innerHTML = `<b>${ok ? '✓ Correto!' : '✗ Não é essa.'}</b>${Q.exp}`;
+  $('btnNext').classList.add('show');
+}
+
+function proxima(){
+  i++;
+  if(i < QUESTOES.length){ render(); }
+  else { resultado(); }
+}
+
+function resultado(){
+  $('bar').style.width = '100%';
+  $('quiz').innerHTML = '';
+  $('btnNext').classList.remove('show');
+  const pct = Math.round(certas / QUESTOES.length * 100);
+  $('scoreTxt').textContent = `${certas}/${QUESTOES.length}`;
+  let nivel, msg;
+  if(pct >= 90){ nivel = '🏆 Pronto para o despacho'; msg = 'Excelente. Tens a doutrina da proposta estratégica na ponta dos dedos — agora só falta entregá-la ao Reitor.'; }
+  else if(pct >= 70){ nivel = '👍 Estratega em funções'; msg = 'Muito bom. Revê as perguntas falhadas — as armadilhas estão na fronteira entre o que a IA compressa e o que fica humano.'; }
+  else if(pct >= 50){ nivel = '📈 No bom caminho'; msg = 'A meio da viagem. Sugestão: relê a Sessão 15 — as cinco camadas da consultora e a página do exercício com o prompt mestre.'; }
+  else { nivel = '🌱 Ponto de partida'; msg = 'Sem stress. Volta à página da Sessão 15 e ao exercício da proposta estratégica, e repete o quiz depois.'; }
+  $('nivelTxt').textContent = nivel;
+  $('msgTxt').textContent = msg;
+  let rev = '<h3>Revisão rápida</h3>';
+  QUESTOES.forEach((Q, k) => {
+    rev += `<div class="rev-item ${respostas[k] ? 'certa' : 'errada2'}" data-i="${k+1}.">${Q.q.substring(0, 90)}${Q.q.length > 90 ? '…' : ''}</div>`;
+  });
+  $('revisao').innerHTML = rev;
+  $('res').classList.add('show');
+}
+
+function reiniciar(){
+  i = 0; certas = 0; respostas = [];
+  $('res').classList.remove('show');
+  render();
+}
+
+render();
+</script>
+</body>
+</html>

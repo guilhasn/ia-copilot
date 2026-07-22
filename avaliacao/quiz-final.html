@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grande Quiz Final — o curso inteiro | IA aplicada às IES</title>
+<style>
+  :root{
+    --azul:#1F4E78; --azul2:#2E74B5; --claro:#DEEBF7; --ok:#2e7d32; --okbg:#e8f5e9;
+    --erro:#c62828; --errobg:#fdecea; --cinza:#595959; --borda:#d9d9d9; --ouro:#b8860b;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  body{font-family:'Segoe UI',Calibri,system-ui,sans-serif; background:#f4f6f9; color:#222; line-height:1.55; padding:24px 12px}
+  .wrap{max-width:760px; margin:0 auto}
+  header{background:linear-gradient(135deg, var(--azul), #153A5B); color:#fff; border-radius:14px 14px 0 0; padding:26px 28px}
+  header h1{font-size:1.35rem; font-weight:700}
+  header p{opacity:.85; font-size:.95rem; margin-top:6px}
+  .card{background:#fff; border:1px solid var(--borda); border-top:none; border-radius:0 0 14px 14px; padding:28px}
+  .progress{height:8px; background:#e4e9f0; border-radius:99px; margin-bottom:22px; overflow:hidden}
+  .progress > div{height:100%; background:var(--azul2); width:0; transition:width .3s}
+  .qnum{font-size:.85rem; color:var(--cinza); text-transform:uppercase; letter-spacing:.06em; margin-bottom:8px}
+  .qtext{font-size:1.12rem; font-weight:600; margin-bottom:18px}
+  .opt{display:block; width:100%; text-align:left; background:#fff; border:1.5px solid var(--borda); border-radius:10px;
+       padding:13px 16px; margin-bottom:10px; font-size:1rem; cursor:pointer; transition:all .15s; font-family:inherit}
+  .opt:hover:not(:disabled){border-color:var(--azul2); background:var(--claro)}
+  .opt:disabled{cursor:default}
+  .opt.correta{border-color:var(--ok); background:var(--okbg); font-weight:600}
+  .opt.errada{border-color:var(--erro); background:var(--errobg)}
+  .letra{display:inline-block; width:1.6em; font-weight:700; color:var(--azul2)}
+  .feedback{border-radius:10px; padding:14px 16px; margin-top:14px; font-size:.97rem; display:none}
+  .feedback.show{display:block}
+  .feedback.ok{background:var(--okbg); border-left:5px solid var(--ok)}
+  .feedback.ko{background:var(--errobg); border-left:5px solid var(--erro)}
+  .feedback b{display:block; margin-bottom:4px}
+  .nav{display:flex; justify-content:flex-end; margin-top:20px}
+  button.next{background:var(--azul); color:#fff; border:none; border-radius:10px; padding:12px 26px; font-size:1rem;
+       cursor:pointer; font-family:inherit; display:none}
+  button.next.show{display:inline-block}
+  button.next:hover{background:var(--azul2)}
+  .resultado{text-align:center; display:none}
+  .resultado.show{display:block}
+  .score{font-size:3rem; font-weight:800; color:var(--azul); margin:14px 0 4px}
+  .nivel{font-size:1.25rem; font-weight:700; margin-bottom:14px; color:var(--ouro)}
+  .msg{color:var(--cinza); margin-bottom:22px}
+  .rev{text-align:left; border-top:1px solid var(--borda); padding-top:18px; margin-top:8px}
+  .rev h3{font-size:1rem; color:var(--azul); margin-bottom:10px}
+  .rev-item{font-size:.92rem; margin-bottom:8px; padding-left:22px; position:relative}
+  .rev-item::before{content:attr(data-i); position:absolute; left:0; font-weight:700; color:var(--azul2)}
+  .rev-item.certa::after{content:" ✓"; color:var(--ok); font-weight:700}
+  .rev-item.errada2::after{content:" ✗"; color:var(--erro); font-weight:700}
+  button.retry{background:#fff; color:var(--azul); border:1.5px solid var(--azul); border-radius:10px;
+       padding:12px 26px; font-size:1rem; cursor:pointer; font-family:inherit; margin-top:18px}
+  button.retry:hover{background:var(--claro)}
+  footer{text-align:center; color:var(--cinza); font-size:.82rem; margin-top:16px}
+  footer a{color:var(--azul2)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🎓 Grande Quiz Final — o curso inteiro</h1>
+    <p>Sessões 1 a 15: da Matriz Semáforo à proposta estratégica · 30 perguntas · anónimo, com feedback imediato</p>
+  </header>
+  <div class="card">
+    <div class="progress"><div id="bar"></div></div>
+    <div id="quiz"></div>
+    <div class="nav"><button class="next" id="btnNext" onclick="proxima()">Próxima pergunta →</button></div>
+    <div class="resultado" id="res">
+      <div class="qnum">Resultado final</div>
+      <div class="score" id="scoreTxt"></div>
+      <div class="nivel" id="nivelTxt"></div>
+      <div class="msg" id="msgTxt"></div>
+      <div class="rev" id="revisao"></div>
+      <button class="retry" onclick="reiniciar()">↻ Repetir o quiz</button>
+    </div>
+  </div>
+  <footer>IA — Aplicações ao trabalho das IES · ANFUP · Formador: Nuno Salvador · <a href="index.html">voltar à Avaliação</a></footer>
+</div>
+
+<script>
+const QUESTOES = [
+ {
+  "q": "Na Matriz Semáforo, o que torna um uso do Copilot VERDE?",
+  "opts": [
+   "Ser feito em horário de trabalho, com o computador de serviço",
+   "A natureza do conteúdo: fictício ou público, sem dados pessoais nem matéria reservada",
+   "A autorização prévia do superior hierárquico",
+   "A revisão do resultado por dois colegas antes de enviar"
+  ],
+  "c": 1,
+  "exp": "S1: o critério é sempre o conteúdo, não a hora nem o equipamento. Verde é trabalhar com o que é fictício ou já público — o território recomendado para aprender e experimentar sem rede."
+ },
+ {
+  "q": "Um colega quer resumir um documento interno na conta pessoal do ChatGPT «porque é só um minuto». A resposta do curso é:",
+  "opts": [
+   "Pode, desde que apague a conversa no fim",
+   "Pode, porque resumir não é decidir",
+   "Nunca — ferramentas pessoais não têm a proteção de dados empresarial da conta institucional",
+   "Pode, se o documento não citar nomes próprios"
+  ],
+  "c": 2,
+  "exp": "S2: com sessão iniciada na conta institucional, os prompts não treinam modelos e ficam sob proteção de dados empresarial. Contas pessoais não dão essas garantias — documento interno em conta pessoal, nunca. Nem por um minuto."
+ },
+ {
+  "q": "Qual é o VERMELHO transversal a todo o curso — do SIADAP aos júris, dos fluxos aos agentes?",
+  "opts": [
+   "Usar IA fora do horário de expediente",
+   "Submeter documentos com mais de 50 páginas",
+   "Gerar conteúdo em línguas estrangeiras sem revisão",
+   "Decidir sobre pessoas: avaliar, pontuar, ordenar ou excluir com IA"
+  ],
+  "c": 3,
+  "exp": "O art. 22.º do RGPD limita decisões exclusivamente automatizadas com efeitos significativos, e o Anexo III do AI Act classifica emprego e avaliação de pessoas como alto risco. Apareceu na S1 e nunca mais saiu: a decisão sobre pessoas é humana."
+ },
+ {
+  "q": "Os quatro componentes do framework GCSE de um bom prompt são:",
+  "opts": [
+   "Objetivo, Contexto, Fonte e Expectativas",
+   "Gramática, Clareza, Síntese e Estrutura",
+   "Goal, Copilot, Search e Edit",
+   "Objetivo, Criatividade, Segurança e Eficiência"
+  ],
+  "c": 0,
+  "exp": "S2: o que quero, para quê e para quem, a partir de quê, em que formato e tom. O esqueleto de todos os prompts do curso — do primeiro resumo em Word à especificação da investigação estratégica da S15."
+ },
+ {
+  "q": "O mesmo prompt deu duas respostas diferentes em dois dias. Isto significa que…",
+  "opts": [
+   "…o serviço estava sobrecarregado num dos dias",
+   "…é o comportamento normal de um modelo não-determinista — o output trata-se como rascunho",
+   "…houve uma atualização do modelo entre os dois dias",
+   "…o prompt tem um erro que confunde o modelo"
+  ],
+  "c": 1,
+  "exp": "S2: os modelos geram texto com aleatoriedade — não é avaria. A consequência atravessa o curso inteiro, do Word ao Designer do PowerPoint aos fluxos: o output é sempre rascunho a validar, nunca produto final."
+ },
+ {
+  "q": "O que é uma alucinação de um modelo de linguagem — e porque é perigosa?",
+  "opts": [
+   "Uma resposta interrompida por limite de comprimento; perigosa porque perde conteúdo",
+   "Uma recusa em responder; perigosa porque atrasa o trabalho",
+   "Conteúdo plausível mas falso, gerado com confiança; perigosa porque quanto mais plausível parece, menos se verifica",
+   "Um erro de formatação; perigoso porque desalinha tabelas"
+  ],
+  "c": 2,
+  "exp": "S1: o modelo gera o texto mais provável, não o verdadeiro — e apresenta invenções com a mesma fluência das verdades. Por isso a validação com a fonte é hábito, não extra. Do resumo de e-mails ao artigo do CCP citado, a régua é a mesma."
+ },
+ {
+  "q": "«Na segunda-feira a magia deixou de funcionar»: o colega colou a tarefa no Copilot Chat e saiu texto genérico. O que se esqueceu ele de fazer?",
+  "opts": [
+   "De colar primeiro o meta-prompt — o Chat não guarda instruções entre conversas",
+   "De ativar o histórico de conversas nas definições",
+   "De atualizar o navegador para a versão mais recente",
+   "De escrever o pedido em inglês"
+  ],
+  "c": 0,
+  "exp": "S3: cada conversa nova começa do zero — o Copilot Chat não memoriza instruções entre sessões. O meta-prompt é a entrada #0 da biblioteca: a primeira coisa a colar em cada conversa nova, antes de descrever a tarefa."
+ },
+ {
+  "q": "Uma entrada bem-formada da biblioteca de prompts tem quatro campos:",
+  "opts": [
+   "Autor · data · versão · classificação",
+   "Nome · quando usar · o prompt · como validar o resultado",
+   "Aplicação · licença · custo · tempo poupado",
+   "Título · palavras-chave · idioma · hiperligação"
+  ],
+  "c": 1,
+  "exp": "S3: o campo que distingue a biblioteca do curso é a validação — o que verificar no resultado antes de o aproveitar. Um prompt guardado sem teste nem validação é uma promessa, não uma ferramenta."
+ },
+ {
+  "q": "A regra-mãe da Sessão 5 (Outlook e Teams) é «o Copilot mapeia, a decisão é vossa». Mapear é:",
+  "opts": [
+   "Escolher que posição prevalece na thread e fixar o prazo de resposta",
+   "Ordenar os intervenientes por relevância hierárquica",
+   "Converter a caixa de correio numa base de dados",
+   "Levantar posições, ações e tons — sem escolher nem fixar nada"
+  ],
+  "c": 3,
+  "exp": "S5: o Copilot organiza o que foi dito; decidir que posição prevalece, que prazo é razoável, que prioridade dar — pertence a quem assina. E quem assina responde pelo ato."
+ },
+ {
+  "q": "O recap de reunião atribui uma decisão a um colega. Validas como?",
+  "opts": [
+   "Confirmando o carimbo temporal indicado pelo Copilot",
+   "Perguntando ao Copilot se tem a certeza",
+   "Confrontando a frase citada com a transcrição — o próprio timestamp pode estar errado",
+   "Verificando se aparece também no resumo automático do Teams"
+  ],
+  "c": 2,
+  "exp": "S5: a régua é a frase, não o metadado — o timestamp é ele próprio um output. E pedir confirmação ao Copilot é pedir ao suspeito que confirme o álibi: máquina não valida máquina."
+ },
+ {
+  "q": "«Máquina não valida máquina» — o que exige este princípio, na prática?",
+  "opts": [
+   "Validar contra a fonte original: recalcular na folha, reler a transcrição, abrir o diploma ou o documento",
+   "Usar dois modelos de IA diferentes e comparar as respostas",
+   "Repetir a mesma pergunta três vezes e ficar com a resposta maioritária",
+   "Pedir ao Copilot o grau de confiança de cada afirmação"
+  ],
+  "c": 0,
+  "exp": "Transversal a todo o curso: a validação faz-se contra a fonte — a folha de cálculo, a transcrição, o diploma, o documento de origem. Repetir perguntas ou cruzar modelos continua dentro da máquina; a fonte está fora."
+ },
+ {
+  "q": "A regra de ouro da Sessão 6 (Excel):",
+  "opts": [
+   "Nunca mostrar mais de vinte linhas ao Copilot",
+   "Antes de perguntar AOS dados, perguntar SOBRE os dados",
+   "Pedir sempre os resultados em tabela dinâmica",
+   "Converter a folha para valores antes de submeter"
+  ],
+  "c": 1,
+  "exp": "S6: primeiro o diagnóstico estrutural — que colunas existem, que tipos têm, que problemas se veem (números em texto, células vazias). Sem isso, os defeitos da folha contaminam as respostas em silêncio."
+ },
+ {
+  "q": "O Copilot diz «a taxa de resposta dentro do prazo é 78%». Antes de levar o número à Direção:",
+  "opts": [
+   "Nada — números resultam de cálculo, não de geração de texto",
+   "Arredondar para 80%, que transmite mais confiança",
+   "Pedir ao Copilot que confirme o valor",
+   "Recalcular na folha ou conferir contra a fonte antes de o citar"
+  ],
+  "c": 3,
+  "exp": "S6: números «por fora» validam-se com a fonte — uma fórmula simples chega. O hábito vale para todos os números do curso: percentagens do Excel, contagens de votos, valores citados em relatórios de investigação."
+ },
+ {
+  "q": "Na Sessão 8 (PowerPoint), quais são os DOIS produtos que se confundem — e a diferença que importa?",
+  "opts": [
+   "Designer e SmartArt — o primeiro é pago",
+   "PowerPoint Online e Desktop — só o segundo tem IA",
+   "Copilot no PowerPoint (exige licença) e PowerPoint Agent no Chat (constrói o .pptx sem licença)",
+   "Copilot Chat e ChatGPT — só um é institucional"
+  ],
+  "c": 2,
+  "exp": "S8: confundi-los é o erro que rebenta ao vivo. O Copilot dentro do PowerPoint exige licença (e o Designer para gerar de ficheiro); o PowerPoint Agent, no menu Agents do Chat, constrói o ficheiro a partir do documento anexado — sem licença."
+ },
+ {
+  "q": "A técnica «Validação com a fonte» exige que cada afirmação num diapositivo (ou relatório)…",
+  "opts": [
+   "…seja aprovada pelo superior antes da apresentação",
+   "…possa apontar para uma frase do documento de origem — sem frase, é palpite",
+   "…esteja formulada com as palavras exatas do original",
+   "…tenha menos de uma linha de comprimento"
+  ],
+  "c": 1,
+  "exp": "S8 — e depois S15, ao nível mais alto: afirmação a afirmação, procura-se a frase que a sustenta. Não precisa de ser literal; precisa de ter suporte. O que não tiver, sai ou volta à fonte."
+ },
+ {
+  "q": "A «inversão» da Sessão 9 (SIADAP) manda:",
+  "opts": [
+   "Escrever os indicadores antes dos objetivos",
+   "Pedir dez objetivos ao Copilot e escolher três",
+   "Começar pelos objetivos da unidade orgânica",
+   "Não pedir objetivos ao Copilot — interrogar com ele os objetivos que TU escreves"
+  ],
+  "c": 3,
+  "exp": "S9: «cria-me 5 objetivos SMART» devolve texto plausível que serve qualquer serviço — e nenhum. Só tu conheces o serviço: escreves o objetivo e usas o Copilot como revisor adversarial, até o objetivo ficar defensável."
+ },
+ {
+  "q": "A transcrição da reunião tem um [inaudível] num momento decisivo. O método da Sessão 10 manda:",
+  "opts": [
+   "Marcar [CONFIRMAR] e verificar com quem esteve na reunião — nunca completar lacunas",
+   "Pedir ao Copilot a versão mais plausível, dado o contexto",
+   "Cortar o trecho da ata",
+   "Substituir pelo texto da convocatória"
+  ],
+  "c": 0,
+  "exp": "S10: um [inaudível] transformado em frase plausível é uma declaração que ninguém proferiu — numa ata que faz fé. Lacunas resolvem-se com humanos, não com probabilidade."
+ },
+ {
+  "q": "O Copilot contou os votos da transcrição: «7 a favor, 2 contra». Antes de fixar a votação na ata:",
+  "opts": [
+   "Aceitar — contar é tarefa mecânica",
+   "Recontar por leitura humana da transcrição — a contagem de uma votação não se delega",
+   "Confirmar com o Copilot, reformulando a pergunta",
+   "Usar o resultado previsto na convocatória"
+  ],
+  "c": 1,
+  "exp": "S10: a votação é o coração do ato formal — e os modelos erram contagens com toda a confiança. O número que faz fé conta-o o secretário."
+ },
+ {
+  "q": "Porque é que a Sessão 11 (contratação pública) exige «os mesmos prompts para todas as propostas»?",
+  "opts": [
+   "Para poupar tempo de escrita",
+   "Porque o Copilot confunde as propostas se as perguntas variarem",
+   "Igualdade de tratamento: se uma proposta é escrutinada com uma pergunta, todas são",
+   "Para comparar os tempos de resposta"
+  ],
+  "c": 2,
+  "exp": "S11: o princípio da igualdade de tratamento dos concorrentes aplica-se também à ferramenta. O guião de prompts corre igual para todas — escrutinar uma com perguntas que as outras não receberam desequilibra o procedimento."
+ },
+ {
+  "q": "A resposta do Copilot cita um artigo do CCP para justificar uma exclusão. A doutrina do curso manda:",
+  "opts": [
+   "Aceitar se o número do artigo existir no índice",
+   "Pedir ao Copilot a transcrição integral do artigo",
+   "Ignorar sempre citações legais da IA",
+   "Verificar o artigo no diploma consolidado — o Copilot cita normas que não dizem o que a resposta afirma"
+  ],
+  "c": 3,
+  "exp": "S11: a citação legal plausível mas errada é das alucinações mais perigosas — o artigo existe, mas não diz aquilo. Verifica-se no diploma, nunca na própria conversa."
+ },
+ {
+  "q": "A regra de ouro da Sessão 12 (júris de candidaturas):",
+  "opts": [
+   "Verificar factos, nunca ordenar pessoas",
+   "Ordenar primeiro, fundamentar depois",
+   "Só usar IA em candidaturas com menos de dez candidatos",
+   "Pedir a ordenação ao Copilot e revê-la em júri"
+  ],
+  "c": 0,
+  "exp": "S12: o Copilot verifica factos do procedimento — documentos presentes, requisitos formais. Ordenar candidatos é o ato central da decisão do júri, e é exatamente o que não se pede à ferramenta: art. 22.º do RGPD e alto risco no AI Act."
+ },
+ {
+  "q": "Fazes ao Notebook (S13) uma pergunta cuja resposta não está nas fontes anexadas. O comportamento correto é:",
+  "opts": [
+   "Responder com o conhecimento geral do modelo, assinalado",
+   "Dizer que não encontra resposta nas fontes — sem inventar",
+   "Pesquisar na internet e responder na mesma",
+   "Reencaminhar a pergunta ao responsável do gabinete"
+  ],
+  "c": 1,
+  "exp": "S13: o valor do Notebook está em responder a partir das fontes escolhidas e admitir o que lá não está. Se respondesse «na mesma», perdia-se a âncora — e voltávamos ao chatbot genérico."
+ },
+ {
+  "q": "Partilhar um Notebook com o gabinete exige atenção porque…",
+  "opts": [
+   "…cada partilha consome uma licença",
+   "…os novos membros podem reordenar as fontes",
+   "…partilhar o Notebook é dar acesso ao conteúdo das suas fontes",
+   "…a Microsoft cobra por utilizador ativo"
+  ],
+  "c": 2,
+  "exp": "S13: quem entra passa a poder interrogar as fontes — partilhar o caderno é partilhar o que está lá dentro. As fontes escolhem-se a pensar em quem vai ter acesso; dados pessoais nunca entram num caderno partilhado."
+ },
+ {
+  "q": "As quatro peças da anatomia de um bom prompt de fluxo de trabalho (S14):",
+  "opts": [
+   "Objetivo · Contexto · Fonte · Expectativas",
+   "Quem · o quê · quando · onde",
+   "Entrada · processamento · saída · arquivo",
+   "Gatilho preciso · destino nomeado · conteúdo enumerado · cláusula de fronteira"
+  ],
+  "c": 3,
+  "exp": "S14: critério objetivo para disparar, nomes exatos para encontrar as coisas, lista fechada do que incluir — e a linha escrita que diz ao agente onde parar. Um agente que age sem ninguém presente precisa de ouvir, por escrito, onde para."
+ },
+ {
+  "q": "Num fluxo em que um passo de IA alimenta o passo seguinte (S14), porque é que o formato de saída «é parte do contrato»?",
+  "opts": [
+   "Porque a resposta não é para uma pessoa ler — é para o passo seguinte processar",
+   "Porque o Markdown consome mais créditos",
+   "Porque os passos seguintes só aceitam inglês",
+   "Porque o formato bonito facilita a auditoria"
+  ],
+  "c": 0,
+  "exp": "S14, Exemplo 3: «responde numa única linha, exatamente neste formato, sem Markdown» — porque quem consome a resposta é o passo «Atualizar uma linha». Sempre que a IA alimenta outro passo, o formato amarra-se por escrito."
+ },
+ {
+  "q": "O fluxo da S14 avalia a qualidade dos registos de atividades. Qual é a linha que NÃO pode pisar?",
+  "opts": [
+   "Processar mais de cem registos por dia",
+   "Alimentar automaticamente uma avaliação de desempenho com as classificações",
+   "Escrever o veredicto numa coluna da tabela",
+   "Usar três classes em vez de duas"
+  ],
+  "c": 1,
+  "exp": "S14: o fluxo avalia a completude do registo, nunca o desempenho da pessoa. Se as classificações alimentassem o SIADAP automaticamente, seria decisão automatizada sobre pessoas — art. 22.º do RGPD. O resultado é um pedido de completar, feito por uma pessoa."
+ },
+ {
+  "q": "Das cinco camadas que uma consultora vende (S15), a IA compressa a pesquisa, os frameworks e o diagnóstico. O que fica humano?",
+  "opts": [
+   "A formatação do relatório e a revisão ortográfica",
+   "A escolha das ferramentas e o calendário",
+   "O juízo adaptado à casa e a legitimidade de quem assina",
+   "Nada — é essa a tese da sessão"
+  ],
+  "c": 2,
+  "exp": "S15: «internalizar o gabinete de estudos — não terceirizar o juízo». O que é realista nesta instituição, com este orçamento e esta cultura, decide-o o dirigente. E quem assina com trabalho sólido atrás ganha o que a consultora nunca daria: autoria."
+ },
+ {
+  "q": "A auditoria a um relatório de investigação (S15) faz-se com uma pergunta fechada por afirmação:",
+  "opts": [
+   "«A fonte é de uma instituição prestigiada?»",
+   "«O relatório está bem organizado?»",
+   "«O Copilot indicou nível de confiança elevado?»",
+   "«Esta afirmação está mesmo na fonte citada — sim ou não?»"
+  ],
+  "c": 3,
+  "exp": "S15: um relatório estratégico só vale o que as suas citações aguentarem. Abrem-se as fontes e verifica-se — e se está, a fonte diz aquilo ou diz menos? Só o que sobreviver entra na proposta ao Reitor."
+ },
+ {
+  "q": "O prompt mestre do consultor da S15 não foi escrito à mão. Como nasceu?",
+  "opts": [
+   "Por meta-prompting: um meta-prompt (o Arquiteto) entrevistou o formador e desenhou o prompt do agente",
+   "Foi copiado de um modelo da Prompt Gallery da Microsoft",
+   "Foi gerado pelo Researcher a partir de relatórios de consultoras",
+   "Foi escrito pela equipa da ANFUP para o curso"
+  ],
+  "c": 0,
+  "exp": "S15: quatro respostas ao Arquiteto — problema, utilizadores, produto final, ferramenta — seguidas de entrevista, e o meta-prompt produziu o prompt mestre. Dois prompts, dois papéis: um desenha, o outro executa. Mudando as quatro respostas, crias o próximo consultor."
+ },
+ {
+  "q": "Qual destas frases resume o arco das quinze sessões — da régua de semáforo à política de IA da instituição?",
+  "opts": [
+   "«Com a licença certa, a IA faz o trabalho todo»",
+   "«A IA prepara, a pessoa decide — de cada e-mail à estratégia da instituição»",
+   "«A validação humana deixa de ser precisa quando os agentes amadurecerem»",
+   "«O importante é usar IA em tudo, depressa, antes que os outros usem»"
+  ],
+  "c": 1,
+  "exp": "É a doutrina de todo o curso, da S1 à S15: a IA mapeia, resume, propõe, investiga e monta — e em cada degrau a decisão, a assinatura e a responsabilidade ficam humanas. Neste curso a IA não substituiu ninguém: promoveu-te — de quem executa processos para quem os desenha e governa."
+ }
+];
+
+let i = 0, certas = 0, respostas = [];
+const $ = id => document.getElementById(id);
+
+function render(){
+  $('bar').style.width = (i / QUESTOES.length * 100) + '%';
+  const Q = QUESTOES[i];
+  let h = `<div class="qnum">Pergunta ${i+1} de ${QUESTOES.length}</div>`;
+  h += `<div class="qtext">${Q.q}</div>`;
+  Q.opts.forEach((o, k) => {
+    h += `<button class="opt" onclick="responder(${k})"><span class="letra">${'abcd'[k]})</span>${o}</button>`;
+  });
+  h += `<div class="feedback" id="fb"></div>`;
+  $('quiz').innerHTML = h;
+  $('btnNext').classList.remove('show');
+  $('btnNext').textContent = (i === QUESTOES.length - 1) ? 'Ver resultado →' : 'Próxima pergunta →';
+}
+
+function responder(k){
+  const Q = QUESTOES[i];
+  const botoes = document.querySelectorAll('.opt');
+  botoes.forEach(b => b.disabled = true);
+  botoes[Q.c].classList.add('correta');
+  const ok = (k === Q.c);
+  if(ok){ certas++; } else { botoes[k].classList.add('errada'); }
+  respostas.push(ok);
+  const fb = $('fb');
+  fb.className = 'feedback show ' + (ok ? 'ok' : 'ko');
+  fb.innerHTML = `<b>${ok ? '✓ Correto!' : '✗ Não é essa.'}</b>${Q.exp}`;
+  $('btnNext').classList.add('show');
+}
+
+function proxima(){
+  i++;
+  if(i < QUESTOES.length){ render(); }
+  else { resultado(); }
+}
+
+function resultado(){
+  $('bar').style.width = '100%';
+  $('quiz').innerHTML = '';
+  $('btnNext').classList.remove('show');
+  const pct = Math.round(certas / QUESTOES.length * 100);
+  $('scoreTxt').textContent = `${certas}/${QUESTOES.length}`;
+  let nivel, msg;
+  if(pct >= 90){ nivel = '🎓 Embaixador de IA da tua instituição'; msg = 'Notável. Quinze sessões, cinco blocos, uma doutrina — e dominas o conjunto. Agora falta o gesto final: entregar a proposta. Obrigado por teres feito este percurso.'; }
+  else if(pct >= 70){ nivel = '🏆 Sólido de uma ponta à outra'; msg = 'Muito bom — tens o essencial do curso contigo. Revê as explicações das perguntas falhadas: cada uma aponta a sessão onde a doutrina vive.'; }
+  else if(pct >= 50){ nivel = '📈 Boa base — falta consolidar'; msg = 'Metade do caminho feito. Os quizzes por bloco são o melhor treino: faz os dos blocos onde falhaste mais e volta cá.'; }
+  else { nivel = '🌱 O curso continua contigo'; msg = 'Sem stress — o hub fica online: revisita as sessões, refaz os quizzes por bloco, e este resultado sobe. É para isso que o material cá fica.'; }
+  $('nivelTxt').textContent = nivel;
+  $('msgTxt').textContent = msg;
+  let rev = '<h3>Revisão rápida</h3>';
+  QUESTOES.forEach((Q, k) => {
+    rev += `<div class="rev-item ${respostas[k] ? 'certa' : 'errada2'}" data-i="${k+1}.">${Q.q.substring(0, 90)}${Q.q.length > 90 ? '…' : ''}</div>`;
+  });
+  $('revisao').innerHTML = rev;
+  $('res').classList.add('show');
+}
+
+function reiniciar(){
+  i = 0; certas = 0; respostas = [];
+  $('res').classList.remove('show');
+  render();
+}
+
+render();
+</script>
+</body>
+</html>
